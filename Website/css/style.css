@@ -21,9 +21,11 @@ body {
 }
 .fs-12 {font-size: 0.75rem;line-height: 20px;}
 .fs-14 {font-size: 0.875rem;line-height: 22px;}
-.fs-16 {font-size: 1rem;line-height: 24px;}
+.fs-16 {font-size: 1rem;line-height: 24px;} 
 .fs-18 {font-size: 1.125rem;line-height: 26px;}
-h1 {font-size: clamp(30px, 1rem + 2.5vw, 65px);font-weight: 700;}
+h1 {font-size: clamp(30px, 1rem + 2.5vw, 45px);font-weight: 700;}
+.h2-title {font-weight: 700;font-size: clamp(26px, 1rem + 2vw, 40px);color: #0F0928;margin-bottom: 0;}
+.h2-title b {background: conic-gradient(from 0deg,#ab0a1f,#d12028,#2a0909,#80141b,#1b0505,#e22b2f,#ab0a1f);background-size: 200% 200%;background-clip: text;-webkit-background-clip: text;-webkit-text-fill-color: transparent;animation: titleGradient 5s linear infinite;}
 a{text-decoration: none;}
 ul{margin-bottom: 0px;}
 hgroup{margin-bottom: 30px;}
@@ -44,8 +46,7 @@ hgroup{margin-bottom: 30px;}
 .mb-100{margin-bottom: 100px;}
 .my-100{margin-top: 100px;margin-bottom: 100px;}
 .subtitle{display: block;font-weight: 500;font-size: 18px;line-height: 24px;letter-spacing: 2px;text-transform: uppercase;color: #0F0928;margin-bottom: 10px;padding-left: 18px;border-left: 4px solid var(--color-red);}
-.h2-title {font-weight: 700;font-size: clamp(26px, 1rem + 2vw, 60px);color: #0F0928;margin-bottom: 0;}
-.h2-title b {background: conic-gradient(from 0deg,#ab0a1f,#d12028,#2a0909,#80141b,#1b0505,#e22b2f,#ab0a1f);background-size: 200% 200%;background-clip: text;-webkit-background-clip: text;-webkit-text-fill-color: transparent;animation: titleGradient 5s linear infinite;}
+
 hgroup.text-white .subtitle, hgroup.text-white .h2-title{color: var(--color-white);}
 .title-paragraph{font-size: 24px;font-weight: 500;line-height: 32px;}
 .bg-gradient-red-purple {background: linear-gradient(34deg,rgba(0, 0, 0, 1) 0%, rgba(222, 66, 74, 1) 50%, rgba(255, 255, 255, 1) 100%);}
@@ -106,7 +107,7 @@ h1 span {background: transparent;height: auto;width: auto;color: transparent;-we
 .service-banner > .container{position: relative;z-index: 1;}
 .service-banner::before{content: "";position: absolute;top: 0;left: 0;height: 100%;width: 100%;background: rgba(0, 0, 0, 0.7);}
 .banner-ani-img{position: absolute;right: 20px;top: 20px;animation: banner-img-rot 8s ease-in-out infinite;}
-.service-img-years{position: relative;}
+.service-img-years{position: relative;padding-top: 100px;}
 .service-img-mn{position: absolute;top: 0;right: -50px;width: 100%;max-width: 300px;}
 .solution-section-img{margin-top: -150px;}
 .arrow-up-square-list li{border-bottom: 1px solid #7a7a7a;padding-bottom: 13px;margin-bottom: 13px;display: flex;}
@@ -120,13 +121,14 @@ h1 span {background: transparent;height: auto;width: auto;color: transparent;-we
 .choose-us-content{background: rgba(255, 255, 255, .15);backdrop-filter: blur(10px);color: var(--color-white);padding: 24px;text-align: center;border-radius: 8px;display: flex;flex-direction: column;align-items: center;gap: 10px;}
 .choose-us-content-right{background: #354e33;color: var(--color-white);padding: 24px;border-radius: 8px;display: flex;gap: 25px;align-items: center;width: 100%;}
 .cta-section{position: relative;overflow: hidden;padding: 100px 0;}
-.cta-section::before {
+
+/* .cta-section::before {
     content: "";
     position: absolute;
     width: 100%;
-    max-width: 1000px;
-    height: 600px;
-    left: 40%;
+    max-width: 400px;
+    height: 400px;
+    left: 10%;
     top: 60%;
     transform: translate(-50%, -50%);
     z-index: -1;
@@ -134,6 +136,23 @@ h1 span {background: transparent;height: auto;width: auto;color: transparent;-we
     opacity: 1;
     filter: blur(500px);
     background: rgba(222, 66, 74, 1);
+    border-radius: 100%;
+} */
+ .cta-section::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    max-width: 250px;
+    height: 250px;
+    left: 16%;
+    top: 52%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    mix-blend-mode: normal;
+    opacity: 1;
+    filter: blur(70px);
+    background: rgba(222, 66, 74, 1);
+    border-radius: 100%;
 }
 /* Animation Css Start */
 /* Hero Banner Image Animation */
