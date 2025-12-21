@@ -1,37 +1,21 @@
-<!--Apple Touch Icons-->
-<!-- <link rel="apple-touch-icon" sizes="57x57" href="../apple-icons/apple-touch-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="72x72" href="../apple-icons/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="../apple-icons/apple-touch-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="../apple-icons/apple-touch-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="../apple-icons/apple-touch-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="../apple-icons/apple-touch-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="../apple-icons/apple-touch-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="../apple-icons/apple-touch-icon-180x180.png"> -->
 <!-- Basic Favicon -->
-<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" type="image/x-icon" href="./images/favicon/favicon.ico" >
 
 <!-- Standard PNG Favicons -->
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
 
 <!-- Apple Touch Icon -->
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
 
 <!-- Android / PWA -->
-<link rel="manifest" href="/site.webmanifest">
-<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
-<link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
-
-<!-- Mobile app -->
-<link rel="manifest" href="/site.webmanifest">
+<link rel="manifest" href="./images/favicon/site.webmanifest">
+<link rel="icon" type="image/png" sizes="192x192" href="./images/favicon/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="./images/favicon/android-chrome-512x512.png">
 
 <!-- Theme Color -->
-<meta name="theme-color" content="#ffffff">
+<meta name="theme-color" content="#f70629">
 
-<!-- Favicon Icon -->
-<link rel="icon" type="image/x-icon" href="../favicon.ico">
-<!-- For Web App Background -->
-<meta name="theme-color" content="#f70629" />
 <!-- index, follow Meta Code -->
 <meta name="robots" content="index, follow" />
 <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
