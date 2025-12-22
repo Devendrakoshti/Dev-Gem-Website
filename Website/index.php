@@ -24,8 +24,8 @@
     <link rel="preload" href="https://www.teslaoutsourcingservices.com/images/battersea-power-station.webp" as="image" fetchpriority="high">
     <!-- Preloads And Preconnect -->
     <!----- Title Tags ------>
-    <title>Leading BIM Service Provider | Global BIM & CAD Solutions</title>
-    <meta name="description" content="Global BIM Service Provider delivering comprehensive BIM & CAD solutions for AEC firms in 25+ countries. 5000+ completed projects. Request your free quote today!">
+    <title>GeM Registration, Udyam Registration Online, & GeM Consultant India</title>
+    <meta name="description" content="Simplify GeM Seller Registration & MSME Udyam Certification Nationwide. Trusted GeM Experts in India for profile optimization and government tender bidding success.">
     <!----- Title Tags Ends ------>
     <!----- SEO Tags ------>
     <link rel="canonical" href="https://www.teslaoutsourcingservices.com">
@@ -48,9 +48,9 @@
           <div class="col-lg-7">
             <div class="hero-banner-content text-white d-flex flex-column align-items-end">
               <div>
-                <h1 class="mb-1">Your Shortcut to <span>Government</span> Business </h1>
-                <p class="fs-4 fw-bold lh-base">Simplify GeM Registration and MSME Udyam Certification Today.</p>
-                <p class="fs-18 mb-4 lh-base">We are GEM Gujarat, India's trusted consulting partner, helping small businesses and entrepreneurs unlock multi-crore opportunities on the Government e-Marketplace (GeM) and achieve critical compliance effortlessly.</p>
+                <p class="fs-3 fw-bold lh-base mb-0">Your Shortcut to Government Business</p>
+                <h1 class="mb-3">Simplify GeM Registration, <span>GeM Seller Registration</span> and MSME Udyam Certification Today. </h1>
+                <p class="fs-18 mb-4 lh-base">We are GeM Experts India, India’s trusted consulting partner, helping small businesses and entrepreneurs unlock multi-crore opportunities on the Government e-Marketplace (GeM) and achieve critical compliance effortlessly.</p>
                 <a title="Explore More" class="btn-primary" href="/contact-us.php"> Unlock Your Business Potential Now <span>
                     <svg id="Layer_1" enableBackground="new 0 0 100 100" height="40" viewBox="0 0 100 100" fill="#f70629" width="40" xmlns="http://www.w3.org/2000/svg">
                       <path d="m50 10.75c-18.266 0-34.562 13.129-38.383 31.007-1.909 8.933-.623 18.432 3.636 26.515 4.099 7.779 10.819 14.066 18.859 17.629 8.363 3.707 17.964 4.353 26.754 1.825 8.48-2.438 15.999-7.789 21.118-14.972 10.703-15.017 9.272-36.111-3.32-49.567-7.38-7.886-17.862-12.437-28.664-12.437zm18.829 41.347-10.7 10.958c-2.709 2.775-6.991-1.429-4.293-4.191l5.399-5.529h-25.586c-1.817 0-3.333-1.517-3.333-3.333s1.517-3.333 3.333-3.333h25.458l-5.506-5.505c-2.736-2.736 1.506-6.979 4.242-4.243l10.961 10.96c1.162 1.161 1.173 3.041.025 4.216z" />
@@ -92,10 +92,10 @@
             <div class="h-100">
               <hgroup>
                 <span class="subtitle">About the Company</span>
-                <h2 class="h2-title"> Welcome to GEM Gujarat <b> Provider since 2020</b>
+                <h2 class="h2-title"> Welcome to GeM Experts India <b> Provider since 2020</b>
                 </h2>
               </hgroup>
-              <p class="mb-4">Welcome to GEM Gujarat—your dedicated growth partner right here in India. We understand that paperwork and complex compliance shouldn't stop your business from thriving. Our mission is simple: to transform your bureaucratic challenges into pathways for massive growth. Specializing in all GeM Services, essential certifications like MSME Udyam, and core business compliance, we streamline processes so you can focus on what you do best. Let's make your journey into government contracting and formal business easy, fast, and profitable.</p>
+              <p class="mb-4">Welcome to GeM Experts India—your dedicated growth partner Nationwide. We understand that paperwork and complex compliance shouldn’t stop your business from thriving. Our mission is simple to transform your bureaucratic challenges into pathways for massive growth. Specializing in all GeM Services, essential certifications like MSME Udyam, and core business compliance, we streamline processes so you can focus on what you do best. Let’s make your journey into government contracting and formal business easy, fast, and profitable.</p>
               <div class="row">
                 <div class="col-md-7">
                   <div class="h-100 d-block">
@@ -193,7 +193,7 @@
                   </div>
                   <h3 class="mb-0 fs-5 fw-bold">GeM Catalogue Management Services</h3>
                 </div>
-                <p class="text-light-black mb-xxl-4 mb-3">Professional management of your product/service listings, optimizing them for visibility and compliance, including complex tasks like L1 Comparison Service setup.</p>
+                <p class="text-light-black mb-xxl-4 mb-3">Professional management of your product/service listings, optimizing them for visibility and compliance, including complex tasks like L1 Comparison Service setup. (New: GeM Product Listing Service, GeM Profile Optimization)</p>
                 <a href="#" class="link-red d-inline-flex align-items-center">Learn More <i class="fa-solid fa-arrow-right fs-4 ms-2"></i>
                 </a>
               </div>
@@ -223,7 +223,7 @@
                   </div>
                   <h3 class="mb-0 fs-5 fw-bold">Tender & Bidding Assistance</h3>
                 </div>
-                <p class="text-light-black mb-xxl-4 mb-3">Strategic support for navigating the government tender process, from document preparation to GeM Order Acceptance.</p>
+                <p class="text-light-black mb-xxl-4 mb-3">Strategic support for navigating the Government Tender Bidding process, from document preparation to GeM Order Acceptance.</p>
                 <a href="#" class="link-red d-inline-flex align-items-center">Learn More <i class="fa-solid fa-arrow-right fs-4 ms-2"></i>
                 </a>
               </div>
@@ -277,10 +277,9 @@
           </div>
           <div class="col-lg-9">
             <hgroup class="mb-5">
-              <span class="subtitle">Overview of Services</span>
-              <h2 class="h2-title mb-3"> Why Choose <b> GEM Gujarat</b>
-              </h2>
-              <p class="title-paragraph">From first registration to securing your first order, we cover every step your small business needs to succeed in India.</p>
+              <span class="subtitle">Why Choose Us</span>
+              <h2 class="h2-title mb-3"> Why Choose <b> GeM Consultant India</b></h2>
+              <p class="title-paragraph">We are more than just consultants; we are your national team committed to your success in the Indian market.</p>
             </hgroup>
             <div class="row g-4">
               <div class="col-lg-4 col-md-6">
@@ -292,7 +291,7 @@
                     <h3 class="fs-5 fw-bold mb-0">India-Focused Expertise</h3>
                   </div>
                   <div class="why-choose-box-content">
-                    <p class="mb-0">Deep understanding of the GeM platform and MSME guidelines specific to Indian , giving you a competitive edge.</p>
+                    <p class="mb-0">Deep understanding of the GeM platform and MSME guidelines specific to Indian entrepreneurs, giving you a competitive edge.</p>
                   </div>
                 </div>
               </div>
@@ -331,7 +330,7 @@
                     <h3 class="fs-5 fw-bold mb-0">Complete Compliance Assurance</h3>
                   </div>
                   <div class="why-choose-box-content">
-                    <p class="mb-0">We don't just register you; we ensure you receive all crucial documents, including a certified GEM ISO Certificate, securing your long-term success.</p>
+                    <p class="mb-0">We don’t just register you; we ensure you receive all crucial documents, including a certified GEM ISO Certificate, securing your long-term success.</p>
                   </div>
                 </div>
               </div>
@@ -385,11 +384,11 @@
                 </li>
                 <li>
                   <h3 class="fs-5 fw-bold mb-2">Expert Execution</h3>
-                  <p class="text-light-black mb-0">Our specialists handle all the heavy lifting—from collecting documents for your Udyam Certificate to performing complex GeM Catalogue Management and L1 comparisons.</p>
+                  <p class="text-light-black mb-0">Our specialists handle all the heavy lifting—from collecting documents for your Udyam Registration Online and Udyam Certificate to performing complex GeM Profile Optimization and L1 comparisons.</p>
                 </li>
                 <li>
                   <h3 class="fs-5 fw-bold mb-2">Certification & Growth</h3>
-                  <p class="text-light-black mb-0">You receive your final, legally compliant certifications (MSME, ISO) and a fully optimized GeM profile, ready to secure new contracts and accelerate your business growth.</p>
+                  <p class="text-light-black mb-0">You receive your final, legally compliant certifications (MSME, ISO Certification for MSME) and a fully optimized GeM profile, ready to secure new contracts and accelerate your business growth.</p>
                 </li>
               </ul>
             </div>
@@ -533,11 +532,11 @@
                   <div class="accordion-item">
                     <h3 class="accordion-header">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <span>1. </span> What is GeM and why does my small business need to be on it? </button>
+                        <span>1. </span> What is GeM, and why does my small business need to be on it? </button>
                     </h3>
                     <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
-                        <p>The Government e-Marketplace (GeM) is the national public procurement portal in India. It's mandatory for government bodies to procure goods and services through it, making it the biggest opportunity for SMEs in India.</p>
+                        <p>The Government e-Marketplace (GeM) is the national public procurement portal in India. It’s mandatory for government bodies to procure goods and services through it, making it the biggest opportunity for SMEs in India.</p>
                       </div>
                     </div>
                   </div>
@@ -548,25 +547,25 @@
                     </h3>
                     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
-                        <p>While direct registration is possible, having an MSME Udyam Certificate is highly beneficial, offering numerous advantages like exemptions, fee waivers, and preferential treatment in government procurement.</p>
+                        <p>While direct registration is possible, obtaining an MSME Udyam Certificate is highly beneficial, offering numerous advantages, including exemptions, fee waivers, and preferential treatment in government procurement.</p>
                       </div>
                     </div>
                   </div>
                   <div class="accordion-item">
                     <h3 class="accordion-header">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        <span>3. </span> How long does it take to complete GeM Catalogue Management? </button>
+                        <span>3. </span> How long does it take to complete the GeM Catalogue Management? </button>
                     </h3>
                     <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
-                        <p>The timeline varies based on your product complexity, but our streamlined process is designed for maximum speed. We aim for quick approvals to get your products live for bidding as soon as possible.</p>
+                        <p>The timeline varies based on your product complexity, but our streamlined process is designed for maximum speed. We aim to provide quick approvals so your products can go live for Government Tender Bidding as soon as possible.</p>
                       </div>
                     </div>
                   </div>
                   <div class="accordion-item">
                     <h3 class="accordion-header">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        <span>4. </span> What is the "L1 Comparison Service" on GeM? </button>
+                        <span>4. </span> What is the “L1 Comparison Service” on GeM? </button>
                     </h3>
                     <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
@@ -581,18 +580,18 @@
                     </h3>
                     <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
-                        <p>Yes! We provide complete support to correctly process and accept orders received on the GeM portal, ensuring all post-order formalities are managed seamlessly. </p>
+                        <p>Yes! We provide complete support to correctly process and accept orders received on the GeM portal, ensuring seamless management of post-order formalities. </p>
                       </div>
                     </div>
                   </div>
                   <div class="accordion-item">
                     <h3 class="accordion-header">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
-                        <span>6. </span> Can I get an ISO Certificate through GEM Gujarat? </button>
+                        <span>6. </span> Can I get an ISO Certificate through GeM Experts India? </button>
                     </h3>
                     <div id="collapsesix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
-                        <p>Absolutely. We facilitate the entire process for obtaining an authentic and globally recognized GEM ISO Certificate to enhance your company's quality perception and credibility. </p>
+                        <p>Absolutely. We facilitate the entire process of obtaining an authentic, globally recognized GEM ISO Certificate to enhance your company’s quality perception and credibility. </p>
                       </div>
                     </div>
                   </div>
@@ -603,16 +602,35 @@
         </div>
     </section>
     <!-- FAQ Section End -->
+    <!-- CTA Section Start -->
+    <section class="section cta-section">
+      <div class="container">
+        <div class="p-xl-5 p-4 bg-white rounded-5 border shadow">
+          <div class="row g-5 align-items-center">
+            <div class="col-xl-8 order-2 order-xl-1">
+              <div class="h-100 bg-white">
+                <h2 class="h2-title mb-3"> How do I get started <b> with your services?</b>
+                </h2>
+                <p class="fs-18 fw-medium mb-4">Simply click the ‘Unlock Your Business Potential Now’ CTA and book a free initial consultation with our Indian experts.</p>
+                <a title="Explore More" class="btn-primary" href="/contact-us.php"> Start Your GeM Registration Today! <span>
+                    <svg id="Layer_1" enablebackground="new 0 0 100 100" height="40" viewBox="0 0 100 100" fill="#f70629" width="40" xmlns="http://www.w3.org/2000/svg">
+                      <path d="m50 10.75c-18.266 0-34.562 13.129-38.383 31.007-1.909 8.933-.623 18.432 3.636 26.515 4.099 7.779 10.819 14.066 18.859 17.629 8.363 3.707 17.964 4.353 26.754 1.825 8.48-2.438 15.999-7.789 21.118-14.972 10.703-15.017 9.272-36.111-3.32-49.567-7.38-7.886-17.862-12.437-28.664-12.437zm18.829 41.347-10.7 10.958c-2.709 2.775-6.991-1.429-4.293-4.191l5.399-5.529h-25.586c-1.817 0-3.333-1.517-3.333-3.333s1.517-3.333 3.333-3.333h25.458l-5.506-5.505c-2.736-2.736 1.506-6.979 4.242-4.243l10.961 10.96c1.162 1.161 1.173 3.041.025 4.216z"></path>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="col-xl-4 order-1 order-xl-2">
+              <div class="h-100">
+                <img src="images/cta-img.webp" alt="CTA Image" title="CTA Image" class="img-fluid rounded-5" width="867" height="713">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CTA Section End -->
     <!-- footer start --> <?php include 'includes/footer.php';?>
     <!-- footer end -->
-    <script>
-      var swiper = new Swiper(".client-testimonial-slider", {
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        loop: true,
-      });
-    </script>
     </body>
 </html>

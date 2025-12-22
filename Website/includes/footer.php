@@ -6,8 +6,8 @@
       <div class="col-lg-4">
         <div class="h-100">
           <a href="#" title="GEM Gujarat">
-          <!-- <img loading="eager" src="./images/gem-gujarat-logo-light.png" alt="GEM Gujarat" title="GEM Gujarat" class="img-fluid" width="200" height="85"> -->
-          <img loading="eager" src="https://www.teslaoutsourcingservices.com/images/tos-logo.svg" alt="GEM Gujarat" title="GEM Gujarat" class="img-fluid" width="200" height="85">
+          <img loading="eager" src="./images/gem-gujarat-white-logo.webp" alt="GEM Gujarat" title="GEM Gujarat" class="img-fluid" width="200" height="85">
+          <!-- <img loading="eager" src="https://www.teslaoutsourcingservices.com/images/tos-logo.svg" alt="GEM Gujarat" title="GEM Gujarat" class="img-fluid" width="200" height="85"> -->
         </a>
         <span class="d-block mt-4 fs-4 fw-medium">
           Let’s Make Things Happen — Contact Us!
