@@ -1,2 +1,17 @@
 // Client Logo Slider JS
 new Swiper(".client-logo-slider",{loop:!0,loopedSlides:8,slidesPerView:"auto",spaceBetween:30,autoplay:{delay:0,disableOnInteraction:!1},speed:4e3,freeMode:!0,freeModeMomentum:!1,breakpoints:{320:{slidesPerView:2},768:{slidesPerView:3},992:{slidesPerView:4},1200:{slidesPerView:5}}});
+// On Scroll Modal Popup JS
+  let modalOpened = false;
+
+  window.addEventListener('scroll', function () {
+
+    if (window.scrollY > 1800 && !modalOpened) {
+      modalOpened = true;
+
+      let modal = new bootstrap.Modal(
+        document.getElementById('exampleModal')
+      );
+      modal.show();
+    }
+
+  });

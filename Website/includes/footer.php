@@ -124,6 +124,24 @@
     </div>
   </div>
 </footer>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 <!-- Cookies Modal -->
 <!-- <script>
     var siteTitle = "Privacy Policy", sitetreeDesc = "We use GA4 cookies to enhance user experience.", sitetreeLink = '<a href="https://www.teslaoutsourcingservices.com/privacy-policy.php" target="_blank" title="Privacy Policy Page">Read Our Privacy Policy.</a>', sitetreeButton = "Understood!"; function pureFadeIn(e, t) { var i = document.getElementById(e); i.style.opacity = 0, i.style.display = t || "block", function e() { var t = parseFloat(i.style.opacity); (t += .02) > 1 || (i.style.opacity = t, requestAnimationFrame(e)) }() } function pureFadeOut(e) { var t = document.getElementById(e); t.style.opacity = 1, function e() { (t.style.opacity -= .02) < 0 ? t.style.display = "none" : requestAnimationFrame(e) }() } function siteDismiss() { pureFadeOut("siteConsentContainer"), localStorage.setItem("siteConsent", "true") } function siteConsent() {
