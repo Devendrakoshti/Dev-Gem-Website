@@ -42,11 +42,11 @@
     <!-- header start --> <?php include 'includes/header.php';?>
     <!-- header  end -->
     <!-- banner start  -->
-    <div class="hero-banner w-100">
-      <div class="container h-100">
-        <div class="row align-items-center h-100">
+    <div class="hero-banner">
+      <div class="container">
+        <div class="row align-items-center flex-wrap-reverse g-5">
           <div class="col-lg-7">
-            <div class="hero-banner-content text-white d-flex flex-column align-items-end">
+            <div class="hero-banner-content text-white">
               <div>
                 <p class="fs-3 fw-bold lh-base mb-0">Your Shortcut to Government Business</p>
                 <h1 class="mb-3">Simplify GeM Registration, <span>GeM Seller Registration</span> and MSME Udyam Certification Today. </h1>
@@ -61,29 +61,20 @@
             </div>
           </div>
           <div class="col-lg-5">
-            <div class="hero-banner-image">
-              <div class="hero-banner-image-01">
-                <svg width="500" height="495" style="transition: none; text-align: inherit; line-height: 14px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 300; font-size: 8px;">
-                  <g style="transition: none; text-align: inherit; line-height: 14px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 300; font-size: 8px;">
-                    <clipPath id="clipPolygon" style="transition: none; text-align: inherit; line-height: 14px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 300; font-size: 8px;">
-                      <polygon points="186 13,164 17,150 19,118 27,92 36,78 44,59 57,39 78,26 98,18 118,14 133,12 143,9 159,9 174,12 191,15 207,18 219,22 231,28 244,38 267,50 290,65 313,82 337,97 356,109 369,126 385,138 397,156 411,176 422,192 427,211 431,226 433,244 431,258 428,272 423,286 417,298 409,315 397,336 374,349 357,363 335,380 306,394 277,405 250,414 224,423 196,427 178,429 162,429 140,426 122,420 100,413 86,404 72,391 57,373 42,355 32,333 24,307 18,278 13,249 11,207 11,182 14" style="transition: none; text-align: inherit; line-height: 14px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 300; font-size: 8px;"></polygon>
-                    </clipPath>
-                  </g>
-                  <image clip-path="url(#clipPolygon)" height="100%" width="100%" xlink:href="./images/hero-banner-02.jpg" style="transition: none; text-align: inherit; line-height: 14px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 300; font-size: 8px;"></image>
-                </svg>
-              </div>
+            <div class="hero-banner-image d-none d-lg-block">
+              <img src="images/hero-banner-02.webp" alt="Hero Banner Image" title="Hero Banner Image" class="img-fluid" width="872" height="853">
+              <!-- <div class="hero-banner-image-01"><svg width="500" height="495" style="transition: none; text-align: inherit; line-height: 14px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 300; font-size: 8px;"><g style="transition: none; text-align: inherit; line-height: 14px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 300; font-size: 8px;"><clipPath id="clipPolygon" style="transition: none; text-align: inherit; line-height: 14px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 300; font-size: 8px;"><polygon points="186 13,164 17,150 19,118 27,92 36,78 44,59 57,39 78,26 98,18 118,14 133,12 143,9 159,9 174,12 191,15 207,18 219,22 231,28 244,38 267,50 290,65 313,82 337,97 356,109 369,126 385,138 397,156 411,176 422,192 427,211 431,226 433,244 431,258 428,272 423,286 417,298 409,315 397,336 374,349 357,363 335,380 306,394 277,405 250,414 224,423 196,427 178,429 162,429 140,426 122,420 100,413 86,404 72,391 57,373 42,355 32,333 24,307 18,278 13,249 11,207 11,182 14" style="transition: none; text-align: inherit; line-height: 14px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 300; font-size: 8px;"></polygon></clipPath></g><image clip-path="url(#clipPolygon)" height="100%" width="100%" xlink:href="./images/hero-banner-02.jpg" style="transition: none; text-align: inherit; line-height: 14px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 300; font-size: 8px;"></image></svg></div> -->
             </div>
           </div>
         </div>
       </div>
-      <div></div>
     </div>
     <!-- banner end  -->
     <!-- About Us Section Start -->
     <section class="section">
       <div class="container">
-        <div class="row gx-lg-5 gy-lg-0 g-4 align-items-center">
-          <div class="col-lg-5">
+        <div class="row g-5">
+          <div class="col-lg-5 col-md-8">
             <div class="h-100 rounded-5">
               <img src="./images/about-us.jpg" alt="About Us" title="About Us" class="img-fluid rounded-5" width="1120" height="1200">
             </div>
@@ -96,8 +87,8 @@
                 </h2>
               </hgroup>
               <p class="mb-4">Welcome to GeM Experts India—your dedicated growth partner Nationwide. We understand that paperwork and complex compliance shouldn’t stop your business from thriving. Our mission is simple to transform your bureaucratic challenges into pathways for massive growth. Specializing in all GeM Services, essential certifications like MSME Udyam, and core business compliance, we streamline processes so you can focus on what you do best. Let’s make your journey into government contracting and formal business easy, fast, and profitable.</p>
-              <div class="row">
-                <div class="col-md-7">
+              <div class="row gy-5">
+                <div class="col-xl-7 col-md-8">
                   <div class="h-100 d-block">
                     <h3 class="mb-3">Our Features</h3>
                     <ul class="features-list list-unstyled fs-16">
@@ -113,7 +104,7 @@
                     </ul>
                   </div>
                 </div>
-                <div class="col-md-5">
+                <div class="col-xl-5 col-md-4">
                   <div class="rounded-5 bg-gradient-red-purple border border-5 border-white shadow">
                     <div class="d-flex p-lg-5 p-4 align-items-center justify-content-center text-white">
                       <span class="display-2 fw-bold ">53+ </span>
@@ -129,37 +120,47 @@
     </section>
     <!-- About Us Section End -->
     <!-- Client Logo Section Start -->
-    <section>
-      <div class="container">
-        <div class="d-flex align-items-center justify-content-between">
-          <div class="me-4">
-            <hgroup class="mb-0">
-              <span class="subtitle d-block mb-2">Achievement Starts with Action.</span>
-              <p class="text-light-black ps-3 mb-0">Join the 5,000+ growing enterprises already</p>
-            </hgroup>
-          </div>
-          <div class="d-block">
-            <ul class="client-logo-list list-unstyled d-flex flex-wrap align-items-center mb-0">
-              <li>
-                <img src="./images/clients/client-logo-01.png" alt="Client Logo" title="Client Logo" class="img-fluid" width="130" height="45" loading="lazy">
-              </li>
-              <li>
-                <img src="./images/clients/client-logo-02.png" alt="Client Logo" title="Client Logo" class="img-fluid" width="130" height="45" loading="lazy">
-              </li>
-              <li>
-                <img src="./images/clients/client-logo-03.png" alt="Client Logo" title="Client Logo" class="img-fluid" width="130" height="45" loading="lazy">
-              </li>
-              <li>
-                <img src="./images/clients/client-logo-04.png" alt="Client Logo" title="Client Logo" class="img-fluid" width="130" height="45" loading="lazy">
-              </li>
-            </ul>
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between flex-lg-nowrap flex-wrap gap-4">
+        <div class="d-block hm-client-logo-section-title">
+          <hgroup class="mb-0">
+            <span class="subtitle d-block mb-2">Achievement Starts with Action.</span>
+            <p class="text-light-black ps-3 mb-0">Join the 5,000+ growing enterprises already</p>
+          </hgroup>
+        </div>
+        <div class="d-block client-logo-slider">
+          <div class="client-logo-slide-track">
+            <div>
+              <img src="./images/clients/client-logo-01.png" alt="Client Logo" title="Client Logo" width="130" height="45" loading="lazy">
+            </div>
+            <div>
+              <img src="./images/clients/client-logo-02.png" alt="Client Logo" title="Client Logo" width="130" height="45" loading="lazy">
+            </div>
+            <div>
+              <img src="./images/clients/client-logo-03.png" alt="Client Logo" title="Client Logo" width="130" height="45" loading="lazy">
+            </div>
+            <div>
+              <img src="./images/clients/client-logo-04.png" alt="Client Logo" title="Client Logo" width="130" height="45" loading="lazy">
+            </div>
+            <div>
+              <img src="./images/clients/client-logo-01.png" alt="Client Logo" title="Client Logo" width="130" height="45" loading="lazy">
+            </div>
+            <div>
+              <img src="./images/clients/client-logo-02.png" alt="Client Logo" title="Client Logo" width="130" height="45" loading="lazy">
+            </div>
+            <div>
+              <img src="./images/clients/client-logo-03.png" alt="Client Logo" title="Client Logo" width="130" height="45" loading="lazy">
+            </div>
+            <div>
+              <img src="./images/clients/client-logo-04.png" alt="Client Logo" title="Client Logo" width="130" height="45" loading="lazy">
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
     <!-- Client Logo Section End -->
     <!--Services Section Start -->
-    <section class="section home-services mb-100">
+    <section class="section home-services">
       <div class="container">
         <hgroup class="text-center mb-5">
           <!-- <span class="subtitle">Overview of Services</span> -->
@@ -169,7 +170,7 @@
           <p class="title-paragraph">From first registration to securing your first order, we cover every step your small business needs to succeed in India.</p>
         </hgroup>
         <div class="row g-4">
-          <div class="col-lg-4 col-md-6">
+          <div class="col-xl-4 col-md-6">
             <div class="h-100 border shadow border-white border-5 rounded-5 bg-white">
               <div class="p-xxl-5 p-4">
                 <div class="d-flex align-items-center mb-4">
@@ -184,7 +185,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-xl-4 col-md-6">
             <div class="h-100 border shadow border-white border-5 rounded-5 bg-white">
               <div class="p-xxl-5 p-4">
                 <div class="d-flex align-items-center mb-4">
@@ -199,7 +200,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-xl-4 col-md-6">
             <div class="h-100 border shadow border-white border-5 rounded-5 bg-white">
               <div class="p-xxl-5 p-4">
                 <div class="d-flex align-items-center mb-4">
@@ -214,7 +215,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-xl-4 col-md-6">
             <div class="h-100 border shadow border-white border-5 rounded-5 bg-white">
               <div class="p-xxl-5 p-4">
                 <div class="d-flex align-items-center mb-4">
@@ -229,7 +230,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-xl-4 col-md-6">
             <div class="h-100 border shadow border-white border-5 rounded-5 bg-white">
               <div class="p-xxl-5 p-4">
                 <div class="d-flex align-items-center mb-4">
@@ -244,7 +245,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-xl-4 col-md-6">
             <div class="h-100 border shadow border-white border-5 rounded-5 bg-white">
               <div class="p-xxl-5 p-4">
                 <div class="d-flex align-items-center mb-4">
@@ -266,8 +267,8 @@
     <!--Why Choose Section Start -->
     <section class="section">
       <div class="container">
-        <div class="row g-lg-5 g-4 align-items-end">
-          <div class="col-lg-3">
+        <div class="row g-5">
+          <div class="col-xl-3 col-md-8">
             <div class="h-100">
               <img src="./images/why-choose.webp" alt="Why Choose" title="Why Choose" class="img-fluid rounded-5 mb-4" width="576" height="800">
               <div class="bg-white border-start border-red border-5 p-4 shadow rounded">
@@ -275,10 +276,11 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-9">
+          <div class="col-xl-9">
             <hgroup class="mb-5">
               <span class="subtitle">Why Choose Us</span>
-              <h2 class="h2-title mb-3"> Why Choose <b> GeM Consultant India</b></h2>
+              <h2 class="h2-title mb-3"> Why Choose <b> GeM Consultant India</b>
+              </h2>
               <p class="title-paragraph">We are more than just consultants; we are your national team committed to your success in the Indian market.</p>
             </hgroup>
             <div class="row g-4">
@@ -363,12 +365,13 @@
             </div>
           </div>
         </div>
+      </div>
     </section>
     <!-- Why Choose Section End -->
     <!--Process Section Start -->
     <section class="section">
       <div class="container">
-        <div class="row g-lg-5 g-4 align-items-end">
+        <div class="row g-lg-5 g-4">
           <div class="col-lg-8">
             <hgroup class="mb-5">
               <span class="subtitle">Process Overview</span>
@@ -394,7 +397,7 @@
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="h-100">
+            <div class="h-100 d-none d-lg-block">
               <img src="./images/why-choose.webp" alt="Why Choose" title="Why Choose" class="img-fluid rounded-5" width="576" height="800">
             </div>
           </div>
@@ -414,11 +417,11 @@
           <div class="col-lg-8">
             <div class="bg-light-grey rounded-5 overflow-hidden h-100 shadow">
               <div class="row g-0 h-100">
-                <div class="col-4">
-                  <div class="h-100 client-testimonial-image"></div>
+                <div class="col-4 d-none d-md-block">
+                  <div class="h-100 client-testimonial-image "></div>
                 </div>
-                <div class="col-8">
-                  <div class="p-4 h-100 d-flex align-items-center">
+                <div class="col-md-8">
+                  <div class="p-sm-4 p-2 h-100 d-flex align-items-center">
                     <div class="swiper client-testimonial-slider">
                       <div class="swiper-wrapper">
                         <div class="swiper-slide p-4">
@@ -490,7 +493,7 @@
           </div>
           <div class="col-lg-4">
             <div class="h-100 p-xxl-5 p-4 rounded-5 bg-gradient-red-purple text-white shadow">
-              <div class="d-flex align-items-center justify-content-center mb-4">
+              <div class="d-flex align-items-center mb-4">
                 <span class="display-2 fw-bold ">98% </span>
                 <span class="ms-3 fs-4">Satisfaction Rate</span>
               </div>
@@ -607,7 +610,7 @@
       <div class="container">
         <div class="p-xl-5 p-4 bg-white rounded-5 border shadow">
           <div class="row g-5 align-items-center">
-            <div class="col-xl-8 order-2 order-xl-1">
+            <div class="col-lg-8">
               <div class="h-100 bg-white">
                 <h2 class="h2-title mb-3"> How do I get started <b> with your services?</b>
                 </h2>
@@ -620,7 +623,7 @@
                 </a>
               </div>
             </div>
-            <div class="col-xl-4 order-1 order-xl-2">
+            <div class="col-lg-4">
               <div class="h-100">
                 <img src="images/cta-img.webp" alt="CTA Image" title="CTA Image" class="img-fluid rounded-5" width="867" height="713">
               </div>

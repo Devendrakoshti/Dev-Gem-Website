@@ -179,7 +179,8 @@ echo '<meta name="apple-mobile-web-app-title" content="' . $currentTitle . '">' 
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header border-bottom">
             <a class="offcanvas-title" id="offcanvasNavbarLabel" href="/" title="GEM Gujarat">
-              <img loading="eager" src="./images/gem-gujarat-logo.png" alt="GEM Gujarat" title="GEM Gujarat" class="img-fluid" width="165" height="74">
+          <img loading="eager" src="./images/gem-gujarat-logo.webp" alt="GEM Gujarat" title="GEM Gujarat" class="img-fluid" width="165" height="74">
+              
             </a>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
