@@ -89,7 +89,7 @@ h1 span {background: transparent;height: auto;width: auto;color: transparent;-we
 .client-faq .accordion-button:focus{box-shadow: none;}
 .client-faq .accordion-body{font-size: 16px;line-height: 24px;}
 .client-logo-slider {overflow: hidden;position: relative;width: auto;}
-.client-logo-slide-track {animation: client-logo-scroll linear infinite 30s;display: flex;gap: 20px;}
+.client-logo-slide-track {animation: client-logo-scroll linear infinite 20s;display: flex;gap: 20px;}
 .client-logo-slide-track > div{border: 1px solid var(--color-light-grey);border-radius: 50px;background-color: var(--color-light-grey);padding: 12px 30px;}
 .client-logo-slide-track img{opacity: 0.5;transition: all 0.3s ease;}
 .client-logo-slide-track > div:hover img{opacity: 1;}
@@ -101,6 +101,7 @@ h1 span {background: transparent;height: auto;width: auto;color: transparent;-we
 .hm-client-logo-section-title{text-wrap: nowrap;}
 
 /* Footer Section Css Start */
+footer{background-color: #464646;}
 .footer-social li{margin-right: 15px;}
 .footer-social li a{display: flex;justify-content: center;align-items: center;height: 40px;width: 40px;border: 1px solid var(--color-white);border-radius: 10px;color: var(--color-white);transition: all 0.3s ease;}
 .footer-social li a:hover{background-color: var(--color-red);border-color: var(--color-white);color: var(--color-white);}
@@ -109,7 +110,7 @@ h1 span {background: transparent;height: auto;width: auto;color: transparent;-we
 .footer-links li a:hover{color: var(--color-red);}
 .footer-contact-icon{height: 50px;width: 50px;display: flex;justify-content: center;align-items: center;background: linear-gradient(34deg, rgba(0, 0, 0, 1) 0%, rgba(222, 66, 74, 1) 50%, rgba(255, 255, 255, 1) 100%);border-radius: 10px;color: var(--color-white);margin-right: 17px;border: 5px solid var(--color-white);flex-shrink: 0;}
 /* Services Css Start */
-.service-banner {height: 600px;position: relative;background: url('./images/hero-banner-01.jpg') center center no-repeat;background-size: cover;}
+.service-banner {display: flex;align-items: center;height: 600px;position: relative;background: url('./images/hero-banner-01.jpg') center center no-repeat;background-size: cover;}
 .service-banner > .container{position: relative;z-index: 1;}
 .service-banner::before{content: "";position: absolute;top: 0;left: 0;height: 100%;width: 100%;background: rgba(0, 0, 0, 0.7);}
 .banner-ani-img{position: absolute;right: 20px;top: 20px;animation: banner-img-rot 8s ease-in-out infinite;}
@@ -189,10 +190,12 @@ h1 span {background: transparent;height: auto;width: auto;color: transparent;-we
 @media screen and (max-width:767px) {
   .hero-banner{padding: 70px 0px;}
   .hm-client-logo-section-title{text-wrap: wrap;}
+  .choose-us-content-right{justify-content: center;}
 
     
 }
-@media screen and (max-width:576) {
+@media screen and (max-width:576px) {
   body {font-size: 16px;line-height: 26px;}
+  .service-banner {height: auto;padding: 70px 0px;}
     
 }

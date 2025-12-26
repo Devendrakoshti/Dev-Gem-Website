@@ -39,8 +39,8 @@
     <!-- header end -->
     <!-- banner start  -->
     <div class="service-banner w-100">
-      <div class="container h-100">
-        <div class="row align-items-center h-100">
+      <div class="container">
+        <div class="row">
           <div class="col-lg-10">
             <div class="text-white">
               <div class="page-path">
@@ -67,16 +67,14 @@
     <!-- Why GeM Problem Section Start -->
     <section class="section">
       <div class="container">
-        <div class="row g-xl-5 p-4">
+        <div class="row g-5 flex-wrap-reverse">
           <div class="col-lg-8">
             <div class="h-100">
-              <div class="d-flex justify-content-between">
-                <hgroup>
+              <hgroup>
                   <span class="subtitle">About the Company</span>
                   <h2 class="h2-title"> Why Every Indian Entrepreneur Needs <b> GeM Registration</b>
                   </h2>
                 </hgroup>
-              </div>
               <p class="mb-4">The <strong>Government e-Marketplace (GeM)</strong> is the mandatory platform for government departments to purchase goods and services. If you’re not registered, you can’t participate! 13GeM levels the playing field, giving your small business direct access to massive government buying power—something once available only to big corporations. </p>
               <div class="h-100 d-block">
                 <h3 class="mb-3">Why Choose GeM?</h3>
@@ -105,7 +103,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-md-8">
             <div class="h-100 service-img-years">
               <img src="./images/about-us.jpg" alt="About Us" title="About Us" class="img-fluid rounded-5" width="1120" height="1200">
               <div class="rounded-5 bg-gradient-red-purple border border-5 border-white shadow service-img-mn">
@@ -123,8 +121,8 @@
     <!-- Why GeM Solution  Section Start -->
     <section class="section bg-light-grey mt-100">
       <div class="container">
-        <div class="row g-xl-5 g-4 mb-4">
-          <div class="col-lg-4">
+        <div class="row g-5 mb-4">
+          <div class="col-lg-4 col-md-8">
             <div class="solution-section-img">
               <img src="./images/about-us.jpg" alt="About Us" title="About Us" class="img-fluid rounded-5" width="1120" height="1200">
             </div>
@@ -145,28 +143,28 @@
         <div class="d-block w-100">
           <h3 class="mb-4">What We Handle For You</h3>
           <div class="row g-4 fs-16">
-            <div class="col-lg-3">
+            <div class="col-xl-3 col-md-6">
               <div class="h-100 rounded-5 border bg-white shadow p-4">
                 <img src="images/icons/setting.svg" alt="Profile Setup" title="Profile Setup" class="img-fluid mb-3" width="35" height="35">
                 <h4 class="fw-medium mb-2 fs-5 text-red">Profile Setup</h4>
                 <p class="mb-0">Creating and verifying your seller or service provider profile on the GeM portal.</p>
               </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-xl-3 col-md-6">
               <div class="h-100 rounded-5 border bg-white shadow p-4">
                 <img src="images/icons/database-file.svg" alt="Profile Setup" title="Profile Setup" class="img-fluid mb-3" width="33" height="33">
                 <h4 class="fw-medium mb-2 fs-5 text-red">Document Management</h4>
                 <p class="mb-0">Expertly organizing and uploading all necessary documents <strong>(PAN, Udyam, GST, Bank Details)</strong>. </p>
               </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-xl-3 col-md-6">
               <div class="h-100 rounded-5 border bg-white shadow p-4">
                 <img src="images/icons/category.svg" alt="Profile Setup" title="Profile Setup" class="img-fluid mb-3" width="30" height="30">
                 <h4 class="fw-medium mb-2 fs-5 text-red">Category Listing</h4>
                 <p class="mb-0">Correctly listing your products or services to maximize visibility to buyers.</p>
               </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-xl-3 col-md-6">
               <div class="h-100 rounded-5 border bg-white shadow p-4">
                 <img src="images/icons/learning.svg" alt="Profile Setup" title="Profile Setup" class="img-fluid mb-3" width="40" height="40">
                 <h4 class="fw-medium mb-2 fs-5 text-red">Training & Support</h4>
@@ -244,104 +242,7 @@
     </section>
     <!-- Why GeM Problem Section End -->
     <!-- Why Choose Us Start -->
-    <section class="ser-choose-us black-film">
-      <div class="container">
-        <hgroup class="mb-5 text-white">
-          <span class="subtitle">Why Choose Us?</span>
-          <h2 class="h2-title mb-3">Why We Are India’s <b> Trusted GeM Partner</b>
-          </h2>
-          <p class="title-paragraph">You have many choices, but we offer a unique blend of local expertise and commitment to the Indian entrepreneur.</p>
-        </hgroup>
-        <div class="row g-xl-5 g-4 align-items-center">
-          <div class="col-lg-6">
-            <div class="h-100 d-flex align-items-center">
-              <div class="d-block">
-                <div class="d-block">
-                  <ul class="list-unstyled mb-0 ps-0 text-white">
-                    <li class="mb-4">
-                      <h3 class="fs-5 fw-bold mb-2 text-white">100% Success Rate</h3>
-                      <p class="text-white text-opacity-50 mb-0">We guarantee your GeM registration will be approved, saving you time and frustration.</p>
-                    </li>
-                    <li class="mb-4">
-                      <h3 class="fs-5 fw-bold mb-2 text-white">Dedicated National Support </h3>
-                      <p class="text-white text-opacity-50 mb-0">We understand the unique business needs and documentation specific to Indian businesses.</p>
-                    </li>
-                    <li class="mb-4">
-                      <h3 class="fs-5 fw-bold mb-2 text-white">Zero Hidden Fees</h3>
-                      <p class="text-white text-opacity-50 mb-0">Clear, upfront pricing. No surprises. Just simple, affordable service. (New: GeM Registration Fees)</p>
-                    </li>
-                    <li>
-                      <h3 class="fs-5 fw-bold mb-2 text-white">Post-Registration Help</h3>
-                      <p class="text-white text-opacity-50 mb-0">We’re not done when you’re registered. We stay available for follow-up questions on listings. (New: GeM Profile Update Services)</p>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="h-100">
-              <div class="row g-4">
-                <div class="col-lg-6">
-                  <div class="choose-us-content">
-                    <div class="fs-4 d-block fw-bold">4.8 out of 5</div>
-                    <div class="d-flex gap-2 text-warning">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                    </div>
-                    <div class="fs-14">Based on 185 reviews</div>
-                    <div class="d-block mt-2">
-                      <img src="images/google.webp" alt="Google Review" title="Google Review" class="img-fluid" width="130" height="32">
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="h-100 d-flex align-items-end">
-                    <div class="choose-us-content-right">
-                      <img src="images/happy-client.png" alt="Happy Client" title="Happy Client" class="img-fluid" width="60" height="60">
-                      <div class="d-block">
-                        <span class="d-block fs-2 fw-medium mb-1">850+</span>
-                        <span class="d-block fs-16 text-white-50">Happy Customers</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="h-100 d-flex align-items-start">
-                    <div class="choose-us-content-right">
-                      <img src="images/happy-client.png" alt="Happy Client" title="Happy Client" class="img-fluid" width="60" height="60">
-                      <div class="d-block">
-                        <span class="d-block fs-2 fw-medium mb-1">850+</span>
-                        <span class="d-block fs-16 text-white-50">Happy Customers</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="choose-us-content">
-                    <div class="fs-4 d-block fw-bold">4.8 out of 5</div>
-                    <div class="d-flex gap-2 text-warning">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                    </div>
-                    <div class="fs-14">Based on 185 reviews</div>
-                    <div class="d-block mt-2">
-                      <img src="images/google.webp" alt="Google Review" title="Google Review" class="img-fluid" width="130" height="32">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <?php include 'includes/why-choose-us.php';?>
     <!-- Why Choose Us End -->
     <!--FAQ Section Start -->
     <section class="section faq-section bg-light-grey">
@@ -455,48 +356,14 @@
     <!-- CTA Section Start -->
     <section class="section cta-section">
       <div class="container">
-        <div class="d-block mb-lg-5 mb-4">
-          <div class="swiper client-logo-slider">
-            <div class="client-logo-list swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="./images/clients/client-logo-01.png" alt="Client Logo" title="Client Logo" class="img-fluid" width="130" height="45" loading="lazy">
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/clients/client-logo-02.png" alt="Client Logo" title="Client Logo" class="img-fluid" width="130" height="45" loading="lazy">
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/clients/client-logo-03.png" alt="Client Logo" title="Client Logo" class="img-fluid" width="130" height="45" loading="lazy">
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/clients/client-logo-04.png" alt="Client Logo" title="Client Logo" class="img-fluid" width="130" height="45" loading="lazy">
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/clients/client-logo-01.png" alt="Client Logo" title="Client Logo" class="img-fluid" width="130" height="45" loading="lazy">
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/clients/client-logo-02.png" alt="Client Logo" title="Client Logo" class="img-fluid" width="130" height="45" loading="lazy">
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/clients/client-logo-03.png" alt="Client Logo" title="Client Logo" class="img-fluid" width="130" height="45" loading="lazy">
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/clients/client-logo-04.png" alt="Client Logo" title="Client Logo" class="img-fluid" width="130" height="45" loading="lazy">
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/clients/client-logo-02.png" alt="Client Logo" title="Client Logo" class="img-fluid" width="130" height="45" loading="lazy">
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/clients/client-logo-03.png" alt="Client Logo" title="Client Logo" class="img-fluid" width="130" height="45" loading="lazy">
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/clients/client-logo-04.png" alt="Client Logo" title="Client Logo" class="img-fluid" width="130" height="45" loading="lazy">
-              </div>
-            </div>
-          </div>
-        </div>
+        <!-- Client Logo Slider Start -->
+        <div class="d-block w-100 mb-lg-5 mb-4">
+          <?php include 'includes/client-logo-slider.php';?>
+        </div>       
+        <!-- Client Logo Slider End -->
         <div class="p-xl-5 p-4 bg-white rounded-5 border shadow">
           <div class="row g-5 align-items-center">
-            <div class="col-xl-8 order-2 order-xl-1">
+            <div class="col-lg-8">
               <div class="h-100 bg-white">
                 <h2 class="h2-title mb-3"> Ready to Sell to the <b> Government of India?</b>
                 </h2>
@@ -509,7 +376,7 @@
                 </a>
               </div>
             </div>
-            <div class="col-xl-4 order-1 order-xl-2">
+            <div class="col-lg-4">
               <div class="h-100">
                 <img src="images/cta-img.webp" alt="CTA Image" title="CTA Image" class="img-fluid rounded-5" width="867" height="713">
               </div>

@@ -128,34 +128,11 @@
             <p class="text-light-black ps-3 mb-0">Join the 5,000+ growing enterprises already</p>
           </hgroup>
         </div>
-        <div class="d-block client-logo-slider">
-          <div class="client-logo-slide-track">
-            <div>
-              <img src="./images/clients/client-logo-01.png" alt="Client Logo" title="Client Logo" width="130" height="45" loading="lazy">
-            </div>
-            <div>
-              <img src="./images/clients/client-logo-02.png" alt="Client Logo" title="Client Logo" width="130" height="45" loading="lazy">
-            </div>
-            <div>
-              <img src="./images/clients/client-logo-03.png" alt="Client Logo" title="Client Logo" width="130" height="45" loading="lazy">
-            </div>
-            <div>
-              <img src="./images/clients/client-logo-04.png" alt="Client Logo" title="Client Logo" width="130" height="45" loading="lazy">
-            </div>
-            <div>
-              <img src="./images/clients/client-logo-01.png" alt="Client Logo" title="Client Logo" width="130" height="45" loading="lazy">
-            </div>
-            <div>
-              <img src="./images/clients/client-logo-02.png" alt="Client Logo" title="Client Logo" width="130" height="45" loading="lazy">
-            </div>
-            <div>
-              <img src="./images/clients/client-logo-03.png" alt="Client Logo" title="Client Logo" width="130" height="45" loading="lazy">
-            </div>
-            <div>
-              <img src="./images/clients/client-logo-04.png" alt="Client Logo" title="Client Logo" width="130" height="45" loading="lazy">
-            </div>
-          </div>
-        </div>
+        <!-- Client Logo Slider Start -->
+        <div class="d-block w-100">
+          <?php include 'includes/client-logo-slider.php';?>
+        </div>       
+        <!-- Client Logo Slider End -->
       </div>
     </div>
     <!-- Client Logo Section End -->

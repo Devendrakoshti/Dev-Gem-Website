@@ -1,8 +1,8 @@
 </main>
 <footer>
-  <div class="container-fluid bg-black py-5">
+  <div class="container-fluid py-5">
     <div class="container pt-xl-5 pt-4">    
-    <div class="row text-white align-items-center px-lg-5 px-4">
+    <div class="row text-white align-items-center gy-5">
       <div class="col-lg-4">
         <div class="h-100">
           <a href="#" title="GEM Gujarat">
@@ -36,8 +36,8 @@
         </div>
       </div>
       <div class="col-lg-8">
-        <div class="row">
-          <div class="col-md-4">
+        <div class="row g-4">
+          <div class="col-sm-4">
             <div class="h-100">
               <span class="mb-3 fs-4 d-block fw-semibold text-red">Navigation</span>
               <ul class="list-unstyled footer-links">
@@ -48,7 +48,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-sm-4">
             <div class="h-100">
               <span class="mb-3 fs-4 d-block fw-semibold text-red">Quick Links</span>
               <ul class="list-unstyled footer-links">
@@ -59,7 +59,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-sm-4">
             <div class="h-100">
               <span class="mb-3 fs-4 d-block fw-semibold text-red">Services</span>
               <ul class="list-unstyled footer-links">
@@ -71,8 +71,8 @@
             </div>
           </div>
           <div class="col-12 pt-4">
-            <div class="row">
-              <div class="col-md-4">
+            <div class="row g-4">
+              <div class="col-xl-4 col-md-6">
                 <div class="d-flex align-items-center">
                   <div class="footer-contact-icon">
                     <i class="fa-solid fa-phone"></i>
@@ -83,7 +83,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-xl-4 col-md-6">
                 <div class="d-flex align-items-center">
                   <div class="footer-contact-icon">
                     <i class="fa-solid fa-envelope"></i>
@@ -94,7 +94,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-xl-4 col-md-6">
                 <div class="d-flex align-items-center">
                   <div class="footer-contact-icon">
                     <i class="fa-solid fa-location-dot"></i>
@@ -110,7 +110,7 @@
         </div>
       </div>
     </div>
-      <div class="d-flex justify-content-between flex-wrap py-4 border-top border-bottom border-white mt-5">
+      <div class="d-flex justify-content-between flex-wrap py-4 border-top border-bottom border-white mt-5 gap-3">
         <div>
           <p class="mb-0 text-white-50">Copyright © 2025 GEM Gujarat. All Rights Reserved. | <a href="#" class="link-white">Privacy Policy</a></p>
         </div>
@@ -125,81 +125,86 @@
   </div>
 </footer>
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- <div class="modal modal-lg fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <h2 class="h2-title" id="exampleModalLabel">Contact Us</h2>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-<form method="post" name="contactform" action="https://www.teslacadservices.com/staging/tmd/form_submitions_new.php"></form>
-<div class="row g-4">
-   <div class="col-lg-6">
-      <div class="form-floating">
-         <input required="" type="text" name="name" id="exampleInputEmail1" placeholder="Your Name"
-            class="form-control">
-         <label for="exampleInputEmail1">Your Name</label>
+<form method="post" name="contactform" action="https://www.teslamechanicaldesigns.com/form_submitions_new.php">
+    <div class="row g-4">
+        <div class="col-md-6 position-relative">
+          <div class="input-icon position-relative">
+            <i class="fa-solid fa-user"></i>
+            <div class="form-floating">
+              <input required type="text" name="name" id="name" placeholder="Your Name" class="form-control" />
+              <label for="name">Your Name</label>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 position-relative">
+          <div class="input-icon position-relative">
+            <i class="fa-solid fa-envelope"></i>
+            <div class="form-floating">
+              <input required type="email" name="email" id="email" placeholder="E-mail" class="form-control" />
+              <label for="email">E-mail</label>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 position-relative">
+          <div class="input-icon position-relative">
+            <i class="fa-solid fa-phone"></i>
+            <div class="form-floating">
+              <input required type="text" name="phone" id="phone" placeholder="Phone No" class="form-control" />
+              <label for="phone">Phone No</label>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 position-relative">
+          <div class="input-icon position-relative">
+            <i class="fa-solid fa-earth-asia"></i>
+            <div class="form-floating">
+              <select required aria-label="country" name="country" id="country" class="form-select">
+                <option value="">Select Country</option>
+                <option>United States</option>
+                <option>Canada</option>
+                <option>Australia</option>
+                <option>United Kingdom</option>
+                <option>UAE</option>
+                <option>India</option>
+                <option>Other</option>
+              </select>
+              <label for="country">Country</label>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 position-relative">
+          <div class="input-icon position-relative textarea-icon">
+            <i class="fa-solid fa-comment-dots"></i>
+            <div class="form-floating">
+              <textarea required name="message" id="message" placeholder="Message" class="form-control" style="height: 100px;"></textarea>
+              <label for="message">Message</label>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="d-flex align-items-center flex-wrap gap-3">
+              <button type="submit" name="Submit" value="Submit" title="Submit" class="btn btn-yellow text-black text-uppercase py-3 fw-bold rounded-3 d-flex -content-center align-items-center gap-2">
+                <i class="fa-solid fa-paper-plane"></i> Submit
+              </button>
+                <div class="g-recaptcha" data-sitekey="6LfYTkQrAAAAABu1ODH1tqFaNza_MBoESzVeqjDL"></div>
+            </div>
+        </div>
       </div>
-   </div>
-   <div class="col-lg-6">
-      <div class="form-floating">
-         <input required="" type="email" name="email" id="exampleInputPassword1" placeholder="E-mail"
-            class="form-control">
-         <label for="exampleInputPassword1">E-mail</label>
-      </div>
-   </div>
-   <div class="col-lg-6">
-      <div class="form-floating">
-         <input required="" type="text" name="phone" id="exampleInputPassword2" placeholder="Phone No"
-            class="form-control">
-         <label for="exampleInputPassword2">Phone No</label>
-      </div>
-   </div>
-   <div class="col-lg-6">
-      <div class="form-floating">
-         <select required="" aria-label="country" name="country" id="exampleInputPassword3" class="form-select">
-            <option value="">Select Country</option>
-            <option value="United States">United States</option>
-            <option value="Canada">Canada</option>
-            <option value="Australia">Australia</option>
-            <option value="United Kingdom">United Kingdom</option>
-            <option value="UAE">UAE</option>
-            <option value="India">India</option>
-            <option value="Other">Other</option>
-         </select>
-         <label for="exampleInputPassword3">Country</label>
-      </div>
-   </div>
-   <div class="col-lg-12">
-      <div class="form-floating">
-         <textarea required="" name="message" id="exampleInputmessage" placeholder="Message" class="form-control"
-            style="height: 100px"></textarea>
-         <label for="exampleInputmessage">Message</label>
-      </div>
-   </div>
-   <!-- <div class="col-lg-12">
-      <div class="g-recaptcha" data-sitekey="6LfYTkQrAAAAABu1ODH1tqFaNza_MBoESzVeqjDL"></div>
-   </div> -->
-   <div class="col-lg-12 mt-3">
-      <div class="w-100 d-flex justify-content-center">
-         <button type="submit" name="Submit" value="Submit"
-            class="btn btn-yellow btn-yellow-black w-100 text-uppercase btnsubmit">Submit</button>
-         <input type="hidden" name="ip" value="">
-         <input type="hidden" name="curpage" value="">
-      </div>
-   </div>
-</div>
 </form>
 
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+      
     </div>
   </div>
-</div>
+</div> -->
 <!-- Cookies Modal -->
 <!-- <script>
     var siteTitle = "Privacy Policy", sitetreeDesc = "We use GA4 cookies to enhance user experience.", sitetreeLink = '<a href="https://www.teslaoutsourcingservices.com/privacy-policy.php" target="_blank" title="Privacy Policy Page">Read Our Privacy Policy.</a>', sitetreeButton = "Understood!"; function pureFadeIn(e, t) { var i = document.getElementById(e); i.style.opacity = 0, i.style.display = t || "block", function e() { var t = parseFloat(i.style.opacity); (t += .02) > 1 || (i.style.opacity = t, requestAnimationFrame(e)) }() } function pureFadeOut(e) { var t = document.getElementById(e); t.style.opacity = 1, function e() { (t.style.opacity -= .02) < 0 ? t.style.display = "none" : requestAnimationFrame(e) }() } function siteDismiss() { pureFadeOut("siteConsentContainer"), localStorage.setItem("siteConsent", "true") } function siteConsent() {

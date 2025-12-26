@@ -146,7 +146,8 @@ echo '<meta name="apple-mobile-web-app-title" content="' . $currentTitle . '">' 
   <nav class="navbar navbar-expand-xl navbar-light bg-white shadow fixed-top py-0 header-menu">
   <div class="container-fluid px-0">
     <div class="d-block w-100">
-      <div class="nav-top d-none d-lg-flex w-100 bg-dark-grey py-3 px-xl-5 px-4">
+      <div class="nav-top d-none w-100 bg-dark-grey py-3 px-xl-5 px-4">
+      <!-- <div class="nav-top d-none d-lg-flex w-100 bg-dark-grey py-3 px-xl-5 px-4"> -->
         <div class="d-flex align-items-center text-white fs-14">
           <div class="me-3 d-flex align-items-center">
             <div class="nav-con-box">
