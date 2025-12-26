@@ -133,7 +133,65 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        ...
+<form method="post" name="contactform" action="https://www.teslacadservices.com/staging/tmd/form_submitions_new.php"></form>
+<div class="row g-4">
+   <div class="col-lg-6">
+      <div class="form-floating">
+         <input required="" type="text" name="name" id="exampleInputEmail1" placeholder="Your Name"
+            class="form-control">
+         <label for="exampleInputEmail1">Your Name</label>
+      </div>
+   </div>
+   <div class="col-lg-6">
+      <div class="form-floating">
+         <input required="" type="email" name="email" id="exampleInputPassword1" placeholder="E-mail"
+            class="form-control">
+         <label for="exampleInputPassword1">E-mail</label>
+      </div>
+   </div>
+   <div class="col-lg-6">
+      <div class="form-floating">
+         <input required="" type="text" name="phone" id="exampleInputPassword2" placeholder="Phone No"
+            class="form-control">
+         <label for="exampleInputPassword2">Phone No</label>
+      </div>
+   </div>
+   <div class="col-lg-6">
+      <div class="form-floating">
+         <select required="" aria-label="country" name="country" id="exampleInputPassword3" class="form-select">
+            <option value="">Select Country</option>
+            <option value="United States">United States</option>
+            <option value="Canada">Canada</option>
+            <option value="Australia">Australia</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="UAE">UAE</option>
+            <option value="India">India</option>
+            <option value="Other">Other</option>
+         </select>
+         <label for="exampleInputPassword3">Country</label>
+      </div>
+   </div>
+   <div class="col-lg-12">
+      <div class="form-floating">
+         <textarea required="" name="message" id="exampleInputmessage" placeholder="Message" class="form-control"
+            style="height: 100px"></textarea>
+         <label for="exampleInputmessage">Message</label>
+      </div>
+   </div>
+   <!-- <div class="col-lg-12">
+      <div class="g-recaptcha" data-sitekey="6LfYTkQrAAAAABu1ODH1tqFaNza_MBoESzVeqjDL"></div>
+   </div> -->
+   <div class="col-lg-12 mt-3">
+      <div class="w-100 d-flex justify-content-center">
+         <button type="submit" name="Submit" value="Submit"
+            class="btn btn-yellow btn-yellow-black w-100 text-uppercase btnsubmit">Submit</button>
+         <input type="hidden" name="ip" value="">
+         <input type="hidden" name="curpage" value="">
+      </div>
+   </div>
+</div>
+</form>
+
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
