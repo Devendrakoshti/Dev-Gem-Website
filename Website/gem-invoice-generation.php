@@ -20,8 +20,8 @@
     <link rel="preconnect" href="https://js.clarity.ms">
     <link rel="preload" href="" as="image" fetchpriority="high">
     <!----- Title Tags ------>
-    <title>GeM Registration Consultant India & Seller Registration Online</title>
-    <meta name="description" content="Expert GeM Registration Services Nationwide. Fast, 48-hour GeM Seller Registration Online. Get support for the Udyam link and essential documents.">
+    <title>GeM Invoice Generation Guide, Payment Process & CRAC Support</title>
+    <meta name="description" content="Simplify GeM invoice generation and accelerate payment. Avoid payment delays with our expert CRAC follow-up and GeM Payment Follow-up Service Nationwide.">
     <!----- Title Tags Ends ------>
     <!----- SEO Tags ------>
     <link rel="canonical" href="">
@@ -45,11 +45,11 @@
             <div class="text-white">
               <div class="page-path">
                 <span>
-                  <i class="fa-solid fa-house text-red me-1"></i> Home <i class="fa-solid fa-chevron-right mx-1 fs-12"></i> GeM Registration </span>
+                  <i class="fa-solid fa-house text-red me-1"></i> Home <i class="fa-solid fa-chevron-right mx-1 fs-12"></i> GeM Invoice Generation </span>
               </div>
-              <h1 class="mb-1">GeM Registration Consultant India: Your <span>Simple Path</span> to Sell to the Government! </h1>
-              <p class="fs-18 mb-4 lh-base">Stop missing out on high-value government tenders. We are your expert GeM Registration Services Provider Nationwide, making the process fast, easy, and stress-free for your small business.</p>
-              <a title="Explore More" class="btn-primary" href="/contact-us.php"> Get GeM Registered in 48 Hours <span>
+              <h1 class="mb-1">Get Paid Faster! Your Simple Guide to <span>GeM Invoice</span> Generation</h1>
+              <p class="fs-18 mb-4 lh-base">You delivered the order and the buyer accepted it! That's a huge win. The final, most important step is generating a GeM-compliant invoice to trigger your payment. Follow our simple checklist to avoid payment delays and maintain strong cash flow.</p>
+              <a title="Explore More" class="btn-primary" href="/contact-us.php"> Get Invoice Assistance Now! <span>
                   <svg id="Layer_1" enableBackground="new 0 0 100 100" height="40" viewBox="0 0 100 100" fill="#f70629" width="40" xmlns="http://www.w3.org/2000/svg">
                     <path d="m50 10.75c-18.266 0-34.562 13.129-38.383 31.007-1.909 8.933-.623 18.432 3.636 26.515 4.099 7.779 10.819 14.066 18.859 17.629 8.363 3.707 17.964 4.353 26.754 1.825 8.48-2.438 15.999-7.789 21.118-14.972 10.703-15.017 9.272-36.111-3.32-49.567-7.38-7.886-17.862-12.437-28.664-12.437zm18.829 41.347-10.7 10.958c-2.709 2.775-6.991-1.429-4.293-4.191l5.399-5.529h-25.586c-1.817 0-3.333-1.517-3.333-3.333s1.517-3.333 3.333-3.333h25.458l-5.506-5.505c-2.736-2.736 1.506-6.979 4.242-4.243l10.961 10.96c1.162 1.161 1.173 3.041.025 4.216z" />
                   </svg>
@@ -71,36 +71,16 @@
           <div class="col-lg-8">
             <div class="h-100">
               <hgroup>
-                <span class="subtitle">About the Company</span>
-                <h2 class="h2-title"> Why Every Indian Entrepreneur Needs <b> GeM Registration</b>
-                </h2>
-              </hgroup>
-              <p class="mb-4">The <strong>Government e-Marketplace (GeM)</strong> is the mandatory platform for government departments to purchase goods and services. If you’re not registered, you can’t participate! 13GeM levels the playing field, giving your small business direct access to massive government buying power—something once available only to big corporations. </p>
-              <div class="h-100 d-block">
-                <h3 class="mb-3">Why Choose GeM?</h3>
-                <ul class="arrow-up-square-list list-unstyled fs-16">
-                  <li>
-                    <div>
-                      <span class="fw-bold me-1">Massive Market:</span> Tap into an annual procurement budget of billions from Central & State government bodies.
-                    </div>
-                  </li>
-                  <li>
-                    <div>
-                      <span class="fw-bold me-1">Trust & Transparency:</span> GeM ensures a fair, secure, and transparent bidding process for all.
-                    </div>
-                  </li>
-                  <li>
-                    <div>
-                      <span class="fw-bold me-1">Boost Your Brand:</span> Selling to the government instantly boosts your credibility and brand reputation.
-                    </div>
-                  </li>
-                  <li>
-                    <div>
-                      <span class="fw-bold me-1">Local Advantage:</span> Special provisions for MSEs (Micro and Small Enterprises), including exemptions from tender fees.
-                    </div>
-                  </li>
-                </ul>
-              </div>
+                  <span class="subtitle">Rule of GeM Billing</span>
+                  <h2 class="h2-title"> The Two Must-Haves Before Generating Your <b> GeM Invoice</b>
+                  </h2>
+                  <p class="fw-medium">Unlike traditional business, a GeM invoice must follow a strict sequence. To ensure your invoice is processed without rejection, you must have two key things</p>
+                </hgroup>
+              <h3 class="mb-2 fw-bold fs-4">1. Confirmed Delivery & Acceptance</h3>
+              <p class="mb-3">The government buyer must formally confirm they have received the goods/services in the GeM system.</p>
+              <h3 class="mb-2 fw-bold fs-4">2. The Consignee Receipt and Acceptance Certificate (CRAC)</h3>
+              <p>This is the document that triggers your payment process. The buyer generates the CRAC after inspecting the goods.</p>
+              <p>Crucial Point: Your final invoice must reference the CRAC number and date. No CRAC, no payment! We help our clients follow up with consignees for timely CRAC generation Nationwide.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-8">
@@ -131,44 +111,65 @@
             <div class="h-100">
               <div class="d-flex justify-content-between">
                 <hgroup>
-                  <span class="subtitle">Our Registration Services </span>
-                  <h2 class="h2-title"> Fast, Friendly GeM Registration <b> Services Nationwide</b>
+                  <span class="subtitle">GeM Invoice Checklist </span>
+                  <h2 class="h2-title"> How to Generate a Perfect, Payment-Ready <b> GeM Invoice</b>
                   </h2>
                 </hgroup>
               </div>
-              <p class="mb-4">We know you’re busy growing your business. Dealing with complex government forms and paperwork is the last thing you want to do. That’s where we step in! As dedicated GeM Registration experts, we handle the entire process from start to finish, ensuring your profile is complete, compliant, and ready to secure your first tender.</p>
+              <p class="mb-4">Ensure your physical or electronic invoice meets all the mandatory compliance requirements for government payments</p>
             </div>
           </div>
         </div>
-        <div class="d-block w-100">
-          <h3 class="mb-4">What We Handle For You</h3>
+        <div class="d-block w-100 pt-3">
+          <h3 class="mb-4">Your Step-by-Step GeM Invoice Checklist</h3>
           <div class="row g-4 fs-16">
-            <div class="col-xl-3 col-md-6">
+            <div class="col-xl-4 col-md-6">
               <div class="h-100 rounded-5 border bg-white shadow p-4">
                 <img src="images/icons/setting.svg" alt="Profile Setup" title="Profile Setup" class="img-fluid mb-3" width="35" height="35">
-                <h4 class="fw-medium mb-2 fs-5 text-red">Profile Setup</h4>
-                <p class="mb-0">Creating and verifying your seller or service provider profile on the GeM portal.</p>
+                <h4 class="fw-medium mb-2 fs-5 text-red">Reference the GeM PO Number</h4>
+                <p class="mb-0">This must be prominently displayed on your invoice. It links your sale directly to the government order.</p>
               </div>
             </div>
-            <div class="col-xl-3 col-md-6">
+            <div class="col-xl-4 col-md-6">
               <div class="h-100 rounded-5 border bg-white shadow p-4">
                 <img src="images/icons/database-file.svg" alt="Profile Setup" title="Profile Setup" class="img-fluid mb-3" width="33" height="33">
-                <h4 class="fw-medium mb-2 fs-5 text-red">Document Management</h4>
-                <p class="mb-0">Expertly organizing and uploading all necessary documents <strong>(PAN, Udyam, GST, Bank Details)</strong>. </p>
+                <h4 class="fw-medium mb-2 fs-5 text-red">Reference the CRAC</h4>
+                <p class="mb-0">Include the CRAC Number and Date as proof of delivery and acceptance.</p>
               </div>
             </div>
-            <div class="col-xl-3 col-md-6">
+            <div class="col-xl-4 col-md-6">
               <div class="h-100 rounded-5 border bg-white shadow p-4">
                 <img src="images/icons/category.svg" alt="Profile Setup" title="Profile Setup" class="img-fluid mb-3" width="30" height="30">
-                <h4 class="fw-medium mb-2 fs-5 text-red">Category Listing</h4>
-                <p class="mb-0">Correctly listing your products or services to maximize visibility to buyers.</p>
+                <h4 class="fw-medium mb-2 fs-5 text-red">Use Your Registered GSTIN</h4>
+                <p class="mb-0">The GSTIN on the invoice must exactly match the GSTIN linked to your GeM seller account.</p>
               </div>
             </div>
-            <div class="col-xl-3 col-md-6">
+            <div class="col-xl-4 col-md-6">
               <div class="h-100 rounded-5 border bg-white shadow p-4">
                 <img src="images/icons/learning.svg" alt="Profile Setup" title="Profile Setup" class="img-fluid mb-3" width="40" height="40">
-                <h4 class="fw-medium mb-2 fs-5 text-red">Training & Support</h4>
-                <p class="mb-0">A quick, friendly orientation on how to manage your dashboard and bid on tenders.</p>
+                <h4 class="fw-medium mb-2 fs-5 text-red">Match Specifications and Price</h4>
+                <p class="mb-0">The quantity, unit price, and total value (including applicable GST) must match the approved Purchase Order (PO) exactly. Any mismatch will cause rejection.</p>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+              <div class="h-100 rounded-5 border bg-white shadow p-4">
+                <img src="images/icons/learning.svg" alt="Profile Setup" title="Profile Setup" class="img-fluid mb-3" width="40" height="40">
+                <h4 class="fw-medium mb-2 fs-5 text-red">Bank Details</h4>
+                <p class="mb-0">Ensure the bank account details on the invoice are the same ones validated in your GeM profile, guaranteeing direct, secure transfer.</p>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+              <div class="h-100 rounded-5 border bg-white shadow p-4">
+                <img src="images/icons/learning.svg" alt="Profile Setup" title="Profile Setup" class="img-fluid mb-3" width="40" height="40">
+                <h4 class="fw-medium mb-2 fs-5 text-red">E-Way Bill (If Applicable)</h4>
+                <p class="mb-0">For goods valued over ₹50,000 (as per current GST rules), ensure your E-Way Bill details are available and correct.</p>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+              <div class="h-100 rounded-5 border bg-white shadow p-4">
+                <img src="images/icons/learning.svg" alt="Profile Setup" title="Profile Setup" class="img-fluid mb-3" width="40" height="40">
+                <h4 class="fw-medium mb-2 fs-5 text-red">Expert Tip</h4>
+                <p class="mb-0">For partial deliveries (where allowed by the PO), ensure the invoice quantity and value reflect only the delivered portion.</p>
               </div>
             </div>
           </div>
@@ -180,12 +181,11 @@
     <section class="section">
       <div class="container">
         <hgroup class="mb-5">
-          <span class="subtitle">GeM Registration Requirements</span>
-          <h2 class="h2-title mb-3">Documents for GeM Registration You’ll Need to <b> Start Your GeM Journey</b>
+          <span class="subtitle">Common Invoice Mistakes that Delay Payment</span>
+          <h2 class="h2-title mb-3">Avoid These GeM Invoice Headaches, Say Our Leading GeM Seller <b> Payment Support Experts</b>
           </h2>
-          <p class="title-paragraph">Getting ready is simple! For your GeM Registration to be successful, you’ll need a few key documents. Our team will guide you on exactly how to prepare them.</p>
+          <p class="title-paragraph">Our experience as a leading GeM Registration services provider shows that these small errors are the biggest blockers to timely payment for Indian entrepreneurs across India</p>
         </hgroup>
-        <h3 class="mb-4 fw-bold">Checklist for Indian Entrepreneurs</h3>
         <div class="row g-lg-5 g-4">
           <div class="col-xl-8">
             <div class="h-100">
@@ -196,8 +196,8 @@
                       <i class="fa-solid fa-book-open-reader"></i>
                     </div>
                     <div class="d-block">
-                      <h4 class="fw-bold mb-3 fs-5">Business Registration</h4>
-                      <p class="mb-0">PAN Card and Udyam Registration (for MSE benefits).</p>
+                      <h3 class="fw-bold mb-3 fs-5">Missing or Incorrect CRAC Reference</h3>
+                      <p class="mb-0">The most common mistake! Always wait for the CRAC and include its details.</p>
                     </div>
                   </div>
                 </div>
@@ -207,8 +207,8 @@
                       <i class="fa-solid fa-book-open-reader"></i>
                     </div>
                     <div class="d-block">
-                      <h4 class="fw-bold mb-3 fs-5">Tax Compliance</h4>
-                      <p class="mb-0">Valid GST Registration Certificate.</p>
+                      <h3 class="fw-bold mb-3 fs-5">Mismatched GSTIN</h3>
+                      <p class="mb-0">Using a different branch's GSTIN than the one registered on GeM.</p>
                     </div>
                   </div>
                 </div>
@@ -218,8 +218,8 @@
                       <i class="fa-solid fa-book-open-reader"></i>
                     </div>
                     <div class="d-block">
-                      <h4 class="fw-bold mb-3 fs-5">Financial Proof</h4>
-                      <p class="mb-0">Bank Account Details and a Cancelled Cheque.</p>
+                      <h3 class="fw-bold mb-3 fs-5">Rounding Errors</h3>
+                      <p class="mb-0">The final amount on the invoice differs from the PO by even ₹1 due to rounding GST/Taxes. Keep it precise.</p>
                     </div>
                   </div>
                 </div>
@@ -229,28 +229,48 @@
                       <i class="fa-solid fa-book-open-reader"></i>
                     </div>
                     <div class="d-block">
-                      <h4 class="fw-bold mb-3 fs-5">Identity</h4>
-                      <p class="mb-0">Aadhaar Card of the authorized person.</p>
+                      <h3 class="fw-bold mb-3 fs-5">Delayed Upload</h3>
+                      <p class="mb-0">Not uploading the invoice and delivery confirmation in the GeM system promptly after physical delivery.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="h-100 d-flex p-4 py-lg-5 rounded-5 border bg-light-grey shadow">
+                    <div class="ser-doc-icon">
+                      <i class="fa-solid fa-book-open-reader"></i>
+                    </div>
+                    <div class="d-block">
+                      <h3 class="fw-bold mb-3 fs-5">Incorrect Bank Details</h3>
+                      <p class="mb-0">Forgetting to update bank details after a recent change, leading to failed payment transfers.</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <div class="col-xl-4">
+            <div class="h-100">
+
+            </div>
+          </div>
+        </div>
+        <div class="p-4">
+            <p>Stop Payment Worries! Our dedicated team provides a full compliance review of your invoice draft before you submit it. This is the difference between getting paid in 7 days or 45 days! </p>
         </div>
       </div>
     </section>
     <!-- Why GeM Problem Section End -->
-    <!-- Why Choose Us Start --> <?php include 'includes/why-choose-us.php';?>
+    <!-- Why Choose Us Start -->
+    <?php include 'includes/why-choose-us.php';?>
     <!-- Why Choose Us End -->
     <!--FAQ Section Start -->
     <section class="section faq-section bg-light-grey">
       <div class="container">
         <hgroup class="mb-5">
           <span class="subtitle">Client FAQs</span>
-          <h2 class="h2-title mb-3"> Frequently Asked by <b> Clients</b>
+          <h2 class="h2-title mb-3"> GeM Payment Timeline and <b> Troubleshooting</b>
           </h2>
-          <p class="title-paragraph">We believe in making the process as clear as possible45. Here are the answers to the questions we hear most often from entrepreneurs and small businesses across India.</p>
+          <p class="title-paragraph">Here are the most common questions Indian entrepreneurs and MSMEs ask about getting paid on GeM</p>
         </hgroup>
         <div class="row g-lg-5 g-4 align-items-center">
           <div class="col-lg-5">
@@ -265,12 +285,11 @@
                   <div class="accordion-item">
                     <h3 class="accordion-header">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <span>1. </span> What exactly is GeM? </button>
+                        <span>1. </span> How long does it take to get paid after generating the invoice? </button>
                     </h3>
                     <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
-                        <p>
-                          <strong>GeM (Government e-Marketplace)</strong> is an online portal launched by the Government of India for the transparent and efficient procurement of common goods and services by various government departments, organizations, and Public Sector Undertakings (PSUs). <strong>It’s your storefront to the Government!</strong>
+                        <p>Generally, the government buyer is mandated to process payment within 10 days of successful CRAC generation and acceptance of the final invoice. (New: GeM Payment Processing Time) However, this can vary based on the specific buying authority. Proactive follow-up is key, and we provide this service to our clients.
                         </p>
                       </div>
                     </div>
@@ -278,12 +297,11 @@
                   <div class="accordion-item">
                     <h3 class="accordion-header">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        <span>2. </span> Is GeM Registration mandatory to sell to the government? </button>
+                        <span>2. </span> What is the fastest way to resolve a payment delay? </button>
                     </h3>
                     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
-                        <p>
-                          <strong>Yes, absolutely.</strong> All government departments are mandated to procure goods and services through the GeM portal, making registration a prerequisite for any business wishing to participate in high-value government tenders.
+                        <p>First, check the GeM CRAC Generation Status to see if the payment is stuck at the consignee or the PAO/DDO (Payment Authority). The fastest method is direct, polite communication with the consignee (the buyer) via the GeM messaging system, referencing the PO and CRAC numbers. If that fails, escalate the issue through the GeM Grievance mechanism. As your partner, we handle this escalation process for you. 
                         </p>
                       </div>
                     </div>
@@ -291,57 +309,24 @@
                   <div class="accordion-item">
                     <h3 class="accordion-header">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        <span>3. </span> How long does the GeM registration process take with your help? </button>
+                        <span>3. </span> Can I charge interest if the payment is delayed? </button>
                     </h3>
                     <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
-                        <p>Once all your documents are prepared and submitted to us, we can typically complete your profile setup and submission within <strong>24 to 48 hours</strong>. The final approval time depends on the GeM portal’s verification process, which is usually fast. </p>
+                        <p>According to the MSME Samadhan scheme, MSMEs are legally entitled to interest on delayed payments. Pursuing this requires formal escalation. It's best to engage with the buyer first. (New: GeM Delayed Payment Interest) Ensure you have your Udyam Registration certificate for leveraging MSME protections.</p>
                       </div>
                     </div>
                   </div>
                   <div class="accordion-item">
                     <h3 class="accordion-header">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        <span>4. </span> I am an MSME/Small Business. Are there special benefits for me? </button>
+                        <span>4. </span> Is the GST amount reimbursed to me, or is it paid directly by the buyer? </button>
                     </h3>
                     <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
                         <p>
-                          <strong>Definitely!</strong> GeM strongly promotes <strong>MSMEs (Micro, Small, and Medium Enterprises)</strong>. Benefits include exemptions from earnest money deposits (EMD) and advance payment requirements, and the exclusive reservation of certain tenders for MSMEs only. We ensure your Udyam Registration is correctly linked to maximize these advantages. (New: Udyam Registration for GeM)
+                          The total invoice value, including the applicable GST, is paid to your registered bank account by the government buyer's payment authority. You are responsible for filing your GST returns and remitting the tax collected to the government.
                         </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h3 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                        <span>5. </span> What are the primary documents required for registration? </button>
-                    </h3>
-                    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        <p>The core requirements are your firm’s PAN Card, a valid <strong>GST Registration</strong> certificate, <strong>Udyam Registration</strong> certificate (for MSME benefits), and details of your business Bank Account. We’ll handle the preparation and uploading of these. </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h3 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
-                        <span>6. </span> Can I register for GeM without your services? </button>
-                    </h3>
-                    <div id="collapsesix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        <p>Yes, you can. However, the GeM portal process can be complex, and errors in documentation or category listing can lead to rejection and significant delays. We ensure <strong>perfect compliance</strong> and the <strong>correct listing</strong> of your products/services the first time, saving you time and frustration. </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h3 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseseven" aria-expanded="false" aria-controls="collapseseven">
-                        <span>7. </span>After registration, will you help me with bidding on tenders? </button>
-                    </h3>
-                    <div id="collapseseven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        <p>Our primary service focuses on the <strong>complete, flawless registration</strong> of your profile. However, we provide a quick orientation and resource guide to help you understand the basics of searching for and participating in tenders post-registration. </p>
                       </div>
                     </div>
                   </div>
@@ -356,16 +341,18 @@
     <section class="section cta-section">
       <div class="container">
         <!-- Client Logo Slider Start -->
-        <div class="d-block w-100 mb-lg-5 mb-4"> <?php include 'includes/client-logo-slider.php';?> </div>
+        <div class="d-block w-100 mb-lg-5 mb-4">
+          <?php include 'includes/client-logo-slider.php';?>
+        </div>       
         <!-- Client Logo Slider End -->
         <div class="p-xl-5 p-4 bg-white rounded-5 border shadow">
           <div class="row g-5 align-items-center">
             <div class="col-lg-8">
               <div class="h-100 bg-white">
-                <h2 class="h2-title mb-3"> Ready to Sell to the <b> Government of India?</b>
+                <h2 class="h2-title mb-3"> Need Real-Time Invoice Review and <b> Follow-up Support?</b>
                 </h2>
-                <p class="fs-18 fw-medium mb-4">The next tender could be yours! Stop letting the registration paperwork slow you down. Let our friendly and expert team handle the process so you can focus on running your business.</p>
-                <a title="Explore More" class="btn-primary" href="/contact-us.php"> Start Your GeM Registration Today! <span>
+                <p class="fs-18 fw-medium mb-4">Partner with the Leading GeM Experts Nationwide Today! </p>
+                <a title="Explore More" class="btn-primary" href="/contact-us.php"> Contact Us <span>
                     <svg id="Layer_1" enablebackground="new 0 0 100 100" height="40" viewBox="0 0 100 100" fill="#f70629" width="40" xmlns="http://www.w3.org/2000/svg">
                       <path d="m50 10.75c-18.266 0-34.562 13.129-38.383 31.007-1.909 8.933-.623 18.432 3.636 26.515 4.099 7.779 10.819 14.066 18.859 17.629 8.363 3.707 17.964 4.353 26.754 1.825 8.48-2.438 15.999-7.789 21.118-14.972 10.703-15.017 9.272-36.111-3.32-49.567-7.38-7.886-17.862-12.437-28.664-12.437zm18.829 41.347-10.7 10.958c-2.709 2.775-6.991-1.429-4.293-4.191l5.399-5.529h-25.586c-1.817 0-3.333-1.517-3.333-3.333s1.517-3.333 3.333-3.333h25.458l-5.506-5.505c-2.736-2.736 1.506-6.979 4.242-4.243l10.961 10.96c1.162 1.161 1.173 3.041.025 4.216z"></path>
                     </svg>
