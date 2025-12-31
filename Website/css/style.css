@@ -5,7 +5,6 @@
   --color-white:#ffffff;
   --color-black:#000000;
   --color-light-black:#7a7a7a;
-  --color-light-grey:#f0f0f0;
   --color-dark-grey:#303031;
   --fs-family-body: "Roboto", sans-serif;
 }
@@ -32,7 +31,7 @@ hgroup{margin-bottom: 30px;}
 .bg-grey {background-color: var(--color-grey);}
 .bg-red{background-color: var(--color-red);}
 .bg-dark-grey {background-color: var(--color-dark-grey);}
-.bg-light-grey {background-color: var(--color-light-grey);}
+.bg-light-grey {background-color: var(--color-grey);}
 .text-red {color: var(--color-red) !important;}
 .text-light-black{color: var(--color-light-black) !important;}
 .border-red {border-color: var(--color-red) !important;}
@@ -76,10 +75,10 @@ h1 span {background: transparent;height: auto;width: auto;color: transparent;-we
 .features-list li:last-child{border-bottom: none;padding-bottom: 0;margin-bottom: 0;} 
 .home-services{background: linear-gradient(0deg,rgba(222, 66, 74, 0.07) 5%, rgba(255, 255, 255, 1) 100%);}
 .home-services-icon{height: 76px;width: 73px;display: flex;justify-content: center;align-items: center;border: 5px solid var(--color-white);  border-radius: 20px;background: linear-gradient(140deg,rgba(222, 66, 74, 1) 30%, rgba(255, 255, 255, 1) 100%);box-shadow: 0px 0px 58px 20px rgba(0, 0, 0, 0.09);flex-shrink: 0;margin-right: 25px;}
-.why-choose-box{position: relative;overflow: hidden;background-color: var(--color-light-grey);padding: 40px 20px;}
+.why-choose-box{position: relative;overflow: hidden;background-color: var(--color-grey);padding: 40px 20px;}
 .why-choose-box-content{position: absolute;top: 100%;left: 0;height: 100%;width: 100%;background-color: var(--color-red);padding: 20px;display: flex;align-items: center;transition: all 0.8s ease-in-out;color: var(--color-white);}
 .why-choose-box:hover .why-choose-box-content{top: 0;transition: all 0.8s ease-in-out;}
-.process-step li {position: relative;list-style: none;padding-left: 80px;margin-bottom: 20px;padding-bottom: 20px;border-bottom: 1px solid var(--color-light-grey);color: #0F0928;}
+.process-step li {position: relative;list-style: none;padding-left: 80px;margin-bottom: 20px;padding-bottom: 20px;border-bottom: 1px solid var(--color-grey);color: #0F0928;}
 .process-step li:last-child {border-bottom: none;margin-bottom: 0;padding-bottom: 0;}
 .process-step li::after {counter-increment: section;content: "0" counter(section)".";position: absolute;top: 0;left: 0;color: var(--color-red);font-size: 35px;font-weight: 700;}
 .client-faq .accordion-item {background: transparent;border-color: transparent;margin-bottom: 10px;}
@@ -90,7 +89,7 @@ h1 span {background: transparent;height: auto;width: auto;color: transparent;-we
 .client-faq .accordion-body{font-size: 16px;line-height: 24px;}
 .client-logo-slider {overflow: hidden;position: relative;width: auto;}
 .client-logo-slide-track {animation: client-logo-scroll linear infinite 20s;display: flex;gap: 20px;}
-.client-logo-slide-track > div{border: 1px solid var(--color-light-grey);border-radius: 50px;background-color: var(--color-light-grey);padding: 12px 30px;}
+.client-logo-slide-track > div{border: 1px solid var(--color-grey);border-radius: 50px;background-color: var(--color-grey);padding: 12px 30px;}
 .client-logo-slide-track img{opacity: 0.5;transition: all 0.3s ease;}
 .client-logo-slide-track > div:hover img{opacity: 1;}
 .client-testimonial-image{background: url(./images/client-01.jpg) no-repeat center center;background-size: cover;}
@@ -109,6 +108,68 @@ footer{background-color: #464646;}
 .footer-links li a{color: var(--color-white);transition: all 0.3s ease;}
 .footer-links li a:hover{color: var(--color-red);}
 .footer-contact-icon{height: 50px;width: 50px;display: flex;justify-content: center;align-items: center;background: linear-gradient(34deg, rgba(0, 0, 0, 1) 0%, rgba(222, 66, 74, 1) 50%, rgba(255, 255, 255, 1) 100%);border-radius: 10px;color: var(--color-white);margin-right: 17px;border: 5px solid var(--color-white);flex-shrink: 0;}
+/* Form Input Css Start */
+/* Icon positioning */
+.input-icon i {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  color: #808080;
+  font-size: 1rem;
+  pointer-events: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+  z-index: 5;
+}
+
+/* Form fields */
+.input-icon .form-control,
+.input-icon .form-select {
+  border-radius: 10px;
+  border: 1px solid #808080;
+  background-color: var(--color-grey);
+  transition: all 0.3s ease;
+  padding-left: 2.6rem !important; /* spacing for icon */
+}
+
+/* Float label fix */
+.input-icon .form-floating > label {
+  left: 2.6rem;
+  color: #444444;
+  padding-left: 0.2rem;
+}
+
+/* Placeholder and input text alignment */
+.input-icon .form-control::placeholder,
+.input-icon .form-select::placeholder {
+  padding-left: 0 !important;
+}
+
+/* Remove default Bootstrap floating label padding misalignment */
+.input-icon .form-control:not(:placeholder-shown),
+.input-icon .form-select:not(:placeholder-shown) {
+  padding-left: 2.9rem !important;
+}
+
+/* On focus – lift icon, highlight border */
+.input-icon:focus-within i {
+  color: var(--color-red);
+  transform: translateY(-50%) scale(1.15);
+}
+
+.input-icon .form-control:focus,
+.input-icon .form-select:focus {
+  border-color: var(--color-red);
+  background-color: var(--color-white);
+  box-shadow: 0 0 0 0.25rem rgba(251, 175, 3, 0.15);
+}
+
+/* Textarea fix */
+.textarea-icon i {
+  top: 1.3rem;
+  transform: none;
+}
+
 /* Services Css Start */
 .service-banner {display: flex;align-items: center;height: 600px;position: relative;background: url('./images/hero-banner-01.jpg') center center no-repeat;background-size: cover;}
 .service-banner > .container{position: relative;z-index: 1;}
