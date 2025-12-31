@@ -352,8 +352,7 @@
           <div class="col-lg-8">
             <hgroup class="mb-5">
               <span class="subtitle">Process Overview</span>
-              <h2 class="h2-title mb-3"> Your 3-Step Journey to <b> Business Success</b>
-              </h2>
+              <h2 class="h2-title mb-3"> Your 3-Step Journey to <b> Business Success</b></h2>
               <p class="title-paragraph">We make complexity simple. Here is how we get you started</p>
             </hgroup>
             <div class="d-block">
