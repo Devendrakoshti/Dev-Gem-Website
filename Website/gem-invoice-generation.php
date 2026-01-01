@@ -289,7 +289,7 @@
                     </h3>
                     <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
-                        <p>Generally, the government buyer is mandated to process payment within 10 days of successful CRAC generation and acceptance of the final invoice. (New: GeM Payment Processing Time) However, this can vary based on the specific buying authority. Proactive follow-up is key, and we provide this service to our clients.
+                        <p>While the standard GeM Payment Processing Time is mandated at 10 days following successful CRAC generation and final invoice acceptance, our team provides proactive follow-up services to navigate variations across different buying authorities and ensure timely fund release.
                         </p>
                       </div>
                     </div>
@@ -301,7 +301,7 @@
                     </h3>
                     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
-                        <p>First, check the GeM CRAC Generation Status to see if the payment is stuck at the consignee or the PAO/DDO (Payment Authority). The fastest method is direct, polite communication with the consignee (the buyer) via the GeM messaging system, referencing the PO and CRAC numbers. If that fails, escalate the issue through the GeM Grievance mechanism. As your partner, we handle this escalation process for you. 
+                        <p>If you encounter delays after checking your consignee or PAO/DDO status, our GeM Payment Follow-up Service provides professional intervention, managing everything from direct buyer communication to formal escalations through the GeM Grievance mechanism.
                         </p>
                       </div>
                     </div>
@@ -313,7 +313,7 @@
                     </h3>
                     <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
-                        <p>According to the MSME Samadhan scheme, MSMEs are legally entitled to interest on delayed payments. Pursuing this requires formal escalation. It's best to engage with the buyer first. (New: GeM Delayed Payment Interest) Ensure you have your Udyam Registration certificate for leveraging MSME protections.</p>
+                        <p>Under the MSME Samadhan scheme, businesses can claim GeM Delayed Payment Interest on overdue invoices, and we provide the formal escalation support needed to leverage your Udyam Registration for these legal protections.</p>
                       </div>
                     </div>
                   </div>

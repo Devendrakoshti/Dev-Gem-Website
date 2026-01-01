@@ -307,7 +307,7 @@
                     <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
                         <p>
-                          <strong>Definitely!</strong> GeM strongly promotes <strong>MSMEs (Micro, Small, and Medium Enterprises)</strong>. Benefits include exemptions from earnest money deposits (EMD) and advance payment requirements, and the exclusive reservation of certain tenders for MSMEs only. We ensure your Udyam Registration is correctly linked to maximize these advantages. (New: Udyam Registration for GeM)
+                          To unlock significant competitive advantages, we provide expert Udyam Registration for GeM to ensure your profile is correctly linked, granting you access to mandatory EMD exemptions and exclusive tender reservations reserved for MSMEs.
                         </p>
                       </div>
                     </div>
@@ -319,7 +319,7 @@
                     </h3>
                     <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
-                        <p>The core requirements are your firm’s PAN Card, a valid <strong>GST Registration</strong> certificate, <strong>Udyam Registration</strong> certificate (for MSME benefits), and details of your business Bank Account. We’ll handle the preparation and uploading of these. </p>
+                        <p>Our team streamlines your onboarding by meticulously organizing all mandatory Documents for GeM Registration, including your firm’s PAN card, GST certificate, Udyam registration, and bank account details, to ensure a rejection-free application process.</p>
                       </div>
                     </div>
                   </div>

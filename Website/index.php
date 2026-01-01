@@ -171,7 +171,7 @@
                   </div>
                   <h3 class="mb-0 fs-5 fw-bold">GeM Catalogue Management Services</h3>
                 </div>
-                <p class="text-light-black mb-xxl-4 mb-3">Professional management of your product/service listings, optimizing them for visibility and compliance, including complex tasks like L1 Comparison Service setup. (New: GeM Product Listing Service, GeM Profile Optimization)</p>
+                <p class="text-light-black mb-xxl-4 mb-3">Our GeM Product Listing Service provides comprehensive GeM Profile Optimization by managing your digital catalogue for maximum visibility and strict compliance, including the technical configuration required for the L1 Comparison Service.</p>
                 <a href="#" class="link-red d-inline-flex align-items-center">Learn More <i class="fa-solid fa-arrow-right fs-4 ms-2"></i>
                 </a>
               </div>
@@ -186,7 +186,7 @@
                   </div>
                   <h3 class="mb-0 fs-5 fw-bold">Essential Business Certifications</h3>
                 </div>
-                <p class="text-light-black mb-xxl-4 mb-3">Hassle-free application and renewal for mandatory documents like the MSME Udyam Certificate and ISO Certification, building instant credibility.</p>
+                <p class="text-light-black mb-xxl-4 mb-3">Strengthen your bidding authority with our hassle-free Udyam Registration Online and ISO Certification for MSME services, ensuring your business maintains the mandatory credentials required for GeM tender eligibility and vendor assessment.</p>
                 <a href="#" class="link-red d-inline-flex align-items-center">Learn More <i class="fa-solid fa-arrow-right fs-4 ms-2"></i>
                 </a>
               </div>
@@ -515,7 +515,7 @@
                     </h3>
                     <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
-                        <p>The Government e-Marketplace (GeM) is the national public procurement portal in India. It’s mandatory for government bodies to procure goods and services through it, making it the biggest opportunity for SMEs in India.</p>
+                        <p>As the national public procurement portal, the Government e-Marketplace (GeM) is mandatory for all government bodies, and our expert GeM Consultant India services help SMEs navigate this platform to secure their share of the country’s largest B2G business opportunities.</p>
                       </div>
                     </div>
                   </div>
@@ -537,7 +537,7 @@
                     </h3>
                     <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
-                        <p>The timeline varies based on your product complexity, but our streamlined process is designed for maximum speed. We aim to provide quick approvals so your products can go live for Government Tender Bidding as soon as possible.</p>
+                        <p>While timelines depend on product complexity, our GeM Product Listing Service and GeM Profile Optimization utilize a streamlined process to accelerate approvals, ensuring your offerings are live for government tender bidding with minimal turnaround time.</p>
                       </div>
                     </div>
                   </div>

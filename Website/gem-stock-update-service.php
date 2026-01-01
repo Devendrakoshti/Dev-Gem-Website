@@ -206,7 +206,7 @@ Success Note: The system will give a success prompt, and the internal 90-day cou
                     </div>
                     <div class="d-block">
                       <h4 class="fw-bold mb-3 fs-5">Bulk Update Service</h4>
-                      <p class="mb-0">For sellers with extensive catalogues, we offer a dedicated service to manage and update stock quantities across multiple listings efficiently.(New: GeM Stock Update Help)</p>
+                      <p class="mb-0">For sellers maintaining extensive catalogues, we provide a dedicated GeM Stock Update Help service to efficiently manage and synchronize inventory quantities across multiple listings, ensuring your products remain available for government purchase orders.</p>
                     </div>
                   </div>
                 </div>
@@ -228,7 +228,7 @@ Success Note: The system will give a success prompt, and the internal 90-day cou
                     </div>
                     <div class="d-block">
                       <h4 class="fw-bold mb-3 fs-5">Price and Availability Synchronization</h4>
-                      <p class="mb-0">Ensuring that your GeM prices and stock align with your internal inventory system. (New: GeM Price Update Guide)</p>
+                      <p class="mb-0">Maintain total operational accuracy by ensuring your portal data remains synchronized with our comprehensive GeM Price Update Guide, designed to align your live listings with your internal inventory systems and current market valuations.</p>
                     </div>
                   </div>
                 </div>
@@ -268,7 +268,7 @@ Success Note: The system will give a success prompt, and the internal 90-day cou
                     <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
                         <p>
-                          <strong>Yes, you can! Find it in the 'Expired Offerings' tab, click 'Edit', update the 'Current Stock' quantity, and save. The listing will be moved back to the 'Published' tab immediately. (New: GeM Offering Renewal Process)
+                         To reactivate your listings, follow the GeM Offering Renewal Process by accessing the ‘Expired Offerings’ tab to update your stock quantities, which immediately moves your products back to the ‘Published’ status for active buyer visibility.
                         </p>
                       </div>
                     </div>
@@ -281,7 +281,7 @@ Success Note: The system will give a success prompt, and the internal 90-day cou
                     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
                         <p>
-                          No, updating the stock primarily resets the 90-day countdown for availability. Price updates must be done separately by editing the price field on the same Quantity and Price screen. We recommend reviewing both stock and price regularly. (New: GeM Price Update Guide)
+                          While stock adjustments reset your availability countdown, our comprehensive GeM Price Update Guide ensures you accurately navigate the Quantity and Price screen to maintain market-aligned pricing and peak listing performance.
                         </p>
                       </div>
                     </div>
@@ -293,7 +293,7 @@ Success Note: The system will give a success prompt, and the internal 90-day cou
                     </h3>
                     <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
-                        <p>This is a serious risk. The buyer can raise a deviation incident against you, which may result in penalties, including a poor seller rating or, in severe cases, suspension from the portal. Accurate stock is mandatory. (New: GeM Listing Suspension Reasons) </p>
+                        <p>Inaccurate stock management poses a serious risk of buyer-raised deviation incidents, which are among the most common GeM Listing Suspension Reasons that lead to financial penalties, poor seller ratings, or permanent portal bans.</p>
                       </div>
                     </div>
                   </div>
