@@ -20,8 +20,8 @@
     <link rel="preconnect" href="https://js.clarity.ms">
     <link rel="preload" href="" as="image" fetchpriority="high">
     <!----- Title Tags ------>
-    <title>GeM Registration Consultant India & Seller Registration Online</title>
-    <meta name="description" content="Expert GeM Registration Services Nationwide. Fast, 48-hour GeM Seller Registration Online. Get support for the Udyam link and essential documents.">
+    <title>GeM Vendor Assessment Consultant, RITES Audit & OEM Support</title>
+    <meta name="description" content="Expert GeM Vendor Assessment Support Nationwide. Clear your RITES/QCI audit, secure OEM status, and claim MSME exemption benefits easily.">
     <!----- Title Tags Ends ------>
     <!----- SEO Tags ------>
     <link rel="canonical" href="">
@@ -45,11 +45,11 @@
             <div class="text-white">
               <div class="page-path">
                 <span>
-                  <i class="fa-solid fa-house text-red me-1"></i> Home <i class="fa-solid fa-chevron-right mx-1 fs-12"></i> GeM Registration </span>
+                  <i class="fa-solid fa-house text-red me-1"></i> Home <i class="fa-solid fa-chevron-right mx-1 fs-12"></i> GeM Vendor Assessment Support </span>
               </div>
-              <h1 class="mb-1">GeM Registration Consultant India: Your <span>Simple Path</span> to Sell to the Government! </h1>
-              <p class="fs-18 mb-4 lh-base">Stop missing out on high-value government tenders. We are your expert GeM Registration Services Provider Nationwide, making the process fast, easy, and stress-free for your small business.</p>
-              <a title="Explore More" class="btn-primary" href="/contact-us.php"> Get GeM Registered in 48 Hours <span>
+              <h1 class="mb-1">Stop Worrying About the Audit! Expert <span>GeM Vendor Assessment</span> Support Nationwide</h1>
+              <p class="fs-18 mb-4 lh-base">Hello, Manufacturer! Is the mandatory GeM Vendor Assessment audit holding back your brand’s official OEM status? Don’t stress! We are your national GeM Vendor Assessment Consultant, here to simplify the complex RITES/QCI verification process and guarantee your approval.</p>
+              <a title="Explore More" class="btn-primary" href="/contact-us.php"> Secure Your OEM Status Today! <span>
                   <svg id="Layer_1" enableBackground="new 0 0 100 100" height="40" viewBox="0 0 100 100" fill="#f70629" width="40" xmlns="http://www.w3.org/2000/svg">
                     <path d="m50 10.75c-18.266 0-34.562 13.129-38.383 31.007-1.909 8.933-.623 18.432 3.636 26.515 4.099 7.779 10.819 14.066 18.859 17.629 8.363 3.707 17.964 4.353 26.754 1.825 8.48-2.438 15.999-7.789 21.118-14.972 10.703-15.017 9.272-36.111-3.32-49.567-7.38-7.886-17.862-12.437-28.664-12.437zm18.829 41.347-10.7 10.958c-2.709 2.775-6.991-1.429-4.293-4.191l5.399-5.529h-25.586c-1.817 0-3.333-1.517-3.333-3.333s1.517-3.333 3.333-3.333h25.458l-5.506-5.505c-2.736-2.736 1.506-6.979 4.242-4.243l10.961 10.96c1.162 1.161 1.173 3.041.025 4.216z" />
                   </svg>
@@ -71,32 +71,31 @@
           <div class="col-lg-8">
             <div class="h-100">
               <hgroup>
-                <span class="subtitle">About the Company</span>
-                <h2 class="h2-title"> Why Every Indian Entrepreneur Needs <b> GeM Registration</b>
-                </h2>
+                <span class="subtitle">The Problem</span>
+                <h2 class="h2-title"> The Truth About GeM <b> Vendor Assessment</b></h2>
               </hgroup>
-              <p class="mb-4">The <strong>Government e-Marketplace (GeM)</strong> is the mandatory platform for government departments to purchase goods and services. If you’re not registered, you can’t participate! 13GeM levels the playing field, giving your small business direct access to massive government buying power—something once available only to big corporations. </p>
+              <p class="mb-4">The GeM Vendor Assessment (VA) is a crucial, mandatory check for every manufacturer (OEM) and for sellers dealing in high-value (Q1/Q2) product categories. It validates three core things to the government buyer: Authenticity, Capacity, and Quality. The Assessment is Tough, But Our Support is Simple.</p>
               <div class="h-100 d-block">
-                <h3 class="mb-3">Why Choose GeM?</h3>
+                <h3 class="mb-3">The VA Challenge: You Face Our Expert GeM Vendor Assessment Solution</h3>
                 <ul class="arrow-up-square-list list-unstyled fs-16">
                   <li>
                     <div>
-                      <span class="fw-bold me-1">Massive Market:</span> Tap into an annual procurement budget of billions from Central & State government bodies.
+                      <span class="fw-bold me-1">Confusing Documentation for RITES/QCI submission. Meticulous Preparation: </span> Our experts take the complexity out of OEM verification by handling your entire document compilation—from detailed financial statements to mandatory factory licenses—ensuring all GeM VA Audit Documents are perfectly organized for a successful RITES or QCI assessment.
                     </div>
                   </li>
                   <li>
                     <div>
-                      <span class="fw-bold me-1">Trust & Transparency:</span> GeM ensures a fair, secure, and transparent bidding process for all.
+                      <span class="fw-bold me-1">Desktop/Video Audit Anxiety and facility inspection. Audit Prep Coaching: </span> We provide comprehensive, step-by-step guidance to ensure your facility and team are fully prepared for the mandatory video assessment through our specialized GeM RITES Audit Preparation service, guaranteeing a professional and compliant presentation of your manufacturing unit.
                     </div>
                   </li>
                   <li>
                     <div>
-                      <span class="fw-bold me-1">Boost Your Brand:</span> Selling to the government instantly boosts your credibility and brand reputation.
+                      <span class="fw-bold me-1">Missing Out on Exemptions for MSMEs/Startups. Exemption Advocacy: </span> Maximize your competitive advantage by utilizing our GeM Vendor Assessment Exemption for MSME service, where we analyze your Udyam and Startup status to successfully claim mandatory VA waivers and fast-track your OEM dashboard access.
                     </div>
                   </li>
                   <li>
                     <div>
-                      <span class="fw-bold me-1">Local Advantage:</span> Special provisions for MSEs (Micro and Small Enterprises), including exemptions from tender fees.
+                      <span class="fw-bold me-1">Risk of Rejection and the delay it causes. Flawless Application: </span> Our experience minimizes Non-Compliance (NC) notes, ensuring fast-track approval.
                     </div>
                   </li>
                 </ul>
@@ -118,137 +117,70 @@
       </div>
     </section>
     <!-- Why GeM Problem Section End -->
-    <!-- Why GeM Solution  Section Start -->
-    <section class="section bg-light-grey mt-100">
-      <div class="container">
-        <div class="row g-5 mb-4">
-          <div class="col-lg-4 col-md-8">
-            <div class="solution-section-img">
-              <img src="./images/about-us.jpg" alt="About Us" title="About Us" class="img-fluid rounded-5" width="1120" height="1200">
-            </div>
-          </div>
-          <div class="col-lg-8">
-            <div class="h-100">
-              <div class="d-flex justify-content-between">
-                <hgroup>
-                  <span class="subtitle">Our Registration Services </span>
-                  <h2 class="h2-title"> Fast, Friendly GeM Registration <b> Services Nationwide</b>
-                  </h2>
-                </hgroup>
-              </div>
-              <p class="mb-4">We know you’re busy growing your business. Dealing with complex government forms and paperwork is the last thing you want to do. That’s where we step in! As dedicated GeM Registration experts, we handle the entire process from start to finish, ensuring your profile is complete, compliant, and ready to secure your first tender.</p>
-            </div>
-          </div>
-        </div>
-        <div class="d-block w-100">
-          <h3 class="mb-4">What We Handle For You</h3>
-          <div class="row g-4 fs-16">
-            <div class="col-xl-3 col-md-6">
-              <div class="h-100 rounded-5 border bg-white shadow p-4">
-                <img src="images/icons/setting.svg" alt="Profile Setup" title="Profile Setup" class="img-fluid mb-3" width="35" height="35">
-                <h4 class="fw-medium mb-2 fs-5 text-red">Profile Setup</h4>
-                <p class="mb-0">Creating and verifying your seller or service provider profile on the GeM portal.</p>
-              </div>
-            </div>
-            <div class="col-xl-3 col-md-6">
-              <div class="h-100 rounded-5 border bg-white shadow p-4">
-                <img src="images/icons/database-file.svg" alt="Profile Setup" title="Profile Setup" class="img-fluid mb-3" width="33" height="33">
-                <h4 class="fw-medium mb-2 fs-5 text-red">Document Management</h4>
-                <p class="mb-0">Expertly organizing and uploading all necessary documents <strong>(PAN, Udyam, GST, Bank Details)</strong>. </p>
-              </div>
-            </div>
-            <div class="col-xl-3 col-md-6">
-              <div class="h-100 rounded-5 border bg-white shadow p-4">
-                <img src="images/icons/category.svg" alt="Profile Setup" title="Profile Setup" class="img-fluid mb-3" width="30" height="30">
-                <h4 class="fw-medium mb-2 fs-5 text-red">Category Listing</h4>
-                <p class="mb-0">Correctly listing your products or services to maximize visibility to buyers.</p>
-              </div>
-            </div>
-            <div class="col-xl-3 col-md-6">
-              <div class="h-100 rounded-5 border bg-white shadow p-4">
-                <img src="images/icons/learning.svg" alt="Profile Setup" title="Profile Setup" class="img-fluid mb-3" width="40" height="40">
-                <h4 class="fw-medium mb-2 fs-5 text-red">Training & Support</h4>
-                <p class="mb-0">A quick, friendly orientation on how to manage your dashboard and bid on tenders.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Why GeM Solution  Section End -->
-    <!-- Why GeM Problem Section Start -->
+      <!-- Why GeM Problem Section Start -->
     <section class="section">
       <div class="container">
         <hgroup class="mb-5">
-          <span class="subtitle">GeM Registration Requirements</span>
-          <h2 class="h2-title mb-3">Documents for GeM Registration You’ll Need to <b> Start Your GeM Journey</b>
+          <span class="subtitle">The Solution</span>
+          <h2 class="h2-title mb-3">Our Step-by-Step GeM Vendor Assessment <b> Success Plan</b>
           </h2>
-          <p class="title-paragraph">Getting ready is simple! For your GeM Registration to be successful, you’ll need a few key documents. Our team will guide you on exactly how to prepare them.</p>
+          <p class="title-paragraph">We turn the complex, two-stage RITES/QCI audit into a clear, manageable process for you.</p>
         </hgroup>
-        <h3 class="mb-4 fw-bold">Checklist for Indian Entrepreneurs</h3>
         <div class="row g-lg-5 g-4">
           <div class="col-xl-8">
             <div class="h-100">
               <div class="row g-4">
-                <div class="col-lg-6">
+                <div class="col-lg-12">
                   <div class="h-100 d-flex p-4 py-lg-5 rounded-5 border bg-light-grey shadow">
-                    <div class="ser-doc-icon">
-                      <i class="fa-solid fa-book-open-reader"></i>
-                    </div>
                     <div class="d-block">
-                      <h4 class="fw-bold mb-3 fs-5">Business Registration</h4>
-                      <p class="mb-0">PAN Card and Udyam Registration (for MSE benefits).</p>
+                      <h3 class="fw-bold mb-4 fs-4">Stage 1: Desktop Assessment (Document Verification)</h3>
+                      <ul class="mb-0">
+                        <li class="mb-3">
+                            <h4 class="fw-bold fs-5 d-inline">Document Collection & Scrutiny: </h4> We provide a custom checklist and ensure every document is updated, accurate, and uploaded correctly to the RITES/QCI vendor portal.
+                        </li>
+                        <li class="mb-3">
+                            <h4 class="fw-bold fs-5 d-inline">Profile Submission: </h4> Expert filling of the detailed online application, including production capacity data, supplier management details, and past performance history.
+                        </li>
+                        <li class="mb-3">
+                            <h4 class="fw-bold fs-5 d-inline">Fee Payment Assistance: </h4> Ensure seamless compliance by following our expert guidance on GeM Vendor Assessment Fees, where we help you calculate and pay the correct turnover-based assessment charges directly to authorized agencies like RITES or QCI.
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-12">
                   <div class="h-100 d-flex p-4 py-lg-5 rounded-5 border bg-light-grey shadow">
-                    <div class="ser-doc-icon">
-                      <i class="fa-solid fa-book-open-reader"></i>
-                    </div>
                     <div class="d-block">
-                      <h4 class="fw-bold mb-3 fs-5">Tax Compliance</h4>
-                      <p class="mb-0">Valid GST Registration Certificate.</p>
+                      <h3 class="fw-bold mb-4 fs-4">Stage 2: Video/Physical Assessment (Factory Verification)</h3>
+                      <ul class="mb-0">
+                        <li class="mb-3">
+                            <h4 class="fw-bold fs-5 d-inline">Audit Scheduling: </h4> We coordinate the official video assessment or physical audit with the agency on your behalf.
+                        </li>
+                        <li class="mb-3">
+                            <h4 class="fw-bold fs-5 d-inline">Facility Preparation: </h4> Maximize your approval rating with our GeM RITES Audit Preparation, featuring expert coaching on inspector queries, facility tour logistics, and the professional demonstration of your manufacturing, storage, and QA procedures.
+                        </li>
+                        <li class="mb-3">
+                            <h4 class="fw-bold fs-5 d-inline">Compliance Resolution: </h4> If the assessor raises any Non-Compliance (NC) points, we draft and submit the immediate clarifications and required proofs within the tight two-day window to keep your application moving.
+                        </li>
+                      </ul>
                     </div>
                   </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="h-100 d-flex p-4 py-lg-5 rounded-5 border bg-light-grey shadow">
-                    <div class="ser-doc-icon">
-                      <i class="fa-solid fa-book-open-reader"></i>
-                    </div>
-                    <div class="d-block">
-                      <h4 class="fw-bold mb-3 fs-5">Financial Proof</h4>
-                      <p class="mb-0">Bank Account Details and a Cancelled Cheque.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="h-100 d-flex p-4 py-lg-5 rounded-5 border bg-light-grey shadow">
-                    <div class="ser-doc-icon">
-                      <i class="fa-solid fa-book-open-reader"></i>
-                    </div>
-                    <div class="d-block">
-                      <h4 class="fw-bold mb-3 fs-5">Identity</h4>
-                      <p class="mb-0">Aadhaar Card of the authorized person.</p>
-                    </div>
-                  </div>
-                </div>
+                </div>                
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Why GeM Problem Section End -->
+    <!-- Why GeM Problem Section End -->   
     <!-- Why Choose Us Start --> 
      <section class="ser-choose-us black-film">
   <div class="container">
     <hgroup class="mb-5 text-white">
       <span class="subtitle">Why Choose Us?</span>
-      <h2 class="h2-title mb-3">Why We Are India’s <b> Trusted GeM Partner</b>
+      <h2 class="h2-title mb-3">Your Dedicated GeM Vendor Assessment <b> Consultant Nationwide</b>
       </h2>
-      <p class="title-paragraph">You have many choices, but we offer a unique blend of local expertise and commitment to the Indian entrepreneur.</p>
+      <p class="title-paragraph">We understand the national compliance landscape and the specific requirements of the GeM ecosystem. Our focus is 100% on your success.</p>
     </hgroup>
     <div class="row g-xl-5 g-4 align-items-center">
       <div class="col-lg-6">
@@ -257,20 +189,20 @@
             <div class="d-block">
               <ul class="list-unstyled mb-0 ps-0 text-white">
                 <li class="mb-4">
-                  <h3 class="fs-5 fw-bold mb-2 text-white">100% Success Rate</h3>
-                  <p class="text-white text-opacity-50 mb-0">We guarantee your GeM registration will be approved, saving you time and frustration.</p>
+                  <h3 class="fs-5 fw-bold mb-2 text-white">Vendor Assessment Specialists</h3>
+                  <p class="text-white text-opacity-50 mb-0">We are not just GeM agents; we are specialists in the VA process, dealing with RITES/QCI requirements daily.</p>
                 </li>
                 <li class="mb-4">
-                  <h3 class="fs-5 fw-bold mb-2 text-white">Dedicated National Support </h3>
-                  <p class="text-white text-opacity-50 mb-0">We understand the unique business needs and documentation specific to Indian businesses.</p>
+                  <h3 class="fs-5 fw-bold mb-2 text-white">MSME Advantage </h3>
+                  <p class="text-white text-opacity-50 mb-0">We prioritize leveraging your MSME benefits. If you hold NSIC, BIS, or a high turnover, we guide you through the GeM Vendor Assessment Exemption for MSME application to save time and money.</p>
                 </li>
                 <li class="mb-4">
-                  <h3 class="fs-5 fw-bold mb-2 text-white">Zero Hidden Fees</h3>
-                  <p class="text-white text-opacity-50 mb-0">Experience transparency with our fixed GeM Registration Fees, offering you an affordable, surprise-free path to becoming a verified government vendor without hidden consultancy costs.</p>
+                  <h3 class="fs-5 fw-bold mb-2 text-white">End-to-End Support</h3>
+                  <p class="text-white text-opacity-50 mb-0">From your initial GeM profile setup to clearing the final VA audit and launching your OEM panel—we manage the entire journey.</p>
                 </li>
                 <li>
-                  <h3 class="fs-5 fw-bold mb-2 text-white">Post-Registration Help</h3>
-                  <p class="text-white text-opacity-50 mb-0">Our partnership extends far beyond initial account setup; we provide ongoing GeM Profile Update Services to manage your listing adjustments, category expansions, and follow-up technical queries as your business grows on the portal.</p>
+                  <h3 class="fs-5 fw-bold mb-2 text-white">Proven Track Record</h3>
+                  <p class="text-white text-opacity-50 mb-0">We have successfully helped numerous manufacturers across India achieve their ‘VA Verified’ status, unlocking high-value government contracts.</p>
                 </li>
               </ul>
             </div>
@@ -346,9 +278,8 @@
       <div class="container">
         <hgroup class="mb-5">
           <span class="subtitle">Client FAQs</span>
-          <h2 class="h2-title mb-3"> Frequently Asked by <b> Clients</b>
+          <h2 class="h2-title mb-3"> GeM Vendor Assessment Your Questions <b> Answered!</b>
           </h2>
-          <p class="title-paragraph">We believe in making the process as clear as possible45. Here are the answers to the questions we hear most often from entrepreneurs and small businesses across India.</p>
         </hgroup>
         <div class="row g-lg-5 g-4 align-items-center">
           <div class="col-lg-5">
@@ -363,12 +294,12 @@
                   <div class="accordion-item">
                     <h3 class="accordion-header">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <span>1. </span> What exactly is GeM? </button>
+                        <span>1. </span> Is the GeM Vendor Assessment mandatory for all sellers?</button>
                     </h3>
                     <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
                         <p>
-                          <strong>GeM (Government e-Marketplace)</strong> is an online portal launched by the Government of India for the transparent and efficient procurement of common goods and services by various government departments, organizations, and Public Sector Undertakings (PSUs). <strong>It’s your storefront to the Government!</strong>
+                          No, but it’s mandatory for all Original Equipment Manufacturers (OEMs) seeking to register their brand and list products under Q1/Q2 categories. If you are a manufacturer seeking verification or completing the GeM OEM Brand Approval Process, the VA is essential.
                         </p>
                       </div>
                     </div>
@@ -376,12 +307,12 @@
                   <div class="accordion-item">
                     <h3 class="accordion-header">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        <span>2. </span> Is GeM Registration mandatory to sell to the government? </button>
+                        <span>2. </span> Who conducts the GeM Vendor Assessment (VA)? </button>
                     </h3>
                     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
                         <p>
-                          <strong>Yes, absolutely.</strong> All government departments are mandated to procure goods and services through the GeM portal, making registration a prerequisite for any business wishing to participate in high-value government tenders.
+                          The VA is typically conducted by GeM-approved agencies, primarily RITES (Rail India Technical and Economic Service) or previously the Quality Council of India (QCI). They are independent bodies responsible for verifying your credentials and manufacturing capabilities.
                         </p>
                       </div>
                     </div>
@@ -389,23 +320,23 @@
                   <div class="accordion-item">
                     <h3 class="accordion-header">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        <span>3. </span> How long does the GeM registration process take with your help? </button>
+                        <span>3. </span> What documents are most crucial for the VA?  </button>
                     </h3>
                     <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
-                        <p>Once all your documents are prepared and submitted to us, we can typically complete your profile setup and submission within <strong>24 to 48 hours</strong>. The final approval time depends on the GeM portal’s verification process, which is usually fast. </p>
+                        <p>Ensure a successful Vendor Assessment by organizing your GeM VA Audit Documents, prioritizing critical evidence such as proof of manufacturing setup, mandatory Quality Certifications (ISO, BIS, CE), audited financial statements, and a detailed machinery list.</p>
                       </div>
                     </div>
                   </div>
                   <div class="accordion-item">
                     <h3 class="accordion-header">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        <span>4. </span> I am an MSME/Small Business. Are there special benefits for me? </button>
+                        <span>4. </span> What is the validity of the GeM Vendor Assessment?  </button>
                     </h3>
                     <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
                         <p>
-                          To unlock significant competitive advantages, we provide expert Udyam Registration for GeM to ensure your profile is correctly linked, granting you access to mandatory EMD exemptions and exclusive tender reservations reserved for MSMEs.
+                          Once successfully completed and approved, the GeM Vendor Assessment is typically valid for 2 years. After this period, you will need to apply for a GeM Vendor Assessment Renewal to retain your ‘VA Verified’ status and OEM privileges on the portal.
                         </p>
                       </div>
                     </div>
@@ -413,33 +344,11 @@
                   <div class="accordion-item">
                     <h3 class="accordion-header">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                        <span>5. </span> What are the primary documents required for registration? </button>
+                        <span>5. </span> Why should I use a GeM Registration Services Provider for VA? </button>
                     </h3>
                     <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
-                        <p>Our team streamlines your onboarding by meticulously organizing all mandatory Documents for GeM Registration, including your firm’s PAN card, GST certificate, Udyam registration, and bank account details, to ensure a rejection-free application process.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h3 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
-                        <span>6. </span> Can I register for GeM without your services? </button>
-                    </h3>
-                    <div id="collapsesix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        <p>Yes, you can. However, the GeM portal process can be complex, and errors in documentation or category listing can lead to rejection and significant delays. We ensure <strong>perfect compliance</strong> and the <strong>correct listing</strong> of your products/services the first time, saving you time and frustration. </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h3 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseseven" aria-expanded="false" aria-controls="collapseseven">
-                        <span>7. </span>After registration, will you help me with bidding on tenders? </button>
-                    </h3>
-                    <div id="collapseseven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        <p>Our primary service focuses on the <strong>complete, flawless registration</strong> of your profile. However, we provide a quick orientation and resource guide to help you understand the basics of searching for and participating in tenders post-registration. </p>
+                        <p>The VA application is complex and highly prone to rejection due to minor errors. Using an expert ensures that all documents meet the precise RITES/QCI format, maximizes your chances for an exemption, and navigates the two-stage audit process quickly and successfully, saving weeks of delay.</p>
                       </div>
                     </div>
                   </div>
@@ -460,10 +369,10 @@
           <div class="row g-5 align-items-center">
             <div class="col-lg-8">
               <div class="h-100 bg-white">
-                <h2 class="h2-title mb-3"> Ready to Sell to the <b> Government of India?</b>
+                <h2 class="h2-title mb-3"> Get Your ‘VA Verified’ Badge and Start Winning High-Value <b> GeM Tenders!</b>
                 </h2>
-                <p class="fs-18 fw-medium mb-4">The next tender could be yours! Stop letting the registration paperwork slow you down. Let our friendly and expert team handle the process so you can focus on running your business.</p>
-                <a title="Explore More" class="btn-primary" href="/contact-us.php"> Start Your GeM Registration Today! <span>
+                <p class="fs-18 fw-medium mb-4">Don’t let the technical audit be the bottleneck to your government business growth. Partner with the experts who understand the nuances of the GeM Vendor Assessment process Nationwide. It’s time to move from planning to official approval.</p>
+                <a title="Explore More" class="btn-primary" href="/contact-us.php"> Strategy Assessment Session <span>
                     <svg id="Layer_1" enablebackground="new 0 0 100 100" height="40" viewBox="0 0 100 100" fill="#f70629" width="40" xmlns="http://www.w3.org/2000/svg">
                       <path d="m50 10.75c-18.266 0-34.562 13.129-38.383 31.007-1.909 8.933-.623 18.432 3.636 26.515 4.099 7.779 10.819 14.066 18.859 17.629 8.363 3.707 17.964 4.353 26.754 1.825 8.48-2.438 15.999-7.789 21.118-14.972 10.703-15.017 9.272-36.111-3.32-49.567-7.38-7.886-17.862-12.437-28.664-12.437zm18.829 41.347-10.7 10.958c-2.709 2.775-6.991-1.429-4.293-4.191l5.399-5.529h-25.586c-1.817 0-3.333-1.517-3.333-3.333s1.517-3.333 3.333-3.333h25.458l-5.506-5.505c-2.736-2.736 1.506-6.979 4.242-4.243l10.961 10.96c1.162 1.161 1.173 3.041.025 4.216z"></path>
                     </svg>

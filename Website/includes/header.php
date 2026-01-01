@@ -153,13 +153,13 @@ echo '<meta name="apple-mobile-web-app-title" content="' . $currentTitle . '">' 
             <div class="nav-con-box">
               <img src="./images/icons/phone-icon.svg" alt="Phone Icon" title="Call Us Now" width="20" height="20" loading="eager">
             </div>
-            <a href="tel:+14169079430" title="Call Us Now">+1 416 907 9430</a>
+            <a href="tel:+14169079430" title="Call Us Now">+91 80152 91471</a>
           </div>
           <div class="me-3 d-flex align-items-center">
             <div class="nav-con-box">
               <img src="./images/icons/email-icon.svg" alt="Email Icon" title="Email Us" width="20" height="20" loading="eager">
             </div>
-            <a href="mailto:info@teslaoutsourcingservices.com" title="Email Us">info@teslaoutsourcingservices.com</a>
+            <a href="mailto:info@teslaoutsourcingservices.com" title="Email Us">info@gemgujarat.com</a>
           </div>
           <div class="d-flex align-items-center">
             <div class="nav-con-box">

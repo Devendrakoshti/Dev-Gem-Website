@@ -9,10 +9,9 @@
           <img loading="eager" src="./images/gem-gujarat-white-logo.webp" alt="GEM Gujarat" title="GEM Gujarat" class="img-fluid" width="200" height="85">
         </a>
         <span class="d-block mt-4 fs-4 fw-medium">
-          Let’s Make Things Happen — Contact Us!
-          
+          India’s Leading Strategic Partner for GeM Success          
         </span>
-          <p class="text-white-50 mt-4 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+          <p class="text-white-50 fs-16 mt-4 mb-4">Empowering MSMEs nationwide with expert Government e-Marketplace (GeM) registration, catalogue management, and tender support to win high-value government contracts.</p>
           <div class="d-flex">
             <ul class="list-unstyled d-flex mb-0 footer-social">
               <li>
@@ -77,7 +76,7 @@
                     <i class="fa-solid fa-phone"></i>
                   </div>
                   <div>
-                    <a href="tel:+1234567890" title="+1 234 567 890" class="link-white">+1 234 567 890</a>
+                    <a href="tel:+1234567890" title="+1 234 567 890" class="link-white">+91 80152 91471</a>
                     <p class="text-white-50 mb-0 fs-14">Expert guidance for your GEM success.</p>
                   </div>
                 </div>
@@ -88,7 +87,7 @@
                     <i class="fa-solid fa-envelope"></i>
                   </div>
                   <div>
-                    <a href="tel:+1234567890" title="+1 234 567 890" class="link-white">mail@serenica.id</a>
+                    <a href="tel:+1234567890" title="+1 234 567 890" class="link-white">info@gemgujarat.com</a>
                     <p class="text-white-50 mb-0 fs-14">Connect with our team for tailored support.</p>
                   </div>
                 </div>
@@ -124,17 +123,16 @@
   </div>
 </footer>
 <!-- Modal -->
-<div class="modal modal-lg fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- <div class="modal modal-lg fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header ps-4">
-        <h2 class="h2-title" id="exampleModalLabel">Contact Us</h2>
+        <h2 class="h2-title" id="exampleModalLabel">Contact <b>Us</b></h2>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body px-4 py-5">
         <form method="post" name="contactform" action="https://www.teslamechanicaldesigns.com/form_submitions_new.php">
           <div class="row g-4">
-            <!-- Name -->
             <div class="col-md-6 position-relative">
               <div class="input-icon position-relative">
                 <i class="fa-solid fa-user"></i>
@@ -144,7 +142,6 @@
                 </div>
               </div>
             </div>
-            <!-- Email -->
             <div class="col-md-6 position-relative">
               <div class="input-icon position-relative">
                 <i class="fa-solid fa-envelope"></i>
@@ -154,7 +151,6 @@
                 </div>
               </div>
             </div>
-            <!-- Phone -->
             <div class="col-md-6 position-relative">
               <div class="input-icon position-relative">
                 <i class="fa-solid fa-phone"></i>
@@ -164,7 +160,6 @@
                 </div>
               </div>
             </div>
-            <!-- Country -->
             <div class="col-md-6 position-relative">
               <div class="input-icon position-relative">
                 <i class="fa-solid fa-earth-asia"></i>
@@ -183,7 +178,6 @@
                 </div>
               </div>
             </div>
-            <!-- Message -->
             <div class="col-12 position-relative">
               <div class="input-icon position-relative textarea-icon">
                 <i class="fa-solid fa-comment-dots"></i>
@@ -212,7 +206,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 <!-- Cookies Modal -->
 <!-- <script>
     var siteTitle = "Privacy Policy", sitetreeDesc = "We use GA4 cookies to enhance user experience.", sitetreeLink = '<a href="https://www.teslaoutsourcingservices.com/privacy-policy.php" target="_blank" title="Privacy Policy Page">Read Our Privacy Policy.</a>', sitetreeButton = "Understood!"; function pureFadeIn(e, t) { var i = document.getElementById(e); i.style.opacity = 0, i.style.display = t || "block", function e() { var t = parseFloat(i.style.opacity); (t += .02) > 1 || (i.style.opacity = t, requestAnimationFrame(e)) }() } function pureFadeOut(e) { var t = document.getElementById(e); t.style.opacity = 1, function e() { (t.style.opacity -= .02) < 0 ? t.style.display = "none" : requestAnimationFrame(e) }() } function siteDismiss() { pureFadeOut("siteConsentContainer"), localStorage.setItem("siteConsent", "true") } function siteConsent() {

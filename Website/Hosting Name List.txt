@@ -3,3 +3,10 @@ gemgujarat.in final to by it
 gem-gujarat.com
 gemgujarat.net
 https://craftohtml.themezaa.com/demo-data-analysis-pricing.html
+
+Pending Page List:
+About Us page
+404 Page
+Thank You Page
+Privacy Policy
+Contact Us Page
