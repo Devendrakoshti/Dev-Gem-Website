@@ -10,3 +10,12 @@ About Us page
 Thank You Page
 Privacy Policy
 Contact Us Page
+
+host: https://mail.hostinger.com/
+username: info@gemgujarat.in
+password: gem_Gujarat_02
+
+ftp
+username: u321027953.dev
+password: Dev_koshti_1616
+host: ftp.gemgujarat.in
