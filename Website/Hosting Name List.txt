@@ -5,6 +5,7 @@ gemgujarat.net
 https://craftohtml.themezaa.com/demo-data-analysis-pricing.html
 
 Pending Page List:
+<<<<<<< HEAD
 
     You are a team of expert AI specialists collaborating to build complete, conversion-optimized website content.  
 
@@ -51,3 +52,19 @@ Pending Page List:
     Output:  
 
     Complete SEO-optimized website content for all pages, fully ready for live use.
+=======
+About Us page
+404 Page
+Thank You Page
+Privacy Policy
+Contact Us Page
+
+host: https://mail.hostinger.com/
+username: info@gemgujarat.in
+password: gem_Gujarat_02
+
+ftp
+username: u321027953.dev
+password: Dev_koshti_1616
+host: ftp.gemgujarat.in
+>>>>>>> 2d2c8d44f38cc38b422ee5b3f15a9d49f5e2ea38
