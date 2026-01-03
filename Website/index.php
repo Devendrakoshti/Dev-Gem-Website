@@ -611,5 +611,14 @@
     <!-- CTA Section End -->
     <!-- footer start --> <?php include 'includes/footer.php';?>
     <!-- footer end -->
+     <script>
+    var swiper = new Swiper(".client-testimonial-slider", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      loop: true,
+    });
+  </script>
     </body>
 </html>
