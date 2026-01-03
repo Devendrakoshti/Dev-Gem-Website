@@ -175,7 +175,7 @@ footer{background-color: #464646;}
 .service-banner > .container{position: relative;z-index: 1;}
 .service-banner::before{content: "";position: absolute;top: 0;left: 0;height: 100%;width: 100%;background: rgba(0, 0, 0, 0.7);}
 .banner-ani-img{position: absolute;right: 20px;top: 20px;animation: banner-img-rot 8s ease-in-out infinite;}
-.service-img-years{position: relative;padding-top: 100px;}
+.service-img-years {position: sticky;padding-top: 100px;top: 90px;}
 .service-img-mn{position: absolute;top: 0;right: -50px;width: 100%;max-width: 300px;}
 .solution-section-img{margin-top: -150px;}
 .arrow-up-square-list li{border-bottom: 1px solid #7a7a7a;padding-bottom: 13px;margin-bottom: 13px;display: flex;}

@@ -104,7 +104,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-8">
-            <div class="h-100 service-img-years">
+            <div class="service-img-years">
               <img src="./images/about-us.jpg" alt="About Us" title="About Us" class="img-fluid rounded-5" width="1120" height="1200">
               <div class="rounded-5 bg-gradient-red-purple border border-5 border-white shadow service-img-mn">
                 <div class="d-flex p-lg-5 p-4 align-items-center justify-content-center text-white">
@@ -313,6 +313,8 @@
     </section>
     <!-- CTA Section End -->
     <!-- footer start  --> <?php include 'includes/footer.php';?>
-    <!-- footer end  -->
+<!-- footer end  -->
+<!-- Popup Form start  --> <?php include 'includes/popup-form.php';?>
+<!-- Popup Formend  -->
     </body>
 </html>
