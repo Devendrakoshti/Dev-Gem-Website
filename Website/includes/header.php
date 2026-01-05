@@ -199,49 +199,48 @@ echo '<meta name="apple-mobile-web-app-title" content="' . $currentTitle . '">' 
                       <div class="col-xl-6">
                         <ul class="list-unstyled" aria-labelledby="navbarSSLAboutus">
                           <li>
-                            <a class="dropdown-item" href="gem-invoice-generation.php" title="Gem Invoice Generation Page">Gem Invoice Generation</a>
+                            <a class="dropdown-item" href="gem-registration-consultant.php" title="Gem Registration Consultant Page">Gem Registration Consultant</a>
                           </li>
                           <li>
                             <a class="dropdown-item" href="gem-catalogue-management-services.php" title="Gem Catalogue Management Services Page">Gem Catalogue Management Services</a>
                           </li>
                           <li>
-                            <a class="dropdown-item" href="gem-iso-certificate-9001.php" title="Gem Iso Certificate 9001 Page">Gem Iso Certificate 9001</a>
+                            <a class="dropdown-item" href="gem-product-catalogue-update.php" title="Gem Product Catalogue Update Page">Gem Product Catalogue Update</a>
                           </li>
                           <li>
-                            <a class="dropdown-item" href="gem-l1-comparison-service.php" title="Gem L1 comparison Page">Gem L1 comparison</a>
+                            <a class="dropdown-item" href="gem-stock-update-service.php" title="Gem Stock Update Service Page">Gem Stock Update Service</a>
+                          </li>
+                           <li>
+                            <a class="dropdown-item" href="gem-invoice-generation.php" title="Gem Invoice Generation Page">Gem Invoice Generation</a>
                           </li>
                           <li>
-                            <a class="dropdown-item" href="gem-msme-udyam-registration.php" title="Gem Msme Udyam Registration Page">Gem Msme Udyam Registration</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="gem-oem-panel-registration.php" title="Gem Oem Panel Registration Page">Gem Oem Panel Registration</a>
-                          </li>
+                            <a class="dropdown-item" href="gem-order-acceptance-guide.php" title="Gem Order Acceptance Guide Page">Gem Order Acceptance Guide</a>
+                          </li>                  
                         </ul>
                       </div>
                       <div class="col-xl-6">
                         <ul class="list-unstyled" aria-labelledby="navbarSSLAboutus">
                           <li>
-                            <a class="dropdown-item" href="gem-product-catalogue-update.php" title="Gem Product Catalogue Update Page">Gem Product Catalogue Update</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="gem-registration-consultant.php" title="Gem Registration Consultant Page">Gem Registration Consultant</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="gem-stock-update-service.php" title="Gem Stock Update Service Page">Gem Stock Update Service</a>
-                          </li>
-                          <li>
                             <a class="dropdown-item" href="gem-tender-bidding-support.php" title="Gem Tender Bidding Support Page">Gem Tender Bidding Support</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="gem-l1-comparison-service.php" title="Gem L1 comparison Page">Gem L1 comparison</a>
                           </li>
                           <li>
                             <a class="dropdown-item" href="gem-vendor-assessment-support.php" title="Gem Vendor Assessment Support Page">Gem Vendor Assessment Support</a>
                           </li>
                           <li>
-                            <a class="dropdown-item" href="gem-order-acceptance-guide.php" title="Gem Order Acceptance Guide Page">Gem Order Acceptance Guide</a>
+                            <a class="dropdown-item" href="gem-oem-panel-registration.php" title="Gem Oem Panel Registration Page">Gem Oem Panel Registration</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="gem-msme-udyam-registration.php" title="Gem Msme Udyam Registration Page">Gem Msme Udyam Registration</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="gem-iso-certificate-9001.php" title="Gem Iso Certificate 9001 Page">Gem Iso Certificate</a>
                           </li>
                         </ul>
                       </div>
-                    </div>
-                 
+                    </div>                 
                   </div>
                 </div>
               </li>
