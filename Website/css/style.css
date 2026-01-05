@@ -223,6 +223,22 @@ footer{background-color: #464646;}
     border-radius: 100%;
 }
 /* Animation Css Start */
+/* Headre Css Start */
+.header-menu .dropdown-menu > div{
+  background-color: rgba(0, 0, 0, 0.9);
+  color: var(--color-white) !important;
+}
+.header-menu .dropdown-item{
+  color: var(--color-white) !important;
+  transition: all 0.3s ease;
+}
+.header-menu .dropdown-item:hover{
+  color: var(--color-black) !important;
+}
+
+@media (min-width: 1200px){.header-menu .dropdown:hover .dropdown-menu {display: block !important;} .header-menu .nav-item > .nav-link{
+  padding: 27px 20px;
+}.header-menu .dropdown-menu > div {width:50%;}}
 /* Hero Banner Image Animation */
 @keyframes float {
   0% {transform: translatex(0px);}

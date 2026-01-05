@@ -348,7 +348,7 @@
           <span class="subtitle">Client FAQs</span>
           <h2 class="h2-title mb-3"> Frequently Asked by <b> Clients</b>
           </h2>
-          <p class="title-paragraph">We believe in making the process as clear as possible45. Here are the answers to the questions we hear most often from entrepreneurs and small businesses across India.</p>
+          <p class="title-paragraph">We believe in making the process as clear as possible. Here are the answers to the questions we hear most often from entrepreneurs and small businesses across India.</p>
         </hgroup>
         <div class="row g-lg-5 g-4 align-items-center">
           <div class="col-lg-5">

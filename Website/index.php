@@ -157,7 +157,7 @@
                   <h3 class="mb-0 fs-5 fw-bold">GeM Registration & Support</h3>
                 </div>
                 <p class="text-light-black mb-xxl-4 mb-3">Expert-led setup and troubleshooting for the Government e-Marketplace (GeM), ensuring your profile is ready to bid and win.</p>
-                <a href="#" class="link-red d-inline-flex align-items-center">Learn More <i class="fa-solid fa-arrow-right fs-4 ms-2"></i>
+                <a href="gem-registration-consultant.php" class="link-red d-inline-flex align-items-center">Learn More <i class="fa-solid fa-arrow-right fs-4 ms-2"></i>
                 </a>
               </div>
             </div>
@@ -172,7 +172,7 @@
                   <h3 class="mb-0 fs-5 fw-bold">GeM Catalogue Management Services</h3>
                 </div>
                 <p class="text-light-black mb-xxl-4 mb-3">Our GeM Product Listing Service provides comprehensive GeM Profile Optimization by managing your digital catalogue for maximum visibility and strict compliance, including the technical configuration required for the L1 Comparison Service.</p>
-                <a href="#" class="link-red d-inline-flex align-items-center">Learn More <i class="fa-solid fa-arrow-right fs-4 ms-2"></i>
+                <a href="gem-catalogue-management-services.php" class="link-red d-inline-flex align-items-center">Learn More <i class="fa-solid fa-arrow-right fs-4 ms-2"></i>
                 </a>
               </div>
             </div>
@@ -187,7 +187,7 @@
                   <h3 class="mb-0 fs-5 fw-bold">Essential Business Certifications</h3>
                 </div>
                 <p class="text-light-black mb-xxl-4 mb-3">Strengthen your bidding authority with our hassle-free Udyam Registration Online and ISO Certification for MSME services, ensuring your business maintains the mandatory credentials required for GeM tender eligibility and vendor assessment.</p>
-                <a href="#" class="link-red d-inline-flex align-items-center">Learn More <i class="fa-solid fa-arrow-right fs-4 ms-2"></i>
+                <a href="gem-msme-udyam-registration.php" class="link-red d-inline-flex align-items-center">Learn More <i class="fa-solid fa-arrow-right fs-4 ms-2"></i>
                 </a>
               </div>
             </div>
@@ -202,7 +202,7 @@
                   <h3 class="mb-0 fs-5 fw-bold">Tender & Bidding Assistance</h3>
                 </div>
                 <p class="text-light-black mb-xxl-4 mb-3">Strategic support for navigating the Government Tender Bidding process, from document preparation to GeM Order Acceptance.</p>
-                <a href="#" class="link-red d-inline-flex align-items-center">Learn More <i class="fa-solid fa-arrow-right fs-4 ms-2"></i>
+                <a href="gem-tender-bidding-support.php" class="link-red d-inline-flex align-items-center">Learn More <i class="fa-solid fa-arrow-right fs-4 ms-2"></i>
                 </a>
               </div>
             </div>
@@ -217,7 +217,7 @@
                   <h3 class="mb-0 fs-5 fw-bold">Comprehensive Compliance & Filing</h3>
                 </div>
                 <p class="text-light-black mb-xxl-4 mb-3">End-to-end solutions for various business filings, ensuring your operation is audit-ready and compliant with Indian regulations.</p>
-                <a href="#" class="link-red d-inline-flex align-items-center">Learn More <i class="fa-solid fa-arrow-right fs-4 ms-2"></i>
+                <a href="gem-vendor-assessment-support.php" class="link-red d-inline-flex align-items-center">Learn More <i class="fa-solid fa-arrow-right fs-4 ms-2"></i>
                 </a>
               </div>
             </div>
@@ -232,7 +232,7 @@
                   <h3 class="mb-0 fs-5 fw-bold">Digital Signature Certificate Solutions</h3>
                 </div>
                 <p class="text-light-black mb-xxl-4 mb-3">Secure and quick procurement of the DSC required for e-Tendering and other online government submissions.</p>
-                <a href="#" class="link-red d-inline-flex align-items-center">Learn More <i class="fa-solid fa-arrow-right fs-4 ms-2"></i>
+                <a href="gem-tender-bidding-support.php" class="link-red d-inline-flex align-items-center">Learn More <i class="fa-solid fa-arrow-right fs-4 ms-2"></i>
                 </a>
               </div>
             </div>
@@ -249,7 +249,7 @@
             <div class="h-100">
               <img src="./images/why-choose.webp" alt="Why Choose" title="Why Choose" class="img-fluid rounded-5 mb-4" width="576" height="800">
               <div class="bg-white border-start border-red border-5 p-4 shadow rounded">
-                <p class="text-light-black fs-5 m-0">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptate aut itaque!"</p>
+                <p class="text-light-black fs-5 m-0">"Expert GeM consultants delivering compliant registration and bidding"</p>
               </div>
             </div>
           </div>

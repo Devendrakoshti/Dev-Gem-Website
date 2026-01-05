@@ -4,7 +4,7 @@
 
   window.addEventListener('scroll', function () {
 
-    if (window.scrollY > 1800 && !modalOpened) {
+    if (window.scrollY > 500 && !modalOpened) {
       modalOpened = true;
 
       let modal = new bootstrap.Modal(

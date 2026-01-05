@@ -139,21 +139,21 @@
         <div class="d-block w-100">
           <h3 class="mb-4">What We Handle For You</h3>
           <div class="row g-4 fs-16">
-            <div class="col-xl-3 col-md-6">
+            <div class="col-xl-4 col-md-6">
               <div class="h-100 rounded-5 border bg-white shadow p-4">
                 <img src="images/icons/setting.svg" alt="Profile Setup" title="Profile Setup" class="img-fluid mb-3" width="35" height="35">
                 <h4 class="fw-medium mb-2 fs-5 text-red">Log In and Find the Listing</h4>
                 <p class="mb-0">Access your GeM Seller dashboard. Navigate to the “My Products” or “My Listings” section. Find the specific product or service that needs updating.</p>
               </div>
             </div>
-            <div class="col-xl-3 col-md-6">
+            <div class="col-xl-4 col-md-6">
               <div class="h-100 rounded-5 border bg-white shadow p-4">
                 <img src="images/icons/database-file.svg" alt="Profile Setup" title="Profile Setup" class="img-fluid mb-3" width="33" height="33">
                 <h4 class="fw-medium mb-2 fs-5 text-red">Locate the Offering</h4>
                 <p class="mb-0">You may need to look under the ‘Published’ or ‘Expired Offerings’ tab.</p>
               </div>
             </div>
-            <div class="col-xl-3 col-md-6">
+            <div class="col-xl-4 col-md-6">
               <div class="h-100 rounded-5 border bg-white shadow p-4">
                 <img src="images/icons/category.svg" alt="Profile Setup" title="Profile Setup" class="img-fluid mb-3" width="30" height="30">
                 <h4 class="fw-medium mb-2 fs-5 text-red">Edit and Update Stock</h4>
@@ -183,12 +183,12 @@ Success Note: The system will give a success prompt, and the internal 90-day cou
           </h2>
           <p class="title-paragraph">As busy Indian entrepreneurs, your focus should be on fulfillment, not administrative tracking. That’s where our expert team specializing in GeM Seller Compliance Consultant support steps in Nationwide.</p>
         </hgroup>
-        <h3 class="mb-4 fw-bold">Our GeM Stock Management Support Includes:</h3>
+        <h3 class="mb-4 fw-bold">Our GeM Stock Management Support Includes</h3>
         <div class="row g-lg-5 g-4">
           <div class="col-xl-8">
             <div class="h-100">
               <div class="row g-4">
-                <div class="col-lg-6">
+                <div class="col-12">
                   <div class="h-100 d-flex p-4 py-lg-5 rounded-5 border bg-light-grey shadow">
                     <div class="ser-doc-icon">
                       <i class="fa-solid fa-book-open-reader"></i>
@@ -199,7 +199,7 @@ Success Note: The system will give a success prompt, and the internal 90-day cou
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-12">
                   <div class="h-100 d-flex p-4 py-lg-5 rounded-5 border bg-light-grey shadow">
                     <div class="ser-doc-icon">
                       <i class="fa-solid fa-book-open-reader"></i>
@@ -210,7 +210,7 @@ Success Note: The system will give a success prompt, and the internal 90-day cou
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-12">
                   <div class="h-100 d-flex p-4 py-lg-5 rounded-5 border bg-light-grey shadow">
                     <div class="ser-doc-icon">
                       <i class="fa-solid fa-book-open-reader"></i>
@@ -221,7 +221,7 @@ Success Note: The system will give a success prompt, and the internal 90-day cou
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-12">
                   <div class="h-100 d-flex p-4 py-lg-5 rounded-5 border bg-light-grey shadow">
                     <div class="ser-doc-icon">
                       <i class="fa-solid fa-book-open-reader"></i>
@@ -248,7 +248,7 @@ Success Note: The system will give a success prompt, and the internal 90-day cou
           <span class="subtitle">Client FAQs</span>
           <h2 class="h2-title mb-3">Clear Answers on GeM Stock and  <b> Listing Compliance</b>
           </h2>
-          <p class="title-paragraph">We believe in making the process as clear as possible45. Here are the answers to the questions we hear most often from entrepreneurs and small businesses across India.</p>
+          <p class="title-paragraph">We believe in making the process as clear as possible. Here are the answers to the questions we hear most often from entrepreneurs and small businesses across India.</p>
         </hgroup>
         <div class="row g-lg-5 g-4 align-items-center">
           <div class="col-lg-5">
