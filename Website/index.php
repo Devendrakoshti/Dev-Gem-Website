@@ -409,8 +409,8 @@
                               <i class="fa-solid fa-star text-warning me-2"></i>
                               <i class="fa-solid fa-star text-warning"></i>
                             </div>
-                            <p class="text-light-black">We cannot thank GEM Gujarat enough. They are by far the most valuable company we have partnered with for navigating the government tender bidding process. Their team is exceptionally supportive, and their service quality is outstanding. We consistently receive services that precisely meet our requirements. Working with them has enabled us to confidently expand our business and secure contracts. Highly recommended!</p>
-                            <span class="fw-bold d-block mb-2">MR. pritesh dadhaniya</span>
+                            <p class="text-light-black">Had an amazing experience with GeM Gujarat! They made the entire GeM registration and GeM portal tender process super easy and stress-free. The team is knowledgeable, responsive, and always ready to help. …</p>
+                            <span class="fw-bold d-block mb-2">MR. Hardik Chadamiya</span>
                           </div>
                         </div>
                         <div class="swiper-slide p-4">
@@ -435,7 +435,7 @@
                               <i class="fa-solid fa-star text-warning me-2"></i>
                               <i class="fa-solid fa-star text-warning"></i>
                             </div>
-                            <p class="text-light-black">The service delivered by GeM Gujarat has left us thoroughly impressed. We extend our sincere gratitude to Ms. Mittal Patel for her dedicated guidance and exceptional professionalism throughout our GeM registration and tender process. The entire team is known for prompt communication, supportive nature, and strong commitment to quality results. Their assistance has made a significant positive impact on how we handle our tender details and e-tender submissions. We highly recommend GeM Gujarat — truly a top-tier Pan India tender consultancy!</p>
+                            <p class="text-light-black">GEM GUJARAT demonstrates exceptional professionalism, placing customer satisfaction at the forefront. They consistently address queries within a single day. I value their quick assistance and am extremely satisfied with their services. Highly recommended for tender support.</p>
                             <span class="fw-bold d-block mb-2">MR. Sandip Patel</span>
                           </div>
                         </div>
