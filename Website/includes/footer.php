@@ -61,7 +61,7 @@
                     <i class="fa-solid fa-location-dot"></i>
                   </div>
                   <div>
-                    <a href="tel:+1234567890" title="+1 234 567 890" class="link-white" >London Eye, UK</a>
+                    <span class="link-white d-block">Vastral, Ahmedabad, Gujarat</span>
                     <p class="text-white-50 mb-0 fs-14">Delivering excellence in every GEM solution.</p>
                   </div>
                 </div>

@@ -409,8 +409,8 @@
                               <i class="fa-solid fa-star text-warning me-2"></i>
                               <i class="fa-solid fa-star text-warning"></i>
                             </div>
-                            <p class="text-light-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, corporis. Molestias quos vero cumque unde architecto a neque? Ea, animi!</p>
-                            <span class="fw-bold d-block mb-2">MR. John Doe</span>
+                            <p class="text-light-black">We cannot thank GEM Gujarat enough. They are by far the most valuable company we have partnered with for navigating the government tender bidding process. Their team is exceptionally supportive, and their service quality is outstanding. We consistently receive services that precisely meet our requirements. Working with them has enabled us to confidently expand our business and secure contracts. Highly recommended!</p>
+                            <span class="fw-bold d-block mb-2">MR. pritesh dadhaniya</span>
                           </div>
                         </div>
                         <div class="swiper-slide p-4">
@@ -422,8 +422,8 @@
                               <i class="fa-solid fa-star text-warning me-2"></i>
                               <i class="fa-solid fa-star text-warning"></i>
                             </div>
-                            <p class="text-light-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, corporis. Molestias quos vero cumque unde architecto a neque? Ea, animi!</p>
-                            <span class="fw-bold d-block mb-2">MR. John Doe</span>
+                            <p class="text-light-black">Working with GeM Gujarat has been an unparalleled experience compared to other consultancy firms. Their team provides advice that is clear and highly focused on achieving optimal results. What truly sets them apart is their ability to intuitively understand the client’s exact needs and offer comprehensive support at every stage.</p>
+                            <span class="fw-bold d-block mb-2">MR. Kishan Kumar</span>
                           </div>
                         </div>
                         <div class="swiper-slide p-4">
@@ -435,8 +435,8 @@
                               <i class="fa-solid fa-star text-warning me-2"></i>
                               <i class="fa-solid fa-star text-warning"></i>
                             </div>
-                            <p class="text-light-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, corporis. Molestias quos vero cumque unde architecto a neque? Ea, animi!</p>
-                            <span class="fw-bold d-block mb-2">MR. John Doe</span>
+                            <p class="text-light-black">The service delivered by GeM Gujarat has left us thoroughly impressed. We extend our sincere gratitude to Ms. Mittal Patel for her dedicated guidance and exceptional professionalism throughout our GeM registration and tender process. The entire team is known for prompt communication, supportive nature, and strong commitment to quality results. Their assistance has made a significant positive impact on how we handle our tender details and e-tender submissions. We highly recommend GeM Gujarat — truly a top-tier Pan India tender consultancy!</p>
+                            <span class="fw-bold d-block mb-2">MR. Sandip Patel</span>
                           </div>
                         </div>
                         <div class="swiper-slide p-4">
@@ -448,8 +448,8 @@
                               <i class="fa-solid fa-star text-warning me-2"></i>
                               <i class="fa-solid fa-star text-warning"></i>
                             </div>
-                            <p class="text-light-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, corporis. Molestias quos vero cumque unde architecto a neque? Ea, animi!</p>
-                            <span class="fw-bold d-block mb-2">MR. John Doe</span>
+                            <p class="text-light-black">The GeM portal offers a valuable opportunity for MSMEs, and GeM Gujarat helped us maximize its benefits. Their experts efficiently managed all the documentation and tender procedures. Their Pan-India consultancy support is excellent—I am highly satisfied and would recommend them to any business seeking GeM registration or tender assistance!</p>
+                            <span class="fw-bold d-block mb-2">MR. Hariganga Thakor</span>
                           </div>
                         </div>
                       </div>

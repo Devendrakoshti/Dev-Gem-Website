@@ -165,7 +165,7 @@ echo '<meta name="apple-mobile-web-app-title" content="' . $currentTitle . '">' 
             <div class="nav-con-box">
               <img src="./images/icons/location-icon.svg" alt="Location Icon" title="Location" width="20" height="20" loading="eager">
             </div>
-            <span class="ms-2 fw-semibold">123 Tesla St, Toronto, ON, Canada</span>
+            <span class="ms-2 fw-semibold">Nirant Cross Rd, Vastral, Ahmedabad, Gujarat 382418</span>
           </div>
         </div>
       </div>
