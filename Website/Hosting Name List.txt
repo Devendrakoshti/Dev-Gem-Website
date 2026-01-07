@@ -49,11 +49,23 @@ Dipali@!1616
 			<EncodingType>Auto</EncodingType>
 			<BypassProxy>0</BypassProxy>
 			<Name>GG</Name>
-			<Comments>u321027953.dev
-Dev_koshti_1616</Comments>
+			<Comments>u321027953.dev Dev_koshti_1616</Comments>
 			<SyncBrowsing>0</SyncBrowsing>
 			<DirectoryComparison>0</DirectoryComparison>
 		</Server>
-	</Servers>
+	</Servers>r
 </FileZilla3>
+
+Your domain gemgujarat.in is suspended by the .IN registry (NIXI), not by Hostinger.
+
+To unsuspend it, you must email support@nixi.in with:
+
+ID proof – ID card, driving license, student ID, or passport
+Address proof – recent (< 3 months) utility bill or telephone bill
+If it’s a company domain – business registration certificate
+Purpose of the domain activation
+Make sure your domain contact details match these documents by updating them as shown here: How to change domain contact details (choose “Use for all domain contacts” and approve the verification email).
+NIXI usually takes a few days; once they unsuspend it, the site should start resolving within a few hours (you can monitor here: dnschecker.org ). Any further discussion or action on activation must be done directly with NIXI at support@nixi.in – Hostinger (including me) cannot unsuspend .IN domains.
+
+
 
