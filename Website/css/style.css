@@ -171,7 +171,7 @@ footer{background-color: #464646;}
 }
 
 /* Services Css Start */
-.service-banner {display: flex;align-items: center;height: 600px;position: relative;background: url('./images/hero-banner-01.jpg') center center no-repeat;background-size: cover;}
+.service-banner {display: flex;align-items: center;height: 600px;position: relative;background-size: cover;background-repeat: no-repeat; background-position: center;}
 .service-banner > .container{position: relative;z-index: 1;}
 .service-banner::before{content: "";position: absolute;top: 0;left: 0;height: 100%;width: 100%;background: rgba(0, 0, 0, 0.7);}
 .banner-ani-img{position: absolute;right: 20px;top: 20px;animation: banner-img-rot 8s ease-in-out infinite;}
@@ -189,6 +189,26 @@ footer{background-color: #464646;}
 .choose-us-content{background: rgba(255, 255, 255, .15);backdrop-filter: blur(10px);color: var(--color-white);padding: 24px;text-align: center;border-radius: 8px;display: flex;flex-direction: column;align-items: center;gap: 10px;}
 .choose-us-content-right{background: #354e33;color: var(--color-white);padding: 24px;border-radius: 8px;display: flex;gap: 25px;align-items: center;width: 100%;}
 .cta-section{position: relative;overflow: hidden;padding: 100px 0;}
+/* All Pages Banner Images Start */
+.gem-gujarat-about-us-banner{background-image: url('./images/gem-gujarat-about-us-banner.webp');}
+.gem-gujarat-contact-us-banner{background-image: url('./images/gem-gujarat-contact-us-banner.webp');}
+.gem-gujarat-catalogue-management-services-banner{background-image: url('./images/gem-gujarat-catalogue-management-services-banner.webp');}
+.gem-gujarat-invoice-generation-banner{background-image: url('./images/gem-gujarat-invoice-generation-banner.webp');}
+.gem-gujarat-iso-certificate-banner{background-image: url('./images/gem-gujarat-iso-certificate-banner.webp');}
+.gem-gujarat-l1-comparison-service-banner{background-image: url('./images/gem-gujarat-l1-comparison-service-banner.webp');}
+.gem-gujarat-msme-udyam-registration-banner{background-image: url('./images/gem-gujarat-msme-udyam-registration-banner.webp');}
+.gem-gujarat-oem-panel-registration-banner{background-image: url('./images/gem-gujarat-oem-panel-registration-banner.webp');}
+.gem-gujarat-order-acceptance-guide-banner{background-image: url('./images/gem-gujarat-order-acceptance-guide-banner.webp');}
+.gem-gujarat-product-catalogue-update-banner{background-image: url('./images/gem-gujarat-product-catalogue-update-banner.webp');}
+.gem-gujarat-registration-consultant-banner{background-image: url('./images/gem-gujarat-registration-consultant-banner.webp');}
+.gem-gujarat-stock-update-service-banner{background-image: url('./images/gem-gujarat-stock-update-service-banner.webp');}
+.gem-gujarat-tender-bidding-support-banner{background-image: url('./images/gem-gujarat-tender-bidding-support-banner.webp');}
+.gem-gujarat-vendor-assessment-support-banner{background-image: url('./images/gem-gujarat-vendor-assessment-support-banner.webp');}
+.gem-gujarat-privacy-policy-banner{background-image: url('./images/gem-gujarat-privacy-policy-banner.webp');}
+
+
+
+
 
 /* .cta-section::before {
     content: "";

@@ -38,7 +38,7 @@
     <!-- header start --> <?php include 'includes/header.php';?>
     <!-- header end -->
     <!-- banner start  -->
-    <div class="service-banner w-100">
+    <div class="service-banner w-100 gem-gujarat-about-us-banner">
       <div class="container">
         <div class="row">
           <div class="col-lg-10">
