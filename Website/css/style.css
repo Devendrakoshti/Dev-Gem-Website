@@ -281,8 +281,7 @@ footer{background-color: #464646;}
 @media screen and (max-width:1199px) {
 }
 @media screen and (max-width:991px) {
-  body{padding-top: 80px;}
-  
+  body{padding-top: 80px;}  
 }
 @media screen and (max-width:767px) {
   .hero-banner{padding: 70px 0px;}
@@ -294,5 +293,5 @@ footer{background-color: #464646;}
 @media screen and (max-width:576px) {
   body {font-size: 16px;line-height: 26px;}
   .service-banner {height: auto;padding: 70px 0px;}
-    
+      
 }
