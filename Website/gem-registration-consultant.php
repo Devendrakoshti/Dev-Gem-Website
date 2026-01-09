@@ -27,6 +27,8 @@
     <link rel="canonical" href="">
     <!----- SEO Tags Ends ------>
     <!--- OG Tags --->
+    <link rel="preload" href="images/gem-home-banner.webp" as="image" fetchpriority="high">
+
     <meta property="og:image" content="">
     <meta property="og:image:width" content="1120" />
     <meta property="og:image:height" content="760" />
@@ -40,9 +42,9 @@
     <!-- banner start  -->
     <div class="service-banner w-100 gem-gujarat-registration-consultant-banner">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-10">
-            <div class="text-white">
+        <div class="row flex-wrap-reverse g-5">
+          <div class="col-lg-6">
+            <div class="h-100">
               <div class="page-path">
                 <span>
                   <i class="fa-solid fa-house text-red me-1"></i> Home <i class="fa-solid fa-chevron-right mx-1 fs-12"></i> GeM Registration </span>
@@ -57,10 +59,14 @@
               </a>
             </div>
           </div>
+          <div class="col-lg-6">
+            <div class="h-100">
+              <div class="hero-banner-image">
+                <img src="images/gem-home-banner.webp" alt="Hero Banner Image" title="Hero Banner Image" class="img-fluid" width="1000" height="1000">
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="banner-ani-img">
-        <img src="images/banner-ani-img.png" alt="Banner Animation Image" title="Banner Animation Image" class="img-fluid" width="306" height="306">
       </div>
     </div>
     <!-- banner end  -->

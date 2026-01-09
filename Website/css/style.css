@@ -23,6 +23,7 @@ body {
 .fs-16 {font-size: 1rem;line-height: 24px;} 
 .fs-18 {font-size: 1.125rem;line-height: 26px;}
 h1 {font-weight: 700;font-size: clamp(30px, 1rem + 2.5vw, 45px);}
+h1 span {background: transparent;height: auto;width: auto;color: transparent;-webkit-text-stroke: 1px #c1c1c1;}
 .h2-title {font-weight: 700;font-size: clamp(26px, 1rem + 2vw, 40px);color: #0F0928;margin-bottom: 0;}
 .h2-title b {background: conic-gradient(from 0deg,#ab0a1f,#d12028,#2a0909,#80141b,#1b0505,#e22b2f,#ab0a1f);background-size: 200% 200%;background-clip: text;-webkit-background-clip: text;-webkit-text-fill-color: transparent;animation: titleGradient 5s linear infinite;}
 a{text-decoration: none;}
@@ -53,8 +54,7 @@ hgroup.text-white .subtitle, hgroup.text-white .h2-title{color: var(--color-whit
 .link-white:hover{color: var(--color-red);}
 .link-red{color: var(--color-red);transition: all 0.3s ease;}
 .link-red:hover{color: var(--color-dark-grey);}
-h1 span {background: transparent;height: auto;width: auto;color: transparent;-webkit-text-stroke: 1px #c1c1c1;}
-.page-path {padding: 7px 18px;border-radius: 37px;background: rgba(255, 255, 255, 0.5);color: var(--color-white);width: auto;display: inline-flex;font-size: 14px;margin-bottom: 10px;}
+.page-path {padding: 7px 18px;border-radius: 37px;background: rgba(0, 0, 0, 0.5);color: var(--color-white);width: auto;display: inline-flex;font-size: 14px;margin-bottom: 10px;}
 
 
 
@@ -64,13 +64,8 @@ h1 span {background: transparent;height: auto;width: auto;color: transparent;-we
 .header-menu .nav-top a:hover{color: var(--color-red);}
 /* .offcanvas.offcanvas-end{width: 300px;} */
 
-/* Home Page Css Start */
-.hero-banner{background: url('./images/hero-banner-01.webp') no-repeat center center;background-size: cover;padding: 10% 0px; position: relative;}
-.hero-banner::after{content: "";position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: linear-gradient(to right, #3264f5 2%,#7202bb 82%);opacity: 0.85;} 
-.hero-banner > div{position: relative;z-index: 2;}
-.hero-banner-image{ animation: float 6s ease-in-out infinite;}
-/* .hero-banner-image-01{animation: float 6s ease-in-out infinite;position: relative;}
-.hero-banner-image-01::after {position: absolute;content: "";left: -15%;top: -15%;height: 580px;width: 600px;background: url(./images/hero-banner-object.png) no-repeat center center;    background-size: cover;z-index: -1;} */
+
+
 .features-list li{border-bottom: 1px solid #7a7a7a;padding-bottom: 13px;margin-bottom: 13px;}
 .features-list li:last-child{border-bottom: none;padding-bottom: 0;margin-bottom: 0;} 
 .home-services{background: linear-gradient(0deg,rgba(222, 66, 74, 0.07) 5%, rgba(255, 255, 255, 1) 100%);}
@@ -171,10 +166,9 @@ footer{background-color: #464646;}
 }
 
 /* Services Css Start */
-.service-banner {display: flex;align-items: center;height: 600px;position: relative;background-size: cover;background-repeat: no-repeat; background-position: center;}
-.service-banner > .container{position: relative;z-index: 1;}
-.service-banner::before{content: "";position: absolute;top: 0;left: 0;height: 100%;width: 100%;background: rgba(0, 0, 0, 0.7);}
-.banner-ani-img{position: absolute;right: 20px;top: 20px;animation: banner-img-rot 8s ease-in-out infinite;}
+.service-banner {display: flex;align-items: center;height: 600px;position: relative;background-size: cover;background-repeat: no-repeat; background-position: center;overflow: hidden;background: rgb(240 229 231);}
+/* .service-banner > .container{position: relative;z-index: 1;} */
+/* .service-banner::before{content: "";position: absolute;top: 0;left: 0;height: 100%;width: 100%;background: rgba(0, 0, 0, 0.7);} */
 .service-img-years {position: sticky;padding-top: 100px;top: 90px;}
 .service-img-mn{position: absolute;top: 0;right: -50px;width: 100%;max-width: 300px;}
 .solution-section-img{margin-top: -150px;}
@@ -190,7 +184,7 @@ footer{background-color: #464646;}
 .choose-us-content-right{background: #354e33;color: var(--color-white);padding: 24px;border-radius: 8px;display: flex;gap: 25px;align-items: center;width: 100%;}
 .cta-section{position: relative;overflow: hidden;padding: 100px 0;}
 /* All Pages Banner Images Start */
-.gem-gujarat-about-us-banner{background-image: url('./images/gem-gujarat-about-us-banner.webp');}
+/* .gem-gujarat-about-us-banner{background-image: url('./images/gem-gujarat-about-us-banner.webp');}
 .gem-gujarat-contact-us-banner{background-image: url('./images/gem-gujarat-contact-us-banner.webp');}
 .gem-gujarat-catalogue-management-services-banner{background-image: url('./images/gem-gujarat-catalogue-management-services-banner.webp');}
 .gem-gujarat-invoice-generation-banner{background-image: url('./images/gem-gujarat-invoice-generation-banner.webp');}
@@ -204,44 +198,11 @@ footer{background-color: #464646;}
 .gem-gujarat-stock-update-service-banner{background-image: url('./images/gem-gujarat-stock-update-service-banner.webp');}
 .gem-gujarat-tender-bidding-support-banner{background-image: url('./images/gem-gujarat-tender-bidding-support-banner.webp');}
 .gem-gujarat-vendor-assessment-support-banner{background-image: url('./images/gem-gujarat-vendor-assessment-support-banner.webp');}
-.gem-gujarat-privacy-policy-banner{background-image: url('./images/gem-gujarat-privacy-policy-banner.webp');}
+.gem-gujarat-privacy-policy-banner{background-image: url('./images/gem-gujarat-privacy-policy-banner.webp');} */
 
 
 
-
-
-/* .cta-section::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    max-width: 400px;
-    height: 400px;
-    left: 10%;
-    top: 60%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    mix-blend-mode: normal;
-    opacity: 1;
-    filter: blur(500px);
-    background: rgba(222, 66, 74, 1);
-    border-radius: 100%;
-} */
- .cta-section::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    max-width: 250px;
-    height: 250px;
-    left: 16%;
-    top: 52%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    mix-blend-mode: normal;
-    opacity: 1;
-    filter: blur(70px);
-    background: rgba(222, 66, 74, 1);
-    border-radius: 100%;
-}
+.cta-section::before {content: "";position: absolute;width: 100%;max-width: 250px;height: 250px;left: 16%;top: 52%;transform: translate(-50%, -50%);z-index: -1;mix-blend-mode: normal;opacity: 1;filter: blur(70px);background: rgba(222, 66, 74, 1);border-radius: 100%;}
 /* Animation Css Start */
 /* Headre Css Start */
 .header-menu .dropdown-menu > div{
@@ -270,10 +231,6 @@ footer{background-color: #464646;}
   0% {background-position: 0% 50%;}
   100% {background-position: 100% 50%;}
 }
-@keyframes banner-img-rot {
-  0% {transform: rotate(0deg);}
-  100% {transform: rotate(360deg);}
-}
 @keyframes client-logo-scroll {0% {transform: translateX(0);} 100% {transform: translateX(calc(-202px * 3))}}
 
 
@@ -292,6 +249,5 @@ footer{background-color: #464646;}
 }
 @media screen and (max-width:576px) {
   body {font-size: 16px;line-height: 26px;}
-  .service-banner {height: auto;padding: 70px 0px;}
-      
+  .service-banner {height: auto;padding: 70px 0px;}      
 }

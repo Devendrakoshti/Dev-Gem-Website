@@ -21,7 +21,7 @@
     <!-- Preloads -->
     <link rel="preload" href="images/gem-gujarat-logo.webp" as="image" fetchpriority="high">
     <link rel="preload" href="images/hero-banner-01.webp" as="image" fetchpriority="high">
-    <link rel="preload" href="images/hero-banner-02.webp" as="image" fetchpriority="high">
+    <link rel="preload" href="images/gem-home-banner.webp" as="image" fetchpriority="high">
     <!-- Preloads And Preconnect -->
     <!----- Title Tags ------>
     <title>GeM Registration, Udyam Registration Online, & GeM Consultant India</title>
@@ -46,7 +46,7 @@
       <div class="container">
         <div class="row align-items-center flex-wrap-reverse g-5">
           <div class="col-lg-7">
-            <div class="hero-banner-content text-white">
+            <div class="text-white">
               <div>
                 <p class="fs-3 fw-bold lh-base mb-0">Your Shortcut to Government Business</p>
                 <h1 class="mb-3">Simplify GeM Registration, <span>GeM Seller Registration</span> and MSME Udyam Certification Today. </h1>
@@ -62,8 +62,7 @@
           </div>
           <div class="col-lg-5">
             <div class="hero-banner-image d-none d-lg-block">
-              <img src="images/hero-banner-02.webp" alt="Hero Banner Image" title="Hero Banner Image" class="img-fluid" width="872" height="853">
-              <!-- <div class="hero-banner-image-01"><svg width="500" height="495" style="transition: none; text-align: inherit; line-height: 14px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 300; font-size: 8px;"><g style="transition: none; text-align: inherit; line-height: 14px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 300; font-size: 8px;"><clipPath id="clipPolygon" style="transition: none; text-align: inherit; line-height: 14px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 300; font-size: 8px;"><polygon points="186 13,164 17,150 19,118 27,92 36,78 44,59 57,39 78,26 98,18 118,14 133,12 143,9 159,9 174,12 191,15 207,18 219,22 231,28 244,38 267,50 290,65 313,82 337,97 356,109 369,126 385,138 397,156 411,176 422,192 427,211 431,226 433,244 431,258 428,272 423,286 417,298 409,315 397,336 374,349 357,363 335,380 306,394 277,405 250,414 224,423 196,427 178,429 162,429 140,426 122,420 100,413 86,404 72,391 57,373 42,355 32,333 24,307 18,278 13,249 11,207 11,182 14" style="transition: none; text-align: inherit; line-height: 14px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 300; font-size: 8px;"></polygon></clipPath></g><image clip-path="url(#clipPolygon)" height="100%" width="100%" xlink:href="./images/hero-banner-02.jpg" style="transition: none; text-align: inherit; line-height: 14px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 300; font-size: 8px;"></image></svg></div> -->
+              <img src="images/gem-home-banner.webp" alt="Hero Banner Image" title="Hero Banner Image" class="img-fluid" width="1000" height="1000">
             </div>
           </div>
         </div>

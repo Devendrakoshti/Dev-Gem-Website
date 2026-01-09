@@ -59,9 +59,7 @@
           </div>
         </div>
       </div>
-      <div class="banner-ani-img">
-        <img src="images/banner-ani-img.png" alt="Banner Animation Image" title="Banner Animation Image" class="img-fluid" width="306" height="306">
-      </div>
+      
     </div>
     <!-- banner end  -->
     <!-- Why GeM Problem Section Start -->
