@@ -19,25 +19,25 @@
     <link rel="preconnect" href="https://www.gstatic.com">
     <link rel="preconnect" href="https://js.clarity.ms">
     <!-- Preloads -->
-    <link rel="preload" href="https://www.teslaoutsourcingservices.com/js/source.js" as="script" fetchpriority="high" />
-    <link rel="preload" href="https://www.teslaoutsourcingservices.com/js/site.js" as="script" fetchpriority="high" />
-    <link rel="preload" href="https://www.teslaoutsourcingservices.com/images/battersea-power-station.webp" as="image" fetchpriority="high">
+    <link rel="preload" href="images/gem-gujarat-logo.webp" as="image" fetchpriority="high">
+    <link rel="preload" href="images/hero-banner-01.webp" as="image" fetchpriority="high">
+    <link rel="preload" href="images/hero-banner-02.webp" as="image" fetchpriority="high">
     <!-- Preloads And Preconnect -->
     <!----- Title Tags ------>
     <title>GeM Registration, Udyam Registration Online, & GeM Consultant India</title>
     <meta name="description" content="Simplify GeM Seller Registration & MSME Udyam Certification Nationwide. Trusted GeM Experts in India for profile optimization and government tender bidding success.">
     <!----- Title Tags Ends ------>
     <!----- SEO Tags ------>
-    <link rel="canonical" href="https://www.teslaoutsourcingservices.com">
+    <!-- <link rel="canonical" href="https://www.teslaoutsourcingservices.com"> -->
     <!----- SEO Tags Ends ------>
     <!--- OG Tags --->
-    <meta property="og:image" content="https://www.teslaoutsourcingservices.com/images/battersea-power-station.webp" />
+    <meta property="og:image" content="images/hero-banner-01.webp" />
     <meta property="og:image:width" content="1224" />
     <meta property="og:image:height" content="796" />
     <meta property="og:image:type" content="image/webp" />
     <!--- OG Tags Ends --->
     <!--- Twitter Card Tags --->
-    <meta name="twitter:image" content="https://www.teslaoutsourcingservices.com/images/battersea-power-station.webp">
+    <meta name="twitter:image" content="images/hero-banner-01.webp">
     <!--- Twitter Card Tags Ends --->
     <!-- header start --> <?php include 'includes/header.php';?>
     <!-- header  end -->

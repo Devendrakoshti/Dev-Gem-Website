@@ -20,122 +20,13 @@
 <meta name="robots" content="index, follow" />
 <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-<!-- Google Tag Manager -->
-<!-- <script>
-    (function (w, d, s, l, i) {
-        w[l] = w[l] || []; w[l].push({
-            'gtm.start':
-                new Date().getTime(), event: 'gtm.js'
-        }); var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-W6K2GBM');
-</script> -->
-<!-- End Google Tag Manager -->
+
 <!-- Custome Style CSS -->
 <style>
   <?php include 'css/source.css'; ?>
   <?php include 'css/style.css'; ?>
 </style>
-
 <!-- Organization Schema -->
-<script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Organization","name":"GEM Gujarat","legalName":"GEM Gujarat LLC","url":"https://www.teslaoutsourcingservices.com","logo":"https://www.teslaoutsourcingservices.com/images/tos-logo.svg","image":"https://www.teslaoutsourcingservices.com/images/bim-services-og-img.webp","sameAs":["https://www.linkedin.com/company/tesla-outsourcing-services/","https://www.facebook.com/teslaoutsourcingservices/","https://twitter.com/teslaoutsource","https://www.pinterest.com/teslaoutsource/","https://www.instagram.com/teslaos/","https://www.crunchbase.com/organization/tesla-outsourcing-services","https://clutch.co/profile/tesla-outsourcing-services","https://www.goodfirms.co/company/bim-service-provider-tesla-outsourcing-services","https://www.bimcommunity.com/brand/tesla-outsourcing-services/","https://techbehemoths.com/company/tesla-outsourcing-services","https://bimworx.net/company/tesla-outsourcing-services/profile/info","https://www.enggpro.com/company/tesla-outsourcing-services","https://businessfirms.co/company/tesla-outsourcing-services","https://medium.com/@teslaoutsourcingservices"],"areaServed":{"@type":"Place","name":"Global"},"contactPoint":[{"@type":"ContactPoint","telephone":"+1 416 907 9430","contactType":"sales","areaServed":["US","CA"],"availableLanguage":"en"},{"@type":"ContactPoint","telephone":"+44 333 011 9045","contactType":"sales","areaServed":"GB","availableLanguage":"en"},{"@type":"ContactPoint","telephone":"+61 386 521 136","contactType":"sales","areaServed":"AU","availableLanguage":"en"}],"address":[{"@type":"PostalAddress","streetAddress":"418 Broadway, 10229","addressLocality":"Albany","addressRegion":"NY","postalCode":"12207","addressCountry":"US"},{"@type":"PostalAddress","streetAddress":"Indraprasth Corporate 304, Prahladnagar, opposite Shell Petrol Pump","addressLocality":"Ahmedabad","addressRegion":"GJ","postalCode":"380015","addressCountry":"IN"}],"description":"Trusted by 300+ Leading Architectural and Engineering Companies in the USA, UK, Europe, Australia, and Canada for BIM Services","email":"services@teslaoutsourcingservices.com","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.5","reviewCount":"650"}}
-</script>
-<?php
-function getPageTitle()
-{
-  $content = file_get_contents($_SERVER['SCRIPT_FILENAME']);
-  preg_match('/<title\b[^>]*>(.*?)<\/title>/is', $content, $matches);
-  return $matches[1] ?? 'Reliable CAD & BIM Service Provider | GEM Gujarat';
-}
-function getMetaTagContent($name)
-{
-  $content = file_get_contents($_SERVER['SCRIPT_FILENAME']);
-  preg_match('/<meta\s+name=["\']' . preg_quote($name, '/') . '["\']\s+content=["\']([^"\']*)["\']/i', $content, $matches);
-  return $matches[1] ?? null;
-}
-$currentUrl = "https://www.teslaoutsourcingservices.com" . $_SERVER['REQUEST_URI'];
-$currentTitle = getPageTitle();
-$currentDescription = getMetaTagContent('description') ?: "GEM Gujarat LLC: Your trusted partner for fast and affordable global CAD and BIM outsourcing.";
-$excludeService = ['/', '/3d-floor-plan-samples.php', '/3d-rendering-samples.php', '/architectural-bim-samples.php', '/architectural-cad-drafting-samples.php', '/architectural-construction-drawings-samples.php', '/bim-samples.php', '/infographics.php', '/management-tesla.php', '/mechanical-drafting-samples.php', '/mechanical-engineering-analysis-samples.php', '/mep-bim-co-ordination-samples.php', '/mep-bim-samples.php', '/mep-drafting-samples.php', '/mep-installation-drawings-samples.php', '/point-cloud-bim-samples.php', '/pricing-model.php', '/privacy-policy.php', '/product-design-samples.php', '/revit-family-sample.php', '/sheet-metal-design-samples.php', '/structural-bim-samples.php', '/structural-shop-drawing-samples.php', '/structural-steel-detailing-samples.php', '/team-tesla.php', '/thank-you.php', '/projects/3d-revit-modeling-and-shop-drawing-of-academic-institution.php', '/projects/bim-modeling-airport.php', '/projects/bim-modeling-hospital.php', '/projects/construction-documentation-hotel.php', '/projects/mep-bim-modeling-bim-coordination-performing-arts-center.php'];
-$excludeBreadcrumb = ['/'];
-$requestUri = strtok($_SERVER['REQUEST_URI'], '?');
-$serviceSchema = null;
-if (!in_array($_SERVER['REQUEST_URI'], $excludeService)) {
-  $serviceSchema = [
-    "@context" => "https://schema.org/",
-    "@type" => "Service",
-    "name" => $currentTitle,
-    "serviceType" => ["Architectural BIM Services", "Architectural CAD Drafting", "Construction Drawings", "Architectural Design Services", "Mechanical Drafting Services", "Product Design Services", "Sheet Metal Design Services", "Engineering Analysis Services", "Structural Steel Detailing", "Rebar Detailing Services", "Structural CAD Drafting", "Steel Shop Drawings", "Structural BIM Services", "3D Rendering", "3D Floor Plan Services", "MEP BIM Services", "MEP BIM Coordination", "MEP Clash Detection", "MEP Shop Drawings", "MEP CAD Drafting", "Drafting Services", "As Built Drawing Services", "Shop Drawings Services", "BIM Services", "BIM Consulting Services", "BIM for Infrastructure", "Scan to BIM", "BIM Coordination", "BIM Clash Detection", "BIM Content Creation", "4D BIM Services", "Quantity Takeoff", "COBie", "CAD Drafting Services", "Architectural 3D Rendering Services", "Construction Documentation", "Structural Steel Drawings Services", "Steel Detailing Documentation", "Laser Scanning Point Cloud BIM Modeling", "Point Cloud to BIM Services", "Staff Augmentation for AEC"],
-    "url" => $currentUrl,
-    "areaServed" => [["@type" => "Place", "name" => "Global"]],
-    "brand" => [
-      "@type" => "Brand",
-      "name" => "GEM Gujarat LLC",
-      "logo" => "https://www.teslaoutsourcingservices.com/images/tos-logo.svg"
-    ]
-  ];
-}
-$breadcrumb = null;
-if (!in_array($_SERVER['REQUEST_URI'], $excludeBreadcrumb) && $_SERVER['REQUEST_URI'] !== '/') {
-  $breadcrumb = [
-    "@context" => "https://schema.org",
-    "@type" => "BreadcrumbList",
-    "itemListElement" => [
-      [
-        "@type" => "ListItem",
-        "@id" => "https://www.teslaoutsourcingservices.com/#listItem",
-        "position" => 1,
-        "name" => "Home",
-        "item" => "https://www.teslaoutsourcingservices.com"
-      ],
-      [
-        "@type" => "ListItem",
-        "@id" => $currentUrl . "/#listItem",
-        "position" => 2,
-        "name" => $currentTitle,
-        "item" => $currentUrl
-      ]
-    ]
-  ];
-}
-if ($serviceSchema) {
-  echo '<script type="application/ld+json">' .
-    json_encode($serviceSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) .
-    '</script>';
-}
-
-if ($breadcrumb) {
-  echo '<script type="application/ld+json">' .
-    json_encode($breadcrumb, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) .
-    '</script>' . "\n";
-}
-$socialTags = [
-  'twitter:card' => 'summary_large_image',
-  'twitter:title' => $currentTitle,
-  'twitter:description' => $currentDescription,
-  'twitter:image:alt' => $currentTitle,
-  'og:locale' => 'en_US',
-  'og:type' => 'website',
-  'og:title' => $currentTitle,
-  'og:description' => $currentDescription,
-  'og:url' => $currentUrl,
-  'og:site_name' => 'GEM Gujarat LLC',
-  'og:logo' => 'https://www.teslaoutsourcingservices.com/images/tos-logo.svg'
-];
-
-foreach ($socialTags as $key => $value) {
-  $prefix = str_starts_with($key, 'twitter') ? 'name' : 'property';
-  echo "<meta $prefix=\"$key\" content=\"" . htmlspecialchars($value, ENT_QUOTES) . "\">\n";
-}
-echo '<link rel="alternate" hreflang="en-us" href="' . htmlspecialchars($currentUrl, ENT_QUOTES) . '">' . "\n";
-echo '<link rel="alternate" hreflang="en-au" href="' . htmlspecialchars($currentUrl, ENT_QUOTES) . '">' . "\n";
-echo '<link rel="alternate" hreflang="en-ca" href="' . htmlspecialchars($currentUrl, ENT_QUOTES) . '">' . "\n";
-echo '<link rel="alternate" hreflang="en-gb" href="' . htmlspecialchars($currentUrl, ENT_QUOTES) . '">' . "\n";
-echo '<link rel="alternate" hreflang="x-default" href="' . htmlspecialchars($currentUrl, ENT_QUOTES) . '">' . "\n";
-echo '<meta name="apple-mobile-web-app-title" content="' . $currentTitle . '">' . "\n"
-  ?>
 </head>
 
 <body>
