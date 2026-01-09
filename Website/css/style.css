@@ -65,7 +65,7 @@ h1 span {background: transparent;height: auto;width: auto;color: transparent;-we
 /* .offcanvas.offcanvas-end{width: 300px;} */
 
 /* Home Page Css Start */
-.hero-banner{background: url('./images/hero-banner-01.jpg') no-repeat center center;background-size: cover;padding: 10% 0px; position: relative;}
+.hero-banner{background: url('./images/hero-banner-01.webp') no-repeat center center;background-size: cover;padding: 10% 0px; position: relative;}
 .hero-banner::after{content: "";position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: linear-gradient(to right, #3264f5 2%,#7202bb 82%);opacity: 0.85;} 
 .hero-banner > div{position: relative;z-index: 2;}
 .hero-banner-image{ animation: float 6s ease-in-out infinite;}
