@@ -295,7 +295,7 @@
             </div>
             <div class="col-lg-4">
               <div class="h-100">
-                <img src="images/cta-img.webp" alt="CTA Image" title="CTA Image" class="img-fluid rounded-5" width="867" height="713">
+                <img src="images/gem-gujarat-cta.webp" alt="CTA Image" title="CTA Image" class="img-fluid rounded-5" width="867" height="713">
               </div>
             </div>
           </div>

@@ -100,7 +100,7 @@
           </div>
           <div class="col-lg-4 col-md-8">
             <div class="service-img-years">
-              <img src="./images/about-us.jpg" alt="About Us" title="About Us" class="img-fluid rounded-5" width="1120" height="1200">
+              <img src="./images/gem-catalogue-management-services-about-us.webp" alt="About Us" title="About Us" class="img-fluid rounded-5" width="1120" height="1200">
               <div class="rounded-5 bg-gradient-red-purple border border-5 border-white shadow service-img-mn">
                 <div class="d-flex p-lg-5 p-4 align-items-center justify-content-center text-white">
                   <span class="display-2 fw-bold ">10+ </span>
@@ -119,7 +119,7 @@
         <div class="row g-5 mb-4">
           <div class="col-lg-4 col-md-8">
             <div class="solution-section-img">
-              <img src="./images/about-us.jpg" alt="About Us" title="About Us" class="img-fluid rounded-5" width="1120" height="1200">
+              <img src="./images/gem-catalogue-management-services-registration.webp" alt="About Us" title="About Us" class="img-fluid rounded-5" width="1024" height="1200">
             </div>
           </div>
           <div class="col-lg-8">
@@ -215,8 +215,7 @@
         <div class="row g-lg-5 g-4 align-items-center">
           <div class="col-lg-5">
             <div class="h-100">
-              <img src="./images/faq.jpg" alt="FAQ" title="FAQ" class="img-fluid rounded-5" width="800" height="400">
-            </div>
+              <img src="./images/gem-gujarat-faq.webp" alt="Gem Gujarat Faq" title="Gem Gujarat Faq" class="img-fluid rounded-5" width="2000" height="1333">            </div>
           </div>
           <div class="col-lg-7">
             <div class="d-block h-100">
@@ -314,7 +313,7 @@
             </div>
             <div class="col-lg-4">
               <div class="h-100">
-                <img src="images/cta-img.webp" alt="CTA Image" title="CTA Image" class="img-fluid rounded-5" width="867" height="713">
+                <img src="images/gem-gujarat-cta.webp" alt="Gem Gujarat Cta" title="Gem Gujarat Cta" class="img-fluid rounded-5" width="867" height="713">
               </div>
             </div>
           </div>
