@@ -38,11 +38,11 @@
     <!-- header start --> <?php include 'includes/header.php';?>
     <!-- header end -->
     <!-- banner start  -->
-    <div class="service-banner w-100 gem-gujarat-contact-us-banner">
+    <div class="service-banner">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-10">
-            <div class="text-white">
+        <div class="row flex-wrap-reverse g-5">
+          <div class="col-lg-6">
+            <div class="h-100">
               <div class="page-path">
                 <span>
                   <i class="fa-solid fa-house text-red me-1"></i> Home <i class="fa-solid fa-chevron-right mx-1 fs-12"></i> Contact Us </span>
@@ -51,9 +51,15 @@
               <p class="fs-18 mb-4 lh-base">Navigating the Government e-Marketplace doesn't have to be complicated. Get expert GeM registration and consultancy services designed specifically for Indian MSMEs and startups.</p>
             </div>
           </div>
+          <div class="col-lg-6">
+            <div class="h-100">
+              <div class="hero-banner-image">
+                <img src="images/gem-gujarat-contact-banner.webp" alt="Gem Gujarat Contact Banner Image" title="Gem Gujarat Contact Banner Image" class="img-fluid" width="1000" height="1000">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      
     </div>
     <!-- banner end  -->
     <!-- Why GeM Problem Section Start -->
@@ -91,7 +97,7 @@
           </div>
           <div class="col-lg-4 col-md-8">
             <div class="h-100">
-              <img src="./images/about-us.jpg" alt="About Us" title="About Us" class="img-fluid rounded-5" width="1120" height="1200">
+              <img src="./images/gem-gujarat-why-choose.webp" alt="Gem Gujarat Why Choose Image" title="Gem Gujarat Why Choose Image" class="img-fluid rounded-5" width="1024" height="1200">
             </div>
           </div>
         </div>
@@ -103,7 +109,7 @@
         <div class="row g-0">
             <div class="col-lg-6">
                 <div class="h-100">
-                    <img src="images/contact-us.webp" class="img-fluid h-100 w-100" alt="Contact US Img" title="Contact US Img" width="576" height="585" loading="lazy">
+                    <img src="images/gem-gujarat-contact-form.webp" class="img-fluid h-100 w-100" alt="Gem Gujarat Contact Form Image" title="Gem Gujarat Contact Form Image" width="576" height="585" loading="lazy">
                 </div>
             </div>
             <div class="col-lg-6">

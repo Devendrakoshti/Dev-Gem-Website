@@ -38,7 +38,7 @@
     <!-- header start --> <?php include 'includes/header.php';?>
     <!-- header end -->
     <!-- banner start  -->
-    <div class="service-banner w-100 gem-gujarat-msme-udyam-registration-banner">
+    <div class="service-banner gem-gujarat-msme-udyam-registration-banner">
       <div class="container">
         <div class="row">
           <div class="col-lg-10">
@@ -103,7 +103,7 @@
           </div>
           <div class="col-lg-4 col-md-8">
             <div class="service-img-years">
-              <img src="./images/about-us.jpg" alt="About Us" title="About Us" class="img-fluid rounded-5" width="1120" height="1200">
+              <img src="./images/about-us.jpg" alt="About Us" title="About Us" class="img-fluid rounded-5" width="1024" height="1200">
               <div class="rounded-5 bg-gradient-red-purple border border-5 border-white shadow service-img-mn">
                 <div class="d-flex p-lg-5 p-4 align-items-center justify-content-center text-white">
                   <span class="display-2 fw-bold ">10+ </span>
@@ -122,7 +122,7 @@
         <div class="row g-5 mb-4">
           <div class="col-lg-4 col-md-8">
             <div class="solution-section-img">
-              <img src="./images/about-us.jpg" alt="About Us" title="About Us" class="img-fluid rounded-5" width="1120" height="1200">
+              <img src="./images/about-us.jpg" alt="About Us" title="About Us" class="img-fluid rounded-5" width="1024" height="1200">
             </div>
           </div>
           <div class="col-lg-8">

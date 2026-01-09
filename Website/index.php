@@ -499,7 +499,7 @@
         <div class="row g-lg-5 g-4 align-items-center">
           <div class="col-lg-5">
             <div class="h-100">
-              <img src="./images/gem-gujarat-faq.webp" alt="Gem Gujarat Faq" title="Gem Gujarat Faq" class="img-fluid rounded-5" width="2000" height="1333">
+              <img src="./images/gem-gujarat-faq.webp" alt="Gem Gujarat FAQ Image" title="Gem Gujarat FAQ Image" class="img-fluid rounded-5" width="2000" height="1333">
             </div>
           </div>
           <div class="col-lg-7">
