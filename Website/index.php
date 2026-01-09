@@ -76,7 +76,7 @@
         <div class="row g-5">
           <div class="col-lg-5 col-md-8">
             <div class="h-100 rounded-5">
-              <img src="./images/about-us.jpg" alt="About Us" title="About Us" class="img-fluid rounded-5" width="1120" height="1200">
+              <img src="./images/home-about-us.webp" alt="About Us" title="About Us" class="img-fluid rounded-5" width="512" height="600">
             </div>
           </div>
           <div class="col-lg-7">
@@ -247,7 +247,7 @@
         <div class="row g-5">
           <div class="col-xl-3 col-md-8">
             <div class="h-100">
-              <img src="./images/why-choose.webp" alt="Why Choose" title="Why Choose" class="img-fluid rounded-5 mb-4" width="576" height="800">
+              <img src="./images/home-why-choose.webp" alt="Why Choose" title="Why Choose" class="img-fluid rounded-5 mb-4" width="576" height="800">
               <div class="bg-white border-start border-red border-5 p-4 shadow rounded">
                 <p class="text-light-black fs-5 m-0">"Expert GeM consultants delivering compliant registration and bidding"</p>
               </div>
@@ -374,7 +374,7 @@
           </div>
           <div class="col-lg-4">
             <div class="h-100 d-none d-lg-block">
-              <img src="./images/why-choose.webp" alt="Why Choose" title="Why Choose" class="img-fluid rounded-5" width="576" height="800">
+              <img src="./images/home-process.webp" alt="Why Choose" title="Why Choose" class="img-fluid rounded-5" width="576" height="800">
             </div>
           </div>
         </div>
@@ -500,7 +500,7 @@
         <div class="row g-lg-5 g-4 align-items-center">
           <div class="col-lg-5">
             <div class="h-100">
-              <img src="./images/faq.jpg" alt="FAQ" title="FAQ" class="img-fluid rounded-5" width="800" height="400">
+              <img src="./images/home-faq.webp" alt="FAQ" title="FAQ" class="img-fluid rounded-5" width="800" height="400">
             </div>
           </div>
           <div class="col-lg-7">
@@ -601,7 +601,7 @@
             </div>
             <div class="col-lg-4">
               <div class="h-100">
-                <img src="images/cta-img.webp" alt="CTA Image" title="CTA Image" class="img-fluid rounded-5" width="867" height="713">
+                <img src="images/home-cta.webp" alt="CTA Image" title="CTA Image" class="img-fluid rounded-5" width="867" height="713">
               </div>
             </div>
           </div>

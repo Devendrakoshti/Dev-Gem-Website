@@ -92,7 +92,7 @@ h1 span {background: transparent;height: auto;width: auto;color: transparent;-we
 .client-logo-slide-track > div{border: 1px solid var(--color-grey);border-radius: 50px;background-color: var(--color-grey);padding: 12px 30px;}
 .client-logo-slide-track img{opacity: 0.5;transition: all 0.3s ease;}
 .client-logo-slide-track > div:hover img{opacity: 1;}
-.client-testimonial-image{background: url(./images/client-01.jpg) no-repeat center center;background-size: cover;}
+.client-testimonial-image{background: url(./images/home-testimonial.webp) no-repeat center center;background-size: cover;}
 .client-testimonial-slider{position: relative;padding-bottom: 50px;}
 .client-testimonial-slider .swiper-button-prev:after, .client-testimonial-slider .swiper-button-next:after{display: none;}
 .client-testimonial-slider .swiper-button-mn{position: absolute;bottom: 0;right: 30px;}
