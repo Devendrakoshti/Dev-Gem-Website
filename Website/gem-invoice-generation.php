@@ -40,7 +40,7 @@
     <!-- banner start  -->   
      <div class="service-banner">
       <div class="container">
-        <div class="row flex-wrap-reverse g-">
+        <div class="row flex-wrap-reverse">
           <div class="col-lg-6">
             <div class="h-100">
               <div class="page-path">
@@ -60,7 +60,7 @@
           <div class="col-lg-6">
             <div class="h-100">
               <div class="hero-banner-image">
-                <img src="images/gem-invoice-generation-banner.webp" alt="Gem Invoice Generation Banner Imager" title="Gem Invoice Generation Banner Imager" class="img-fluid" width="1000" height="1000">
+                <img src="images/gem-invoice-generation-banner.webp" alt="Gem Invoice Generation Banner Image" title="Gem Invoice Generation Banner Image" class="img-fluid" width="1000" height="1000">
               </div>
             </div>
           </div>

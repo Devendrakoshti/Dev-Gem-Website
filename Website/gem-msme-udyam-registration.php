@@ -38,11 +38,11 @@
     <!-- header start --> <?php include 'includes/header.php';?>
     <!-- header end -->
     <!-- banner start  -->
-    <div class="service-banner gem-gujarat-msme-udyam-registration-banner">
+     <div class="service-banner">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-10">
-            <div class="text-white">
+        <div class="row flex-wrap-reverse">
+          <div class="col-lg-6">
+            <div class="h-100">
               <div class="page-path">
                 <span>
                   <i class="fa-solid fa-house text-red me-1"></i> Home <i class="fa-solid fa-chevron-right mx-1 fs-12"></i> Gem Msme Udyam Registration </span>
@@ -57,9 +57,15 @@
               </a>
             </div>
           </div>
+          <div class="col-lg-6">
+            <div class="h-100">
+              <div class="hero-banner-image">
+                <img src="images/gem-msme-udyam-registration-banner.webp" alt="Gem Msme Udyam Registration Banner Image" title="Gem Msme Udyam Registration Banner Image" class="img-fluid" width="1000" height="1000">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      
     </div>
     <!-- banner end  -->
     <!-- Why GeM Problem Section Start -->
@@ -103,7 +109,7 @@
           </div>
           <div class="col-lg-4 col-md-8">
             <div class="service-img-years">
-              <img src="./images/about-us.jpg" alt="About Us" title="About Us" class="img-fluid rounded-5" width="1024" height="1200">
+              <img src="./images/gem-msme-udyam-registration-benefits.webp" alt="Gem Msme Udyam Registration Benefits Image" title="Gem Msme Udyam Registration Benefits Image" class="img-fluid rounded-5" width="1024" height="1200">
               <div class="rounded-5 bg-gradient-red-purple border border-5 border-white shadow service-img-mn">
                 <div class="d-flex p-lg-5 p-4 align-items-center justify-content-center text-white">
                   <span class="display-2 fw-bold ">10+ </span>
@@ -122,7 +128,7 @@
         <div class="row g-5 mb-4">
           <div class="col-lg-4 col-md-8">
             <div class="solution-section-img">
-              <img src="./images/about-us.jpg" alt="About Us" title="About Us" class="img-fluid rounded-5" width="1024" height="1200">
+              <img src="./images/gem-msme-udyam-registration-support.webp" alt="Gem Msme Udyam Registration Support Image" title="Gem Msme Udyam Registration Support Image" class="img-fluid rounded-5" width="1024" height="1200">
             </div>
           </div>
           <div class="col-lg-8">
@@ -188,7 +194,7 @@
         <div class="row g-lg-5 g-4 align-items-center">
           <div class="col-lg-5">
             <div class="h-100">
-              <img src="./images/faq.jpg" alt="FAQ" title="FAQ" class="img-fluid rounded-5" width="800" height="400">
+              <img src="./images/gem-gujarat-faq.webp" alt="Gem Gujarat FAQ Image" title="Gem Gujarat FAQ Image" class="img-fluid rounded-5" width="2000" height="1333">            
             </div>
           </div>
           <div class="col-lg-7">

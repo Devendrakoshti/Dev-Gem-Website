@@ -40,7 +40,7 @@
     <!-- banner start  -->
      <div class="service-banner">
       <div class="container">
-        <div class="row flex-wrap-reverse g-">
+        <div class="row flex-wrap-reverse">
           <div class="col-lg-6">
             <div class="h-100">
               <div class="page-path">

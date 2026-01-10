@@ -38,11 +38,11 @@
     <!-- header start --> <?php include 'includes/header.php';?>
     <!-- header end -->
     <!-- banner start  -->
-    <div class="service-banner gem-gujarat-order-acceptance-guide-banner">
+     <div class="service-banner">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-10">
-            <div class="text-white">
+        <div class="row flex-wrap-reverse align-items-center">
+          <div class="col-lg-6">
+            <div class="h-100">
               <div class="page-path">
                 <span>
                   <i class="fa-solid fa-house text-red me-1"></i> Home <i class="fa-solid fa-chevron-right mx-1 fs-12"></i> GeM Order  Acceptance </span>
@@ -57,9 +57,15 @@
               </a>
             </div>
           </div>
+          <div class="col-lg-6">
+            <div class="h-100">
+              <div class="hero-banner-image">
+                <img src="images/gem-oem-panel-registration-banner.webp" alt="Gem Oem Panel Registration Banner Image" title="Gem Oem Panel Registration Banner Image" class="img-fluid" width="1000" height="1000">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      
     </div>
     <!-- banner end  -->
     <!-- Why GeM Problem Section Start -->

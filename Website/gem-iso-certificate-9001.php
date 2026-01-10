@@ -42,7 +42,7 @@
     <!-- banner start  -->
     <div class="service-banner">
       <div class="container">
-        <div class="row flex-wrap-reverse g-">
+        <div class="row flex-wrap-reverse">
           <div class="col-lg-6">
             <div class="h-100">
               <div class="page-path">
@@ -62,7 +62,7 @@
           <div class="col-lg-6">
             <div class="h-100">
               <div class="hero-banner-image">
-                <img src="images/gem-invoice-generation-banner.webp" alt="Gem Invoice Generation Banner Imager" title="Gem Invoice Generation Banner Imager" class="img-fluid" width="1000" height="1000">
+                <img src="images/gem-iso-certificate-banner.webp" alt="Gem Iso Certificate Banner Image" title="Gem Iso Certificate Banner Image" class="img-fluid" width="1000" height="1000">
               </div>
             </div>
           </div>
@@ -118,7 +118,7 @@
           </div>
           <div class="col-lg-4 col-md-8">
             <div class="service-img-years">
-              <img src="./images/about-us.jpg" alt="About Us" title="About Us" class="img-fluid rounded-5" width="1024" height="1200">
+              <img src="./images/gem-iso-certificate-core-value.webp" alt="Gem Iso Certificate Core Value Image" title="Gem Iso Certificate Core Value Image" class="img-fluid rounded-5" width="1024" height="1200">              
               <div class="rounded-5 bg-gradient-red-purple border border-5 border-white shadow service-img-mn">
                 <div class="d-flex p-lg-5 p-4 align-items-center justify-content-center text-white">
                   <span class="display-2 fw-bold ">10+ </span>
@@ -164,7 +164,7 @@
           </div>
           <div class="col-lg-4">
             <div class="h-100 d-none d-lg-block">
-              <img src="./images/home-process.webp" alt="Why Choose" title="Why Choose" class="img-fluid rounded-5" width="576" height="800">
+              <img src="./images/gem-iso-certificate-step.webp" alt="Gem Iso Certificate Step Image" title="Gem Iso Certificate Step Image" class="img-fluid rounded-5 sticky-top top-100px" width="576" height="800">
             </div>
           </div>
         </div>
@@ -228,12 +228,12 @@
                   <div class="accordion-item">
                     <h3 class="accordion-header">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        <span>4. </span> Does GeM Catalogue Management help in winning L1 tenders? </button>
+                        <span>4. </span> Does an ISO 9001 certificate help MSMEs get exemptions in government tenders? </button>
                     </h3>
                     <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
                         <p>
-                          Yes, it is a core focus. We use dynamic pricing optimization to analyze your competition and adjust your rates, ensuring your products are positioned for L1 (Lowest Bidder) status while maintaining your profit margins.
+                         While ISO 9001 is primarily a quality benchmark, having it often satisfies technical eligibility criteria in high-value bids. For MSMEs, this certification acts as a "trust signal" that can prevent disqualification during technical evaluations, even when competing against larger corporations.
                         </p>
                       </div>
                     </div>
@@ -241,11 +241,11 @@
                   <div class="accordion-item">
                     <h3 class="accordion-header">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                        <span>5. </span> How do you handle new OEM or QCI compliance rules on GeM? </button>
+                        <span>5. </span> Can I use the same ISO certificate for multiple product categories on GeM?</button>
                     </h3>
                     <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
-                        <p>We monitor GeM circulars daily for any updates from OEM, QCI, or BIS. When requirements change, we immediately update your listings to prevent suppressed listings and ensure your products stay visible to government buyers.</p>
+                        <p>Yes, provided the "Scope of Registration" on your ISO 9001 certificate covers the manufacturing or supply of those specific product categories. During our Gap Analysis, we ensure your certification scope is broad enough to meet various GeM OEM Registration Requirements.</p>
                       </div>
                     </div>
                   </div>

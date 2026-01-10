@@ -467,7 +467,7 @@
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="h-100 p-xxl-5 p-4 rounded-5 bg-gradient-red-purple text-white shadow">
+            <div class="h-100 p-xxl-5 p-4 rounded-5 bg-gradient-red-purple text-white shadow d-flex flex-column justify-content-center">
               <div class="d-flex align-items-center mb-4">
                 <span class="display-2 fw-bold ">98% </span>
                 <span class="ms-3 fs-4">Satisfaction Rate</span>
