@@ -60,7 +60,7 @@
           <div class="col-lg-6">
             <div class="h-100">
               <div class="hero-banner-image">
-                <img src="images/gem-oem-panel-registration-banner.webp" alt="Gem Oem Panel Registration Banner Image" title="Gem Oem Panel Registration Banner Image" class="img-fluid" width="1000" height="1000">
+                <img src="images/gem-order-acceptance-guide-banner.webp" alt="Gem Order Acceptance Guide Banner Image" title="Gem Order Acceptance Guide Banner Image" class="img-fluid" width="1000" height="1000">
               </div>
             </div>
           </div>
@@ -112,7 +112,7 @@ Why Is Timely Acceptance So Important?
           </div>
           <div class="col-lg-4 col-md-8">
             <div class="service-img-years">
-              <img src="./images/about-us.jpg" alt="About Us" title="About Us" class="img-fluid rounded-5" width="1024" height="1200">
+              <img src="./images/gem-order-acceptance-guide-l1.webp" alt="Gem Order Acceptance Guide L1 Image" title="Gem Order Acceptance Guide L1 Image" class="img-fluid rounded-5" width="1024" height="1200">
               <div class="rounded-5 bg-gradient-red-purple border border-5 border-white shadow service-img-mn">
                 <div class="d-flex p-lg-5 p-4 align-items-center justify-content-center text-white">
                   <span class="display-2 fw-bold ">10+ </span>
@@ -131,7 +131,7 @@ Why Is Timely Acceptance So Important?
         <div class="row g-5 mb-4">
           <div class="col-lg-4 col-md-8">
             <div class="solution-section-img">
-              <img src="./images/about-us.jpg" alt="About Us" title="About Us" class="img-fluid rounded-5" width="1024" height="1200">
+              <img src="./images/gem-order-acceptance-guide-steps.webp" alt="Gem Order Acceptance Guide Steps Image" title="Gem Order Acceptance Guide Steps Image" class="img-fluid rounded-5" width="1024" height="1200">
             </div>
           </div>
           <div class="col-lg-8">
