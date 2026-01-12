@@ -21,7 +21,7 @@ ftp
 username: u321027953.dev
 password: Dev_koshti_1616
 host: ftp.gemgujarat.in
->>>>>>> 2d2c8d44f38cc38b422ee5b3f15a9d49f5e2ea38
+>>>>>>> 2d2c8d44f38cc38b422ee5b3f15a9d49f5e2ea38	
 
 
 Name Cheap Details
