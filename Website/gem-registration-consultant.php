@@ -62,7 +62,7 @@
           <div class="col-lg-6">
             <div class="h-100">
               <div class="hero-banner-image">
-                <img src="images/gem-home-banner.webp" alt="Hero Banner Image" title="Hero Banner Image" class="img-fluid" width="1000" height="1000">
+                <img src="images/gem-registration-consultant-banner.webp" alt="Gem Registration Consultant Banner Image" title="Gem Registration Consultant Banner Image" class="img-fluid" width="1000" height="1000">
               </div>
             </div>
           </div>
@@ -111,7 +111,7 @@
           </div>
           <div class="col-lg-4 col-md-8">
             <div class="service-img-years">
-              <img src="./images/about-us.jpg" alt="About Us" title="About Us" class="img-fluid rounded-5" width="1024" height="1200">
+              <img src="./images/gem-registration.webp" alt="Gem Registration Image" title="Gem Registration Image" class="img-fluid rounded-5" width="1024" height="1200">
               <div class="rounded-5 bg-gradient-red-purple border border-5 border-white shadow service-img-mn">
                 <div class="d-flex p-lg-5 p-4 align-items-center justify-content-center text-white">
                   <span class="display-2 fw-bold ">10+ </span>
@@ -130,7 +130,7 @@
         <div class="row g-5 mb-4">
           <div class="col-lg-4 col-md-8">
             <div class="solution-section-img">
-              <img src="./images/about-us.jpg" alt="About Us" title="About Us" class="img-fluid rounded-5" width="1024" height="1200">
+              <img src="./images/our-registration-services.webp" alt="Our Registration Services Image" title="Our Registration Services Image" class="img-fluid rounded-5" width="1024" height="1200">
             </div>
           </div>
           <div class="col-lg-8">
