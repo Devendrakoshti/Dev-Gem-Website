@@ -3,7 +3,7 @@
   <head>
    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />    
     <!-- Google Analytics 4 (GA4) js code -->
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -14,7 +14,13 @@
     <!-- Meta Title & Description For All pages-->
     <title><?php echo $page_title; ?></title>
     <meta name="description" content="<?php echo $page_desc; ?>">
-    <meta name="robots" content="index, follow">
+    <?php if (!empty($page_keywords)) : ?>
+<meta name="keywords" content="<?php echo htmlspecialchars($page_keywords, ENT_QUOTES, 'UTF-8'); ?>">
+    <?php endif; ?>
+<!-- index, follow Meta Code -->
+    <meta name="robots" content="<?php echo $robots_meta ?? 'index, follow'; ?>" />
+    <meta name="googlebot" content="<?php echo $googlebot_meta ?? 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1'; ?>" />
+    <meta name="bingbot" content="<?php echo $bingbot_meta ?? 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1'; ?>" />
     <link rel="canonical" href="<?php echo $canonical_url; ?>">
     <!-- Open Graph Tags -->
     <meta property="og:type" content="website">
@@ -53,7 +59,15 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
     <link rel="icon" type="image/x-icon" href="./images/favicon/favicon.ico">
     <link rel="manifest" href="./images/favicon/site.webmanifest">
-    <meta name="theme-color" content="#0284C7">
+    <meta name="theme-color" content="#263147">
+    <!-- apple web app title  -->
+    <meta name="apple-mobile-web-app-title" content="<?php echo $page_title; ?>">
+    <!-- hreflang Tag  -->
+    <link rel="alternate" hreflang="en-us" href="<?php echo $canonical_url; ?>">
+    <link rel="alternate" hreflang="en-au" href="<?php echo $canonical_url; ?>">
+    <link rel="alternate" hreflang="en-ca" href="<?php echo $canonical_url; ?>">
+    <link rel="alternate" hreflang="en-gb" href="<?php echo $canonical_url; ?>">
+    <link rel="alternate" hreflang="x-default" href="<?php echo $canonical_url; ?>">
     <!-- Style CSS -->
     <?php echo '<style>'; include "css/style.css"; echo '</style>';?>
     <?php echo '<style>'; include "css/source.css"; echo '</style>';?>
@@ -96,7 +110,6 @@
                      <li><a title="BIM Services" href="https://www.cadservicesindia.com/bim-services.php">BIM Services</a></li>
                      <li><a title="Scan to BIM Services" href="https://www.cadservicesindia.com/scan-to-bim-services.php">Scan to BIM Services</a></li>
                      <li><a title="3D Rendering Services" href="https://www.cadservicesindia.com/3d-rendering-services.php">3D Rendering Services</a></li>
-                     <!--<li><a title="" href="revit-family-creation-services.php">Revit Family Creations</a></li>-->
                   </ul>
                </li>
                <li>
