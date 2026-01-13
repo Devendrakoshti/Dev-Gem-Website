@@ -76,8 +76,8 @@
     <link rel="alternate" hreflang="en-gb" href="<?php echo $canonical_url; ?>">
     <link rel="alternate" hreflang="x-default" href="<?php echo $canonical_url; ?>">
     <!-- Style CSS --> 
-     <?php echo '<style>'; include "css/style.css"; echo '</style>';?> 
-     <?php echo '<style>'; include "css/source.css"; echo '</style>';?>
+     <?php echo '<style>'; include "../css/style.css"; echo '</style>';?> 
+     <?php echo '<style>'; include "../css/source.css"; echo '</style>';?>
     <!-- Banner Image Preload --> <?php if (isset($preload_image) && $preload_image): ?>
     <link rel="preload" as="image" href="<?php echo $preload_image; ?>" fetchpriority="high"> <?php endif; ?>
     <!-- Schema Engine Include --> <?php include 'schema-engine.php'; ?>
