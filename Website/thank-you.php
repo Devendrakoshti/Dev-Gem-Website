@@ -9,7 +9,7 @@ $og_height = "1162";
 $robots_meta = "noindex, nofollow";
 $googlebot_meta = "noindex, nofollow";
 $bingbot_meta = "noindex, nofollow";
-include 'include/header.php';
+include 'includes/header.php';
 ?>
 <!-- thank you start  -->
 <section class="container py-5">

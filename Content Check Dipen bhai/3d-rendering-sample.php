@@ -6,7 +6,7 @@ $preload_image = "https://www.cadservicesindia.com/images/inner-banner/rendring.
 $og_image = "https://www.cadservicesindia.com/images/3d-rendering/3d-r1.webp";
 $og_width = "1024";
 $og_height = "640";
-include 'include/header.php';
+include 'includes/header.php';
 ?>
 <!--Banner Section -->
 <div class="banner_inner bg-rendeing w-100 py180">

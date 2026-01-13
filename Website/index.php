@@ -7,7 +7,7 @@ $og_image = "images/gem-home-banner.webp";
 $og_width = "1000";
 $og_height = "1000";
 $page_keywords = "";
-include 'include/header.php';
+include 'includes/header.php';
 ?>
 <!-- banner start  -->
 <div class="hero-banner">
