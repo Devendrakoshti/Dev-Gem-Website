@@ -22,7 +22,7 @@ body {
 .fs-14 {font-size: 0.875rem;line-height: 22px;}
 .fs-16 {font-size: 1rem;line-height: 24px;} 
 .fs-18 {font-size: 1.125rem;line-height: 26px;}
-h1 {font-weight: 700;font-size: clamp(30px, 1rem + 2.5vw, 45px);}
+h1 {font-weight: 700;font-size: clamp(30px, 1rem + 2.5vw, 45px);} 
 h1 span {background: transparent;height: auto;width: auto;color: transparent;-webkit-text-stroke: 1px var(--color-black);}
 .hero-banner h1 span {-webkit-text-stroke: 1px var(--color-white);}
 .h2-title {font-weight: 700;font-size: clamp(26px, 1rem + 2vw, 40px);color: #0F0928;margin-bottom: 0;}
