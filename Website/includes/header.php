@@ -80,7 +80,7 @@
      <?php echo '<style>'; include "./css/source.css"; echo '</style>';?>
     <!-- Banner Image Preload --> <?php if (isset($preload_image) && $preload_image): ?>
     <link rel="preload" as="image" href="<?php echo $preload_image; ?>" fetchpriority="high"> <?php endif; ?>
-    <!-- Schema Engine Include --> <?php include 'schema-engine.php'; ?>
+    <!-- Schema Engine Include --> <?php include 'schema.php'; ?>
   </head>
   <body>
     <nav class="navbar navbar-expand-xl navbar-light bg-white shadow fixed-top py-0 header-menu">

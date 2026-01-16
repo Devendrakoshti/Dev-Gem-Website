@@ -76,7 +76,7 @@
     <link rel="preload" as="image" href="<?php echo $preload_image; ?>" fetchpriority="high">
     <?php endif; ?>
     <!-- Schema Engine Include -->
-    <?php include 'schema-engine.php'; ?>
+    <?php include 'schema.php'; ?>
   </head>
   <body>
    <div class="cookie-container hide">

@@ -27,7 +27,8 @@ h1 span {background: transparent;height: auto;width: auto;color: transparent;-we
 .hero-banner h1 span {-webkit-text-stroke: 1px var(--color-white);}
 .h2-title {font-weight: 700;font-size: clamp(26px, 1rem + 2vw, 40px);color: #0F0928;margin-bottom: 0;}
 .h2-title b {background: conic-gradient(from 0deg,#ab0a1f,#d12028,#2a0909,#80141b,#1b0505,#e22b2f,#ab0a1f);background-size: 200% 200%;background-clip: text;-webkit-background-clip: text;-webkit-text-fill-color: transparent;animation: titleGradient 5s linear infinite;}
-a{text-decoration: none;}
+a{text-decoration: none !important;transition: all ease-in-out 0.3s;}
+a:hover{text-decoration: underline !important;}
 ul{margin-bottom: 0px;}
 hgroup{margin-bottom: 30px;}
 .bg-grey {background-color: var(--color-grey);}
