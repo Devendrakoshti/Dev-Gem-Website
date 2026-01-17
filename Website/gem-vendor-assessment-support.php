@@ -32,7 +32,7 @@ include 'includes/header.php';
       <div class="col-lg-6">
         <div class="h-100">
           <div class="hero-banner-image">
-            <img src="images/gem-order-acceptance-guide-banner.webp" alt="Gem Order Acceptance Guide Banner Image" title="Gem Order Acceptance Guide Banner Image" class="img-fluid" width="1000" height="1000">
+            <img src="images/gem-vendor-assessment-support-banner.webp" alt="Gem Order Acceptance Guide Banner Image" title="Gem Order Acceptance Guide Banner Image" class="img-fluid" width="1000" height="1000">
           </div>
         </div>
       </div>
@@ -81,7 +81,7 @@ include 'includes/header.php';
       </div>
       <div class="col-lg-4 col-md-8">
         <div class="service-img-years">
-          <img src="./images/about-us.jpg" alt="About Us" title="About Us" class="img-fluid rounded-5" width="1024" height="1200">
+          <img src="./images/gem-vendor-challenge.webp" alt="Gem Vendor Challenge Image" title="Gem Vendor Challenge Image" class="img-fluid rounded-5" width="1024" height="1200">
           <div class="rounded-5 bg-gradient-red-purple border border-5 border-white shadow service-img-mn">
             <div class="d-flex p-lg-5 p-4 align-items-center justify-content-center text-white">
               <span class="display-2 fw-bold ">10+ </span>
@@ -145,6 +145,11 @@ include 'includes/header.php';
             </div>
           </div>
         </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="h-100 d-none d-xl-block">
+        <img src="images/gem-vendor-solution.webp" alt="Gem Vendor Solution Image" title="Gem Vendor Solution Image" class="img-fluid rounded-5 sticky-top top-100px" width="1024" height="1200">
+      </div>
       </div>
     </div>
   </div>

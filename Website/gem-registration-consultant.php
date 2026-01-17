@@ -100,7 +100,7 @@ include 'includes/header.php';
     <div class="row g-5 mb-4">
       <div class="col-lg-4 col-md-8">
         <div class="solution-section-img">
-          <img src="./images/our-registration-services.webp" alt="Our Registration Services Image" title="Our Registration Services Image" class="img-fluid rounded-5" width="1024" height="1200">
+          <img src="./images/fast-friendly-gem-registrations.webp" alt="Fast Friendly Gem Registrations Image" title="Fast Friendly Gem Registrations Image" class="img-fluid rounded-5" width="1024" height="1200">
         </div>
       </div>
       <div class="col-lg-8">
@@ -212,6 +212,11 @@ include 'includes/header.php';
             </div>
           </div>
         </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="h-100 d-none d-xl-block">
+        <img src="images/gem-registrations-requirement-documents.webp" alt="Gem Registrations Requirement Documents Image" title="Gem Registrations Requirement Documents Image" class="img-fluid rounded-5 sticky-top top-100px" width="1024" height="1200">
+      </div>
       </div>
     </div>
   </div>

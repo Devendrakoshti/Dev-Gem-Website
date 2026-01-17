@@ -95,7 +95,7 @@ include 'includes/header.php';
     <div class="row g-5 mb-4">
       <div class="col-lg-4 col-md-8">
         <div class="solution-section-img">
-          <img src="./images/gem-product-catalogue-update-nationwide.webp" alt="Gem Product Catalogue Update Nationwide Image" title="Gem Product Catalogue Update Nationwide Image" class="img-fluid rounded-5" width="1024" height="1200">
+          <img src="./images/gem-product-catalogue-update-management.webp" alt="Gem Product Catalogue Update Management Image" title="Gem Product Catalogue Update Management Image" class="img-fluid rounded-5" width="1024" height="1200">
         </div>
       </div>
       <div class="col-lg-8">
@@ -195,6 +195,11 @@ include 'includes/header.php';
             </div>
           </div>
         </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="h-100 d-none d-xl-block">
+        <img src="images/gem-product-catalogue-update-process.webp" alt="Gem Product Catalogue Update Process Image" title="Gem Product Catalogue Update Process Image" class="img-fluid rounded-5 sticky-top top-100px" width="1024" height="1200">
+      </div>
       </div>
     </div>
   </div>

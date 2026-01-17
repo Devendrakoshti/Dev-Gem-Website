@@ -47,7 +47,7 @@ hgroup{margin-bottom: 30px;}
 .mt-100{margin-top: 100px;}
 .mb-100{margin-bottom: 100px;}
 .my-100{margin-top: 100px;margin-bottom: 100px;}
-.top-100px{top: 100px;}
+.top-100px{top: 100px !important;}
 .subtitle{display: block;font-weight: 500;font-size: 18px;line-height: 24px;letter-spacing: 2px;text-transform: uppercase;color: #0F0928;margin-bottom: 10px;padding-left: 18px;border-left: 4px solid var(--color-red);}
 
 hgroup.text-white .subtitle, hgroup.text-white .h2-title{color: var(--color-white);}

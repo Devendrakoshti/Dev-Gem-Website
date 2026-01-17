@@ -2,8 +2,8 @@
 $page_title = "GeM Stock Update & Listing Expiry Solution";
 $page_desc = "Avoid GeM listing expiry with our GeM Stock Update and Catalogue Management Services Nationwide. Expert help for listing renewal and compliance.";
 $canonical_url = "gem-stock-update-service.php";
-$preload_image = "images/gem-stock-update-service-banner.webp";
-$og_image = "images/gem-stock-update-service-banner.webp";
+$preload_image = "images/gem-stock-update-guide-step.webp";
+$og_image = "images/gem-stock-update-guide-step.webp";
 $og_width = "1000";
 $og_height = "1000";
 $page_keywords = "";
@@ -96,7 +96,7 @@ include 'includes/header.php';
     <div class="row g-5 mb-4">
       <div class="col-lg-4 col-md-8">
         <div class="solution-section-img">
-          <img src="./images/gem-portal.webp" alt="Gem Portal Image" title="Gem Portal Image" class="img-fluid rounded-5" width="1024" height="1200">
+          <img src="./images/gem-stock-update-guide-step.webp" alt="Gem Stock Update Guide Step Image" title="Gem Stock Update Guide Step Image" class="img-fluid rounded-5" width="1024" height="1200">
         </div>
       </div>
       <div class="col-lg-8">
@@ -202,6 +202,11 @@ include 'includes/header.php';
             </div>
           </div>
         </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="h-100 d-none d-xl-block">
+        <img src="images/gem-stock-management-support-includes.webp" alt="Gem Stock Management Support Includes Image" title="Gem Stock Management Support Includes Image" class="img-fluid rounded-5 sticky-top top-100px" width="1024" height="1200">
+      </div>
       </div>
     </div>
   </div>
