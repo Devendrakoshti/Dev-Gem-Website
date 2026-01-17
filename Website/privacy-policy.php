@@ -2,19 +2,19 @@
 $page_title = "Privacy Policy | Secure GeM Registration Services – GeM Gujarat";
 $page_desc = "Your data security is our priority. Read the GeM Gujarat Privacy Policy to understand how we protect your business information and registration data.";
 $canonical_url = "privacy-policy.php";
-$preload_image = "images/gem-home-banner.webp";
-$og_image = "images/gem-home-banner.webp";
+$preload_image = "images/gem-gujarat-privacy-policy-banner.webp";
+$og_image = "images/gem-gujarat-privacy-policy-banner.webp";
 $og_width = "1000";
 $og_height = "1000";
 $page_keywords = "";
 include 'includes/header.php';
 ?>
 <!-- banner start  -->
-<div class="service-banner gem-gujarat-privacy-policy-banner">
+<div class="service-banner">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-10">
-        <div class="text-white">
+    <div class="row flex-wrap-reverse align-items-center">
+      <div class="col-lg-6">
+        <div class="h-100">
           <div class="page-path">
             <span>
               <i class="fa-solid fa-house text-red me-1"></i> Home <i class="fa-solid fa-chevron-right mx-1 fs-12"></i> Privacy Policy </span>
@@ -29,6 +29,13 @@ include 'includes/header.php';
               </svg>
             </span>
           </a>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="h-100">
+          <div class="hero-banner-image">
+            <img src="images/gem-gujarat-privacy-policy-banner.webp" alt="Gem Gujarat Privacy Policy Banner Image" title="Gem Gujarat Privacy Policy Banner Image" class="img-fluid" width="1000" height="1000">
+          </div>
         </div>
       </div>
     </div>
