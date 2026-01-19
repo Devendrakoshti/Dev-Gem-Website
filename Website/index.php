@@ -577,6 +577,8 @@ include 'includes/header.php';
 <!-- CTA Section End -->
 <!-- footer start --> <?php include 'includes/footer.php';?>
 <!-- footer end -->
+ <!-- Popup Form start  --> <?php include 'includes/popup-form.php';?>
+<!-- Popup Formend  -->
 <script>
   var swiper = new Swiper(".client-testimonial-slider", {
     navigation: {

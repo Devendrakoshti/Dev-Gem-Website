@@ -1,4 +1,4 @@
-<form method="post" name="contactform" action="form-submition.php">
+<form method="post" name="contactform" action="https://www.gemgujarat.in/staging/form-submition.php">
   <div class="row g-4">
     <div class="col-md-6 position-relative">
       <div class="input-icon position-relative">

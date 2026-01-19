@@ -73,7 +73,7 @@ if (isset($_POST['submit'])) {
         $mail->send();
 
         // ✅ Redirect after success
-        header("Location: thank-you.php");
+        header("Location: https://www.gemgujarat.in/staging/thank-you.php");
         exit;
 
     } catch (Exception $e) {
