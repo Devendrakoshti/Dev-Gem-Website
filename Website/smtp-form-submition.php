@@ -53,7 +53,7 @@ if (isset($_POST['submit'])) {
     $mail = new PHPMailer(true);
 
     try {
-        $mail->isSMTP();
+       $mail->isSMTP();
         $mail->Host       = 'smtp.hostinger.com';
         $mail->SMTPAuth   = true;
         $mail->Username   = 'info@gemgujarat.in';
@@ -62,7 +62,9 @@ if (isset($_POST['submit'])) {
         $mail->Port       = 587;
 
         $mail->setFrom('info@gemgujarat.in', 'GEM Gujarat Website');
-        $mail->addAddress('info@gemgujarat.in');
+        $mail->addReplyTo($email, $name);
+        $mail->addAddress('info@gemgujarat.in'); 
+
 
         $mail->isHTML(true);
         $mail->Subject = 'New Contact Form Submission';
