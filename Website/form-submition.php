@@ -9,7 +9,7 @@ require 'PHPMailer/Exception.php';
 if (isset($_POST['submit'])) {
 
     // 🔐 Google reCAPTCHA Validation
-    $secretKey = "YOUR_SECRET_KEY";
+    $secretKey = "6LcSPU8sAAAAADPFvXcyPKcyGqU8mf82iujYeOzy";
     $captcha   = $_POST['g-recaptcha-response'];
 
     if (!$captcha) {

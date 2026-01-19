@@ -1,4 +1,4 @@
-<form method="post" name="contactform" action="https://www.teslamechanicaldesigns.com/form_submitions_new.php">
+<form method="post" name="contactform" action="form-submition.php">
   <div class="row g-4">
     <div class="col-md-6 position-relative">
       <div class="input-icon position-relative">
@@ -62,7 +62,7 @@
             </svg>
           </span>
         </button>
-        <div class="g-recaptcha" data-sitekey="6LfYTkQrAAAAABu1ODH1tqFaNza_MBoESzVeqjDL"></div>
+        <div class="g-recaptcha" data-sitekey="6LcSPU8sAAAAAH1V4iD4wF786NGItGqCRRRYFLBw"></div>
       </div>
     </div>
   </div>
