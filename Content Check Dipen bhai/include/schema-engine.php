@@ -1,27 +1,22 @@
 <?php
-/* =====================================================
-  BASIC SITE CONFIG (EDIT ONCE)
-===================================================== */
-$site = [
-  'name' => 'CAD Services India',
-  'url'  => 'https://www.cadservicesindia.com/',
-  'logo' => 'https://www.cadservicesindia.com/images/logo.webp'
-];
+// Configuration is now handled in config.php
+// Ensure $base_url and $site are available from the global scope/inclusion
+
 
 /* =====================================================
-  CURRENT PAGE INFO
+3. CURRENT PAGE INFO
 ===================================================== */
-$protocol    = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
 $current_url = $protocol . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+$request_path = trim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), '/');
 
-$path      = trim(parse_url($current_url, PHP_URL_PATH), '/');
-$segments  = $path ? explode('/', $path) : [];
-$file_name = strtolower(basename($path));
+// Calculate relative path for breadcrumbs (subtract base path from request path)
+// If mapped to a corpus, request URI might differ, so we rely on script name mostly for mapped envs
+$file_name = basename($_SERVER['SCRIPT_NAME']);
 
-$is_home = in_array($file_name, ['index.php'], true);
+$is_home = ($file_name === 'index.php' || $file_name === '-index.php' || $request_path === $base_path);
 
 /* =====================================================
-  DEFINE SERVICE PAGES (ADD HERE ONLY)
+4. DEFINE SERVICE PAGES
 ===================================================== */
 $service_pages = [
   '3d-rendering-services.php',
@@ -32,58 +27,53 @@ $service_pages = [
   'mep-cad-drafting-services.php',
   'mep-drafting-services.php',
   'scan-to-bim-services.php',
-  'structural-drafting-services'
+  'structural-drafting-services.php'
 ];
 
 /* =====================================================
-  INIT
+5. INIT SCHEMA ARRAY
 ===================================================== */
 $schemas = [];
 
 /* =====================================================
-  ORGANIZATION + WEBSITE (HOME ONLY)
+6. ORGANIZATION + WEBSITE (HOME ONLY)
 ===================================================== */
 if ($is_home) {
-
   $schemas[] = [
-    "@context" => "https://schema.org",
-    "@type"    => "Organization",
-    "name"     => $site['name'],
-    "url"      => $site['url'],
-    "logo"     => $site['logo']
+    "@type" => "Organization",
+    "name" => $site['name'],
+    "url" => $site['url'],
+    "logo" => $site['logo']
   ];
 
   $schemas[] = [
     "@type" => "WebSite",
-    "url"   => $site['url']
+    "url" => $site['url']
   ];
 }
 
 /* =====================================================
-  SERVICE SCHEMA (MULTIPLE SERVICE PAGES)
+7. SERVICE SCHEMA
 ===================================================== */
 if (in_array($file_name, $service_pages, true)) {
-
-  // Auto-generate service name from file
-  $service_name = ucwords(str_replace(['-','.php'], [' ',''], $file_name));
-
+  $service_name = ucwords(str_replace(['-', '.php'], [' ', ''], $file_name));
   $schemas[] = [
     "@type" => "Service",
     "serviceType" => $service_name,
     "provider" => [
       "@type" => "Organization",
-      "name"  => $site['name']
+      "name" => $site['name']
     ],
     "url" => $current_url
   ];
 }
 
 /* =====================================================
-  ARTICLE SCHEMA (BLOG + PROJECT)
+8. ARTICLE SCHEMA (BLOG + PROJECT)
 ===================================================== */
-if (!empty($segments[0]) && in_array($segments[0], ['blog','project'], true)) {
-
-  $slug  = str_replace('.php','', end($segments));
+if (strpos($request_path, 'blog/') !== false || strpos($request_path, 'project/') !== false) {
+  // Simple logic: if path contains blog or project
+  $slug = str_replace('.php', '', basename($request_path));
   $title = ucwords(str_replace('-', ' ', $slug));
 
   $schemas[] = [
@@ -98,24 +88,29 @@ if (!empty($segments[0]) && in_array($segments[0], ['blog','project'], true)) {
 }
 
 /* =====================================================
-  BREADCRUMB (ALL EXCEPT HOME)
+9. BREADCRUMB
 ===================================================== */
-if (!$is_home && !empty($segments)) {
-
+if (!$is_home) {
   $breadcrumb_items = [];
-  $breadcrumb_url   = $site['url'];
 
-  foreach ($segments as $index => $segment) {
+  // Home
+  $breadcrumb_items[] = [
+    "@type" => "ListItem",
+    "position" => 1,
+    "name" => "Home",
+    "item" => $site['url']
+  ];
 
-    $breadcrumb_url .= '/' . $segment;
+  // Current Page
+// Ideally, we would map the full hierarchy, but for this flat structure:
+  $page_name = ucwords(str_replace(['-', '.php'], [' ', ''], $file_name));
 
-    $breadcrumb_items[] = [
-      "@type" => "ListItem",
-      "position" => $index + 1,
-      "name" => ucwords(str_replace(['-','.php'], [' ',''], $segment)),
-      "item" => $breadcrumb_url
-    ];
-  }
+  $breadcrumb_items[] = [
+    "@type" => "ListItem",
+    "position" => 2,
+    "name" => $page_name,
+    "item" => $current_url
+  ];
 
   $schemas[] = [
     "@type" => "BreadcrumbList",
@@ -124,10 +119,19 @@ if (!$is_home && !empty($segments)) {
 }
 
 /* =====================================================
-  OUTPUT SINGLE JSON-LD (SEO SAFE)
+HELPER FUNCTION: OUTPUT SCHEMA
+Call this function in the <head>
 ===================================================== */
-if (!empty($schemas)) {
-  echo '<script type="application/ld+json">';
-  echo json_encode($schemas, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
-  echo '</script>';
+function render_schema()
+{
+  global $schemas;
+  if (!empty($schemas)) {
+    echo '<script type="application/ld+json">' . "\n";
+    echo json_encode([
+      "@context" => "https://schema.org",
+      "@graph" => $schemas
+    ], JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
+    echo "\n" . '</script>';
+  }
 }
+?>
