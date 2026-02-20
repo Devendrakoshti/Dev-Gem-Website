@@ -9,8 +9,6 @@ import { ClientDetailsPage } from './pages/app/clients/ClientDetailsPage';
 import { ClientFormPage } from './pages/app/clients/ClientFormPage';
 import { EmployeesPage } from './pages/app/employees/EmployeesPage';
 import { EmployeeFormPage } from './pages/app/employees/EmployeeFormPage';
-import { AdminListPage } from './pages/app/admin/AdminListPage';
-import { AdminFormPage } from './pages/app/admin/AdminFormPage';
 import { ActivityLogPage } from './pages/app/activity/ActivityLogPage';
 import { BackupPage } from './pages/app/backup/BackupPage';
 import { TrashPage } from './pages/app/trash/TrashPage';
@@ -61,11 +59,6 @@ const App: React.FC = () => {
         <Route path="/app/employees" element={<ProtectedRoute adminOnly={true}><EmployeesPage /></ProtectedRoute>} />
         <Route path="/app/employees/new" element={<ProtectedRoute adminOnly={true}><EmployeeFormPage /></ProtectedRoute>} />
         <Route path="/app/employees/:id/edit" element={<ProtectedRoute adminOnly={true}><EmployeeFormPage /></ProtectedRoute>} />
-        
-        <Route path="/app/admins" element={<ProtectedRoute adminOnly={true}><AdminListPage /></ProtectedRoute>} />
-        <Route path="/app/admins/new" element={<ProtectedRoute adminOnly={true}><AdminFormPage /></ProtectedRoute>} />
-        <Route path="/app/admins/:id/edit" element={<ProtectedRoute adminOnly={true}><AdminFormPage /></ProtectedRoute>} />
-
         <Route path="/app/activity" element={<ProtectedRoute adminOnly={true}><ActivityLogPage /></ProtectedRoute>} />
         <Route path="/app/backup" element={<ProtectedRoute adminOnly={true}><BackupPage /></ProtectedRoute>} />
         

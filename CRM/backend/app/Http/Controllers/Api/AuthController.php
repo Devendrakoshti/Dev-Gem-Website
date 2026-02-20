@@ -3,72 +3,48 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\Auth\LoginRequest;
 use App\Models\User;
+use App\Traits\ApiResponse;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Validation\ValidationException;
 
 class AuthController extends Controller
 {
-    public function login(Request $request)
+    use ApiResponse;
+
+    public function login(LoginRequest $request)
     {
-        $request->validate([
-            'email' => 'required', // Can be email or employee_id
-            'password' => 'required',
-        ]);
+        try {
+            $user = User::where('email', $request->email)->first();
 
-        $credential = $request->email;
-        $password = $request->password;
+            if (!$user || !Hash::check($request->password, $user->password)) {
+                return $this->error('Invalid credentials', 401);
+            }
 
-        // Check if input is email or employee_id
-        $user = User::where('email', $credential)
-                    ->orWhere('employee_id', $credential)
-                    ->first();
+            if ($user->status !== 'ACTIVE') {
+                return $this->error('Account is suspended', 403);
+            }
 
-        if (! $user || ! Hash::check($password, $user->password)) {
-            return response()->json([
-                'success' => false,
-                'message' => 'Invalid credentials',
-                'code' => 401
-            ], 401);
-        }
+            $token = $user->createToken('auth_token')->plainTextToken;
 
-        if ($user->deleted_at) {
-             return response()->json([
-                'success' => false,
-                'message' => 'Account is suspended.',
-                'code' => 403
-            ], 403);
-        }
-
-        // Create Token
-        $token = $user->createToken('auth_token')->plainTextToken;
-
-        return response()->json([
-            'success' => true,
-            'data' => [
+            return $this->success([
                 'user' => $user,
-                'token' => $token,
-            ]
-        ]);
+                'token' => $token
+            ], 'Login successful');
+
+        } catch (\Exception $e) {
+            return $this->error('Login failed: ' . $e->getMessage(), 500);
+        }
     }
 
     public function logout(Request $request)
     {
-        $request->user()->currentAccessToken()->delete();
-
-        return response()->json([
-            'success' => true,
-            'message' => 'Logged out successfully'
-        ]);
-    }
-
-    public function me(Request $request)
-    {
-        return response()->json([
-            'success' => true,
-            'data' => $request->user()
-        ]);
+        try {
+            $request->user()->currentAccessToken()->delete();
+            return $this->success([], 'Logged out successfully');
+        } catch (\Exception $e) {
+            return $this->error('Logout failed: ' . $e->getMessage(), 500);
+        }
     }
 }

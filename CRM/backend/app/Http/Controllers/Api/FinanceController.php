@@ -1,132 +1,89 @@
 <?php
-
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\StoreBillingRequest;
-use App\Http\Requests\StorePaymentRequest;
-use App\Models\ActivityLog;
 use App\Models\BillingItem;
-use App\Models\Client;
 use App\Models\PaymentReceived;
-use App\Models\User;
+use App\Models\Client;
+use App\Traits\ApiResponse;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\DB;
 
 class FinanceController extends Controller
 {
-    // Get Billing items for a client
-    public function indexBilling(Request $request, $clientId)
-    {
-        $client = Client::withTrashed()->findOrFail($clientId);
-        $this->authorizeAccess($client);
+    use ApiResponse;
 
-        $items = BillingItem::where('client_id', $clientId)->orderBy('created_at', 'desc')->get();
-
-        return response()->json(['success' => true, 'data' => $items]);
+    public function getLedgerSummary($clientId) {
+        $totalBilled = BillingItem::where('client_id', $clientId)->sum('amount_to_collect');
+        $totalPaid = PaymentReceived::where('client_id', $clientId)->sum('amount_received');
+        return $this->success([
+            'total_billed' => (float) $totalBilled,
+            'total_received' => (float) $totalPaid,
+            'outstanding_balance' => (float) ($totalBilled - $totalPaid)
+        ]);
     }
 
-    // Get Payments for a client
-    public function indexPayments(Request $request, $clientId)
-    {
-        $client = Client::withTrashed()->findOrFail($clientId);
-        $this->authorizeAccess($client);
-
-        $payments = PaymentReceived::where('client_id', $clientId)->orderBy('received_date', 'desc')->get();
-
-        return response()->json(['success' => true, 'data' => $payments]);
+    public function getBilling($clientId) {
+        return $this->success(BillingItem::where('client_id', $clientId)->latest()->get());
     }
 
-    // Add Billing Item
-    public function storeBilling(StoreBillingRequest $request)
-    {
-        $client = Client::withTrashed()->findOrFail($request->client_id);
-        $this->authorizeAccess($client);
-
-        $item = new BillingItem($request->validated());
-        $item->save();
-
-        $this->logActivity(Auth::user(), "Added billing: {$item->service_name}", $item->id, 'PAYMENT');
-
-        return response()->json(['success' => true, 'data' => $item]);
+    public function addBilling(Request $request) {
+        $data = $request->validate([
+            'client_id' => 'required|exists:clients,id',
+            'service_name' => 'required|string',
+            'amount_to_collect' => 'required|numeric',
+            'billing_date' => 'required|date',
+            'description' => 'nullable|string'
+        ]);
+        $item = BillingItem::create($data);
+        return $this->success($item, 'Billing added');
     }
 
-    // Add Payment
-    public function storePayment(StorePaymentRequest $request)
-    {
-        $client = Client::withTrashed()->findOrFail($request->client_id);
-        $this->authorizeAccess($client);
+    public function getPayments($clientId) {
+        return $this->success(PaymentReceived::where('client_id', $clientId)->latest()->get());
+    }
 
-        $payment = new PaymentReceived($request->validated());
-        if (!$payment->received_date) {
-            $payment->received_date = now();
+    public function addPayment(Request $request) {
+        $data = $request->validate([
+            'client_id' => 'required|exists:clients,id',
+            'amount_received' => 'required|numeric',
+            'received_date' => 'required|date',
+            'payment_mode' => 'required|string',
+            'notes' => 'nullable|string'
+        ]);
+        $payment = PaymentReceived::create($data);
+        return $this->success($payment, 'Payment recorded');
+    }
+
+    public function deleteBilling($id) {
+        BillingItem::destroy($id);
+        return $this->success([], 'Entry removed');
+    }
+
+    public function deletePayment($id) {
+        PaymentReceived::destroy($id);
+        return $this->success([], 'Entry removed');
+    }
+
+    public function getPendingPayments(Request $request) {
+        $user = $request->user();
+        $query = Client::query();
+        if (!$user->isAdmin()) {
+            $query->where('assigned_to_id', $user->id);
         }
-        $payment->save();
-
-        $this->logActivity(Auth::user(), "Payment logged: {$payment->amount_received}", $payment->id, 'PAYMENT');
-
-        return response()->json(['success' => true, 'data' => $payment]);
-    }
-
-    // Pending Payments Summary (Dashboard Widget)
-    public function getPendingPayments(Request $request)
-    {
-        $user = Auth::user();
-        $clientsQuery = Client::query();
-
-        if ($user->role !== 'ADMIN') {
-            $clientsQuery->where('assigned_to_id', $user->id);
-        }
-
-        // Only active clients
-        $clients = $clientsQuery->where('is_archived', false)->get();
-
+        $clients = $query->get();
         $pending = [];
-
-        foreach ($clients as $client) {
-            // Aggregate in PHP as simple logic, could be optimized with raw SQL/subqueries for huge datasets
+        foreach($clients as $client) {
             $totalBilled = BillingItem::where('client_id', $client->id)->sum('amount_to_collect');
-            $totalPaid = PaymentReceived::where('client_id', $client->id)->sum('amount_received');
-            $balance = $totalBilled - $totalPaid;
-
+            $totalReceived = PaymentReceived::where('client_id', $client->id)->sum('amount_received');
+            $balance = $totalBilled - $totalReceived;
             if ($balance > 0) {
-                // Get last payment date
-                $lastPayment = PaymentReceived::where('client_id', $client->id)
-                    ->orderBy('received_date', 'desc')
-                    ->first();
-
                 $pending[] = [
                     'client' => $client,
-                    'totalBilled' => (float)$totalBilled, // Ensure float for JSON
-                    'totalPaid' => (float)$totalPaid,
-                    'balance' => (float)$balance,
-                    'lastPaymentDate' => $lastPayment ? $lastPayment->received_date : null
+                    'total_billed' => $totalBilled,
+                    'outstanding_balance' => $balance
                 ];
             }
         }
-
-        return response()->json(['success' => true, 'data' => $pending]);
-    }
-
-    // Helper for explicit policy check inside custom methods
-    private function authorizeAccess(Client $client)
-    {
-        $user = Auth::user();
-        if ($user->role !== 'ADMIN' && $client->assigned_to_id !== $user->id) {
-            abort(403, 'Unauthorized access to client finance records.');
-        }
-    }
-
-    private function logActivity($user, $action, $targetId, $targetType, $metadata = null)
-    {
-        ActivityLog::create([
-            'actor_id' => $user->id,
-            'actor_name' => $user->name,
-            'action' => $action,
-            'target_id' => $targetId,
-            'target_type' => $targetType,
-            'metadata' => $metadata
-        ]);
+        return $this->success($pending);
     }
 }

@@ -2,27 +2,23 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Concerns\HasUlids;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class PaymentReceived extends Model
 {
-    use HasFactory, HasUlids;
-    
-    protected $table = 'payments_received'; // Laravel might guess payment_receiveds
+    protected $table = 'payments_received';
 
     protected $fillable = [
         'client_id',
         'amount_received',
-        'payment_method',
-        'reference_id',
         'received_date',
+        'payment_mode',
+        'notes',
     ];
 
     protected $casts = [
         'amount_received' => 'decimal:2',
-        'received_date' => 'datetime',
+        'received_date' => 'date',
     ];
 
     public function client()

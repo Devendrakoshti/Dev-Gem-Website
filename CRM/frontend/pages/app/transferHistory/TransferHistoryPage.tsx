@@ -1,10 +1,10 @@
-
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { mockStore } from '../../../services/mockStore';
+import { apiService } from '../../../services/apiService';
 import { authService } from '../../../services/authService';
 import { UserRole, ActivityLog } from '../../../types';
 import { useToast } from '../../../components/layout/AppLayout';
+import { Loader } from '../../../components/ui/Loader';
 
 type TransferFilter = 'ALL' | 'SENT' | 'RECEIVED';
 
@@ -14,51 +14,46 @@ export const TransferHistoryPage: React.FC = () => {
   const navigate = useNavigate();
   const { showToast } = useToast();
 
-  const [transfers, setTransfers] = useState<ActivityLog[]>(mockStore.getTransferHistory(user));
+  const [transfers, setTransfers] = useState<ActivityLog[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');
   const [filter, setFilter] = useState<TransferFilter>('ALL');
 
   useEffect(() => {
-    return mockStore.subscribe(() => {
-      setTransfers(mockStore.getTransferHistory(user));
-    });
-  }, [user]);
+    loadTransfers();
+  }, []);
+
+  const loadTransfers = async () => {
+    setIsLoading(true);
+    try {
+      const data = await apiService.getTransferHistory();
+      setTransfers(data);
+    } catch (err) {
+      showToast("Transfer sync failed", "error");
+    } finally {
+      setIsLoading(false);
+    }
+  };
 
   const filteredTransfers = transfers
     .filter(t => {
-      const client = mockStore.getClientById(t.targetId);
-      const clientName = client?.name || 'Unknown Client';
-      const fromName = t.metadata?.fromName || 'System';
-      const toName = t.metadata?.toName || 'Unknown';
+      const fromName = t.metadata?.from_name || 'System';
+      const toName = t.metadata?.to_name || 'Unknown';
       
       const matchesSearch = 
-        clientName.toLowerCase().includes(searchTerm.toLowerCase()) ||
         fromName.toLowerCase().includes(searchTerm.toLowerCase()) ||
         toName.toLowerCase().includes(searchTerm.toLowerCase());
 
       let matchesFilter = true;
       if (!isAdmin) {
-        if (filter === 'SENT') matchesFilter = t.metadata?.fromId === user.id;
-        if (filter === 'RECEIVED') matchesFilter = t.metadata?.toId === user.id;
+        if (filter === 'SENT') matchesFilter = t.metadata?.from_id === user.id;
+        if (filter === 'RECEIVED') matchesFilter = t.metadata?.to_id === user.id;
       }
 
       return matchesSearch && matchesFilter;
     });
 
-  const handleViewClient = (clientId: string) => {
-    const client = mockStore.getClientById(clientId);
-    if (!client) {
-      showToast("Client record no longer exists or was purged.", "error");
-      return;
-    }
-
-    if (!mockStore.canUserAccessClient(user, client)) {
-      showToast("Access Denied: This client is no longer in your portfolio.", "error");
-      return;
-    }
-
-    navigate(`/app/clients/${clientId}`);
-  };
+  if (isLoading) return <Loader size="lg" />;
 
   return (
     <div className="space-y-6 animate-in fade-in duration-500">
@@ -69,7 +64,7 @@ export const TransferHistoryPage: React.FC = () => {
           </span>
           <input 
             type="text" 
-            placeholder="Search clients or staff..."
+            placeholder="Search transfers..."
             className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-100 focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-slate-50/50 font-medium text-sm transition-all"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
@@ -99,59 +94,48 @@ export const TransferHistoryPage: React.FC = () => {
             <thead className="bg-slate-50 border-b border-slate-200">
               <tr>
                 <th className="px-6 py-4 text-[10px] font-black text-slate-500 uppercase tracking-widest">Timestamp</th>
-                <th className="px-6 py-4 text-[10px] font-black text-slate-500 uppercase tracking-widest">Client Name</th>
+                <th className="px-6 py-4 text-[10px] font-black text-slate-500 uppercase tracking-widest">Entity</th>
                 <th className="px-6 py-4 text-[10px] font-black text-slate-500 uppercase tracking-widest">From</th>
                 <th className="px-6 py-4 text-[10px] font-black text-slate-500 uppercase tracking-widest">To</th>
-                {isAdmin && <th className="px-6 py-4 text-[10px] font-black text-slate-500 uppercase tracking-widest">Performed By</th>}
-                <th className="px-6 py-4 text-[10px] font-black text-slate-500 uppercase tracking-widest text-right">Action</th>
+                {isAdmin && <th className="px-6 py-4 text-[10px] font-black text-slate-500 uppercase tracking-widest text-right">Performed By</th>}
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-100">
               {filteredTransfers.map((log) => {
-                const client = mockStore.getClientById(log.targetId);
-                const clientName = client?.name || 'Unknown Client';
-                const isMySent = log.metadata?.fromId === user.id;
-                const isMyReceived = log.metadata?.toId === user.id;
+                const isMySent = log.metadata?.from_id === user.id;
+                const isMyReceived = log.metadata?.to_id === user.id;
 
                 return (
                   <tr key={log.id} className="hover:bg-slate-50/50 transition-colors group">
                     <td className="px-6 py-5">
                       <div className="text-xs text-slate-400 font-bold uppercase tracking-tighter">
-                        {new Date(log.timestamp).toLocaleString()}
+                        {new Date(log.timestamp || log.metadata?.created_at || Date.now()).toLocaleString()}
                       </div>
                     </td>
                     <td className="px-6 py-5">
-                      <div className="font-bold text-slate-900">{clientName}</div>
+                      <div className="font-bold text-slate-900">{log.action}</div>
                     </td>
                     <td className="px-6 py-5">
                       <div className={`text-sm font-medium ${isMySent ? 'text-indigo-600 font-bold' : 'text-slate-600'}`}>
-                        {log.metadata?.fromName}
+                        {log.metadata?.from_name || 'Unknown'}
                       </div>
                     </td>
                     <td className="px-6 py-5">
                       <div className={`text-sm font-medium ${isMyReceived ? 'text-indigo-600 font-bold' : 'text-slate-600'}`}>
-                        {log.metadata?.toName}
+                        {log.metadata?.to_name || 'Unknown'}
                       </div>
                     </td>
                     {isAdmin && (
-                      <td className="px-6 py-5">
-                        <div className="text-sm text-slate-500">{log.actorName}</div>
+                      <td className="px-6 py-5 text-right">
+                        <div className="text-sm text-slate-500">{log.metadata?.actor_name || 'System'}</div>
                       </td>
                     )}
-                    <td className="px-6 py-5 text-right">
-                      <button 
-                        onClick={() => handleViewClient(log.targetId)}
-                        className="text-[10px] font-black text-indigo-500 uppercase tracking-widest hover:text-indigo-700 transition-all opacity-0 group-hover:opacity-100"
-                      >
-                        View Client
-                      </button>
-                    </td>
                   </tr>
                 );
               })}
               {filteredTransfers.length === 0 && (
                 <tr>
-                  <td colSpan={isAdmin ? 6 : 5} className="px-6 py-20 text-center text-slate-400 italic">
+                  <td colSpan={isAdmin ? 5 : 4} className="px-6 py-20 text-center text-slate-400 italic">
                     No client transfer history found.
                   </td>
                 </tr>

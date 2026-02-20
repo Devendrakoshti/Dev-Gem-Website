@@ -9,16 +9,13 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('follow_ups', function (Blueprint $table) {
-            $table->ulid('id')->primary();
-            $table->foreignUlid('client_id')->constrained('clients')->cascadeOnDelete();
+            $table->id();
+            $table->foreignId('client_id')->constrained('clients')->cascadeOnDelete();
+            $table->foreignId('employee_id')->constrained('users')->cascadeOnDelete();
             $table->date('date');
             $table->date('next_date')->nullable();
-            $table->string('type'); // CALL, EMAIL, MEETING
+            $table->enum('type', ['CALL', 'WHATSAPP', 'MEETING', 'EMAIL']);
             $table->text('notes')->nullable();
-            
-            $table->foreignUlid('employee_id')->constrained('users')->cascadeOnDelete();
-            $table->string('employee_name')->nullable(); // Denormalized or join
-            
             $table->timestamps();
         });
     }

@@ -1,29 +1,11 @@
-import axios from 'axios';
-import { API_BASE_URL } from '../config/appConfig';
+import axios from "axios";
 
 const api = axios.create({
-  baseURL: API_BASE_URL,
-  withCredentials: true,
+  baseURL: import.meta.env.VITE_API_BASE_URL,
   headers: {
-    'Content-Type': 'application/json',
-    'Accept': 'application/json',
+    "Content-Type": "application/json",
   },
-});
-
-// Inject Token
-api.interceptors.request.use((config) => {
-  const sessionStr = localStorage.getItem('nexus_auth_session');
-  if (sessionStr) {
-    try {
-      const session = JSON.parse(sessionStr);
-      if (session.token) {
-        config.headers.Authorization = `Bearer ${session.token}`;
-      }
-    } catch (e) {
-      // Invalid session
-    }
-  }
-  return config;
+  withCredentials: false,
 });
 
 export default api;

@@ -1,27 +1,19 @@
 <?php
-
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Models\ActivityLog;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
+use App\Traits\ApiResponse;
 
 class ActivityController extends Controller
 {
-    public function index(Request $request)
-    {
-        $user = Auth::user();
-        
-        // Admin sees all, Employee sees own actions
-        $query = ActivityLog::query();
-        
-        if ($user->role !== 'ADMIN') {
-            $query->where('actor_id', $user->id);
-        }
-        
-        $logs = $query->orderBy('timestamp', 'desc')->paginate(50); // Pagination recommended for logs
-        
-        return response()->json(['success' => true, 'data' => $logs]);
+    use ApiResponse;
+
+    public function index() {
+        return $this->success(ActivityLog::latest()->get());
+    }
+
+    public function transfers() {
+        return $this->success(ActivityLog::where('target_type', 'CLIENT_TRANSFER')->latest()->get());
     }
 }

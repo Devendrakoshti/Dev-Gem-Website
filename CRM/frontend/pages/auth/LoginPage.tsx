@@ -1,27 +1,17 @@
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { authService, DEMO_CREDENTIALS } from '../../services/authService';
-import { mockStore } from '../../services/mockStore';
-import { SHOW_DEMO_CREDENTIALS } from '../../config/appConfig';
+import { authService } from '../../services/authService';
 
 export const LoginPage: React.FC = () => {
   const [identifier, setIdentifier] = useState('');
   const [password, setPassword] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
-  const [employees, setEmployees] = useState(mockStore.getEmployees());
   const navigate = useNavigate();
 
-  useEffect(() => {
-    // Only subscribe to employee list if demo panel is visible to optimize resources
-    if (SHOW_DEMO_CREDENTIALS) {
-      return mockStore.subscribe(() => setEmployees(mockStore.getEmployees()));
-    }
-  }, []);
-
-  const handleLogin = async (e?: React.FormEvent) => {
-    if (e) e.preventDefault();
+  const handleLogin = async (e: React.FormEvent) => {
+    e.preventDefault();
     setIsLoading(true);
     setError('');
 
@@ -29,32 +19,20 @@ export const LoginPage: React.FC = () => {
       await authService.login(identifier, password);
       navigate('/app/dashboard');
     } catch (err: any) {
-      setError(err.message || 'Authentication failed');
+      setError(err.message || 'Authentication failed. Please verify your credentials.');
       setIsLoading(false);
     }
   };
 
-  const quickLogin = (id: string, pwd: string) => {
-    setIdentifier(id);
-    setPassword(pwd);
-    setIsLoading(true);
-    authService.login(id, pwd)
-      .then(() => navigate('/app/dashboard'))
-      .catch((err) => {
-        setError(err.message);
-        setIsLoading(false);
-      });
-  };
-
   return (
     <div className="min-h-screen flex items-center justify-center bg-slate-50 p-6">
-      <div className="max-w-md w-full bg-white rounded-3xl shadow-xl border border-slate-200 p-10 animate-in fade-in zoom-in duration-500">
+      <div className="max-w-md w-full bg-white rounded-3xl shadow-xl border border-slate-200 p-10">
         <div className="flex flex-col items-center mb-10">
           <div className="w-16 h-16 bg-indigo-600 rounded-2xl flex items-center justify-center mb-4 shadow-lg shadow-indigo-200">
             <span className="text-white text-3xl font-bold">N</span>
           </div>
           <h2 className="text-2xl font-bold text-slate-900 tracking-tight">Enterprise Access</h2>
-          <p className="text-slate-500 mt-1 text-center font-medium">Log in with Email or Employee ID</p>
+          <p className="text-slate-500 mt-1 text-center font-medium">Log in to your workspace</p>
         </div>
 
         {error && (
@@ -66,7 +44,7 @@ export const LoginPage: React.FC = () => {
 
         <form className="space-y-6" onSubmit={handleLogin}>
           <div>
-            <label className="block text-xs font-black text-slate-400 uppercase tracking-widest mb-2">Identifier (Email or ID)</label>
+            <label className="block text-xs font-black text-slate-400 uppercase tracking-widest mb-2">Email or Employee ID</label>
             <input 
               required
               className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all font-medium"
@@ -97,42 +75,6 @@ export const LoginPage: React.FC = () => {
             ) : 'Sign In to Dashboard'}
           </button>
         </form>
-
-        {SHOW_DEMO_CREDENTIALS && (
-          <div className="mt-10 pt-8 border-t border-slate-100 animate-in fade-in slide-in-from-top-4 duration-700">
-            <p className="text-center text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] mb-6">Demo Credentials Panel</p>
-            
-            <div className="space-y-4">
-               <div className="flex items-center justify-between p-4 bg-slate-50 rounded-2xl border border-slate-100">
-                  <div>
-                     <p className="text-xs font-black text-indigo-600 uppercase">Administrator</p>
-                     <p className="text-[10px] text-slate-400 font-bold">admin@nexus.com / password123</p>
-                  </div>
-                  <button 
-                     onClick={() => quickLogin(DEMO_CREDENTIALS.ADMIN.identifier, DEMO_CREDENTIALS.ADMIN.password)}
-                     className="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-[10px] font-black uppercase hover:bg-indigo-600 hover:text-white transition-all shadow-sm"
-                  >
-                     Quick Access
-                  </button>
-               </div>
-
-               <div className="p-4 bg-slate-50 rounded-2xl border border-slate-100">
-                  <p className="text-xs font-black text-slate-600 uppercase mb-3">Employee Selector</p>
-                  <div className="flex flex-wrap gap-2">
-                     {employees.slice(0, 3).map(emp => (
-                        <button 
-                           key={emp.id}
-                           onClick={() => quickLogin(emp.employeeId, 'password123')}
-                           className="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-[10px] font-black uppercase hover:border-indigo-500 transition-all"
-                        >
-                           {emp.employeeId}
-                        </button>
-                     ))}
-                  </div>
-               </div>
-            </div>
-          </div>
-        )}
       </div>
     </div>
   );

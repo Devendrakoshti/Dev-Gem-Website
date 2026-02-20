@@ -1,5 +1,5 @@
 {
-  "name": "gem-crm-frontend-done---02--start-new-db",
+  "name": "gem-crm-frontend-done---04-add-new-ui",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,9 +10,10 @@
   },
   "dependencies": {
     "axios": "^1.13.5",
+    "lucide-react": "^0.575.0",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
-    "react-router-dom": "^7.12.0"
+    "react-router-dom": "^7.13.0"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",

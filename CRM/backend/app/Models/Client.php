@@ -2,55 +2,45 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Concerns\HasUlids;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Traits\IsDeletedFlag;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Client extends Model
 {
-    use HasFactory, HasUlids, SoftDeletes;
+    use IsDeletedFlag;
 
     protected $fillable = [
         'name',
+        'email',
         'mobile',
         'company_name',
         'company_address',
-        'email',
         'status',
         'stage',
         'assigned_to_id',
-        'assigned_to_name',
-        'created_by_employee_id',
+        'created_by_id',
         'is_archived',
-        // is_deleted is handled by SoftDeletes trait column deleted_at
+        'is_deleted',
     ];
 
     protected $casts = [
         'is_archived' => 'boolean',
-        // 'is_deleted' not needed in casts as we use SoftDeletes
+        'is_deleted' => 'boolean',
     ];
 
-    // Scopes
-    public function scopeActive($query)
-    {
-        return $query->where('is_archived', false);
-    }
-
-    public function scopeArchived($query)
-    {
-        return $query->where('is_archived', true);
-    }
-    
-    // Relationships
-    public function assignedUser()
+    public function assignedTo()
     {
         return $this->belongsTo(User::class, 'assigned_to_id');
     }
 
-    public function createdByUser()
+    public function createdBy()
     {
-        return $this->belongsTo(User::class, 'created_by_employee_id');
+        return $this->belongsTo(User::class, 'created_by_id');
+    }
+
+    public function followUps()
+    {
+        return $this->hasMany(FollowUp::class);
     }
 
     public function billingItems()
@@ -62,16 +52,4 @@ class Client extends Model
     {
         return $this->hasMany(PaymentReceived::class);
     }
-
-    public function followUps()
-    {
-        return $this->hasMany(FollowUp::class);
-    }
-
-    public function notes()
-    {
-        return $this->hasMany(Note::class);
-    }
-    
-
 }

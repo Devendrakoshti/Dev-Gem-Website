@@ -1,8 +1,11 @@
 
 import { 
-  User, UserRole, Client, ClientStatus, ClientStage, 
+  User, UserRole, UserStatus, Client, ClientStatus, ClientStage, 
   FollowUp, FollowUpType, Note, ActivityLog, BackupHistory 
 } from '../types';
+
+// Password 'password123' in its mock hashed form: nexus_v1_cGFzc3dvcmQxMjM=
+const MOCK_HASHED_PWD = 'nexus_v1_cGFzc3dvcmQxMjM=';
 
 export const MOCK_USERS: User[] = [
   { 
@@ -11,9 +14,13 @@ export const MOCK_USERS: User[] = [
     lastName: 'Global', 
     name: 'Admin User', 
     email: 'admin@nexus.com', 
-    password: 'password123', 
+    password: MOCK_HASHED_PWD, 
     role: UserRole.ADMIN, 
-    employeeId: 'ADM001' 
+    status: UserStatus.ACTIVE,
+    employeeId: 'ADM001',
+    createdAt: '2023-01-01T00:00:00Z',
+    updatedAt: '2023-01-01T00:00:00Z',
+    createdBy: 'SYSTEM'
   },
   { 
     id: '2', 
@@ -21,9 +28,13 @@ export const MOCK_USERS: User[] = [
     lastName: 'Chen', 
     name: 'Sarah Chen', 
     email: 'sarah@nexus.com', 
-    password: 'password123', 
+    password: MOCK_HASHED_PWD, 
     role: UserRole.EMPLOYEE, 
-    employeeId: 'EMP001' 
+    status: UserStatus.ACTIVE,
+    employeeId: 'EMP001',
+    createdAt: '2023-02-01T10:00:00Z',
+    updatedAt: '2023-02-01T10:00:00Z',
+    createdBy: '1'
   },
   { 
     id: '3', 
@@ -31,9 +42,13 @@ export const MOCK_USERS: User[] = [
     lastName: 'Ross', 
     name: 'Mike Ross', 
     email: 'mike@nexus.com', 
-    password: 'password123', 
+    password: MOCK_HASHED_PWD, 
     role: UserRole.EMPLOYEE, 
-    employeeId: 'EMP002' 
+    status: UserStatus.ACTIVE,
+    employeeId: 'EMP002',
+    createdAt: '2023-03-01T14:30:00Z',
+    updatedAt: '2023-03-01T14:30:00Z',
+    createdBy: '1'
   },
 ];
 
@@ -49,7 +64,6 @@ export const MOCK_CLIENTS: Client[] = [
     stage: ClientStage.NEW,
     assignedToId: '2',
     assignedToName: 'Sarah Chen',
-    // Fix: Added missing mandatory createdByEmployeeId
     createdByEmployeeId: '2',
     isArchived: false,
     createdAt: '2023-10-01T10:00:00Z'
@@ -59,32 +73,15 @@ export const MOCK_CLIENTS: Client[] = [
     name: 'Alice Johnson',
     mobile: '987-654-3210',
     companyName: 'Global Logistics',
-    companyAddress: '456 Harbor Dr, NY',
+    companyAddress: '45 harbor Dr, NY',
     email: 'alice@gl-log.com',
     status: ClientStatus.ACTIVE,
     stage: ClientStage.CONTACTED,
     assignedToId: '2',
     assignedToName: 'Sarah Chen',
-    // Fix: Added missing mandatory createdByEmployeeId
     createdByEmployeeId: '2',
     isArchived: false,
     createdAt: '2023-11-15T14:30:00Z'
-  },
-  {
-    id: 'c3',
-    name: 'Robert Brown',
-    mobile: '555-010-9988',
-    companyName: 'Creative Designs',
-    companyAddress: '789 Studio Lane, London',
-    email: 'rob@creative.uk',
-    status: ClientStatus.INACTIVE,
-    stage: ClientStage.LOST,
-    assignedToId: '3',
-    assignedToName: 'Mike Ross',
-    // Fix: Added missing mandatory createdByEmployeeId
-    createdByEmployeeId: '3',
-    isArchived: true,
-    createdAt: '2023-05-20T09:00:00Z'
   }
 ];
 
@@ -123,5 +120,3 @@ export const MOCK_ACTIVITY: ActivityLog[] = [
     timestamp: '2023-10-01T10:00:00Z'
   }
 ];
-
-export const MOCK_BACKUPS: BackupHistory[] = [];

@@ -2,22 +2,17 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Concerns\HasUlids;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class FollowUp extends Model
 {
-    use HasFactory, HasUlids;
-
     protected $fillable = [
         'client_id',
+        'employee_id',
         'date',
         'next_date',
-        'type', // CALL, EMAIL, MEETING
+        'type',
         'notes',
-        'employee_id',
-        'employee_name',
     ];
 
     protected $casts = [

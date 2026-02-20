@@ -1,7 +1,11 @@
-
 export enum UserRole {
   ADMIN = 'ADMIN',
   EMPLOYEE = 'EMPLOYEE'
+}
+
+export enum UserStatus {
+  ACTIVE = 'ACTIVE',
+  SUSPENDED = 'SUSPENDED'
 }
 
 export enum ClientStatus {
@@ -25,97 +29,79 @@ export enum FollowUpType {
 }
 
 export interface User {
-  id: string;
-  firstName: string;
-  lastName: string;
-  name: string;
-  email?: string;
+  id: string | number;
+  first_name: string;
+  last_name: string;
+  email: string;
   password?: string;
   role: UserRole;
-  employeeId: string;
-  isDeleted?: boolean;
+  employee_id: string;
+  status: UserStatus;
+  is_deleted?: boolean;
+  created_at?: string;
+  updated_at?: string;
 }
 
 export interface Client {
-  id: string;
+  id: string | number;
   name: string;
   mobile: string;
-  companyName: string;
-  companyAddress: string;
+  company_name: string;
+  company_address: string;
   email: string;
   status: ClientStatus;
   stage: ClientStage;
-  assignedToId: string; // Current Owner (Assigned Employee)
-  assignedToName: string;
-  createdByEmployeeId: string; // Original Creator
-  isArchived: boolean;
-  isDeleted?: boolean;
-  createdAt: string;
+  assigned_to_id?: string | number; 
+  created_by_id?: string | number; 
+  is_archived: boolean;
+  is_deleted?: boolean;
+  created_at?: string;
 }
 
 export interface BillingItem {
-  id: string;
-  clientId: string;
-  serviceName: string;
-  description: string;
-  amountToCollect: number;
-  billingDate: string;
-  createdBy: string;
-  createdAt: string;
+  id: string | number;
+  client_id: string | number;
+  service_name: string;
+  description?: string;
+  amount_to_collect: number;
+  status: string;
+  billing_date: string;     
+  created_at?: string;
 }
 
 export interface PaymentReceived {
-  id: string;
-  clientId: string;
-  amountReceived: number;
-  receivedDate: string;
-  paymentMode: 'CASH' | 'UPI' | 'BANK';
-  notes: string;
-  createdBy: string;
-  createdAt: string;
+  id: string | number;
+  client_id: string | number;
+  amount_received: number;
+  received_date: string;
+  payment_mode: 'CASH' | 'UPI' | 'BANK';
+  notes?: string;
+  created_at?: string;
 }
 
 export interface FollowUp {
-  id: string;
-  clientId: string;
+  id: string | number;
+  client_id: string | number;
   date: string;
-  nextDate: string;
+  next_date: string;
   type: FollowUpType;
   notes: string;
-  employeeId: string;
-  employeeName: string;
-}
-
-export interface Note {
-  id: string;
-  clientId: string;
-  content: string;
-  employeeId: string;
-  employeeName: string;
-  createdAt: string;
+  employee_id: string | number;
 }
 
 export interface ActivityLog {
-  id: string;
-  actorId: string;
-  actorName: string;
+  id: string | number;
+  actor_id: string | number;
   action: string;
-  targetId: string;
-  targetType: 'CLIENT' | 'FOLLOWUP' | 'BACKUP' | 'EMPLOYEE' | 'SYSTEM' | 'PAYMENT' | 'CLIENT_TRANSFER';
+  target_id: string | number;
+  target_type: string;
   timestamp: string;
-  metadata?: {
-    fromId?: string;
-    toId?: string;
-    fromName?: string;
-    toName?: string;
-  };
+  metadata?: any;
 }
 
 export interface BackupHistory {
-  id: string;
+  id: string | number;
   filename: string;
-  createdAt: string;
+  created_at: string;
   size: string;
-  createdBy: string;
-  data?: string;
 }

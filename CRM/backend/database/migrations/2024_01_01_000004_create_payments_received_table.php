@@ -9,12 +9,12 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('payments_received', function (Blueprint $table) {
-            $table->ulid('id')->primary();
-            $table->foreignUlid('client_id')->constrained('clients')->cascadeOnDelete();
-            $table->decimal('amount_received', 15, 2);
-            $table->string('payment_method')->nullable();
-            $table->string('reference_id')->nullable();
-            $table->timestamp('received_date')->useCurrent();
+            $table->id();
+            $table->foreignId('client_id')->constrained('clients')->cascadeOnDelete();
+            $table->decimal('amount_received', 10, 2);
+            $table->date('received_date');
+            $table->enum('payment_mode', ['CASH', 'UPI', 'BANK']);
+            $table->text('notes')->nullable();
             $table->timestamps();
         });
     }

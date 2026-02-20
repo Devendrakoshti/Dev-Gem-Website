@@ -9,12 +9,13 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('billing_items', function (Blueprint $table) {
-            $table->ulid('id')->primary();
-            $table->foreignUlid('client_id')->constrained('clients')->cascadeOnDelete();
+            $table->id();
+            $table->foreignId('client_id')->constrained('clients')->cascadeOnDelete();
             $table->string('service_name');
-            $table->decimal('amount_to_collect', 15, 2);
-            $table->string('status')->default('PENDING'); // PENDING, PAID
-            $table->date('due_date')->nullable();
+            $table->text('description')->nullable();
+            $table->decimal('amount_to_collect', 10, 2);
+            $table->date('billing_date');
+            $table->string('status')->default('PENDING');
             $table->timestamps();
         });
     }

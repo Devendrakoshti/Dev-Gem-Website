@@ -1,15 +1,29 @@
-
 import React, { useState, useEffect } from 'react';
-import { mockStore } from '../../../services/mockStore';
-import { authService } from '../../../services/authService';
+import { apiService } from '../../../services/apiService';
+import { ActivityLog } from '../../../types';
+import { Loader } from '../../../components/ui/Loader';
+import { useToast } from '../../../components/layout/AppLayout';
 
 export const ActivityLogPage: React.FC = () => {
-  const user = authService.getCurrentUser()!;
-  const [logs, setLogs] = useState(mockStore.getActivity(user));
+  const [logs, setLogs] = useState<ActivityLog[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const { showToast } = useToast();
 
   useEffect(() => {
-    return mockStore.subscribe(() => setLogs(mockStore.getActivity(user)));
-  }, [user]);
+    const loadLogs = async () => {
+      try {
+        const data = await apiService.getActivityLogs();
+        setLogs(data);
+      } catch (err) {
+        showToast("Failed to sync activity stream", "error");
+      } finally {
+        setIsLoading(false);
+      }
+    };
+    loadLogs();
+  }, []);
+
+  if (isLoading) return <Loader size="lg" />;
 
   return (
     <div className="space-y-6 animate-in fade-in duration-500">
@@ -27,16 +41,17 @@ export const ActivityLogPage: React.FC = () => {
               {logs.map(log => (
                 <tr key={log.id} className="hover:bg-slate-50 transition-colors">
                    <td className="px-6 py-5">
-                      <div className="font-bold text-slate-900">{log.actorName}</div>
+                      {/* Using metadata actor_name with fallback */}
+                      <div className="font-bold text-slate-900">{log.metadata?.actor_name || 'System User'}</div>
                    </td>
                    <td className="px-6 py-5">
                       <p className="text-sm text-slate-600 font-medium">{log.action}</p>
                    </td>
                    <td className="px-6 py-5 text-xs text-slate-400 font-bold uppercase tracking-tighter">
-                      {new Date(log.timestamp).toLocaleString()}
+                      {new Date(log.timestamp || log.metadata?.created_at || Date.now()).toLocaleString()}
                    </td>
                    <td className="px-6 py-5 text-right">
-                      <span className="text-[10px] font-black text-indigo-500 uppercase bg-indigo-50 px-2 py-1 rounded-md">{log.targetType}</span>
+                      <span className="text-[10px] font-black text-indigo-500 uppercase bg-indigo-50 px-2 py-1 rounded-md">{log.target_type}</span>
                    </td>
                 </tr>
               ))}

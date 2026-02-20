@@ -2,25 +2,22 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Concerns\HasUlids;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class BillingItem extends Model
 {
-    use HasFactory, HasUlids;
-
     protected $fillable = [
         'client_id',
         'service_name',
+        'description',
         'amount_to_collect',
+        'billing_date',
         'status',
-        'due_date',
     ];
 
     protected $casts = [
         'amount_to_collect' => 'decimal:2',
-        'due_date' => 'date',
+        'billing_date' => 'date',
     ];
 
     public function client()
