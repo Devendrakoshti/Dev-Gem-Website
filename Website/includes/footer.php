@@ -110,6 +110,11 @@
     </div>
   </div>
 </footer>
+<div class="whatsapp-fixed"> 
+  <a target="_blnak" href="https://wa.me/919512956666?text=Hi" class="icon"> 
+    <img src="../images/icons/whatsapp-img.svg" alt="Whatsapp Img" title="Whatsapp Img" width="30" height="30"> 
+  </a>
+</div>
 <!-- Cookies Modal -->
 <!-- <script>
     var siteTitle = "Privacy Policy", sitetreeDesc = "We use GA4 cookies to enhance user experience.", sitetreeLink = '<a href="https://www.teslaoutsourcingservices.com/privacy-policy.php" target="_blank" title="Privacy Policy Page">Read Our Privacy Policy.</a>', sitetreeButton = "Understood!"; function pureFadeIn(e, t) { var i = document.getElementById(e); i.style.opacity = 0, i.style.display = t || "block", function e() { var t = parseFloat(i.style.opacity); (t += .02) > 1 || (i.style.opacity = t, requestAnimationFrame(e)) }() } function pureFadeOut(e) { var t = document.getElementById(e); t.style.opacity = 1, function e() { (t.style.opacity -= .02) < 0 ? t.style.display = "none" : requestAnimationFrame(e) }() } function siteDismiss() { pureFadeOut("siteConsentContainer"), localStorage.setItem("siteConsent", "true") } function siteConsent() {

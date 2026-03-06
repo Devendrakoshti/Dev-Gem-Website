@@ -1,86 +1,86 @@
+
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { apiService } from '../../../services/apiService';
+import { mockStore } from '../../../services/mockStore';
 import { Badge } from '../../../components/ui/Badge';
+import { authService } from '../../../services/authService';
 import { Modal } from '../../../components/ui/Modal';
 import { useToast } from '../../../components/layout/AppLayout';
-import { Loader } from '../../../components/ui/Loader';
 
 export const EmployeesPage: React.FC = () => {
-  const [employees, setEmployees] = useState<any[]>([]);
-  const [isLoading, setIsLoading] = useState(true);
+  const [employees, setEmployees] = useState(mockStore.getActiveEmployees());
   const [deactivateId, setDeactivateId] = useState<{id: string, name: string} | null>(null);
+  const user = authService.getCurrentUser()!;
   const { showToast } = useToast();
 
   useEffect(() => {
-    loadData();
+    return mockStore.subscribe(() => setEmployees(mockStore.getActiveEmployees()));
   }, []);
 
-  const loadData = async () => {
-    setIsLoading(true);
-    try {
-      const data = await apiService.getStaff();
-      setEmployees(data);
-    } catch (err: any) {
-      showToast(err.message, "error");
-    } finally {
-      setIsLoading(false);
-    }
-  };
-
-  const handleDeactivate = async () => {
+  const handleDeactivate = () => {
     if (deactivateId) {
-      try {
-        await apiService.deleteStaff(deactivateId.id);
-        showToast('Access revoked');
-        loadData();
-      } catch (err: any) {
-        showToast(err.message, 'error');
-      }
+      mockStore.softDeleteUser(deactivateId.id, user);
+      showToast('Employee access revoked and moved to Trash', 'info');
       setDeactivateId(null);
     }
   };
   
-  if (isLoading) return <Loader size="lg" />;
-
   return (
     <div className="space-y-6 animate-in fade-in duration-500">
       <div className="flex justify-between items-center bg-white p-6 rounded-3xl border border-slate-200 shadow-sm">
         <div>
-          <h2 className="text-xl font-bold">Staff Directory</h2>
-          <p className="text-sm text-slate-500">Manage corporate identity and platform access.</p>
+          <h2 className="text-xl font-bold text-slate-900">Corporate Directory</h2>
+          <p className="text-sm text-slate-500 font-medium">Manage corporate identity and platform access.</p>
         </div>
-        <Link to="/app/employees/new" className="bg-slate-900 text-white px-6 py-3 rounded-xl font-black text-[10px] uppercase tracking-widest shadow-lg">Register Staff</Link>
+        <Link to="/app/employees/new" className="bg-slate-900 text-white px-6 py-3 rounded-xl font-bold hover:bg-indigo-600 transition-all flex items-center gap-2 shadow-lg text-sm">
+          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4" /></svg>
+          <span>Register Staff</span>
+        </Link>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {employees.map(emp => {
-          const fName = emp.first_name || emp.firstName || 'U';
-          const lName = emp.last_name || emp.lastName || '';
-          const empId = emp.employee_id || emp.employeeId || '';
-          
-          return (
-          <div key={emp.id} className="bg-white p-8 rounded-[2rem] border border-slate-200 shadow-sm hover:border-indigo-300 transition-all flex flex-col justify-between min-h-[200px]">
+        {employees.map(emp => (
+          <div key={emp.id} className="bg-white p-8 rounded-[2rem] border border-slate-200 shadow-sm hover:border-indigo-300 transition-all group flex flex-col justify-between min-h-[220px]">
             <div>
               <div className="flex items-center justify-between mb-6">
-                <div className="w-12 h-12 bg-slate-50 rounded-2xl flex items-center justify-center font-black uppercase text-slate-400 border border-slate-100">
-                  {fName.charAt(0)}{lName.charAt(0)}
+                <div className="w-12 h-12 bg-slate-50 rounded-2xl flex items-center justify-center text-slate-400 border border-slate-100 font-black uppercase shadow-inner">
+                  {emp.firstName.charAt(0)}{emp.lastName.charAt(0)}
                 </div>
-                <Badge color="indigo">{empId}</Badge>
+                <Badge color="indigo">{emp.employeeId}</Badge>
               </div>
-              <h4 className="text-xl font-bold">{fName} {lName}</h4>
-              <p className="text-xs text-slate-500 font-medium">{emp.email}</p>
+              
+              <h4 className="text-xl font-bold text-slate-900 mb-1">{emp.firstName} {emp.lastName}</h4>
+              <p className="text-sm text-slate-500 font-medium">{emp.email || 'Internal Identifier'}</p>
             </div>
             
             <div className="flex items-center gap-4 pt-6 border-t border-slate-50">
-               <Link to={`/app/employees/${emp.id}/edit`} className="text-[10px] font-black text-indigo-600 uppercase tracking-widest">Edit</Link>
-               <button onClick={() => setDeactivateId({id: emp.id, name: `${fName} ${lName}`})} className="text-[10px] font-black text-slate-400 uppercase tracking-widest hover:text-red-500">Revoke</button>
+               <Link to={`/app/employees/${emp.id}/edit`} className="text-[10px] font-black text-indigo-600 uppercase tracking-widest hover:text-indigo-800 transition-colors">Modify Access</Link>
+               <div className="w-1 h-1 bg-slate-200 rounded-full"></div>
+               <button 
+                  onClick={() => setDeactivateId({id: emp.id, name: emp.name})}
+                  className="text-[10px] font-black text-slate-400 uppercase tracking-widest hover:text-red-600 transition-colors"
+               >
+                 Deactivate
+               </button>
             </div>
           </div>
-        )})}
+        ))}
+        {employees.length === 0 && (
+           <div className="col-span-full py-20 bg-slate-50 rounded-3xl border border-dashed border-slate-300 text-center">
+              <p className="text-slate-400 font-bold italic">No active employees found.</p>
+           </div>
+        )}
       </div>
 
-      <Modal isOpen={!!deactivateId} onClose={() => setDeactivateId(null)} onConfirm={handleDeactivate} title="Revoke Access" message={`Terminate access for ${deactivateId?.name}?`} confirmLabel="Deactivate" isDestructive={true} />
+      <Modal 
+        isOpen={!!deactivateId}
+        onClose={() => setDeactivateId(null)}
+        onConfirm={handleDeactivate}
+        title="Revoke Staff Access"
+        message={`Are you sure you want to deactivate ${deactivateId?.name}? Access to the CRM will be immediately terminated. Records will be preserved in System Trash.`}
+        confirmLabel="Deactivate Staff"
+        isDestructive={true}
+      />
     </div>
   );
 };

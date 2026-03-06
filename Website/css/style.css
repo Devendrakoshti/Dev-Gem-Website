@@ -202,6 +202,11 @@ footer{background-color: #464646;}
 .gem-gujarat-tender-bidding-support-banner{background-image: url('./images/gem-gujarat-tender-bidding-support-banner.webp');}
 .gem-gujarat-vendor-assessment-support-banner{background-image: url('./images/gem-gujarat-vendor-assessment-support-banner.webp');}
 .gem-gujarat-privacy-policy-banner{background-image: url('./images/gem-gujarat-privacy-policy-banner.webp');} */
+/* Fix Whatsapp Icon Css Start */
+.whatsapp-fixed {position: fixed;bottom: 0;right: 20px;z-index: 98;display: flex;flex-direction: column;justify-content: end;align-items: end;}
+.whatsapp-fixed .icon {position: relative;margin-right: 5px;margin-bottom: 15px;-webkit-animation: 1s infinite alternate mover;animation: 1s infinite alternate mover;}
+@-webkit-keyframes mover{0%{transform:translateY(0)}100%{transform:translateY(15px)}}
+@keyframes mover{0%{transform:translateY(0)}100%{transform:translateY(15px)}}
 
 
 

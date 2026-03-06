@@ -1,17 +1,19 @@
 
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { User, Lock, Eye, EyeOff } from 'lucide-react';
 import { authService } from '../../services/authService';
 
 export const LoginPage: React.FC = () => {
   const [identifier, setIdentifier] = useState('');
   const [password, setPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
   const navigate = useNavigate();
 
-  const handleLogin = async (e: React.FormEvent) => {
-    e.preventDefault();
+  const handleLogin = async (e?: React.FormEvent) => {
+    if (e) e.preventDefault();
     setIsLoading(true);
     setError('');
 
@@ -19,7 +21,7 @@ export const LoginPage: React.FC = () => {
       await authService.login(identifier, password);
       navigate('/app/dashboard');
     } catch (err: any) {
-      setError(err.message || 'Authentication failed. Please verify your credentials.');
+      setError(err.message || 'Authentication failed');
       setIsLoading(false);
     }
   };
@@ -32,7 +34,7 @@ export const LoginPage: React.FC = () => {
             <span className="text-white text-3xl font-bold">N</span>
           </div>
           <h2 className="text-2xl font-bold text-slate-900 tracking-tight">Enterprise Access</h2>
-          <p className="text-slate-500 mt-1 text-center font-medium">Log in to your workspace</p>
+          <p className="text-slate-500 mt-1 text-center font-medium">Log in with Email or Employee ID</p>
         </div>
 
         {error && (
@@ -44,25 +46,39 @@ export const LoginPage: React.FC = () => {
 
         <form className="space-y-6" onSubmit={handleLogin}>
           <div>
-            <label className="block text-xs font-black text-slate-400 uppercase tracking-widest mb-2">Email or Employee ID</label>
-            <input 
-              required
-              className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all font-medium"
-              placeholder="e.g. EMP001"
-              value={identifier}
-              onChange={(e) => setIdentifier(e.target.value)}
-            />
+            <label className="block text-xs font-black text-slate-400 uppercase tracking-widest mb-2">Identifier (Email or ID)</label>
+            <div className="relative">
+              <User className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
+              <input 
+                required
+                className="w-full pl-12 pr-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all font-medium"
+                placeholder="e.g. EMP001"
+                value={identifier}
+                onChange={(e) => setIdentifier(e.target.value)}
+              />
+            </div>
           </div>
           <div>
             <label className="block text-xs font-black text-slate-400 uppercase tracking-widest mb-2">Password</label>
-            <input 
-              type="password"
-              required
-              className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all font-medium"
-              placeholder="••••••••"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            />
+            <div className="relative">
+              <Lock className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
+              <input 
+                type={showPassword ? "text" : "password"}
+                required
+                className="w-full pl-12 pr-12 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all font-medium"
+                placeholder="••••••••"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+              <button
+                type="button"
+                onClick={() => setShowPassword(!showPassword)}
+                className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 transition-colors"
+                tabIndex={-1}
+              >
+                {showPassword ? <EyeOff className="w-5 h-5" /> : <Eye className="w-5 h-5" />}
+              </button>
+            </div>
           </div>
           
           <button 

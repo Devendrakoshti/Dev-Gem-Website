@@ -1,6 +1,8 @@
 
 import { User, UserRole } from '../types';
-import { apiService } from './apiService';
+import { USE_DEMO_AUTH } from '../config/appConfig';
+import { mockStore, hashPassword } from './mockStore';
+import { UserService } from './userService';
 
 const STORAGE_KEY = 'nexus_auth_session';
 
@@ -10,14 +12,28 @@ export interface AuthSession extends User {
 
 class AuthService {
   async login(identifier: string, password: string): Promise<AuthSession> {
-    const response = await apiService.login(identifier, password);
-    // Assuming backend returns { user, token }
-    const session: AuthSession = {
-      ...response.user,
-      token: response.token
-    };
-    this.setSession(session);
-    return session;
+    if (USE_DEMO_AUTH) {
+      await new Promise((resolve) => setTimeout(resolve, 600));
+
+      const userMatch = await UserService.findUserByIdentifier(identifier);
+      const inputHash = hashPassword(password);
+      
+      if (userMatch && userMatch.password === inputHash) {
+        if (userMatch.isDeleted) {
+          throw new Error('This account has been deactivated. Please contact HR.');
+        }
+
+        const session: AuthSession = {
+          ...userMatch,
+          token: `demo-jwt-${btoa(userMatch.employeeId)}-${Date.now()}`
+        };
+        this.setSession(session);
+        return session;
+      }
+      throw new Error('Invalid Credentials: User identity or password mismatch.');
+    } else {
+      throw new Error('Live API Authentication not configured.');
+    }
   }
 
   logout(): void {
@@ -28,7 +44,16 @@ class AuthService {
     const data = localStorage.getItem(STORAGE_KEY);
     if (!data) return null;
     try {
-      return JSON.parse(data) as AuthSession;
+      const session = JSON.parse(data);
+      // Synchronous access to store for rapid UI checks
+      const users = mockStore.getCollection('users');
+      const latest = users.find(u => u.id === session.id);
+      
+      if (!latest || latest.isDeleted) {
+        this.logout();
+        return null;
+      }
+      return { ...latest, token: session.token } as AuthSession;
     } catch (e) {
       this.logout();
       return null;
@@ -50,8 +75,3 @@ class AuthService {
 }
 
 export const authService = new AuthService();
-
-export const DEMO_CREDENTIALS = {
-  ADMIN: { identifier: 'admin@nexus.com', password: 'password123' },
-  EMPLOYEE: { identifier: 'EMP001', password: 'password123' }
-};

@@ -1,11 +1,11 @@
+
 import React, { useState, useEffect } from 'react';
-import { apiService } from '../../../services/apiService';
+import { mockStore } from '../../../services/mockStore';
 import { authService } from '../../../services/authService';
 import { Badge } from '../../../components/ui/Badge';
 import { UserRole } from '../../../types';
 import { useToast } from '../../../components/layout/AppLayout';
 import { Modal } from '../../../components/ui/Modal';
-import { Loader } from '../../../components/ui/Loader';
 
 export const TrashPage: React.FC = () => {
   const user = authService.getCurrentUser()!;
@@ -13,44 +13,36 @@ export const TrashPage: React.FC = () => {
   const { showToast } = useToast();
   
   const [activeTab, setActiveTab] = useState<'CLIENTS' | 'EMPLOYEES'>('CLIENTS');
-  const [items, setItems] = useState<any[]>([]);
-  const [isLoading, setIsLoading] = useState(true);
-  const [purgeId, setPurgeId] = useState<{id: string | number, type: 'CLIENT' | 'EMPLOYEE'} | null>(null);
+  const [deletedClients, setDeletedClients] = useState(mockStore.getDeletedClients(user));
+  const [deletedEmployees, setDeletedEmployees] = useState(isAdmin ? mockStore.getDeletedEmployees() : []);
+
+  const [purgeId, setPurgeId] = useState<{id: string, type: 'CLIENT' | 'EMPLOYEE'} | null>(null);
 
   useEffect(() => {
-    loadTrash();
-  }, [activeTab]);
+    return mockStore.subscribe(() => {
+      setDeletedClients(mockStore.getDeletedClients(user));
+      setDeletedEmployees(isAdmin ? mockStore.getDeletedEmployees() : []);
+    });
+  }, [isAdmin, user]);
 
-  const loadTrash = async () => {
-    setIsLoading(true);
-    try {
-      const data = await apiService.getTrash(activeTab);
-      setItems(data);
-    } catch (err) {
-      showToast("Could not fetch trash repository", "error");
-    } finally {
-      setIsLoading(false);
-    }
+  const handleRestoreClient = (id: string) => {
+    mockStore.restoreClient(id, user);
+    showToast('Client restored to active records');
   };
 
-  const handleRestore = async (id: string | number, type: 'CLIENT' | 'EMPLOYEE') => {
-    try {
-      await apiService.restoreFromTrash(id as string, type);
-      showToast(`${type} record restored successfully`);
-      loadTrash();
-    } catch (err) {
-      showToast("Restoration failed", "error");
-    }
+  const handleRestoreEmployee = (id: string) => {
+    mockStore.restoreUser(id, user);
+    showToast('Employee access restored');
   };
 
-  const handleConfirmPurge = async () => {
+  const handleConfirmPurge = () => {
     if (!purgeId) return;
-    try {
-      await apiService.permanentDelete(purgeId.id as string, purgeId.type);
-      showToast('Record permanently scrubbed', 'error');
-      loadTrash();
-    } catch (err) {
-      showToast("Purge operation failed", "error");
+    if (purgeId.type === 'CLIENT') {
+      mockStore.permanentlyDeleteClient(purgeId.id, user);
+      showToast('Client permanently deleted', 'error');
+    } else {
+      mockStore.permanentlyDeleteUser(purgeId.id, user);
+      showToast('Employee account purged forever', 'error');
     }
     setPurgeId(null);
   };
@@ -74,14 +66,14 @@ export const TrashPage: React.FC = () => {
               onClick={() => setActiveTab('CLIENTS')}
               className={`pb-4 text-[10px] font-black uppercase tracking-[0.2em] transition-all relative ${activeTab === 'CLIENTS' ? 'text-indigo-600' : 'text-slate-400 hover:text-slate-600'}`}
             >
-              Partner Archive
+              Partner Archive ({deletedClients.length})
               {activeTab === 'CLIENTS' && <div className="absolute bottom-0 left-0 w-full h-1 bg-indigo-600 rounded-full" />}
             </button>
             <button 
               onClick={() => setActiveTab('EMPLOYEES')}
               className={`pb-4 text-[10px] font-black uppercase tracking-[0.2em] transition-all relative ${activeTab === 'EMPLOYEES' ? 'text-indigo-600' : 'text-slate-400 hover:text-slate-600'}`}
             >
-              Inactive Staff
+              Inactive Staff ({deletedEmployees.length})
               {activeTab === 'EMPLOYEES' && <div className="absolute bottom-0 left-0 w-full h-1 bg-indigo-600 rounded-full" />}
             </button>
           </div>
@@ -89,44 +81,73 @@ export const TrashPage: React.FC = () => {
       </div>
 
       <div className="bg-white rounded-[2rem] border border-slate-200 shadow-sm overflow-hidden">
-        {isLoading ? <Loader size="lg" /> : (
+        {activeTab === 'CLIENTS' ? (
           <table className="w-full text-left">
             <thead className="bg-slate-50 border-b border-slate-200">
               <tr>
-                <th className="px-8 py-4 text-[10px] font-black text-slate-500 uppercase tracking-widest">
-                  {activeTab === 'CLIENTS' ? 'Client Identity' : 'Staff Name'}
-                </th>
-                <th className="px-8 py-4 text-[10px] font-black text-slate-500 uppercase tracking-widest">Details</th>
+                <th className="px-8 py-4 text-[10px] font-black text-slate-500 uppercase tracking-widest">Client Identity</th>
+                <th className="px-8 py-4 text-[10px] font-black text-slate-500 uppercase tracking-widest">Company</th>
                 <th className="px-8 py-4 text-[10px] font-black text-slate-500 uppercase tracking-widest text-right">Actions</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-100">
-              {items.map(item => (
-                <tr key={item.id} className="hover:bg-slate-50 transition-colors group">
-                  <td className="px-8 py-5 font-bold text-slate-900">
-                    {activeTab === 'CLIENTS' ? item.name : `${item.first_name || ''} ${item.last_name || ''}`}
-                  </td>
-                  <td className="px-8 py-5 text-sm text-slate-500 font-medium">
-                    {activeTab === 'CLIENTS' ? item.company_name : <Badge color="gray">{item.employee_id}</Badge>}
-                  </td>
+              {deletedClients.map(client => (
+                <tr key={client.id} className="hover:bg-slate-50 transition-colors group">
+                  <td className="px-8 py-5 font-bold text-slate-900">{client.name}</td>
+                  <td className="px-8 py-5 text-sm text-slate-500 font-medium">{client.companyName}</td>
                   <td className="px-8 py-5 text-right space-x-6">
                     <button 
-                      onClick={() => handleRestore(item.id, activeTab === 'CLIENTS' ? 'CLIENT' : 'EMPLOYEE')} 
+                      onClick={() => handleRestoreClient(client.id)} 
                       className="text-[10px] font-black text-indigo-600 uppercase tracking-widest hover:text-indigo-800 transition-all"
                     >
                       Restore
                     </button>
                     <button 
-                      onClick={() => setPurgeId({id: item.id, type: activeTab === 'CLIENTS' ? 'CLIENT' : 'EMPLOYEE'})} 
+                      onClick={() => setPurgeId({id: client.id, type: 'CLIENT'})} 
                       className="text-[10px] font-black text-rose-500 uppercase tracking-widest hover:text-rose-700 transition-all"
                     >
-                      Purge
+                      Delete Forever
                     </button>
                   </td>
                 </tr>
               ))}
-              {items.length === 0 && (
+              {deletedClients.length === 0 && (
                 <tr><td colSpan={3} className="px-8 py-24 text-center text-slate-400 font-bold italic">Trash repository is empty.</td></tr>
+              )}
+            </tbody>
+          </table>
+        ) : (
+          <table className="w-full text-left">
+            <thead className="bg-slate-50 border-b border-slate-200">
+              <tr>
+                <th className="px-8 py-4 text-[10px] font-black text-slate-500 uppercase tracking-widest">Staff Name</th>
+                <th className="px-8 py-4 text-[10px] font-black text-slate-500 uppercase tracking-widest">Employee ID</th>
+                <th className="px-8 py-4 text-[10px] font-black text-slate-500 uppercase tracking-widest text-right">Actions</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-slate-100">
+              {deletedEmployees.map(emp => (
+                <tr key={emp.id} className="hover:bg-slate-50 transition-colors group">
+                  <td className="px-8 py-5 font-bold text-slate-900">{emp.name}</td>
+                  <td className="px-8 py-5"><Badge color="gray">{emp.employeeId}</Badge></td>
+                  <td className="px-8 py-5 text-right space-x-6">
+                    <button 
+                      onClick={() => handleRestoreEmployee(emp.id)} 
+                      className="text-[10px] font-black text-indigo-600 uppercase tracking-widest hover:text-indigo-800 transition-all"
+                    >
+                      Restore Access
+                    </button>
+                    <button 
+                      onClick={() => setPurgeId({id: emp.id, type: 'EMPLOYEE'})} 
+                      className="text-[10px] font-black text-rose-500 uppercase tracking-widest hover:text-rose-700 transition-all"
+                    >
+                      Purge Data
+                    </button>
+                  </td>
+                </tr>
+              ))}
+              {deletedEmployees.length === 0 && (
+                <tr><td colSpan={3} className="px-8 py-24 text-center text-slate-400 font-bold italic">Directory is currently healthy.</td></tr>
               )}
             </tbody>
           </table>
@@ -138,7 +159,7 @@ export const TrashPage: React.FC = () => {
         onClose={() => setPurgeId(null)}
         onConfirm={handleConfirmPurge}
         title="Purge Record Permanently"
-        message="This will permanently delete the record from the database. This action is irreversible."
+        message="This will permanently delete the client. This cannot be undone."
         confirmLabel="Confirm Purge"
         isDestructive={true}
       />

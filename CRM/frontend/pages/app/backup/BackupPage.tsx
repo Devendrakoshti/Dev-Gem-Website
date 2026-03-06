@@ -1,58 +1,37 @@
+
 import React, { useState, useEffect, useRef } from 'react';
-import { apiService } from '../../../services/apiService';
+import { mockStore } from '../../../services/mockStore';
 import { authService } from '../../../services/authService';
 import { Modal } from '../../../components/ui/Modal';
 import { useToast } from '../../../components/layout/AppLayout';
-import { Loader } from '../../../components/ui/Loader';
-import { BackupHistory } from '../../../types';
 
 export const BackupPage: React.FC = () => {
   const [isCreating, setIsCreating] = useState(false);
-  const [backups, setBackups] = useState<BackupHistory[]>([]);
-  const [isLoading, setIsLoading] = useState(true);
-  const [deleteId, setDeleteId] = useState<string | number | null>(null);
+  const [backups, setBackups] = useState(mockStore.getBackups());
+  const [deleteId, setDeleteId] = useState<string | null>(null);
   const [selectedImportFile, setSelectedImportFile] = useState<File | null>(null);
   const [isImporting, setIsImporting] = useState(false);
   const [showRestoreConfirm, setShowRestoreConfirm] = useState(false);
   
   const fileInputRef = useRef<HTMLInputElement>(null);
+  const user = authService.getCurrentUser()!;
   const { showToast } = useToast();
 
   useEffect(() => {
-    loadBackups();
+    return mockStore.subscribe(() => setBackups(mockStore.getBackups()));
   }, []);
-
-  const loadBackups = async () => {
-    setIsLoading(true);
-    try {
-      const data = await apiService.getBackups();
-      setBackups(data);
-    } catch (err) {
-      showToast("Failed to fetch backup registry", "error");
-    } finally {
-      setIsLoading(false);
-    }
-  };
 
   const handleCreateBackup = async () => {
     setIsCreating(true);
-    try {
-      await apiService.createBackup();
-      showToast("System snapshot generated successfully.");
-      loadBackups();
-    } catch (err: any) {
-      showToast(err.message, "error");
-    } finally {
-      setIsCreating(false);
-    }
+    await new Promise(r => setTimeout(r, 1200));
+    mockStore.createBackup(user.name, user);
+    setIsCreating(false);
+    showToast("System snapshot generated successfully.");
   };
 
-  const handleDownload = (id: string | number) => {
+  const handleDownload = (id: string) => {
     const backup = backups.find(b => b.id === id);
-    if (!backup?.data) {
-        showToast("Backup data missing", "error");
-        return;
-    }
+    if (!backup?.data) return;
     const blob = new Blob([backup.data], { type: 'application/json' });
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
@@ -62,15 +41,10 @@ export const BackupPage: React.FC = () => {
     showToast("Download initiated.");
   };
 
-  const handleConfirmDelete = async () => {
+  const handleConfirmDelete = () => {
     if (deleteId) {
-      try {
-        await apiService.deleteBackup(deleteId as string);
-        showToast("Backup snapshot purged successfully", "info");
-        loadBackups();
-      } catch (err: any) {
-        showToast(err.message, "error");
-      }
+      mockStore.deleteBackup(deleteId, user);
+      showToast("Backup snapshot purged successfully", "info");
       setDeleteId(null);
     }
   };
@@ -93,13 +67,13 @@ export const BackupPage: React.FC = () => {
     const reader = new FileReader();
     reader.onload = async (event) => {
       try {
-        await apiService.restoreBackup(event.target?.result as string);
+        await new Promise(r => setTimeout(r, 1500)); // Simulate processing
+        mockStore.restoreFromJSON(event.target?.result as string, user);
         showToast("System database restored successfully");
         setSelectedImportFile(null);
         if (fileInputRef.current) fileInputRef.current.value = '';
-        window.location.reload(); // Force reload to sync new data state
-      } catch (err: any) { 
-        showToast(err.message || "Restoration failed", "error");
+      } catch (err) { 
+        showToast("Restoration failed: Invalid backup schema", "error");
       } finally {
         setIsImporting(false);
         setShowRestoreConfirm(false);
@@ -107,8 +81,6 @@ export const BackupPage: React.FC = () => {
     };
     reader.readAsText(selectedImportFile);
   };
-
-  if (isLoading) return <Loader size="lg" />;
 
   return (
     <div className="space-y-10 animate-in fade-in duration-500">
@@ -136,7 +108,7 @@ export const BackupPage: React.FC = () => {
                        <div className="p-3 bg-slate-100 rounded-xl text-slate-400"><svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg></div>
                        <div>
                           <p className="font-bold text-slate-900 text-sm">{b.filename}</p>
-                          <p className="text-[10px] text-slate-400 font-bold uppercase">{b.size} • {new Date(b.created_at).toLocaleString()}</p>
+                          <p className="text-[10px] text-slate-400 font-bold uppercase">{b.size} • {new Date(b.createdAt).toLocaleString()}</p>
                        </div>
                     </div>
                     <div className="flex gap-2">
