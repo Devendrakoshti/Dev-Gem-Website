@@ -2,15 +2,17 @@
 
 namespace App\Models;
 
-// use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use App\Traits\LogsActivity;
 
 class User extends Authenticatable
 {
     /** @use HasFactory<\Database\Factories\UserFactory> */
-    use HasFactory, Notifiable;
+    use HasFactory, Notifiable, SoftDeletes, LogsActivity;
 
     /**
      * The attributes that are mass assignable.
@@ -18,9 +20,14 @@ class User extends Authenticatable
      * @var list<string>
      */
     protected $fillable = [
-        'name',
+        'first_name',
+        'last_name',
         'email',
         'password',
+        'role',
+        'employee_id',
+        'status',
+        'is_deleted',
     ];
 
     /**
@@ -43,6 +50,40 @@ class User extends Authenticatable
         return [
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
+            'is_deleted' => 'boolean',
         ];
+    }
+
+    /**
+     * Get the user's full name.
+     */
+    public function getNameAttribute(): string
+    {
+        return "{$this->first_name} {$this->last_name}";
+    }
+
+    public function assignedClients(): HasMany
+    {
+        return $this->hasMany(Client::class, 'assigned_to_id');
+    }
+
+    public function createdClients(): HasMany
+    {
+        return $this->hasMany(Client::class, 'created_by_employee_id');
+    }
+
+    public function followUps(): HasMany
+    {
+        return $this->hasMany(FollowUp::class, 'employee_id');
+    }
+
+    public function notes(): HasMany
+    {
+        return $this->hasMany(Note::class, 'employee_id');
+    }
+
+    public function activityLogs(): HasMany
+    {
+        return $this->hasMany(ActivityLog::class, 'actor_id');
     }
 }
