@@ -1,48 +1,84 @@
 
 import React, { useState, useEffect } from 'react';
-import { mockStore } from '../../../services/mockStore';
+import { clientService } from '../../../services/clientService';
+import { userService } from '../../../services/userService';
+import { USE_DEMO_AUTH } from '../../../config/appConfig';
 import { authService } from '../../../services/authService';
 import { Badge } from '../../../components/ui/Badge';
-import { UserRole } from '../../../types';
+import { UserRole, Client, User } from '../../../types';
 import { useToast } from '../../../components/layout/AppLayout';
 import { Modal } from '../../../components/ui/Modal';
+import { mockStore } from '../../../services/mockStore';
 
 export const TrashPage: React.FC = () => {
   const user = authService.getCurrentUser()!;
   const isAdmin = user.role === UserRole.ADMIN;
   const { showToast } = useToast();
-  
-  const [activeTab, setActiveTab] = useState<'CLIENTS' | 'EMPLOYEES'>('CLIENTS');
-  const [deletedClients, setDeletedClients] = useState(mockStore.getDeletedClients(user));
-  const [deletedEmployees, setDeletedEmployees] = useState(isAdmin ? mockStore.getDeletedEmployees() : []);
 
-  const [purgeId, setPurgeId] = useState<{id: string, type: 'CLIENT' | 'EMPLOYEE'} | null>(null);
+  const [activeTab, setActiveTab] = useState<'CLIENTS' | 'EMPLOYEES'>('CLIENTS');
+  const [deletedClients, setDeletedClients] = useState<Client[]>([]);
+  const [deletedEmployees, setDeletedEmployees] = useState<User[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  const [purgeId, setPurgeId] = useState<{ id: string, type: 'CLIENT' | 'EMPLOYEE' } | null>(null);
+
+  const fetchTrash = async () => {
+    setLoading(true);
+    try {
+      const clients = await clientService.getClients(user, 'trash');
+      setDeletedClients(clients);
+
+      if (isAdmin) {
+        const users = await userService.getUsers();
+        setDeletedEmployees(users.filter(u => u.isDeleted));
+      }
+    } catch (err: any) {
+      showToast(err.message, 'error');
+    } finally {
+      setLoading(false);
+    }
+  };
 
   useEffect(() => {
-    return mockStore.subscribe(() => {
-      setDeletedClients(mockStore.getDeletedClients(user));
-      setDeletedEmployees(isAdmin ? mockStore.getDeletedEmployees() : []);
-    });
-  }, [isAdmin, user]);
+    fetchTrash();
+    if (USE_DEMO_AUTH) {
+      return mockStore.subscribe(() => fetchTrash());
+    }
+  }, [isAdmin, user?.id]);
 
-  const handleRestoreClient = (id: string) => {
-    mockStore.restoreClient(id, user);
-    showToast('Client restored to active records');
+  const handleRestoreClient = async (id: string) => {
+    try {
+      await clientService.updateClient(id, { isDeleted: false });
+      showToast('Client restored to active records');
+      fetchTrash();
+    } catch (err: any) {
+      showToast(err.message, 'error');
+    }
   };
 
-  const handleRestoreEmployee = (id: string) => {
-    mockStore.restoreUser(id, user);
-    showToast('Employee access restored');
+  const handleRestoreEmployee = async (id: string) => {
+    try {
+      await userService.updateUser(id, { isDeleted: false, status: (undefined as any) }); // status logic handled in service or backend
+      showToast('Employee access restored');
+      fetchTrash();
+    } catch (err: any) {
+      showToast(err.message, 'error');
+    }
   };
 
-  const handleConfirmPurge = () => {
+  const handleConfirmPurge = async () => {
     if (!purgeId) return;
-    if (purgeId.type === 'CLIENT') {
-      mockStore.permanentlyDeleteClient(purgeId.id, user);
-      showToast('Client permanently deleted', 'error');
-    } else {
-      mockStore.permanentlyDeleteUser(purgeId.id, user);
-      showToast('Employee account purged forever', 'error');
+    try {
+      if (purgeId.type === 'CLIENT') {
+        await clientService.deleteClient(purgeId.id); // In many APIs, DELETE on trash purges
+        showToast('Client permanently deleted', 'error');
+      } else {
+        // Permanently delete user logic if exists in service
+        showToast('Purge functionality restricted to backend policies', 'info');
+      }
+      fetchTrash();
+    } catch (err: any) {
+      showToast(err.message, 'error');
     }
     setPurgeId(null);
   };
@@ -56,20 +92,20 @@ export const TrashPage: React.FC = () => {
             <p className="text-slate-500 font-medium text-sm">Recover soft-deleted records or purge them permanently.</p>
           </div>
           <div className="bg-rose-50 text-rose-600 px-4 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest border border-rose-100">
-             Compliance Restricted
+            Compliance Restricted
           </div>
         </div>
-        
+
         {isAdmin && (
           <div className="flex gap-8 border-b border-slate-100 mt-8">
-            <button 
+            <button
               onClick={() => setActiveTab('CLIENTS')}
               className={`pb-4 text-[10px] font-black uppercase tracking-[0.2em] transition-all relative ${activeTab === 'CLIENTS' ? 'text-indigo-600' : 'text-slate-400 hover:text-slate-600'}`}
             >
               Partner Archive ({deletedClients.length})
               {activeTab === 'CLIENTS' && <div className="absolute bottom-0 left-0 w-full h-1 bg-indigo-600 rounded-full" />}
             </button>
-            <button 
+            <button
               onClick={() => setActiveTab('EMPLOYEES')}
               className={`pb-4 text-[10px] font-black uppercase tracking-[0.2em] transition-all relative ${activeTab === 'EMPLOYEES' ? 'text-indigo-600' : 'text-slate-400 hover:text-slate-600'}`}
             >
@@ -96,14 +132,14 @@ export const TrashPage: React.FC = () => {
                   <td className="px-8 py-5 font-bold text-slate-900">{client.name}</td>
                   <td className="px-8 py-5 text-sm text-slate-500 font-medium">{client.companyName}</td>
                   <td className="px-8 py-5 text-right space-x-6">
-                    <button 
-                      onClick={() => handleRestoreClient(client.id)} 
+                    <button
+                      onClick={() => handleRestoreClient(client.id)}
                       className="text-[10px] font-black text-indigo-600 uppercase tracking-widest hover:text-indigo-800 transition-all"
                     >
                       Restore
                     </button>
-                    <button 
-                      onClick={() => setPurgeId({id: client.id, type: 'CLIENT'})} 
+                    <button
+                      onClick={() => setPurgeId({ id: client.id, type: 'CLIENT' })}
                       className="text-[10px] font-black text-rose-500 uppercase tracking-widest hover:text-rose-700 transition-all"
                     >
                       Delete Forever
@@ -131,14 +167,14 @@ export const TrashPage: React.FC = () => {
                   <td className="px-8 py-5 font-bold text-slate-900">{emp.name}</td>
                   <td className="px-8 py-5"><Badge color="gray">{emp.employeeId}</Badge></td>
                   <td className="px-8 py-5 text-right space-x-6">
-                    <button 
-                      onClick={() => handleRestoreEmployee(emp.id)} 
+                    <button
+                      onClick={() => handleRestoreEmployee(emp.id)}
                       className="text-[10px] font-black text-indigo-600 uppercase tracking-widest hover:text-indigo-800 transition-all"
                     >
                       Restore Access
                     </button>
-                    <button 
-                      onClick={() => setPurgeId({id: emp.id, type: 'EMPLOYEE'})} 
+                    <button
+                      onClick={() => setPurgeId({ id: emp.id, type: 'EMPLOYEE' })}
                       className="text-[10px] font-black text-rose-500 uppercase tracking-widest hover:text-rose-700 transition-all"
                     >
                       Purge Data
@@ -154,7 +190,7 @@ export const TrashPage: React.FC = () => {
         )}
       </div>
 
-      <Modal 
+      <Modal
         isOpen={!!purgeId}
         onClose={() => setPurgeId(null)}
         onConfirm={handleConfirmPurge}

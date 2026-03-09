@@ -1,6 +1,6 @@
 
-export const USE_DEMO_AUTH = true;
-export const API_BASE_URL = 'https://api.nexus-crm.com/v1';
+export const USE_DEMO_AUTH = false;
+export const API_BASE_URL = 'http://localhost:8000/api';
 export const APP_NAME = 'NexusCRM';
 
 // Centralized Persistence Config

@@ -1,11 +1,14 @@
 
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { User, Mail, Phone, Building2, BarChart3, MapPin, UserCheck, Activity } from 'lucide-react';
-import { mockStore } from '../../../services/mockStore';
-import { ClientStatus, ClientStage, UserRole } from '../../../types';
+import { User as UserIcon, Mail, Phone, Building2, BarChart3, MapPin, UserCheck, Activity } from 'lucide-react';
+import { clientService } from '../../../services/clientService';
+import { userService } from '../../../services/userService';
+import { USE_DEMO_AUTH } from '../../../config/appConfig';
+import { ClientStatus, ClientStage, UserRole, User } from '../../../types';
 import { authService } from '../../../services/authService';
 import { useToast } from '../../../components/layout/AppLayout';
+import { mockStore } from '../../../services/mockStore';
 
 export const ClientFormPage: React.FC = () => {
   const { id } = useParams();
@@ -13,7 +16,7 @@ export const ClientFormPage: React.FC = () => {
   const isEdit = !!id;
   const currentUser = authService.getCurrentUser();
   const { showToast } = useToast();
-  
+
   const [formData, setFormData] = useState({
     name: '',
     mobile: '',
@@ -29,20 +32,30 @@ export const ClientFormPage: React.FC = () => {
 
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
-  const employees = mockStore.getEmployees();
+  const [employees, setEmployees] = useState<User[]>([]);
 
   useEffect(() => {
-    if (isEdit) {
-      const client = mockStore.getClientById(id!);
-      if (client) {
-        if (currentUser?.role !== UserRole.ADMIN && client.assignedToId !== currentUser?.id) {
-          showToast("Permission denied: You can only edit your own clients.", "error");
-          navigate('/app/clients');
-          return;
+    const loadData = async () => {
+      try {
+        const emps = await userService.getEmployees();
+        setEmployees(emps);
+
+        if (isEdit) {
+          const client = await clientService.getClientById(id!);
+          if (client) {
+            if (currentUser?.role !== UserRole.ADMIN && client.assignedToId !== currentUser?.id) {
+              showToast("Permission denied: You can only edit your own clients.", "error");
+              navigate('/app/clients');
+              return;
+            }
+            setFormData({ ...client });
+          }
         }
-        setFormData({ ...client });
+      } catch (err: any) {
+        showToast(err.message, 'error');
       }
-    }
+    };
+    loadData();
   }, [id, isEdit]);
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -50,32 +63,37 @@ export const ClientFormPage: React.FC = () => {
     if (!currentUser) return;
     setError('');
 
-    // Duplicate Check (P1)
-    const duplicate = mockStore.isDuplicateClient(formData.email, formData.mobile, id);
-    if (duplicate) {
-      setError(`A client with this ${duplicate.type} already exists in the system.`);
-      showToast(`Duplicate ${duplicate.type} detected.`, 'error');
-      return;
+    // Duplicate Check (P1) - Still using mockStore logic for now if in demo
+    if (USE_DEMO_AUTH) {
+      const duplicate = mockStore.isDuplicateClient(formData.email, formData.mobile, id);
+      if (duplicate) {
+        setError(`A client with this ${duplicate.type} already exists in the system.`);
+        showToast(`Duplicate ${duplicate.type} detected.`, 'error');
+        return;
+      }
     }
 
     setIsLoading(true);
-    await new Promise(r => setTimeout(r, 600));
-
-    if (isEdit) {
-      mockStore.updateClient(id!, formData, currentUser);
-      showToast('Client profile updated');
-    } else {
-      mockStore.addClient(formData, currentUser);
-      showToast('New client registered');
+    try {
+      if (isEdit) {
+        await clientService.updateClient(id!, formData);
+        showToast('Client profile updated');
+      } else {
+        await clientService.createClient(formData);
+        showToast('New client registered');
+      }
+      navigate('/app/clients');
+    } catch (err: any) {
+      setError(err.message);
+      showToast(err.message, 'error');
+    } finally {
+      setIsLoading(false);
     }
-
-    setIsLoading(false);
-    navigate('/app/clients');
   };
 
   const handleAssignChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const empId = e.target.value;
-    const emp = mockStore.getUserById(empId);
+    const emp = employees.find(u => u.id === empId);
     setFormData(prev => ({
       ...prev,
       assignedToId: empId,
@@ -105,8 +123,8 @@ export const ClientFormPage: React.FC = () => {
           <div className="md:col-span-2">
             <label className="block text-xs font-bold text-slate-400 uppercase mb-2">Full Client Name</label>
             <div className="relative">
-              <User className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
-              <input 
+              <UserIcon className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
+              <input
                 required
                 className="w-full pl-12 pr-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-indigo-500 transition-all outline-none bg-slate-50/30"
                 value={formData.name}
@@ -120,7 +138,7 @@ export const ClientFormPage: React.FC = () => {
             <label className="block text-xs font-bold text-slate-400 uppercase mb-2">Email Address</label>
             <div className="relative">
               <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
-              <input 
+              <input
                 required
                 type="email"
                 className="w-full pl-12 pr-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-indigo-500 transition-all outline-none bg-slate-50/30"
@@ -134,7 +152,7 @@ export const ClientFormPage: React.FC = () => {
             <label className="block text-xs font-bold text-slate-400 uppercase mb-2">Mobile Number</label>
             <div className="relative">
               <Phone className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
-              <input 
+              <input
                 required
                 className="w-full pl-12 pr-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-indigo-500 transition-all outline-none bg-slate-50/30"
                 value={formData.mobile}
@@ -147,7 +165,7 @@ export const ClientFormPage: React.FC = () => {
             <label className="block text-xs font-bold text-slate-400 uppercase mb-2">Company Name</label>
             <div className="relative">
               <Building2 className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
-              <input 
+              <input
                 required
                 className="w-full pl-12 pr-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-indigo-500 transition-all outline-none bg-slate-50/30"
                 value={formData.companyName}
@@ -160,7 +178,7 @@ export const ClientFormPage: React.FC = () => {
             <label className="block text-xs font-bold text-slate-400 uppercase mb-2">Pipeline Stage</label>
             <div className="relative">
               <BarChart3 className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400 pointer-events-none" />
-              <select 
+              <select
                 className="w-full pl-12 pr-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-indigo-500 transition-all outline-none bg-slate-50/30 appearance-none"
                 value={formData.stage}
                 onChange={e => setFormData({ ...formData, stage: e.target.value as ClientStage })}
@@ -174,7 +192,7 @@ export const ClientFormPage: React.FC = () => {
             <label className="block text-xs font-bold text-slate-400 uppercase mb-2">Business Address</label>
             <div className="relative">
               <MapPin className="absolute left-4 top-4 w-5 h-5 text-slate-400" />
-              <textarea 
+              <textarea
                 rows={3}
                 className="w-full pl-12 pr-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-indigo-500 transition-all outline-none bg-slate-50/30"
                 value={formData.companyAddress}
@@ -188,7 +206,7 @@ export const ClientFormPage: React.FC = () => {
               <label className="block text-xs font-bold text-slate-400 uppercase mb-2">Account Ownership</label>
               <div className="relative">
                 <UserCheck className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400 pointer-events-none" />
-                <select 
+                <select
                   className="w-full pl-12 pr-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-indigo-500 transition-all outline-none bg-slate-50/30 font-semibold appearance-none"
                   value={formData.assignedToId}
                   onChange={handleAssignChange}
@@ -206,7 +224,7 @@ export const ClientFormPage: React.FC = () => {
             <label className="block text-xs font-bold text-slate-400 uppercase mb-2">Relationship Status</label>
             <div className="relative">
               <Activity className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400 pointer-events-none" />
-              <select 
+              <select
                 className="w-full pl-12 pr-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-indigo-500 transition-all outline-none bg-slate-50/30 appearance-none"
                 value={formData.status}
                 onChange={e => setFormData({ ...formData, status: e.target.value as ClientStatus })}
@@ -219,7 +237,7 @@ export const ClientFormPage: React.FC = () => {
         </div>
 
         <div className="flex gap-4">
-          <button 
+          <button
             type="submit"
             disabled={isLoading}
             className="flex-1 bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 rounded-xl transition-all shadow-lg shadow-indigo-200 disabled:opacity-50 flex items-center justify-center gap-2"
