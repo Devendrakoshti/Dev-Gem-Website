@@ -81,4 +81,29 @@ class DashboardController extends Controller
             'activity' => \App\Models\ActivityLog::latest()->take(10)->get()
         ]);
     }
+
+    public function activity()
+    {
+        $logs = \App\Models\ActivityLog::with('actor')->latest()->paginate(50);
+
+        $mappedLogs = collect($logs->items())->map(function ($log) {
+            return [
+                'id' => $log->id,
+                'actorId' => $log->actor_id,
+                'actorName' => $log->actor ? "{$log->actor->first_name} {$log->actor->last_name}" : 'System',
+                'action' => $log->action,
+                'targetId' => $log->target_id,
+                'targetType' => $log->target_type,
+                'timestamp' => $log->created_at->toISOString(),
+                'metadata' => $log->metadata,
+            ];
+        });
+
+        return response()->json([
+            'data' => $mappedLogs,
+            'current_page' => $logs->currentPage(),
+            'last_page' => $logs->lastPage(),
+            'total' => $logs->total(),
+        ]);
+    }
 }

@@ -23,7 +23,26 @@ class PaymentController extends Controller
             $query->where('assigned_to_id', $user->id);
         }
 
-        $clients = $query->paginate(15);
+        $clients = $query->get()->map(function ($client) {
+            $totalBilled = $client->billingItems->sum('amount_to_collect');
+            $totalPaid = $client->billingItems->sum('paid_amount');
+            $balance = $client->billingItems->sum('remaining_amount');
+            $lastPayment = $client->payments()->latest('received_date')->first();
+
+            return [
+                'client' => [
+                    'id' => $client->id,
+                    'name' => $client->name,
+                    'companyName' => $client->company_name,
+                    'mobile' => $client->mobile,
+                    'assignedToName' => $client->assignedTo ? $client->assignedTo->name : 'Unassigned',
+                ],
+                'balance' => $balance,
+                'totalPaid' => $totalPaid,
+                'totalBilled' => $totalBilled,
+                'lastPaymentDate' => $lastPayment ? $lastPayment->received_date : null,
+            ];
+        });
 
         return response()->json($clients);
     }

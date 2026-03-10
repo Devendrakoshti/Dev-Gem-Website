@@ -2,7 +2,8 @@
 import { User, UserRole } from '../types';
 import { USE_DEMO_AUTH } from '../config/appConfig';
 import { mockStore, hashPassword } from './mockStore';
-import { UserService } from './userService';
+import { userService } from './userService';
+import { apiClient } from './apiClient';
 
 const STORAGE_KEY = 'nexus_auth_session';
 
@@ -15,9 +16,9 @@ class AuthService {
     if (USE_DEMO_AUTH) {
       await new Promise((resolve) => setTimeout(resolve, 600));
 
-      const userMatch = await UserService.findUserByIdentifier(identifier);
+      const userMatch = await userService.findUserByIdentifier(identifier);
       const inputHash = hashPassword(password);
-      
+
       if (userMatch && userMatch.password === inputHash) {
         if (userMatch.isDeleted) {
           throw new Error('This account has been deactivated. Please contact HR.');
@@ -32,12 +33,34 @@ class AuthService {
       }
       throw new Error('Invalid Credentials: User identity or password mismatch.');
     } else {
-      throw new Error('Live API Authentication not configured.');
+      const response = await apiClient.post<any>('/login', {
+        email: identifier, // Assuming email is used as identifier
+        password: password
+      });
+
+      const session: AuthSession = {
+        ...response.user,
+        firstName: response.user.first_name,
+        lastName: response.user.last_name,
+        employeeId: response.user.employee_id,
+        token: response.access_token
+      };
+
+      this.setSession(session);
+      return session;
     }
   }
 
-  logout(): void {
+  async logout(): Promise<void> {
+    if (!USE_DEMO_AUTH) {
+      try {
+        await apiClient.post('/logout', {});
+      } catch (e) {
+        console.error('Logout API failed', e);
+      }
+    }
     localStorage.removeItem(STORAGE_KEY);
+    window.location.reload(); // Refresh to clear state
   }
 
   getCurrentUser(): AuthSession | null {
@@ -45,17 +68,19 @@ class AuthService {
     if (!data) return null;
     try {
       const session = JSON.parse(data);
-      // Synchronous access to store for rapid UI checks
-      const users = mockStore.getCollection('users');
-      const latest = users.find(u => u.id === session.id);
-      
-      if (!latest || latest.isDeleted) {
-        this.logout();
-        return null;
+      if (USE_DEMO_AUTH) {
+        const users = mockStore.getCollection('users');
+        const latest = users.find(u => u.id === session.id);
+
+        if (!latest || latest.isDeleted) {
+          this.logout();
+          return null;
+        }
+        return { ...latest, token: session.token } as AuthSession;
       }
-      return { ...latest, token: session.token } as AuthSession;
+      return session;
     } catch (e) {
-      this.logout();
+      localStorage.removeItem(STORAGE_KEY);
       return null;
     }
   }

@@ -75,11 +75,21 @@ class ClientController extends Controller
 
     public function restore($id)
     {
-        $client = Client::withTrashed()->findOrFail($id);
+        $client = Client::onlyTrashed()->findOrFail($id);
         $this->authorize('restore', $client);
 
         $client->restore();
 
         return response()->json(['message' => 'Client restored successfully']);
+    }
+
+    public function purge($id)
+    {
+        $client = Client::onlyTrashed()->findOrFail($id);
+        $this->authorize('forceDelete', $client);
+
+        $client->forceDelete();
+
+        return response()->json(['message' => 'Client permanently deleted']);
     }
 }

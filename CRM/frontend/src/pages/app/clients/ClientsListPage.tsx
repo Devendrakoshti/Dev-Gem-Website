@@ -73,17 +73,18 @@ export const ClientsListPage: React.FC<{ archived?: boolean }> = ({ archived = f
   }, [archived, user?.id]);
 
   const handleDeleteToTrash = async (id: string) => {
-    if (USE_DEMO_AUTH) {
-      mockStore.deleteClientToTrash(id, user);
-    } else {
-      try {
+    try {
+      if (USE_DEMO_AUTH) {
+        mockStore.deleteClientToTrash(id, user);
+      } else {
         await clientService.deleteClient(id);
-        fetchClients();
-      } catch (err: any) {
-        showToast(err.message, 'error');
+        await fetchClients();
       }
+      showToast('Client moved to Trash repository', 'info');
+    } catch (err: any) {
+      showToast(err.message || 'Failed to move client to trash', 'error');
     }
-    showToast('Client moved to Trash repository', 'info');
+    setDeleteId(null);
   };
 
   const handleTransfer = async () => {
@@ -261,7 +262,7 @@ export const ClientsListPage: React.FC<{ archived?: boolean }> = ({ archived = f
                         </div>
                       </td>
                       <td className="px-6 py-5 text-right">
-                        <div className="flex justify-end gap-1 opacity-0 group-hover:opacity-100 transition-all transform group-hover:translate-x-0 translate-x-1">
+                        <div className="flex justify-end gap-1">
                           <button
                             onClick={() => setTransferClient(client)}
                             className="p-2 text-slate-400 hover:text-indigo-600 hover:bg-indigo-50 rounded-lg transition-all" title="Transfer Client"

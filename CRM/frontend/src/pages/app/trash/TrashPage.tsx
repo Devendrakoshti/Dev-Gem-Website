@@ -48,7 +48,11 @@ export const TrashPage: React.FC = () => {
 
   const handleRestoreClient = async (id: string) => {
     try {
-      await clientService.updateClient(id, { isDeleted: false });
+      if (USE_DEMO_AUTH) {
+        mockStore.updateClient(id, { isDeleted: false }, user);
+      } else {
+        await clientService.restoreClient(id);
+      }
       showToast('Client restored to active records');
       fetchTrash();
     } catch (err: any) {
@@ -70,7 +74,7 @@ export const TrashPage: React.FC = () => {
     if (!purgeId) return;
     try {
       if (purgeId.type === 'CLIENT') {
-        await clientService.deleteClient(purgeId.id); // In many APIs, DELETE on trash purges
+        await clientService.purgeClient(purgeId.id);
         showToast('Client permanently deleted', 'error');
       } else {
         // Permanently delete user logic if exists in service

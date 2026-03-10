@@ -1,30 +1,53 @@
 
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { userService } from '../../../services/userService';
 import { mockStore } from '../../../services/mockStore';
+import { USE_DEMO_AUTH } from '../../../config/appConfig';
 import { Badge } from '../../../components/ui/Badge';
 import { authService } from '../../../services/authService';
 import { Modal } from '../../../components/ui/Modal';
 import { useToast } from '../../../components/layout/AppLayout';
 
 export const EmployeesPage: React.FC = () => {
-  const [employees, setEmployees] = useState(mockStore.getActiveEmployees());
-  const [deactivateId, setDeactivateId] = useState<{id: string, name: string} | null>(null);
+  const [employees, setEmployees] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [deactivateId, setDeactivateId] = useState<{ id: string, name: string } | null>(null);
   const user = authService.getCurrentUser()!;
   const { showToast } = useToast();
 
-  useEffect(() => {
-    return mockStore.subscribe(() => setEmployees(mockStore.getActiveEmployees()));
-  }, []);
-
-  const handleDeactivate = () => {
-    if (deactivateId) {
-      mockStore.softDeleteUser(deactivateId.id, user);
-      showToast('Employee access revoked and moved to Trash', 'info');
-      setDeactivateId(null);
+  const fetchEmployees = async () => {
+    setLoading(true);
+    try {
+      const data = await userService.getUsers();
+      setEmployees(data);
+    } catch (err: any) {
+      showToast(err.message, 'error');
+    } finally {
+      setLoading(false);
     }
   };
-  
+
+  useEffect(() => {
+    fetchEmployees();
+    if (USE_DEMO_AUTH) {
+      return mockStore.subscribe(() => fetchEmployees());
+    }
+  }, []);
+
+  const handleDeactivate = async () => {
+    if (deactivateId) {
+      try {
+        await userService.softDeleteUser(deactivateId.id);
+        showToast('Employee access revoked and moved to Trash', 'info');
+        fetchEmployees();
+        setDeactivateId(null);
+      } catch (err: any) {
+        showToast(err.message, 'error');
+      }
+    }
+  };
+
   return (
     <div className="space-y-6 animate-in fade-in duration-500">
       <div className="flex justify-between items-center bg-white p-6 rounded-3xl border border-slate-200 shadow-sm">
@@ -48,31 +71,31 @@ export const EmployeesPage: React.FC = () => {
                 </div>
                 <Badge color="indigo">{emp.employeeId}</Badge>
               </div>
-              
+
               <h4 className="text-xl font-bold text-slate-900 mb-1">{emp.firstName} {emp.lastName}</h4>
               <p className="text-sm text-slate-500 font-medium">{emp.email || 'Internal Identifier'}</p>
             </div>
-            
+
             <div className="flex items-center gap-4 pt-6 border-t border-slate-50">
-               <Link to={`/app/employees/${emp.id}/edit`} className="text-[10px] font-black text-indigo-600 uppercase tracking-widest hover:text-indigo-800 transition-colors">Modify Access</Link>
-               <div className="w-1 h-1 bg-slate-200 rounded-full"></div>
-               <button 
-                  onClick={() => setDeactivateId({id: emp.id, name: emp.name})}
-                  className="text-[10px] font-black text-slate-400 uppercase tracking-widest hover:text-red-600 transition-colors"
-               >
-                 Deactivate
-               </button>
+              <Link to={`/app/employees/${emp.id}/edit`} className="text-[10px] font-black text-indigo-600 uppercase tracking-widest hover:text-indigo-800 transition-colors">Modify Access</Link>
+              <div className="w-1 h-1 bg-slate-200 rounded-full"></div>
+              <button
+                onClick={() => setDeactivateId({ id: emp.id, name: emp.name })}
+                className="text-[10px] font-black text-slate-400 uppercase tracking-widest hover:text-red-600 transition-colors"
+              >
+                Deactivate
+              </button>
             </div>
           </div>
         ))}
         {employees.length === 0 && (
-           <div className="col-span-full py-20 bg-slate-50 rounded-3xl border border-dashed border-slate-300 text-center">
-              <p className="text-slate-400 font-bold italic">No active employees found.</p>
-           </div>
+          <div className="col-span-full py-20 bg-slate-50 rounded-3xl border border-dashed border-slate-300 text-center">
+            <p className="text-slate-400 font-bold italic">No active employees found.</p>
+          </div>
         )}
       </div>
 
-      <Modal 
+      <Modal
         isOpen={!!deactivateId}
         onClose={() => setDeactivateId(null)}
         onConfirm={handleDeactivate}

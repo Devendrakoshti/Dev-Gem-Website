@@ -2,7 +2,9 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate, useSearchParams } from 'react-router-dom';
 import { User, IdCard, Lock, Mail, Shield, Activity } from 'lucide-react';
+import { userService } from '../../../services/userService';
 import { mockStore } from '../../../services/mockStore';
+import { USE_DEMO_AUTH } from '../../../config/appConfig';
 import { UserRole, UserStatus } from '../../../types';
 import { authService } from '../../../services/authService';
 
@@ -12,12 +14,12 @@ export const EmployeeFormPage: React.FC = () => {
   const navigate = useNavigate();
   const isEdit = !!id;
   const currentUser = authService.getCurrentUser();
-  
+
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
     employeeId: '',
-    password: 'password123',
+    password: '',
     role: UserRole.EMPLOYEE,
     email: '',
     status: UserStatus.ACTIVE
@@ -27,28 +29,36 @@ export const EmployeeFormPage: React.FC = () => {
   const [error, setError] = useState('');
 
   useEffect(() => {
-    if (isEdit) {
-      const user = mockStore.getUserById(id!);
-      if (user) {
-        setFormData({
-          firstName: user.firstName,
-          lastName: user.lastName,
-          employeeId: user.employeeId,
-          password: '', // Clear password field on edit to avoid showing hash
-          role: user.role,
-          email: user.email || '',
-          status: user.status || UserStatus.ACTIVE
-        });
+    const loadUser = async () => {
+      if (!isEdit) {
+        const roleParam = searchParams.get('role');
+        if (roleParam === 'ADMIN') {
+          setFormData(prev => ({ ...prev, role: UserRole.ADMIN }));
+        } else if (roleParam === 'EMPLOYEE') {
+          setFormData(prev => ({ ...prev, role: UserRole.EMPLOYEE }));
+        }
+        return;
       }
-    } else {
-      // Check for role shortcut in URL
-      const roleParam = searchParams.get('role');
-      if (roleParam === 'ADMIN') {
-        setFormData(prev => ({ ...prev, role: UserRole.ADMIN }));
-      } else if (roleParam === 'EMPLOYEE') {
-        setFormData(prev => ({ ...prev, role: UserRole.EMPLOYEE }));
+
+      try {
+        const user = await userService.getUserById(id!);
+        if (user) {
+          setFormData({
+            firstName: user.firstName || (user as any).first_name,
+            lastName: user.lastName || (user as any).last_name,
+            employeeId: user.employeeId || (user as any).employee_id,
+            password: '',
+            role: user.role,
+            email: user.email || '',
+            status: user.status || UserStatus.ACTIVE
+          });
+        }
+      } catch (err: any) {
+        setError(err.message);
       }
-    }
+    };
+
+    loadUser();
   }, [id, isEdit, searchParams]);
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -56,21 +66,25 @@ export const EmployeeFormPage: React.FC = () => {
     if (!currentUser) return;
     setError('');
     setIsLoading(true);
-    
-    await new Promise(r => setTimeout(r, 600));
 
     try {
-      const payload: any = { ...formData };
-      
-      // If editing and password is empty, don't send it to preserve current password
-      if (isEdit && !payload.password) {
-        delete payload.password;
+      const payload: any = {
+        first_name: formData.firstName,
+        last_name: formData.lastName,
+        employee_id: formData.employeeId,
+        email: formData.email,
+        role: formData.role,
+        status: formData.status
+      };
+
+      if (formData.password) {
+        payload.password = formData.password;
       }
 
       if (isEdit) {
-        mockStore.updateUser(id!, payload, currentUser);
+        await userService.updateUser(id!, payload);
       } else {
-        mockStore.addUser(payload, currentUser);
+        await userService.createEmployee(payload);
       }
       setIsLoading(false);
       navigate('/app/employees');
@@ -101,7 +115,7 @@ export const EmployeeFormPage: React.FC = () => {
               <label className="block text-xs font-black text-slate-400 uppercase tracking-widest mb-3">First Name</label>
               <div className="relative">
                 <User className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
-                <input 
+                <input
                   required
                   className="w-full pl-12 pr-5 py-3.5 rounded-2xl border border-slate-200 focus:ring-2 focus:ring-indigo-500 outline-none transition-all font-medium bg-slate-50/50"
                   value={formData.firstName}
@@ -114,7 +128,7 @@ export const EmployeeFormPage: React.FC = () => {
               <label className="block text-xs font-black text-slate-400 uppercase tracking-widest mb-3">Last Name</label>
               <div className="relative">
                 <User className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
-                <input 
+                <input
                   required
                   className="w-full pl-12 pr-5 py-3.5 rounded-2xl border border-slate-200 focus:ring-2 focus:ring-indigo-500 outline-none transition-all font-medium bg-slate-50/50"
                   value={formData.lastName}
@@ -129,7 +143,7 @@ export const EmployeeFormPage: React.FC = () => {
             <label className="block text-xs font-black text-slate-400 uppercase tracking-widest mb-3">Employee ID (Must be Unique)</label>
             <div className="relative">
               <IdCard className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
-              <input 
+              <input
                 required
                 className="w-full pl-12 pr-5 py-3.5 rounded-2xl border border-slate-200 focus:ring-2 focus:ring-indigo-500 outline-none transition-all font-medium bg-slate-50/50"
                 value={formData.employeeId}
@@ -145,7 +159,7 @@ export const EmployeeFormPage: React.FC = () => {
             </label>
             <div className="relative">
               <Lock className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
-              <input 
+              <input
                 required={!isEdit}
                 type="text"
                 className="w-full pl-12 pr-5 py-3.5 rounded-2xl border border-slate-200 focus:ring-2 focus:ring-indigo-500 outline-none transition-all font-medium bg-slate-50/50"
@@ -156,12 +170,12 @@ export const EmployeeFormPage: React.FC = () => {
             </div>
             {!isEdit && <p className="text-[10px] text-slate-400 mt-2 font-bold uppercase tracking-widest">Default: password123</p>}
           </div>
-          
+
           <div>
             <label className="block text-xs font-black text-slate-400 uppercase tracking-widest mb-3">Corporate Email (Optional)</label>
             <div className="relative">
               <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
-              <input 
+              <input
                 type="email"
                 className="w-full pl-12 pr-5 py-3.5 rounded-2xl border border-slate-200 focus:ring-2 focus:ring-indigo-500 transition-all font-medium bg-slate-50/50"
                 value={formData.email}
@@ -175,7 +189,7 @@ export const EmployeeFormPage: React.FC = () => {
             <label className="block text-xs font-black text-slate-400 uppercase tracking-widest mb-3">User Role</label>
             <div className="relative">
               <Shield className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400 pointer-events-none" />
-              <select 
+              <select
                 className="w-full pl-12 pr-5 py-3.5 rounded-2xl border border-slate-200 focus:ring-2 focus:ring-indigo-500 outline-none transition-all font-medium bg-slate-50/50 appearance-none"
                 value={formData.role}
                 onChange={e => setFormData({ ...formData, role: e.target.value as UserRole })}
@@ -185,12 +199,12 @@ export const EmployeeFormPage: React.FC = () => {
               </select>
             </div>
           </div>
-          
+
           <div>
             <label className="block text-xs font-black text-slate-400 uppercase tracking-widest mb-3">Account Status</label>
             <div className="relative">
               <Activity className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400 pointer-events-none" />
-              <select 
+              <select
                 className="w-full pl-12 pr-5 py-3.5 rounded-2xl border border-slate-200 focus:ring-2 focus:ring-indigo-500 outline-none transition-all font-medium bg-slate-50/50 appearance-none"
                 value={formData.status}
                 onChange={e => setFormData({ ...formData, status: e.target.value as UserStatus })}
@@ -204,7 +218,7 @@ export const EmployeeFormPage: React.FC = () => {
 
         <div className="flex gap-4">
           <button type="button" onClick={() => navigate(-1)} className="flex-1 bg-white border border-slate-200 text-slate-600 font-bold py-4 rounded-2xl hover:bg-slate-50 transition-all">Cancel</button>
-          <button 
+          <button
             type="submit"
             disabled={isLoading}
             className="flex-1 bg-slate-900 text-white font-bold py-4 rounded-2xl hover:bg-indigo-600 transition-all shadow-lg disabled:opacity-50"

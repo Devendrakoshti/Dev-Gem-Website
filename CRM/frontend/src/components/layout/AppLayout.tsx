@@ -149,7 +149,7 @@ export const AppLayout: React.FC<{ children: React.ReactNode }> = ({ children })
              </button>
              <span className="ml-4 font-bold text-lg text-slate-900">NexusCRM</span>
           </header>
-          <div className="p-8 max-w-7xl mx-auto w-full flex-1">
+          <div className="p-8 max-w-8xl mx-auto w-full flex-1">
             {children}
           </div>
         </main>

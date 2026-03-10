@@ -24,11 +24,14 @@ Route::middleware('auth:sanctum')->group(function () {
 
 
     Route::get('/dashboard', [DashboardController::class, 'index']);
+    Route::get('/dashboard/activity', [DashboardController::class, 'activity']);
 
     Route::apiResource('clients', ClientController::class);
+    Route::post('/clients/{id}/restore', [ClientController::class, 'restore']);
+    Route::delete('/clients/{id}/purge', [ClientController::class, 'purge']);
     Route::post('/clients/{client}/transfer', [ClientTransferController::class, 'transfer']);
     
-    Route::get('/pending-payments', [PaymentController::class, 'pendingPayments']);
+    Route::get('/payments/pending', [PaymentController::class, 'pendingPayments']);
     Route::post('/payments', [PaymentController::class, 'store']);
     Route::delete('/payments/{id}', [PaymentController::class, 'destroy']);
 

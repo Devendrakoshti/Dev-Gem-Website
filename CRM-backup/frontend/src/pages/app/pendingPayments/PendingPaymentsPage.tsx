@@ -2,7 +2,9 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Search, Filter, IndianRupee, User, Calendar, ExternalLink } from 'lucide-react';
+import { clientService } from '../../../services/clientService';
 import { mockStore } from '../../../services/mockStore';
+import { USE_DEMO_AUTH } from '../../../config/appConfig';
 import { authService } from '../../../services/authService';
 import { UserRole } from '../../../types';
 import { useToast } from '../../../components/layout/AppLayout';
@@ -15,36 +17,45 @@ export const PendingPaymentsPage: React.FC = () => {
   const navigate = useNavigate();
   const { showToast } = useToast();
 
-  const [pendingData, setPendingData] = useState(mockStore.getPendingPaymentsForUser(user));
+  const [pendingData, setPendingData] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');
   const [filter, setFilter] = useState<BalanceFilter>('ALL');
 
+  const fetchPending = async () => {
+    setLoading(true);
+    try {
+      const data = await clientService.getPendingPayments();
+      setPendingData(data);
+    } catch (err: any) {
+      showToast(err.message, 'error');
+    } finally {
+      setLoading(false);
+    }
+  };
+
   useEffect(() => {
-    return mockStore.subscribe(() => {
-      setPendingData(mockStore.getPendingPaymentsForUser(user));
-    });
-  }, [user]);
+    fetchPending();
+    if (USE_DEMO_AUTH) {
+      return mockStore.subscribe(() => fetchPending());
+    }
+  }, []);
 
   const filteredData = pendingData
     .filter(item => {
-      const matchesSearch = 
+      const matchesSearch =
         item.client.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
         item.client.companyName.toLowerCase().includes(searchTerm.toLowerCase()) ||
         item.client.mobile.includes(searchTerm);
-      
+
       const matchesFilter = filter === 'ALL' || (filter === 'HIGH' && item.balance >= 50000);
-      
+
       return matchesSearch && matchesFilter;
     });
 
   const totalPendingAmount = filteredData.reduce((sum, item) => sum + item.balance, 0);
 
   const handleViewClient = (clientId: string) => {
-    const client = mockStore.getClientById(clientId, user);
-    if (!client) {
-      showToast("Access Restricted: Permission Denied.", "error");
-      return;
-    }
     navigate(`/app/clients/${clientId}`);
   };
 
@@ -55,8 +66,8 @@ export const PendingPaymentsPage: React.FC = () => {
           <span className="absolute inset-y-0 left-0 pl-3 flex items-center text-slate-400">
             <Search className="w-5 h-5" />
           </span>
-          <input 
-            type="text" 
+          <input
+            type="text"
             placeholder="Search partners or contact numbers..."
             className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-100 focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-slate-50/50 font-medium text-sm transition-all"
             value={searchTerm}
@@ -67,17 +78,15 @@ export const PendingPaymentsPage: React.FC = () => {
         <div className="flex bg-slate-100 p-1 rounded-xl w-full md:w-auto">
           <button
             onClick={() => setFilter('ALL')}
-            className={`flex-1 md:flex-none px-4 py-2 rounded-lg text-[10px] font-black uppercase tracking-wider transition-all ${
-              filter === 'ALL' ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'
-            }`}
+            className={`flex-1 md:flex-none px-4 py-2 rounded-lg text-[10px] font-black uppercase tracking-wider transition-all ${filter === 'ALL' ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'
+              }`}
           >
             All Pending
           </button>
           <button
             onClick={() => setFilter('HIGH')}
-            className={`flex-1 md:flex-none px-4 py-2 rounded-lg text-[10px] font-black uppercase tracking-wider transition-all ${
-              filter === 'HIGH' ? 'bg-white text-rose-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'
-            }`}
+            className={`flex-1 md:flex-none px-4 py-2 rounded-lg text-[10px] font-black uppercase tracking-wider transition-all ${filter === 'HIGH' ? 'bg-white text-rose-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'
+              }`}
           >
             High Exposure
           </button>
@@ -108,7 +117,7 @@ export const PendingPaymentsPage: React.FC = () => {
                   <p>{item.lastPaymentDate || 'None'}</p>
                 </div>
               </div>
-              <button 
+              <button
                 onClick={() => handleViewClient(item.client.id)}
                 className="w-full py-2.5 rounded-xl bg-slate-100 text-[10px] font-black text-slate-600 uppercase tracking-[0.2em] hover:bg-indigo-50 hover:text-indigo-600 transition-all"
               >
@@ -162,7 +171,7 @@ export const PendingPaymentsPage: React.FC = () => {
                     </div>
                   </td>
                   <td className="px-6 py-5 text-right">
-                    <button 
+                    <button
                       onClick={() => handleViewClient(item.client.id)}
                       className="text-[10px] font-black text-indigo-500 uppercase tracking-widest hover:text-indigo-700 transition-all opacity-0 group-hover:opacity-100"
                     >
@@ -191,8 +200,8 @@ export const PendingPaymentsPage: React.FC = () => {
             <p className="text-xs text-slate-400 font-medium">Calculated for {filteredData.length} active debtors</p>
           </div>
           <div className="text-center md:text-right">
-             <p className="text-[10px] font-black text-slate-500 uppercase tracking-[0.2em] mb-1">Total Outstanding</p>
-             <p className="text-2xl md:text-3xl font-black text-indigo-400">₹{totalPendingAmount.toLocaleString()}</p>
+            <p className="text-[10px] font-black text-slate-500 uppercase tracking-[0.2em] mb-1">Total Outstanding</p>
+            <p className="text-2xl md:text-3xl font-black text-indigo-400">₹{totalPendingAmount.toLocaleString()}</p>
           </div>
         </div>
       </div>
