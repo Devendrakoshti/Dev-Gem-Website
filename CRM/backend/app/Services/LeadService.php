@@ -21,45 +21,45 @@ class LeadService
         // Dynamic Cache Key
         $cacheKey = "user_{$user->id}_leads_page_{$page}_filter_" . md5($filterStr);
 
-        try {
-            // Using Cache Tags for grouping related data
-            return Cache::tags(["user_leads_{$user->id}", "leads"])->remember(
-                $cacheKey,
-                now()->addMinutes(30),
-                function () use ($filters, $perPage, $user) {
-                    $query = Client::query()->with(['assignedTo', 'createdBy']);
-
-                    if ($user->role !== 'ADMIN') {
-                        $query->where('assigned_to_id', $user->id);
-                    }
-
-                    if (isset($filters['type'])) {
-                        switch ($filters['type']) {
-                            case 'archived':
-                                $query->where('is_archived', true);
-                                break;
-                            case 'active':
-                                $query->active();
-                                break;
-                            case 'trash':
-                                $query->onlyTrashed();
-                                break;
-                        }
-                    }
-
-                    return $query->latest()->paginate($perPage);
-                }
-            );
-        } catch (\Exception $e) {
-            // Fail-safe: Graceful fallback to Database if Redis/Cache is down
-            \Log::error("Cache error in LeadService@index: " . $e->getMessage());
-            
+        $fetchData = function () use ($filters, $perPage, $user) {
             $query = Client::query()->with(['assignedTo', 'createdBy']);
+
             if ($user->role !== 'ADMIN') {
                 $query->where('assigned_to_id', $user->id);
             }
+
+            if (isset($filters['type'])) {
+                switch ($filters['type']) {
+                    case 'archived':
+                        $query->where('is_archived', true);
+                        break;
+                    case 'active':
+                        $query->active();
+                        break;
+                    case 'trash':
+                        $query->onlyTrashed();
+                        break;
+                }
+            }
+
             return $query->latest()->paginate($perPage);
+        };
+
+        try {
+            if (Cache::supportsTags()) {
+                return Cache::tags(["user_leads_{$user->id}", "leads"])->remember(
+                    $cacheKey,
+                    now()->addMinutes(30),
+                    $fetchData
+                );
+            }
+        } catch (\Exception $e) {
+            // Fail-safe: Graceful fallback
+            \Log::error("Cache error in LeadService@index: " . $e->getMessage());
         }
+
+        // Fallback for non-taggable stores or cache failures
+        return $fetchData();
     }
 
     /**
@@ -82,11 +82,13 @@ class LeadService
     public function bustCache(Client $lead): void
     {
         try {
-            // Clear all leads cache for the assigned user
-            Cache::tags(["user_leads_{$lead->assigned_to_id}"])->flush();
-            
-            // Also clear global leads tags if necessary
-            Cache::tags(["leads"])->flush();
+            if (Cache::supportsTags()) {
+                // Clear all leads cache for the assigned user
+                Cache::tags(["user_leads_{$lead->assigned_to_id}"])->flush();
+                
+                // Also clear global leads tags if necessary
+                Cache::tags(["leads"])->flush();
+            }
         } catch (\Exception $e) {
             \Log::warning("Could not bust cache: " . $e->getMessage());
         }

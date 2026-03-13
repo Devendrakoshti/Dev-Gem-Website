@@ -6,7 +6,7 @@ import { USE_DEMO_AUTH } from '../../../config/appConfig';
 import { authService } from '../../../services/authService';
 import { Badge } from '../../../components/ui/Badge';
 import { UserRole, Client, User } from '../../../types';
-import { useToast } from '../../../components/layout/AppLayout';
+import { useToast } from '../../../components/layout/ToastContext';
 import { Modal } from '../../../components/ui/Modal';
 import { mockStore } from '../../../services/mockStore';
 
@@ -29,8 +29,8 @@ export const TrashPage: React.FC = () => {
       setDeletedClients(clients);
 
       if (isAdmin) {
-        const users = await userService.getUsers();
-        setDeletedEmployees(users.filter(u => u.isDeleted));
+        const users = await userService.getTrashedUsers();
+        setDeletedEmployees(users);
       }
     } catch (err: any) {
       showToast(err.message, 'error');
@@ -62,7 +62,7 @@ export const TrashPage: React.FC = () => {
 
   const handleRestoreEmployee = async (id: string) => {
     try {
-      await userService.updateUser(id, { isDeleted: false, status: (undefined as any) }); // status logic handled in service or backend
+      await userService.restoreUser(id);
       showToast('Employee access restored');
       fetchTrash();
     } catch (err: any) {
@@ -77,8 +77,8 @@ export const TrashPage: React.FC = () => {
         await clientService.purgeClient(purgeId.id);
         showToast('Client permanently deleted', 'error');
       } else {
-        // Permanently delete user logic if exists in service
-        showToast('Purge functionality restricted to backend policies', 'info');
+        await userService.purgeUser(purgeId.id);
+        showToast('Employee permanently deleted', 'error');
       }
       fetchTrash();
     } catch (err: any) {

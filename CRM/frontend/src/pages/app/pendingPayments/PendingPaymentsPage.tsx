@@ -7,7 +7,7 @@ import { mockStore } from '../../../services/mockStore';
 import { USE_DEMO_AUTH } from '../../../config/appConfig';
 import { authService } from '../../../services/authService';
 import { UserRole } from '../../../types';
-import { useToast } from '../../../components/layout/AppLayout';
+import { useToast } from '../../../components/layout/ToastContext';
 
 type BalanceFilter = 'ALL' | 'HIGH';
 

@@ -7,7 +7,7 @@ import { userService } from '../../../services/userService';
 import { USE_DEMO_AUTH } from '../../../config/appConfig';
 import { ClientStatus, ClientStage, UserRole, User } from '../../../types';
 import { authService } from '../../../services/authService';
-import { useToast } from '../../../components/layout/AppLayout';
+import { useToast } from '../../../components/layout/ToastContext';
 import { mockStore } from '../../../services/mockStore';
 
 export const ClientFormPage: React.FC = () => {

@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Models\Client;
+use App\Models\User;
 use App\Models\ActivityLog;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -21,6 +22,9 @@ class ClientTransferController extends Controller
         $oldEmployeeId = $client->assigned_to_id;
         $newEmployeeId = $request->employee_id;
 
+        $oldUser = User::find($oldEmployeeId);
+        $newUser = User::find($newEmployeeId);
+
         $client->update([
             'assigned_to_id' => $newEmployeeId,
         ]);
@@ -29,10 +33,13 @@ class ClientTransferController extends Controller
             'actor_id' => Auth::id(),
             'action' => 'Transferred',
             'target_id' => $client->id,
-            'target_type' => Client::class,
+            'target_type' => 'CLIENT_TRANSFER',
             'metadata' => [
-                'old_employee_id' => $oldEmployeeId,
-                'new_employee_id' => $newEmployeeId,
+                'clientName' => $client->name,
+                'fromId' => $oldEmployeeId,
+                'fromName' => $oldUser ? $oldUser->name : 'System',
+                'toId' => $newEmployeeId,
+                'toName' => $newUser ? $newUser->name : 'Unknown',
             ],
         ]);
 

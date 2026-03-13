@@ -25,7 +25,7 @@ class ClientPolicy
             return true;
         }
 
-        return $client->assigned_to_id === $user->id;
+        return $client->assigned_to_id == $user->id;
     }
 
     /**
@@ -45,7 +45,7 @@ class ClientPolicy
             return true;
         }
 
-        return $client->assigned_to_id === $user->id;
+        return $client->assigned_to_id == $user->id;
     }
 
     /**
@@ -57,7 +57,7 @@ class ClientPolicy
             return true;
         }
 
-        return $client->assigned_to_id === $user->id;
+        return $client->assigned_to_id == $user->id;
     }
 
     /**

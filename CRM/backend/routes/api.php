@@ -44,6 +44,8 @@ Route::middleware('auth:sanctum')->group(function () {
     // Admin Only
     Route::middleware('can:admin')->group(function () {
         Route::apiResource('employees', EmployeeController::class);
+        Route::post('/employees/{id}/restore', [EmployeeController::class, 'restore']);
+        Route::delete('/employees/{id}/purge', [EmployeeController::class, 'purge']);
         Route::get('/activity-logs', [ActivityLogController::class, 'index']);
     });
 });

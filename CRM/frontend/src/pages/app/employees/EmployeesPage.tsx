@@ -7,7 +7,7 @@ import { USE_DEMO_AUTH } from '../../../config/appConfig';
 import { Badge } from '../../../components/ui/Badge';
 import { authService } from '../../../services/authService';
 import { Modal } from '../../../components/ui/Modal';
-import { useToast } from '../../../components/layout/AppLayout';
+import { useToast } from '../../../components/layout/ToastContext';
 
 export const EmployeesPage: React.FC = () => {
   const [employees, setEmployees] = useState<any[]>([]);
