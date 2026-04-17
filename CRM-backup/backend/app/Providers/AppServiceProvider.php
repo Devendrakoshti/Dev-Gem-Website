@@ -25,5 +25,7 @@ class AppServiceProvider extends ServiceProvider
         Gate::define('admin', function (User $user) {
             return $user->role === 'ADMIN';
         });
+
+        \App\Models\Client::observe(\App\Observers\LeadObserver::class);
     }
 }

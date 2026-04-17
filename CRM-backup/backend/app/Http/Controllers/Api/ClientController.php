@@ -12,29 +12,13 @@ use Illuminate\Support\Facades\Auth;
 
 class ClientController extends Controller
 {
+    public function __construct(protected \App\Services\LeadService $leadService)
+    {
+    }
+
     public function index(Request $request)
     {
-        $query = Client::query()->with(['assignedTo', 'createdBy']);
-
-        if (Auth::user()->role !== 'ADMIN') {
-            $query->where('assigned_to_id', Auth::id());
-        }
-
-        if ($request->has('filter')) {
-            switch ($request->filter) {
-                case 'archived':
-                    $query->where('is_archived', true);
-                    break;
-                case 'active':
-                    $query->active();
-                    break;
-                case 'trash':
-                    $query->onlyTrashed();
-                    break;
-            }
-        }
-
-        $clients = $query->latest()->paginate(15);
+        $clients = $this->leadService->index($request->all());
 
         return ClientResource::collection($clients);
     }
@@ -59,7 +43,7 @@ class ClientController extends Controller
     {
         $this->authorize('update', $client);
 
-        $client->update($request->validated());
+        $client = $this->leadService->update($client->id, $request->validated());
 
         return new ClientResource($client->load(['assignedTo', 'createdBy']));
     }

@@ -1,0 +1,78 @@
+Username: postgres
+PassWord: root
+Port: 5432
+
+Create Data Base: CREATE DATABASE TEST;(DATABASE NAME)
+
+Data Base List: \list
+
+Scree Clean: \! cls
+
+Enter Tha Database: \c test;(DATABASE NAME)
+
+Delete Database: drop database test;(DATABASE NAME)
+
+Create A Table:
+create table person(
+id inl,
+name varchar(100),
+city varchar(100)
+);
+
+Database Add Data(Content):
+insert into person(id, name, city)
+values (101, 'shamal' , 'Mumbai'), (102, 'harshil' , 'vijapur'), (103, 'dharmik' , 'sumpur');
+
+Open the Table Data For View Colum:
+select * from person;
+
+Open the Table Data For View Specific Column:
+select name, city from person;
+
+Database Update Data(Content):
+update person 
+set city='Nagpur'
+where 
+ id='102';
+
+Database Delete Data(Content):
+delete from person 
+where 
+id= '102';
+
+
+Primary Key:
+Primary Key All Time Use unique Data Duplicate Data Can't Use in Primary key.
+
+Not Null:
+value dont blank.
+
+Auto Incrimet:
+id serial primary key
+
+decimal (10,2):
+how to use : (25555555.19) we use in total 10 number and after the (.) only show the 2 number.
+
+Example Table Code For Learning:
+create table employee(
+em_id serial primary key ,
+first_name varchar(100) not null,
+last_name varchar(100) not null,
+email varchar(100) not null unique,
+department varchar(50),
+salary decimal (10,2) default 30000.00,
+hire_date date not null default current_date
+);
+
+
+Open the Table Data For View Specific row(user data)
+select * from employee where em_id=5;
+select * from employee where department='hr';
+select * from employee where salary <= 50000.00;
+Dono Condition Show (Ya to first ya to second Condition True)
+select * from employee where department='hr' or department='marketing';
+Dono Condition Match (Both Condition true)
+select * from employee where department='hr' and salary >= 50000.00;
+Multiple value in 1 time
+select * from employee where department in ('it', 'finance', 'hr');
+select * from employee where department not in ('it', 'finance', 'hr');
