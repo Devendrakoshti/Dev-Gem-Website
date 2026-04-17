@@ -17,7 +17,7 @@ import {
 import { UserRole } from '../../types';
 import { authService } from '../../services/authService';
 import { mockStore } from '../../services/mockStore';
-import { Toast, ToastType } from '../ui/Toast';
+import { ToastProvider } from './ToastContext';
 
 interface NavItem {
   label: string;
@@ -37,12 +37,8 @@ const NAV_ITEMS: NavItem[] = [
   { label: 'Backup', path: '/app/backup', icon: <Database className="w-5 h-5" />, adminOnly: true },
 ];
 
-const ToastContext = createContext<{ showToast: (msg: string, type?: ToastType) => void } | null>(null);
-export const useToast = () => useContext(ToastContext)!;
-
 export const AppLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
-  const [toast, setToast] = useState<{ msg: string; type: ToastType } | null>(null);
   const location = useLocation();
   const navigate = useNavigate();
   const user = authService.getCurrentUser();
@@ -67,8 +63,6 @@ export const AppLayout: React.FC<{ children: React.ReactNode }> = ({ children })
   }, [user, navigate]);
 
   if (!user) return null;
-
-  const showToast = (msg: string, type: ToastType = 'success') => setToast({ msg, type });
   
   // SECURE NAVIGATION FILTERING
   const filteredNav = NAV_ITEMS.filter(item => {
@@ -77,13 +71,14 @@ export const AppLayout: React.FC<{ children: React.ReactNode }> = ({ children })
   });
 
   return (
-    <ToastContext.Provider value={{ showToast }}>
+    <ToastProvider>
       <div className="min-h-screen flex bg-slate-50 overflow-x-hidden">
-        {!isSidebarOpen && (
-          <div className="md:hidden fixed inset-0 bg-slate-900/40 z-20 backdrop-blur-sm" onClick={() => setIsSidebarOpen(true)} />
+        {/* Mobile sidebar overlay - only show when sidebar is open */}
+        {isSidebarOpen && (
+          <div className="md:hidden fixed inset-0 bg-slate-900/40 z-20 backdrop-blur-sm" onClick={() => setIsSidebarOpen(false)} />
         )}
 
-        <aside className={`${isSidebarOpen ? 'w-64 translate-x-0' : 'w-20 translate-x-0'} bg-slate-900 text-white transition-all duration-300 flex flex-col fixed h-full z-30 shadow-2xl`}>
+        <aside className={`${isSidebarOpen ? 'w-64 translate-x-0' : 'w-20 -translate-x-full md:translate-x-0'} bg-slate-900 text-white transition-all duration-300 flex flex-col fixed h-full z-30 shadow-2xl`}>
           <div className="p-6 flex items-center justify-between gap-3">
             <div className="flex items-center gap-3">
               <div className="w-8 h-8 bg-indigo-500 rounded-lg flex items-center justify-center font-bold text-xl flex-shrink-0 shadow-lg shadow-indigo-500/20">N</div>
@@ -154,14 +149,7 @@ export const AppLayout: React.FC<{ children: React.ReactNode }> = ({ children })
           </div>
         </main>
 
-        {toast && (
-          <Toast 
-            message={toast.msg} 
-            type={toast.type} 
-            onClose={() => setToast(null)} 
-          />
-        )}
       </div>
-    </ToastContext.Provider>
+    </ToastProvider>
   );
 };

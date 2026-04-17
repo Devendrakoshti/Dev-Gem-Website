@@ -7,7 +7,7 @@ import { clientService } from '../../../services/clientService';
 import { USE_DEMO_AUTH } from '../../../config/appConfig';
 import { authService } from '../../../services/authService';
 import { UserRole, ActivityLog, Client } from '../../../types';
-import { useToast } from '../../../components/layout/AppLayout';
+import { useToast } from '../../../components/layout/ToastContext';
 import { mockStore } from '../../../services/mockStore';
 
 type TransferFilter = 'ALL' | 'SENT' | 'RECEIVED';
@@ -45,8 +45,8 @@ export const TransferHistoryPage: React.FC = () => {
 
   const filteredTransfers = transfers
     .filter(t => {
-      const client = mockStore.getClientById(t.targetId);
-      const clientName = client?.name || 'Unknown Client';
+      // With live API, t.metadata might contain the clientName directly, or we fall back.
+      const clientName = t.metadata?.clientName || 'Unknown Client';
       const fromName = t.metadata?.fromName || 'System';
       const toName = t.metadata?.toName || 'Unknown';
 
@@ -57,25 +57,14 @@ export const TransferHistoryPage: React.FC = () => {
 
       let matchesFilter = true;
       if (!isAdmin) {
-        if (filter === 'SENT') matchesFilter = t.metadata?.fromId === user.id;
-        if (filter === 'RECEIVED') matchesFilter = t.metadata?.toId === user.id;
+        if (filter === 'SENT') matchesFilter = String(t.metadata?.fromId) === String(user.id);
+        if (filter === 'RECEIVED') matchesFilter = String(t.metadata?.toId) === String(user.id);
       }
 
       return matchesSearch && matchesFilter;
     });
 
   const handleViewClient = (clientId: string) => {
-    const client = mockStore.getClientById(clientId);
-    if (!client) {
-      showToast("Client record no longer exists or was purged.", "error");
-      return;
-    }
-
-    if (!mockStore.canUserAccessClient(user, client)) {
-      showToast("Access Denied: This client is no longer in your portfolio.", "error");
-      return;
-    }
-
     navigate(`/app/clients/${clientId}`);
   };
 
@@ -126,10 +115,9 @@ export const TransferHistoryPage: React.FC = () => {
             </thead>
             <tbody className="divide-y divide-slate-100">
               {filteredTransfers.map((log) => {
-                const client = mockStore.getClientById(log.targetId);
-                const clientName = client?.name || 'Unknown Client';
-                const isMySent = log.metadata?.fromId === user.id;
-                const isMyReceived = log.metadata?.toId === user.id;
+                const clientName = log.metadata?.clientName || 'Unknown Client';
+                const isMySent = String(log.metadata?.fromId) === String(user.id);
+                const isMyReceived = String(log.metadata?.toId) === String(user.id);
 
                 return (
                   <tr key={log.id} className="hover:bg-slate-50/50 transition-colors group">

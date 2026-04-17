@@ -12,9 +12,15 @@ use Illuminate\Support\Facades\Hash;
 
 class EmployeeController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $employees = User::where('role', 'EMPLOYEE')->latest()->paginate(15);
+        $query = User::whereIn('role', ['ADMIN', 'EMPLOYEE'])->latest();
+
+        if ($request->query('trashed')) {
+            $query->onlyTrashed();
+        }
+
+        $employees = $query->paginate(15);
         return UserResource::collection($employees);
     }
 
@@ -30,7 +36,7 @@ class EmployeeController extends Controller
 
     public function show(User $employee)
     {
-        if ($employee->role !== 'EMPLOYEE') {
+        if (!in_array($employee->role, ['ADMIN', 'EMPLOYEE'])) {
             abort(404);
         }
 
@@ -39,7 +45,7 @@ class EmployeeController extends Controller
 
     public function update(EmployeeUpdateRequest $request, User $employee)
     {
-        if ($employee->role !== 'EMPLOYEE') {
+        if (!in_array($employee->role, ['ADMIN', 'EMPLOYEE'])) {
             abort(404);
         }
 
@@ -57,12 +63,38 @@ class EmployeeController extends Controller
 
     public function destroy(User $employee)
     {
-        if ($employee->role !== 'EMPLOYEE') {
+        if (!in_array($employee->role, ['ADMIN', 'EMPLOYEE'])) {
             abort(404);
         }
 
         $employee->delete();
 
         return response()->json(['message' => 'Employee deleted successfully']);
+    }
+
+    public function restore($id)
+    {
+        $employee = User::onlyTrashed()->findOrFail($id);
+        
+        if (!in_array($employee->role, ['ADMIN', 'EMPLOYEE'])) {
+            abort(404);
+        }
+
+        $employee->restore();
+
+        return response()->json(['message' => 'Employee access restored successfully']);
+    }
+
+    public function purge($id)
+    {
+        $employee = User::onlyTrashed()->findOrFail($id);
+        
+        if (!in_array($employee->role, ['ADMIN', 'EMPLOYEE'])) {
+            abort(404);
+        }
+
+        $employee->forceDelete();
+
+        return response()->json(['message' => 'Employee permanently deleted']);
     }
 }

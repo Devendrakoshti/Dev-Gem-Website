@@ -9,14 +9,43 @@ export class ClientService {
     private mapClient(c: any): Client {
         return {
             ...c,
+            id: String(c.id || ''),
             companyName: c.companyName || c.company_name || '',
             companyAddress: c.companyAddress || c.company_address || '',
-            assignedToId: c.assignedToId || c.assigned_to_id || '',
+            assignedToId: String(c.assignedToId || c.assigned_to_id || ''),
             assignedToName: c.assignedToName || c.assigned_to_name || '',
+            createdByEmployeeId: String(c.createdByEmployeeId || c.created_by_employee_id || ''),
             isArchived: c.isArchived || !!c.is_archived,
             isDeleted: c.isDeleted || !!c.is_deleted || !!c.deleted_at,
             createdAt: c.createdAt || c.created_at,
-            updatedAt: c.updatedAt || c.updated_at
+            updatedAt: c.updatedAt || c.updated_at,
+            billing_items: (c.billing_items || []).map((b: any) => ({
+                ...b,
+                id: String(b.id || ''),
+                clientId: String(b.clientId || b.client_id || ''),
+                serviceName: b.serviceName || b.service_name || '',
+                amountToCollect: Number(b.amountToCollect || b.amount_to_collect || 0),
+                billingDate: b.billingDate || b.billing_date || '',
+                dueDate: b.dueDate || b.due_date || '',
+                paidAmount: Number(b.paidAmount || b.paid_amount || 0),
+                remainingAmount: Number(b.remainingAmount || b.remaining_amount || 0),
+            })),
+            payments: (c.payments || []).map((p: any) => ({
+                ...p,
+                id: String(p.id || ''),
+                clientId: String(p.clientId || p.client_id || ''),
+                amountReceived: Number(p.amountReceived || p.amount_received || 0),
+                receivedDate: p.receivedDate || p.received_date || '',
+                paymentMode: p.paymentMode || p.payment_mode || '',
+            })),
+            follow_ups: (c.follow_ups || []).map((f: any) => ({
+                ...f,
+                id: String(f.id || ''),
+                clientId: String(f.clientId || f.client_id || ''),
+                nextDate: f.nextDate || f.next_date || '',
+                employeeId: String(f.employeeId || f.employee_id || ''),
+                employeeName: f.employeeName || f.employee_name || '',
+            })),
         };
     }
 
@@ -40,6 +69,27 @@ export class ClientService {
         return c ? this.mapClient(c) : undefined;
     }
 
+    private preparePayload(data: Partial<Client>): any {
+        const payload: any = { ...data };
+        if (payload.companyName !== undefined) {
+            payload.company_name = payload.companyName;
+            delete payload.companyName;
+        }
+        if (payload.companyAddress !== undefined) {
+            payload.company_address = payload.companyAddress;
+            delete payload.companyAddress;
+        }
+        if (payload.assignedToId !== undefined) {
+            payload.assigned_to_id = payload.assignedToId;
+            delete payload.assignedToId;
+        }
+        if (payload.isArchived !== undefined) {
+            payload.is_archived = payload.isArchived;
+            delete payload.isArchived;
+        }
+        return payload;
+    }
+
     async createClient(data: Partial<Client>): Promise<Client> {
         if (USE_DEMO_AUTH) {
             const currentUser = authService.getCurrentUser()!;
@@ -48,7 +98,7 @@ export class ClientService {
             const clients = mockStore.getActiveClients(currentUser);
             return clients[clients.length - 1];
         }
-        const response = await apiClient.post<any>('/clients', data);
+        const response = await apiClient.post<any>('/clients', this.preparePayload(data));
         return response.data || response;
     }
 
@@ -58,7 +108,7 @@ export class ClientService {
             mockStore.updateClient(id, updates, currentUser);
             return mockStore.getClientById(id)!;
         }
-        const response = await apiClient.put<any>(`/clients/${id}`, updates);
+        const response = await apiClient.put<any>(`/clients/${id}`, this.preparePayload(updates));
         return response.data || response;
     }
 
@@ -95,7 +145,7 @@ export class ClientService {
             mockStore.transferClient(clientId, targetId, currentUser);
             return;
         }
-        await apiClient.post(`/clients/${clientId}/transfer`, { target_id: targetId });
+        await apiClient.post(`/clients/${clientId}/transfer`, { employee_id: targetId });
     }
 
     async getPendingPayments(): Promise<any[]> {

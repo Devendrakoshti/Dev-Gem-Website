@@ -6,7 +6,7 @@ import { mockStore } from '../../../services/mockStore';
 import { ClientStatus, ClientStage, UserRole, Client, User } from '../../../types';
 import { Badge } from '../../../components/ui/Badge';
 import { authService } from '../../../services/authService';
-import { useToast } from '../../../components/layout/AppLayout';
+import { useToast } from '../../../components/layout/ToastContext';
 import { Modal } from '../../../components/ui/Modal';
 import { clientService } from '../../../services/clientService';
 import { USE_DEMO_AUTH } from '../../../config/appConfig';

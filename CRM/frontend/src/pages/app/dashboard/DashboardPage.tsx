@@ -414,27 +414,27 @@ export const DashboardPage: React.FC = () => {
 
          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             {/* Critical Alerts Command Tile */}
-            <div className="bg-slate-900 rounded-[3rem] p-10 text-white shadow-2xl shadow-indigo-500/10">
+            <div className="bg-white rounded-[3rem] border border-slate-200 shadow-sm p-10 flex flex-col h-full">
                <div className="flex justify-between items-center mb-8">
                   <div>
-                     <h4 className="text-xl font-bold">System Exceptions</h4>
+                     <h4 className="text-xl font-bold text-slate-900">System Exceptions</h4>
                      <p className="text-xs text-slate-500 font-medium">Risk points requiring executive override</p>
                   </div>
-                  <div className="px-3 py-1 bg-rose-500/20 text-rose-400 rounded-lg text-[10px] font-black uppercase tracking-widest border border-rose-500/30">Action Required</div>
+                  <div className="px-3 py-1 bg-rose-50 text-rose-600 rounded-lg text-[10px] font-black uppercase tracking-widest border border-rose-100">Action Required</div>
                </div>
-               <div className="space-y-4">
+               <div className="space-y-4 flex-1">
                   {USE_DEMO_AUTH ? clients.filter(c => {
                      const summary = mockStore.getClientPaymentSummary(c.id, user);
                      return summary.balance >= 100000;
                   }).slice(0, 3).map(c => (
-                     <Link to={`/app/clients/${c.id}`} key={c.id} className="block p-5 bg-white/5 hover:bg-white/10 border border-white/5 rounded-2xl transition-all">
+                     <Link to={`/app/clients/${c.id}`} key={c.id} className="block p-5 bg-slate-50 hover:bg-white border border-transparent hover:border-slate-200 rounded-2xl transition-all">
                         <div className="flex justify-between items-center">
                            <div>
-                              <p className="font-bold text-sm mb-1">{c.name}</p>
+                              <p className="font-bold text-slate-900 text-sm mb-1">{c.name}</p>
                               <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest">{c.companyName}</p>
                            </div>
                            <div className="text-right">
-                              <p className="text-rose-400 font-black text-sm">₹{mockStore.getClientPaymentSummary(c.id, user).balance.toLocaleString()}</p>
+                              <p className="text-rose-600 font-black text-sm">₹{mockStore.getClientPaymentSummary(c.id, user).balance.toLocaleString()}</p>
                               <p className="text-[9px] text-slate-500 font-black uppercase">Outstanding</p>
                            </div>
                         </div>

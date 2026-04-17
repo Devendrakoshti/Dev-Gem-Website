@@ -6,7 +6,7 @@ import { mockStore } from '../../../services/mockStore';
 import { ClientStatus, ClientStage, FollowUpType, BillingItem, PaymentReceived, UserRole, Client, FollowUp, Note } from '../../../types';
 import { Badge } from '../../../components/ui/Badge';
 import { authService } from '../../../services/authService';
-import { useToast } from '../../../components/layout/AppLayout';
+import { useToast } from '../../../components/layout/ToastContext';
 import { Modal } from '../../../components/ui/Modal';
 import { clientService } from '../../../services/clientService';
 import { USE_DEMO_AUTH } from '../../../config/appConfig';
@@ -57,8 +57,8 @@ export const ClientDetailsPage: React.FC = () => {
         setBilling(data.billing_items || []);
         setPayments(data.payments || []);
 
-        const billed = (data.billing_items || []).reduce((sum: number, b: any) => sum + Number(b.amount_to_collect), 0);
-        const paid = (data.payments || []).reduce((sum: number, p: any) => sum + Number(p.amount_received), 0);
+        const billed = (data.billing_items || []).reduce((sum: number, b: any) => sum + Number(b.amountToCollect || b.amount_to_collect || 0), 0);
+        const paid = (data.payments || []).reduce((sum: number, p: any) => sum + Number(p.amountReceived || p.amount_received || 0), 0);
         setSummary({ totalBilled: billed, totalPaid: paid, balance: billed - paid });
       }
     } catch (err: any) {
@@ -77,7 +77,7 @@ export const ClientDetailsPage: React.FC = () => {
         fetchData();
       });
     }
-  }, [id, user, navigate]);
+  }, [id, user?.id, navigate]);
 
   if (loading) return (
     <div className="p-20 text-center">

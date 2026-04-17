@@ -8,9 +8,10 @@ export class UserService {
   private mapUser(u: any): User {
     return {
       ...u,
+      id: String(u.id || ''),
       firstName: u.firstName || u.first_name || '',
       lastName: u.lastName || u.last_name || '',
-      employeeId: u.employeeId || u.employee_id || '',
+      employeeId: String(u.employeeId || u.employee_id || ''),
       name: u.name || `${u.first_name || ''} ${u.last_name || ''}`.trim() || 'User',
       isDeleted: !!u.deleted_at || u.status === 'SUSPENDED' || u.isDeleted
     };
@@ -21,6 +22,16 @@ export class UserService {
       return mockStore.getCollection('users');
     }
     const response = await apiClient.get<any>('/employees');
+    const data = response.data || response;
+    return Array.isArray(data) ? data.map(u => this.mapUser(u)) : [];
+  }
+
+  async getTrashedUsers(): Promise<User[]> {
+    if (USE_DEMO_AUTH) {
+      const users = await this.getUsers();
+      return users.filter(u => u.isDeleted);
+    }
+    const response = await apiClient.get<any>('/employees', { trashed: '1' });
     const data = response.data || response;
     return Array.isArray(data) ? data.map(u => this.mapUser(u)) : [];
   }
@@ -144,6 +155,24 @@ export class UserService {
       await this.updateUser(id, { isDeleted: true, status: UserStatus.SUSPENDED });
     } else {
       await apiClient.delete(`/employees/${id}`);
+    }
+  }
+
+  async restoreUser(id: string): Promise<void> {
+    if (USE_DEMO_AUTH) {
+      await this.updateUser(id, { isDeleted: false, status: UserStatus.ACTIVE });
+    } else {
+      await apiClient.post(`/employees/${id}/restore`, {});
+    }
+  }
+
+  async purgeUser(id: string): Promise<void> {
+    if (USE_DEMO_AUTH) {
+       const users = await this.getUsers();
+       const nextUsers = users.filter(u => u.id !== id);
+       mockStore.setCollection('users', nextUsers);
+    } else {
+      await apiClient.delete(`/employees/${id}/purge`);
     }
   }
 }
