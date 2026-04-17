@@ -76,3 +76,14 @@ select * from employee where department='hr' and salary >= 50000.00;
 Multiple value in 1 time
 select * from employee where department in ('it', 'finance', 'hr');
 select * from employee where department not in ('it', 'finance', 'hr');
+40000 to 65000 salary employee: select * from employee where salart between 50000 and 60000;
+unique value get(1column me unique name ya value): select distinct from employee;
+A to Z (1 to 100) filter data: select * from employee order by first_name;
+Z to A (100 to 1)filter data: select * from employee order by first_name desc; 
+full database only show a 10 row: select * from employee limit 10;
+find a data in select Word first letter: select * from employee were first_name like 'A%';
+find a data in select Word last letter: select * from employee were first_name like '%A';
+find a data in select Word anywear letter: select * from employee were first_name like '%a%';
+find a data in 2 letter: select * from employee were department like '__';
+
+https://github.com/Marvomatic/n8n-templates
