@@ -85,5 +85,49 @@ find a data in select Word first letter: select * from employee were first_name 
 find a data in select Word last letter: select * from employee were first_name like '%A';
 find a data in select Word anywear letter: select * from employee were first_name like '%a%';
 find a data in 2 letter: select * from employee were department like '__';
+find a data in secont letter: select * from employee were first_name like '_a%';
+find a column number or row: select count(id) from employees;
+
+** Count **
+Salary Total: select sum(salary) from employees;
+avg Salary Total: select avg(salary) from employees;
+min Salary Pay: select min(salary) from employees;
+max Salary pay: select max(salary) from employees;
+
+** Group **
+Group by department and number of employee: select department, count(id) from employee group by department;
+Group by department and department salary of employee: select department, sum(salary) from employee group by department;
+
+** String Function **
+Data print, Column Changes,  Column Decoration
+
+** concat Start **
+Cannect The Word: select concat(first_name, last_name) from employee;
+Connect after Create a new column for connect: select concat(first_name, last_name) as full_name from employee;
+Connect word add the space: select concat_ws('_', first_name, last_name) as full_name from employee;
+
+** Substring **
+Word remove spacial word remove
+Print a value: select substr('hello bunny!', 7,12);
+replace a word: select replace('abcxyz', 'abc', 'pqr');
+column change the word: select replace(department, 'it', 'tech') from employees;
+reverse  word: select reverse('Hello')
+
+** Text Convert to uppercase and lowercase **
+uppercase: select upper(first_name) from employee;
+lowercase: select lower(first_name) from employee;
+
+** Left And Right Select the Word **
+Left to Print A Word: Select left('hello Word', 4);
+Right to Print A Word: Select right('hello Word', 4);
+
+** Trim A Space Or Text **
+Delete Space: select length(trim('    allright   '));
+
+** Position Function **
+Word Postion Find: select position('om' in 'thomas');
+
+
 
 https://github.com/Marvomatic/n8n-templates
+;
