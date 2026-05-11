@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import Image from 'next/image'
 
 type NavLink = {
   label: string;
@@ -10,8 +11,6 @@ type NavLink = {
 
 const navLinks: NavLink[] = [
   { label: "Home", href: "/" },
-  { label: "News", href: "/news" },
-  { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -20,21 +19,6 @@ const serviceLinks: NavLink[] = [
   { label: "Portfolio Strategy", href: "/services/portfolio-strategy" },
   { label: "Wealth Advisory", href: "/services/wealth-advisory" },
 ];
-
-function BrandMark() {
-  return (
-    <span
-      aria-hidden="true"
-      className="relative flex h-7 w-7 shrink-0 items-center justify-center"
-    >
-      <span className="absolute left-0 top-0 h-3 w-3 rounded-br-full bg-white" />
-      <span className="absolute right-0 top-0 h-3 w-3 rounded-bl-full bg-white/90" />
-      <span className="absolute left-0 bottom-0 h-3 w-3 rounded-tr-full bg-white/80" />
-      <span className="absolute right-0 bottom-0 h-3 w-3 rounded-tl-full bg-white/65" />
-      <span className="h-2 w-2 rounded-full bg-[#111a1f]" />
-    </span>
-  );
-}
 
 function ChevronDown() {
   return (
@@ -77,35 +61,51 @@ export default function Navbar() {
     <header className="w-full bg-[#050b0d] px-4 py-3 sm:px-6 lg:px-9">
       <nav
         aria-label="Primary navigation"
-        className="mx-auto max-w-7xl rounded-[34px] bg-[#121d22] px-5 py-3 shadow-[0_18px_50px_rgba(0,0,0,0.22)] ring-1 ring-white/[0.03] sm:px-8"
+        className="mx-auto max-w-7xl rounded-[34px] bg-[#dddddd] px-5 py-3 shadow-[0_18px_50px_rgba(0,0,0,0.22)] ring-1 ring-white/[0.03] sm:px-8"
       >
         <div className="flex min-h-12 items-center justify-between gap-5">
-          <Link href="/" aria-label="Patel Legal Advisors" title="Patel Legal Advisors" className="flex min-w-0 items-center gap-3 text-white outline-none transition-opacity hover:opacity-90 focus-visible:rounded-full focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[#121d22]"
-          >
-            <BrandMark />
-            <span className="truncate text-xl font-extrabold uppercase tracking-normal sm:text-2xl">
-              Investboost
-            </span>
+          <div className="block">
+            <Link href="/" aria-label="Patel Legal Advisors" title="Patel Legal Advisors" className="flex min-w-0 items-center gap-3 text-white outline-none transition-opacity hover:opacity-90 focus-visible:rounded-full focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[#121d22]">
+            <Image src="images/patel-legal-advisors-logo.svg" width={80} height={80} alt="Patel Legal Advisors Logo"/>
           </Link>
-
+          </div>
           <div className="hidden items-center gap-7 lg:flex">
             <Link
               href="/"
               aria-current="page"
-              className="rounded-full bg-black px-6 py-3 text-base font-bold text-white transition-colors hover:bg-black/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[#121d22]"
-            >
+              className="rounded-full px-6 py-3 text-black font-bold transition-colors hover:bg-white/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[#121d22]">
               Home
             </Link>
 
             <div className="group relative">
               <button
                 type="button"
-                className="flex items-center gap-2 rounded-full px-2 py-3 text-base font-semibold text-slate-300 transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[#121d22]"
+                className="flex items-center gap-2 rounded-full px-2 py-3 text-base font-semibold text-black-300 transition-colors hover:bg-white/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[#121d22]"
               >
                 Services
                 <ChevronDown />
               </button>
-              <div className="invisible absolute left-1/2 top-full z-20 mt-3 w-56 -translate-x-1/2 rounded-2xl bg-white p-2 opacity-0 shadow-2xl shadow-black/30 transition group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+              <div className="invisible absolute left-1/2 top-full z-20 w-56 -translate-x-1/2 rounded-2xl bg-white p-2 opacity-0 shadow-2xl shadow-black/30 transition group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+                {serviceLinks.map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className="block rounded-xl px-4 py-3 text-sm font-semibold text-slate-700 transition-colors hover:bg-slate-100 hover:text-slate-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900"
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+            <div className="group relative">
+              <button
+                type="button"
+                className="flex items-center gap-2 rounded-full px-2 py-3 text-base font-semibold text-black-300 transition-colors hover:bg-white/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[#121d22]"
+              >
+                Services
+                <ChevronDown />
+              </button>
+              <div className="invisible absolute left-1/2 top-full z-20 w-56 -translate-x-1/2 rounded-2xl bg-white p-2 opacity-0 shadow-2xl shadow-black/30 transition group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
                 {serviceLinks.map((link) => (
                   <Link
                     key={link.href}
@@ -120,9 +120,9 @@ export default function Navbar() {
 
             {navLinks.slice(1).map((link) => (
               <Link
-                key={link.href}
+                key={link.href} 
                 href={link.href}
-                className="rounded-full px-2 py-3 text-base font-semibold text-slate-300 transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[#121d22]"
+                className="rounded-full px-2 py-3 text-base font-semibold text-black transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[#121d22]"
               >
                 {link.label}
               </Link>
