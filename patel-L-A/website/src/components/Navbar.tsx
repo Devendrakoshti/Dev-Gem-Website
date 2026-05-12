@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import Image from 'next/image'
+import Image from "next/image";
 
 type NavLink = {
   label: string;
@@ -14,10 +14,50 @@ const navLinks: NavLink[] = [
   { label: "Contact", href: "/contact" },
 ];
 
-const serviceLinks: NavLink[] = [
-  { label: "Investment Planning", href: "/services/investment-planning" },
-  { label: "Portfolio Strategy", href: "/services/portfolio-strategy" },
-  { label: "Wealth Advisory", href: "/services/wealth-advisory" },
+const megaMenuGroups = [
+  {
+    title: "Types",
+    links: [
+      "Project",
+      "Project Slider",
+      "Project Slider 2",
+      "Project Slider 3",
+      "Project List",
+      "Project Card",
+    ],
+  },
+  {
+    title: "Layout",
+    links: [
+      "Projects 2 Columns",
+      "Projects 3 Columns",
+      "Projects 4 Columns",
+      "Projects 2 Columns Wide",
+      "Projects 3 Columns Wide",
+      "Projects 4 Columns Wide",
+    ],
+  },
+  {
+    title: "Hover Type",
+    links: [
+      "Project Hide Content",
+      "Project Hide Content Wide",
+      "Project Card Hover",
+      "Project Slider Image Zoom",
+      "Project Hide Show",
+      "Project Slider Hover",
+    ],
+  },
+  {
+    title: "Single",
+    links: [
+      "Project Details",
+      "Project Details Video",
+      "Project Details Slider",
+      "Project Image",
+      "Project Gallery",
+    ],
+  },
 ];
 
 function ChevronDown() {
@@ -54,67 +94,104 @@ function MenuIcon({ isOpen }: { isOpen: boolean }) {
   );
 }
 
+function FolderIcon() {
+  return (
+    <svg
+      aria-hidden="true"
+      className="h-6 w-6 text-[#a63f04]"
+      fill="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path d="M3 6.5A2.5 2.5 0 0 1 5.5 4h4.67a2.5 2.5 0 0 1 1.77.73L13.2 6H18.5A2.5 2.5 0 0 1 21 8.5v1H3v-3Z" />
+      <path d="M2.3 11.1A2 2 0 0 1 4.23 9.6h16.04a1.5 1.5 0 0 1 1.44 1.92l-1.89 6.5A2.75 2.75 0 0 1 17.18 20H4.46a2.5 2.5 0 0 1-2.4-3.2l.24-.82 1.88-4.88Z" />
+    </svg>
+  );
+}
+
+function ArrowRight() {
+  return (
+    <svg
+      aria-hidden="true"
+      className="h-4 w-4 shrink-0 transition-transform group-hover/link:translate-x-1"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      strokeWidth="2"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="m9 18 6-6-6-6" />
+    </svg>
+  );
+}
+
+function slugify(value: string) {
+  return value.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+}
+
+function MegaMenuContent({ onNavigate }: { onNavigate?: () => void }) {
+  return (
+    <div className="grid gap-8 lg:grid-cols-4 lg:gap-10">
+      {megaMenuGroups.map((group) => (
+        <div key={group.title}>
+          <div className="flex items-center gap-3 border-b border-[#a63f04] pb-4">
+            <FolderIcon />
+            <h3 className="text-base font-black text-[#050b0d]">{group.title}</h3>
+          </div>
+
+          <div className="mt-3 divide-y divide-slate-100">
+            {group.links.map((label) => (
+              <Link
+                key={`${group.title}-${label}`}
+                href={`/projects/${slugify(label)}`}
+                onClick={onNavigate}
+                className="group/link flex items-center gap-2 py-4 text-sm font-bold text-[#050b0d] transition-colors hover:text-[#a63f04]"
+              >
+                <ArrowRight />
+                {label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMobileMegaOpen, setIsMobileMegaOpen] = useState(false);
 
   return (
-    <header className="w-full bg-[#050b0d] px-4 py-3 sm:px-6 lg:px-9">
+    <header className="relative z-50 w-full bg-[#050b0d] px-4 py-3 sm:px-6 lg:px-9">
       <nav
         aria-label="Primary navigation"
-        className="mx-auto max-w-7xl rounded-[34px] bg-[#dddddd] px-5 py-3 shadow-[0_18px_50px_rgba(0,0,0,0.22)] ring-1 ring-white/[0.03] sm:px-8"
+        className="container relative mx-auto rounded-[34px] bg-[#dddddd] px-5 py-3 shadow-[0_18px_50px_rgba(0,0,0,0.22)] ring-1 ring-white/[0.03] sm:px-8"
       >
         <div className="flex min-h-12 items-center justify-between gap-5">
           <div className="block">
             <Link href="/" aria-label="Patel Legal Advisors" title="Patel Legal Advisors" className="flex min-w-0 items-center gap-3 text-white outline-none transition-opacity hover:opacity-90 focus-visible:rounded-full focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[#121d22]">
-            <Image src="images/patel-legal-advisors-logo.svg" width={80} height={80} alt="Patel Legal Advisors Logo"/>
-          </Link>
+              <Image src="/images/patel-legal-advisors-logo.svg" width={80} height={80} alt="Patel Legal Advisors Logo"/>
+            </Link>
           </div>
           <div className="hidden items-center gap-7 lg:flex">
             <Link
               href="/"
               aria-current="page"
-              className="rounded-full px-6 py-3 text-black font-bold transition-colors hover:bg-white/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[#121d22]">
+              className="rounded-full px-6 py-3 font-bold text-black transition-colors hover:bg-white/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[#121d22]">
               Home
             </Link>
 
-            <div className="group relative">
+            <div className="group static">
               <button
                 type="button"
                 className="flex items-center gap-2 rounded-full px-2 py-3 text-base font-semibold text-black-300 transition-colors hover:bg-white/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[#121d22]"
               >
-                Services
+                Projects
                 <ChevronDown />
               </button>
-              <div className="invisible absolute left-1/2 top-full z-20 w-56 -translate-x-1/2 rounded-2xl bg-white p-2 opacity-0 shadow-2xl shadow-black/30 transition group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
-                {serviceLinks.map((link) => (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    className="block rounded-xl px-4 py-3 text-sm font-semibold text-slate-700 transition-colors hover:bg-slate-100 hover:text-slate-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900"
-                  >
-                    {link.label}
-                  </Link>
-                ))}
-              </div>
-            </div>
-            <div className="group relative">
-              <button
-                type="button"
-                className="flex items-center gap-2 rounded-full px-2 py-3 text-base font-semibold text-black-300 transition-colors hover:bg-white/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[#121d22]"
-              >
-                Services
-                <ChevronDown />
-              </button>
-              <div className="invisible absolute left-1/2 top-full z-20 w-56 -translate-x-1/2 rounded-2xl bg-white p-2 opacity-0 shadow-2xl shadow-black/30 transition group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
-                {serviceLinks.map((link) => (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    className="block rounded-xl px-4 py-3 text-sm font-semibold text-slate-700 transition-colors hover:bg-slate-100 hover:text-slate-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900"
-                  >
-                    {link.label}
-                  </Link>
-                ))}
+              <div className="invisible absolute left-1/2 top-[calc(100%-8px)] z-30 w-[min(92vw,1430px)] -translate-x-1/2 pt-8 opacity-0 transition duration-300 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+                <div className="rounded-sm bg-white px-8 py-7 shadow-[0_28px_80px_rgba(0,0,0,0.16)] ring-1 ring-black/5">
+                  <MegaMenuContent />
+                </div>
               </div>
             </div>
 
@@ -150,26 +227,33 @@ export default function Navbar() {
               key={link.href}
               href={link.href}
               onClick={() => setIsMenuOpen(false)}
-              className="rounded-2xl px-4 py-3 text-base font-semibold text-slate-200 transition-colors hover:bg-white/10 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
+              className="rounded-2xl px-4 py-3 text-base font-semibold text-[#050b0d] transition-colors hover:bg-white/70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#a63f04]"
             >
               {link.label}
             </Link>
           ))}
 
-          <div className="rounded-2xl bg-white/[0.04] p-2">
-            <p className="px-2 pb-2 text-sm font-bold uppercase tracking-[0.14em] text-slate-500">
-              Services
-            </p>
-            {serviceLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                onClick={() => setIsMenuOpen(false)}
-                className="block rounded-xl px-3 py-3 text-sm font-semibold text-slate-300 transition-colors hover:bg-white/10 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
-              >
-                {link.label}
-              </Link>
-            ))}
+          <div className="rounded-2xl bg-white p-3 text-[#050b0d]">
+            <button
+              type="button"
+              aria-expanded={isMobileMegaOpen}
+              onClick={() => setIsMobileMegaOpen((current) => !current)}
+              className="flex w-full items-center justify-between rounded-xl px-3 py-3 text-base font-black transition hover:bg-slate-100"
+            >
+              Projects
+              <span className={`${isMobileMegaOpen ? "rotate-180" : ""} transition-transform`}>
+                <ChevronDown />
+              </span>
+            </button>
+
+            <div className={`${isMobileMegaOpen ? "block" : "hidden"} px-3 pb-2 pt-4`}>
+              <MegaMenuContent
+                onNavigate={() => {
+                  setIsMenuOpen(false);
+                  setIsMobileMegaOpen(false);
+                }}
+              />
+            </div>
           </div>
         </div>
       </nav>
