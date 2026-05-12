@@ -1,8 +1,10 @@
 import ServiceBanner from "@/components/ServiceBanner";
+import Navbar from "@/components/Navbar";
 
 export default function BIMServicesPage() {
   return (
-    
+    <div>
+    <Navbar />
     <ServiceBanner
       title="BIM Services"
       description="Professional BIM outsourcing services."
@@ -14,5 +16,6 @@ export default function BIMServicesPage() {
         height: 1080,
       }}
     />
+    </div>
   );
 }
