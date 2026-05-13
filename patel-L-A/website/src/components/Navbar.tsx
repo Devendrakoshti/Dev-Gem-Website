@@ -16,10 +16,10 @@ const navLinks: NavLink[] = [
 
 const megaMenuGroups = [
   {
-    title: "Types",
+    title: "Start-Up",
     links: [
-      "Project",
-      "Project Slider",
+      "cad-services",
+      "bim-services",
       "Project Slider 2",
       "Project Slider 3",
       "Project List",
@@ -27,7 +27,7 @@ const megaMenuGroups = [
     ],
   },
   {
-    title: "Layout",
+    title: "Commercial",
     links: [
       "Projects 2 Columns",
       "Projects 3 Columns",
@@ -38,7 +38,7 @@ const megaMenuGroups = [
     ],
   },
   {
-    title: "Hover Type",
+    title: "Registration",
     links: [
       "Project Hide Content",
       "Project Hide Content Wide",
@@ -49,7 +49,37 @@ const megaMenuGroups = [
     ],
   },
   {
-    title: "Single",
+    title: "GST Services",
+    links: [
+      "Project Details",
+      "Project Details Video",
+      "Project Details Slider",
+      "Project Image",
+      "Project Gallery",
+    ],
+  },
+  {
+    title: "Compliances",
+    links: [
+      "Project Details",
+      "Project Details Video",
+      "Project Details Slider",
+      "Project Image",
+      "Project Gallery",
+    ],
+  },
+  {
+    title: "Returns",
+    links: [
+      "Project Details",
+      "Project Details Video",
+      "Project Details Slider",
+      "Project Image",
+      "Project Gallery",
+    ],
+  },
+  {
+    title: "Agreements",
     links: [
       "Project Details",
       "Project Details Video",
@@ -129,7 +159,7 @@ function slugify(value: string) {
 
 function MegaMenuContent({ onNavigate }: { onNavigate?: () => void }) {
   return (
-    <div className="grid gap-8 lg:grid-cols-4 lg:gap-10">
+    <div className="grid gap-8 lg:grid-cols-7 lg:gap-10">
       {megaMenuGroups.map((group) => (
         <div key={group.title}>
           <div className="flex items-center gap-3 border-b border-[#a63f04] pb-4">
@@ -141,7 +171,7 @@ function MegaMenuContent({ onNavigate }: { onNavigate?: () => void }) {
             {group.links.map((label) => (
               <Link
                 key={`${group.title}-${label}`}
-                href={`/projects/${slugify(label)}`}
+                href={`/${slugify(label)}`}
                 onClick={onNavigate}
                 className="group/link flex items-center gap-2 py-4 text-sm font-bold text-[#050b0d] transition-colors hover:text-[#a63f04]"
               >
@@ -161,15 +191,15 @@ export default function Navbar() {
   const [isMobileMegaOpen, setIsMobileMegaOpen] = useState(false);
 
   return (
-    <header className="relative z-50 w-full bg-[#050b0d] px-4 py-3 sm:px-6 lg:px-9">
+    <header className="z-50 w-full bg-[#050b0d] px-4 py-3 sm:px-6 lg:px-9">
       <nav
         aria-label="Primary navigation"
-        className="container relative mx-auto rounded-[34px] bg-[#dddddd] px-5 py-3 shadow-[0_18px_50px_rgba(0,0,0,0.22)] ring-1 ring-white/[0.03] sm:px-8"
+        className="container  mx-auto rounded-[34px] bg-[#dddddd] px-5 py-3 shadow-[0_18px_50px_rgba(0,0,0,0.22)] ring-1 ring-white/[0.03] sm:px-8"
       >
-        <div className="flex min-h-12 items-center justify-between gap-5">
+        <div className="flex min-h-12 items-center justify-between gap-5 relative">
           <div className="block">
             <Link href="/" aria-label="Patel Legal Advisors" title="Patel Legal Advisors" className="flex min-w-0 items-center gap-3 text-white outline-none transition-opacity hover:opacity-90 focus-visible:rounded-full focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[#121d22]">
-              <Image src="/images/patel-legal-advisors-logo.svg" width={80} height={80} alt="Patel Legal Advisors Logo"/>
+              <Image src="/image/patel-legal-advisors-logo.svg" width={80} height={80} alt=" Logo"/>
             </Link>
           </div>
           <div className="hidden items-center gap-7 lg:flex">
@@ -183,13 +213,13 @@ export default function Navbar() {
             <div className="group static">
               <button
                 type="button"
-                className="flex items-center gap-2 rounded-full px-2 py-3 text-base font-semibold text-black-300 transition-colors hover:bg-white/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[#121d22]"
+                className="flex items-center gap-2 rounded-full px-6 py-3 font-bold text-black transition-colors hover:bg-white/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[#121d22]"
               >
-                Projects
+                Services
                 <ChevronDown />
               </button>
-              <div className="invisible absolute left-1/2 top-[calc(100%-8px)] z-30 w-[min(92vw,1430px)] -translate-x-1/2 pt-8 opacity-0 transition duration-300 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
-                <div className="rounded-sm bg-white px-8 py-7 shadow-[0_28px_80px_rgba(0,0,0,0.16)] ring-1 ring-black/5">
+              <div className="invisible absolute left-1/2 top-[calc(100%-0px)] z-30 w-[min(92vw,1530px)] -translate-x-1/2 opacity-0 transition duration-300 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+                <div className="rounded-lg bg-white px-8 py-7 shadow-[0_28px_80px_rgba(0,0,0,0.16)] ring-1 ring-black/5">
                   <MegaMenuContent />
                 </div>
               </div>
