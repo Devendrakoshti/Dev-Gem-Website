@@ -208,11 +208,15 @@ export default function Navbar() {
   const [isMobileMegaOpen, setIsMobileMegaOpen] = useState(false);
 
   return (
-    <header className="z-50 w-full bg-[#050b0d] px-4 py-3 sm:px-6 lg:px-9">
-      <nav
-        aria-label="Primary navigation"
-        className="container  mx-auto rounded-[34px] bg-[#dddddd] px-5 py-3 shadow-[0_18px_50px_rgba(0,0,0,0.22)] ring-1 ring-white/[0.03] sm:px-8"
-      >
+    <header className="z-50 w-full">
+      <nav aria-label="Primary navigation" className="w-full bg-gray-100">
+        <div className="nav-top py-2 px-3">
+          <div className="flex items-center gap-4 text-sm">
+            <div>
+              <span>Are you ready to grow up your business? <Link href="/" aria-label="Patel Legal Advisors" title="Patel Legal Advisors" className="text-primary font-bold">Contact US</Link></span>
+            </div>
+            </div>
+        </div>
         <div className="flex min-h-12 items-center justify-between gap-5 relative">
           <div className="block">
             <Link href="/" aria-label="Patel Legal Advisors" title="Patel Legal Advisors" className="flex min-w-0 items-center gap-3 text-white outline-none transition-opacity hover:opacity-90 focus-visible:rounded-full focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[#121d22]">
