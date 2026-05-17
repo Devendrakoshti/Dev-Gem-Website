@@ -18,74 +18,91 @@ const megaMenuGroups = [
   {
     title: "Start-Up",
     links: [
-      "cad-services",
-      "bim-services",
-      "Project Slider 2",
-      "Project Slider 3",
-      "Project List",
-      "Project Card",
+      "Private Limited Company Incorporation",
+      "Section 8 Company Incorporation",
+      "One Person Company Incorporation",
+      "Public Limited Company Incorporation",
+      "Nidhi Company Incorporation",
+      "Producer Company Incorporation",
+      "LLP Incorporation",
+      "Proprietorship Registration",
+      "Partnership Registration",
+      "Hindu Undivided Family",
     ],
   },
   {
     title: "Commercial",
     links: [
-      "Projects 2 Columns",
-      "Projects 3 Columns",
-      "Projects 4 Columns",
-      "Projects 2 Columns Wide",
-      "Projects 3 Columns Wide",
-      "Projects 4 Columns Wide",
+      "Change Of Director",
+"Change In Partners",
+"Change In DIN",
+"Change In Company Address",
+"Director-KYC",
+"Transfer Of Share",
+"DIN Surrender",
+"Increase Authorise Capital",
+"Increase Paid-Up Capital",
+"INC-20A Filing",
+"ROC Search Report",
+"MOA/AOA Priniting",
+"Appointment of Auditor",
     ],
   },
   {
     title: "Registration",
     links: [
-      "Project Hide Content",
-      "Project Hide Content Wide",
-      "Project Card Hover",
-      "Project Slider Image Zoom",
-      "Project Hide Show",
-      "Project Slider Hover",
+      "MSME Registration",
+"DIN Application",
+"IEC Application",
+"FSSAI Registration",
+"PSARA Registration",
+"Digital Signature Certificate",
+"PAN &amp; TAN Application",
+"Trademark Registration",
+"EPF Registration",
+"ESI Registration",
+"APEDA Registration",
     ],
   },
   {
     title: "GST Services",
     links: [
-      "Project Details",
-      "Project Details Video",
-      "Project Details Slider",
-      "Project Image",
-      "Project Gallery",
+      "GST Registration",
+"GST Monthly Return",
+"GST Annual Return",
+"GST Modification",
+"LUT Under GST",
+"E-Way Bill Under GST",
+"GST Cancellation",
     ],
   },
   {
     title: "Compliances",
     links: [
-      "Project Details",
-      "Project Details Video",
-      "Project Details Slider",
-      "Project Image",
-      "Project Gallery",
+      "Company Annual filing",
+"OPC Annual filing",
+"Pub. Ltd. Annual filing",
+"Section 8 Annual filing",
+"Nidhi Annual filing",
+"Producer Annual filing",
+"LLP  Annual filing",
+"Accounting &amp; Bookkeeping",
     ],
   },
   {
     title: "Returns",
     links: [
-      "Project Details",
-      "Project Details Video",
-      "Project Details Slider",
-      "Project Image",
-      "Project Gallery",
+      "Taxation &amp; ITR",
+"PF Return",
+"TDS Return",
+"ESI Return",
     ],
   },
   {
     title: "Agreements",
     links: [
-      "Project Details",
-      "Project Details Video",
-      "Project Details Slider",
-      "Project Image",
-      "Project Gallery",
+      "Lease Agreement",
+      "Rent Agreement",
     ],
   },
 ];
@@ -199,21 +216,21 @@ export default function Navbar() {
         <div className="flex min-h-12 items-center justify-between gap-5 relative">
           <div className="block">
             <Link href="/" aria-label="Patel Legal Advisors" title="Patel Legal Advisors" className="flex min-w-0 items-center gap-3 text-white outline-none transition-opacity hover:opacity-90 focus-visible:rounded-full focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[#121d22]">
-              <Image src="/image/patel-legal-advisors-logo.svg" width={80} height={80} alt=" Logo"/>
+              <Image src="/images/patel-legal-advisors-logo.svg" width={80} height={80} alt=" Logo"/>
             </Link>
           </div>
           <div className="hidden items-center gap-7 lg:flex">
             <Link
               href="/"
               aria-current="page"
-              className="rounded-full px-6 py-3 font-bold text-black transition-colors hover:bg-white/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[#121d22]">
+              className="rounded-full px-6 py-5 font-bold text-black transition-colors hover:bg-white/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[#121d22]">
               Home
             </Link>
 
             <div className="group static">
               <button
                 type="button"
-                className="flex items-center gap-2 rounded-full px-6 py-3 font-bold text-black transition-colors hover:bg-white/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[#121d22]"
+                className="flex items-center gap-2 rounded-full px-6 py-5 font-bold text-black transition-colors hover:bg-white/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[#121d22]"
               >
                 Services
                 <ChevronDown />
