@@ -3,6 +3,9 @@
 import Link from "next/link";
 import { useState } from "react";
 import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+
 
 type NavLink = {
   label: string;
@@ -212,15 +215,18 @@ export default function Navbar() {
       <nav aria-label="Primary navigation" className="w-full bg-gray-100">
         <div className="nav-top py-2 px-3">
           <div className="flex items-center gap-4 text-sm">
-            <div>
-              <span>Are you ready to grow up your business? <Link href="/" aria-label="Patel Legal Advisors" title="Patel Legal Advisors" className="text-primary font-bold">Contact US</Link></span>
+            <div className="block">
+              <span>Are you ready to grow up your business? <Link href="/" aria-label="Patel Legal Advisors" title="Patel Legal Advisors" className="text-primary font-bold">Contact US <FontAwesomeIcon icon={faArrowRight} /></Link></span>
             </div>
-            </div>
+            <div className="flex">
+              <Link href="#" title="" aria-label="" className="flex"></Link>
+            </div> 
+          </div>
         </div>
         <div className="flex min-h-12 items-center justify-between gap-5 relative">
           <div className="block">
             <Link href="/" aria-label="Patel Legal Advisors" title="Patel Legal Advisors" className="flex min-w-0 items-center gap-3 text-white outline-none transition-opacity hover:opacity-90 focus-visible:rounded-full focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[#121d22]">
-              <Image src="/images/patel-legal-advisors-logo.svg" width={80} height={80} alt=" Logo"/>
+              <Image src="/image/patel-legal-advisors-logo.svg" width={80} height={80} alt=" Logo"/>
             </Link>
           </div>
           <div className="hidden items-center gap-7 lg:flex">
@@ -239,7 +245,7 @@ export default function Navbar() {
                 Services
                 <ChevronDown />
               </button>
-              <div className="invisible absolute left-1/2 top-[calc(100%-0px)] z-30 w-[min(92vw,1530px)] -translate-x-1/2 opacity-0 transition duration-300 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+              <div className="invisible absolute left-1/2 top-[calc(100%-0px)] z-30 w-full -translate-x-1/2 opacity-0 transition duration-300 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
                 <div className="rounded-lg bg-white px-8 py-7 shadow-[0_28px_80px_rgba(0,0,0,0.16)] ring-1 ring-black/5">
                   <MegaMenuContent />
                 </div>
