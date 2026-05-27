@@ -1,9 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
+import Link from "next/link";
 import Image from "next/image";
 import CategorySlider from "@/components/CategorySlider";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import TestimonialSlider from "@/components/TestimonialSlider";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const stats = [
   { value: "858+", label: "Successful Projects" },
@@ -16,36 +19,36 @@ const riskLevels = [
   {
     number: "01",
     kicker: "Automated Bond Portfolio",
-    title: "Bond ETF's",
+    title: "REGISTRATION SERVICES",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipiscing elit, seddo eiusmod tempor incididunt ut laboret dolore magna aliqua sociosqu.",
-    variant: "blue",
+      "We Register Company / LLP/ Partnership Firm as per your Requirement. Registrations of GST, FSSAI, DSC, DIN, MSME, IEC etc.",
+    variant: "white",
     aos: "fade-up",
   },
   {
     number: "02",
     kicker: "Automated Invest Account",
-    title: "Index Investment",
+    title: "COMPLIANCE MANAGEMENT",
     description:
-      "Ut enim ad minim veniam, quis nostrud ullamco laboris aliquip commodo consequat cillum dolore eu fugiat nulla hendrerit cursus augue.",
+      "Compliances for Companies, LLPs, Partnerships & Sole Proprietors etc. Drafting of Your documents, contracts, and registrations.",
     variant: "white",
     aos: "fade-up",
   },
   {
     number: "03",
     kicker: "Cash Account",
-    title: "High-Yield Savings",
+    title: "TAX PREPARATION",
     description:
-      "Excepteur sint occaecat cupidatat non proident, sunt in culpa officia deserunt mollit anim id est laborum exercitation ullamco laboris.",
+      "GST & Income Tax Services For Individuals, LLP & Companies Etc.",
     variant: "white",
     aos: "fade-up",
   },
   {
     number: "04",
     kicker: "Stocks Account",
-    title: "Bond ETF's",
+    title: "ACCOUNTING AND BOOKKEEPING",
     description:
-      "Curae fusce sapien pulvinar platea posuere interdum lorem iaculis nascetur fusce ad lectus maecenas sit aliquam scelerisque.",
+      "Accounting & Book keeping services on Monthly/ annual basis.",
     variant: "image",
     aos: "fade-up",
   },
@@ -66,19 +69,19 @@ const consultancyFeatures = [
 
 const trustFeatures = [
   {
-    title: "Professionalism",
+    title: "OUR VISION",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipiscing elit, seddo eiusmod tempor incididunt ut laboret dolore magna aliqua sociosqu.",
+      "To be a world class organization and a catalyst for Expertise, commitment, and value.We will maintain a high-level of ethics, team work and professionalism",
   },
   {
-    title: "Transparency",
+    title: "OUR MISSION",
     description:
-      "Pellentesque lectus convallis sociosqu torquent ad ante cursus augue urna est commodo aptent morbi quis ornare pellentesque.",
+      "To provide consistently fastest and easiest services to our clients and helps them growing their business hassle free. It's our mission to consistently Provide Assistance to Clients for Acheiving Business Heights.",
   },
   {
-    title: "Security",
+    title: "OUR VALUES",
     description:
-      "Pellentesque ad inceptos egestas platea tristique sodales pellentesque eget porta venenatis maximus laoreet aptent.",
+      "Our professional Team members of CA, CS & Lawyers provides you best guidance regarding your business queries and assist you to achieve your goals",
   },
 ];
 
@@ -188,44 +191,35 @@ function ChooseUsIcon({ type }: { type: string }) {
 
 export default function Home() {
   return (
-    <div className="min-h-screen overflow-hidden bg-[#050b0d]">
+    <div className="min-h-screen overflow-hidden">
       <Navbar />
-      <main className="relative text-white">
-        <section className="relative mx-auto grid min-h-[calc(100vh-96px)] container items-center gap-12 px-6 py-14 sm:px-9 lg:grid-cols-[1fr_0.95fr] lg:gap-16 lg:py-20">
-          <div className="relative z-10 max-w-2xl">
-            <h1 className="text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl xl:text-[64px]">
-              Shape The Future Through Strategic Investments!
+      <main className="main">
+        <div className="bg-[url(/images/section-bg.webp)] bg-cover bg-center h-full w-full py-15 md:py-20 lg:py-30 section-mb">
+        <section className="container mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-10 items-center">
+          <div className="lg:col-span-7 text-white">
+            <h1 className="leading-tight banner-title">
+              Complete Legal, Compliance & Registration Services for Businesses in India
             </h1>
-            <p className="mt-8 max-w-xl text-base font-medium leading-8 text-white sm:text-lg">
-              Where innovative and high-potential business opportunities await
-              discovery, we are your partners.
+            <p className="mt-8 max-w-xl text-base font-medium leading-8 sm:text-lg">
+              Expert legal, compliance, and registration services designed to help startups and businesses launch, operate, and grow with confidence.
             </p>
-            <a
-              href="/contact"
-              className="mt-10 inline-flex items-center gap-3 rounded-full bg-white px-7 py-4 text-sm font-bold text-[#050b0d] shadow-[0_18px_45px_rgba(255,255,255,0.12)] transition hover:bg-[#d9edf0] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#050b0d]"
-            >
-              Get Started
-              <span aria-hidden="true" className="text-xl leading-none">
-                &#8599;
-              </span>
-            </a>
           </div>
-
-          <div className="relative z-10 mx-auto grid w-full max-w-[570px] grid-cols-1 gap-5 sm:grid-cols-[0.68fr_1fr] sm:gap-6 lg:mx-0">
+          <div className="lg:col-span-5">
+            <div className="grid w-full grid-cols-1 gap-5 sm:grid-cols-[0.68fr_1fr] sm:gap-6 lg:mx-0">
             <div className="flex flex-col gap-5 sm:gap-6">
               <div className="rounded-[28px] bg-[#d6edf1] p-6 text-[#050b0d] shadow-2xl shadow-black/20 sm:rounded-[30px] sm:p-7">
-                <p className="text-xs font-bold uppercase">Average Investment</p>
-                <p className="mt-2 text-3xl font-black">$100K</p>
-                <div className="mt-9 inline-flex items-center gap-2 rounded-full bg-[#050b0d] px-5 py-3 text-sm font-black text-white">
-                  <span aria-hidden="true">&#8599;</span>
-                  25%
+              <div className="flex items-center mb-4">
+                  <svg width="45px" height="45px" viewBox="-3 0 262 262" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid"><path d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130.55v48.448h71.947c-1.45 12.04-9.283 30.172-26.69 42.356l-.244 1.622 38.755 30.023 2.685.268c24.659-22.774 38.875-56.282 38.875-96.027" fill="#4285F4"/><path d="M130.55 261.1c35.248 0 64.839-11.605 86.453-31.622l-41.196-31.913c-11.024 7.688-25.82 13.055-45.257 13.055-34.523 0-63.824-22.773-74.269-54.25l-1.531.13-40.298 31.187-.527 1.465C35.393 231.798 79.49 261.1 130.55 261.1" fill="#34A853"/><path d="M56.281 156.37c-2.756-8.123-4.351-16.827-4.351-25.82 0-8.994 1.595-17.697 4.206-25.82l-.073-1.73L15.26 71.312l-1.335.635C5.077 89.644 0 109.517 0 130.55s5.077 40.905 13.925 58.602l42.356-32.782" fill="#FBBC05"/><path d="M130.55 50.479c24.514 0 41.05 10.589 50.479 19.438l36.844-35.974C195.245 12.91 165.798 0 130.55 0 79.49 0 35.393 29.301 13.925 71.947l42.211 32.783c10.59-31.477 39.891-54.251 74.414-54.251" fill="#EB4335"/></svg>
+              </div>
+                <p className="text-1xl font-black uppercase">Google Rank</p>
+                <div className="mt-2 flex items-center gap-1 text-sm text-yellow-400">
+                  <FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} className="text-zinc-300" />
                 </div>
               </div>
 
               <div className="relative min-h-[245px] overflow-hidden rounded-[28px] bg-[#122326] shadow-2xl shadow-black/25 sm:min-h-[315px] sm:rounded-[30px]">
-                <Image
-                  src="/images/home-growth-placeholder.svg"
-                  alt="Placeholder growth chart visualization"
+                <Image src="/images/home-hero-image-1.webp" 
+                  alt="Home hero image of a business person analyzing financial data on a laptop"
                   fill
                   sizes="(min-width: 1024px) 220px, 45vw"
                   className="object-cover"
@@ -235,64 +229,42 @@ export default function Home() {
 
             <div className="relative min-h-[405px] overflow-hidden rounded-[28px] bg-[#182225] shadow-2xl shadow-black/30 sm:min-h-[545px] sm:rounded-[30px]">
               <Image
-                src="/images/home-investor-placeholder.svg"
-                alt="Placeholder investor reviewing finance updates"
+                src="/images/home-hero-image-2.Webp"
+                alt="Home hero image of an investor reviewing finance updates"
                 fill
                 priority
                 sizes="(min-width: 1024px) 330px, 55vw"
                 className="object-cover"
               />
-
-              <div className="absolute right-5 top-6 flex items-center gap-3 text-sm font-black">
-                <span>How it works</span>
-                <span className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-[#050b0d]">
-                  <span aria-hidden="true" className="ml-0.5">
-                    &#9658;
-                  </span>
-                </span>
-              </div>
-
-              <div className="absolute bottom-6 left-5 right-5 flex max-w-[230px] items-center gap-4 rounded-full bg-[#66574f]/95 px-4 py-3 text-white shadow-2xl shadow-black/30 backdrop-blur">
-                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white text-xl font-black text-[#050b0d]">
-                  &#10003;
-                </span>
-                <span className="min-w-0">
-                  <span className="block text-sm font-black uppercase">
-                    Invoice Paid
-                  </span>
-                  <span className="block text-sm font-bold">$25,000</span>
-                </span>
-              </div>
             </div>
           </div>
+          </div>
         </section>
-
-        <div className="bg-[radial-gradient(circle_at_24%_18%,#fff0e8_0,#fff7f3_32%,#ffffff_64%)] text-[#172033]">
-          <section className="container mx-auto grid items-center gap-12 py-20 lg:grid-cols-[1.05fr_0.95fr] lg:gap-20 lg:py-28">
-            <div className="relative mx-auto min-h-[360px] w-full max-w-[650px] sm:min-h-[430px]">
-              <div className="absolute left-0 top-0 h-[310px] w-[58%] overflow-hidden rounded-full shadow-[0_24px_70px_rgba(238,63,0,0.12)] sm:h-[390px]">
+        </div>
+        <section className="container mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 md:gap-20 items-center section-mb">
+          <div className="lg:col-span-7">
+            <div className="w-full grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-10 items-center relative">
+              <div className="lg:col-span-6 rounded-[200px] overflow-hidden">
                 <img
-                  src="https://placehold.co/647x342"
-                  alt="Business team placeholder"
-                  title="Business team placeholder"
-                  width="647"
-                  height="342"
+                  src="/images/home-about-us-01.webp"
+                  alt="Home about us image of a business person analyzing financial data on a laptop"
+                  title="Home about us image of a business person analyzing financial data on a laptop"
+                  width="582"
+                  height="759"
                   className="h-full w-full object-cover"
                 />
-              </div>
-
-              <div className="absolute right-0 top-8 h-[310px] w-[58%] overflow-hidden rounded-full shadow-[0_24px_70px_rgba(23,32,51,0.12)] sm:h-[390px]">
+                </div>
+              <div className="lg:col-span-6 rounded-[200px] overflow-hidden">
                 <img
-                  src="https://placehold.co/647x342"
-                  alt="Business meeting placeholder"
-                  title="Business meeting placeholder"
-                  width="647"
-                  height="342"
+                  src="/images/home-about-us-02.webp"
+                  alt="Home about us image of a business person analyzing financial data on a laptop"
+                  title="Home about us image of a business person analyzing financial data on a laptop"
+                  width="582"
+                  height="759"
                   className="h-full w-full object-cover"
                 />
-              </div>
-
-              <div className="absolute left-1/2 top-20 z-10 flex h-36 w-44 -translate-x-1/2 flex-col items-center justify-center rounded-lg bg-[#ee3f00] p-5 text-center text-white shadow-[0_20px_45px_rgba(238,63,0,0.28)] sm:top-24 sm:h-40 sm:w-52">
+                </div>
+                 <div className="absolute left-1/2 top-20 z-10 flex h-36 w-44 -translate-x-1/2 flex-col items-center justify-center rounded-lg bg-light-primary p-5 text-center text-white shadow-[0_20px_45px_rgba(238,63,0,0.28)] sm:top-24 sm:h-40 sm:w-52">
                 <div className="flex h-16 w-16 items-center justify-center rounded-full border-4 border-white text-lg font-black">
                   80%
                 </div>
@@ -300,94 +272,25 @@ export default function Home() {
                   Business Progress
                 </p>
               </div>
+           
             </div>
-
-            <div className="mx-auto max-w-xl lg:mx-0">
-              <p className="text-sm font-semibold text-slate-500">
-                About Business
-              </p>
-              <h2 className="mt-4 text-4xl font-black leading-tight text-[#172033] sm:text-5xl">
-                Smart and effective business agency.
-              </h2>
-              <p className="mt-7 text-base leading-8 text-slate-600">
-                We believe in the power of collaboration and personalized
-                solutions. By understanding our clients&apos; unique needs and
-                goals, we tailor our approach to deliver strategic insights,
-                creative solutions.
-              </p>
-
-              <div className="mt-8 flex flex-wrap items-center gap-7">
-                <div className="flex items-center gap-4">
-                  <span className="flex h-12 w-12 items-center justify-center rounded-full bg-[#ee3f00] text-white">
-                    <svg
-                      aria-hidden="true"
-                      className="h-5 w-5"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                    >
-                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.35 1.9.66 2.8a2 2 0 0 1-.45 2.11L8.05 9.9a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.31 1.84.53 2.8.66A2 2 0 0 1 22 16.92Z" />
-                    </svg>
-                  </span>
-                  <span>
-                    <span className="block text-sm text-slate-500">
-                      Call us anytime
-                    </span>
-                    <span className="block text-lg font-black text-[#172033]">
-                      +256 56778.5678
-                    </span>
-                  </span>
-                </div>
-
-                <p className="font-serif text-2xl italic text-[#172033]">
-                  Jonathon Doe
-                </p>
-              </div>
-
-              <a
-                href="/about"
-                className="mt-8 inline-flex rounded-lg bg-[#ee3f00] px-8 py-4 text-sm font-black text-white transition hover:bg-[#c73500] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ee3f00] focus-visible:ring-offset-2"
-              >
-                About Us
-              </a>
+          </div>
+          <div className="lg:col-span-5">
+            <div className="block" data-aos="fade-left" data-aos-duration="850">
+              <span className="sub-title">About Business</span>
+              <h2>ABOUT PATEL LEGAL ADVISORS</h2>
+              <p>PATEL LEGAL ADVISORS is a fastest growing organization which provides solution of your any business related queries. We here provides all type of Business Registration assistance. PATEL LEGAL ADVISORS was registered in 2022 with a mission to provide best professional services. We have a professional Team players having 5+ years experience in our team as our Team is built with professional Chartered Accountants, Company Secretaries and Lawyers. We provide our Services Pan India.</p>
             </div>
-          </section>
+          </div>
+        </section>      
 
-          <section className="container mx-auto px-6 pb-20 sm:px-9 lg:pb-28">
-            <div className="grid overflow-hidden rounded-lg border border-slate-200 bg-[#f4f4f4] shadow-[0_24px_80px_rgba(23,32,51,0.06)] sm:grid-cols-2 lg:grid-cols-4">
-              {stats.map((item) => (
-                <div
-                  key={item.label}
-                  className="border-b border-slate-200 px-8 py-10 text-center last:border-b-0 sm:nth-even:border-l lg:border-b-0 lg:border-l lg:first:border-l-0"
-                >
-                  <StatIcon />
-                  <p className="mt-7 text-4xl font-black text-[#172033]">
-                    {item.value}
-                  </p>
-                  <p className="mt-4 text-sm text-slate-500">{item.label}</p>
-                </div>
-              ))}
+        <section className="bg-[url(/images/section-bg.webp)] bg-cover bg-center h-full w-full py-15 md:py-20 lg:py-30">
+          <div className="container mx-auto">
+            <div className="mb-10" data-aos="fade-up" data-aos-duration="900" >
+              <h2 className="text-3xl font-black leading-tight sm:text-4xl lg:text-5xl">OUR MAIN SERVICES</h2>
             </div>
-          </section>
-        </div>
-
-        <section className="relative overflow-hidden bg-[#050b0d] px-6 py-20 text-white sm:px-9 lg:py-28">
-          <div className="pointer-events-none absolute -left-16 top-28 h-48 w-48 rounded-full border-[52px] border-[#132226]/80" />
-          <div className="pointer-events-none absolute -right-24 top-60 h-48 w-48 rounded-full border-[52px] border-[#132226]/80" />
-
-          <div className="container relative z-10 mx-auto">
-            <div
-              className="mx-auto max-w-4xl text-center"
-              data-aos="fade-up"
-              data-aos-duration="900"
-            >
-              <h2 className="text-3xl font-black leading-tight sm:text-4xl lg:text-5xl">
-                Choose The Right Level Of Risk For Different Chonks Of You Change
-              </h2>
-            </div>
-
-            <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+          <div className="block">
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-10 items-center">
               {riskLevels.map((item, index) => {
                 const isBlue = item.variant === "blue";
                 const isImage = item.variant === "image";
@@ -395,7 +298,7 @@ export default function Home() {
                 return (
                   <article
                     key={`${item.number}-${item.title}`}
-                    className={`group relative flex min-h-[430px] overflow-hidden rounded-[28px] p-7 transition-all duration-500 ease-out hover:-translate-y-3 hover:shadow-[0_28px_80px_rgba(0,0,0,0.32)] ${
+                    className={`md:col-span-6 lg:col-span-3 group relative flex h-full overflow-hidden rounded-[28px] p-7 transition-all duration-500 ease-out hover:-translate-y-3 hover:shadow-[0_28px_80px_rgba(0,0,0,0.32)] ${
                       isBlue
                         ? "bg-[#d6edf1] text-[#10202a]"
                         : isImage
@@ -408,7 +311,7 @@ export default function Home() {
                     {isImage ? (
                       <>
                         <img
-                          src="https://placehold.co/647x342"
+                          src="/images/home-service-img.webp"
                           alt="Stocks account placeholder"
                           title="Stocks account placeholder"
                           width="647"
@@ -428,9 +331,9 @@ export default function Home() {
                         {item.number} - {item.kicker}
                       </p>
 
-                      <h3 className="mt-12 text-2xl font-black">{item.title}</h3>
+                      <h3 className="mt-12 font-black text-lg">{item.title}</h3>
                       <p
-                        className={`mt-6 text-base leading-8 ${
+                        className={`mt-6 text-base ${
                           isImage
                             ? "font-semibold text-white"
                             : isBlue
@@ -441,26 +344,18 @@ export default function Home() {
                         {item.description}
                       </p>
 
-                      <a
-                        href="/contact"
-                        className={`mt-auto inline-flex w-fit items-center gap-3 rounded-full px-7 py-4 text-sm font-black transition-all duration-300 group-hover:gap-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ${
-                          isBlue
-                            ? "bg-[#155dfc] text-white hover:bg-[#0f46c7] focus-visible:ring-[#155dfc] focus-visible:ring-offset-[#d6edf1]"
-                            : isImage
-                              ? "bg-white text-[#050b0d] hover:bg-[#d6edf1] focus-visible:ring-white focus-visible:ring-offset-[#050b0d]"
-                              : "bg-[#050b0d] text-white hover:bg-[#155dfc] focus-visible:ring-[#050b0d] focus-visible:ring-offset-white"
-                        }`}
-                      >
-                        Learn More
-                        <span aria-hidden="true" className="text-lg leading-none">
-                          &#8599;
-                        </span>
-                      </a>
+                      <Link
+              href="/contact-us"
+              aria-current="page"
+              className="btn-custom btn-primary mt-10 inline-flex items-center gap-3 self-start rounded-full px-8 py-4 text-sm font-black text-white transition duration-300 hover:-translate-y-1 hover:bg-[#a63f04] hover:shadow-[0_18px_38px_rgba(166,63,4,0.24)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#a63f04] focus-visible:ring-offset-2 focus-visible:ring-offset-[#d6edf1]">
+              Know More <FontAwesomeIcon icon={faArrowRight} />
+            </Link>
                     </div>
                   </article>
                 );
               })}
             </div>
+          </div>
           </div>
         </section>
 
@@ -469,17 +364,10 @@ export default function Home() {
         <section className="overflow-hidden bg-[linear-gradient(105deg,#ffffff_0%,#ffffff_55%,#fff1eb_100%)] py-20 text-[#172033] sm:py-24 lg:py-28">
           <div className="container mx-auto grid max-w-7xl items-center gap-12 px-6 sm:px-9 lg:grid-cols-[0.95fr_1.05fr] lg:gap-20">
             <div data-aos="fade-right" data-aos-duration="850">
-              <p className="text-sm font-bold uppercase tracking-wide text-slate-500">
-                Just A Consultancy
-              </p>
-              <h2 className="mt-4 max-w-2xl text-4xl font-black leading-tight sm:text-5xl">
-                We know how to manage business globally
-              </h2>
-              <p className="mt-8 max-w-3xl text-base leading-8 text-slate-600">
-                Porttitor ornare fermentum aliquam pharetra ut facilisis gravida
-                risus best suscipit. dui feugiat fusce conubia ridiculus
-                tristique parturient gilmpci for forgettn meet natoque vulputate
-                risu.
+              <span class="sub-title">About Business</span>
+              <h2 className="mt-4">PATEL LEGAL ADVISORS THE BEST CHOICE!</h2>
+              <p className="mt-8">
+                PATEL LEGAL ADVISORS is a fastest growing organization which provides solution of your any business related queries. We here provides all type of Business Registration assistance. PATEL LEGAL ADVISORS was registered in 2022 with a mission to provide best professional services. We have a professional Team players having 5+ years experience in our team as our Team is built with professional Chartered Accountants, Company Secretaries and Lawyers. We provide our Services Pan India.
               </p>
 
               <div className="mt-10 grid gap-8 sm:grid-cols-2">
@@ -494,7 +382,7 @@ export default function Home() {
                       <ConsultancyIcon type={feature.icon} />
                     </span>
                     <span>
-                      <span className="block text-xl font-black text-[#172033]">
+                      <span className="block font-black text-[#172033]">
                         {feature.title}
                       </span>
                       <span className="mt-3 block text-sm leading-7 text-slate-600">
@@ -507,17 +395,17 @@ export default function Home() {
             </div>
 
             <div
-              className="relative mx-auto w-full max-w-[690px] lg:mx-0"
+              className="mx-auto w-full max-w-[690px] lg:mx-0"
               data-aos="fade-left"
               data-aos-duration="850"
             >
               <div className="relative overflow-hidden rounded-bl-[120px] shadow-[0_28px_80px_rgba(23,32,51,0.12)] sm:rounded-bl-[170px]">
                 <img
-                  src="https://placehold.co/680x370"
+                  src="/images/home-why-choose-us.webp"
                   alt="Consultancy meeting placeholder"
                   title="Consultancy meeting placeholder"
-                  width="680"
-                  height="370"
+                  width="1349"
+                  height="872"
                   className="h-[280px] w-full object-cover transition duration-700 hover:scale-105 sm:h-[370px]"
                 />
               </div>
@@ -527,7 +415,7 @@ export default function Home() {
                 data-aos="zoom-in"
                 data-aos-delay="220"
               >
-                <span className="text-4xl font-black sm:text-5xl">25+</span>
+                <span className="text-4xl font-black sm:text-5xl">05+</span>
                 <span className="mt-3 text-xs font-black sm:text-sm">
                   Year of experience
                 </span>
@@ -573,7 +461,7 @@ export default function Home() {
                 data-aos="fade-left"
                 data-aos-delay="220"
               >
-                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#050b0d] text-white transition duration-300 hover:scale-110 hover:bg-[#a63f04]">
+                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#050b0d] text-white transition duration-300 hover:scale-110 hover:bg-[#a63f04] mb-5">
                   <svg
                     aria-hidden="true"
                     className="h-8 w-8"
@@ -588,25 +476,12 @@ export default function Home() {
                 </div>
 
                 <div className="max-w-2xl">
-                  <h2 className="text-2xl font-black leading-snug sm:text-3xl lg:text-[34px]">
-                    To begin investing, simply register on our website and
-                    complete the verification process.
+                  <h2>
+                    PATEL LEGAL ADVISORS THE BEST CHOICE!
                   </h2>
-                  <p className="mt-6 text-base leading-8 text-[#4a6269] sm:text-lg">
-                    Natoque iaculis cursus augue urna est commodo aptent morbi
-                    tortor porttitor quis ornare tortor sed rutrum molestie
-                    libero primis.
+                  <p className="mt-6">
+                    PATEL LEGAL ADVISORS is a fastest growing organization which provides solution of your any business related queries. We here provides all type of Business Registration assistance. PATEL LEGAL ADVISORS was registered in 2022 with a mission to provide best professional services. We have a professional Team players having 5+ years experience in our team as our Team is built with professional Chartered Accountants, Company Secretaries and Lawyers. We provide our Services Pan India.
                   </p>
-
-                  <a
-                    href="/contact"
-                    className="mt-9 inline-flex items-center gap-3 rounded-full bg-[#050b0d] px-8 py-4 text-sm font-black text-white transition duration-300 hover:-translate-y-1 hover:bg-[#a63f04] hover:shadow-[0_18px_38px_rgba(166,63,4,0.24)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#a63f04] focus-visible:ring-offset-2 focus-visible:ring-offset-[#d6edf1]"
-                  >
-                    Start Now
-                    <span aria-hidden="true" className="text-lg leading-none">
-                      &#8599;
-                    </span>
-                  </a>
                 </div>
               </div>
             </div>
@@ -620,18 +495,9 @@ export default function Home() {
                   data-aos-delay={index * 120}
                 >
                   <h3 className="text-2xl font-black">{feature.title}</h3>
-                  <p className="mt-6 text-base leading-8 text-slate-700">
+                  <p className="mt-6">
                     {feature.description}
                   </p>
-                  <a
-                    href="/services"
-                    className="mt-8 inline-flex items-center gap-3 text-base font-black text-[#050b0d] transition duration-300 group-hover:gap-4 group-hover:text-[#a63f04]"
-                  >
-                    Learn More
-                    <span aria-hidden="true" className="text-xl leading-none">
-                      &#8599;
-                    </span>
-                  </a>
                 </article>
               ))}
             </div>

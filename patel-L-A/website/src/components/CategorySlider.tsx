@@ -5,33 +5,33 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 const categories = [
   {
-    title: "Content Writer",
-    jobs: "2,100 Jobs",
+    title: "All type of business registrations are available with us.",
+    jobs: "REGISTRATIONS",
     icon: "document",
   },
   {
-    title: "Customer Services",
-    jobs: "1,500 Jobs",
+    title: "All type of compliances services are available with us.",
+    jobs: "REGULATORY COMPLIANCES",
     icon: "support",
   },
   {
-    title: "Accounting / Finance",
-    jobs: "9,185 Jobs",
+    title: "Accounting & Book keeping services on Monthly/ annual basis.",
+    jobs: "ACCOUNTING & BOOK KEEPING",
     icon: "finance",
   },
   {
-    title: "Marketing",
-    jobs: "3,205 Jobs",
+    title: "Legal notice reply and other hearing services are available with us",
+    jobs: "LEGAL SERVICES",
     icon: "network",
   },
   {
-    title: "Legal Advisor",
-    jobs: "1,240 Jobs",
+    title: "Business tax filing as well as individual tax filing services are available with us.",
+    jobs: "GST & TAX FILINGS",
     icon: "document",
   },
   {
-    title: "Business Strategy",
-    jobs: "820 Jobs",
+    title: "Business wind up services are available with us.",
+    jobs: "WIND UP BUSINESS",
     icon: "finance",
   },
 ];
@@ -99,16 +99,9 @@ export default function CategorySlider() {
       <div className="container mx-auto max-w-7xl px-6 sm:px-9">
         <div className="grid items-end gap-8 lg:grid-cols-[0.9fr_1.1fr]">
           <div data-aos="fade-right">
-            <p className="text-lg font-black text-[#a63f04]">Jobs by Categories</p>
-            <h2 className="mt-6 max-w-xl text-4xl font-black leading-tight sm:text-5xl lg:text-6xl">
-              Choose Your Desire Category
-            </h2>
+            <span class="sub-title">About Business</span>
+            <h2 className="mt-6 ">CA, CS, LAWYERS AT ONE PLACE</h2>
           </div>
-
-          <p className="max-w-3xl text-base leading-8 text-slate-700 lg:justify-self-end" data-aos="fade-left">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry the standard dummy text ever since the when an printer took.
-          </p>
         </div>
 
         <div className="mt-16" data-aos="fade-up">
@@ -128,23 +121,21 @@ export default function CategorySlider() {
             speed={750}
             breakpoints={{
               0: { slidesPerView: 1 },
-              640: { slidesPerView: 1.35 },
               768: { slidesPerView: 2 },
-              1024: { slidesPerView: 3 },
-              1280: { slidesPerView: 3.6 },
+              1280: { slidesPerView: 3 },
             }}
             className="!overflow-visible"
           >
             {categories.map((category) => (
               <SwiperSlide key={`${category.title}-${category.jobs}`} className="!h-auto">
                 <article className="group relative flex min-h-[170px] items-center overflow-hidden rounded-lg bg-white p-8 shadow-[0_20px_50px_rgba(36,73,104,0.12)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_28px_70px_rgba(166,63,4,0.18)]">
-                  <div className="absolute left-0 top-0 h-full w-32 rounded-r-full bg-[#a63f04]/10 transition-all duration-500 group-hover:w-40 group-hover:bg-[#a63f04]/15" />
+                  <div className="absolute left-0 top-0 h-full w-32 rounded-r-full bg-primary/10 transition-all duration-500 group-hover:w-40 group-hover:bg-primary/15" />
                   <div className="relative z-10 flex w-full items-center gap-7">
-                    <div className="flex h-24 w-24 shrink-0 items-center justify-center rounded-lg text-[#a63f04] transition duration-500 group-hover:scale-110">
+                    <div className="flex h-24 w-24 shrink-0 items-center justify-center rounded-lg text-primary transition duration-500 group-hover:scale-110">
                       <CategoryIcon type={category.icon} />
                     </div>
                     <div className="min-w-0">
-                      <span className="inline-flex rounded-lg bg-[#a63f04] px-5 py-2 text-sm font-black text-white">
+                      <span className="inline-flex rounded-lg bg-primary px-5 py-2 text-sm font-black text-white">
                         {category.jobs}
                       </span>
                       <h3 className="mt-4 text-lg font-semibold text-[#111827]">
@@ -163,25 +154,18 @@ export default function CategorySlider() {
             <button
               type="button"
               aria-label="Previous category"
-              className="category-slider-prev flex h-12 w-12 items-center justify-center rounded-full bg-[#a63f04] text-white shadow-[0_16px_35px_rgba(166,63,4,0.22)] transition hover:-translate-y-1 hover:bg-[#843103] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#a63f04] focus-visible:ring-offset-2"
+              className="category-slider-prev flex h-12 w-12 items-center justify-center rounded-full bg-primary text-white shadow-[0_16px_35px_rgba(166,63,4,0.22)] transition hover:-translate-y-1 hover:bg-[#843103] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
             >
               <ChevronIcon direction="left" />
             </button>
             <button
               type="button"
               aria-label="Next category"
-              className="category-slider-next flex h-12 w-12 items-center justify-center rounded-full bg-[#a63f04] text-white shadow-[0_16px_35px_rgba(166,63,4,0.22)] transition hover:-translate-y-1 hover:bg-[#843103] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#a63f04] focus-visible:ring-offset-2"
+              className="category-slider-next flex h-12 w-12 items-center justify-center rounded-full bg-primary text-white shadow-[0_16px_35px_rgba(166,63,4,0.22)] transition hover:-translate-y-1 hover:bg-[#843103] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
             >
               <ChevronIcon direction="right" />
             </button>
           </div>
-
-          <a
-            href="/services"
-            className="inline-flex rounded-lg bg-[#a63f04] px-10 py-5 text-base font-black text-white shadow-[0_18px_38px_rgba(166,63,4,0.18)] transition hover:-translate-y-1 hover:bg-[#843103] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#a63f04] focus-visible:ring-offset-2"
-          >
-            All Categories
-          </a>
         </div>
       </div>
     </section>

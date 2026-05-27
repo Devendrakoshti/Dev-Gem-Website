@@ -283,9 +283,9 @@ export default function Navbar() {
   const [isMobileMegaOpen, setIsMobileMegaOpen] = useState(false);
 
   return (
-    <header className="z-50 w-full">
+    <header className="z-50 w-full fixed top-0 right-0">
       <nav aria-label="Primary navigation" className="w-full bg-gray-100">
-        <div className="nav-top py-2 px-3 border-b border-gray-400 bg-black text-white">
+        <div className="nav-top hidden md:block py-2 px-3 border-b border-gray-400 bg-black text-white">
           <div className="flex items-center justify-between gap-4 text-sm">
             <div className="block">
               <span>Are you ready to grow up your business? <Link href="/contact-us" aria-label="Patel Legal Advisors" title="Contact To Growth With Us" className="text-primary font-bold">Contact US <FontAwesomeIcon icon={faArrowRight} /></Link></span>
@@ -299,7 +299,7 @@ export default function Navbar() {
         <div className="flex px-3 items-center justify-between gap-5 relative">
           <div className="block">
             <Link href="/" aria-label="Patel Legal Advisors" title="Patel Legal Advisors" className="flex min-w-0 items-center gap-3 text-white outline-none transition-opacity hover:opacity-90 focus-visible:rounded-full focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[#121d22]">
-              <Image src="/images/patel-legal-advisors-logo.svg" width={80} height={80} alt=" Logo"/>
+              <Image src="/image/patel-legal-advisors-logo.svg" width={80} height={80} alt=" Logo"/>
             </Link>
           </div>
           <div className="hidden items-center gap-7 lg:flex">
@@ -350,7 +350,7 @@ export default function Navbar() {
               href="/contact-us"
               aria-current="page"
               className="btn-custom btn-primary">
-              Contact Us <FontAwesomeIcon icon={faArrowRight} />
+              Request a Quote <FontAwesomeIcon icon={faArrowRight} />
             </Link>
           </div>
 

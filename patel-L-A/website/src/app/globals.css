@@ -2,6 +2,7 @@
 
 :root {
   --primary-color: #a63f04;
+  --primary-light-color: #d29f81;
   --white-color: #ffffff;
   --gray-bg: #f5f5f5;
   --dark-bg:#080C0E;
@@ -39,10 +40,19 @@ body {
 .bg-gray{
   background-color: var(--gray-bg);
 }
+.bg-primary{
+  background-color: var(--primary-color);
+}
+.bg-light-primary{
+  background-color: var(--primary-light-color);
+}
 .text-primary{
   color: var(--primary-color);
 }
-
+.container{
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
 h1,
 h2,
@@ -96,10 +106,48 @@ h6 {
 .btn-primary:hover::before {
 	width: 100%;
 }
+.main{
+  padding-top: 120px;
+}
+.banner-title{
+  font-size: clamp(30px, 4vw, 50px);
+  font-weight: 900;
+}
+h2{
+  font-size: clamp(24px, 3vw, 36px);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: var(--font-black);
+}
+h3{
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+.section-mb{
+  margin-bottom: 100px;
+}
+.sub-title{
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--primary-color);
+  display: inline-block;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 80px;
+}
+.sub-title::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 4px;
+  background-color: var(--primary-color);
 
-
-
-
+}
 
 
 
@@ -117,4 +165,14 @@ h6 {
   border-color: #ffffff;
   height: 14px;
   width: 14px;
+}
+@media screen and (max-width: 576px){
+  .main{
+    padding-top: 70px;
+  }
+  .btn-custom {
+		padding: 12px 20px;
+		font-size: 12px;
+	}
+  
 }
