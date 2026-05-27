@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const socialLinks = ["f", "X", "◎", "in", "s"];
 
@@ -78,14 +79,8 @@ export default function Footer() {
       <div className="container mx-auto max-w-7xl px-6 py-16 sm:px-9 lg:py-24">
         <div className="grid gap-12 lg:grid-cols-[1.2fr_1fr_0.85fr] lg:gap-20">
           <div>
-            <Link href="/" aria-label="Invena home" className="inline-flex items-center gap-4">
-              <BrandIcon />
-              <span>
-                <span className="block text-4xl font-black leading-none">Invena</span>
-                <span className="block text-sm font-semibold text-slate-600">
-                  Business Solution
-                </span>
-              </span>
+            <Link href="/" aria-label="Patel Legal Advisors" title="Patel Legal Advisors" className="flex min-w-0 items-center gap-3 text-white outline-none transition-opacity hover:opacity-90 focus-visible:rounded-full focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[#121d22]">
+              <Image src="/images/patel-legal-advisors-logo.svg" width={130} height={130} alt=" Logo"/>
             </Link>
 
             <p className="mt-10 max-w-sm text-base leading-8 text-slate-600">

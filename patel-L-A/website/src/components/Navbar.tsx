@@ -299,7 +299,7 @@ export default function Navbar() {
         <div className="flex px-3 items-center justify-between gap-5 relative">
           <div className="block">
             <Link href="/" aria-label="Patel Legal Advisors" title="Patel Legal Advisors" className="flex min-w-0 items-center gap-3 text-white outline-none transition-opacity hover:opacity-90 focus-visible:rounded-full focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[#121d22]">
-              <Image src="/image/patel-legal-advisors-logo.svg" width={80} height={80} alt=" Logo"/>
+              <Image src="/images/patel-legal-advisors-logo.svg" width={80} height={80} alt=" Logo"/>
             </Link>
           </div>
           <div className="hidden items-center gap-7 lg:flex">
