@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import Image from "next/image";
-import CategorySlider from "@/components/CategorySlider";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import TestimonialSlider from "@/components/TestimonialSlider";
@@ -19,7 +18,7 @@ const riskLevels = [
   {
     number: "01",
     kicker: "Automated Bond Portfolio",
-    title: "REGISTRATION SERVICES",
+    title: "Registration Services",
     description:
       "We Register Company / LLP/ Partnership Firm as per your Requirement. Registrations of GST, FSSAI, DSC, DIN, MSME, IEC etc.",
     variant: "white",
@@ -28,7 +27,7 @@ const riskLevels = [
   {
     number: "02",
     kicker: "Automated Invest Account",
-    title: "COMPLIANCE MANAGEMENT",
+    title: "Compliance Management",
     description:
       "Compliances for Companies, LLPs, Partnerships & Sole Proprietors etc. Drafting of Your documents, contracts, and registrations.",
     variant: "white",
@@ -37,7 +36,7 @@ const riskLevels = [
   {
     number: "03",
     kicker: "Cash Account",
-    title: "TAX PREPARATION",
+    title: "Tax Preparation",
     description:
       "GST & Income Tax Services For Individuals, LLP & Companies Etc.",
     variant: "white",
@@ -46,7 +45,7 @@ const riskLevels = [
   {
     number: "04",
     kicker: "Stocks Account",
-    title: "ACCOUNTING AND BOOKKEEPING",
+    title: "Accounting and Bookkeeping",
     description:
       "Accounting & Book keeping services on Monthly/ annual basis.",
     variant: "image",
@@ -194,9 +193,9 @@ export default function Home() {
     <div className="min-h-screen overflow-hidden">
       <Navbar />
       <main className="main">
-        <div className="bg-[url(/images/section-bg.webp)] bg-cover bg-center h-full w-full py-15 md:py-20 lg:py-30 section-mb">
+        <div className="section-gradient-bg h-full w-full py-15 md:py-20 lg:py-30 section-mb">
         <section className="container mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-10 items-center">
-          <div className="lg:col-span-7 text-white">
+          <div className="lg:col-span-7">
             <h1 className="leading-tight banner-title">
               Complete Legal, Compliance & Registration Services for Businesses in India
             </h1>
@@ -207,7 +206,7 @@ export default function Home() {
           <div className="lg:col-span-5">
             <div className="grid w-full grid-cols-1 gap-5 sm:grid-cols-[0.68fr_1fr] sm:gap-6 lg:mx-0">
             <div className="flex flex-col gap-5 sm:gap-6">
-              <div className="rounded-[28px] bg-[#d6edf1] p-6 text-[#050b0d] shadow-2xl shadow-black/20 sm:rounded-[30px] sm:p-7">
+              <div className="rounded-[28px] bg-white p-6 text-[#050b0d] shadow-2xl shadow-black/20 sm:rounded-[30px] sm:p-7">
               <div className="flex items-center mb-4">
                   <svg width="45px" height="45px" viewBox="-3 0 262 262" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid"><path d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130.55v48.448h71.947c-1.45 12.04-9.283 30.172-26.69 42.356l-.244 1.622 38.755 30.023 2.685.268c24.659-22.774 38.875-56.282 38.875-96.027" fill="#4285F4"/><path d="M130.55 261.1c35.248 0 64.839-11.605 86.453-31.622l-41.196-31.913c-11.024 7.688-25.82 13.055-45.257 13.055-34.523 0-63.824-22.773-74.269-54.25l-1.531.13-40.298 31.187-.527 1.465C35.393 231.798 79.49 261.1 130.55 261.1" fill="#34A853"/><path d="M56.281 156.37c-2.756-8.123-4.351-16.827-4.351-25.82 0-8.994 1.595-17.697 4.206-25.82l-.073-1.73L15.26 71.312l-1.335.635C5.077 89.644 0 109.517 0 130.55s5.077 40.905 13.925 58.602l42.356-32.782" fill="#FBBC05"/><path d="M130.55 50.479c24.514 0 41.05 10.589 50.479 19.438l36.844-35.974C195.245 12.91 165.798 0 130.55 0 79.49 0 35.393 29.301 13.925 71.947l42.211 32.783c10.59-31.477 39.891-54.251 74.414-54.251" fill="#EB4335"/></svg>
               </div>
@@ -278,16 +277,17 @@ export default function Home() {
           <div className="lg:col-span-5">
             <div className="block" data-aos="fade-left" data-aos-duration="850">
               <span className="sub-title">About Business</span>
-              <h2>ABOUT PATEL LEGAL ADVISORS</h2>
-              <p>PATEL LEGAL ADVISORS is a fastest growing organization which provides solution of your any business related queries. We here provides all type of Business Registration assistance. PATEL LEGAL ADVISORS was registered in 2022 with a mission to provide best professional services. We have a professional Team players having 5+ years experience in our team as our Team is built with professional Chartered Accountants, Company Secretaries and Lawyers. We provide our Services Pan India.</p>
+              <h2>About Patel Legal Advisors</h2>
+              <p>Patel Legal Advisors is a fastest growing organization which provides solution of your any business related queries. We here provides all type of Business Registration assistance. Patel Legal Advisors was registered in 2022 with a mission to provide best professional services. We have a professional Team players having 5+ years experience in our team as our Team is built with professional Chartered Accountants, Company Secretaries and Lawyers. We provide our Services Pan India.</p>
             </div>
           </div>
         </section>      
 
-        <section className="bg-[url(/images/section-bg.webp)] bg-cover bg-center h-full w-full py-15 md:py-20 lg:py-30">
+        <section className="h-full w-full py-15 md:py-20 lg:py-30">
           <div className="container mx-auto">
             <div className="mb-10" data-aos="fade-up" data-aos-duration="900" >
-              <h2 className="text-3xl font-black leading-tight sm:text-4xl lg:text-5xl">OUR MAIN SERVICES</h2>
+              <span className="sub-title">Services</span>
+              <h2 className="text-3xl font-black leading-tight sm:text-4xl lg:text-5xl">Our Main Services</h2>
             </div>
           <div className="block">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-10 items-center">
@@ -296,134 +296,27 @@ export default function Home() {
                 const isImage = item.variant === "image";
 
                 return (
-                  <article
-                    key={`${item.number}-${item.title}`}
-                    className={`md:col-span-6 lg:col-span-3 group relative flex h-full overflow-hidden rounded-[28px] p-7 transition-all duration-500 ease-out hover:-translate-y-3 hover:shadow-[0_28px_80px_rgba(0,0,0,0.32)] ${
-                      isBlue
-                        ? "bg-[#d6edf1] text-[#10202a]"
-                        : isImage
-                          ? "bg-[#151919] text-white"
-                          : "bg-white text-[#050b0d]"
-                    }`}
-                    data-aos={item.aos}
-                    data-aos-delay={index * 120}
-                  >
-                    {isImage ? (
-                      <>
-                        <img
-                          src="/images/home-service-img.webp"
-                          alt="Stocks account placeholder"
-                          title="Stocks account placeholder"
-                          width="647"
-                          height="342"
-                          className="absolute inset-0 h-full w-full object-cover opacity-60 transition duration-700 group-hover:scale-110 group-hover:opacity-75"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-[#111]/80 to-[#191919]" />
-                      </>
-                    ) : null}
-
+                  <article key={`${item.number}-${item.title}`} className={`md:col-span-6 lg:col-span-3 group relative flex h-full overflow-hidden rounded-[28px] p-7 bg-gray `} data-aos={item.aos} data-aos-delay={index * 120} >                 
                     <div className="relative z-10 flex h-full w-full flex-col">
-                      <p
-                        className={`text-sm font-semibold ${
-                          isImage ? "text-white" : "text-[#21333a]"
-                        }`}
-                      >
+                      <p className={`text-sm font-semibold `}>
                         {item.number} - {item.kicker}
                       </p>
-
-                      <h3 className="mt-12 font-black text-lg">{item.title}</h3>
-                      <p
-                        className={`mt-6 text-base ${
-                          isImage
-                            ? "font-semibold text-white"
-                            : isBlue
-                              ? "text-[#3f5961]"
-                              : "text-slate-700"
-                        }`}
-                      >
+                      <h3 className="mt-12 text-lg">{item.title}</h3>
+                      <p className={`text-base mb-25`} >
                         {item.description}
                       </p>
-
-                      <Link
-              href="/contact-us"
-              aria-current="page"
-              className="btn-custom btn-primary mt-10 inline-flex items-center gap-3 self-start rounded-full px-8 py-4 text-sm font-black text-white transition duration-300 hover:-translate-y-1 hover:bg-[#a63f04] hover:shadow-[0_18px_38px_rgba(166,63,4,0.24)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#a63f04] focus-visible:ring-offset-2 focus-visible:ring-offset-[#d6edf1]">
-              Know More <FontAwesomeIcon icon={faArrowRight} />
-            </Link>
+                      <div className="absolute bottom-0">
+                        
+                      <Link href="/contact-us" aria-current="page" className="btn-custom btn-primary"> Know More <FontAwesomeIcon icon={faArrowRight} /></Link>
+                      </div>
                     </div>
-                  </article>
+                  </article>  
                 );
               })}
             </div>
           </div>
           </div>
         </section>
-
-        <CategorySlider />
-
-        <section className="overflow-hidden bg-[linear-gradient(105deg,#ffffff_0%,#ffffff_55%,#fff1eb_100%)] py-20 text-[#172033] sm:py-24 lg:py-28">
-          <div className="container mx-auto grid max-w-7xl items-center gap-12 px-6 sm:px-9 lg:grid-cols-[0.95fr_1.05fr] lg:gap-20">
-            <div data-aos="fade-right" data-aos-duration="850">
-              <span class="sub-title">About Business</span>
-              <h2 className="mt-4">PATEL LEGAL ADVISORS THE BEST CHOICE!</h2>
-              <p className="mt-8">
-                PATEL LEGAL ADVISORS is a fastest growing organization which provides solution of your any business related queries. We here provides all type of Business Registration assistance. PATEL LEGAL ADVISORS was registered in 2022 with a mission to provide best professional services. We have a professional Team players having 5+ years experience in our team as our Team is built with professional Chartered Accountants, Company Secretaries and Lawyers. We provide our Services Pan India.
-              </p>
-
-              <div className="mt-10 grid gap-8 sm:grid-cols-2">
-                {consultancyFeatures.map((feature, index) => (
-                  <div
-                    key={feature.title}
-                    className="group flex gap-5"
-                    data-aos="fade-up"
-                    data-aos-delay={index * 120}
-                  >
-                    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded bg-[#1c252c] text-white transition duration-300 group-hover:-translate-y-1 group-hover:bg-[#a63f04] group-hover:shadow-[0_14px_28px_rgba(166,63,4,0.24)]">
-                      <ConsultancyIcon type={feature.icon} />
-                    </span>
-                    <span>
-                      <span className="block font-black text-[#172033]">
-                        {feature.title}
-                      </span>
-                      <span className="mt-3 block text-sm leading-7 text-slate-600">
-                        {feature.description}
-                      </span>
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div
-              className="mx-auto w-full max-w-[690px] lg:mx-0"
-              data-aos="fade-left"
-              data-aos-duration="850"
-            >
-              <div className="relative overflow-hidden rounded-bl-[120px] shadow-[0_28px_80px_rgba(23,32,51,0.12)] sm:rounded-bl-[170px]">
-                <img
-                  src="/images/home-why-choose-us.webp"
-                  alt="Consultancy meeting placeholder"
-                  title="Consultancy meeting placeholder"
-                  width="1349"
-                  height="872"
-                  className="h-[280px] w-full object-cover transition duration-700 hover:scale-105 sm:h-[370px]"
-                />
-              </div>
-
-              <div
-                className="absolute -top-6 left-6 flex h-32 w-36 flex-col items-center justify-center rounded-lg bg-[#a63f04] text-center text-white shadow-[0_22px_45px_rgba(166,63,4,0.28)] sm:-top-10 sm:left-[-24px] sm:h-40 sm:w-40"
-                data-aos="zoom-in"
-                data-aos-delay="220"
-              >
-                <span className="text-4xl font-black sm:text-5xl">05+</span>
-                <span className="mt-3 text-xs font-black sm:text-sm">
-                  Year of experience
-                </span>
-              </div>
-            </div>
-          </div>
-        </section>
-
         <section className="bg-[#f6f7f8] py-20 text-[#050b0d] sm:py-24 lg:py-28">
           <div className="container mx-auto max-w-7xl px-6 sm:px-9">
             <div className="grid gap-8 lg:grid-cols-[0.72fr_0.72fr_1.48fr]">
@@ -457,7 +350,7 @@ export default function Home() {
               </div>
 
               <div
-                className="flex min-h-[360px] flex-col justify-between rounded-[28px] bg-[#d6edf1] p-8 shadow-[0_24px_70px_rgba(5,11,13,0.08)] sm:p-10 lg:min-h-[450px]"
+                className="flex min-h-[360px] flex-col justify-between rounded-[28px] bg-[#ffffff] p-8 shadow-[0_24px_70px_rgba(5,11,13,0.08)] sm:p-10 lg:min-h-[450px]"
                 data-aos="fade-left"
                 data-aos-delay="220"
               >
@@ -476,11 +369,9 @@ export default function Home() {
                 </div>
 
                 <div className="max-w-2xl">
-                  <h2>
-                    PATEL LEGAL ADVISORS THE BEST CHOICE!
-                  </h2>
+                  <h2>Patel Legal Advisors The Best Choice!</h2>
                   <p className="mt-6">
-                    PATEL LEGAL ADVISORS is a fastest growing organization which provides solution of your any business related queries. We here provides all type of Business Registration assistance. PATEL LEGAL ADVISORS was registered in 2022 with a mission to provide best professional services. We have a professional Team players having 5+ years experience in our team as our Team is built with professional Chartered Accountants, Company Secretaries and Lawyers. We provide our Services Pan India.
+                     is a fastest growing organization which provides solution of your any business related queries. We here provides all type of Business Registration assistance.  was registered in 2022 with a mission to provide best professional services. We have a professional Team players having 5+ years experience in our team as our Team is built with professional Chartered Accountants, Company Secretaries and Lawyers. We provide our Services Pan India.
                   </p>
                 </div>
               </div>
