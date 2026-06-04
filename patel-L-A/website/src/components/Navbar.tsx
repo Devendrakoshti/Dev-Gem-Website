@@ -223,7 +223,7 @@ function MegaMenuContent({ onNavigate }: { onNavigate?: () => void }) {
           {activeGroup.links.map((label) => (
             <Link
               key={`${activeGroup.title}-${label}`}
-              href={`/${slugify(label)}`}
+              href={`/services/${slugify(label)}`}
               onClick={onNavigate}
               className="group/link flex min-h-12 items-center gap-2 border-b border-slate-100 py-3 text-sm font-bold text-[#050b0d] transition-colors hover:text-[var(--primary-color)]"
             >
@@ -263,7 +263,7 @@ function MobileServicesMenu({ onNavigate }: { onNavigate?: () => void }) {
               {group.links.map((label) => (
                 <Link
                   key={`${group.title}-${label}`}
-                  href={`/${slugify(label)}`}
+                  href={`/services/${slugify(label)}`}
                   onClick={onNavigate}
                   className="block border-t border-white/10 px-5 py-4 text-sm font-bold text-white transition-colors hover:text-[var(--primary-color)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-white/70"
                 >
@@ -299,7 +299,7 @@ export default function Navbar() {
         <div className="flex px-3 items-center justify-between gap-5 relative">
           <div className="block">
             <Link href="/" aria-label="Patel Legal Advisors" title="Patel Legal Advisors" className="flex min-w-0 items-center gap-3 text-white outline-none transition-opacity hover:opacity-90 focus-visible:rounded-full focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[#121d22]">
-              <Image src="/images/patel-legal-advisors-logo.svg" width={80} height={80} alt=" Logo"/>
+              <Image src="/image/patel-legal-advisors-logo.svg" width={80} height={80} alt=" Logo"/>
             </Link>
           </div>
           <div className="hidden items-center gap-7 lg:flex">
