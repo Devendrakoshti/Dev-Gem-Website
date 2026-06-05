@@ -253,26 +253,6 @@ export default function MSMERegistrationPage() {
 
               <div data-aos="fade-left" data-aos-duration="850">
                 <div className="rounded-lg border border-[#a63f04]/15 bg-white p-5 shadow-[0_32px_100px_rgba(166,63,4,0.15)] sm:p-6">
-                  <div className="relative mb-6 min-h-[230px] overflow-hidden rounded-lg bg-[#141617] sm:min-h-[290px]">
-                    <Image
-                      src="/images/home-service-img.webp"
-                      alt="MSME registration documents and business compliance support"
-                      fill
-                      priority
-                      sizes="(min-width: 1024px) 480px, 100vw"
-                      className="object-cover opacity-85"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#141617]/75 via-transparent to-transparent" />
-                    <div className="absolute bottom-5 left-5 right-5 text-white">
-                      <p className="text-sm font-black uppercase tracking-[0.16em] text-[#d29f81]">
-                        Quick Enquiry
-                      </p>
-                      <p className="mt-2 text-2xl font-black">
-                        Get MSME support from Patel Legal Advisors
-                      </p>
-                    </div>
-                  </div>
-
                   <form className="grid gap-4" aria-label="MSME registration enquiry form">
                     <div className="grid gap-4 sm:grid-cols-2">
                       <input

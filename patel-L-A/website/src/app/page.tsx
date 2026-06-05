@@ -537,8 +537,7 @@ export default function Home() {
                     Why Do You Choose Us?
                   </p>
                   <h2 className="mt-5 text-3xl font-black leading-tight text-white sm:text-4xl lg:text-5xl">
-                    Built for founders who want reliable execution, not legal
-                    confusion.
+                    Built for founders who want reliable execution, not legal confusion.
                   </h2>
                   <p className="mt-6 text-base leading-8 text-white/70">
                     Every business decision gets a clearer route: expert

@@ -71,7 +71,7 @@ h4,
 h5,
 h6 {
   font-family: var(--font-heading);
-  color: #141617;
+  /* color: #141617; */
 }
 h1 span, h2 span{
    background: -webkit-linear-gradient(#a63f04, #333);
@@ -135,7 +135,7 @@ h2{
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 20px;
-  color: var(--font-black);
+  /* color: var(--font-black); */
 }
 h3{
   font-weight: 700;
