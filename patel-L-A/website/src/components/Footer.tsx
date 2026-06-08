@@ -160,7 +160,7 @@ export default function Footer() {
       <div className="absolute -left-24 top-16 h-72 w-72 rounded-full bg-[#a63f04]/10 blur-3xl" />
       <div className="absolute -right-24 bottom-10 h-72 w-72 rounded-full bg-[#d29f81]/25 blur-3xl" />
 
-      <div className="container relative z-10 mx-auto max-w-7xl px-6 py-16 sm:px-9 lg:py-20">
+      <div className="container-fullz-10">
         <div className="rounded-lg border border-[#a63f04]/15 bg-white/75 p-6 shadow-[0_30px_100px_rgba(166,63,4,0.10)] backdrop-blur sm:p-8 lg:p-10">
           <div className="grid gap-12 lg:grid-cols-[1.15fr_1fr_0.9fr] lg:gap-14">
             <div>
