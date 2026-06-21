@@ -34,7 +34,7 @@ const ServiceProcess: React.FC<ServiceProcessProps> = ({ data }) => {
         </div>
 
         {/* Steps */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-4">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-4">
           {data.process.steps.map((step, idx) => (
             <div key={idx} className="relative" data-aos="fade-up" data-aos-delay={idx * 120}>
               {/* Connector line for desktop */}
@@ -54,12 +54,11 @@ const ServiceProcess: React.FC<ServiceProcessProps> = ({ data }) => {
                   {String(idx + 1).padStart(2, '0')}
                 </div>
 
-                <h3 className="text-xl font-extrabold text-slate-900 mb-3">{step.title}</h3>
-                <p className="text-slate-500 text-sm leading-relaxed">{step.description}</p>
-
-                {/* Bottom accent */}
-                <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-[#a63f04] to-[#e65a05] rounded-b-2xl scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+                <h3 className="text-xl font-extrabold text-slate-900 mb-3">{step}</h3>
               </div>
+
+
+              
             </div>
           ))}
         </div>

@@ -45,48 +45,6 @@ export interface ServiceData {
 }
 
 export const services: Record<string, ServiceData> = {
-  "gst-registration": {
-    metaTitle: "GST Registration",
-    metaDescription: "Union Ministry of Micro, Small and Medium Enterprises (M/o MSMEs) has issued Gazette notification to pave way for implementation of the upward revision in the definition and criteria of MSMEs in the country.",
-    title: "GST Registration",
-    description:
-      "Fast GST registration service for businesses.",
-
-    benefits: [
-      "GST Compliance",
-      "Input Tax Credit",
-      "Legal Business Operations"
-    ],
-
-    faqs: [
-      {
-        question: "Who needs GST?",
-        answer: "Businesses crossing threshold limits."
-      }
-    ],
-    paragraphs: [
-      "Union Ministry of Micro, Small and Medium Enterprises (M/o MSMEs) has issued Gazette notification to pave way for implementation of the upward revision in the definition and criteria of MSMEs in the country. The new definition and criterion will come into effect from 1st July, 2020.",
-      "After 14 years since the MSME Development Act came into existence in 2006, a revision in MSME definition was announced in the Atmnirbhar Bharat package on 13th May, 2020. As per this announcement, the definition of Micro manufacturing and services units was increased to Rs. 1 Crore of investment and Rs. 5 Crore of turnover. The limit of small unit was increased to Rs. 10 Crore of investment and Rs 50 Crore of turnover. Similarly, the limit of medium unit was increased to Rs. 20 Crore of investment and Rs. 100 Crore of turnover."
-    ],
-    price: "STARTING FROM RS. 1799/-",
-    cta: "KNOW ABOUT PACKAGE",
-    definition: {
-      title: "DEFINITION OF MSME",
-      paragraphs: [
-        "MSME stands for micro, small and medium enterprises and any enterprise that falls under any of these three categories. MSME enterprises are the backbone of any economy and are an engine of economic growth, promoting equitable development for all. MSME Enterprises are typically more labour intensive than large corporates and provide tremendous employment potential at a very low capital cost. MSME also share a major portion of industrial production and exports in India. It also plays a pivotal role in the development of the industrial economy.",
-        "Therefore, to promote and develop MSMEs; the MSMED Act of India facilitates the promotion and development of enterprises through many incentives, schemes and subsidies. To obtain the benefits under the MSMED Act, MSME Registration is a must and proprietorship firms, partnership firms, LLPs, Private Limited Company's and Public Limited Companies can register."
-      ]
-    },
-    benefitsSection: {
-      title: "BENEFITS OF MSME REGISTRATION",
-      paragraphs: [
-        "The MSME registration is not statutory. However, the MSME registration process in India has been conceptualised to provide maximum benefits to all types of enterprises. After registration, any enterprise becomes qualified to reap the benefits offered under the MSMED Act. Some of the benefits from Central Government include easy sanction of bank loans (Priority sector lending), lower rates of interest, excise exemption scheme, the exemption under Direct Tax Laws and statutory support such as reservation and the Interest on Delayed Payments Act.",
-        "State Government and Union Territories also have complied their own package of facilities and incentives for MSMEs. Some of the benefits provided by the State Government for MSMEs include the development of specialized industrial estates, tax subsidies, power tariff subsidies, capital investment subsidies and other support. Both the Centre and the State, whether under law or otherwise, target their incentives and support packages generally to units registered with them.",
-        "Banking Laws, Excise Law and the Direct Taxes Law have incorporated the word MSME in their exemption notifications. Therefore, the registration certificate issued by the registering authority is seen as proof of being MSME and is required to avail the benefits sanctioned for MSMEs."
-      ]
-    }
-  },  
-
   "msme-registration": {
     metaTitle: "MSME Registration Online | Udyam Registration – Patel Legal Advisors",
     metaDescription: "Get your MSME / Udyam Registration done online quickly. Enjoy government subsidies, lower interest rates, tax benefits and more. Expert assistance from Patel Legal Advisors.",
@@ -198,10 +156,10 @@ export const services: Record<string, ServiceData> = {
       "Private Limited Company incorporation support with name approval, DSC, company forms, incorporation certificate, PAN, TAN and compliance guidance.",
     title: "Private Limited Company",
     description:
-      "A company is a type of business structure that is a separate legal entity from its owners. It is a complex business structure, with higher set-up and administrative costs because of extra reporting requirements and higher-level legal obligations.",
+      "A company is a type of business structure that is a separate legal entity from its owners. It's a complex business structure, with higher set-up and administrative costs because of extra reporting requirements and higher-level legal obligations.",
 
     paragraphs: [
-      "A company is a type of business structure that is a separate legal entity from its owners. It is a complex business structure, with higher set-up and administrative costs because of extra reporting requirements and higher-level legal obligations.",
+      "A company is a type of business structure that is a separate legal entity from its owners. It's a complex business structure, with higher set-up and administrative costs because of extra reporting requirements and higher-level legal obligations.",
     ],
 
     price: "STARTING FROM RS. 10999/-",
@@ -209,17 +167,29 @@ export const services: Record<string, ServiceData> = {
     ctaTitle: "Ready to Incorporate Your Private Limited Company?",
     ctaDescription:
       "Our expert team of CAs, CS and Lawyers will guide you through name approval, DSC, incorporation filing, PAN, TAN and post-incorporation support.",
+    definition: {
+      title: "Private Limited Company Registration",
+      paragraphs: [
+        "Company formation is the process of incorporating (registering) a business in the form of a limited company. When a company is registered, it becomes a separate legal entity; a ‘person’ that is completely distinct from its owners and responsible for its own finances, assets, and liabilities.",
+        "This means that, if the company becomes insolvent, the owners (shareholders or guarantors) are not held personally liable for any of its debts or liability claims beyond the sums they have invested in shares or committed to pay in guarantees (except in rare cases, such as fraud). This financial protection is known as ‘limited liability’.",
+      ],
+    },
 
-    benefits: [
-      "Separate legal entity",
-      "Limited liability protection",
-      "Higher business credibility",
-      "Structured shareholding",
-      "Better fundraising readiness",
-      "PAN and TAN support",
-      "SPICe Plus filing assistance",
-      "Bank account opening support",
-    ],
+    benefitsSection: {
+      title: "Process of Company Incorporation",
+      paragraphstitle:[
+        "Choose a Company Name",
+      "Select a Company Formation Package",
+      "Add Company Address Services ",
+      "Complete the Checklist Provided by Us ",
+      ],
+      paragraphs: [
+        "To find out the availability of your proposed name, simply enter it into our online company name-check tool. This system will compare any name you enter against the Index of Company Names at Companies House. ",
+        "We offer a wide selection of packages for companies limited by shares, in addition to tailor-made packages for Non-UK Residents, companies limited by guarantee, Public Limited Companies (PLCs), and Limited Liability Partnerships (LLPs). ",
+        "All limited companies must provide details of a registered office. A service address must also be supplied by each director, subscriber, company secretary, and Person with Significant Control (PSC).",
+        "Online application form is really easy to complete, requiring only a few minutes of your time. You must provide the following information: Company name, Registered office address, Description of main business activities (SIC code), PAN of the Directors – self attested color copies, Aadhar card of the Directors – self attested color copies, Passport sized Photograph of the Directors, Driving licence / voter ID of the Directors, Electricity Bill/water Bill/ Gas bill/ Bank statement of the Director, Electricity Bill/water Bill/ Gas bill of the registered office",
+      ],
+    },
 
     faqs: [
       {
@@ -266,24 +236,6 @@ export const services: Record<string, ServiceData> = {
         detail: "All-inclusive package",
       },
     ],
-
-    definition: {
-      title: "PRIVATE LIMITED COMPANY REGISTRATION",
-      paragraphs: [
-        "Company formation is the process of incorporating a business in the form of a limited company. When a company is registered, it becomes a separate legal entity; a person that is completely distinct from its owners and responsible for its own finances, assets, and liabilities.",
-        "This means that, if the company becomes insolvent, the owners, shareholders or guarantors are not held personally liable for any of its debts or liability claims beyond the sums they have invested in shares or committed to pay in guarantees except in rare cases, such as fraud. This financial protection is known as limited liability.",
-      ],
-    },
-
-    benefitsSection: {
-      title: "PROCESS OF COMPANY INCORPORATION",
-      paragraphs: [
-        "Choose a company name. To find out the availability of your proposed name, simply enter it into our online company name-check tool. This system will compare any name you enter against the Index of Company Names at Companies House.",
-        "Select a company formation package. We offer a wide selection of packages for companies limited by shares, guarantee companies limited by guarantee, Public Limited Companies (PLCs), and Limited Liability Partnerships (LLPs).",
-        "Add company address services. All limited companies must provide details of a registered office. A service address must also be supplied by each director, subscriber, company secretary, and Person with Significant Control (PSC).",
-        "Complete the checklist provided by us. Our online application form is really easy to complete, requiring only a few minutes of your time. You must provide company name, registered office address, description of main business activities, PAN, Aadhaar, passport size photograph, DIN and electricity bill details.",
-      ],
-    },
 
     pricing: [
       {
@@ -347,34 +299,18 @@ export const services: Record<string, ServiceData> = {
     ],
 
     process: {
-      title: "HOW TO INCORPORATE COMPANY",
+      title: "How to Incorporate a Company",
       steps: [
-        {
-          title: "Apply for Reserve Your Company Name",
-          description:
-            "We help you apply for reservation of your preferred company name.",
-        },
-        {
-          title: "Apply for Digital Signature Certificate (DSC)",
-          description:
-            "Our team assists directors with Digital Signature Certificate requirements.",
-        },
-        {
-          title: "Submission of Forms for Incorporate a Company",
-          description:
-            "We prepare and submit the required incorporation forms with supporting documents.",
-        },
-        {
-          title: "Obtain Company's Incorporation Certificate",
-          description:
-            "Once approved, the company receives its certificate of incorporation.",
-        },
-        {
-          title: "Obtain Company's PAN Card and TAN Card",
-          description:
-            "After incorporation, PAN and TAN are received so you can proceed with bank account opening.",
-        },
+         "Apply for Reserve Your Company Name",
+         "Apply for Digital Signature Certificate (DSC)",
+        "Submission of Forms for Incorporate a Company",
+         "Obtain Company's Incorporation Certificate",
+         "Obtain Company's PAN Card and TAN Card",         
+        
       ],
     },
   }
 };
+
+services["private-limited-company-incorporation"] =
+  services.privatelimitedcompanyincorporation;

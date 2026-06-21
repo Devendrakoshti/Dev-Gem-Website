@@ -20,7 +20,7 @@ const ServiceHero: React.FC<ServiceHeroProps> = ({ data }) => {
       </div>
 
       <div className="container mx-auto px-4 md:px-8 relative z-10 max-w-7xl">
-        <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-20">
           
           {/* Left Content Area */}
           <div className="w-full lg:w-3/5 flex flex-col space-y-8" data-aos="fade-right">
@@ -90,33 +90,33 @@ const ServiceHero: React.FC<ServiceHeroProps> = ({ data }) => {
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#a63f04] via-[#e65a05] to-[#a63f04]"></div>
               
               <div className="text-center mb-8">
-                <h3 className="text-2xl font-bold text-slate-900 mb-2">Get Expert Assistance</h3>
+                <span className="text-2xl font-bold text-slate-900 mb-1">Get Expert Assistance</span>
                 <p className="text-slate-500 text-sm">Fill the form below and our legal experts will contact you shortly.</p>
               </div>
 
               <form className="space-y-5">
                 <div className="space-y-1">
-                  <label htmlFor="hero-name" className="text-sm font-semibold text-slate-700 ml-1">Full Name</label>
+                  {/* <label htmlFor="hero-name" className="text-sm font-semibold text-slate-700 ml-1">Full Name</label> */}
                   <input 
                     type="text" 
                     id="hero-name"
-                    placeholder="John Doe" 
-                    className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-[#a63f04] focus:ring-2 focus:ring-[#a63f04]/20 transition-all outline-none text-slate-800"
+                    placeholder="Full Name" 
+                    className="w-full px-4 py-2 rounded-xl bg-slate-50 border border-slate-200 focus:border-[#a63f04] focus:ring-2 focus:ring-[#a63f04]/20 transition-all outline-none text-slate-800"
                   />
                 </div>
                 
                 <div className="space-y-1">
-                  <label htmlFor="hero-email" className="text-sm font-semibold text-slate-700 ml-1">Email Address</label>
+                  {/* <label htmlFor="hero-email" className="text-sm font-semibold text-slate-700 ml-1">Email Address</label> */}
                   <input 
                     type="email" 
                     id="hero-email"
-                    placeholder="john@example.com" 
-                    className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-[#a63f04] focus:ring-2 focus:ring-[#a63f04]/20 transition-all outline-none text-slate-800"
+                    placeholder="Email Address" 
+                    className="w-full px-4 py-2 rounded-xl bg-slate-50 border border-slate-200 focus:border-[#a63f04] focus:ring-2 focus:ring-[#a63f04]/20 transition-all outline-none text-slate-800"
                   />
                 </div>
                 
                 <div className="space-y-1">
-                  <label htmlFor="hero-phone" className="text-sm font-semibold text-slate-700 ml-1">Phone Number</label>
+                  {/* <label htmlFor="hero-phone" className="text-sm font-semibold text-slate-700 ml-1">Phone Number</label> */}
                   <div className="flex relative">
                     <span className="inline-flex items-center px-4 rounded-l-xl border border-r-0 border-slate-200 bg-slate-100 text-slate-500 font-medium text-sm">
                       +91
@@ -124,19 +124,19 @@ const ServiceHero: React.FC<ServiceHeroProps> = ({ data }) => {
                     <input 
                       type="tel" 
                       id="hero-phone"
-                      placeholder="98765 43210" 
+                      placeholder="Phone Number" 
                       className="w-full px-4 py-3 rounded-r-xl bg-slate-50 border border-slate-200 focus:border-[#a63f04] focus:ring-2 focus:ring-[#a63f04]/20 transition-all outline-none text-slate-800"
                     />
                   </div>
                 </div>
 
                 <div className="space-y-1">
-                  <label htmlFor="hero-message" className="text-sm font-semibold text-slate-700 ml-1">Message (Optional)</label>
+                  {/* <label htmlFor="hero-message" className="text-sm font-semibold text-slate-700 ml-1">Message (Optional)</label> */}
                   <textarea 
                     id="hero-message"
                     rows={3}
-                    placeholder="Tell us about your requirements..." 
-                    className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-[#a63f04] focus:ring-2 focus:ring-[#a63f04]/20 transition-all outline-none text-slate-800 resize-none"
+                    placeholder="Message" 
+                    className="w-full px-4 py-2 rounded-xl bg-slate-50 border border-slate-200 focus:border-[#a63f04] focus:ring-2 focus:ring-[#a63f04]/20 transition-all outline-none text-slate-800 resize-none"
                   ></textarea>
                 </div>
 
