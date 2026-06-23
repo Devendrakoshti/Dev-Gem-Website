@@ -6,131 +6,192 @@ import {
   faAward,
   faBookOpen,
   faCheckCircle,
-  faChevronDown,
   faClock,
+  faCreditCard,
   faHeadset,
   faLandmark,
   faPhoneAlt,
-  faQuestionCircle,
   faShieldAlt,
   faUserTie,
 } from "@fortawesome/free-solid-svg-icons";
-import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 
-const metaTitle = "MSME Registration Online | Udyam Registration - Patel Legal Advisors";
+const metaTitle = "Private Limited Company Incorporation | Patel Legal Advisors";
 const metaDescription =
-  "Get your MSME / Udyam Registration done online quickly. Enjoy government subsidies, lower interest rates, tax benefits and more. Expert assistance from Patel Legal Advisors.";
+  "Private Limited Company incorporation support with name approval, DSC, company forms, incorporation certificate, PAN, TAN and compliance guidance.";
 
-const title = "MSME Registration";
+const title = "Private Limited Company";
 const heroParagraphs = [
-  "Union Ministry of Micro, Small and Medium Enterprises (M/o MSMEs) has issued Gazette notification to pave way for implementation of the upward revision in the definition and criteria of MSMEs in the country. The new definition and criterion will come into effect from 1st July, 2020.",
-  "After 14 years since the MSME Development Act came into existence in 2006, a revision in MSME definition was announced in the Atmnirbhar Bharat package on 13th May, 2020. As per this announcement, the definition of Micro manufacturing and services units was increased to Rs. 1 Crore of investment and Rs. 5 Crore of turnover. The limit of small unit was increased to Rs. 10 Crore of investment and Rs 50 Crore of turnover. Similarly, the limit of medium unit was increased to Rs. 50 Crore of investment and Rs. 250 Crore of turnover.",
+  "A company is a type of business structure that is a separate legal entity from its owners. It's a complex business structure, with higher set-up and administrative costs because of extra reporting requirements and higher-level legal obligations.",
 ];
-const price = "STARTING FROM RS. 1499/-";
-const cta = "REGISTER NOW";
+const price = "STARTING FROM RS. 10999/-";
+const cta = "KNOW ABOUT PACKAGE";
 
 const definition = {
-  title: "DEFINITION OF MSME",
+  title: "Private Limited Company Registration",
   paragraphs: [
-    "MSME stands for Micro, Small and Medium Enterprises - any enterprise that falls under any of these three categories. MSME enterprises are the backbone of the Indian economy and are an engine of economic growth, promoting equitable development for all. MSME Enterprises are typically more labour-intensive than large corporates and provide tremendous employment potential at a very low capital cost. MSMEs also share a major portion of industrial production and exports in India and play a pivotal role in the development of the industrial economy.",
-    "To promote and develop MSMEs, the MSMED Act of India facilitates the promotion and development of enterprises through many incentives, schemes and subsidies. To obtain the benefits under the MSMED Act, MSME Registration (now known as Udyam Registration) is a must. Proprietorship firms, partnership firms, LLPs, Private Limited Companies, and Public Limited Companies can all register.",
+    "Company formation is the process of incorporating (registering) a business in the form of a limited company. When a company is registered, it becomes a separate legal entity; a 'person' that is completely distinct from its owners and responsible for its own finances, assets, and liabilities.",
+    "This means that, if the company becomes insolvent, the owners (shareholders or guarantors) are not held personally liable for any of its debts or liability claims beyond the sums they have invested in shares or committed to pay in guarantees (except in rare cases, such as fraud). This financial protection is known as 'limited liability'.",
   ],
 };
 
 const overviewCard = {
-  label: "Government of India",
-  title: "MSMED Act, 2006",
+  label: "Company Structure",
+  title: "Limited Liability",
 };
 
 const overviewHighlights = [
   {
-    label: "Micro Enterprise",
-    value: "Up to Rs. 1 Cr",
-    detail: "Investment",
+    label: "Entity Type",
+    value: "Separate",
+    detail: "Distinct legal identity",
   },
   {
-    label: "Small Enterprise",
-    value: "Up to Rs. 10 Cr",
-    detail: "Investment",
+    label: "Protection",
+    value: "Limited",
+    detail: "Liability for shareholders",
   },
   {
-    label: "Medium Enterprise",
-    value: "Up to Rs. 50 Cr",
-    detail: "Investment",
+    label: "Starting From",
+    value: "Rs. 10999/-",
+    detail: "All-inclusive package",
   },
 ];
 
-const benefitsTitle = "BENEFITS OF MSME REGISTRATION";
-
-const process = {
-  title: "MSME REGISTRATION PROCESS",
-  steps: [
-    {
-      title: "Share Your Details",
-      description:
-        "Provide your Aadhaar number, PAN card, business details and contact information to our expert team.",
-    },
-    {
-      title: "Document Verification",
-      description:
-        "Our experts verify your documents and ensure all information is accurate for a smooth registration process.",
-    },
-    {
-      title: "Application Filing",
-      description:
-        "We file your Udyam Registration application on the official government portal on your behalf.",
-    },
-    {
-      title: "Certificate Issued",
-      description:
-        "Receive your digitally signed Udyam Registration Certificate with a unique URN (Udyam Registration Number).",
-    },
+const benefitsSection = {
+  title: "Process of Company Incorporation",
+  paragraphTitles: [
+    "Choose a Company Name",
+    "Select a Company Formation Package",
+    "Add Company Address Services",
+    "Complete the Checklist Provided by Us",
+  ],
+  paragraphs: [
+    "To find out the availability of your proposed name, simply enter it into our online company name-check tool. This system will compare any name you enter against the Index of Company Names at Companies House.",
+    "We offer a wide selection of packages for companies limited by shares, in addition to tailor-made packages for Non-UK Residents, companies limited by guarantee, Public Limited Companies (PLCs), and Limited Liability Partnerships (LLPs).",
+    "All limited companies must provide details of a registered office. A service address must also be supplied by each director, subscriber, company secretary, and Person with Significant Control (PSC).",
+    "Online application form is really easy to complete, requiring only a few minutes of your time. You must provide the following information: Company name, Registered office address, Description of main business activities (SIC code), PAN of the Directors - self attested color copies, Aadhar card of the Directors - self attested color copies, Passport sized Photograph of the Directors, Driving licence / voter ID of the Directors, Electricity Bill/water Bill/ Gas bill/ Bank statement of the Director, Electricity Bill/water Bill/ Gas bill of the registered office",
   ],
 };
 
-const faqs = [
+const pricing = [
   {
-    question: "What is MSME / Udyam Registration?",
-    answer:
-      "MSME Registration, now known as Udyam Registration, is a government registration for Micro, Small and Medium Enterprises under the MSMED Act, 2006. It is a completely online, paperless process based on self-declaration and requires only an Aadhaar number.",
+    title: "Basic",
+    price: "Rs. 10999/-",
+    note: "Stamp duty included",
+    features: [
+      "2 DIN & 2 DSC",
+      "1 Name Approval Letter",
+      "Stamp duty on Authorized Capital upto INR 1 Lakh",
+      "Certificate of Incorporation",
+      "Copy of MOA & AOA (E-Copy)",
+      "E-PAN & E-TAN",
+      "ESIC Registration through SPICe Plus",
+      "PF Registration through SPICe Plus",
+      "Bank Account opening through SPICe Plus",
+    ],
   },
   {
-    question: "Who is eligible for MSME Registration?",
-    answer:
-      "Any business entity including proprietorship, partnership, LLP, private limited company, Hindu Undivided Family (HUF), cooperative societies, and trusts can register as an MSME, provided they meet the investment and turnover criteria.",
+    title: "Standard",
+    price: "Rs. 13999/-",
+    note: "Stamp duty included",
+    features: [
+      "2 DIN & 2 DSC",
+      "1 Name Approval Letter",
+      "Stamp duty on Authorized Capital upto INR 1 Lakh",
+      "Certificate of Incorporation",
+      "Copy of MOA & AOA (E-Copy)",
+      "E-PAN & E-TAN",
+      "Share Certificates",
+      "ESIC Registration through SPICe Plus",
+      "PF Registration through SPICe Plus",
+      "Bank Account opening through SPICe Plus",
+      "MSME Registration",
+      "GST Registration",
+      "INC 20A filing",
+    ],
   },
   {
-    question: "What are the criteria for Micro, Small and Medium enterprises?",
-    answer:
-      "Micro Enterprise: Investment up to Rs. 1 Crore & Turnover up to Rs. 5 Crore. Small Enterprise: Investment up to Rs. 10 Crore & Turnover up to Rs. 50 Crore. Medium Enterprise: Investment up to Rs. 50 Crore & Turnover up to Rs. 250 Crore.",
-  },
-  {
-    question: "Is MSME Registration mandatory?",
-    answer:
-      "MSME Registration is not mandatory but is highly recommended. It unlocks numerous government benefits including subsidies, lower interest rates, tax exemptions, and priority in government tenders.",
-  },
-  {
-    question: "What documents are required for MSME Registration?",
-    answer:
-      "The primary requirement is the Aadhaar number of the business owner. Additionally, PAN card, business address proof, bank account details, and information about the nature of business activity are needed.",
-  },
-  {
-    question: "How long does MSME Registration take?",
-    answer:
-      "With our expert assistance, the MSME Registration process can be completed within 1-2 working days. The Udyam Registration Certificate is issued digitally.",
-  },
-  {
-    question: "Is MSME Registration valid for lifetime?",
-    answer:
-      "Yes, Udyam Registration does not require renewal. Once registered, the certificate is valid for the lifetime of the enterprise. However, you should update your information if there are any changes in business details.",
-  },
-  {
-    question: "Can I register multiple businesses under MSME?",
-    answer:
-      "Each enterprise requires a separate Udyam Registration. However, the same person can register multiple businesses, each with its own Udyam Registration Number (URN).",
+    title: "Professional",
+    price: "Rs. 18999/-",
+    note: "Stamp duty included",
+    features: [
+      "2 DIN & 2 DSC",
+      "1 Name Approval Letter",
+      "Stamp duty on Authorized Capital upto INR 1 Lakh",
+      "Certificate of Incorporation",
+      "Copy of MOA & AOA (E-Copy)",
+      "E-PAN & E-TAN",
+      "Share Certificates",
+      "ESIC Registration through SPICe Plus",
+      "PF Registration through SPICe Plus",
+      "Bank Account opening through SPICe Plus",
+      "MSME Registration",
+      "GST Registration",
+      "INC 20A filing",
+      "Appointment of 1st Auditor (Form ADT-1)",
+      "Share Certificate - 25 Certificate",
+    ],
   },
 ];
+
+const process = {
+  title: "How to Incorporate a Company",
+  steps: [
+    "Apply for Reserve Your Company Name",
+    "Apply for Digital Signature Certificate (DSC)",
+    "Submission of Forms for Incorporate a Company",
+    "Obtain Company's Incorporation Certificate",
+    "Obtain Company's PAN Card and TAN Card",
+  ],
+};
+
+const incorporationSupportSteps = [
+  {
+    title: "DOCUMENTS VERIFICATION",
+    description:
+      "One of the person from our team will collect all the information and documents for incorporate company. All documents should be signed. After receiveing documents our expert will verify the same and they will update you time to time for the same.",
+  },
+  {
+    title: "APPROVAL OF NAME",
+    description:
+      "Once the verification is complete our team will apply for name approval of company which name is given by you. After that they will apply for Digital Signature Certificate also.",
+  },
+  {
+    title: "CERTIFICATION",
+    description:
+      "Our team will draft the MOA (Memorandum of association) and AOA (Articles of association) and they will also file all the mandatory forms. Once Certificate of incoporation, PAN & TAN recived you can apply for your bank account open.",
+  },
+];
+
+const whyUsFeatures = [
+  {
+    title: "WE MAKE YOUR DREAM COME TRUE",
+    description:
+      "We are a team of experienced professionals who will complete your project successfully.",
+    icon: faAward,
+  },
+  {
+    title: "BEST PRICE FOR EXCELLENT WORK",
+    description: "Reasonable price and best service.",
+    icon: faCheckCircle,
+  },
+  {
+    title: "WE HEAR YOU",
+    description: "We always anticipate what you expect.",
+    icon: faUserTie,
+  },
+  {
+    title: "MON-SAT SUPPORT",
+    description: "We're always online on office time!",
+    icon: faPhoneAlt,
+  },
+];
+
+const ctaTitle = "Ready to Incorporate Your Private Limited Company?";
+const ctaDescription =
+  "Our expert team of CAs, CS and Lawyers will guide you through name approval, DSC, incorporation filing, PAN, TAN and post-incorporation support.";
 
 export const metadata: Metadata = {
   title: metaTitle,
@@ -142,7 +203,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function MSMERegistrationPage() {
+export default function PrivateLimitedCompanyIncorporationPage() {
   return (
     <div className="min-h-screen overflow-hidden">
       <Navbar />
@@ -168,19 +229,7 @@ export default function MSMERegistrationPage() {
                 </div>
 
                 <h1 className="text-4xl font-extrabold leading-tight text-slate-900 md:text-5xl lg:text-6xl">
-                  {title.split(" ").map((word, index) =>
-                    word.toLowerCase() === "registration" ? (
-                      <span
-                        key={`${word}-${index}`}
-                        className="bg-gradient-to-r from-[#a63f04] to-[#e65a05] bg-clip-text text-transparent"
-                      >
-                        {" "}
-                        {word}
-                      </span>
-                    ) : (
-                      <span key={`${word}-${index}`}> {word}</span>
-                    ),
-                  )}
+                  {title}
                 </h1>
 
                 <div className="relative space-y-5 text-lg leading-relaxed text-slate-600">
@@ -419,9 +468,124 @@ export default function MSMERegistrationPage() {
                 </span>
               </div>
               <h2 className="text-3xl font-extrabold leading-tight md:text-4xl lg:text-5xl">
-                {benefitsTitle}
+                {benefitsSection.title}
               </h2>
               <div className="mx-auto mt-6 h-1 w-20 rounded-full bg-gradient-to-r from-[#a63f04] to-[#e65a05]" />
+            </div>
+
+            <div className="grid gap-6 md:grid-cols-2">
+              {benefitsSection.paragraphTitles.map((benefitTitle, idx) => (
+                <div
+                  key={benefitTitle}
+                  className="group relative rounded-2xl border border-white/[0.06] bg-white/[0.03] p-6 backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:border-[#a63f04]/30 hover:bg-white/[0.07]"
+                  data-aos="fade-up"
+                  data-aos-delay={idx * 100}
+                >
+                  <div className="flex items-start gap-4">
+                    <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-[#a63f04]/20 font-bold text-[#e65a05]">
+                      {String(idx + 1).padStart(2, "0")}
+                    </div>
+
+                    <div>
+                      <h3 className="mb-3 text-lg font-bold">{benefitTitle}</h3>
+                      <p className="text-base leading-relaxed text-slate-400">
+                        {benefitsSection.paragraphs[idx]}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="relative overflow-hidden bg-white py-16 md:py-24">
+          <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#a63f04]/20 to-transparent" />
+          <div className="pointer-events-none absolute -right-32 top-16 h-80 w-80 rounded-full bg-[#a63f04]/5 blur-3xl" />
+
+          <div className="container relative z-10 mx-auto max-w-7xl px-4 md:px-8">
+            <div className="mx-auto mb-14 max-w-3xl text-center" data-aos="fade-up">
+              <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#a63f04]/20 bg-[#a63f04]/10 px-4 py-2 text-[#a63f04]">
+                <FontAwesomeIcon icon={faCreditCard} className="text-sm" />
+                <span className="text-xs font-black uppercase tracking-wider">
+                  Pricing
+                </span>
+              </div>
+              <h2 className="text-3xl font-extrabold leading-tight text-slate-900 md:text-4xl lg:text-5xl">
+                Choose Your Package
+              </h2>
+              <p className="mt-4 text-lg text-slate-500">
+                Compare the service packages and choose the level of support
+                that fits your business.
+              </p>
+              <div className="mx-auto mt-6 h-1 w-20 rounded-full bg-gradient-to-r from-[#a63f04] to-[#e65a05]" />
+            </div>
+
+            <div className="grid gap-6 lg:grid-cols-3 lg:gap-7">
+              {pricing.map((plan, idx) => {
+                const featured = idx === 1;
+
+                return (
+                  <article
+                    key={plan.title}
+                    className={`group relative flex min-h-[620px] flex-col overflow-hidden border bg-white p-7 shadow-[0_24px_80px_rgba(20,22,23,0.08)] transition-all duration-500 hover:-translate-y-2 sm:p-8 ${
+                      featured
+                        ? "border-[#a63f04]/35 shadow-[0_32px_100px_rgba(166,63,4,0.16)]"
+                        : "border-slate-200 hover:border-[#a63f04]/25 hover:shadow-[0_32px_95px_rgba(166,63,4,0.12)]"
+                    }`}
+                    data-aos="fade-up"
+                    data-aos-delay={idx * 120}
+                  >
+                    <div
+                      className={`absolute inset-x-0 top-0 h-1 transition-transform duration-500 group-hover:scale-x-100 ${
+                        featured ? "bg-[#a63f04]" : "bg-[#e65a05]"
+                      }`}
+                    />
+
+                    <div>
+                      <h3 className="text-lg font-black text-[#e65a05]">
+                        {plan.title}
+                      </h3>
+                      <div className="mt-4">
+                        <p className="text-4xl font-black leading-none tracking-normal text-slate-950 sm:text-5xl">
+                          {plan.price}
+                        </p>
+                      </div>
+                      <p className="mt-5 text-xs font-black uppercase tracking-[0.14em] text-[#a63f04]">
+                        {plan.note}
+                      </p>
+                      <p className="text-xs font-bold uppercase tracking-[0.12em] text-slate-400">
+                        All inclusive
+                      </p>
+                    </div>
+
+                    <div className="my-7 h-px w-full bg-slate-200" />
+
+                    <ul className="space-y-3.5">
+                      {plan.features.map((feature) => (
+                        <li
+                          key={feature}
+                          className="flex gap-3 text-sm font-medium leading-6 text-slate-600"
+                        >
+                          <FontAwesomeIcon
+                            icon={faCheckCircle}
+                            className="mt-1 h-3.5 w-3.5 shrink-0 rounded-full text-[#ff4b1f]"
+                          />
+                          {feature}
+                        </li>
+                      ))}
+                    </ul>
+
+                    <Link
+                      href="/contact-us"
+                      className="mt-auto inline-flex w-fit items-center gap-2 rounded-md bg-[#ff4b1f] px-6 py-3 text-sm font-black text-white transition duration-300 hover:bg-[#a63f04] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#a63f04] focus-visible:ring-offset-2"
+                    >
+                      More Info
+                      <FontAwesomeIcon icon={faArrowRight} className="h-4 w-4" />
+                    </Link>
+                  </article>
+                );
+              })}
             </div>
           </div>
         </section>
@@ -449,7 +613,7 @@ export default function MSMERegistrationPage() {
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-4">
               {process.steps.map((step, idx) => (
                 <div
-                  key={step.title}
+                  key={step}
                   className="relative"
                   data-aos="fade-up"
                   data-aos-delay={idx * 120}
@@ -473,11 +637,8 @@ export default function MSMERegistrationPage() {
                     </div>
 
                     <h3 className="mb-3 text-xl font-extrabold text-slate-900">
-                      {step.title}
+                      {step}
                     </h3>
-                    <p className="text-sm leading-6 text-slate-500">
-                      {step.description}
-                    </p>
                   </div>
                 </div>
               ))}
@@ -490,68 +651,84 @@ export default function MSMERegistrationPage() {
           <div className="pointer-events-none absolute -right-40 top-20 h-80 w-80 rounded-full bg-[#a63f04]/5 blur-[100px]" />
 
           <div className="container relative z-10 mx-auto max-w-7xl px-4 md:px-8">
-            <div className="grid gap-12 lg:grid-cols-[0.4fr_1fr] lg:gap-16">
-              <div
-                className="self-start lg:sticky lg:top-32"
-                data-aos="fade-right"
-                data-aos-duration="800"
-              >
-                <div className="mb-5 flex items-center gap-3">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#a63f04] text-white shadow-lg shadow-[#a63f04]/25">
-                    <FontAwesomeIcon
-                      icon={faQuestionCircle}
-                      className="text-lg"
-                    />
+            <div className="grid gap-8 lg:grid-cols-3">
+              {incorporationSupportSteps.map((step, idx) => (
+                <article
+                  key={step.title}
+                  className="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-7 shadow-[0_24px_80px_rgba(20,22,23,0.07)] transition duration-500 hover:-translate-y-2 hover:border-[#a63f04]/30 hover:shadow-[0_32px_100px_rgba(166,63,4,0.14)]"
+                  data-aos="fade-up"
+                  data-aos-delay={idx * 120}
+                >
+                  <div className="absolute right-5 top-5 text-7xl font-black leading-none text-[#a63f04]/[0.05] transition duration-500 group-hover:text-[#a63f04]/10">
+                    {String(idx + 1).padStart(2, "0")}
                   </div>
-                  <span className="text-xs font-black uppercase tracking-[0.18em] text-[#a63f04]">
-                    FAQ
-                  </span>
-                </div>
-                <h2 className="text-3xl font-extrabold leading-tight text-slate-900 md:text-4xl">
-                  Frequently Asked Questions
-                </h2>
-                <p className="mt-4 text-base leading-relaxed text-slate-500">
-                  Find answers to the most common questions about the
-                  registration process, eligibility, and benefits.
-                </p>
-                <div className="mt-6 h-1 w-20 rounded-full bg-gradient-to-r from-[#a63f04] to-[#e65a05]" />
-              </div>
-
-              <div
-                className="space-y-3"
-                data-aos="fade-left"
-                data-aos-duration="800"
-                data-aos-delay="100"
-              >
-                {faqs.map((faq, idx) => (
-                  <details
-                    key={faq.question}
-                    open={idx === 0}
-                    className="faq-item group rounded-2xl border border-slate-200 bg-white transition-all duration-300 open:border-[#a63f04]/25 open:bg-gradient-to-r open:from-[#a63f04]/[0.03] open:to-transparent open:shadow-[0_8px_32px_rgba(166,63,4,0.08)] hover:border-slate-300"
-                  >
-                    <summary className="flex w-full cursor-pointer list-none items-center gap-4 rounded-2xl p-5 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-[#a63f04] focus-visible:ring-offset-2 md:p-6 [&::-webkit-details-marker]:hidden">
-                      <span className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-lg bg-slate-100 text-xs font-black text-slate-500 transition-all duration-300 group-open:bg-[#a63f04] group-open:text-white group-open:shadow-md group-open:shadow-[#a63f04]/25 group-hover:bg-[#a63f04]/10 group-hover:text-[#a63f04]">
-                        {String(idx + 1).padStart(2, "0")}
-                      </span>
-
-                      <span className="flex-1 text-base font-bold text-slate-800 transition-colors duration-300 group-open:text-[#a63f04]">
-                        {faq.question}
-                      </span>
-
+                  <div className="relative z-10">
+                    <div className="mb-7 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#a63f04]/10 text-[#a63f04] transition duration-500 group-hover:bg-[#a63f04] group-hover:text-white">
                       <FontAwesomeIcon
-                        icon={faChevronDown}
-                        className="faq-chevron flex-shrink-0 text-sm text-slate-400 transition-transform duration-300"
+                        icon={
+                          idx === 0
+                            ? faShieldAlt
+                            : idx === 1
+                              ? faLandmark
+                              : faCheckCircle
+                        }
+                        className="h-5 w-5"
                       />
-                    </summary>
-
-                    <div className="px-5 pb-5 pl-[4.25rem] md:px-6 md:pb-6 md:pl-[4.75rem]">
-                      <p className="text-base leading-relaxed text-slate-600">
-                        {faq.answer}
-                      </p>
                     </div>
-                  </details>
-                ))}
-              </div>
+                    <h2 className="text-lg font-black uppercase tracking-[0.08em] text-slate-950">
+                      {step.title}
+                    </h2>
+                    <div className="mt-4 h-1 w-12 rounded-full bg-gradient-to-r from-[#a63f04] to-[#e65a05]" />
+                    <p className="mt-5 text-base leading-8 text-slate-600">
+                      {step.description}
+                    </p>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="relative overflow-hidden bg-[#f8f3ee] py-16 md:py-24">
+          <div className="absolute inset-0 opacity-[0.05] [background-image:linear-gradient(#a63f04_1px,transparent_1px),linear-gradient(90deg,#a63f04_1px,transparent_1px)] [background-size:56px_56px]" />
+          <div className="pointer-events-none absolute -left-24 bottom-0 h-72 w-72 rounded-full bg-[#d29f81]/20 blur-[90px]" />
+          <div className="pointer-events-none absolute right-0 top-10 h-80 w-80 rounded-full bg-[#a63f04]/10 blur-[100px]" />
+
+          <div className="container relative z-10 mx-auto max-w-7xl px-4 md:px-8">
+            <div className="mx-auto mb-12 max-w-3xl text-center" data-aos="fade-up">
+              <span className="text-xs font-black uppercase tracking-[0.18em] text-[#a63f04]">
+                Why Us?
+              </span>
+              <h2 className="mt-4 text-3xl font-extrabold leading-tight text-slate-900 md:text-4xl lg:text-5xl">
+                Why Us?
+              </h2>
+              <div className="mx-auto mt-6 h-1 w-20 rounded-full bg-gradient-to-r from-[#a63f04] to-[#e65a05]" />
+            </div>
+
+            <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
+              {whyUsFeatures.map((feature, idx) => (
+                <article
+                  key={feature.title}
+                  className="group relative min-h-64 overflow-hidden rounded-2xl border border-[#a63f04]/10 bg-white/85 p-6 shadow-[0_22px_80px_rgba(20,22,23,0.08)] backdrop-blur transition duration-500 hover:-translate-y-2 hover:border-[#a63f04]/35 hover:bg-white hover:shadow-[0_32px_100px_rgba(166,63,4,0.16)]"
+                  data-aos="fade-up"
+                  data-aos-delay={idx * 100}
+                >
+                  <div className="absolute right-4 top-4 text-6xl font-black leading-none text-[#a63f04]/[0.05] transition duration-500 group-hover:text-[#a63f04]/10">
+                    {String(idx + 1).padStart(2, "0")}
+                  </div>
+                  <div className="relative z-10">
+                    <div className="mb-7 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#141617] text-white shadow-[0_16px_36px_rgba(20,22,23,0.16)] transition duration-500 group-hover:bg-[#a63f04]">
+                      <FontAwesomeIcon icon={feature.icon} className="h-5 w-5" />
+                    </div>
+                    <h3 className="text-base font-black uppercase leading-6 tracking-[0.08em] text-[#a63f04]">
+                      {feature.title}
+                    </h3>
+                    <p className="mt-5 text-base leading-7 text-slate-600">
+                      {feature.description}
+                    </p>
+                  </div>
+                </article>
+              ))}
             </div>
           </div>
         </section>
@@ -576,14 +753,10 @@ export default function MSMERegistrationPage() {
                 </div>
 
                 <h2 className="max-w-2xl text-3xl font-extrabold leading-tight text-white md:text-4xl lg:text-5xl">
-                  Ready to Register Your{" "}
-                  <span className="bg-gradient-to-r from-[#e65a05] to-[#d29f81] bg-clip-text text-transparent">
-                    Business as MSME?
-                  </span>
+                  {ctaTitle}
                 </h2>
                 <p className="mt-5 max-w-xl text-lg leading-relaxed text-white/60">
-                  Our expert team of CAs, CS & Lawyers will guide you through
-                  the entire registration process. Get started in minutes.
+                  {ctaDescription}
                 </p>
               </div>
 
@@ -634,14 +807,9 @@ export default function MSMERegistrationPage() {
             </div>
           </div>
         </section>
+
         <Footer />
       </main>
-      <style>{`
-        .faq-item[open] .faq-chevron {
-          color: #a63f04;
-          transform: rotate(180deg);
-        }
-      `}</style>
     </div>
   );
 }

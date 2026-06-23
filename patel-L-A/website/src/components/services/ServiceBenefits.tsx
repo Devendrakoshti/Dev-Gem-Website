@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheckCircle, faAward } from '@fortawesome/free-solid-svg-icons';
+import { faAward } from '@fortawesome/free-solid-svg-icons';
 import type { ServiceData } from '@/app/services/service-data';
 
 interface ServiceBenefitsProps {
@@ -48,7 +48,7 @@ const ServiceBenefits: React.FC<ServiceBenefitsProps> = ({ data }) => {
           </h3>
 
           <p className="text-slate-400 text-base leading-relaxed">
-            {data.benefitsSection.paragraphs[idx]}
+            {data.benefitsSection?.paragraphs[idx]}
           </p>
         </div>
       </div>

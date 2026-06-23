@@ -1,6 +1,6 @@
 import { services } from "../service-data";
 import type { ServiceData } from "../service-data";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -21,6 +21,15 @@ type PageProps = {
 // SEO Metadata
 export async function generateMetadata({ params }: PageProps) {
   const { slug } = await params;
+
+  if (slug === "private-limited-company-incorporation") {
+    redirect("/private-limited-company-incorporation");
+  }
+
+  if (slug === "msme-registration") {
+    redirect("/msme-registration");
+  }
+
   const service: ServiceData | undefined = services[slug];
 
   if (!service) {
@@ -45,6 +54,15 @@ export async function generateMetadata({ params }: PageProps) {
 // Service Page
 export default async function ServicePage({ params }: PageProps) {
   const { slug } = await params;
+
+  if (slug === "private-limited-company-incorporation") {
+    redirect("/private-limited-company-incorporation");
+  }
+
+  if (slug === "msme-registration") {
+    redirect("/msme-registration");
+  }
+
   const service: ServiceData | undefined = services[slug];
 
   if (!service) {

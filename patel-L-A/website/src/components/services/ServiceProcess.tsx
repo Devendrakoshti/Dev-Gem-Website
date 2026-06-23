@@ -35,32 +35,38 @@ const ServiceProcess: React.FC<ServiceProcessProps> = ({ data }) => {
 
         {/* Steps */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-4">
-          {data.process.steps.map((step, idx) => (
-            <div key={idx} className="relative" data-aos="fade-up" data-aos-delay={idx * 120}>
-              {/* Connector line for desktop */}
-              {idx < data.process!.steps.length - 1 && (
-                <div className="hidden lg:block absolute top-10 left-[calc(50%+40px)] right-0 h-[2px] z-0">
-                  <div className="w-full h-full bg-gradient-to-r from-[#a63f04]/30 to-[#a63f04]/10 relative">
-                    <div className="absolute right-0 top-1/2 -translate-y-1/2 text-[#a63f04]/40">
-                      <FontAwesomeIcon icon={faArrowRight} className="text-xs" />
+          {data.process.steps.map((step, idx) => {
+            const stepTitle = step.title;
+            const stepDescription = step.description;
+
+            return (
+              <div key={stepTitle} className="relative" data-aos="fade-up" data-aos-delay={idx * 120}>
+                {/* Connector line for desktop */}
+                {idx < data.process!.steps.length - 1 && (
+                  <div className="hidden lg:block absolute top-10 left-[calc(50%+40px)] right-0 h-[2px] z-0">
+                    <div className="w-full h-full bg-gradient-to-r from-[#a63f04]/30 to-[#a63f04]/10 relative">
+                      <div className="absolute right-0 top-1/2 -translate-y-1/2 text-[#a63f04]/40">
+                        <FontAwesomeIcon icon={faArrowRight} className="text-xs" />
+                      </div>
                     </div>
                   </div>
-                </div>
-              )}
+                )}
 
-              <div className="group relative bg-white rounded-2xl p-7 border border-slate-200 shadow-sm hover:shadow-[0_20px_60px_rgba(166,63,4,0.12)] hover:border-[#a63f04]/25 transition-all duration-500 hover:-translate-y-2 z-10">
-                {/* Step Number */}
-                <div className="flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-[#a63f04] to-[#d45205] text-white text-2xl font-black mb-6 shadow-lg shadow-[#a63f04]/25 group-hover:scale-110 transition-transform duration-300">
-                  {String(idx + 1).padStart(2, '0')}
-                </div>
+                <div className="group relative bg-white rounded-2xl p-7 border border-slate-200 shadow-sm hover:shadow-[0_20px_60px_rgba(166,63,4,0.12)] hover:border-[#a63f04]/25 transition-all duration-500 hover:-translate-y-2 z-10">
+                  {/* Step Number */}
+                  <div className="flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-[#a63f04] to-[#d45205] text-white text-2xl font-black mb-6 shadow-lg shadow-[#a63f04]/25 group-hover:scale-110 transition-transform duration-300">
+                    {String(idx + 1).padStart(2, '0')}
+                  </div>
 
-                <h3 className="text-xl font-extrabold text-slate-900 mb-3">{step}</h3>
-              </div>
+                  <h3 className="text-xl font-extrabold text-slate-900 mb-3">{stepTitle}</h3>
+                  <p className="text-slate-500 text-sm leading-6">{stepDescription}</p>
+                </div>
 
 
               
-            </div>
-          ))}
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
