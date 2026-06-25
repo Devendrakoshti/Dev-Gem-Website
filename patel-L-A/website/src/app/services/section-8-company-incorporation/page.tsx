@@ -16,15 +16,15 @@ import {
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 
-const metaTitle = "Private Limited Company Incorporation | Patel Legal Advisors";
+const metaTitle = "Section 8 Company Incorporation | PATEL LEGAL ADVISORS";
 const metaDescription =
-  "Private Limited Company incorporation support with name approval, DSC, company forms, incorporation certificate, PAN, TAN and compliance guidance.";
+  "A Section 8 Company is a specific type of legal entity in India, primarily established for non-profit purposes. It derives its name from Section 8 of the Companies Act, 2013, which governs such organizations. These companies are formed with the primary objective of promoting social welfare, charity, education, and similar activities.";
 
-const title = "Private Limited Company";
+const title = "SECTION 8 COMPANY";
 const heroParagraphs = [
-  "A company is a type of business structure that is a separate legal entity from its owners. It's a complex business structure, with higher set-up and administrative costs because of extra reporting requirements and higher-level legal obligations.",
+  "A Section 8 Company is a specific type of legal entity in India, primarily established for non-profit purposes. It derives its name from Section 8 of the Companies Act, 2013, which governs such organizations. These companies are formed with the primary objective of promoting social welfare, charity, education, and similar activities.",
 ];
-const price = "STARTING FROM RS. 10999/-";
+const price = "STARTING FROM RS. 14999/-";
 const cta = "KNOW ABOUT PACKAGE";
 
 const definition = {
@@ -59,7 +59,7 @@ const overviewHighlights = [
 ];
 
 const benefitsSection = {
-  title: "Process of Company Incorporation",
+  title: "Process of Section 8 Incorporation",
   paragraphTitles: [
     "Choose a Company Name",
     "Select a Company Formation Package",
@@ -70,14 +70,14 @@ const benefitsSection = {
     "To find out the availability of your proposed name, simply enter it into our online company name-check tool. This system will compare any name you enter against the Index of Company Names at Companies House.",
     "We offer a wide selection of packages for companies limited by shares, in addition to tailor-made packages for Non-UK Residents, companies limited by guarantee, Public Limited Companies (PLCs), and Limited Liability Partnerships (LLPs).",
     "All limited companies must provide details of a registered office. A service address must also be supplied by each director, subscriber, company secretary, and Person with Significant Control (PSC).",
-    "Online application form is really easy to complete, requiring only a few minutes of your time. You must provide the following information: Company name, Registered office address, Description of main business activities (SIC code), PAN of the Directors - self attested color copies, Aadhar card of the Directors - self attested color copies, Passport sized Photograph of the Directors, Driving licence / voter ID of the Directors, Electricity Bill/water Bill/ Gas bill/ Bank statement of the Director, Electricity Bill/water Bill/ Gas bill of the registered office",
+    "Our online application form is really easy to complete, requiring only a few minutes of your time. You must provide the following information: Company name, Registered office address, Description of main business activities (SIC code), PAN of the Directors - self attested color copies, Aadhar card of the Director and Nominee – self attested color copies, Passport sized Photograph of the Director and Nominee, Driving licence / voter ID of the Director and Nominee, Electricity Bill/water Bill/ Gas bill/ Bank statement of the Director and Nominee, Electricity Bill/water Bill/ Gas bill of the registered office",
   ],
 };
 
 const pricing = [
   {
     title: "Basic",
-    price: "Rs. 10999/-",
+    price: "Rs. 14999/-",
     note: "Stamp duty included",
     features: [
       "2 DIN & 2 DSC",
@@ -89,11 +89,12 @@ const pricing = [
       "ESIC Registration through SPICe Plus",
       "PF Registration through SPICe Plus",
       "Bank Account opening through SPICe Plus",
+      "License of Section 8",
     ],
   },
   {
     title: "Standard",
-    price: "Rs. 13999/-",
+    price: "Rs. 16999/-",
     note: "Stamp duty included",
     features: [
       "2 DIN & 2 DSC",
@@ -106,14 +107,13 @@ const pricing = [
       "ESIC Registration through SPICe Plus",
       "PF Registration through SPICe Plus",
       "Bank Account opening through SPICe Plus",
+      "License of Section 8",
       "MSME Registration",
-      "GST Registration",
-      "INC 20A filing",
     ],
   },
   {
     title: "Professional",
-    price: "Rs. 18999/-",
+    price: "Rs. 21999/-",
     note: "Stamp duty included",
     features: [
       "2 DIN & 2 DSC",
@@ -126,11 +126,10 @@ const pricing = [
       "ESIC Registration through SPICe Plus",
       "PF Registration through SPICe Plus",
       "Bank Account opening through SPICe Plus",
+      "License of Section 8",
       "MSME Registration",
-      "GST Registration",
-      "INC 20A filing",
-      "Appointment of 1st Auditor (Form ADT-1)",
-      "Share Certificate - 25 Certificate",
+      "Trade Mark Registration",
+
     ],
   },
 ];
@@ -150,7 +149,7 @@ const incorporationSupportSteps = [
   {
     title: "Documents Verification",
     description:
-      "One of the person from our team will collect all the information and documents for incorporate company. All documents should be signed. After receiveing documents our expert will verify the same and they will update you time to time for the same.",
+      "One of the person from our team will collect all the imformation and documents for incorporate company. All documents should be signed. After reciveing documents our expert will verify the same and they will update you time to time for the same.",
   },
   {
     title: "Approval of Name",
@@ -199,7 +198,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function PrivateLimitedCompanyIncorporationPage() {
+export default function section8companyincorporationPage() {
   return (
     <div className="min-h-screen overflow-hidden">
       <Navbar />
