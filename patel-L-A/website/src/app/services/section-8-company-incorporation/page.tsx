@@ -20,7 +20,7 @@ const metaTitle = "Section 8 Company Incorporation | PATEL LEGAL ADVISORS";
 const metaDescription =
   "A Section 8 Company is a specific type of legal entity in India, primarily established for non-profit purposes. It derives its name from Section 8 of the Companies Act, 2013, which governs such organizations. These companies are formed with the primary objective of promoting social welfare, charity, education, and similar activities.";
 
-const title = "SECTION 8 COMPANY";
+const title = "Section 8 Company";
 const heroParagraphs = [
   "A Section 8 Company is a specific type of legal entity in India, primarily established for non-profit purposes. It derives its name from Section 8 of the Companies Act, 2013, which governs such organizations. These companies are formed with the primary objective of promoting social welfare, charity, education, and similar activities.",
 ];
@@ -28,10 +28,17 @@ const price = "STARTING FROM RS. 14999/-";
 const cta = "KNOW ABOUT PACKAGE";
 
 const definition = {
-  title: "Private Limited Company Registration",
+  title: "About Section 8 Company",
+  description: "Here is a breakdown of key characteristics and features of a Section 8 Company:",
   paragraphs: [
-    "Company formation is the process of incorporating (registering) a business in the form of a limited company. When a company is registered, it becomes a separate legal entity; a 'person' that is completely distinct from its owners and responsible for its own finances, assets, and liabilities.",
-    "This means that, if the company becomes insolvent, the owners (shareholders or guarantors) are not held personally liable for any of its debts or liability claims beyond the sums they have invested in shares or committed to pay in guarantees (except in rare cases, such as fraud). This financial protection is known as 'limited liability'.",
+    "Non-profit Nature: Section 8 Companies are not established for making profits. Their primary purpose is to promote social welfare and other specified objectives.",
+    "Limited Liability: Members or shareholders of a Section 8 Company have limited liability, meaning their personal assets are not at risk to cover the company's debts or liabilities.",
+    "No Dividends: Unlike other types of companies, Section 8 Companies cannot distribute dividends to their members. Any surplus generated must be reinvested in furthering the company's charitable objectives.",
+    "Objectives: The main objectives of a Section 8 Company can include promoting art, commerce, science, education, research, social welfare, religion, charity, protection of the environment, or any other similar purpose. These objectives must be specified in the company's Memorandum of Association.",
+    "Government Approval: To form a Section 8 Company, you need to obtain approval from the Central Government of India. The government ensures that the company's objectives are genuinely charitable and will benefit the public.",
+    "Name: The name of a Section 8 Company must include the words Foundation, Association, Society, Council, Club, Charity, Institute, or other similar terms, signifying its non-profit nature.",
+    "Regulation: Section 8 Companies are regulated by the Ministry of Corporate Affairs in India and must comply with the Companies Act, 2013.",
+    "Tax Benefits: Section 8 Companies may qualify for certain tax exemptions and benefits under the Income Tax Act, which can encourage donations and contributions for their charitable activities.",
   ],
 };
 
@@ -365,15 +372,16 @@ export default function section8companyincorporationPage() {
           </div>
         </section>
 
-        <section className="relative overflow-hidden bg-white py-16 md:py-24">
+        <section className="relative bg-white py-16 md:py-24">
           <div className="absolute left-0 top-0 h-px w-full bg-gradient-to-r from-transparent via-[#a63f04]/20 to-transparent" />
           <div className="pointer-events-none absolute -left-32 top-1/2 h-64 w-64 -translate-y-1/2 rounded-full bg-[#a63f04]/5 blur-3xl" />
           <div className="pointer-events-none absolute -right-32 bottom-0 h-80 w-80 rounded-full bg-slate-100 blur-3xl" />
 
           <div className="container relative z-10 mx-auto max-w-7xl px-4 md:px-8">
             <div className="grid items-start gap-12 lg:grid-cols-[0.4fr_1fr] lg:gap-16">
+              <div className="h-full">
               <div
-                className="lg:sticky lg:top-32"
+                className="sticky top-0"
                 data-aos="fade-right"
                 data-aos-duration="800"
               >
@@ -389,20 +397,11 @@ export default function section8companyincorporationPage() {
                   {definition.title}
                 </h2>
                 <div className="mt-6 h-1 w-20 rounded-full bg-gradient-to-r from-[#a63f04] to-[#e65a05]" />
-
-                <div className="mt-10 hidden items-center gap-4 rounded-2xl border border-slate-200 bg-slate-50/80 p-5 shadow-sm lg:flex">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#a63f04]/10 text-[#a63f04]">
-                    <FontAwesomeIcon icon={faLandmark} />
-                  </div>
-                  <div>
-                    <p className="text-sm font-bold text-slate-800">
-                      {overviewCard.label}
-                    </p>
-                    <p className="text-xs text-slate-500">{overviewCard.title}</p>
-                  </div>
-                </div>
+                <div
+                    className="group relative mt-5 transition-colors duration-300 hover:border-[#a63f04]"
+                    >{definition.description}</div>
               </div>
-
+              </div>
               <div
                 data-aos="fade-left"
                 data-aos-duration="800"
@@ -421,29 +420,7 @@ export default function section8companyincorporationPage() {
                   ))}
                 </div>
 
-                <div className="mt-10 grid gap-4 sm:grid-cols-3">
-                  {overviewHighlights.map((item, idx) => (
-                    <div
-                      key={item.label}
-                      className="group relative rounded-2xl border border-slate-200 bg-gradient-to-b from-white to-slate-50/50 p-5 shadow-sm transition-all duration-500 hover:-translate-y-1 hover:border-[#a63f04]/30 hover:shadow-[0_16px_48px_rgba(166,63,4,0.1)]"
-                      data-aos="fade-up"
-                      data-aos-delay={idx * 100}
-                    >
-                      <p className="mb-3 text-xs font-black uppercase tracking-wider text-[#a63f04]">
-                        {item.label}
-                      </p>
-                      <div>
-                        <p className="text-[10px] font-bold uppercase tracking-wider text-slate-400">
-                          {item.detail}
-                        </p>
-                        <p className="text-lg font-extrabold text-slate-800">
-                          {item.value}
-                        </p>
-                      </div>
-                      <div className="absolute bottom-0 left-0 h-0.5 w-full origin-left scale-x-0 rounded-b-2xl bg-gradient-to-r from-[#a63f04] to-[#e65a05] transition-transform duration-500 group-hover:scale-x-100" />
-                    </div>
-                  ))}
-                </div>
+
               </div>
             </div>
           </div>
