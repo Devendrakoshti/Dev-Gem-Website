@@ -181,20 +181,6 @@ function slugify(value: string) {
   return value.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 }
 
-function serviceHref(label: string) {
-  const slug = slugify(label);
-
-  if (slug === "private-limited-company-incorporation") {
-    return "/services/private-limited-company-incorporation";
-  }
-
-  if (slug === "msme-registration") {
-    return "/msme-registration";
-  }
-
-  return `/services/${slug}`;
-}
-
 function MegaMenuContent({ onNavigate }: { onNavigate?: () => void }) {
   const [activeGroup, setActiveGroup] = useState(megaMenuGroups[0]);
 
@@ -237,7 +223,7 @@ function MegaMenuContent({ onNavigate }: { onNavigate?: () => void }) {
           {activeGroup.links.map((label) => (
             <Link
               key={`${activeGroup.title}-${label}`}
-              href={serviceHref(label)}
+              href={`/services/${slugify(label)}`}
               onClick={onNavigate}
               className="group/link flex min-h-12 items-center gap-2 border-b border-slate-100 py-3 text-sm font-bold text-[#050b0d] transition-colors hover:text-[var(--primary-color)]"
             >
@@ -277,7 +263,7 @@ function MobileServicesMenu({ onNavigate }: { onNavigate?: () => void }) {
               {group.links.map((label) => (
                 <Link
                   key={`${group.title}-${label}`}
-                  href={serviceHref(label)}
+                  href={`/services/${slugify(label)}`}
                   onClick={onNavigate}
                   className="block border-t border-white/10 px-5 py-4 text-sm font-bold text-white transition-colors hover:text-[var(--primary-color)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-white/70"
                 >
@@ -343,7 +329,7 @@ export default function Navbar() {
               </div>
             </div>
              <Link
-              href="/msme-registration"
+              href="/services/msme-registration"
               aria-current="page"
               className="rounded-full px-6 py-5 font-bold text-black transition-colors hover:bg-white/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[#121d22]">
               MSME Registration
