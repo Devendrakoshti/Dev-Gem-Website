@@ -8,7 +8,6 @@ import {
   faCheckCircle,
   faClock,
   faCreditCard,
-  faHeadset,
   faLandmark,
   faPhoneAlt,
   faShieldAlt,
@@ -149,17 +148,17 @@ const process = {
 
 const incorporationSupportSteps = [
   {
-    title: "DOCUMENTS VERIFICATION",
+    title: "Documents Verification",
     description:
       "One of the person from our team will collect all the information and documents for incorporate company. All documents should be signed. After receiveing documents our expert will verify the same and they will update you time to time for the same.",
   },
   {
-    title: "APPROVAL OF NAME",
+    title: "Approval of Name",
     description:
       "Once the verification is complete our team will apply for name approval of company which name is given by you. After that they will apply for Digital Signature Certificate also.",
   },
   {
-    title: "CERTIFICATION",
+    title: "Certification",
     description:
       "Our team will draft the MOA (Memorandum of association) and AOA (Articles of association) and they will also file all the mandatory forms. Once Certificate of incoporation, PAN & TAN recived you can apply for your bank account open.",
   },
@@ -167,31 +166,28 @@ const incorporationSupportSteps = [
 
 const whyUsFeatures = [
   {
-    title: "WE MAKE YOUR DREAM COME TRUE",
+    title: "We Make Your Dream Come True",
     description:
       "We are a team of experienced professionals who will complete your project successfully.",
     icon: faAward,
   },
   {
-    title: "BEST PRICE FOR EXCELLENT WORK",
+    title: "Best Price for Excellent Work",
     description: "Reasonable price and best service.",
     icon: faCheckCircle,
   },
   {
-    title: "WE HEAR YOU",
+    title: "We Hear You",
     description: "We always anticipate what you expect.",
     icon: faUserTie,
   },
   {
-    title: "MON-SAT SUPPORT",
+    title: "Mon-sat Support",
     description: "We're always online on office time!",
     icon: faPhoneAlt,
   },
 ];
 
-const ctaTitle = "Ready to Incorporate Your Private Limited Company?";
-const ctaDescription =
-  "Our expert team of CAs, CS and Lawyers will guide you through name approval, DSC, incorporation filing, PAN, TAN and post-incorporation support.";
 
 export const metadata: Metadata = {
   title: metaTitle,
@@ -561,7 +557,7 @@ export default function PrivateLimitedCompanyIncorporationPage() {
 
                     <div className="my-7 h-px w-full bg-slate-200" />
 
-                    <ul className="space-y-3.5">
+                    <ul className="space-y-3.5 mb-5">
                       {plan.features.map((feature) => (
                         <li
                           key={feature}
@@ -569,7 +565,7 @@ export default function PrivateLimitedCompanyIncorporationPage() {
                         >
                           <FontAwesomeIcon
                             icon={faCheckCircle}
-                            className="mt-1 h-3.5 w-3.5 shrink-0 rounded-full text-[#ff4b1f]"
+                            className="mt-1 h-3.5 w-3.5 shrink-0 rounded-full text-[#a63f04]"
                           />
                           {feature}
                         </li>
@@ -578,7 +574,7 @@ export default function PrivateLimitedCompanyIncorporationPage() {
 
                     <Link
                       href="/contact-us"
-                      className="mt-auto inline-flex w-fit items-center gap-2 rounded-md bg-[#ff4b1f] px-6 py-3 text-sm font-black text-white transition duration-300 hover:bg-[#a63f04] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#a63f04] focus-visible:ring-offset-2"
+                      className="mt-auto inline-flex w-fit items-center gap-2 rounded-md bg-[#a63f04] px-6 py-3 text-sm font-black text-white transition duration-300 hover:bg-[#a63f04] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#a63f04] focus-visible:ring-offset-2"
                     >
                       More Info
                       <FontAwesomeIcon icon={faArrowRight} className="h-4 w-4" />
@@ -635,7 +631,6 @@ export default function PrivateLimitedCompanyIncorporationPage() {
                     <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-[#a63f04] to-[#d45205] text-2xl font-black text-white shadow-lg shadow-[#a63f04]/25 transition-transform duration-300 group-hover:scale-110">
                       {String(idx + 1).padStart(2, "0")}
                     </div>
-
                     <h3 className="mb-3 text-xl font-extrabold text-slate-900">
                       {step}
                     </h3>
@@ -645,11 +640,9 @@ export default function PrivateLimitedCompanyIncorporationPage() {
             </div>
           </div>
         </section>
-
         <section className="relative overflow-hidden bg-white py-16 md:py-24">
           <div className="absolute left-0 top-0 h-px w-full bg-gradient-to-r from-transparent via-[#a63f04]/15 to-transparent" />
           <div className="pointer-events-none absolute -right-40 top-20 h-80 w-80 rounded-full bg-[#a63f04]/5 blur-[100px]" />
-
           <div className="container relative z-10 mx-auto max-w-7xl px-4 md:px-8">
             <div className="grid gap-8 lg:grid-cols-3">
               {incorporationSupportSteps.map((step, idx) => (
@@ -675,7 +668,7 @@ export default function PrivateLimitedCompanyIncorporationPage() {
                         className="h-5 w-5"
                       />
                     </div>
-                    <h2 className="text-lg font-black uppercase tracking-[0.08em] text-slate-950">
+                    <h2 className="font-black tracking-[0.08em] text-slate-950">
                       {step.title}
                     </h2>
                     <div className="mt-4 h-1 w-12 rounded-full bg-gradient-to-r from-[#a63f04] to-[#e65a05]" />
@@ -720,7 +713,7 @@ export default function PrivateLimitedCompanyIncorporationPage() {
                     <div className="mb-7 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#141617] text-white shadow-[0_16px_36px_rgba(20,22,23,0.16)] transition duration-500 group-hover:bg-[#a63f04]">
                       <FontAwesomeIcon icon={feature.icon} className="h-5 w-5" />
                     </div>
-                    <h3 className="text-base font-black uppercase leading-6 tracking-[0.08em] text-[#a63f04]">
+                    <h3 className="text-base font-black leading-6 tracking-[0.08em] text-[#a63f04]">
                       {feature.title}
                     </h3>
                     <p className="mt-5 text-base leading-7 text-slate-600">
@@ -728,81 +721,6 @@ export default function PrivateLimitedCompanyIncorporationPage() {
                     </p>
                   </div>
                 </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="relative overflow-hidden bg-[#141617] py-16 md:py-24">
-          <div className="absolute inset-0 bg-gradient-to-br from-[#a63f04]/15 via-transparent to-[#a63f04]/5" />
-          <div className="absolute left-0 top-0 h-px w-full bg-gradient-to-r from-transparent via-[#a63f04]/30 to-transparent" />
-          <div className="pointer-events-none absolute -right-40 -top-40 h-96 w-96 rounded-full bg-[#a63f04]/10 blur-[120px]" />
-          <div className="pointer-events-none absolute -bottom-20 -left-20 h-72 w-72 rounded-full bg-[#d29f81]/10 blur-[80px]" />
-          <div className="absolute inset-0 opacity-[0.03] [background-image:linear-gradient(white_1px,transparent_1px),linear-gradient(90deg,white_1px,transparent_1px)] [background-size:50px_50px]" />
-
-          <div className="container relative z-10 mx-auto max-w-7xl px-4 md:px-8">
-            <div className="grid items-center gap-10 lg:grid-cols-[1fr_auto]">
-              <div data-aos="fade-right" data-aos-duration="800">
-                <div className="mb-6 flex items-center gap-3">
-                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#a63f04] text-white shadow-lg shadow-[#a63f04]/30">
-                    <FontAwesomeIcon icon={faHeadset} className="text-lg" />
-                  </div>
-                  <span className="text-xs font-black uppercase tracking-[0.18em] text-[#d29f81]">
-                    Get Started Today
-                  </span>
-                </div>
-
-                <h2 className="max-w-2xl text-3xl font-extrabold leading-tight text-white md:text-4xl lg:text-5xl">
-                  {ctaTitle}
-                </h2>
-                <p className="mt-5 max-w-xl text-lg leading-relaxed text-white/60">
-                  {ctaDescription}
-                </p>
-              </div>
-
-              <div
-                className="flex flex-col gap-4 sm:flex-row"
-                data-aos="fade-left"
-                data-aos-duration="800"
-                data-aos-delay="100"
-              >
-                <Link
-                  href="/contact-us"
-                  className="group inline-flex items-center justify-center gap-3 rounded-xl bg-[#a63f04] px-8 py-5 text-base font-bold text-white shadow-[0_8px_24px_rgba(166,63,4,0.35)] transition-all duration-300 hover:-translate-y-1 hover:bg-[#8a3403] hover:shadow-[0_12px_32px_rgba(166,63,4,0.45)]"
-                >
-                  {cta}
-                  <FontAwesomeIcon
-                    icon={faArrowRight}
-                    className="transition-transform duration-300 group-hover:translate-x-1"
-                  />
-                </Link>
-
-                <Link
-                  href="tel:+919680719296"
-                  className="group inline-flex items-center justify-center gap-3 rounded-xl border-2 border-white/20 px-8 py-5 text-base font-bold text-white transition-all duration-300 hover:-translate-y-1 hover:border-[#a63f04] hover:bg-[#a63f04]/10"
-                >
-                  <FontAwesomeIcon icon={faPhoneAlt} />
-                  Call Us Now
-                </Link>
-              </div>
-            </div>
-
-            <div
-              className="mt-14 grid gap-6 border-t border-white/10 pt-8 sm:grid-cols-3"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              {[
-                { number: "28k+", label: "Happy Clients" },
-                { number: "5+", label: "Years Experience" },
-                { number: "100%", label: "Online Process" },
-              ].map((item) => (
-                <div key={item.label} className="flex items-center gap-4">
-                  <p className="text-3xl font-black text-[#e65a05]">
-                    {item.number}
-                  </p>
-                  <p className="text-sm font-bold text-white/50">{item.label}</p>
-                </div>
               ))}
             </div>
           </div>

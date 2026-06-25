@@ -185,7 +185,7 @@ function serviceHref(label: string) {
   const slug = slugify(label);
 
   if (slug === "private-limited-company-incorporation") {
-    return "/private-limited-company-incorporation";
+    return "/services/private-limited-company-incorporation";
   }
 
   if (slug === "msme-registration") {
