@@ -42,29 +42,6 @@ const definition = {
   ],
 };
 
-const overviewCard = {
-  label: "Company Structure",
-  title: "Limited Liability",
-};
-
-const overviewHighlights = [
-  {
-    label: "Entity Type",
-    value: "Separate",
-    detail: "Distinct legal identity",
-  },
-  {
-    label: "Protection",
-    value: "Limited",
-    detail: "Liability for shareholders",
-  },
-  {
-    label: "Starting From",
-    value: "Rs. 10999/-",
-    detail: "All-inclusive package",
-  },
-];
-
 const benefitsSection = {
   title: "Process of Section 8 Incorporation",
   paragraphTitles: [

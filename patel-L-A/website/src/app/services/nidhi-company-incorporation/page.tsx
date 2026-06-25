@@ -16,59 +16,46 @@ import {
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 
-const metaTitle = "One Person Company Incorporation | PATEL LEGAL ADVISORS";
+const metaTitle = "Nidhi Company Incorporation | PATEL LEGAL ADVISORS";
 const metaDescription =
-  "A One Person Company (OPC) is a type of business structure in India that allows a single individual to own and operate a company. It's a legal entity separate from its owner, providing limited liability protection.An OPC can be started and operated by just one person. It's ideal for solo entrepreneurs who want to run a business without the need for partners or co-founders.";
+  "A Nidhi Company, also known as a Mutual Benefit Company, is a type of non-banking financial institution (NBFC) in India. These companies are regulated by the Ministry of Corporate Affairs under Section 406 of the Companies Act, 2013, and the Nidhi Rules, 2014. A Nidhi Company is a type of NBFC primarily formed to cultivate the habit of thrift and savings among its members.";
 
-const title = "One Person Company";
+const title = "Nidhi Company";
 const heroParagraphs = [
-  "A One Person Company (OPC) is a type of business structure in India that allows a single individual to own and operate a company. It's a legal entity separate from its owner, providing limited liability protection.An OPC can be started and operated by just one person. It's ideal for solo entrepreneurs who want to run a business without the need for partners or co-founders.",
+  "A Nidhi Company, also known as a Mutual Benefit Company, is a type of non-banking financial institution (NBFC) in India. These companies are regulated by the Ministry of Corporate Affairs (MCA) under Section 406 of the Companies Act, 2013, and the Nidhi Rules, 2014.",
+  "A Nidhi Company is a type of NBFC primarily formed to cultivate the habit of thrift and savings among its members. It functions as a mutual benefit society, where members contribute to a common fund, and the company provides financial assistance to its members in the form of loans and advances.",
 ];
-const price = "STARTING FROM RS. 7999/-";
+const price = "STARTING FROM RS. 25999/-";
 const cta = "KNOW ABOUT PACKAGE";
 
 const definition = {
-  title: "About One Person Company",
+  title: "About Nidhi Company",
+  description: "Key features of a Nidhi Company:",
   paragraphs: [
-    "Single Owner: An OPC can have only one shareholder or owner. This means that one person can form and operate the company without the need for additional shareholders.",
-    "Limited Liability: One of the key advantages of an OPC is that the liability of the owner is limited to the extent of their shareholding. In case the company faces financial difficulties or legal issues, the personal assets of the owner are generally protected, and their liability is limited to the amount of capital they have invested in the company.",
-    "Separate Legal Entity: An OPC is considered a separate legal entity, distinct from its owner. This means it can own assets, incur debts, and enter into contracts in its own name.",
-    "Nominee Director: In addition to the sole owner, an OPC must appoint a nominee director. The nominee director is someone who can take over the management of the company in case the owner becomes incapacitated or dies. The nominee director's role is limited, and they do not have any ownership rights in the company.",
-    "Limited Compliance: OPCs have relatively fewer compliance requirements compared to larger companies. They are exempt from certain statutory requirements applicable to other types of companies, such as holding annual general meetings if there is only one member.",
-    "Conversion: An OPC can be converted into a private limited company once it meets certain criteria, such as exceeding a specified turnover or capital limit. This allows for flexibility in business growth.",
+    "Member-Based: Nidhi Companies are member-centric, which means they are only open to their shareholders or members. The primary purpose is to promote savings and borrowing among members.",
+    "Limited Business Activities: Nidhi Companies are restricted in their business activities and cannot engage in the broader range of activities that traditional banks and NBFCs can. They primarily deal with the acceptance of deposits and lending money to members.",
+    "No External Deposits: Nidhi Companies can only accept deposits from their members, and they are not allowed to accept deposits or loans from the public or non-members.",
+    "Mutual Benefit: The funds collected from members are used for the mutual benefit of the members, primarily through loans and advances. The company's aim is to provide financial support to its members, especially for small-scale business and household needs.",
+    "Nidhi in the Name: A Nidhi Company must have the word Nidhi in its name, as per the Nidhi Rules, 2014.",
+    "Minimum Capital Requirement: There is a minimum capital requirement that a Nidhi Company must meet before it can commence operations, as per the rules set by the MCA.",
     "Name of the Company: The name of an OPC must end with One Person Company to indicate its legal structure.",
-    "Taxation: OPCs are subject to corporate tax rates applicable to companies. They are required to file income tax returns and adhere to tax regulations.",
-  ],
-};
-
-const benefitsSection = {
-  title: "Process of Opc Incorporation",
-  paragraphTitles: [
-    "Choose a Company Name",
-    "Select a Company Formation Package",
-    "Add Company Address Services",
-    "Complete the Checklist Provided by Us",
-  ],
-  paragraphs: [
-    "To find out the availability of your proposed name, simply enter it into our online company name-check tool. This system will compare any name you enter against the Index of Company Names at Companies House.",
-    "We offer a wide selection of packages for companies limited by shares, in addition to tailor-made packages for Non-UK Residents, companies limited by guarantee, Public Limited Companies (PLCs), and Limited Liability Partnerships (LLPs).",
-    "All limited companies must provide details of a registered office. A service address must also be supplied by each director, subscriber, company secretary, and Person with Significant Control (PSC).",
-    "Our online application form is really easy to complete, requiring only a few minutes of your time. You must provide the following information: Company name, Registered office address, Description of main business activities (SIC code), PAN of the Directors - self attested color copies, Aadhar card of the Director and Nominee – self attested color copies, Passport sized Photograph of the Director and Nominee, Driving licence / voter ID of the Director and Nominee, Electricity Bill/water Bill/ Gas bill/ Bank statement of the Director and Nominee, Electricity Bill/water Bill/ Gas bill of the registered office",
+    "Regulation: Nidhi Companies are regulated by the MCA, and they need to comply with the Nidhi Rules and other relevant regulations.",
   ],
 };
 
 const pricing = [
   {
     title: "Basic",
-    price: "Rs. 7999/-",
+    price: "Rs. 25999/-",
     note: "Stamp duty included",
     features: [
-      "1 DIN & 1 DSC",
+      "3 DIN & 7 DSC",
       "1 Name Approval Letter",
       "Stamp duty on Authorized Capital upto INR 1 Lakh",
       "Certificate of Incorporation",
       "Copy of MOA & AOA (E-Copy)",
       "E-PAN & E-TAN",
+      "Share Certificates",
       "ESIC Registration through SPICe Plus",
       "PF Registration through SPICe Plus",
       "Bank Account opening through SPICe Plus",
@@ -76,10 +63,10 @@ const pricing = [
   },
   {
     title: "Standard",
-    price: "Rs. 11999/-",
+    price: "Rs. 26999/-",
     note: "Stamp duty included",
     features: [
-      "1 DIN & 1 DSC",
+      "2 DIN & 2 DSC",
       "1 Name Approval Letter",
       "Stamp duty on Authorized Capital upto INR 1 Lakh",
       "Certificate of Incorporation",
@@ -89,17 +76,15 @@ const pricing = [
       "ESIC Registration through SPICe Plus",
       "PF Registration through SPICe Plus",
       "Bank Account opening through SPICe Plus",
-      "MSME Registration",
-      "GST Registration",
-      "INC 20A filing",
+      "INC 20A",
     ],
   },
   {
     title: "Professional",
-    price: "Rs. 12999/-",
+    price: "Rs. 34999/-",
     note: "Stamp duty included",
     features: [
-      "1 DIN & 1 DSC",
+      "2 DIN & 2 DSC",
       "1 Name Approval Letter",
       "Stamp duty on Authorized Capital upto INR 1 Lakh",
       "Certificate of Incorporation",
@@ -109,10 +94,9 @@ const pricing = [
       "ESIC Registration through SPICe Plus",
       "PF Registration through SPICe Plus",
       "Bank Account opening through SPICe Plus",
-      "MSME Registration",
-      "GST Registration",
       "INC 20A filing",
-      "Appointment of 1st Auditor (Form ADT-1)",
+      "MSME Registration",
+      "Trade Mark Registration",
     ],
   },
 ];
@@ -181,7 +165,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function onepersoncompanyincorporationPage() {
+export default function nidhicompanyincorporationPage() {
   return (
     <div className="min-h-screen overflow-x-clip">
       <Navbar />
@@ -369,6 +353,9 @@ export default function onepersoncompanyincorporationPage() {
                     {definition.title}
                   </h2>
                   <div className="mt-6 h-1 w-20 rounded-full bg-gradient-to-r from-[#a63f04] to-[#e65a05]" />
+                 <div className="group relative mt-5 transition-colors duration-300 hover:border-[#a63f04]">
+                    {definition.description}
+                  </div>
                 </div>
               </div>
               <div
@@ -395,50 +382,6 @@ export default function onepersoncompanyincorporationPage() {
           </div>
         </section>
 
-        <section className="relative overflow-hidden py-16 md:py-24">
-          <div className="absolute inset-0 opacity-[0.04] [background-image:radial-gradient(circle_at_25%_25%,#a63f04_0_1px,transparent_1px),radial-gradient(circle_at_75%_75%,#a63f04_0_1px,transparent_1px)] [background-size:40px_40px]" />
-          <div className="pointer-events-none absolute right-0 top-0 h-96 w-96 rounded-full bg-[#a63f04]/8 blur-[100px]" />
-          <div className="pointer-events-none absolute bottom-0 left-0 h-80 w-80 rounded-full bg-[#a63f04]/5 blur-[80px]" />
-
-          <div className="container relative z-10 mx-auto max-w-7xl px-4 md:px-8">
-            <div className="mx-auto mb-14 max-w-3xl text-center" data-aos="fade-up">
-              <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#a63f04]/25 bg-[#a63f04]/15 px-4 py-2 text-[#e65a05]">
-                <FontAwesomeIcon icon={faAward} className="text-sm" />
-                <span className="text-xs font-black uppercase tracking-wider">
-                  Advantages
-                </span>
-              </div>
-              <h2 className="text-3xl font-extrabold leading-tight md:text-4xl lg:text-5xl">
-                {benefitsSection.title}
-              </h2>
-              <div className="mx-auto mt-6 h-1 w-20 rounded-full bg-gradient-to-r from-[#a63f04] to-[#e65a05]" />
-            </div>
-
-            <div className="grid gap-6 md:grid-cols-2">
-              {benefitsSection.paragraphTitles.map((benefitTitle, idx) => (
-                <div
-                  key={benefitTitle}
-                  className="group relative rounded-2xl border border-white/[0.06] bg-white/[0.03] p-6 backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:border-[#a63f04]/30 hover:bg-white/[0.07]"
-                  data-aos="fade-up"
-                  data-aos-delay={idx * 100}
-                >
-                  <div className="flex items-start gap-4">
-                    <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-[#a63f04]/20 font-bold text-[#e65a05]">
-                      {String(idx + 1).padStart(2, "0")}
-                    </div>
-
-                    <div>
-                      <h3 className="mb-3 text-lg font-bold">{benefitTitle}</h3>
-                      <p className="text-base leading-relaxed text-slate-400">
-                        {benefitsSection.paragraphs[idx]}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
 
         <section className="relative overflow-hidden bg-white py-16 md:py-24">
           <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#a63f04]/20 to-transparent" />

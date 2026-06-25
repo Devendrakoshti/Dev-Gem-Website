@@ -16,33 +16,36 @@ import {
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 
-const metaTitle = "One Person Company Incorporation | PATEL LEGAL ADVISORS";
+const metaTitle = "Public Limited Company Incorporation | PATEL LEGAL ADVISORS";
 const metaDescription =
-  "A One Person Company (OPC) is a type of business structure in India that allows a single individual to own and operate a company. It's a legal entity separate from its owner, providing limited liability protection.An OPC can be started and operated by just one person. It's ideal for solo entrepreneurs who want to run a business without the need for partners or co-founders.";
+  "A Public Limited Company (PLC), also known as a Publicly Traded Company or Incorporated Company, is a type of business entity that offers its shares to the general public, allowing them to be traded on a stock exchange. PLCs are a common form of corporate structure used by medium to large-sized companies to raise capital from a wide range of investors.";
 
-const title = "One Person Company";
+const title = "Public Limited Company";
 const heroParagraphs = [
-  "A One Person Company (OPC) is a type of business structure in India that allows a single individual to own and operate a company. It's a legal entity separate from its owner, providing limited liability protection.An OPC can be started and operated by just one person. It's ideal for solo entrepreneurs who want to run a business without the need for partners or co-founders.",
+  "A Public Limited Company (PLC), also known as a Publicly Traded Company or Incorporated Company, is a type of business entity that offers its shares to the general public, allowing them to be traded on a stock exchange. PLCs are a common form of corporate structure used by medium to large-sized companies to raise capital from a wide range of investors.",
 ];
-const price = "STARTING FROM RS. 7999/-";
+const price = "STARTING FROM RS. 28999/-";
 const cta = "KNOW ABOUT PACKAGE";
 
 const definition = {
-  title: "About One Person Company",
+  title: "About Public Limited Company",
   paragraphs: [
-    "Single Owner: An OPC can have only one shareholder or owner. This means that one person can form and operate the company without the need for additional shareholders.",
-    "Limited Liability: One of the key advantages of an OPC is that the liability of the owner is limited to the extent of their shareholding. In case the company faces financial difficulties or legal issues, the personal assets of the owner are generally protected, and their liability is limited to the amount of capital they have invested in the company.",
-    "Separate Legal Entity: An OPC is considered a separate legal entity, distinct from its owner. This means it can own assets, incur debts, and enter into contracts in its own name.",
-    "Nominee Director: In addition to the sole owner, an OPC must appoint a nominee director. The nominee director is someone who can take over the management of the company in case the owner becomes incapacitated or dies. The nominee director's role is limited, and they do not have any ownership rights in the company.",
-    "Limited Compliance: OPCs have relatively fewer compliance requirements compared to larger companies. They are exempt from certain statutory requirements applicable to other types of companies, such as holding annual general meetings if there is only one member.",
-    "Conversion: An OPC can be converted into a private limited company once it meets certain criteria, such as exceeding a specified turnover or capital limit. This allows for flexibility in business growth.",
-    "Name of the Company: The name of an OPC must end with One Person Company to indicate its legal structure.",
-    "Taxation: OPCs are subject to corporate tax rates applicable to companies. They are required to file income tax returns and adhere to tax regulations.",
+    "Limited Liability: Like other corporate structures, a PLC offers limited liability to its shareholders. This means that the personal assets of shareholders are generally protected, and their liability is limited to the extent of their shareholding in the company.",
+    "Share Capital: PLCs must have a significant amount of share capital, which is divided into shares that can be publicly traded. The capital is typically raised through an initial public offering (IPO), where shares are sold to investors in exchange for capital.",
+    "Public Offering: A distinguishing feature of a PLC is that its shares are publicly offered and listed on a stock exchange, making them available for purchase by the general public. This allows the company to raise substantial capital from a large number of shareholders.",
+    "Regulatory Compliance: PLCs are subject to stringent regulatory requirements and corporate governance standards. These regulations are designed to protect the interests of shareholders and the general public.",
+    "Financial Transparency: PLCs are required to disclose their financial information, including financial statements, annual reports, and other relevant information, to the public and regulatory authorities. This transparency helps investors make informed decisions.",
+    "Board of Directors: PLCs have a board of directors responsible for overseeing the company's operations and making strategic decisions. The board is elected by shareholders and includes executive and non-executive directors.",
+    "Shareholder Rights: Shareholders of PLCs have certain rights, including the right to vote at general meetings, the right to receive dividends, and the right to participate in the company's decision-making process.",
+    "Transferability of Shares: One of the advantages of a PLC is the ease with which shares can be bought and sold on the stock exchange. Shareholders can sell their shares to other investors without the need for approval from the company.",
+    "Corporate Governance: PLCs often have more elaborate corporate governance structures, including committees such as audit committees, remuneration committees, and nomination committees, to ensure proper oversight and accountability.",
+    "Market Capitalization: The value of a PLC is often measured by its market capitalization, which is the total value of its outstanding shares multiplied by the current market price of those shares. This metric is used to compare companies and assess their relative size in the market.",
+    "Dividends and Profit Distribution: PLCs may distribute profits to shareholders in the form of dividends, which are typically paid out of the company's earnings.",
   ],
 };
 
 const benefitsSection = {
-  title: "Process of Opc Incorporation",
+  title: "Process of pub.ltd. Incorporation",
   paragraphTitles: [
     "Choose a Company Name",
     "Select a Company Formation Package",
@@ -60,10 +63,10 @@ const benefitsSection = {
 const pricing = [
   {
     title: "Basic",
-    price: "Rs. 7999/-",
+    price: "Rs. 28999/-",
     note: "Stamp duty included",
     features: [
-      "1 DIN & 1 DSC",
+      "3 DIN & 7 DSC",
       "1 Name Approval Letter",
       "Stamp duty on Authorized Capital upto INR 1 Lakh",
       "Certificate of Incorporation",
@@ -76,10 +79,10 @@ const pricing = [
   },
   {
     title: "Standard",
-    price: "Rs. 11999/-",
+    price: "Rs. 31999/-",
     note: "Stamp duty included",
     features: [
-      "1 DIN & 1 DSC",
+      "3 DIN & 7 DSC",
       "1 Name Approval Letter",
       "Stamp duty on Authorized Capital upto INR 1 Lakh",
       "Certificate of Incorporation",
@@ -96,10 +99,10 @@ const pricing = [
   },
   {
     title: "Professional",
-    price: "Rs. 12999/-",
+    price: "Rs. 33999/-",
     note: "Stamp duty included",
     features: [
-      "1 DIN & 1 DSC",
+      "3 DIN & 7 DSC",
       "1 Name Approval Letter",
       "Stamp duty on Authorized Capital upto INR 1 Lakh",
       "Certificate of Incorporation",
@@ -181,7 +184,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function onepersoncompanyincorporationPage() {
+export default function publiclimitedcompanyincorporationPage() {
   return (
     <div className="min-h-screen overflow-x-clip">
       <Navbar />
