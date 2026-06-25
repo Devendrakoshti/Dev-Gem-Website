@@ -207,7 +207,7 @@ export const metadata: Metadata = {
 
 export default function section8companyincorporationPage() {
   return (
-    <div className="min-h-screen overflow-hidden">
+    <div className="min-h-screen overflow-x-clip">
       <Navbar />
       <main className="main">
         <section className="relative w-full overflow-hidden bg-slate-50 py-16 md:py-24">
@@ -378,29 +378,25 @@ export default function section8companyincorporationPage() {
           <div className="pointer-events-none absolute -right-32 bottom-0 h-80 w-80 rounded-full bg-slate-100 blur-3xl" />
 
           <div className="container relative z-10 mx-auto max-w-7xl px-4 md:px-8">
-            <div className="grid items-start gap-12 lg:grid-cols-[0.4fr_1fr] lg:gap-16">
-              <div className="h-full">
-              <div
-                className="sticky top-0"
-                data-aos="fade-right"
-                data-aos-duration="800"
-              >
-                <div className="mb-5 flex items-center gap-3">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#a63f04] text-white shadow-lg shadow-[#a63f04]/25">
-                    <FontAwesomeIcon icon={faBookOpen} className="text-lg" />
+            <div className="grid gap-12 lg:grid-cols-[0.4fr_1fr] lg:items-stretch lg:gap-16">
+              <div className="self-stretch">
+                <div className="lg:sticky lg:top-36">
+                  <div className="mb-5 flex items-center gap-3">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#a63f04] text-white shadow-lg shadow-[#a63f04]/25">
+                      <FontAwesomeIcon icon={faBookOpen} className="text-lg" />
+                    </div>
+                    <span className="text-xs font-black uppercase tracking-[0.18em] text-[#a63f04]">
+                      Overview
+                    </span>
                   </div>
-                  <span className="text-xs font-black uppercase tracking-[0.18em] text-[#a63f04]">
-                    Overview
-                  </span>
+                  <h2 className="text-3xl font-extrabold leading-tight text-slate-900 md:text-4xl">
+                    {definition.title}
+                  </h2>
+                  <div className="mt-6 h-1 w-20 rounded-full bg-gradient-to-r from-[#a63f04] to-[#e65a05]" />
+                  <div className="group relative mt-5 transition-colors duration-300 hover:border-[#a63f04]">
+                    {definition.description}
+                  </div>
                 </div>
-                <h2 className="text-3xl font-extrabold leading-tight text-slate-900 md:text-4xl">
-                  {definition.title}
-                </h2>
-                <div className="mt-6 h-1 w-20 rounded-full bg-gradient-to-r from-[#a63f04] to-[#e65a05]" />
-                <div
-                    className="group relative mt-5 transition-colors duration-300 hover:border-[#a63f04]"
-                    >{definition.description}</div>
-              </div>
               </div>
               <div
                 data-aos="fade-left"
