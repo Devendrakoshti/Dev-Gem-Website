@@ -12,6 +12,17 @@ import {
   faPhoneAlt,
   faShieldAlt,
   faUserTie,
+  faIdCard,
+  faFingerprint,
+  faBuildingColumns,
+  faShieldHeart,
+  faBriefcaseMedical,
+  faPiggyBank,
+  faFileInvoiceDollar,
+  faFileContract,
+  faBook,
+  faScaleBalanced,
+  faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
@@ -60,6 +71,26 @@ const requirement  = [
       "Tax returns have to be filed by an individual or a business before a specified date. If a taxpayer fails to abide by the deadline, he or she has to pay a penalty.",
     ]
   },  
+];
+
+
+const individualDocs = [
+  { icon: faIdCard, text: "PAN Card" },
+  { icon: faFingerprint, text: "Aadhar Card" },
+  { icon: faBuildingColumns, text: "Bank Statement" },
+  { icon: faShieldHeart, text: "Life Insurance Details" },
+  { icon: faBriefcaseMedical, text: "Mediclaim Details" },
+  { icon: faPiggyBank, text: "PPF or Other Tax Saving Investment" },
+  { icon: faFileInvoiceDollar, text: "Salary Slip" },
+  { icon: faFileContract, text: "Sale/Purchase Bills (If Business Income)" },
+];
+
+const businessDocs = [
+  { icon: faIdCard, text: "PAN Card of Firm" },
+  { icon: faBuildingColumns, text: "Bank Statement" },
+  { icon: faScaleBalanced, text: "Balance Sheet" },
+  { icon: faMagnifyingGlass, text: "Audit Report (If Applicable)" },
+  { icon: faFileInvoiceDollar, text: "TDS Certificates" },
 ];
 
 
@@ -369,28 +400,6 @@ export default function section8companyincorporationPage() {
                 data-aos-delay="100"
               >
                 <div className="space-y-6">
-
-                {/* {requirement.map((feature, idx) => (
-                <article
-                  key={feature.subtitle}
-                  className="group relative overflow-hidden rounded-2xl border border-[#a63f04]/10 bg-white/85 p-6 shadow-[0_22px_80px_rgba(20,22,23,0.08)] backdrop-blur transition duration-500 hover:-translate-y-2 hover:border-[#a63f04]/35 hover:bg-white hover:shadow-[0_32px_100px_rgba(166,63,4,0.16)]"
-                  data-aos="fade-up"
-                  data-aos-delay={idx * 100}
-                >
-                  <div className="absolute right-4 top-4 text-6xl font-black leading-none text-[#a63f04]/[0.05] transition duration-500 group-hover:text-[#a63f04]/10">
-                    {String(idx + 1).padStart(2, "0")}
-                  </div>
-                  <div className="relative z-10">
-                   
-                    <h3 className="text-base font-black leading-6 tracking-[0.08em] text-[#a63f04]">
-                      {feature.subtitle}
-                    </h3>
-                    <p className="mt-5 text-base leading-7 text-slate-600">
-                      {feature.paragraphs}
-                    </p>
-                  </div>
-                </article>
-              ))} */}
               {requirement.map((feature, idx) => (
                 <article
                   key={feature.subtitle}
@@ -437,6 +446,215 @@ export default function section8companyincorporationPage() {
             </div>
           </div>
         </section>
+        {/* <ul className="space-y-4">
+  {individualDocs.map((item, index) => (
+    <li
+      key={index}
+      className="flex items-center gap-4 border-b border-gray-100 pb-3"
+    >
+      <div className="flex h-11 w-11 items-center justify-center rounded-full bg-orange-50 text-[#a63f04] shadow-sm">
+        <FontAwesomeIcon icon={item.icon} />
+      </div>
+
+      <span className="text-gray-700 font-medium">
+        {item.text}
+      </span>
+    </li>
+  ))}
+</ul> */}
+<section className="relative overflow-hidden bg-gradient-to-b from-white via-[#fffaf7] to-white py-20 md:py-24">
+  {/* Background */}
+  <div className="absolute left-0 top-0 h-px w-full bg-gradient-to-r from-transparent via-[#a63f04]/20 to-transparent" />
+  <div className="absolute -left-40 top-20 h-72 w-72 rounded-full bg-[#a63f04]/5 blur-3xl" />
+  <div className="absolute -right-40 bottom-10 h-80 w-80 rounded-full bg-orange-100/40 blur-3xl" />
+
+  <div className="container relative z-10 mx-auto max-w-7xl px-4 md:px-8">
+
+    {/* Heading */}
+    <div
+      className="mx-auto mb-16 max-w-3xl text-center"
+      data-aos="fade-up"
+    >
+      <span className="rounded-full bg-[#a63f04]/10 px-4 py-2 text-sm font-bold uppercase tracking-[0.18em] text-[#a63f04]">
+        Document Checklist
+      </span>
+
+      <h2 className="mt-6 text-4xl font-black leading-tight text-slate-900 md:text-5xl">
+        Requirement for
+        <span className="block text-[#a63f04]">
+          Filing Income Tax Return
+        </span>
+      </h2>
+
+      <div className="mx-auto mt-6 h-1 w-24 rounded-full bg-gradient-to-r from-[#a63f04] to-orange-500"></div>
+    </div>
+
+    {/* Cards */}
+    <div className="grid gap-10 lg:grid-cols-2">
+
+      {/* Individual */}
+      <div
+        className="group overflow-hidden rounded-3xl border border-[#a63f04]/10 bg-white shadow-xl transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl"
+        data-aos="fade-right"
+      >
+        <div className="bg-gradient-to-r from-[#a63f04] to-[#d35400] p-6">
+
+          <div className="flex items-center gap-4">
+            <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white/20 text-2xl text-white">
+              <FontAwesomeIcon icon={faUser} />
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-bold text-white">
+                Individual
+              </h3>
+
+              <p className="text-sm text-white/80">
+                Required Documents
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <div className="p-7">
+
+          <ul className="space-y-4">
+
+            {individualDocs.map((item, index) => (
+
+              <li
+                key={index}
+                className="flex items-center gap-4 border-b border-gray-100 pb-4 transition hover:translate-x-2"
+              >
+
+                <div className="flex h-11 w-11 items-center justify-center rounded-full bg-orange-50 text-[#a63f04]">
+                  <FontAwesomeIcon icon={item.icon} />
+                </div>
+
+                <span className="font-medium text-gray-700">
+                  {item.text}
+                </span>
+
+              </li>
+
+            ))}
+
+          </ul>
+
+          <button className="mt-8 flex w-full items-center justify-center gap-3 rounded-xl bg-[#a63f04] py-4 font-semibold text-white transition hover:bg-[#8b3403]">
+
+            More Info
+
+            <FontAwesomeIcon icon={faArrowRight} />
+
+          </button>
+
+        </div>
+
+      </div>
+
+      {/* Business */}
+      <div
+        className="group overflow-hidden rounded-3xl border border-[#a63f04]/10 bg-white shadow-xl transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl"
+        data-aos="fade-left"
+      >
+
+        <div className="bg-gradient-to-r from-slate-900 to-slate-700 p-6">
+
+          <div className="flex items-center gap-4">
+
+            <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white/20 text-2xl text-white">
+              <FontAwesomeIcon icon={faBuilding} />
+            </div>
+
+            <div>
+
+              <h3 className="text-2xl font-bold text-white">
+                Business
+              </h3>
+
+              <p className="text-sm text-white/80">
+                Required Documents
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div className="p-7">
+
+          <ul className="space-y-4">
+
+            {businessDocs.map((item, index) => (
+
+              <li
+                key={index}
+                className="flex items-center gap-4 border-b border-gray-100 pb-4 transition hover:translate-x-2"
+              >
+
+                <div className="flex h-11 w-11 items-center justify-center rounded-full bg-orange-50 text-[#a63f04]">
+                  <FontAwesomeIcon icon={item.icon} />
+                </div>
+
+                <span className="font-medium text-gray-700">
+                  {item.text}
+                </span>
+
+              </li>
+
+            ))}
+
+          </ul>
+
+          <button className="mt-8 flex w-full items-center justify-center gap-3 rounded-xl bg-slate-900 py-4 font-semibold text-white transition hover:bg-black">
+
+            More Info
+
+            <FontAwesomeIcon icon={faArrowRight} />
+
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    {/* Bottom Badge */}
+
+    <div
+      className="mx-auto mt-16 flex max-w-2xl items-center justify-center gap-4 rounded-2xl border border-[#a63f04]/10 bg-white px-8 py-5 shadow-xl"
+      data-aos="zoom-in"
+    >
+
+      <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[#a63f04]/10">
+
+        <FontAwesomeIcon
+          icon={faCheckCircle}
+          className="text-2xl text-[#a63f04]"
+        />
+
+      </div>
+
+      <p className="text-lg text-gray-700">
+
+        Keep your documents ready.
+
+        <span className="font-bold text-[#a63f04]">
+          {" "}
+          File with confidence.
+        </span>
+
+      </p>
+
+    </div>
+
+  </div>
+</section>
+
 
         <section className="relative overflow-hidden bg-white py-16 md:py-24">
           <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#a63f04]/20 to-transparent" />
