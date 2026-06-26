@@ -16,34 +16,33 @@ import {
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 
-const metaTitle = "Section 8 Company Incorporation | PATEL LEGAL ADVISORS";
+const metaTitle = "One Person Company Incorporation | PATEL LEGAL ADVISORS";
 const metaDescription =
-  "A Section 8 Company is a specific type of legal entity in India, primarily established for non-profit purposes. It derives its name from Section 8 of the Companies Act, 2013, which governs such organizations. These companies are formed with the primary objective of promoting social welfare, charity, education, and similar activities.";
+  "A One Person Company (OPC) is a type of business structure in India that allows a single individual to own and operate a company. It's a legal entity separate from its owner, providing limited liability protection.An OPC can be started and operated by just one person. It's ideal for solo entrepreneurs who want to run a business without the need for partners or co-founders.";
 
-const title = "Section 8 Company";
+const title = "One Person Company";
 const heroParagraphs = [
-  "A Section 8 Company is a specific type of legal entity in India, primarily established for non-profit purposes. It derives its name from Section 8 of the Companies Act, 2013, which governs such organizations. These companies are formed with the primary objective of promoting social welfare, charity, education, and similar activities.",
+  "A One Person Company (OPC) is a type of business structure in India that allows a single individual to own and operate a company. It's a legal entity separate from its owner, providing limited liability protection.An OPC can be started and operated by just one person. It's ideal for solo entrepreneurs who want to run a business without the need for partners or co-founders.",
 ];
-const price = "STARTING FROM RS. 14999/-";
+const price = "STARTING FROM RS. 7999/-";
 const cta = "KNOW ABOUT PACKAGE";
 
 const definition = {
-  title: "About Section 8 Company",
-  description: "Here is a breakdown of key characteristics and features of a Section 8 Company:",
+  title: "About One Person Company",
   paragraphs: [
-    "Non-profit Nature: Section 8 Companies are not established for making profits. Their primary purpose is to promote social welfare and other specified objectives.",
-    "Limited Liability: Members or shareholders of a Section 8 Company have limited liability, meaning their personal assets are not at risk to cover the company's debts or liabilities.",
-    "No Dividends: Unlike other types of companies, Section 8 Companies cannot distribute dividends to their members. Any surplus generated must be reinvested in furthering the company's charitable objectives.",
-    "Objectives: The main objectives of a Section 8 Company can include promoting art, commerce, science, education, research, social welfare, religion, charity, protection of the environment, or any other similar purpose. These objectives must be specified in the company's Memorandum of Association.",
-    "Government Approval: To form a Section 8 Company, you need to obtain approval from the Central Government of India. The government ensures that the company's objectives are genuinely charitable and will benefit the public.",
-    "Name: The name of a Section 8 Company must include the words Foundation, Association, Society, Council, Club, Charity, Institute, or other similar terms, signifying its non-profit nature.",
-    "Regulation: Section 8 Companies are regulated by the Ministry of Corporate Affairs in India and must comply with the Companies Act, 2013.",
-    "Tax Benefits: Section 8 Companies may qualify for certain tax exemptions and benefits under the Income Tax Act, which can encourage donations and contributions for their charitable activities.",
+    "Single Owner: An OPC can have only one shareholder or owner. This means that one person can form and operate the company without the need for additional shareholders.",
+    "Limited Liability: One of the key advantages of an OPC is that the liability of the owner is limited to the extent of their shareholding. In case the company faces financial difficulties or legal issues, the personal assets of the owner are generally protected, and their liability is limited to the amount of capital they have invested in the company.",
+    "Separate Legal Entity: An OPC is considered a separate legal entity, distinct from its owner. This means it can own assets, incur debts, and enter into contracts in its own name.",
+    "Nominee Director: In addition to the sole owner, an OPC must appoint a nominee director. The nominee director is someone who can take over the management of the company in case the owner becomes incapacitated or dies. The nominee director's role is limited, and they do not have any ownership rights in the company.",
+    "Limited Compliance: OPCs have relatively fewer compliance requirements compared to larger companies. They are exempt from certain statutory requirements applicable to other types of companies, such as holding annual general meetings if there is only one member.",
+    "Conversion: An OPC can be converted into a private limited company once it meets certain criteria, such as exceeding a specified turnover or capital limit. This allows for flexibility in business growth.",
+    "Name of the Company: The name of an OPC must end with One Person Company to indicate its legal structure.",
+    "Taxation: OPCs are subject to corporate tax rates applicable to companies. They are required to file income tax returns and adhere to tax regulations.",
   ],
 };
 
 const benefitsSection = {
-  title: "Process of Section 8 Incorporation",
+  title: "Process of Opc Incorporation",
   paragraphTitles: [
     "Choose a Company Name",
     "Select a Company Formation Package",
@@ -61,10 +60,10 @@ const benefitsSection = {
 const pricing = [
   {
     title: "Basic",
-    price: "Rs. 14999/-",
+    price: "Rs. 7999/-",
     note: "Stamp duty included",
     features: [
-      "2 DIN & 2 DSC",
+      "1 DIN & 1 DSC",
       "1 Name Approval Letter",
       "Stamp duty on Authorized Capital upto INR 1 Lakh",
       "Certificate of Incorporation",
@@ -73,15 +72,14 @@ const pricing = [
       "ESIC Registration through SPICe Plus",
       "PF Registration through SPICe Plus",
       "Bank Account opening through SPICe Plus",
-      "License of Section 8",
     ],
   },
   {
     title: "Standard",
-    price: "Rs. 16999/-",
+    price: "Rs. 11999/-",
     note: "Stamp duty included",
     features: [
-      "2 DIN & 2 DSC",
+      "1 DIN & 1 DSC",
       "1 Name Approval Letter",
       "Stamp duty on Authorized Capital upto INR 1 Lakh",
       "Certificate of Incorporation",
@@ -91,16 +89,17 @@ const pricing = [
       "ESIC Registration through SPICe Plus",
       "PF Registration through SPICe Plus",
       "Bank Account opening through SPICe Plus",
-      "License of Section 8",
       "MSME Registration",
+      "GST Registration",
+      "INC 20A filing",
     ],
   },
   {
     title: "Professional",
-    price: "Rs. 21999/-",
+    price: "Rs. 12999/-",
     note: "Stamp duty included",
     features: [
-      "2 DIN & 2 DSC",
+      "1 DIN & 1 DSC",
       "1 Name Approval Letter",
       "Stamp duty on Authorized Capital upto INR 1 Lakh",
       "Certificate of Incorporation",
@@ -110,10 +109,10 @@ const pricing = [
       "ESIC Registration through SPICe Plus",
       "PF Registration through SPICe Plus",
       "Bank Account opening through SPICe Plus",
-      "License of Section 8",
       "MSME Registration",
-      "Trade Mark Registration",
-
+      "GST Registration",
+      "INC 20A filing",
+      "Appointment of 1st Auditor (Form ADT-1)",
     ],
   },
 ];
@@ -182,7 +181,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function section8companyincorporationPage() {
+export default function onepersoncompanyincorporationPage() {
   return (
     <div className="min-h-screen overflow-x-clip">
       <Navbar />
@@ -370,9 +369,6 @@ export default function section8companyincorporationPage() {
                     {definition.title}
                   </h2>
                   <div className="mt-6 h-1 w-20 rounded-full bg-gradient-to-r from-[#a63f04] to-[#e65a05]" />
-                  <div className="group relative mt-5 transition-colors duration-300 hover:border-[#a63f04]">
-                    {definition.description}
-                  </div>
                 </div>
               </div>
               <div

@@ -16,74 +16,60 @@ import {
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 
-const metaTitle = "Section 8 Company Incorporation | PATEL LEGAL ADVISORS";
+const metaTitle = "Producer Company Incorporation | PATEL LEGAL ADVISORS";
 const metaDescription =
-  "A Section 8 Company is a specific type of legal entity in India, primarily established for non-profit purposes. It derives its name from Section 8 of the Companies Act, 2013, which governs such organizations. These companies are formed with the primary objective of promoting social welfare, charity, education, and similar activities.";
+  "A Producer Company is a type of company in India that is formed by a group of agricultural producers for the purpose of undertaking activities related to primary production, harvesting, procurement, grading, pooling, handling, marketing, selling, and export of primary produce (agricultural products and produce of members). Producer Companies are regulated by the Ministry of Corporate Affairs (MCA) in India under the Companies Act, 2013.";
 
-const title = "Section 8 Company";
+const title = "Producer Company";
 const heroParagraphs = [
-  "A Section 8 Company is a specific type of legal entity in India, primarily established for non-profit purposes. It derives its name from Section 8 of the Companies Act, 2013, which governs such organizations. These companies are formed with the primary objective of promoting social welfare, charity, education, and similar activities.",
+  "A Producer Company is a type of company in India that is formed by a group of agricultural producers for the purpose of undertaking activities related to primary production, harvesting, procurement, grading, pooling, handling, marketing, selling, and export of primary produce (agricultural products and produce of members). Producer Companies are regulated by the Ministry of Corporate Affairs (MCA) in India under the Companies Act, 2013.",
 ];
-const price = "STARTING FROM RS. 14999/-";
+const price = "STARTING FROM RS. 26999/-";
 const cta = "KNOW ABOUT PACKAGE";
 
 const definition = {
-  title: "About Section 8 Company",
-  description: "Here is a breakdown of key characteristics and features of a Section 8 Company:",
+  title: "About Producer Company",
+  description: "Here are the key conditions to form a Producer Company:",
   paragraphs: [
-    "Non-profit Nature: Section 8 Companies are not established for making profits. Their primary purpose is to promote social welfare and other specified objectives.",
-    "Limited Liability: Members or shareholders of a Section 8 Company have limited liability, meaning their personal assets are not at risk to cover the company's debts or liabilities.",
-    "No Dividends: Unlike other types of companies, Section 8 Companies cannot distribute dividends to their members. Any surplus generated must be reinvested in furthering the company's charitable objectives.",
-    "Objectives: The main objectives of a Section 8 Company can include promoting art, commerce, science, education, research, social welfare, religion, charity, protection of the environment, or any other similar purpose. These objectives must be specified in the company's Memorandum of Association.",
-    "Government Approval: To form a Section 8 Company, you need to obtain approval from the Central Government of India. The government ensures that the company's objectives are genuinely charitable and will benefit the public.",
-    "Name: The name of a Section 8 Company must include the words Foundation, Association, Society, Council, Club, Charity, Institute, or other similar terms, signifying its non-profit nature.",
-    "Regulation: Section 8 Companies are regulated by the Ministry of Corporate Affairs in India and must comply with the Companies Act, 2013.",
-    "Tax Benefits: Section 8 Companies may qualify for certain tax exemptions and benefits under the Income Tax Act, which can encourage donations and contributions for their charitable activities.",
-  ],
-};
-
-const benefitsSection = {
-  title: "Process of Section 8 Incorporation",
-  paragraphTitles: [
-    "Choose a Company Name",
-    "Select a Company Formation Package",
-    "Add Company Address Services",
-    "Complete the Checklist Provided by Us",
-  ],
-  paragraphs: [
-    "To find out the availability of your proposed name, simply enter it into our online company name-check tool. This system will compare any name you enter against the Index of Company Names at Companies House.",
-    "We offer a wide selection of packages for companies limited by shares, in addition to tailor-made packages for Non-UK Residents, companies limited by guarantee, Public Limited Companies (PLCs), and Limited Liability Partnerships (LLPs).",
-    "All limited companies must provide details of a registered office. A service address must also be supplied by each director, subscriber, company secretary, and Person with Significant Control (PSC).",
-    "Our online application form is really easy to complete, requiring only a few minutes of your time. You must provide the following information: Company name, Registered office address, Description of main business activities (SIC code), PAN of the Directors - self attested color copies, Aadhar card of the Director and Nominee – self attested color copies, Passport sized Photograph of the Director and Nominee, Driving licence / voter ID of the Director and Nominee, Electricity Bill/water Bill/ Gas bill/ Bank statement of the Director and Nominee, Electricity Bill/water Bill/ Gas bill of the registered office",
+    "Minimum Number of Members: A Producer Company must have at least 10 active members or two or more producer institutions (cooperatives). Each member or producer institution must be involved in primary production activities related to agriculture, horticulture, pisciculture, animal husbandry, forestry, or any other primary produce.",
+    "Eligible Members: Only individuals or producer institutions engaged in primary production can become members of a Producer Company. Companies, corporations, or other types of entities cannot become members.",
+    "Name of the Company: The name of the Producer Company must include the words Producer Company Limited as part of its name. For example, ABC Farmers Producer Company Limited",
+    "Registered Office: The Producer Company must have a registered office in India from the day of its incorporation",
+    "Objective Clause: The objectives and activities of the Producer Company must be related to primary production, harvesting, procurement, grading, pooling, handling, marketing, selling, export, or any other activity specified in Section 581B of the Companies Act, 2013.",
+    "Board of Directors: A Producer Company must have a board of directors elected by its members. The majority of the directors must be members or individuals engaged in primary production activities.",
+    "Capital: To establish a Producer Company, a minimum capital investment of Rs. 500,000 is mandatory during the incorporation process.",
+    "Filing Documents: The founders of the Producer Company must file the necessary documents, including the Memorandum of Association (MoA) and Articles of Association (AoA), with the Registrar of Companies (RoC) for incorporation.",
+    "Compliance with Statutory Requirements: The Producer Company must comply with all the statutory requirements and regulations set forth by the MCA and any other relevant government authorities.",
+    "Financial Transactions: The Producer Company should conduct its financial transactions primarily with its members. However, it can engage in financial transactions with non-members up to a certain limit as specified in the Companies Act.​",
   ],
 };
 
 const pricing = [
   {
     title: "Basic",
-    price: "Rs. 14999/-",
+    price: "Rs. 26999/-",
     note: "Stamp duty included",
     features: [
-      "2 DIN & 2 DSC",
+      "5 DIN & 5 DSC",
       "1 Name Approval Letter",
-      "Stamp duty on Authorized Capital upto INR 1 Lakh",
+      "Stamp duty on Authorized Capital upto INR 5 Lakh",
       "Certificate of Incorporation",
       "Copy of MOA & AOA (E-Copy)",
       "E-PAN & E-TAN",
+      "Share Certificates",
       "ESIC Registration through SPICe Plus",
       "PF Registration through SPICe Plus",
       "Bank Account opening through SPICe Plus",
-      "License of Section 8",
     ],
   },
   {
     title: "Standard",
-    price: "Rs. 16999/-",
+    price: "Rs. 29999/-",
     note: "Stamp duty included",
     features: [
-      "2 DIN & 2 DSC",
+      "5 DIN & 10 DSC",
       "1 Name Approval Letter",
-      "Stamp duty on Authorized Capital upto INR 1 Lakh",
+      "Stamp duty on Authorized Capital upto INR 5 Lakh",
       "Certificate of Incorporation",
       "Copy of MOA & AOA (E-Copy)",
       "E-PAN & E-TAN",
@@ -91,18 +77,18 @@ const pricing = [
       "ESIC Registration through SPICe Plus",
       "PF Registration through SPICe Plus",
       "Bank Account opening through SPICe Plus",
-      "License of Section 8",
-      "MSME Registration",
+      "GST Registration",
+      "INC-20A",
     ],
   },
   {
     title: "Professional",
-    price: "Rs. 21999/-",
+    price: "Rs. 34999/-",
     note: "Stamp duty included",
     features: [
-      "2 DIN & 2 DSC",
+      "5 DIN & 10 DSC",
       "1 Name Approval Letter",
-      "Stamp duty on Authorized Capital upto INR 1 Lakh",
+      "Stamp duty on Authorized Capital upto INR 5 Lakh",
       "Certificate of Incorporation",
       "Copy of MOA & AOA (E-Copy)",
       "E-PAN & E-TAN",
@@ -110,10 +96,9 @@ const pricing = [
       "ESIC Registration through SPICe Plus",
       "PF Registration through SPICe Plus",
       "Bank Account opening through SPICe Plus",
-      "License of Section 8",
       "MSME Registration",
-      "Trade Mark Registration",
-
+      "GST Registration",
+      "INC-20A",
     ],
   },
 ];
@@ -182,7 +167,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function section8companyincorporationPage() {
+export default function publiclimitedcompanyincorporationPage() {
   return (
     <div className="min-h-screen overflow-x-clip">
       <Navbar />
@@ -370,9 +355,6 @@ export default function section8companyincorporationPage() {
                     {definition.title}
                   </h2>
                   <div className="mt-6 h-1 w-20 rounded-full bg-gradient-to-r from-[#a63f04] to-[#e65a05]" />
-                  <div className="group relative mt-5 transition-colors duration-300 hover:border-[#a63f04]">
-                    {definition.description}
-                  </div>
                 </div>
               </div>
               <div
@@ -395,51 +377,6 @@ export default function section8companyincorporationPage() {
 
 
               </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="relative overflow-hidden py-16 md:py-24">
-          <div className="absolute inset-0 opacity-[0.04] [background-image:radial-gradient(circle_at_25%_25%,#a63f04_0_1px,transparent_1px),radial-gradient(circle_at_75%_75%,#a63f04_0_1px,transparent_1px)] [background-size:40px_40px]" />
-          <div className="pointer-events-none absolute right-0 top-0 h-96 w-96 rounded-full bg-[#a63f04]/8 blur-[100px]" />
-          <div className="pointer-events-none absolute bottom-0 left-0 h-80 w-80 rounded-full bg-[#a63f04]/5 blur-[80px]" />
-
-          <div className="container relative z-10 mx-auto max-w-7xl px-4 md:px-8">
-            <div className="mx-auto mb-14 max-w-3xl text-center" data-aos="fade-up">
-              <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#a63f04]/25 bg-[#a63f04]/15 px-4 py-2 text-[#e65a05]">
-                <FontAwesomeIcon icon={faAward} className="text-sm" />
-                <span className="text-xs font-black uppercase tracking-wider">
-                  Advantages
-                </span>
-              </div>
-              <h2 className="text-3xl font-extrabold leading-tight md:text-4xl lg:text-5xl">
-                {benefitsSection.title}
-              </h2>
-              <div className="mx-auto mt-6 h-1 w-20 rounded-full bg-gradient-to-r from-[#a63f04] to-[#e65a05]" />
-            </div>
-
-            <div className="grid gap-6 md:grid-cols-2">
-              {benefitsSection.paragraphTitles.map((benefitTitle, idx) => (
-                <div
-                  key={benefitTitle}
-                  className="group relative rounded-2xl border border-white/[0.06] bg-white/[0.03] p-6 backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:border-[#a63f04]/30 hover:bg-white/[0.07]"
-                  data-aos="fade-up"
-                  data-aos-delay={idx * 100}
-                >
-                  <div className="flex items-start gap-4">
-                    <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-[#a63f04]/20 font-bold text-[#e65a05]">
-                      {String(idx + 1).padStart(2, "0")}
-                    </div>
-
-                    <div>
-                      <h3 className="mb-3 text-lg font-bold">{benefitTitle}</h3>
-                      <p className="text-base leading-relaxed text-slate-400">
-                        {benefitsSection.paragraphs[idx]}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              ))}
             </div>
           </div>
         </section>

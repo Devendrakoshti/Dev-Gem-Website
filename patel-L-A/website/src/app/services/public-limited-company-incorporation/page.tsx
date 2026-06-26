@@ -16,34 +16,36 @@ import {
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 
-const metaTitle = "Section 8 Company Incorporation | PATEL LEGAL ADVISORS";
+const metaTitle = "Public Limited Company Incorporation | PATEL LEGAL ADVISORS";
 const metaDescription =
-  "A Section 8 Company is a specific type of legal entity in India, primarily established for non-profit purposes. It derives its name from Section 8 of the Companies Act, 2013, which governs such organizations. These companies are formed with the primary objective of promoting social welfare, charity, education, and similar activities.";
+  "A Public Limited Company (PLC), also known as a Publicly Traded Company or Incorporated Company, is a type of business entity that offers its shares to the general public, allowing them to be traded on a stock exchange. PLCs are a common form of corporate structure used by medium to large-sized companies to raise capital from a wide range of investors.";
 
-const title = "Section 8 Company";
+const title = "Public Limited Company";
 const heroParagraphs = [
-  "A Section 8 Company is a specific type of legal entity in India, primarily established for non-profit purposes. It derives its name from Section 8 of the Companies Act, 2013, which governs such organizations. These companies are formed with the primary objective of promoting social welfare, charity, education, and similar activities.",
+  "A Public Limited Company (PLC), also known as a Publicly Traded Company or Incorporated Company, is a type of business entity that offers its shares to the general public, allowing them to be traded on a stock exchange. PLCs are a common form of corporate structure used by medium to large-sized companies to raise capital from a wide range of investors.",
 ];
-const price = "STARTING FROM RS. 14999/-";
+const price = "STARTING FROM RS. 28999/-";
 const cta = "KNOW ABOUT PACKAGE";
 
 const definition = {
-  title: "About Section 8 Company",
-  description: "Here is a breakdown of key characteristics and features of a Section 8 Company:",
+  title: "About Public Limited Company",
   paragraphs: [
-    "Non-profit Nature: Section 8 Companies are not established for making profits. Their primary purpose is to promote social welfare and other specified objectives.",
-    "Limited Liability: Members or shareholders of a Section 8 Company have limited liability, meaning their personal assets are not at risk to cover the company's debts or liabilities.",
-    "No Dividends: Unlike other types of companies, Section 8 Companies cannot distribute dividends to their members. Any surplus generated must be reinvested in furthering the company's charitable objectives.",
-    "Objectives: The main objectives of a Section 8 Company can include promoting art, commerce, science, education, research, social welfare, religion, charity, protection of the environment, or any other similar purpose. These objectives must be specified in the company's Memorandum of Association.",
-    "Government Approval: To form a Section 8 Company, you need to obtain approval from the Central Government of India. The government ensures that the company's objectives are genuinely charitable and will benefit the public.",
-    "Name: The name of a Section 8 Company must include the words Foundation, Association, Society, Council, Club, Charity, Institute, or other similar terms, signifying its non-profit nature.",
-    "Regulation: Section 8 Companies are regulated by the Ministry of Corporate Affairs in India and must comply with the Companies Act, 2013.",
-    "Tax Benefits: Section 8 Companies may qualify for certain tax exemptions and benefits under the Income Tax Act, which can encourage donations and contributions for their charitable activities.",
+    "Limited Liability: Like other corporate structures, a PLC offers limited liability to its shareholders. This means that the personal assets of shareholders are generally protected, and their liability is limited to the extent of their shareholding in the company.",
+    "Share Capital: PLCs must have a significant amount of share capital, which is divided into shares that can be publicly traded. The capital is typically raised through an initial public offering (IPO), where shares are sold to investors in exchange for capital.",
+    "Public Offering: A distinguishing feature of a PLC is that its shares are publicly offered and listed on a stock exchange, making them available for purchase by the general public. This allows the company to raise substantial capital from a large number of shareholders.",
+    "Regulatory Compliance: PLCs are subject to stringent regulatory requirements and corporate governance standards. These regulations are designed to protect the interests of shareholders and the general public.",
+    "Financial Transparency: PLCs are required to disclose their financial information, including financial statements, annual reports, and other relevant information, to the public and regulatory authorities. This transparency helps investors make informed decisions.",
+    "Board of Directors: PLCs have a board of directors responsible for overseeing the company's operations and making strategic decisions. The board is elected by shareholders and includes executive and non-executive directors.",
+    "Shareholder Rights: Shareholders of PLCs have certain rights, including the right to vote at general meetings, the right to receive dividends, and the right to participate in the company's decision-making process.",
+    "Transferability of Shares: One of the advantages of a PLC is the ease with which shares can be bought and sold on the stock exchange. Shareholders can sell their shares to other investors without the need for approval from the company.",
+    "Corporate Governance: PLCs often have more elaborate corporate governance structures, including committees such as audit committees, remuneration committees, and nomination committees, to ensure proper oversight and accountability.",
+    "Market Capitalization: The value of a PLC is often measured by its market capitalization, which is the total value of its outstanding shares multiplied by the current market price of those shares. This metric is used to compare companies and assess their relative size in the market.",
+    "Dividends and Profit Distribution: PLCs may distribute profits to shareholders in the form of dividends, which are typically paid out of the company's earnings.",
   ],
 };
 
 const benefitsSection = {
-  title: "Process of Section 8 Incorporation",
+  title: "Process of pub.ltd. Incorporation",
   paragraphTitles: [
     "Choose a Company Name",
     "Select a Company Formation Package",
@@ -61,10 +63,10 @@ const benefitsSection = {
 const pricing = [
   {
     title: "Basic",
-    price: "Rs. 14999/-",
+    price: "Rs. 28999/-",
     note: "Stamp duty included",
     features: [
-      "2 DIN & 2 DSC",
+      "3 DIN & 7 DSC",
       "1 Name Approval Letter",
       "Stamp duty on Authorized Capital upto INR 1 Lakh",
       "Certificate of Incorporation",
@@ -73,15 +75,14 @@ const pricing = [
       "ESIC Registration through SPICe Plus",
       "PF Registration through SPICe Plus",
       "Bank Account opening through SPICe Plus",
-      "License of Section 8",
     ],
   },
   {
     title: "Standard",
-    price: "Rs. 16999/-",
+    price: "Rs. 31999/-",
     note: "Stamp duty included",
     features: [
-      "2 DIN & 2 DSC",
+      "3 DIN & 7 DSC",
       "1 Name Approval Letter",
       "Stamp duty on Authorized Capital upto INR 1 Lakh",
       "Certificate of Incorporation",
@@ -91,16 +92,17 @@ const pricing = [
       "ESIC Registration through SPICe Plus",
       "PF Registration through SPICe Plus",
       "Bank Account opening through SPICe Plus",
-      "License of Section 8",
       "MSME Registration",
+      "GST Registration",
+      "INC 20A filing",
     ],
   },
   {
     title: "Professional",
-    price: "Rs. 21999/-",
+    price: "Rs. 33999/-",
     note: "Stamp duty included",
     features: [
-      "2 DIN & 2 DSC",
+      "3 DIN & 7 DSC",
       "1 Name Approval Letter",
       "Stamp duty on Authorized Capital upto INR 1 Lakh",
       "Certificate of Incorporation",
@@ -110,10 +112,10 @@ const pricing = [
       "ESIC Registration through SPICe Plus",
       "PF Registration through SPICe Plus",
       "Bank Account opening through SPICe Plus",
-      "License of Section 8",
       "MSME Registration",
-      "Trade Mark Registration",
-
+      "GST Registration",
+      "INC 20A filing",
+      "Appointment of 1st Auditor (Form ADT-1)",
     ],
   },
 ];
@@ -182,7 +184,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function section8companyincorporationPage() {
+export default function publiclimitedcompanyincorporationPage() {
   return (
     <div className="min-h-screen overflow-x-clip">
       <Navbar />
@@ -370,9 +372,6 @@ export default function section8companyincorporationPage() {
                     {definition.title}
                   </h2>
                   <div className="mt-6 h-1 w-20 rounded-full bg-gradient-to-r from-[#a63f04] to-[#e65a05]" />
-                  <div className="group relative mt-5 transition-colors duration-300 hover:border-[#a63f04]">
-                    {definition.description}
-                  </div>
                 </div>
               </div>
               <div
