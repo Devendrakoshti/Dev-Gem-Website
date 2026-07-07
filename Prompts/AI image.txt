@@ -1,0 +1,187 @@
+React And Other Form Submition Code Website:
+https://web3forms.com/
+https://nodemailer.com/
+
+Flag SVG Icon Website link:
+https://seekflag.com/flag-of-united-states-of-america/
+
+iStock Image Download
+https://steptodown.com/istock-downloader/index.php#google_vignette
+
+AI Image Generator
+https://deepai.org/machine-learning-model/text2img
+
+Image Prompt Creator
+https://imageprompt.org/image-to-prompt
+
+Gemini Pro Email ID
+Id: modelingstructuralbim@gmail.com
+Password: tos_lb_np22
+
+Email: tos.webdevuser03@gmail.com
+Password: Tos@web3.0user
+Recover: divya@teslamechanicaldesigns.com 
+
+Email: tos.webdevuser02@gmail.com
+Password: Tos@web2.0user
+
+TOS Footer Blog Code
+<ul class="list-unstyled footer-links mt-4">
+    <?php 
+        require_once($_SERVER['DOCUMENT_ROOT'] .'/blog/wp-load.php');
+        $args = array(
+            'post_type'     => 'post',
+            'orderby'       => 'date',
+            'order'         => 'DESC',
+            'numberposts'   => 3,
+        );
+        $posts = get_posts($args);    
+        foreach ($posts as $key => $value) {$image = get_the_post_thumbnail_url($value->ID, 'full');?>
+    <li>
+      <div class="h-100 text-start">
+        <?php if ($image): ?>
+            <img src="<?php echo $image; ?>" alt="<?php echo esc_attr($value->post_title); ?>" title="<?php echo esc_attr($value->post_title); ?>" loading="lazy" class="img-fluid" width="auto" height="auto">
+        <?php endif; ?>
+        <a title="<?php echo $value->post_title;?>" href="<?php echo get_permalink($value->ID); ?>" class="btn btn-red mt-4 pt-4 border-top" target="_blank">Read More..</a>
+      </div>
+    </li>
+    <?php } ?>
+  </ul>
+Footer Code End
+
+
+Gem Registration 
+Gem Product Update
+Gem Service Live
+catalogue Management
+L1 Comparison Direct purchase
+Gem Bidding Support
+OEM Panel
+Vendor Assessment
+Brand Approval/Mapping
+
+Order Acceptancel Help
+invoice Generation Help
+Stock Upadte
+Online bidder registratration
+MSME / Udyan Certificate
+ISO Certificate
+
+G Refrence link
+https://www.tender247.com/
+https://www.clicktender.in/
+https://growwindia.org/
+https://www.professionalutilities.com/
+https://gemtechparas.com/
+https://www.bajajfinserv.in/gem-full-form
+
+
+Website name: https://www.professionalutilities.com/
+services page type of content:
+1. What Is Gem 
+2. Benefit of brand listing on gem portal
+3. Document
+4. Fees
+5. Services  under profession
+6. conclusion
+7. FAQ
+
+
+
+
+http://192.168.1.1/dynPolLoginRedirect.html?cid=34
+
+
+
+https://wpbim.themescamp.com/
+https://bracketweb.com/ogency-html-main/index.html
+https://bracketweb.com/ogency-html-main/index-boxed.html
+https://bracketweb.com/ogency-html-main/index-2.html
+
+Pgae link Refrence:
+
+
+
+https://preview.codeless.co/bygge/default/
+https://reactheme.com/products/wordpress/elever/construction/landing-two/
+https://demo.casethemes.net/vastcon/home-4/
+https://hubsteel.casethemes.net/industry-four/
+https://hubsteel.casethemes.net/industry-three/
+https://hubsteel.casethemes.net/industry-two/
+https://hubsteel.casethemes.net/oil-gas/
+https://demo.casethemes.net/vastcon/home-2-one-page/
+https://demo.casethemes.net/vastcon/home-1/
+https://demo.casethemes.net/vastcon/home-5/
+
+
+https://gf55.com/gf55-in-nyc.html
+https://www.pinterest.com/pin/16-inspiring-examples-of-interactive-maps-in-web-design-web-design-ledger--104356916344028993/
+
+
+https://codepen.io/webrav/pen/ZrBNQR
+
+
+https://demo2.wpopal.com/spaciaz/projects/greenview-apartments/
+https://demo2.wpopal.com/spaciaz/home-4/
+https://themes.vamtam.com/?theme=execor&n=2
+https://template.dsngrid.com/mexdot/light/architecture.html
+https://buildgo.nextwpcook.com/
+https://buildgo.nextwpcook.com/home-03/
+https://factgo.nextwpcook.com/about-us/
+https://factgo.nextwpcook.com/portfolio/heavy-machinery/
+
+
+
+https://elevate.themewant.com/home-two/
+https://building-128.webflow.io/home-2
+https://building-128.webflow.io/home-1
+https://10web.io/website-templates/construction/
+https://preview.themeforest.net/item/builtup-construction-wordpress-theme/full_screen_preview/53155756?_ga=2.208029712.300031392.1751438777-837463340.1751438777&_gac=1.250809906.1751438777.EAIaIQobChMIwMXD78mdjgMVDdIWBR1BCCelEAAYASAAEgI4dPD_BwE
+https://demo.awaikenthemes.com/builtup/
+https://demo.awaikenthemes.com/builtup/
+https://preview.themeforest.net/item/builder-building-construction-html-template/full_screen_preview/16076199?_ga=2.102688131.300031392.1751438777-837463340.1751438777&_gac=1.10603264.1751438777.EAIaIQobChMIwMXD78mdjgMVDdIWBR1BCCelEAAYASAAEgI4dPD_BwE
+https://preview.themeforest.net/item/buildgo-construction-building-html-template/full_screen_preview/56380319?_ga=2.111086599.300031392.1751438777-837463340.1751438777&_gac=1.37020564.1751438777.EAIaIQobChMIwMXD78mdjgMVDdIWBR1BCCelEAAYASAAEgI4dPD_BwE
+https://preview.themeforest.net/item/amwerk-industry-wordpress-theme/full_screen_preview/29855519?_ga=2.111086599.300031392.1751438777-837463340.1751438777&_gac=1.37020564.1751438777.EAIaIQobChMIwMXD78mdjgMVDdIWBR1BCCelEAAYASAAEgI4dPD_BwE
+https://wp1.themevibrant.com/newwp/roofnox/home-page-3/
+https://wp1.themevibrant.com/newwp/roofnox/home-page-4/
+https://preview.themeforest.net/item/bricks-construction-html-template-rtl-ready/full_screen_preview/37949213?_ga=2.102688131.300031392.1751438777-837463340.1751438777&_gac=1.10603264.1751438777.EAIaIQobChMIwMXD78mdjgMVDdIWBR1BCCelEAAYASAAEgI4dPD_BwE
+
+
+
+
+https://bakerhicks.com/en/services
+https://arkance.world/us-en
+https://colorlib.com/wp/template/pato/
+https://www.awwwards.com/
+https://www.behance.net/
+https://dribbble.com/
+https://mobbin.com/
+https://www.pttrns.com/
+https://land-book.com/
+https://onepagelove.com/
+
+
+
+
+https://preview.themeforest.net/item/canvas-the-multipurpose-html5-template/full_screen_preview/9228123
+https://preview.themeforest.net/item/invena-business-consulting-html-template/full_screen_preview/57353997
+https://industrie.rstheme.com/html/manufacturing.html
+https://industrie.rstheme.com/html/renewable-energy.html
+
+
+New refrence link (Home Page)
+https://html.themewant.com/invena/onepage-one.html
+https://preview.treethemes.com/hazel5/demo19/
+https://html.rrdevs.net/edcare/index.html
+https://madebydesignesia.com/themes/gardyn/index.html
+
+
+
+New refrence link (Services Page)
+https://html.themewant.com/invena/index-seventeen.html
+https://wp1.themevibrant.com/newwp/roofnox/home-page-4/
+https://preview.themeforest.net/item/infinite-responsive-multipurpose-wordpress-theme/full_screen_preview/16869357
+https://craftohtml.themezaa.com/demo-corporate.html
+https://craftohtml.themezaa.com/demo-beauty-salon.html
+
+

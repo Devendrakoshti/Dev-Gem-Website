@@ -1,0 +1,13 @@
+| Level         | Naam                       | AI ka Kaam                                                             |
+| ------------- | -------------------------- | ---------------------------------------------------------------------- |
+| **Level 1**   | Beginner Helper            | Chhote-chhote code snippets deta                                       |
+| **Level 2**   | Debug Assistant            | Errors fix karta                                                       |
+| **Level 3**   | Feature Builder            | New modules banata                                                     |
+| **Level 4**   | Code Reviewer              | Best practices apply karta                                             |
+| **Level 5**   | System Architect           | Large-scale design samjhta                                             |
+| **Level 6**   | QA + Testing AI            | Tests create + run                                                     |
+| **Level 7**   | Compliance AI              | Security + standards ensure                                            |
+| **Level 7.5** | Autonomous Engineer        | Full upgrade + test + deliver (aap wala level ✅)                       |
+| **Level 8**   | **AI DevOps Chief** ⚡      | Auto deployment, rollback, version controlling, logs monitoring        |
+| **Level 9**   | **Self-Scaling AI CTO** 🤖 | System growth predict karta, infra optimize karta, team-level planning |
+| **Level 10**  | **Self-Evolving AI** 🧠    | Khud learn karta, naye architecture propose, rewriting for future tech |
