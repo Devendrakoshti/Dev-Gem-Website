@@ -11,6 +11,7 @@ import { Modal } from '../../../components/ui/Modal';
 import { clientService } from '../../../services/clientService';
 import { USE_DEMO_AUTH } from '../../../config/appConfig';
 import { userService } from '../../../services/userService';
+import { useRealTime } from '../../../hooks/useRealTime';
 
 type SortKey = 'name' | 'companyName' | 'stage' | 'assignedToName' | 'createdAt';
 type SortOrder = 'asc' | 'desc';
@@ -60,17 +61,18 @@ export const ClientsListPage: React.FC<{ archived?: boolean }> = ({ archived = f
   }, [searchTerm]);
 
   useEffect(() => {
+    fetchClients();
+    fetchEmployees();
     if (USE_DEMO_AUTH) {
-      setClients(archived ? mockStore.getArchivedClients(user) : mockStore.getActiveClients(user));
-      setEmployees(mockStore.getEmployees());
       return mockStore.subscribe(() => {
-        setClients(archived ? mockStore.getArchivedClients(user) : mockStore.getActiveClients(user));
+        fetchClients();
       });
-    } else {
-      fetchClients();
-      fetchEmployees();
     }
   }, [archived, user?.id]);
+
+  useRealTime('ClientDataChanged', () => {
+    fetchClients();
+  });
 
   const handleDeleteToTrash = async (id: string) => {
     try {

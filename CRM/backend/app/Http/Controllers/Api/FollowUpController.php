@@ -24,6 +24,8 @@ class FollowUpController extends Controller
             'employee_name' => Auth::user()->name,
         ]);
 
+        event(new \App\Events\ClientDataChanged('followup_added', $followUp));
+
         return response()->json($followUp, 201);
     }
 }

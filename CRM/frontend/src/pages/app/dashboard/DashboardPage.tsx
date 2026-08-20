@@ -6,6 +6,7 @@ import { Badge } from '../../../components/ui/Badge';
 import { authService } from '../../../services/authService';
 import { USE_DEMO_AUTH } from '../../../config/appConfig';
 import { dashboardService } from '../../../services/dashboardService';
+import { useRealTime } from '../../../hooks/useRealTime';
 
 // --- Visual Components ---
 
@@ -79,6 +80,10 @@ export const DashboardPage: React.FC = () => {
          });
       }
    }, []);
+
+   useRealTime(['ClientDataChanged', 'PaymentRecorded', 'ActivityLoggedEvent'], () => {
+      fetchDashboardData();
+   });
 
    // --- Common Calculations ---
    const myClients = useMemo(() => {
