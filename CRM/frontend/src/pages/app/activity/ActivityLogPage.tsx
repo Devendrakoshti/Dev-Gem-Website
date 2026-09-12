@@ -5,6 +5,7 @@ import { mockStore } from '../../../services/mockStore';
 import { authService } from '../../../services/authService';
 import { USE_DEMO_AUTH } from '../../../config/appConfig';
 import { ActivityLog } from '../../../types';
+import { useRealTime } from '../../../hooks/useRealTime';
 
 export const ActivityLogPage: React.FC = () => {
   const [logs, setLogs] = useState<ActivityLog[]>([]);
@@ -28,6 +29,10 @@ export const ActivityLogPage: React.FC = () => {
       return mockStore.subscribe(() => fetchLogs());
     }
   }, []);
+
+  useRealTime('ActivityLoggedEvent', () => {
+    fetchLogs();
+  });
 
   return (
     <div className="space-y-6 animate-in fade-in duration-500">

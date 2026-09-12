@@ -8,6 +8,7 @@ import { USE_DEMO_AUTH } from '../../../config/appConfig';
 import { authService } from '../../../services/authService';
 import { UserRole } from '../../../types';
 import { useToast } from '../../../components/layout/ToastContext';
+import { useRealTime } from '../../../hooks/useRealTime';
 
 type BalanceFilter = 'ALL' | 'HIGH';
 
@@ -40,6 +41,10 @@ export const PendingPaymentsPage: React.FC = () => {
       return mockStore.subscribe(() => fetchPending());
     }
   }, []);
+
+  useRealTime(['PaymentRecorded', 'ClientDataChanged'], () => {
+    fetchPending();
+  });
 
   const filteredData = pendingData
     .filter(item => {

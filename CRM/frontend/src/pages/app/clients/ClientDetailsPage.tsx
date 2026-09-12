@@ -10,6 +10,7 @@ import { useToast } from '../../../components/layout/ToastContext';
 import { Modal } from '../../../components/ui/Modal';
 import { clientService } from '../../../services/clientService';
 import { USE_DEMO_AUTH } from '../../../config/appConfig';
+import { useRealTime } from '../../../hooks/useRealTime';
 
 export const ClientDetailsPage: React.FC = () => {
   const { id } = useParams();
@@ -78,6 +79,10 @@ export const ClientDetailsPage: React.FC = () => {
       });
     }
   }, [id, user?.id, navigate]);
+
+  useRealTime(['ClientDataChanged', 'PaymentRecorded'], () => {
+    fetchData();
+  });
 
   if (loading) return (
     <div className="p-20 text-center">

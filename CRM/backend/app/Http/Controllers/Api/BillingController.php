@@ -23,12 +23,19 @@ class BillingController extends Controller
             'status' => 'UNPAID',
         ]);
 
+        event(new \App\Events\PaymentRecorded('billing_added', $billingItem));
+
         return response()->json($billingItem, 201);
     }
 
     public function destroy(BillingItem $billingItem)
     {
+        $id = $billingItem->id;
+        $clientId = $billingItem->client_id;
         $billingItem->delete();
+
+        event(new \App\Events\PaymentRecorded('billing_deleted', ['id' => $id, 'client_id' => $clientId]));
+
         return response()->json(null, 204);
     }
 }

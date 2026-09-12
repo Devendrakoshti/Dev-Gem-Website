@@ -21,6 +21,8 @@ class NoteController extends Controller
             'author_name' => Auth::user()->name,
         ]);
 
+        event(new \App\Events\ClientDataChanged('note_added', $note));
+
         return response()->json($note, 201);
     }
 }

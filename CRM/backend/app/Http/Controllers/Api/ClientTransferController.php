@@ -29,7 +29,7 @@ class ClientTransferController extends Controller
             'assigned_to_id' => $newEmployeeId,
         ]);
 
-        ActivityLog::create([
+        $log = ActivityLog::create([
             'actor_id' => Auth::id(),
             'action' => 'Transferred',
             'target_id' => $client->id,
@@ -42,6 +42,14 @@ class ClientTransferController extends Controller
                 'toName' => $newUser ? $newUser->name : 'Unknown',
             ],
         ]);
+
+        event(new \App\Events\ClientDataChanged('transferred', [
+            'client_id' => $client->id,
+            'from_id' => $oldEmployeeId,
+            'to_id' => $newEmployeeId,
+        ]));
+
+        event(new \App\Events\ActivityLoggedEvent($log));
 
         return response()->json(['message' => 'Client transferred successfully']);
     }

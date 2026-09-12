@@ -29,7 +29,11 @@ class ClientController extends Controller
             'created_by_employee_id' => Auth::id(),
         ]);
 
-        return new ClientResource($client->load(['assignedTo', 'createdBy']));
+        $resource = new ClientResource($client->load(['assignedTo', 'createdBy']));
+        
+        event(new \App\Events\ClientDataChanged('created', $resource));
+
+        return $resource;
     }
 
     public function show(Client $client)
@@ -45,14 +49,21 @@ class ClientController extends Controller
 
         $client = $this->leadService->update($client->id, $request->validated());
 
-        return new ClientResource($client->load(['assignedTo', 'createdBy']));
+        $resource = new ClientResource($client->load(['assignedTo', 'createdBy']));
+
+        event(new \App\Events\ClientDataChanged('updated', $resource));
+
+        return $resource;
     }
 
     public function destroy(Client $client)
     {
         $this->authorize('delete', $client);
 
+        $clientId = $client->id;
         $client->delete();
+
+        event(new \App\Events\ClientDataChanged('deleted', ['id' => $clientId]));
 
         return response()->json(['message' => 'Client deleted successfully']);
     }
@@ -64,6 +75,8 @@ class ClientController extends Controller
 
         $client->restore();
 
+        event(new \App\Events\ClientDataChanged('restored', ['id' => $id]));
+
         return response()->json(['message' => 'Client restored successfully']);
     }
 
@@ -73,6 +86,8 @@ class ClientController extends Controller
         $this->authorize('forceDelete', $client);
 
         $client->forceDelete();
+
+        event(new \App\Events\ClientDataChanged('purged', ['id' => $id]));
 
         return response()->json(['message' => 'Client permanently deleted']);
     }

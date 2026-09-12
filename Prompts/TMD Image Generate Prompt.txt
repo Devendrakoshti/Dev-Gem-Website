@@ -1,0 +1,74 @@
+High-tech digital environment visual for [
+    Our Simple 3-Step Process
+1. Assessment & Requirement Analysis: We start with a deep dive into your component's function, failure points, and performance goals
+2. Design, Analysis & Optimization: Our engineers create the 3D model, perform rigorous FEA simulations, and refine the design for optimal manufacturability and strength.
+3. Delivery of Manufacturing Files: You receive a complete package of professional CAD files and 2D drawings, ready for immediate production.
+
+],
+ZERO visible content:
+no text, no letters, no numbers, no symbols,
+floating UI panels, data grids, system dashboards,
+pure technology-focused scene, no human presence,
+minimal and futuristic design,
+soft glow, premium lighting, controlled highlights,
+corporate-grade visual language,
+clean background with space for text overlay,
+photorealistic, ultra detailed,
+aspect ratio [4∶3],
+web optimized, webp output
+
+
+
+
+
+
+Ultra-precise engineering blueprint visualization of an industrial mechanical component
+inspired by the page theme: [Machine Design]
+and conceptually reflecting: [
+    The Solution: Bring Your Product to Life, Digitally
+We provide professional product rendering services that create stunning, lifelike images and videos from your existing design files. We bridge the gap between engineering and sales.
+
+Our USP is this: We are a unique 3D product rendering company that combines the precision of mechanical engineering with the artistry of photorealism. Unlike freelance artists, we understand the technical details of your design, ensuring every visual is not just beautiful, but 100% accurate to your engineering specifications.
+],
+
+technical blueprint drawing style with clean line work and structured geometry,
+component shown in orthographic and isometric blueprint views,
+wireframe and outline-based representation,
+fine white and light cyan lines on deep blueprint-blue background,
+
+ZERO visible content:
+no text, no labels, no dimensions, no numbers, no symbols,
+no annotations, arrows or callouts,
+
+pure component structure only,
+no human presence, no organic elements,
+
+accurate proportions, sharp technical edges,
+layered depth using line-weight variation,
+subtle background grid without markings,
+professional mechanical CAD / engineering drawing aesthetic,
+
+clean, minimal, technical composition,
+balanced negative space for website usage,
+ultra sharp, high clarity,
+aspect ratio [4:3],
+web optimized, webp output
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

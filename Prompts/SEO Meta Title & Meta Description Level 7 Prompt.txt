@@ -1,0 +1,29 @@
+“You are an SEO specialist. Analyze the page using the URL provided and generate a highly optimized Meta Title and Meta Description based on the page content, topic, and target audience. Ensure all keywords are relevant to the theme of the URL. Follow this format strictly:
+
+Page URL: [https://www.teslacad.ca/case-study/tvc-tower.php]
+
+1️⃣ Meta Title Guidelines:
+• 55–60 characters
+• Include the primary keyword detected from the page
+• Add power words to boost click-through rate
+• Brand name must be placed at the end: Tesla CAD
+• Avoid keyword stuffing
+
+2️⃣ Meta Description Guidelines:
+• 150–160 words maximum
+• Highlight benefits, USPs, and target audience
+• Include relevant keywords naturally
+• Address pain points and solutions
+• Add a strong CTA such as: “Get a Free Quote” or “Talk to Experts Today”
+• No duplicate content
+• Maintain a Canada-focused SEO tone
+
+3️⃣ Self-Optimization Rules:
+• Review competitor intent and create a more compelling version
+• If readability or SEO score is low, provide an improved optimized rewrite
+• Strictly follow character and word limit
+
+Output Format:
+A) Meta Title:
+B) Meta Description:
+C) Suggested Improved Version (if required)
