@@ -20,7 +20,7 @@ include 'includes/header.php';
               <i class="fa-solid fa-house text-red me-1"></i> Home <i class="fa-solid fa-chevron-right mx-1 fs-12"></i> GeM L1 Seller </span>
           </div>
           <h1 class="mb-1">Unlock Direct Orders: Become the <span>GeM L1 Seller</span> for Instant Sales! </h1>
-          <p class="fs-18 mb-4 lh-base">Tired of complex tenders? Orders between ₹25,000 and ₹10 Lakhs on GeM are won through the L1 Comparison (Direct Purchase) process. Our expert service ensures your product meets every Golden Parameter, making it the system-recommended Lowest One. This is the key to the GeM Order without Tender.</p>
+          <p class="fs-18 mb-4 lh-base">Tired of complex tenders? Orders between ₹50,000 and ₹10 Lakhs on GeM are won through the L1 Comparison (Direct Purchase) process. Our expert service ensures your product meets every Golden Parameter, making it the system-recommended Lowest One. This is the key to the GeM Order without Tender.</p>
           <a title="Explore More" class="btn-primary" href="/contact-us.php"> Check Your L1 Eligibility Now <span>
               <svg id="Layer_1" enableBackground="new 0 0 100 100" height="40" viewBox="0 0 100 100" fill="#f70629" width="40" xmlns="http://www.w3.org/2000/svg">
                 <path d="m50 10.75c-18.266 0-34.562 13.129-38.383 31.007-1.909 8.933-.623 18.432 3.636 26.515 4.099 7.779 10.819 14.066 18.859 17.629 8.363 3.707 17.964 4.353 26.754 1.825 8.48-2.438 15.999-7.789 21.118-14.972 10.703-15.017 9.272-36.111-3.32-49.567-7.38-7.886-17.862-12.437-28.664-12.437zm18.829 41.347-10.7 10.958c-2.709 2.775-6.991-1.429-4.293-4.191l5.399-5.529h-25.586c-1.817 0-3.333-1.517-3.333-3.333s1.517-3.333 3.333-3.333h25.458l-5.506-5.505c-2.736-2.736 1.506-6.979 4.242-4.243l10.961 10.96c1.162 1.161 1.173 3.041.025 4.216z" />
@@ -87,7 +87,7 @@ include 'includes/header.php';
           <img src="./images/gem-l1-comparison-service-comparison.webp" alt="About Us" title="About Us" class="img-fluid rounded-5" width="1024" height="1200">
           <div class="rounded-5 bg-gradient-red-purple border border-5 border-white shadow service-img-mn">
             <div class="d-flex p-lg-5 p-4 align-items-center justify-content-center text-white">
-              <span class="display-2 fw-bold ">10+ </span>
+              <span class="display-2 fw-bold ">0<?php echo date("Y") - 2020; ?>+ </span>
               <span class="ms-3">Years of Experience</span>
             </div>
           </div>
@@ -240,7 +240,7 @@ include 'includes/header.php';
                 </h3>
                 <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <p>Typically, orders between ₹25,000 and ₹10,00,000 require a buyer to conduct a comparison of at least three products/sellers meeting the L1 criteria. Our service targets this high-volume segment defined by the GeM Rule 149 Direct Purchase Limit. </p>
+                    <p>Typically, orders between ₹50,000 and ₹10,00,000 require a buyer to conduct a comparison of at least three products/sellers meeting the L1 criteria. Our service targets this high-volume segment defined by the GeM Rule 149 Direct Purchase Limit. </p>
                   </div>
                 </div>
               </div>

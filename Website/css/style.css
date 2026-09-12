@@ -55,6 +55,7 @@ hgroup.text-white .subtitle, hgroup.text-white .h2-title{color: var(--color-whit
 .bg-gradient-red-purple {background: linear-gradient(34deg,rgba(0, 0, 0, 1) 0%, rgba(222, 66, 74, 1) 50%, rgba(255, 255, 255, 1) 100%);}
 .link-white{color: var(--color-white);transition: all 0.3s ease;}
 .link-white:hover{color: var(--color-red);}
+footer .link-white{color: var(--color-black);transition: all 0.3s ease;}
 .link-red{color: var(--color-red);transition: all 0.3s ease;}
 .link-red:hover{color: var(--color-dark-grey);}
 .page-path {padding: 7px 18px;border-radius: 37px;background: rgba(0, 0, 0, 0.3);color: var(--color-white);width: auto;display: inline-flex;font-size: 14px;margin-bottom: 10px;}
@@ -88,7 +89,7 @@ hgroup.text-white .subtitle, hgroup.text-white .h2-title{color: var(--color-whit
 .client-logo-slider {overflow: hidden;position: relative;width: auto;}
 .client-logo-slide-track {animation: client-logo-scroll linear infinite 20s;display: flex;gap: 20px;}
 .client-logo-slide-track > div{border: 1px solid var(--color-grey);border-radius: 50px;background-color: var(--color-grey);padding: 12px 30px;}
-.client-logo-slide-track img{opacity: 0.5;transition: all 0.3s ease;}
+.client-logo-slide-track img{transition: all 0.3s ease;}
 .client-logo-slide-track > div:hover img{opacity: 1;}
 .client-testimonial-image{background: url(./images/home-testimonial.webp) no-repeat center center;background-size: cover;}
 .client-testimonial-slider{position: relative;padding-bottom: 50px;}
@@ -98,12 +99,12 @@ hgroup.text-white .subtitle, hgroup.text-white .h2-title{color: var(--color-whit
 .hm-client-logo-section-title{text-wrap: nowrap;}
 
 /* Footer Section Css Start */
-footer{background-color: #464646;}
+footer{background:url(./images/footer-background.webp) no-repeat center;background-size: cover;}
 .footer-social li{margin-right: 15px;}
 .footer-social li a{display: flex;justify-content: center;align-items: center;height: 40px;width: 40px;border: 1px solid var(--color-white);border-radius: 10px;color: var(--color-white);transition: all 0.3s ease;}
 .footer-social li a:hover{background-color: var(--color-red);border-color: var(--color-white);color: var(--color-white);}
 .footer-links li{margin-bottom: 6px;}
-.footer-links li a{color: var(--color-white);transition: all 0.3s ease;}
+.footer-links li a{color: var(--color-black);transition: all 0.3s ease;}
 .footer-links li a:hover{color: var(--color-red);}
 .footer-contact-icon{height: 50px;width: 50px;display: flex;justify-content: center;align-items: center;background: linear-gradient(34deg, rgba(0, 0, 0, 1) 0%, rgba(222, 66, 74, 1) 50%, rgba(255, 255, 255, 1) 100%);border-radius: 10px;color: var(--color-white);margin-right: 17px;border: 5px solid var(--color-white);flex-shrink: 0;}
 /* Form Input Css Start */
@@ -239,7 +240,7 @@ footer{background-color: #464646;}
   0% {background-position: 0% 50%;}
   100% {background-position: 100% 50%;}
 }
-@keyframes client-logo-scroll {0% {transform: translateX(0);} 100% {transform: translateX(calc(-202px * 3))}}
+@keyframes client-logo-scroll {0% {transform: translateX(0);} 100% {transform: translateX(calc(-212px * 3))}}
 
 
 /* Responsive Media Query Start */

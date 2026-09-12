@@ -2,14 +2,14 @@
 <footer>
   <div class="container-fluid py-5">
     <div class="container pt-xl-5 pt-4">
-      <div class="row text-white gy-5">
+      <div class="row gy-5">
         <div class="col-lg-4 col-md-6">
           <div class="h-100">
             <a href="#" title="GEM Gujarat">
-              <img loading="eager" src="./images/gem-gujarat-white-logo.webp" alt="GEM Gujarat" title="GEM Gujarat" class="img-fluid" width="200" height="85">
+              <img loading="eager" src="./images/gem-gujarat-logo.webp" alt="GEM Gujarat" title="GEM Gujarat" class="img-fluid" width="200" height="85">
             </a>
             <span class="d-block mt-4 fs-4 fw-medium"> India’s Leading Strategic Partner for GeM Success </span>
-            <p class="text-white-50 fs-16 mt-4 mb-4">Empowering MSMEs nationwide with expert Government e-Marketplace (GeM) registration, catalogue management, and tender support to win high-value government contracts.</p>
+            <p class="text-black-50 fs-16 mt-4 mb-4">Empowering MSMEs nationwide with expert Government e-Marketplace (GeM) registration, catalogue management, and tender support to win high-value government contracts.</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6">
@@ -17,19 +17,19 @@
             <span class="mb-3 fs-3 d-block fw-semibold text-red">Services</span>
             <ul class="list-unstyled footer-links">
               <li>
-                <a href="gem-registration-consultant.php" title="GeM Registration Consultant">GeM Registration Consultant</a>
-              </li>
-              <li>
-                <a href="gem-catalogue-management-services.php" title="GeM Catalogue Management Services">GeM Catalogue Management Services</a>
+                <a href="gem-registration-consultant.php" title="Gem Registration">Gem Registration</a>
               </li>
               <li>
                 <a href="gem-tender-bidding-support.php" title="GeM Tender Bidding Support">GeM Tender Bidding Support</a>
               </li>
               <li>
-                <a href="gem-product-catalogue-update.php" title="GeM Product Catalogue Update">GeM Product Catalogue Update</a>
+                <a href="gem-l1-comparison-service.php" title="Gem L1 Comparison">Gem L1 Comparison</a>
               </li>
               <li>
-                <a href="gem-vendor-assessment-support.php" title="GeM Vendor Assessment Support">GeM Vendor Assessment Support</a>
+                <a href="gem-oem-panel-registration.php" title="Gem OEM Authorization Code ">Gem OEM Authorization Code </a>
+              </li>
+              <li>
+                <a href="#" title="Add To cart and Direct Purchase support">Add To cart and Direct Purchase support</a>
               </li>
             </ul>
           </div>
@@ -44,7 +44,7 @@
                   </div>
                   <div>
                     <a href="tel:+918015291471" title="+918015291471" class="link-white">+91 80152 91471</a>
-                    <p class="text-white-50 mb-0 fs-14">Expert guidance for your GEM success.</p>
+                    <p class="text-black-50 mb-0 fs-14">Expert guidance for your GEM success.</p>
                   </div>
                 </div>
               </div>
@@ -55,7 +55,7 @@
                   </div>
                   <div>
                     <a href="mailto:info@gemgujarat.com" title="info@gemgujarat.com" class="link-white">info@gemgujarat.com</a>
-                    <p class="text-white-50 mb-0 fs-14">Connect with our team for tailored support.</p>
+                    <p class="text-black-50 mb-0 fs-14">Connect with our team for tailored support.</p>
                   </div>
                 </div>
               </div>
@@ -65,8 +65,8 @@
                     <i class="fa-solid fa-location-dot"></i>
                   </div>
                   <div>
-                    <span class="link-white d-block">Vastral, Ahmedabad, Gujarat</span>
-                    <p class="text-white-50 mb-0 fs-14">Delivering excellence in every GEM solution.</p>
+                    <span class="link-white d-block">512 5th floor, Trade square, Khokra Ahmedabad 380008</span>
+                    <p class="text-black-50 mb-0 fs-14">Delivering excellence in every GEM solution.</p>
                   </div>
                 </div>
               </div>
@@ -95,24 +95,24 @@
           </div>
         </div>
       </div>
-      <div class="d-flex justify-content-between flex-wrap py-4 border-top border-bottom border-white mt-5 gap-3">
+      <div class="d-flex justify-content-between flex-wrap py-4 border-top border-bottom border-black mt-5 gap-3">
         <div>
-          <p class="mb-0 text-white-50">Copyright © <?php echo date("Y"); ?> GEM Gujarat. All Rights Reserved. | <a href="privacy-policy.php" class="link-white">Privacy Policy</a>
+          <p class="mb-0 text-black-50">Copyright © <?php echo date("Y"); ?> GEM Gujarat. All Rights Reserved. | <a href="privacy-policy.php" class="link-white">Privacy Policy</a>
           </p>
         </div>
         <div>
-          <div class="d-flex dmca-badge">
+          <!-- <div class="d-flex dmca-badge">
             <a class="py-1 px-2 bg-red border border-white text-white fs-12" href="#" title="DMCA" target="_blank">DMCA</a>
             <a class="py-1 px-2 bg-dark border border-white text-white fs-12" href="#" target="_blank" title="PROTECTED">PROTECTED</a>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
   </div>
 </footer>
 <div class="whatsapp-fixed"> 
-  <a target="_blnak" href="https://wa.me/919512956666?text=Hi" class="icon"> 
-    <img src="../images/icons/whatsapp-img.svg" alt="Whatsapp Img" title="Whatsapp Img" width="30" height="30"> 
+  <a target="_blnak" href="https://wa.me/918015291471?text=Hi" class="icon"> 
+    <img src="./images/icons/whatsapp-img.svg" alt="Whatsapp Img" title="Whatsapp Img" width="40" height="40"> 
   </a>
 </div>
 <!-- Cookies Modal -->

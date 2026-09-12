@@ -73,9 +73,9 @@ include 'includes/header.php';
             </div>
             <div class="col-xl-5 col-md-4">
               <div class="rounded-5 bg-gradient-red-purple border border-5 border-white shadow">
-                <div class="d-flex p-lg-5 p-4 align-items-center justify-content-center text-white">
-                  <span class="display-2 fw-bold ">53+ </span>
-                  <span class="ms-3">Active Member</span>
+                <div class="d-flex py-lg-5 py-4 px-4 flex-column text-white">
+                  <span class="display-2 fw-bold ">500+ </span>
+                  <span class="ms-2">Active Member</span>
                 </div>
               </div>
             </div>
@@ -147,21 +147,6 @@ include 'includes/header.php';
           <div class="p-xxl-5 p-4">
             <div class="d-flex align-items-center mb-4">
               <div class="home-services-icon">
-                <img src="./images/icons/certificate.svg" alt="Essential Business Certifications" title="Essential Business Certifications" class="img-fluid" width="34" height="34" loading="lazy">
-              </div>
-              <h3 class="mb-0 fs-5 fw-bold">Essential Business Certifications</h3>
-            </div>
-            <p class="text-light-black mb-xxl-4 mb-3">Strengthen your bidding authority with our hassle-free Udyam Registration Online and ISO Certification for MSME services, ensuring your business maintains the mandatory credentials required for GeM tender eligibility and vendor assessment.</p>
-            <a href="gem-msme-udyam-registration.php" class="link-red d-inline-flex align-items-center">Learn More <i class="fa-solid fa-arrow-right fs-4 ms-2"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-xl-4 col-md-6">
-        <div class="h-100 border shadow border-white border-5 rounded-5 bg-white">
-          <div class="p-xxl-5 p-4">
-            <div class="d-flex align-items-center mb-4">
-              <div class="home-services-icon">
                 <img src="./images/icons/tender-bidding.svg" alt="Tender & Bidding Assistance" title="Tender & Bidding Assistance" class="img-fluid" width="34" height="34" loading="lazy">
               </div>
               <h3 class="mb-0 fs-5 fw-bold">Tender & Bidding Assistance</h3>
@@ -177,12 +162,28 @@ include 'includes/header.php';
           <div class="p-xxl-5 p-4">
             <div class="d-flex align-items-center mb-4">
               <div class="home-services-icon">
-                <img src="./images/icons/compliance.svg" alt="Comprehensive Compliance & Filing" title="Comprehensive Compliance & Filing" class="img-fluid" width="34" height="34" loading="lazy">
+                <img src="./images/icons/certificate.svg" alt="Gem L1 Comparison" title="Gem L1 Comparison" class="img-fluid" width="34" height="34" loading="lazy">
               </div>
-              <h3 class="mb-0 fs-5 fw-bold">Comprehensive Compliance & Filing</h3>
+              <h3 class="mb-0 fs-5 fw-bold">Gem L1 Comparison</h3>
             </div>
-            <p class="text-light-black mb-xxl-4 mb-3">End-to-end solutions for various business filings, ensuring your operation is audit-ready and compliant with Indian regulations.</p>
-            <a href="gem-vendor-assessment-support.php" class="link-red d-inline-flex align-items-center">Learn More <i class="fa-solid fa-arrow-right fs-4 ms-2"></i>
+            <p class="text-light-black mb-xxl-4 mb-3">Tired of complex tenders? Orders between ₹50,000 and ₹10 Lakhs on GeM are won through the L1 Comparison (Direct Purchase) process. Our expert service ensures your product meets every Golden Parameter, making it the system-recommended Lowest One. This is the key to the GeM Order without Tender.</p>
+            <a href="gem-l1-comparison-service.php" class="link-red d-inline-flex align-items-center">Learn More <i class="fa-solid fa-arrow-right fs-4 ms-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-xl-4 col-md-6">
+        <div class="h-100 border shadow border-white border-5 rounded-5 bg-white">
+          <div class="p-xxl-5 p-4">
+            <div class="d-flex align-items-center mb-4">
+              <div class="home-services-icon">
+                <img src="./images/icons/compliance.svg" alt="Gem OEM Authorization Code" title="Gem OEM Authorization Code" class="img-fluid" width="34" height="34" loading="lazy">
+              </div>
+              <h3 class="mb-0 fs-5 fw-bold">Gem OEM Authorization Code</h3>
+            </div>
+            <p class="text-light-black mb-xxl-4 mb-3">Hey Manufacturer! Ready to take full control of your brand, manage resellers, and ensure only authentic products reach government buyers? We simplify the complex GeM OEM Panel Registration process, enabling your manufacturing unit to become an official government supplier.</p>
+            <a href="gem-oem-panel-registration.php" class="link-red d-inline-flex align-items-center">Learn More <i class="fa-solid fa-arrow-right fs-4 ms-2"></i>
             </a>
           </div>
         </div>
@@ -192,12 +193,12 @@ include 'includes/header.php';
           <div class="p-xxl-5 p-4">
             <div class="d-flex align-items-center mb-4">
               <div class="home-services-icon">
-                <img src="./images/icons/digital-signature.svg" alt="Digital Signature Certificate Solutions" title="Digital Signature Certificate Solutions" class="img-fluid" width="34" height="34" loading="lazy">
+                <img src="./images/icons/certificate.svg" alt="Essential Business Certifications" title="Essential Business Certifications" class="img-fluid" width="34" height="34" loading="lazy">
               </div>
-              <h3 class="mb-0 fs-5 fw-bold">Digital Signature Certificate Solutions</h3>
+              <h3 class="mb-0 fs-5 fw-bold">Essential Business Certifications</h3>
             </div>
-            <p class="text-light-black mb-xxl-4 mb-3">Secure and quick procurement of the DSC required for e-Tendering and other online government submissions.</p>
-            <a href="gem-tender-bidding-support.php" class="link-red d-inline-flex align-items-center">Learn More <i class="fa-solid fa-arrow-right fs-4 ms-2"></i>
+            <p class="text-light-black mb-xxl-4 mb-3">Strengthen your bidding authority with our hassle-free Udyam Registration Online and ISO Certification for MSME services, ensuring your business maintains the mandatory credentials required for GeM tender eligibility and vendor assessment.</p>
+            <a href="gem-msme-udyam-registration.php" class="link-red d-inline-flex align-items-center">Learn More <i class="fa-solid fa-arrow-right fs-4 ms-2"></i>
             </a>
           </div>
         </div>

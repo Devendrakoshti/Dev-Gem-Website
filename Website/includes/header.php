@@ -104,7 +104,7 @@
                 <div class="nav-con-box">
                   <img src="./images/icons/location-icon.svg" alt="Location Icon" title="Location" width="20" height="20" loading="eager">
                 </div>
-                <span class="ms-2 fw-semibold">Nirant Cross Rd, Vastral, Ahmedabad, Gujarat 382418</span>
+                <span class="ms-2 fw-semibold">512 5th floor, Trade square, Khokra Ahmedabad 380008</span>
               </div>
             </div>
           </div>
@@ -138,7 +138,7 @@
                           <div class="col-xl-6">
                             <ul class="list-unstyled" aria-labelledby="navbarSSLAboutus">
                               <li>
-                                <a class="dropdown-item" href="gem-registration-consultant.php" title="Gem Registration Consultant Page">Gem Registration Consultant</a>
+                                <a class="dropdown-item" href="gem-registration-consultant.php" title="Gem Registration Page">Gem Registration</a>
                               </li>
                               <li>
                                 <a class="dropdown-item" href="gem-catalogue-management-services.php" title="Gem Catalogue Management Services Page">Gem Catalogue Management Services</a>
@@ -160,17 +160,17 @@
                           <div class="col-xl-6">
                             <ul class="list-unstyled" aria-labelledby="navbarSSLAboutus">
                               <li>
-                                <a class="dropdown-item" href="gem-tender-bidding-support.php" title="Gem Tender Bidding Support Page">Gem Tender Bidding Support</a>
-                              </li>
-                              <li>
                                 <a class="dropdown-item" href="gem-l1-comparison-service.php" title="Gem L1 comparison Page">Gem L1 comparison</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="gem-vendor-assessment-support.php" title="Gem Vendor Assessment Support Page">Gem Vendor Assessment Support</a>
                               </li>
                               <li>
                                 <a class="dropdown-item" href="gem-oem-panel-registration.php" title="Gem Oem Panel Registration Page">Gem Oem Panel Registration</a>
                               </li>
+                              <li>
+                                <a class="dropdown-item" href="gem-tender-bidding-support.php" title="Gem Tender Bidding Support Page">Gem Tender Bidding Support</a>
+                              </li>                              
+                              <!-- <li>
+                                <a class="dropdown-item" href="gem-vendor-assessment-support.php" title="Gem Vendor Assessment Support Page">Gem Vendor Assessment Support</a>
+                              </li> -->                              
                               <li>
                                 <a class="dropdown-item" href="gem-msme-udyam-registration.php" title="Gem Msme Udyam Registration Page">Gem Msme Udyam Registration</a>
                               </li>
@@ -184,7 +184,7 @@
                     </div>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link fs-18" href="https://eprocure.gov.in/eprocure/app?page=FrontEndLatestActiveTenders&service=page" title="Live Tender" target="_blank"> Live Tender </a>
+                    <a class="nav-link fs-18" href="https://bidplus.gem.gov.in/all-bids" title="Live Tender" target="_blank"> Live Tender </a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link fs-18" href="about-us.php" title="About us Page">About Us</a>

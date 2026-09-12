@@ -80,7 +80,7 @@ include 'includes/header.php';
           <img src="./images/gem-stock-update.webp" alt="Gem Stock Update Image" title="Gem Stock Update Image" class="img-fluid rounded-5" width="1024" height="1200">
           <div class="rounded-5 bg-gradient-red-purple border border-5 border-white shadow service-img-mn">
             <div class="d-flex p-lg-5 p-4 align-items-center justify-content-center text-white">
-              <span class="display-2 fw-bold ">10+ </span>
+              <span class="display-2 fw-bold ">0<?php echo date("Y") - 2020; ?>+ </span>
               <span class="ms-3">Years of Experience</span>
             </div>
           </div>
