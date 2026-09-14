@@ -1,11 +1,6 @@
 User-agent: *
 Allow: /
-Disallow: /*?q=* 
-Disallow: /*?*q=*
-Disallow: /?s=*
-Disallow: /profile
-Disallow: /teslacad.ca
+Disallow: staging
 
 sitemap: https://www.cadservicesindia.com/sitemap.xml
 sitemap: https://www.cadservicesindia.com/image-sitemap.xml
-sitemap: https://www.cadservicesindia.com/blog/post-sitemap.xml
