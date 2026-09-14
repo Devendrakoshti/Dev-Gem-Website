@@ -7,8 +7,11 @@ $og_image = "images/gem-product-catalogue-update-banner.webp";
 $og_width = "1000";
 $og_height = "1000";
 $page_keywords = "";
-include 'includes/header.php';
-?>
+include 'includes/head.php';
+?> <body>
+  <!-- navbar start  --> <?php include 'includes/navbar.php'; ?>
+  <!-- navbar end  -->
+<main>
 <!-- banner start  -->
 <div class="service-banner">
   <div class="container">

@@ -9,8 +9,11 @@ $og_height = "1162";
 $robots_meta = "noindex, nofollow";
 $googlebot_meta = "noindex, nofollow";
 $bingbot_meta = "noindex, nofollow";
-include 'includes/header.php';
-?>
+include 'includes/head.php';
+?> <body>
+  <!-- navbar start  --> <?php include 'includes/navbar.php'; ?>
+  <!-- navbar end  -->
+<main>
 <!-- thank you start  -->
 <section class="container py-5">
   <div class="d-flex justify-content-center align-items-center flex-column thank-you-page text-center">

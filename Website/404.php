@@ -9,8 +9,11 @@ $og_height = "1137";
 $robots_meta = "noindex, nofollow";
 $googlebot_meta = "noindex, nofollow";
 $bingbot_meta = "noindex, nofollow";
-include 'includes/header.php';
-?>
+include 'includes/head.php';
+?> <body>
+  <!-- navbar start  --> <?php include 'includes/navbar.php'; ?>
+  <!-- navbar end  -->
+<main>
 <!-- header End -->
 <section class="section text-center mt-5 pt-5 mb-5">
   <img loading="eager" src="images/404-error.svg" title="404 Page Not Found" alt="404 Page Not Found" class="mt-5 mb-4 img-fluid" width="500" height="500">
