@@ -16,3 +16,4 @@ http://localhost/github/Dev-Gem-Website/Website/privacy-policy.php
 http://localhost/github/Dev-Gem-Website/Website/contact-us.php
 http://localhost/github/Dev-Gem-Website/Website/404.php
 http://localhost/github/Dev-Gem-Website/Website/thank-you.php
+http://localhost/Dev-Gem-Website/Website/

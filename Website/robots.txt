@@ -1,6 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: staging
 
-sitemap: https://www.cadservicesindia.com/sitemap.xml
-sitemap: https://www.cadservicesindia.com/image-sitemap.xml
+sitemap: https://www.gemgujarat.in/sitemap.xml
+sitemap: https://www.gemgujarat.in/image-sitemap.xml

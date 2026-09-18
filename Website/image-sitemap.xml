@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://www.gemgujarat.in/</loc>
+    <image:image>
+      <image:loc>https://www.gemgujarat.in/images/gem-home-banner-02.webp</image:loc>
+      <image:title>GEM Gujarat - Premier Government e-Marketplace Portal Consultants</image:title>
+      <image:caption>Strategic GeM consulting services helping Indian sellers, MSMEs and OEMs register, list catalogues and win government contracts.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.gemgujarat.in/images/home-about-us.webp</image:loc>
+      <image:title>About GEM Gujarat Consulting Services</image:title>
+      <image:caption>Comprehensive support for GeM portal registration, bidding, and compliance across India.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.gemgujarat.in/images/home-why-choose.webp</image:loc>
+      <image:title>Why Choose GEM Gujarat</image:title>
+      <image:caption>Trusted GeM partner with end-to-end expertise in public procurement.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.gemgujarat.in/images/home-process.webp</image:loc>
+      <image:title>GeM Onboarding and Bidding Process</image:title>
+      <image:caption>Step-by-step workflow for successful GeM seller onboarding, catalogue optimization, and tender bidding.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.gemgujarat.in/images/gem-gujarat-cta.webp</image:loc>
+      <image:title>Get Started with GeM Gujarat</image:title>
+      <image:caption>Connect with GeM experts for seller registration and tender consultation.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- About Us -->
+  <url>
+    <loc>https://www.gemgujarat.in/about-us.php</loc>
+    <image:image>
+      <image:loc>https://www.gemgujarat.in/images/gem-gujarat-about-us-banner-02.webp</image:loc>
+      <image:title>About GeM Gujarat - Mission and Vision</image:title>
+      <image:caption>Empowering Indian entrepreneurs and MSMEs to scale through Government e-Marketplace procurement.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.gemgujarat.in/images/gem-gujarat-growth.webp</image:loc>
+      <image:title>Business Growth on Government e-Marketplace</image:title>
+      <image:caption>Helping businesses achieve consistent revenue growth through government procurement contracts.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.gemgujarat.in/images/gem-gujarat-vision-mission.webp</image:loc>
+      <image:title>GeM Gujarat Vision and Mission</image:title>
+      <image:caption>Our commitment to transparent, compliant, and results-driven GeM consultancy.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.gemgujarat.in/images/gem-gujarat-trustworthy.webp</image:loc>
+      <image:title>Trustworthy GeM Portal Advisors</image:title>
+      <image:caption>Dedicated government procurement specialists with proven nationwide success.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Contact Us -->
+  <url>
+    <loc>https://www.gemgujarat.in/contact-us.php</loc>
+    <image:image>
+      <image:loc>https://www.gemgujarat.in/images/gem-gujarat-contact-banner.webp</image:loc>
+      <image:title>Contact GeM Gujarat Consultants</image:title>
+      <image:caption>Get in touch with our Ahmedabad office for GeM seller registration and tender support.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.gemgujarat.in/images/gem-gujarat-why-choose.webp</image:loc>
+      <image:title>Connect with GeM Specialists</image:title>
+      <image:caption>Fast response and dedicated consultation for government e-marketplace services.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- GeM Registration Consultant -->
+  <url>
+    <loc>https://www.gemgujarat.in/gem-registration-consultant.php</loc>
+    <image:image>
+      <image:loc>https://www.gemgujarat.in/images/gem-registration-consultant-banner.webp</image:loc>
+      <image:title>GeM Registration Consultant India</image:title>
+      <image:caption>Expert GeM seller registration services online across India in 48 hours.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.gemgujarat.in/images/gem-registrations-requirement-documents.webp</image:loc>
+      <image:title>GeM Registration Required Documents Checklist</image:title>
+      <image:caption>Complete checklist of documents needed for GeM primary user registration, PAN, GST, and Udyam linking.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- GeM Catalogue Management Services -->
+  <url>
+    <loc>https://www.gemgujarat.in/gem-catalogue-management-services.php</loc>
+    <image:image>
+      <image:loc>https://www.gemgujarat.in/images/gem-catalogue-management-services-about-us-banner.webp</image:loc>
+      <image:title>GeM Catalogue Management Services</image:title>
+      <image:caption>Professional product catalogue upload, specification mapping, and listing optimization on GeM.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.gemgujarat.in/images/gem-catalogue-management-services-about-us.webp</image:loc>
+      <image:title>GeM Product Visibility and Listing Management</image:title>
+      <image:caption>Optimize product rankings, set golden parameters, and prevent listing suppression on GeM.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- GeM Product Catalogue Update -->
+  <url>
+    <loc>https://www.gemgujarat.in/gem-product-catalogue-update.php</loc>
+    <image:image>
+      <image:loc>https://www.gemgujarat.in/images/gem-product-catalogue-update-banner.webp</image:loc>
+      <image:title>GeM Product Catalogue Update and Optimization</image:title>
+      <image:caption>Update technical parameters, adjust pricing, and fix rejected listings on GeM portal.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.gemgujarat.in/images/gem-product-catalogue-update-listing-hurting.webp</image:loc>
+      <image:title>Fixing Disapproved GeM Listings</image:title>
+      <image:caption>Resolve catalogue discrepancies, category misalignments, and compliance rejections.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.gemgujarat.in/images/gem-product-catalogue-update-process.webp</image:loc>
+      <image:title>GeM Catalogue Update Process Flow</image:title>
+      <image:caption>Fast and compliant workflow for updating and renewing product listings on GeM.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- GeM Stock Update Service -->
+  <url>
+    <loc>https://www.gemgujarat.in/gem-stock-update-service.php</loc>
+    <image:image>
+      <image:loc>https://www.gemgujarat.in/images/gem-stock-update-service-banner.webp</image:loc>
+      <image:title>GeM Stock Update and Listing Expiry Prevention</image:title>
+      <image:caption>Maintain active inventory levels and prevent listing expiry de-listing on GeM.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.gemgujarat.in/images/gem-stock-update-guide-step.webp</image:loc>
+      <image:title>GeM Inventory Management and Renewal Steps</image:title>
+      <image:caption>Step-by-step guide for regular stock synchronization and listing validity renewal.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.gemgujarat.in/images/gem-stock-management-support-includes.webp</image:loc>
+      <image:title>GeM Stock Management Support Features</image:title>
+      <image:caption>24/7 inventory monitoring and real-time out-of-stock risk prevention.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- GeM Invoice Generation -->
+  <url>
+    <loc>https://www.gemgujarat.in/gem-invoice-generation.php</loc>
+    <image:image>
+      <image:loc>https://www.gemgujarat.in/images/gem-invoice-generation-banner.webp</image:loc>
+      <image:title>GeM Invoice Generation and Payment Acceleration</image:title>
+      <image:caption>Generate GST-compliant GeM invoices and accelerate buyer payment clearances.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.gemgujarat.in/images/gem-invoice-generation-rule.webp</image:loc>
+      <image:title>CRAC and GeM Invoicing Rules</image:title>
+      <image:caption>Matching Consignee Receipt and Acceptance Certificate (CRAC) with bill submissions.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.gemgujarat.in/images/gem-invoice-generation-checklist.webp</image:loc>
+      <image:title>GeM Invoice Generation Checklist</image:title>
+      <image:caption>Checklist to eliminate GSTIN mismatch, rounding errors, and bank discrepancy issues.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- GeM Order Acceptance Guide -->
+  <url>
+    <loc>https://www.gemgujarat.in/gem-order-acceptance-guide.php</loc>
+    <image:image>
+      <image:loc>https://www.gemgujarat.in/images/gem-order-acceptance-guide-banner.webp</image:loc>
+      <image:title>GeM Order Acceptance Guide and Post-Award Compliance</image:title>
+      <image:caption>Meet 10-day order acceptance deadlines and fulfill contract milestones on GeM.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.gemgujarat.in/images/gem-order-acceptance-guide-steps.webp</image:loc>
+      <image:title>GeM Order Acceptance Steps</image:title>
+      <image:caption>Practical workflow for purchase order verification, delivery challans, and PBG compliance.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- GeM L1 Comparison Service -->
+  <url>
+    <loc>https://www.gemgujarat.in/gem-l1-comparison-service.php</loc>
+    <image:image>
+      <image:loc>https://www.gemgujarat.in/images/gem-l1-comparison-service-banner.webp</image:loc>
+      <image:title>GeM L1 Comparison Service - Rule 149 Direct Purchase</image:title>
+      <image:caption>Optimize golden parameters and price strategy to win direct purchase orders on GeM.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.gemgujarat.in/images/gem-l1-comparison-service-product-matches.webp</image:loc>
+      <image:title>GeM Product Comparison and Golden Parameters</image:title>
+      <image:caption>Ensure product attributes perfectly align with government buyer search filters.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- GeM OEM Panel Registration -->
+  <url>
+    <loc>https://www.gemgujarat.in/gem-oem-panel-registration.php</loc>
+    <image:image>
+      <image:loc>https://www.gemgujarat.in/images/gem-oem-panel-registration-banner.webp</image:loc>
+      <image:title>GeM OEM Panel Registration and Brand Approval</image:title>
+      <image:caption>Official OEM registration, brand approval, and Brand Authorization Code (BAC) management.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.gemgujarat.in/images/gem-oem-panel-registration-process.webp</image:loc>
+      <image:title>GeM OEM Dashboard Creation Process</image:title>
+      <image:caption>Complete process for trademark validation, vendor assessment, and reseller pairing.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- GeM Tender Bidding Support -->
+  <url>
+    <loc>https://www.gemgujarat.in/gem-tender-bidding-support.php</loc>
+    <image:image>
+      <image:loc>https://www.gemgujarat.in/images/gem-tender-bidding-support-banner.webp</image:loc>
+      <image:title>GeM Tender Bidding Support and Bid Submission</image:title>
+      <image:caption>End-to-end tender consultation, technical document preparation, and reverse auction assistance.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.gemgujarat.in/images/gem-tender-bidding-steps.webp</image:loc>
+      <image:title>GeM Tender Participation Steps</image:title>
+      <image:caption>From bid discovery to BOQ pricing and winning high-value government tenders.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- GeM Vendor Assessment Support -->
+  <url>
+    <loc>https://www.gemgujarat.in/gem-vendor-assessment-support.php</loc>
+    <image:image>
+      <image:loc>https://www.gemgujarat.in/images/gem-vendor-assessment-support-banner.webp</image:loc>
+      <image:title>GeM Vendor Assessment Support - RITES and QCI Audit</image:title>
+      <image:caption>Desktop audit preparation and physical factory inspection assistance for OEM validation.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.gemgujarat.in/images/gem-vendor-solution.webp</image:loc>
+      <image:title>GeM Vendor Assessment Audit Solutions</image:title>
+      <image:caption>Quality manuals, machine list verification, and MSME exemption filings.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- GeM MSME & Udyam Registration -->
+  <url>
+    <loc>https://www.gemgujarat.in/gem-msme-udyam-registration.php</loc>
+    <image:image>
+      <image:loc>https://www.gemgujarat.in/images/gem-msme-udyam-registration-banner.webp</image:loc>
+      <image:title>GeM MSME Udyam Registration and Benefit Linking</image:title>
+      <image:caption>Fast Udyam certificate registration and GeM portal integration for EMD waivers and tender preferences.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.gemgujarat.in/images/gem-msme-udyam-registration-benefits.webp</image:loc>
+      <image:title>MSME Benefits on Government e-Marketplace</image:title>
+      <image:caption>25% public procurement quota, EMD exemption, and priority payment protections.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ISO 9001 Certificate for GeM -->
+  <url>
+    <loc>https://www.gemgujarat.in/gem-iso-certificate-9001.php</loc>
+    <image:image>
+      <image:loc>https://www.gemgujarat.in/images/gem-iso-certificate-banner.webp</image:loc>
+      <image:title>ISO 9001 Certification for GeM Sellers</image:title>
+      <image:caption>Get ISO 9001:2015 quality badge to satisfy OEM requirements and boost tender technical scores.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.gemgujarat.in/images/gem-iso-certificate-step.webp</image:loc>
+      <image:title>3-Step ISO 9001 Certification Process</image:title>
+      <image:caption>Fast, hassle-free audit and accredited ISO certificate issuance for GeM sellers.</image:caption>
+    </image:image>
+  </url>
+
+</urlset>

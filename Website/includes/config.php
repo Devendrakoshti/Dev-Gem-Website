@@ -21,9 +21,9 @@ $base_url = $protocol . '://' . $host . ($base_path ? '/' . $base_path : '') . '
   2. SITE DETAILS
 ===================================================== */
 $site = [
-  'name' => 'Tesla Mechanical Designs',
+  'name' => 'GEM Gujarat',
   'url' => $base_url, // Dynamic URL
-  'logo' => $base_url . 'images/tesla-mechanical-designs-logo.svg'
+  'logo' => $base_url . 'images/gem-gujarat-logo.webp'
 ];
 
 /* =====================================================

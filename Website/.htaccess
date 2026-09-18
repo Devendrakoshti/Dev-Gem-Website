@@ -1,65 +1,111 @@
+# ======================================================================
+# GEM GUJARAT — PRODUCTION APACHE SERVER CONFIGURATION (.htaccess)
+# ======================================================================
+
 # ----------------------------------------------------------------------
-# | SECURITY & CORE SETTINGS
+# 1. SECURITY & CORE SETTINGS
 # ----------------------------------------------------------------------
-# Prevent directory listing
+# Prevent directory browsing
 Options -Indexes
 
-# Hide server version info
+# Hide server version and OS details
 ServerSignature Off
 
-# Disable ETags (Performance improvement for clusters, saves bandwidth)
+# Disable ETags (Performance improvement, saves bandwidth)
 FileETag None
 
-# Block access to hidden files/directories (except .well-known)
-<FilesMatch "(^#.*#|\.(bak|conf|dist|fla|in[ci]|log|psd|sh|sql|sw[op])|~)$">
-    Require all denied
-</FilesMatch>
+# Default charset
+AddDefaultCharset UTF-8
+
+# Block access to hidden files and directories (e.g. .git, .env)
 <FilesMatch "^\.">
     Require all denied
 </FilesMatch>
 
-# Block direct access to the 'include' directory
-RewriteRule ^include/ - [F,L]
+# Block access to sensitive file extensions
+<FilesMatch "(^#.*#|\.(bak|conf|dist|fla|in[ci]|log|psd|sh|sql|sw[op]|env|ini|yml|yaml)|~)$">
+    Require all denied
+</FilesMatch>
+
+# Block direct web access to internal PHP libraries and includes
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^(includes|phpmailer)/ - [F,L]
+</IfModule>
 
 # ----------------------------------------------------------------------
-# | SECURITY HEADERS
+# 2. SECURITY HEADERS
 # ----------------------------------------------------------------------
 <IfModule mod_headers.c>
-    # HSTS (Force HTTPS for 1 year)
-    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+    # HSTS (Force HTTPS for 1 year with subdomains and preload)
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" env=HTTPS
 
     # Clickjacking protection
     Header always append X-Frame-Options SAMEORIGIN
 
-    # MIME-type security
+    # Prevent MIME-sniffing
     Header set X-Content-Type-Options nosniff
 
     # Referrer Policy
     Header set Referrer-Policy "strict-origin-when-cross-origin"
 
-    # Permissions Policy (Disable dangerous features by default)
+    # Permissions Policy (Restrict camera, microphone, geolocation)
     Header set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+
+    # Allow font and asset sharing (CORS for Web Fonts & Icons)
+    <FilesMatch "\.(ttf|ttc|otf|eot|woff|woff2|svg)$">
+        Header set Access-Control-Allow-Origin "*"
+    </FilesMatch>
 </IfModule>
 
 # ----------------------------------------------------------------------
-# | URL REWRITING & CANONICALIZATION
+# 3. MIME TYPES
 # ----------------------------------------------------------------------
-RewriteEngine On
+<IfModule mod_mime.c>
+    # Web fonts
+    AddType font/woff                           woff
+    AddType font/woff2                          woff2
+    AddType font/ttf                            ttf
+    AddType font/otf                            otf
+    AddType application/vnd.ms-fontobject        eot
 
-# Force WWW
-RewriteCond %{HTTP_HOST} !^www\. [NC]
-RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+    # Modern image formats
+    AddType image/webp                          webp
+    AddType image/avif                          avif
+    AddType image/svg+xml                       svg svgz
 
-# Force HTTPS
-RewriteCond %{HTTPS} off
-RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
-
-# Redirect index.php to root
-RewriteCond %{THE_REQUEST} /index\.php [NC]
-RewriteRule ^(.*)index\.php$ https://www.cadservicesindia.com/$1 [R=301,L]
+    # Web App Manifest
+    AddType application/manifest+json           webmanifest
+    AddType application/json                    json
+</IfModule>
 
 # ----------------------------------------------------------------------
-# | BOT BLOCKING (Legacy List)
+# 4. URL REWRITING & CANONICALIZATION
+# ----------------------------------------------------------------------
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # 4.1 Force HTTPS (Exclude localhost / 127.0.0.1 for local development)
+    RewriteCond %{HTTP_HOST} !^(localhost|127\.0\.0\.1) [NC]
+    RewriteCond %{HTTPS} off
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+    # 4.2 Force WWW for production domain (Exclude localhost)
+    RewriteCond %{HTTP_HOST} !^(localhost|127\.0\.0\.1) [NC]
+    RewriteCond %{HTTP_HOST} !^www\. [NC]
+    RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+    # 4.3 Redirect /index.php to root URL (SEO canonicalization)
+    RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^/]+/)*index\.php [NC]
+    RewriteRule ^(([^/]+/)*)index\.php$ /$1 [R=301,L]
+
+    # 4.4 Remove multiple consecutive slashes
+    RewriteCond %{THE_REQUEST} //+
+    RewriteRule ^(.*) /$1 [R=301,L]
+</IfModule>
+
+# ----------------------------------------------------------------------
+# 5. BOT BLOCKING & CRAWLER PROTECTION
 # ----------------------------------------------------------------------
 <IfModule mod_setenvif.c>
     SetEnvIfNoCase User-Agent ^$ bad_bot
@@ -80,11 +126,12 @@ RewriteRule ^(.*)index\.php$ https://www.cadservicesindia.com/$1 [R=301,L]
 </IfModule>
 
 # ----------------------------------------------------------------------
-# | COMPRESSION (GZIP)
+# 6. GZIP / DEFLATE COMPRESSION
 # ----------------------------------------------------------------------
 <IfModule mod_deflate.c>
     AddOutputFilterByType DEFLATE text/plain
     AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/xml
     AddOutputFilterByType DEFLATE text/css
     AddOutputFilterByType DEFLATE text/javascript
     AddOutputFilterByType DEFLATE application/javascript
@@ -93,55 +140,70 @@ RewriteRule ^(.*)index\.php$ https://www.cadservicesindia.com/$1 [R=301,L]
     AddOutputFilterByType DEFLATE application/xml
     AddOutputFilterByType DEFLATE application/xhtml+xml
     AddOutputFilterByType DEFLATE application/rss+xml
+    AddOutputFilterByType DEFLATE application/atom+xml
+    AddOutputFilterByType DEFLATE application/manifest+json
     AddOutputFilterByType DEFLATE image/svg+xml
     AddOutputFilterByType DEFLATE image/x-icon
+    AddOutputFilterByType DEFLATE font/ttf
+    AddOutputFilterByType DEFLATE font/otf
+    AddOutputFilterByType DEFLATE font/opentype
+    AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
 </IfModule>
 
 # ----------------------------------------------------------------------
-# | BROWSER CACHING
+# 7. BROWSER CACHING (Expires & Cache-Control)
 # ----------------------------------------------------------------------
 <IfModule mod_expires.c>
     ExpiresActive On
     ExpiresDefault "access plus 1 month"
 
-    # HTML: No cache (ensure fresh content)
+    # Dynamic HTML Content (Always revalidate for fresh content)
     ExpiresByType text/html "access plus 0 seconds"
 
-    # CSS, JS, Images: Cache for 1 month
-    ExpiresByType text/css "access plus 1 month"
-    ExpiresByType application/javascript "access plus 1 month"
-    ExpiresByType image/jpg "access plus 1 month"
-    ExpiresByType image/jpeg "access plus 1 month"
-    ExpiresByType image/gif "access plus 1 month"
-    ExpiresByType image/png "access plus 1 month"
-    ExpiresByType image/webp "access plus 1 month"
-    ExpiresByType image/svg+xml "access plus 1 month"
-    ExpiresByType image/x-icon "access plus 1 month"
+    # CSS and JavaScript (Cached for 1 year)
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType text/javascript "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType application/x-javascript "access plus 1 year"
+
+    # Images (Cached for 1 year)
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/avif "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+
+    # Web Fonts (Cached for 1 year)
+    ExpiresByType font/ttf "access plus 1 year"
+    ExpiresByType font/otf "access plus 1 year"
+    ExpiresByType font/woff "access plus 1 year"
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType application/font-woff "access plus 1 year"
+    ExpiresByType application/font-woff2 "access plus 1 year"
+    ExpiresByType application/vnd.ms-fontobject "access plus 1 year"
+
+    # Sitemaps & XML Feeds (Cached for 1 hour)
+    ExpiresByType application/xml "access plus 1 hour"
+    ExpiresByType text/xml "access plus 1 hour"
+    ExpiresByType application/manifest+json "access plus 1 week"
 </IfModule>
 
-# Cache-Control Headers for specific files
 <IfModule mod_headers.c>
-    <FilesMatch "\.(js|css|jpg|jpeg|png|gif|webp|ico|svg)$">
-        Header set Cache-Control "public, max-age=2592000"
+    # Static Assets (Images, Fonts, CSS, JS)
+    <FilesMatch "\.(js|css|jpg|jpeg|png|gif|webp|avif|ico|svg|woff|woff2|ttf|otf|eot)$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
     </FilesMatch>
+
+    # Sitemaps & Robots
     <FilesMatch "\.(xml|txt)$">
         Header set Cache-Control "max-age=3600, public"
     </FilesMatch>
 </IfModule>
 
 # ----------------------------------------------------------------------
-# | CUSTOM REDIRECTS
-# ----------------------------------------------------------------------
-Redirect 301 /bim-revit-modeling-services.php https://www.cadservicesindia.com/bim-services.php
-Redirect 301 /services.php https://www.cadservicesindia.com/
-Redirect 301 /services/revit-family-creation-services.php https://www.cadservicesindia.com/bim-services.php
-Redirect 301 /portfolio/architectural-construction-drawings-portfolio.php https://www.cadservicesindia.com/construction-documentation-sample.php
-Redirect 301 /3d-architectural-modeling-services.php https://www.cadservicesindia.com/bim-services.php
-Redirect 301 /2d-cad-drafting-services.php https://www.cadservicesindia.com/drafting-services.php
-Redirect 301 /mep-samples.php https://www.cadservicesindia.com/mep-drafting-sample.php
-Redirect 301 /3d-architectural-rendering-services.php https://www.cadservicesindia.com/3d-rendering-services.php
-
-# ----------------------------------------------------------------------
-# | ERROR PAGES
+# 8. CUSTOM ERROR PAGES
 # ----------------------------------------------------------------------
 ErrorDocument 404 /404.php

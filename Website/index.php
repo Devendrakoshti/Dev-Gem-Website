@@ -2,8 +2,8 @@
 $page_title = "GeM Registration, Udyam Registration Online, & GeM Consultant India";
 $page_desc = "Simplify GeM Seller Registration & MSME Udyam Certification Nationwide. Trusted GeM Experts in India for profile optimization and government tender bidding success.";
 $canonical_url = "index.php";
-$preload_image = "images/gem-home-banner.webp";
-$og_image = "images/gem-home-banner.webp";
+$preload_image = "images/gem-home-banner-02.webp";
+$og_image = "images/gem-home-banner-02.webp";
 $og_width = "1000";
 $og_height = "1000";
 $page_keywords = "";
@@ -13,32 +13,57 @@ include 'includes/head.php';
   <!-- navbar end  -->
 <main>
 <!-- banner start  -->
-<div class="hero-banner">
-  <div class="container">
-    <div class="row align-items-center flex-wrap-reverse g-5">
+<section class="home-hero-banner py-4 py-lg-5 position-relative overflow-hidden">
+  <div class="container-fluid">
+    <div class="row align-items-center g-4 g-lg-5">
       <div class="col-lg-7">
-        <div class="text-white">
-          <div>
-            <p class="fs-3 fw-bold lh-base mb-0">Your Shortcut to Government Business</p>
-            <h1 class="mb-3">Simplify GeM Registration, <span>GeM Seller Registration</span> and MSME Udyam Certification Today. </h1>
-            <p class="fs-18 mb-4 lh-base">We are GeM Experts India, India’s trusted consulting partner, helping small businesses and entrepreneurs unlock multi-crore opportunities on the Government e-Marketplace (GeM) and achieve critical compliance effortlessly.</p>
-            <a title="Explore More" class="btn-primary" href="/contact-us.php"> Unlock Your Business Potential Now <span>
-                <svg id="Layer_1" enableBackground="new 0 0 100 100" height="40" viewBox="0 0 100 100" fill="#f70629" width="40" xmlns="http://www.w3.org/2000/svg">
-                  <path d="m50 10.75c-18.266 0-34.562 13.129-38.383 31.007-1.909 8.933-.623 18.432 3.636 26.515 4.099 7.779 10.819 14.066 18.859 17.629 8.363 3.707 17.964 4.353 26.754 1.825 8.48-2.438 15.999-7.789 21.118-14.972 10.703-15.017 9.272-36.111-3.32-49.567-7.38-7.886-17.862-12.437-28.664-12.437zm18.829 41.347-10.7 10.958c-2.709 2.775-6.991-1.429-4.293-4.191l5.399-5.529h-25.586c-1.817 0-3.333-1.517-3.333-3.333s1.517-3.333 3.333-3.333h25.458l-5.506-5.505c-2.736-2.736 1.506-6.979 4.242-4.243l10.961 10.96c1.162 1.161 1.173 3.041.025 4.216z" />
-                </svg>
-              </span>
+        <div class="pe-lg-2">
+          <div class="home-banner-subtitle fw-bold mb-2">
+            WIN MORE GOVERNMENT e-MARKETPLACE ORDERS WITH GEM GUJARAT
+          </div>
+          <h1 class="home-banner-title mb-3">
+            Premier GeM Portal Consultants: <span class="text-red">Multi-Category OEM Panel Access, Fast OEM Authorization Codes</span> &amp; L1 Comparison Solutions
+          </h1>
+          <p class="home-banner-desc mb-4">
+            We specialise in precision L1 product comparisons, ready-to-use OEM panels across multiple categories, instant OEM authorisation codes, and fast GeM seller onboarding.
+          </p>
+          
+          <div class="d-flex flex-wrap align-items-center gap-3 mb-4">
+            <a title="Request L1 & OEM Solutions" class="btn-banner-red" href="/contact-us.php">
+              Request L1 &amp; OEM Solutions <i class="fa-solid fa-arrow-right ms-2 fs-14"></i>
             </a>
+            <a title="Talk to Our Experts" class="btn-banner-outline" href="/contact-us.php">
+              Talk to Our Experts <i class="fa-solid fa-arrow-right ms-2 fs-14"></i>
+            </a>
+          </div>
+
+          <div class="home-banner-features-pill d-inline-flex flex-wrap align-items-center gap-3 px-4 py-2 rounded-pill mb-2">
+            <span class="d-flex align-items-center"><i class="fa-solid fa-check text-red me-2"></i> Instant OEM Codes</span>
+            <span class="d-flex align-items-center"><i class="fa-solid fa-check text-red me-2"></i> Precision L1 Comparison</span>
+            <span class="d-flex align-items-center"><i class="fa-solid fa-check text-red me-2"></i> Fast Onboarding</span>
           </div>
         </div>
       </div>
       <div class="col-lg-5">
-        <div class="hero-banner-image d-none d-lg-block">
-          <img src="images/gem-home-banner.webp" alt="Hero Banner Image" title="Hero Banner Image" class="img-fluid" width="1000" height="1000">
+        <div class="home-banner-img-wrap text-center">
+          <img src="images/gem-home-banner-02.webp" alt="Premier GeM Portal Consultants" title="Premier GeM Portal Consultants" class="img-fluid" width="800" height="700">
         </div>
       </div>
     </div>
   </div>
-</div>
+
+  <div class="home-banner-bottom-ribbon mt-4 mt-lg-5 pt-3 border-top border-secondary border-opacity-10">
+    <div class="container">
+      <div class="d-flex flex-wrap justify-content-center align-items-center gap-3 gap-md-5 fs-15 fw-medium text-dark">
+        <span class="d-flex align-items-center"><i class="fa-solid fa-star text-warning me-2 fs-14"></i> Multi-Category Panels</span>
+        <span class="text-secondary opacity-50 d-none d-sm-inline">•</span>
+        <span class="d-flex align-items-center"><i class="fa-solid fa-star text-warning me-2 fs-14"></i> Direct Bid Eligibility</span>
+        <span class="text-secondary opacity-50 d-none d-sm-inline">•</span>
+        <span class="d-flex align-items-center"><i class="fa-solid fa-star text-warning me-2 fs-14"></i> Real-time Advisory</span>
+      </div>
+    </div>
+  </div>
+</section>
 <!-- banner end  -->
 <!-- About Us Section Start -->
 <section class="section">
@@ -185,7 +210,7 @@ include 'includes/head.php';
               </div>
               <h3 class="mb-0 fs-5 fw-bold">Gem OEM Authorization Code</h3>
             </div>
-            <p class="text-light-black mb-xxl-4 mb-3">Hey Manufacturer! Ready to take full control of your brand, manage resellers, and ensure only authentic products reach government buyers? We simplify the complex GeM OEM Panel Registration process, enabling your manufacturing unit to become an official government supplier.</p>
+            <p class="text-light-black mb-xxl-4 mb-3">Experience zero waiting and zero friction. We provide instant GeM OEM Authorization Codes across all your product categories in one centralized dashboard. Stop switching between consultants—secure direct, hassle-free authorization management and dominate L1 comparisons to keep winning bids without interruptions.</p>
             <a href="gem-oem-panel-registration.php" class="link-red d-inline-flex align-items-center">Learn More <i class="fa-solid fa-arrow-right fs-4 ms-2"></i>
             </a>
           </div>
@@ -551,6 +576,7 @@ include 'includes/head.php';
     </div>
 </section>
 <!-- FAQ Section End -->
+
 <!-- CTA Section Start -->
 <section class="section cta-section">
   <div class="container">

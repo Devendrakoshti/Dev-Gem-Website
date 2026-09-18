@@ -62,7 +62,7 @@
             </svg>
           </span>
         </button>
-        <div class="g-recaptcha" data-sitekey="6LcSPU8sAAAAAH1V4iD4wF786NGItGqCRRRYFLBw"></div>
+        <div class="g-recaptcha" data-sitekey=""></div>
       </div>
     </div>
   </div>

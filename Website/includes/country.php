@@ -1,419 +1,421 @@
+
 <?php
 /* ─────────────────────────────────────────────────────────────────────────────
    Set $local_seo_service on the page BEFORE including this file.
-   e.g.  $local_seo_service = 'BIM Modelling Services';
-   Defaults to 'BIM & CAD Services' if not set.
+   e.g.  $local_seo_service = 'GeM Registration Services';
+   Defaults to 'GeM Services' if not set.
    ───────────────────────────────────────────────────────────────────────────── */
-$lseo   = isset($local_seo_service) ? $local_seo_service : 'BIM & CAD Services';
+$lseo   = isset($local_seo_service) ? $local_seo_service : 'GeM Services';
 $lseo_e = htmlspecialchars($lseo, ENT_QUOTES, 'UTF-8');
 ?>
+
 <section class="section-lg lsec-root" aria-labelledby="lsec-heading" data-service-name="<?php echo $lseo_e; ?>">
-  <div class="country-mn">
-    <div class="row justify-content-around align-items-start">
-      <div class="col-lg-6">
-        <div class="h-100 text-black p-2 p-sm-3">
-          <h2 class="fw-bold border-bottom pb-3">We deliver <?php echo $lseo_e; ?> across the UK</h2>
-          <div class="lsec-list-col">
-            <!-- Country tab buttons -->
-            <div class="lsec-tabs mb-4" role="tablist" aria-label="Filter cities by country">
-              <button class="lsec-tab" role="tab" aria-selected="true" aria-controls="lsec-panel-england" data-tab="england" id="lsec-tab-england">
-                <!-- England: St George's Cross -->
-                <svg class="lsec-tab-flag" viewBox="0 0 16 12" aria-hidden="true" focusable="false">
-                  <rect width="16" height="12" fill="#fff" />
-                  <rect x="6.5" width="3" height="12" fill="#cf142b" />
-                  <rect y="4.5" width="16" height="3" fill="#cf142b" />
-                </svg> England
-              </button>
-              <button class="lsec-tab" role="tab" aria-selected="false" aria-controls="lsec-panel-scotland" data-tab="scotland" id="lsec-tab-scotland">
-                <!-- Scotland: Saltire (St Andrew's Cross) -->
-                <svg class="lsec-tab-flag" viewBox="0 0 16 12" aria-hidden="true" focusable="false">
-                  <rect width="16" height="12" fill="#003399" />
-                  <line x1="0" y1="0" x2="16" y2="12" stroke="#fff" stroke-width="4" stroke-linecap="square" />
-                  <line x1="16" y1="0" x2="0" y2="12" stroke="#fff" stroke-width="4" stroke-linecap="square" />
-                </svg> Scotland
-              </button>
-              <button class="lsec-tab" role="tab" aria-selected="false" aria-controls="lsec-panel-wales" data-tab="wales" id="lsec-tab-wales">
-                <!-- Wales: Y Ddraig Goch (Red Dragon) -->
-                <svg class="lsec-tab-flag" viewBox="0 0 16 12" aria-hidden="true" focusable="false">
-                  <rect width="16" height="12" fill="#fff" />
-                  <rect y="6" width="16" height="6" fill="#00ab39" />
-                  <path d="M4,1 C3,2 2.5,3.5 3.5,4.5 C2,5 1.5,6.5 3,7 L3,8.5 L4.5,9 L5,10 L7.5,10.5 L10,10 L10.5,9 L12,8.5 L12,7 C13.5,6.5 13,5 11.5,4.5 C12.5,3.5 12,2 11,1.5 L9.5,1 L8,0.5 L6.5,1 Z" fill="#cf142b" />
-                  <path d="M3,3 L1,1.5 L3,2" fill="#cf142b" />
-                  <path d="M13,3 L15,1.5 L13,2" fill="#cf142b" />
-                </svg> Wales
-              </button>
-              <button class="lsec-tab" role="tab" aria-selected="false" aria-controls="lsec-panel-nireland" data-tab="nireland" id="lsec-tab-nireland">
-                <!-- N. Ireland: Union Jack -->
-                <svg class="lsec-tab-flag" viewBox="0 0 16 12" aria-hidden="true" focusable="false">
-                  <rect width="16" height="12" fill="#012169" />
-                  <line x1="0" y1="0" x2="16" y2="12" stroke="#fff" stroke-width="4.5" stroke-linecap="square" />
-                  <line x1="16" y1="0" x2="0" y2="12" stroke="#fff" stroke-width="4.5" stroke-linecap="square" />
-                  <line x1="0" y1="0" x2="5" y2="4" stroke="#cf142b" stroke-width="2" />
-                  <line x1="11" y1="8" x2="16" y2="12" stroke="#cf142b" stroke-width="2" />
-                  <line x1="16" y1="0" x2="11" y2="4" stroke="#cf142b" stroke-width="2" />
-                  <line x1="5" y1="8" x2="0" y2="12" stroke="#cf142b" stroke-width="2" />
-                  <rect x="6.5" width="3" height="12" fill="#fff" />
-                  <rect y="4.5" width="16" height="3" fill="#fff" />
-                  <rect x="7" width="2" height="12" fill="#cf142b" />
-                  <rect y="5" width="16" height="2" fill="#cf142b" />
-                </svg> N. Ireland
-              </button>
+  <div class="container">
+    <!-- Section Heading & Full Width State Tabs -->
+    <div class="row">
+      <div class="col-12">
+        <div class="text-black mb-4">
+          <h2 class="fw-bold border-bottom pb-3 mb-4" id="lsec-heading">We deliver <?php echo $lseo_e; ?> across India</h2>
+          
+          <!-- State Tab Buttons - Full Width -->
+          <div class="lsec-tabs-wrapper mb-4">
+            <div class="lsec-tabs" role="tablist" aria-label="Filter cities by state">
+              <button class="lsec-tab is-active" role="tab" aria-selected="true" aria-controls="lsec-panel-gujarat" data-tab="gujarat" id="lsec-tab-gujarat">Gujarat</button>
+              <button class="lsec-tab" role="tab" aria-selected="false" aria-controls="lsec-panel-maharashtra" data-tab="maharashtra" id="lsec-tab-maharashtra">Maharashtra</button>
+              <button class="lsec-tab" role="tab" aria-selected="false" aria-controls="lsec-panel-karnataka" data-tab="karnataka" id="lsec-tab-karnataka">Karnataka</button>
+              <button class="lsec-tab" role="tab" aria-selected="false" aria-controls="lsec-panel-tamil-nadu" data-tab="tamil-nadu" id="lsec-tab-tamil-nadu">Tamil Nadu</button>
+              <button class="lsec-tab" role="tab" aria-selected="false" aria-controls="lsec-panel-uttar-pradesh" data-tab="uttar-pradesh" id="lsec-tab-uttar-pradesh">Uttar Pradesh</button>
+              <button class="lsec-tab" role="tab" aria-selected="false" aria-controls="lsec-panel-rajasthan" data-tab="rajasthan" id="lsec-tab-rajasthan">Rajasthan</button>
+              <button class="lsec-tab" role="tab" aria-selected="false" aria-controls="lsec-panel-madhya-pradesh" data-tab="madhya-pradesh" id="lsec-tab-madhya-pradesh">Madhya Pradesh</button>
+              <button class="lsec-tab" role="tab" aria-selected="false" aria-controls="lsec-panel-west-bengal" data-tab="west-bengal" id="lsec-tab-west-bengal">West Bengal</button>
+              <button class="lsec-tab" role="tab" aria-selected="false" aria-controls="lsec-panel-haryana" data-tab="haryana" id="lsec-tab-haryana">Haryana</button>
+              <button class="lsec-tab" role="tab" aria-selected="false" aria-controls="lsec-panel-punjab" data-tab="punjab" id="lsec-tab-punjab">Punjab</button>
+              <button class="lsec-tab" role="tab" aria-selected="false" aria-controls="lsec-panel-kerala" data-tab="kerala" id="lsec-tab-kerala">Kerala</button>
+              <button class="lsec-tab" role="tab" aria-selected="false" aria-controls="lsec-panel-bihar" data-tab="bihar" id="lsec-tab-bihar">Bihar</button>
+              <button class="lsec-tab" role="tab" aria-selected="false" aria-controls="lsec-panel-jharkhand" data-tab="jharkhand" id="lsec-tab-jharkhand">Jharkhand</button>
+              <button class="lsec-tab" role="tab" aria-selected="false" aria-controls="lsec-panel-odisha" data-tab="odisha" id="lsec-tab-odisha">Odisha</button>
+              <button class="lsec-tab" role="tab" aria-selected="false" aria-controls="lsec-panel-uttarakhand" data-tab="uttarakhand" id="lsec-tab-uttarakhand">Uttarakhand</button>
+              <button class="lsec-tab" role="tab" aria-selected="false" aria-controls="lsec-panel-other-states" data-tab="other-states" id="lsec-tab-other-states">Other States &amp; UTs</button>
             </div>
-            <!-- /lsec-tabs -->
-            <!-- Tab panels — ALL city phrases are always in the DOM for crawlers -->
-            <div class="lsec-tab-panels">
-              <!-- ENGLAND panel -->
-              <div class="lsec-tab-panel is-active" id="lsec-panel-england" role="tabpanel" aria-labelledby="lsec-tab-england" data-country="england">
-                <ul class="lsec-city-grid" role="list">
-                  <li>
-                    <button class="lsec-city-btn" data-city-id="london" data-country="england" data-phrase="<?php echo $lseo_e; ?> London" aria-label="<?php echo $lseo_e; ?> London">
-                      <span class="lsec-city-dot" aria-hidden="true"></span>London <span class="lsec-sr-only"> — <?php echo $lseo_e; ?> London</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="lsec-city-btn" data-city-id="birmingham" data-country="england" data-phrase="<?php echo $lseo_e; ?> Birmingham" aria-label="<?php echo $lseo_e; ?> Birmingham">
-                      <span class="lsec-city-dot" aria-hidden="true"></span>Birmingham <span class="lsec-sr-only"> — <?php echo $lseo_e; ?> Birmingham</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="lsec-city-btn" data-city-id="manchester" data-country="england" data-phrase="<?php echo $lseo_e; ?> Manchester" aria-label="<?php echo $lseo_e; ?> Manchester">
-                      <span class="lsec-city-dot" aria-hidden="true"></span>Manchester <span class="lsec-sr-only"> — <?php echo $lseo_e; ?> Manchester</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="lsec-city-btn" data-city-id="liverpool" data-country="england" data-phrase="<?php echo $lseo_e; ?> Liverpool" aria-label="<?php echo $lseo_e; ?> Liverpool">
-                      <span class="lsec-city-dot" aria-hidden="true"></span>Liverpool <span class="lsec-sr-only"> — <?php echo $lseo_e; ?> Liverpool</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="lsec-city-btn" data-city-id="leeds" data-country="england" data-phrase="<?php echo $lseo_e; ?> Leeds" aria-label="<?php echo $lseo_e; ?> Leeds">
-                      <span class="lsec-city-dot" aria-hidden="true"></span>Leeds <span class="lsec-sr-only"> — <?php echo $lseo_e; ?> Leeds</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="lsec-city-btn" data-city-id="sheffield" data-country="england" data-phrase="<?php echo $lseo_e; ?> Sheffield" aria-label="<?php echo $lseo_e; ?> Sheffield">
-                      <span class="lsec-city-dot" aria-hidden="true"></span>Sheffield <span class="lsec-sr-only"> — <?php echo $lseo_e; ?> Sheffield</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="lsec-city-btn" data-city-id="bristol" data-country="england" data-phrase="<?php echo $lseo_e; ?> Bristol" aria-label="<?php echo $lseo_e; ?> Bristol">
-                      <span class="lsec-city-dot" aria-hidden="true"></span>Bristol <span class="lsec-sr-only"> — <?php echo $lseo_e; ?> Bristol</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="lsec-city-btn" data-city-id="newcastle-upon-tyne" data-country="england" data-phrase="<?php echo $lseo_e; ?> Newcastle upon Tyne" aria-label="<?php echo $lseo_e; ?> Newcastle upon Tyne">
-                      <span class="lsec-city-dot" aria-hidden="true"></span>Newcastle <span class="lsec-sr-only"> — <?php echo $lseo_e; ?> Newcastle upon Tyne</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="lsec-city-btn" data-city-id="nottingham" data-country="england" data-phrase="<?php echo $lseo_e; ?> Nottingham" aria-label="<?php echo $lseo_e; ?> Nottingham">
-                      <span class="lsec-city-dot" aria-hidden="true"></span>Nottingham <span class="lsec-sr-only"> — <?php echo $lseo_e; ?> Nottingham</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="lsec-city-btn" data-city-id="leicester" data-country="england" data-phrase="<?php echo $lseo_e; ?> Leicester" aria-label="<?php echo $lseo_e; ?> Leicester">
-                      <span class="lsec-city-dot" aria-hidden="true"></span>Leicester <span class="lsec-sr-only"> — <?php echo $lseo_e; ?> Leicester</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="lsec-city-btn" data-city-id="coventry" data-country="england" data-phrase="<?php echo $lseo_e; ?> Coventry" aria-label="<?php echo $lseo_e; ?> Coventry">
-                      <span class="lsec-city-dot" aria-hidden="true"></span>Coventry <span class="lsec-sr-only"> — <?php echo $lseo_e; ?> Coventry</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="lsec-city-btn" data-city-id="bradford" data-country="england" data-phrase="<?php echo $lseo_e; ?> Bradford" aria-label="<?php echo $lseo_e; ?> Bradford">
-                      <span class="lsec-city-dot" aria-hidden="true"></span>Bradford <span class="lsec-sr-only"> — <?php echo $lseo_e; ?> Bradford</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="lsec-city-btn" data-city-id="southampton" data-country="england" data-phrase="<?php echo $lseo_e; ?> Southampton" aria-label="<?php echo $lseo_e; ?> Southampton">
-                      <span class="lsec-city-dot" aria-hidden="true"></span>Southampton <span class="lsec-sr-only"> — <?php echo $lseo_e; ?> Southampton</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="lsec-city-btn" data-city-id="portsmouth" data-country="england" data-phrase="<?php echo $lseo_e; ?> Portsmouth" aria-label="<?php echo $lseo_e; ?> Portsmouth">
-                      <span class="lsec-city-dot" aria-hidden="true"></span>Portsmouth <span class="lsec-sr-only"> — <?php echo $lseo_e; ?> Portsmouth</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="lsec-city-btn" data-city-id="plymouth" data-country="england" data-phrase="<?php echo $lseo_e; ?> Plymouth" aria-label="<?php echo $lseo_e; ?> Plymouth">
-                      <span class="lsec-city-dot" aria-hidden="true"></span>Plymouth <span class="lsec-sr-only"> — <?php echo $lseo_e; ?> Plymouth</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="lsec-city-btn" data-city-id="oxford" data-country="england" data-phrase="<?php echo $lseo_e; ?> Oxford" aria-label="<?php echo $lseo_e; ?> Oxford">
-                      <span class="lsec-city-dot" aria-hidden="true"></span>Oxford <span class="lsec-sr-only"> — <?php echo $lseo_e; ?> Oxford</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="lsec-city-btn" data-city-id="cambridge" data-country="england" data-phrase="<?php echo $lseo_e; ?> Cambridge" aria-label="<?php echo $lseo_e; ?> Cambridge">
-                      <span class="lsec-city-dot" aria-hidden="true"></span>Cambridge <span class="lsec-sr-only"> — <?php echo $lseo_e; ?> Cambridge</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="lsec-city-btn" data-city-id="york" data-country="england" data-phrase="<?php echo $lseo_e; ?> York" aria-label="<?php echo $lseo_e; ?> York">
-                      <span class="lsec-city-dot" aria-hidden="true"></span>York <span class="lsec-sr-only"> — <?php echo $lseo_e; ?> York</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="lsec-city-btn" data-city-id="brighton-and-hove" data-country="england" data-phrase="<?php echo $lseo_e; ?> Brighton and Hove" aria-label="<?php echo $lseo_e; ?> Brighton and Hove">
-                      <span class="lsec-city-dot" aria-hidden="true"></span>Brighton <span class="lsec-sr-only"> — <?php echo $lseo_e; ?> Brighton and Hove</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="lsec-city-btn" data-city-id="norwich" data-country="england" data-phrase="<?php echo $lseo_e; ?> Norwich" aria-label="<?php echo $lseo_e; ?> Norwich">
-                      <span class="lsec-city-dot" aria-hidden="true"></span>Norwich <span class="lsec-sr-only"> — <?php echo $lseo_e; ?> Norwich</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="lsec-city-btn" data-city-id="exeter" data-country="england" data-phrase="<?php echo $lseo_e; ?> Exeter" aria-label="<?php echo $lseo_e; ?> Exeter">
-                      <span class="lsec-city-dot" aria-hidden="true"></span>Exeter <span class="lsec-sr-only"> — <?php echo $lseo_e; ?> Exeter</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="lsec-city-btn" data-city-id="bath" data-country="england" data-phrase="<?php echo $lseo_e; ?> Bath" aria-label="<?php echo $lseo_e; ?> Bath">
-                      <span class="lsec-city-dot" aria-hidden="true"></span>Bath <span class="lsec-sr-only"> — <?php echo $lseo_e; ?> Bath</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="lsec-city-btn" data-city-id="canterbury" data-country="england" data-phrase="<?php echo $lseo_e; ?> Canterbury" aria-label="<?php echo $lseo_e; ?> Canterbury">
-                      <span class="lsec-city-dot" aria-hidden="true"></span>Canterbury <span class="lsec-sr-only"> — <?php echo $lseo_e; ?> Canterbury</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="lsec-city-btn" data-city-id="chester" data-country="england" data-phrase="<?php echo $lseo_e; ?> Chester" aria-label="<?php echo $lseo_e; ?> Chester">
-                      <span class="lsec-city-dot" aria-hidden="true"></span>Chester <span class="lsec-sr-only"> — <?php echo $lseo_e; ?> Chester</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="lsec-city-btn" data-city-id="durham" data-country="england" data-phrase="<?php echo $lseo_e; ?> Durham" aria-label="<?php echo $lseo_e; ?> Durham">
-                      <span class="lsec-city-dot" aria-hidden="true"></span>Durham <span class="lsec-sr-only"> — <?php echo $lseo_e; ?> Durham</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="lsec-city-btn" data-city-id="lincoln" data-country="england" data-phrase="<?php echo $lseo_e; ?> Lincoln" aria-label="<?php echo $lseo_e; ?> Lincoln">
-                      <span class="lsec-city-dot" aria-hidden="true"></span>Lincoln <span class="lsec-sr-only"> — <?php echo $lseo_e; ?> Lincoln</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="lsec-city-btn" data-city-id="salisbury" data-country="england" data-phrase="<?php echo $lseo_e; ?> Salisbury" aria-label="<?php echo $lseo_e; ?> Salisbury">
-                      <span class="lsec-city-dot" aria-hidden="true"></span>Salisbury <span class="lsec-sr-only"> — <?php echo $lseo_e; ?> Salisbury</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="lsec-city-btn" data-city-id="wells" data-country="england" data-phrase="<?php echo $lseo_e; ?> Wells" aria-label="<?php echo $lseo_e; ?> Wells">
-                      <span class="lsec-city-dot" aria-hidden="true"></span>Wells <span class="lsec-sr-only"> — <?php echo $lseo_e; ?> Wells</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="lsec-city-btn" data-city-id="winchester" data-country="england" data-phrase="<?php echo $lseo_e; ?> Winchester" aria-label="<?php echo $lseo_e; ?> Winchester">
-                      <span class="lsec-city-dot" aria-hidden="true"></span>Winchester <span class="lsec-sr-only"> — <?php echo $lseo_e; ?> Winchester</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="lsec-city-btn" data-city-id="worcester" data-country="england" data-phrase="<?php echo $lseo_e; ?> Worcester" aria-label="<?php echo $lseo_e; ?> Worcester">
-                      <span class="lsec-city-dot" aria-hidden="true"></span>Worcester <span class="lsec-sr-only"> — <?php echo $lseo_e; ?> Worcester</span>
-                    </button>
-                  </li>
-                </ul>
-              </div>
-              <!-- SCOTLAND panel -->
-              <div class="lsec-tab-panel" id="lsec-panel-scotland" role="tabpanel" aria-labelledby="lsec-tab-scotland" data-country="scotland">
-                <ul class="lsec-city-grid" role="list">
-                  <li>
-                    <button class="lsec-city-btn" data-city-id="edinburgh" data-country="scotland" data-phrase="<?php echo $lseo_e; ?> Edinburgh" aria-label="<?php echo $lseo_e; ?> Edinburgh">
-                      <span class="lsec-city-dot" aria-hidden="true"></span>Edinburgh <span class="lsec-sr-only"> — <?php echo $lseo_e; ?> Edinburgh</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="lsec-city-btn" data-city-id="glasgow" data-country="scotland" data-phrase="<?php echo $lseo_e; ?> Glasgow" aria-label="<?php echo $lseo_e; ?> Glasgow">
-                      <span class="lsec-city-dot" aria-hidden="true"></span>Glasgow <span class="lsec-sr-only"> — <?php echo $lseo_e; ?> Glasgow</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="lsec-city-btn" data-city-id="aberdeen" data-country="scotland" data-phrase="<?php echo $lseo_e; ?> Aberdeen" aria-label="<?php echo $lseo_e; ?> Aberdeen">
-                      <span class="lsec-city-dot" aria-hidden="true"></span>Aberdeen <span class="lsec-sr-only"> — <?php echo $lseo_e; ?> Aberdeen</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="lsec-city-btn" data-city-id="dundee" data-country="scotland" data-phrase="<?php echo $lseo_e; ?> Dundee" aria-label="<?php echo $lseo_e; ?> Dundee">
-                      <span class="lsec-city-dot" aria-hidden="true"></span>Dundee <span class="lsec-sr-only"> — <?php echo $lseo_e; ?> Dundee</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="lsec-city-btn" data-city-id="inverness" data-country="scotland" data-phrase="<?php echo $lseo_e; ?> Inverness" aria-label="<?php echo $lseo_e; ?> Inverness">
-                      <span class="lsec-city-dot" aria-hidden="true"></span>Inverness <span class="lsec-sr-only"> — <?php echo $lseo_e; ?> Inverness</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="lsec-city-btn" data-city-id="stirling" data-country="scotland" data-phrase="<?php echo $lseo_e; ?> Stirling" aria-label="<?php echo $lseo_e; ?> Stirling">
-                      <span class="lsec-city-dot" aria-hidden="true"></span>Stirling <span class="lsec-sr-only"> — <?php echo $lseo_e; ?> Stirling</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="lsec-city-btn" data-city-id="perth" data-country="scotland" data-phrase="<?php echo $lseo_e; ?> Perth" aria-label="<?php echo $lseo_e; ?> Perth">
-                      <span class="lsec-city-dot" aria-hidden="true"></span>Perth <span class="lsec-sr-only"> — <?php echo $lseo_e; ?> Perth</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="lsec-city-btn" data-city-id="dunfermline" data-country="scotland" data-phrase="<?php echo $lseo_e; ?> Dunfermline" aria-label="<?php echo $lseo_e; ?> Dunfermline">
-                      <span class="lsec-city-dot" aria-hidden="true"></span>Dunfermline <span class="lsec-sr-only"> — <?php echo $lseo_e; ?> Dunfermline</span>
-                    </button>
-                  </li>
-                </ul>
-              </div>
-              <!-- WALES panel -->
-              <div class="lsec-tab-panel" id="lsec-panel-wales" role="tabpanel" aria-labelledby="lsec-tab-wales" data-country="wales">
-                <ul class="lsec-city-grid" role="list">
-                  <li>
-                    <button class="lsec-city-btn" data-city-id="cardiff" data-country="wales" data-phrase="<?php echo $lseo_e; ?> Cardiff" aria-label="<?php echo $lseo_e; ?> Cardiff">
-                      <span class="lsec-city-dot" aria-hidden="true"></span>Cardiff <span class="lsec-sr-only"> — <?php echo $lseo_e; ?> Cardiff</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="lsec-city-btn" data-city-id="swansea" data-country="wales" data-phrase="<?php echo $lseo_e; ?> Swansea" aria-label="<?php echo $lseo_e; ?> Swansea">
-                      <span class="lsec-city-dot" aria-hidden="true"></span>Swansea <span class="lsec-sr-only"> — <?php echo $lseo_e; ?> Swansea</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="lsec-city-btn" data-city-id="newport" data-country="wales" data-phrase="<?php echo $lseo_e; ?> Newport" aria-label="<?php echo $lseo_e; ?> Newport">
-                      <span class="lsec-city-dot" aria-hidden="true"></span>Newport <span class="lsec-sr-only"> — <?php echo $lseo_e; ?> Newport</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="lsec-city-btn" data-city-id="bangor" data-country="wales" data-phrase="<?php echo $lseo_e; ?> Bangor" aria-label="<?php echo $lseo_e; ?> Bangor">
-                      <span class="lsec-city-dot" aria-hidden="true"></span>Bangor <span class="lsec-sr-only"> — <?php echo $lseo_e; ?> Bangor</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="lsec-city-btn" data-city-id="st-asaph" data-country="wales" data-phrase="<?php echo $lseo_e; ?> St Asaph" aria-label="<?php echo $lseo_e; ?> St Asaph">
-                      <span class="lsec-city-dot" aria-hidden="true"></span>St Asaph <span class="lsec-sr-only"> — <?php echo $lseo_e; ?> St Asaph</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="lsec-city-btn" data-city-id="st-davids" data-country="wales" data-phrase="<?php echo $lseo_e; ?> St Davids" aria-label="<?php echo $lseo_e; ?> St Davids">
-                      <span class="lsec-city-dot" aria-hidden="true"></span>St Davids <span class="lsec-sr-only"> — <?php echo $lseo_e; ?> St Davids</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="lsec-city-btn" data-city-id="wrexham" data-country="wales" data-phrase="<?php echo $lseo_e; ?> Wrexham" aria-label="<?php echo $lseo_e; ?> Wrexham">
-                      <span class="lsec-city-dot" aria-hidden="true"></span>Wrexham <span class="lsec-sr-only"> — <?php echo $lseo_e; ?> Wrexham</span>
-                    </button>
-                  </li>
-                </ul>
-              </div>
-              <!-- NORTHERN IRELAND panel -->
-              <div class="lsec-tab-panel" id="lsec-panel-nireland" role="tabpanel" aria-labelledby="lsec-tab-nireland" data-country="nireland">
-                <ul class="lsec-city-grid" role="list">
-                  <li>
-                    <button class="lsec-city-btn" data-city-id="belfast" data-country="nireland" data-phrase="<?php echo $lseo_e; ?> Belfast" aria-label="<?php echo $lseo_e; ?> Belfast">
-                      <span class="lsec-city-dot" aria-hidden="true"></span>Belfast <span class="lsec-sr-only"> — <?php echo $lseo_e; ?> Belfast</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="lsec-city-btn" data-city-id="derry-londonderry" data-country="nireland" data-phrase="<?php echo $lseo_e; ?> Derry/Londonderry" aria-label="<?php echo $lseo_e; ?> Derry/Londonderry">
-                      <span class="lsec-city-dot" aria-hidden="true"></span>Derry <span class="lsec-sr-only"> — <?php echo $lseo_e; ?> Derry/Londonderry</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="lsec-city-btn" data-city-id="lisburn" data-country="nireland" data-phrase="<?php echo $lseo_e; ?> Lisburn" aria-label="<?php echo $lseo_e; ?> Lisburn">
-                      <span class="lsec-city-dot" aria-hidden="true"></span>Lisburn <span class="lsec-sr-only"> — <?php echo $lseo_e; ?> Lisburn</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="lsec-city-btn" data-city-id="newry" data-country="nireland" data-phrase="<?php echo $lseo_e; ?> Newry" aria-label="<?php echo $lseo_e; ?> Newry">
-                      <span class="lsec-city-dot" aria-hidden="true"></span>Newry <span class="lsec-sr-only"> — <?php echo $lseo_e; ?> Newry</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="lsec-city-btn" data-city-id="armagh" data-country="nireland" data-phrase="<?php echo $lseo_e; ?> Armagh" aria-label="<?php echo $lseo_e; ?> Armagh">
-                      <span class="lsec-city-dot" aria-hidden="true"></span>Armagh <span class="lsec-sr-only"> — <?php echo $lseo_e; ?> Armagh</span>
-                    </button>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <!-- /lsec-tab-panels -->
           </div>
+          <!-- /lsec-tabs -->
         </div>
       </div>
-      <div class="col-xl-6 d-none d-xl-block">
-        <div class="mep-section">
-          <div class="lsec-caption" aria-live="polite" aria-atomic="true">
-            <span class="lsec-caption-text" id="lsec-caption-text"> Hover or focus a city to see the full service phrase </span>
+    </div>
+
+    <!-- 2 Columns Layout: Left col-lg-6 for Cities, Right col-lg-6 for Placeholder Image -->
+    <div class="row align-items-stretch g-4">
+      <!-- Left Column: Active State Tab Cities Panel -->
+      <div class="col-lg-6">
+        <div class="lsec-tab-panels bg-white p-4 rounded-4 border shadow-sm h-100">
+          
+          <!-- Gujarat (15 Cities) -->
+          <div class="lsec-tab-panel is-active" id="lsec-panel-gujarat" role="tabpanel" aria-labelledby="lsec-tab-gujarat" data-country="gujarat">
+            <div class="d-flex align-items-center justify-content-between border-bottom pb-2 mb-3">
+              <h4 class="fw-bold text-dark m-0 d-flex align-items-center gap-2">
+                <i class="fa fa-map-marker-alt text-danger"></i>
+                <span>Major Cities in Gujarat</span>
+              </h4>
+              <span class="badge bg-light text-dark border">15 Cities</span>
+            </div>
+            <ul class="lsec-city-grid" role="list">
+              <li><button class="lsec-city-btn" data-city-id="ahmedabad" data-country="gujarat" data-phrase="<?php echo $lseo_e; ?> in Ahmedabad" aria-label="<?php echo $lseo_e; ?> in Ahmedabad"><span class="lsec-city-dot" aria-hidden="true"></span>Ahmedabad<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Ahmedabad</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="surat" data-country="gujarat" data-phrase="<?php echo $lseo_e; ?> in Surat" aria-label="<?php echo $lseo_e; ?> in Surat"><span class="lsec-city-dot" aria-hidden="true"></span>Surat<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Surat</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="vadodara" data-country="gujarat" data-phrase="<?php echo $lseo_e; ?> in Vadodara" aria-label="<?php echo $lseo_e; ?> in Vadodara"><span class="lsec-city-dot" aria-hidden="true"></span>Vadodara<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Vadodara</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="rajkot" data-country="gujarat" data-phrase="<?php echo $lseo_e; ?> in Rajkot" aria-label="<?php echo $lseo_e; ?> in Rajkot"><span class="lsec-city-dot" aria-hidden="true"></span>Rajkot<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Rajkot</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="gandhinagar" data-country="gujarat" data-phrase="<?php echo $lseo_e; ?> in Gandhinagar" aria-label="<?php echo $lseo_e; ?> in Gandhinagar"><span class="lsec-city-dot" aria-hidden="true"></span>Gandhinagar<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Gandhinagar</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="bhavnagar" data-country="gujarat" data-phrase="<?php echo $lseo_e; ?> in Bhavnagar" aria-label="<?php echo $lseo_e; ?> in Bhavnagar"><span class="lsec-city-dot" aria-hidden="true"></span>Bhavnagar<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Bhavnagar</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="jamnagar" data-country="gujarat" data-phrase="<?php echo $lseo_e; ?> in Jamnagar" aria-label="<?php echo $lseo_e; ?> in Jamnagar"><span class="lsec-city-dot" aria-hidden="true"></span>Jamnagar<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Jamnagar</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="junagadh" data-country="gujarat" data-phrase="<?php echo $lseo_e; ?> in Junagadh" aria-label="<?php echo $lseo_e; ?> in Junagadh"><span class="lsec-city-dot" aria-hidden="true"></span>Junagadh<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Junagadh</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="anand" data-country="gujarat" data-phrase="<?php echo $lseo_e; ?> in Anand" aria-label="<?php echo $lseo_e; ?> in Anand"><span class="lsec-city-dot" aria-hidden="true"></span>Anand<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Anand</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="bharuch" data-country="gujarat" data-phrase="<?php echo $lseo_e; ?> in Bharuch" aria-label="<?php echo $lseo_e; ?> in Bharuch"><span class="lsec-city-dot" aria-hidden="true"></span>Bharuch<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Bharuch</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="vapi" data-country="gujarat" data-phrase="<?php echo $lseo_e; ?> in Vapi" aria-label="<?php echo $lseo_e; ?> in Vapi"><span class="lsec-city-dot" aria-hidden="true"></span>Vapi<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Vapi</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="mehsana" data-country="gujarat" data-phrase="<?php echo $lseo_e; ?> in Mehsana" aria-label="<?php echo $lseo_e; ?> in Mehsana"><span class="lsec-city-dot" aria-hidden="true"></span>Mehsana<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Mehsana</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="morbi" data-country="gujarat" data-phrase="<?php echo $lseo_e; ?> in Morbi" aria-label="<?php echo $lseo_e; ?> in Morbi"><span class="lsec-city-dot" aria-hidden="true"></span>Morbi<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Morbi</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="gandhidham" data-country="gujarat" data-phrase="<?php echo $lseo_e; ?> in Gandhidham" aria-label="<?php echo $lseo_e; ?> in Gandhidham"><span class="lsec-city-dot" aria-hidden="true"></span>Gandhidham<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Gandhidham</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="ankleshwar" data-country="gujarat" data-phrase="<?php echo $lseo_e; ?> in Ankleshwar" aria-label="<?php echo $lseo_e; ?> in Ankleshwar"><span class="lsec-city-dot" aria-hidden="true"></span>Ankleshwar<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Ankleshwar</span></button></li>
+            </ul>
           </div>
-          <svg class="lsec-map" viewBox="0 65 420 530" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="lsec-map-title lsec-map-desc" preserveAspectRatio="xMidYMid meet">
-            <title id="lsec-map-title">Map of the United Kingdom showing <?php echo $lseo_e; ?> locations</title>
-            <desc id="lsec-map-desc">Interactive UK map divided into England, Scotland, Wales, and Northern Ireland, with a glowing dot for each city served.</desc>
-            <rect width="420" height="600" fill="rgba(10,37,64,0.0)" rx="6" />
-            <!-- Scotland -->
-            <path class="lsec-region" id="lsec-region-scotland" d="M 254,246 249,240 228,232 211,238 187,234 178,228 198,235 215,223 222,224 230,219 220,214 221,209 203,214 233,202 238,191 246,184 256,158 264,149 262,140 255,135 213,137 198,134 171,142 166,148 155,147 163,146 172,137 160,138 174,135 181,127 161,126 171,125 174,119 207,98 212,80 199,79 198,82 172,83 155,90 155,86 150,84 143,91 145,85 132,81 124,95 127,102 116,103 120,112 114,113 127,125 117,122 119,125 112,126 106,123 106,130 99,127 103,135 99,139 109,145 98,143 97,150 99,156 113,152 102,158 107,161 104,167 110,171 100,172 105,177 98,177 95,183 100,185 96,191 82,193 94,196 92,201 104,205 127,187 106,218 105,223 107,219 109,221 109,230 104,237 107,235 104,240 109,249 99,276 109,274 113,256 118,248 114,235 131,221 120,233 119,244 123,245 124,238 132,243 136,226 138,229 142,223 138,236 141,236 139,231 158,243 137,239 136,253 147,265 130,291 131,299 127,293 124,299 137,315 134,305 138,302 157,313 157,300 174,308 180,301 190,301 190,294 212,295 233,275 247,268 242,257 254,246 Z"><title>Scotland</title></path>
-            <!-- England -->
-            <path class="lsec-region" id="lsec-region-england" d="M 228,492 239,485 228,496 227,501 215,506 213,518 182,515 165,518 165,527 159,530 152,528 150,542 140,553 135,554 135,557 131,556 130,563 121,572 104,579 104,586 112,581 124,590 129,586 129,577 132,580 140,575 142,569 165,570 164,560 168,569 185,576 194,565 191,563 195,548 199,552 219,545 236,554 238,551 253,554 258,551 254,546 273,546 282,542 277,534 290,542 290,539 293,542 300,539 305,545 329,540 348,545 370,533 378,535 379,528 395,520 394,511 397,507 375,509 369,508 375,505 369,503 367,507 361,506 366,502 328,501 344,499 355,503 359,498 375,495 363,492 376,492 376,486 367,487 378,483 378,480 381,484 388,481 391,474 381,473 390,473 387,470 392,474 402,465 410,443 407,427 391,416 360,413 353,424 339,417 351,406 352,401 344,383 325,370 309,371 326,368 334,374 343,374 329,353 334,346 323,339 314,325 291,316 286,319 290,317 289,312 275,285 271,262 254,246 242,257 247,268 212,291 209,298 203,298 203,300 198,302 188,323 201,341 205,338 205,347 213,340 214,345 220,341 222,346 218,351 220,355 213,358 212,366 221,369 210,379 215,390 224,393 217,394 212,386 206,389 225,416 215,414 208,418 208,424 215,428 209,439 214,439 205,445 216,450 209,466 215,476 219,475 229,481 228,492 Z"><title>England</title></path>
-            <!-- Wales -->
-            <path class="lsec-region" id="lsec-region-wales" d="M 210,396 201,391 189,395 178,392 179,394 165,399 158,410 143,420 143,424 152,424 156,418 169,417 167,423 172,428 168,435 176,438 171,440 164,455 120,476 127,481 122,487 125,489 134,488 127,489 134,494 158,484 160,490 171,488 160,496 179,493 191,506 200,507 228,493 229,481 219,475 215,476 209,466 216,450 205,445 214,439 209,439 215,428 208,424 208,418 215,414 225,416 215,403 217,401 210,396 Z"><title>Wales</title></path>
-            <!-- Northern Ireland -->
-            <path class="lsec-region" id="lsec-region-nireland" d="M 92,291 85,281 51,283 47,291 33,293 27,309 12,312 20,317 8,321 2,327 15,340 27,346 38,346 43,340 42,333 48,328 58,341 64,342 65,350 76,346 90,351 96,339 109,336 109,331 104,331 104,319 109,322 111,333 114,324 108,313 94,315 103,306 91,295 92,291 Z"><title>Northern Ireland</title></path>
-            <!-- England markers -->
-            <g class="lsec-marker" id="m-london" data-city-id="london" data-country="england" role="button" aria-label="<?php echo $lseo_e; ?> London"><title><?php echo $lseo_e; ?> London</title><circle class="lsec-marker-pulse" cx="333" cy="499" /><circle class="lsec-marker-dot" cx="333" cy="499" /></g>
-            <g class="lsec-marker" id="m-birmingham" data-city-id="birmingham" data-country="england" role="button" aria-label="<?php echo $lseo_e; ?> Birmingham"><title><?php echo $lseo_e; ?> Birmingham</title><circle class="lsec-marker-pulse" cx="260" cy="442" /><circle class="lsec-marker-dot" cx="260" cy="442" /></g>
-            <g class="lsec-marker" id="m-manchester" data-city-id="manchester" data-country="england" role="button" aria-label="<?php echo $lseo_e; ?> Manchester"><title><?php echo $lseo_e; ?> Manchester</title><circle class="lsec-marker-pulse" cx="245" cy="383" /><circle class="lsec-marker-dot" cx="245" cy="383" /></g>
-            <g class="lsec-marker" id="m-liverpool" data-city-id="liverpool" data-country="england" role="button" aria-label="<?php echo $lseo_e; ?> Liverpool"><title><?php echo $lseo_e; ?> Liverpool</title><circle class="lsec-marker-pulse" cx="214" cy="388" /><circle class="lsec-marker-dot" cx="214" cy="388" /></g>
-            <g class="lsec-marker" id="m-leeds" data-city-id="leeds" data-country="england" role="button" aria-label="<?php echo $lseo_e; ?> Leeds"><title><?php echo $lseo_e; ?> Leeds</title><circle class="lsec-marker-pulse" cx="274" cy="365" /><circle class="lsec-marker-dot" cx="274" cy="365" /></g>
-            <g class="lsec-marker" id="m-sheffield" data-city-id="sheffield" data-country="england" role="button" aria-label="<?php echo $lseo_e; ?> Sheffield"><title><?php echo $lseo_e; ?> Sheffield</title><circle class="lsec-marker-pulse" cx="277" cy="389" /><circle class="lsec-marker-dot" cx="277" cy="389" /></g>
-            <g class="lsec-marker" id="m-bristol" data-city-id="bristol" data-country="england" role="button" aria-label="<?php echo $lseo_e; ?> Bristol"><title><?php echo $lseo_e; ?> Bristol</title><circle class="lsec-marker-pulse" cx="231" cy="503" /><circle class="lsec-marker-dot" cx="231" cy="503" /></g>
-            <g class="lsec-marker" id="m-newcastle" data-city-id="newcastle-upon-tyne" data-country="england" role="button" aria-label="<?php echo $lseo_e; ?> Newcastle upon Tyne"><title><?php echo $lseo_e; ?> Newcastle upon Tyne</title><circle class="lsec-marker-pulse" cx="271" cy="295" /><circle class="lsec-marker-dot" cx="271" cy="295" /></g>
-            <g class="lsec-marker" id="m-nottingham" data-city-id="nottingham" data-country="england" role="button" aria-label="<?php echo $lseo_e; ?> Nottingham"><title><?php echo $lseo_e; ?> Nottingham</title><circle class="lsec-marker-pulse" cx="290" cy="415" /><circle class="lsec-marker-dot" cx="290" cy="415" /></g>
-            <g class="lsec-marker" id="m-leicester" data-city-id="leicester" data-country="england" role="button" aria-label="<?php echo $lseo_e; ?> Leicester"><title><?php echo $lseo_e; ?> Leicester</title><circle class="lsec-marker-pulse" cx="291" cy="433" /><circle class="lsec-marker-dot" cx="291" cy="433" /></g>
-            <g class="lsec-marker" id="m-coventry" data-city-id="coventry" data-country="england" role="button" aria-label="<?php echo $lseo_e; ?> Coventry"><title><?php echo $lseo_e; ?> Coventry</title><circle class="lsec-marker-pulse" cx="275" cy="447" /><circle class="lsec-marker-dot" cx="275" cy="447" /></g>
-            <g class="lsec-marker" id="m-bradford" data-city-id="bradford" data-country="england" role="button" aria-label="<?php echo $lseo_e; ?> Bradford"><title><?php echo $lseo_e; ?> Bradford</title><circle class="lsec-marker-pulse" cx="265" cy="365" /><circle class="lsec-marker-dot" cx="265" cy="365" /></g>
-            <g class="lsec-marker" id="m-southampton" data-city-id="southampton" data-country="england" role="button" aria-label="<?php echo $lseo_e; ?> Southampton"><title><?php echo $lseo_e; ?> Southampton</title><circle class="lsec-marker-pulse" cx="280" cy="535" /><circle class="lsec-marker-dot" cx="280" cy="535" /></g>
-            <g class="lsec-marker" id="m-portsmouth" data-city-id="portsmouth" data-country="england" role="button" aria-label="<?php echo $lseo_e; ?> Portsmouth"><title><?php echo $lseo_e; ?> Portsmouth</title><circle class="lsec-marker-pulse" cx="293" cy="540" /><circle class="lsec-marker-dot" cx="293" cy="540" /></g>
-            <g class="lsec-marker" id="m-plymouth" data-city-id="plymouth" data-country="england" role="button" aria-label="<?php echo $lseo_e; ?> Plymouth"><title><?php echo $lseo_e; ?> Plymouth</title><circle class="lsec-marker-pulse" cx="167" cy="566" /><circle class="lsec-marker-dot" cx="167" cy="566" /></g>
-            <g class="lsec-marker" id="m-oxford" data-city-id="oxford" data-country="england" role="button" aria-label="<?php echo $lseo_e; ?> Oxford"><title><?php echo $lseo_e; ?> Oxford</title><circle class="lsec-marker-pulse" cx="286" cy="485" /><circle class="lsec-marker-dot" cx="286" cy="485" /></g>
-            <g class="lsec-marker" id="m-cambridge" data-city-id="cambridge" data-country="england" role="button" aria-label="<?php echo $lseo_e; ?> Cambridge"><title><?php echo $lseo_e; ?> Cambridge</title><circle class="lsec-marker-pulse" cx="342" cy="458" /><circle class="lsec-marker-dot" cx="342" cy="458" /></g>
-            <g class="lsec-marker" id="m-york" data-city-id="york" data-country="england" role="button" aria-label="<?php echo $lseo_e; ?> York"><title><?php echo $lseo_e; ?> York</title><circle class="lsec-marker-pulse" cx="293" cy="355" /><circle class="lsec-marker-dot" cx="293" cy="355" /></g>
-            <g class="lsec-marker" id="m-brighton" data-city-id="brighton-and-hove" data-country="england" role="button" aria-label="<?php echo $lseo_e; ?> Brighton and Hove"><title><?php echo $lseo_e; ?> Brighton and Hove</title><circle class="lsec-marker-pulse" cx="332" cy="540" /><circle class="lsec-marker-dot" cx="332" cy="540" /></g>
-            <g class="lsec-marker" id="m-norwich" data-city-id="norwich" data-country="england" role="button" aria-label="<?php echo $lseo_e; ?> Norwich"><title><?php echo $lseo_e; ?> Norwich</title><circle class="lsec-marker-pulse" cx="391" cy="434" /><circle class="lsec-marker-dot" cx="391" cy="434" /></g>
-            <g class="lsec-marker" id="m-exeter" data-city-id="exeter" data-country="england" role="button" aria-label="<?php echo $lseo_e; ?> Exeter"><title><?php echo $lseo_e; ?> Exeter</title><circle class="lsec-marker-pulse" cx="192" cy="546" /><circle class="lsec-marker-dot" cx="192" cy="546" /></g>
-            <g class="lsec-marker" id="m-bath" data-city-id="bath" data-country="england" role="button" aria-label="<?php echo $lseo_e; ?> Bath"><title><?php echo $lseo_e; ?> Bath</title><circle class="lsec-marker-pulse" cx="240" cy="507" /><circle class="lsec-marker-dot" cx="240" cy="507" /></g>
-            <g class="lsec-marker" id="m-canterbury" data-city-id="canterbury" data-country="england" role="button" aria-label="<?php echo $lseo_e; ?> Canterbury"><title><?php echo $lseo_e; ?> Canterbury</title><circle class="lsec-marker-pulse" cx="382" cy="513" /><circle class="lsec-marker-dot" cx="382" cy="513" /></g>
-            <g class="lsec-marker" id="m-chester" data-city-id="chester" data-country="england" role="button" aria-label="<?php echo $lseo_e; ?> Chester"><title><?php echo $lseo_e; ?> Chester</title><circle class="lsec-marker-pulse" cx="219" cy="400" /><circle class="lsec-marker-dot" cx="219" cy="400" /></g>
-            <g class="lsec-marker" id="m-durham" data-city-id="durham" data-country="england" role="button" aria-label="<?php echo $lseo_e; ?> Durham"><title><?php echo $lseo_e; ?> Durham</title><circle class="lsec-marker-pulse" cx="272" cy="307" /><circle class="lsec-marker-dot" cx="272" cy="307" /></g>
-            <g class="lsec-marker" id="m-lincoln" data-city-id="lincoln" data-country="england" role="button" aria-label="<?php echo $lseo_e; ?> Lincoln"><title><?php echo $lseo_e; ?> Lincoln</title><circle class="lsec-marker-pulse" cx="315" cy="398" /><circle class="lsec-marker-dot" cx="315" cy="398" /></g>
-            <g class="lsec-marker" id="m-salisbury" data-city-id="salisbury" data-country="england" role="button" aria-label="<?php echo $lseo_e; ?> Salisbury"><title><?php echo $lseo_e; ?> Salisbury</title><circle class="lsec-marker-pulse" cx="264" cy="525" /><circle class="lsec-marker-dot" cx="264" cy="525" /></g>
-            <g class="lsec-marker" id="m-wells" data-city-id="wells" data-country="england" role="button" aria-label="<?php echo $lseo_e; ?> Wells"><title><?php echo $lseo_e; ?> Wells</title><circle class="lsec-marker-pulse" cx="228" cy="517" /><circle class="lsec-marker-dot" cx="228" cy="517" /></g>
-            <g class="lsec-marker" id="m-winchester" data-city-id="winchester" data-country="england" role="button" aria-label="<?php echo $lseo_e; ?> Winchester"><title><?php echo $lseo_e; ?> Winchester</title><circle class="lsec-marker-pulse" cx="284" cy="526" /><circle class="lsec-marker-dot" cx="284" cy="526" /></g>
-            <g class="lsec-marker" id="m-worcester" data-city-id="worcester" data-country="england" role="button" aria-label="<?php echo $lseo_e; ?> Worcester"><title><?php echo $lseo_e; ?> Worcester</title><circle class="lsec-marker-pulse" cx="246" cy="459" /><circle class="lsec-marker-dot" cx="246" cy="459" /></g>
-            <!-- Scotland markers -->
-            <g class="lsec-marker" id="m-edinburgh" data-city-id="edinburgh" data-country="scotland" role="button" aria-label="<?php echo $lseo_e; ?> Edinburgh"><title><?php echo $lseo_e; ?> Edinburgh</title><circle class="lsec-marker-pulse" cx="206" cy="238" /><circle class="lsec-marker-dot" cx="206" cy="238" /></g>
-            <g class="lsec-marker" id="m-glasgow" data-city-id="glasgow" data-country="scotland" role="button" aria-label="<?php echo $lseo_e; ?> Glasgow"><title><?php echo $lseo_e; ?> Glasgow</title><circle class="lsec-marker-pulse" cx="163" cy="244" /><circle class="lsec-marker-dot" cx="163" cy="244" /></g>
-            <g class="lsec-marker" id="m-aberdeen" data-city-id="aberdeen" data-country="scotland" role="button" aria-label="<?php echo $lseo_e; ?> Aberdeen"><title><?php echo $lseo_e; ?> Aberdeen</title><circle class="lsec-marker-pulse" cx="251" cy="168" /><circle class="lsec-marker-dot" cx="251" cy="168" /></g>
-            <g class="lsec-marker" id="m-dundee" data-city-id="dundee" data-country="scotland" role="button" aria-label="<?php echo $lseo_e; ?> Dundee"><title><?php echo $lseo_e; ?> Dundee</title><circle class="lsec-marker-pulse" cx="215" cy="208" /><circle class="lsec-marker-dot" cx="215" cy="208" /></g>
-            <g class="lsec-marker" id="m-inverness" data-city-id="inverness" data-country="scotland" role="button" aria-label="<?php echo $lseo_e; ?> Inverness"><title><?php echo $lseo_e; ?> Inverness</title><circle class="lsec-marker-pulse" cx="164" cy="148" /><circle class="lsec-marker-dot" cx="164" cy="148" /></g>
-            <g class="lsec-marker" id="m-stirling" data-city-id="stirling" data-country="scotland" role="button" aria-label="<?php echo $lseo_e; ?> Stirling"><title><?php echo $lseo_e; ?> Stirling</title><circle class="lsec-marker-pulse" cx="175" cy="228" /><circle class="lsec-marker-dot" cx="175" cy="228" /></g>
-            <g class="lsec-marker" id="m-perth" data-city-id="perth" data-country="scotland" role="button" aria-label="<?php echo $lseo_e; ?> Perth"><title><?php echo $lseo_e; ?> Perth</title><circle class="lsec-marker-pulse" cx="196" cy="212" /><circle class="lsec-marker-dot" cx="196" cy="212" /></g>
-            <g class="lsec-marker" id="m-dunfermline" data-city-id="dunfermline" data-country="scotland" role="button" aria-label="<?php echo $lseo_e; ?> Dunfermline"><title><?php echo $lseo_e; ?> Dunfermline</title><circle class="lsec-marker-pulse" cx="195" cy="231" /><circle class="lsec-marker-dot" cx="195" cy="231" /></g>
-            <!-- Wales markers -->
-            <g class="lsec-marker" id="m-cardiff" data-city-id="cardiff" data-country="wales" role="button" aria-label="<?php echo $lseo_e; ?> Cardiff"><title><?php echo $lseo_e; ?> Cardiff</title><circle class="lsec-marker-pulse" cx="207" cy="501" /><circle class="lsec-marker-dot" cx="207" cy="501" /></g>
-            <g class="lsec-marker" id="m-swansea" data-city-id="swansea" data-country="wales" role="button" aria-label="<?php echo $lseo_e; ?> Swansea"><title><?php echo $lseo_e; ?> Swansea</title><circle class="lsec-marker-pulse" cx="175" cy="493" /><circle class="lsec-marker-dot" cx="175" cy="493" /></g>
-            <g class="lsec-marker" id="m-newport" data-city-id="newport" data-country="wales" role="button" aria-label="<?php echo $lseo_e; ?> Newport"><title><?php echo $lseo_e; ?> Newport</title><circle class="lsec-marker-pulse" cx="214" cy="495" /><circle class="lsec-marker-dot" cx="214" cy="495" /></g>
-            <g class="lsec-marker" id="m-bangor" data-city-id="bangor" data-country="wales" role="button" aria-label="<?php echo $lseo_e; ?> Bangor"><title><?php echo $lseo_e; ?> Bangor</title><circle class="lsec-marker-pulse" cx="167" cy="398" /><circle class="lsec-marker-dot" cx="167" cy="398" /></g>
-            <g class="lsec-marker" id="m-st-asaph" data-city-id="st-asaph" data-country="wales" role="button" aria-label="<?php echo $lseo_e; ?> St Asaph"><title><?php echo $lseo_e; ?> St Asaph</title><circle class="lsec-marker-pulse" cx="196" cy="397" /><circle class="lsec-marker-dot" cx="196" cy="397" /></g>
-            <g class="lsec-marker" id="m-st-davids" data-city-id="st-davids" data-country="wales" role="button" aria-label="<?php echo $lseo_e; ?> St Davids"><title><?php echo $lseo_e; ?> St Davids</title><circle class="lsec-marker-pulse" cx="121" cy="478" /><circle class="lsec-marker-dot" cx="121" cy="478" /></g>
-            <g class="lsec-marker" id="m-wrexham" data-city-id="wrexham" data-country="wales" role="button" aria-label="<?php echo $lseo_e; ?> Wrexham"><title><?php echo $lseo_e; ?> Wrexham</title><circle class="lsec-marker-pulse" cx="214" cy="409" /><circle class="lsec-marker-dot" cx="214" cy="409" /></g>
-            <!-- Northern Ireland markers -->
-            <g class="lsec-marker" id="m-belfast" data-city-id="belfast" data-country="nireland" role="button" aria-label="<?php echo $lseo_e; ?> Belfast"><title><?php echo $lseo_e; ?> Belfast</title><circle class="lsec-marker-pulse" cx="93" cy="318" /><circle class="lsec-marker-dot" cx="93" cy="318" /></g>
-            <g class="lsec-marker" id="m-derry" data-city-id="derry-londonderry" data-country="nireland" role="button" aria-label="<?php echo $lseo_e; ?> Derry/Londonderry"><title><?php echo $lseo_e; ?> Derry/Londonderry</title><circle class="lsec-marker-pulse" cx="37" cy="294" /><circle class="lsec-marker-dot" cx="37" cy="294" /></g>
-            <g class="lsec-marker" id="m-lisburn" data-city-id="lisburn" data-country="nireland" role="button" aria-label="<?php echo $lseo_e; ?> Lisburn"><title><?php echo $lseo_e; ?> Lisburn</title><circle class="lsec-marker-pulse" cx="88" cy="322" /><circle class="lsec-marker-dot" cx="88" cy="322" /></g>
-            <g class="lsec-marker" id="m-newry" data-city-id="newry" data-country="nireland" role="button" aria-label="<?php echo $lseo_e; ?> Newry"><title><?php echo $lseo_e; ?> Newry</title><circle class="lsec-marker-pulse" cx="76" cy="342" /><circle class="lsec-marker-dot" cx="76" cy="342" /></g>
-            <g class="lsec-marker" id="m-armagh" data-city-id="armagh" data-country="nireland" role="button" aria-label="<?php echo $lseo_e; ?> Armagh"><title><?php echo $lseo_e; ?> Armagh</title><circle class="lsec-marker-pulse" cx="64" cy="332" /><circle class="lsec-marker-dot" cx="64" cy="332" /></g>
-          </svg>
+
+          <!-- Maharashtra (14 Cities) -->
+          <div class="lsec-tab-panel" id="lsec-panel-maharashtra" role="tabpanel" aria-labelledby="lsec-tab-maharashtra" data-country="maharashtra">
+            <div class="d-flex align-items-center justify-content-between border-bottom pb-2 mb-3">
+              <h4 class="fw-bold text-dark m-0 d-flex align-items-center gap-2">
+                <i class="fa fa-map-marker-alt text-danger"></i>
+                <span>Major Cities in Maharashtra</span>
+              </h4>
+              <span class="badge bg-light text-dark border">14 Cities</span>
+            </div>
+            <ul class="lsec-city-grid" role="list">
+              <li><button class="lsec-city-btn" data-city-id="mumbai" data-country="maharashtra" data-phrase="<?php echo $lseo_e; ?> in Mumbai" aria-label="<?php echo $lseo_e; ?> in Mumbai"><span class="lsec-city-dot" aria-hidden="true"></span>Mumbai<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Mumbai</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="pune" data-country="maharashtra" data-phrase="<?php echo $lseo_e; ?> in Pune" aria-label="<?php echo $lseo_e; ?> in Pune"><span class="lsec-city-dot" aria-hidden="true"></span>Pune<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Pune</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="nagpur" data-country="maharashtra" data-phrase="<?php echo $lseo_e; ?> in Nagpur" aria-label="<?php echo $lseo_e; ?> in Nagpur"><span class="lsec-city-dot" aria-hidden="true"></span>Nagpur<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Nagpur</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="nashik" data-country="maharashtra" data-phrase="<?php echo $lseo_e; ?> in Nashik" aria-label="<?php echo $lseo_e; ?> in Nashik"><span class="lsec-city-dot" aria-hidden="true"></span>Nashik<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Nashik</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="thane" data-country="maharashtra" data-phrase="<?php echo $lseo_e; ?> in Thane" aria-label="<?php echo $lseo_e; ?> in Thane"><span class="lsec-city-dot" aria-hidden="true"></span>Thane<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Thane</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="navi-mumbai" data-country="maharashtra" data-phrase="<?php echo $lseo_e; ?> in Navi Mumbai" aria-label="<?php echo $lseo_e; ?> in Navi Mumbai"><span class="lsec-city-dot" aria-hidden="true"></span>Navi Mumbai<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Navi Mumbai</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="chhatrapati-sambhajinagar" data-country="maharashtra" data-phrase="<?php echo $lseo_e; ?> in Aurangabad Sambhajinagar" aria-label="<?php echo $lseo_e; ?> in Aurangabad Sambhajinagar"><span class="lsec-city-dot" aria-hidden="true"></span>Aurangabad / Sambhajinagar<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Aurangabad Sambhajinagar</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="solapur" data-country="maharashtra" data-phrase="<?php echo $lseo_e; ?> in Solapur" aria-label="<?php echo $lseo_e; ?> in Solapur"><span class="lsec-city-dot" aria-hidden="true"></span>Solapur<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Solapur</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="kolhapur" data-country="maharashtra" data-phrase="<?php echo $lseo_e; ?> in Kolhapur" aria-label="<?php echo $lseo_e; ?> in Kolhapur"><span class="lsec-city-dot" aria-hidden="true"></span>Kolhapur<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Kolhapur</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="amravati" data-country="maharashtra" data-phrase="<?php echo $lseo_e; ?> in Amravati" aria-label="<?php echo $lseo_e; ?> in Amravati"><span class="lsec-city-dot" aria-hidden="true"></span>Amravati<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Amravati</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="vasai-virar" data-country="maharashtra" data-phrase="<?php echo $lseo_e; ?> in Vasai Virar" aria-label="<?php echo $lseo_e; ?> in Vasai Virar"><span class="lsec-city-dot" aria-hidden="true"></span>Vasai-Virar<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Vasai Virar</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="satara" data-country="maharashtra" data-phrase="<?php echo $lseo_e; ?> in Satara" aria-label="<?php echo $lseo_e; ?> in Satara"><span class="lsec-city-dot" aria-hidden="true"></span>Satara<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Satara</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="jalgaon" data-country="maharashtra" data-phrase="<?php echo $lseo_e; ?> in Jalgaon" aria-label="<?php echo $lseo_e; ?> in Jalgaon"><span class="lsec-city-dot" aria-hidden="true"></span>Jalgaon<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Jalgaon</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="sangli" data-country="maharashtra" data-phrase="<?php echo $lseo_e; ?> in Sangli" aria-label="<?php echo $lseo_e; ?> in Sangli"><span class="lsec-city-dot" aria-hidden="true"></span>Sangli<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Sangli</span></button></li>
+            </ul>
+          </div>
+
+          <!-- Karnataka (7 Cities) -->
+          <div class="lsec-tab-panel" id="lsec-panel-karnataka" role="tabpanel" aria-labelledby="lsec-tab-karnataka" data-country="karnataka">
+            <div class="d-flex align-items-center justify-content-between border-bottom pb-2 mb-3">
+              <h4 class="fw-bold text-dark m-0 d-flex align-items-center gap-2">
+                <i class="fa fa-map-marker-alt text-danger"></i>
+                <span>Major Cities in Karnataka</span>
+              </h4>
+              <span class="badge bg-light text-dark border">7 Cities</span>
+            </div>
+            <ul class="lsec-city-grid" role="list">
+              <li><button class="lsec-city-btn" data-city-id="bengaluru" data-country="karnataka" data-phrase="<?php echo $lseo_e; ?> in Bengaluru" aria-label="<?php echo $lseo_e; ?> in Bengaluru"><span class="lsec-city-dot" aria-hidden="true"></span>Bengaluru<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Bengaluru</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="mysuru" data-country="karnataka" data-phrase="<?php echo $lseo_e; ?> in Mysuru" aria-label="<?php echo $lseo_e; ?> in Mysuru"><span class="lsec-city-dot" aria-hidden="true"></span>Mysuru<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Mysuru</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="mangaluru" data-country="karnataka" data-phrase="<?php echo $lseo_e; ?> in Mangaluru" aria-label="<?php echo $lseo_e; ?> in Mangaluru"><span class="lsec-city-dot" aria-hidden="true"></span>Mangaluru<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Mangaluru</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="hubballi" data-country="karnataka" data-phrase="<?php echo $lseo_e; ?> in Hubballi" aria-label="<?php echo $lseo_e; ?> in Hubballi"><span class="lsec-city-dot" aria-hidden="true"></span>Hubballi<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Hubballi</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="belagavi" data-country="karnataka" data-phrase="<?php echo $lseo_e; ?> in Belagavi" aria-label="<?php echo $lseo_e; ?> in Belagavi"><span class="lsec-city-dot" aria-hidden="true"></span>Belagavi<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Belagavi</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="kalaburagi" data-country="karnataka" data-phrase="<?php echo $lseo_e; ?> in Kalaburagi" aria-label="<?php echo $lseo_e; ?> in Kalaburagi"><span class="lsec-city-dot" aria-hidden="true"></span>Kalaburagi<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Kalaburagi</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="davanagere" data-country="karnataka" data-phrase="<?php echo $lseo_e; ?> in Davanagere" aria-label="<?php echo $lseo_e; ?> in Davanagere"><span class="lsec-city-dot" aria-hidden="true"></span>Davanagere<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Davanagere</span></button></li>
+            </ul>
+          </div>
+
+          <!-- Tamil Nadu (10 Cities) -->
+          <div class="lsec-tab-panel" id="lsec-panel-tamil-nadu" role="tabpanel" aria-labelledby="lsec-tab-tamil-nadu" data-country="tamil-nadu">
+            <div class="d-flex align-items-center justify-content-between border-bottom pb-2 mb-3">
+              <h4 class="fw-bold text-dark m-0 d-flex align-items-center gap-2">
+                <i class="fa fa-map-marker-alt text-danger"></i>
+                <span>Major Cities in Tamil Nadu</span>
+              </h4>
+              <span class="badge bg-light text-dark border">10 Cities</span>
+            </div>
+            <ul class="lsec-city-grid" role="list">
+              <li><button class="lsec-city-btn" data-city-id="chennai" data-country="tamil-nadu" data-phrase="<?php echo $lseo_e; ?> in Chennai" aria-label="<?php echo $lseo_e; ?> in Chennai"><span class="lsec-city-dot" aria-hidden="true"></span>Chennai<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Chennai</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="coimbatore" data-country="tamil-nadu" data-phrase="<?php echo $lseo_e; ?> in Coimbatore" aria-label="<?php echo $lseo_e; ?> in Coimbatore"><span class="lsec-city-dot" aria-hidden="true"></span>Coimbatore<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Coimbatore</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="madurai" data-country="tamil-nadu" data-phrase="<?php echo $lseo_e; ?> in Madurai" aria-label="<?php echo $lseo_e; ?> in Madurai"><span class="lsec-city-dot" aria-hidden="true"></span>Madurai<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Madurai</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="tiruppur" data-country="tamil-nadu" data-phrase="<?php echo $lseo_e; ?> in Tiruppur" aria-label="<?php echo $lseo_e; ?> in Tiruppur"><span class="lsec-city-dot" aria-hidden="true"></span>Tiruppur<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Tiruppur</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="salem" data-country="tamil-nadu" data-phrase="<?php echo $lseo_e; ?> in Salem" aria-label="<?php echo $lseo_e; ?> in Salem"><span class="lsec-city-dot" aria-hidden="true"></span>Salem<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Salem</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="tiruchirappalli" data-country="tamil-nadu" data-phrase="<?php echo $lseo_e; ?> in Tiruchirappalli" aria-label="<?php echo $lseo_e; ?> in Tiruchirappalli"><span class="lsec-city-dot" aria-hidden="true"></span>Tiruchirappalli<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Tiruchirappalli</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="tirunelveli" data-country="tamil-nadu" data-phrase="<?php echo $lseo_e; ?> in Tirunelveli" aria-label="<?php echo $lseo_e; ?> in Tirunelveli"><span class="lsec-city-dot" aria-hidden="true"></span>Tirunelveli<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Tirunelveli</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="erode" data-country="tamil-nadu" data-phrase="<?php echo $lseo_e; ?> in Erode" aria-label="<?php echo $lseo_e; ?> in Erode"><span class="lsec-city-dot" aria-hidden="true"></span>Erode<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Erode</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="vellore" data-country="tamil-nadu" data-phrase="<?php echo $lseo_e; ?> in Vellore" aria-label="<?php echo $lseo_e; ?> in Vellore"><span class="lsec-city-dot" aria-hidden="true"></span>Vellore<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Vellore</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="nagercoil" data-country="tamil-nadu" data-phrase="<?php echo $lseo_e; ?> in Nagercoil" aria-label="<?php echo $lseo_e; ?> in Nagercoil"><span class="lsec-city-dot" aria-hidden="true"></span>Nagercoil<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Nagercoil</span></button></li>
+            </ul>
+          </div>
+
+          <!-- Uttar Pradesh (17 Cities) -->
+          <div class="lsec-tab-panel" id="lsec-panel-uttar-pradesh" role="tabpanel" aria-labelledby="lsec-tab-uttar-pradesh" data-country="uttar-pradesh">
+            <div class="d-flex align-items-center justify-content-between border-bottom pb-2 mb-3">
+              <h4 class="fw-bold text-dark m-0 d-flex align-items-center gap-2">
+                <i class="fa fa-map-marker-alt text-danger"></i>
+                <span>Major Cities in Uttar Pradesh</span>
+              </h4>
+              <span class="badge bg-light text-dark border">17 Cities</span>
+            </div>
+            <ul class="lsec-city-grid" role="list">
+              <li><button class="lsec-city-btn" data-city-id="lucknow" data-country="uttar-pradesh" data-phrase="<?php echo $lseo_e; ?> in Lucknow" aria-label="<?php echo $lseo_e; ?> in Lucknow"><span class="lsec-city-dot" aria-hidden="true"></span>Lucknow<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Lucknow</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="kanpur" data-country="uttar-pradesh" data-phrase="<?php echo $lseo_e; ?> in Kanpur" aria-label="<?php echo $lseo_e; ?> in Kanpur"><span class="lsec-city-dot" aria-hidden="true"></span>Kanpur<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Kanpur</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="noida" data-country="uttar-pradesh" data-phrase="<?php echo $lseo_e; ?> in Noida" aria-label="<?php echo $lseo_e; ?> in Noida"><span class="lsec-city-dot" aria-hidden="true"></span>Noida<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Noida</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="ghaziabad" data-country="uttar-pradesh" data-phrase="<?php echo $lseo_e; ?> in Ghaziabad" aria-label="<?php echo $lseo_e; ?> in Ghaziabad"><span class="lsec-city-dot" aria-hidden="true"></span>Ghaziabad<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Ghaziabad</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="agra" data-country="uttar-pradesh" data-phrase="<?php echo $lseo_e; ?> in Agra" aria-label="<?php echo $lseo_e; ?> in Agra"><span class="lsec-city-dot" aria-hidden="true"></span>Agra<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Agra</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="varanasi" data-country="uttar-pradesh" data-phrase="<?php echo $lseo_e; ?> in Varanasi" aria-label="<?php echo $lseo_e; ?> in Varanasi"><span class="lsec-city-dot" aria-hidden="true"></span>Varanasi<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Varanasi</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="meerut" data-country="uttar-pradesh" data-phrase="<?php echo $lseo_e; ?> in Meerut" aria-label="<?php echo $lseo_e; ?> in Meerut"><span class="lsec-city-dot" aria-hidden="true"></span>Meerut<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Meerut</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="prayagraj" data-country="uttar-pradesh" data-phrase="<?php echo $lseo_e; ?> in Prayagraj" aria-label="<?php echo $lseo_e; ?> in Prayagraj"><span class="lsec-city-dot" aria-hidden="true"></span>Prayagraj<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Prayagraj</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="aligarh" data-country="uttar-pradesh" data-phrase="<?php echo $lseo_e; ?> in Aligarh" aria-label="<?php echo $lseo_e; ?> in Aligarh"><span class="lsec-city-dot" aria-hidden="true"></span>Aligarh<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Aligarh</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="bareilly" data-country="uttar-pradesh" data-phrase="<?php echo $lseo_e; ?> in Bareilly" aria-label="<?php echo $lseo_e; ?> in Bareilly"><span class="lsec-city-dot" aria-hidden="true"></span>Bareilly<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Bareilly</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="moradabad" data-country="uttar-pradesh" data-phrase="<?php echo $lseo_e; ?> in Moradabad" aria-label="<?php echo $lseo_e; ?> in Moradabad"><span class="lsec-city-dot" aria-hidden="true"></span>Moradabad<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Moradabad</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="gorakhpur" data-country="uttar-pradesh" data-phrase="<?php echo $lseo_e; ?> in Gorakhpur" aria-label="<?php echo $lseo_e; ?> in Gorakhpur"><span class="lsec-city-dot" aria-hidden="true"></span>Gorakhpur<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Gorakhpur</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="mathura" data-country="uttar-pradesh" data-phrase="<?php echo $lseo_e; ?> in Mathura" aria-label="<?php echo $lseo_e; ?> in Mathura"><span class="lsec-city-dot" aria-hidden="true"></span>Mathura<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Mathura</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="muzaffarnagar" data-country="uttar-pradesh" data-phrase="<?php echo $lseo_e; ?> in Muzaffarnagar" aria-label="<?php echo $lseo_e; ?> in Muzaffarnagar"><span class="lsec-city-dot" aria-hidden="true"></span>Muzaffarnagar<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Muzaffarnagar</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="firozabad" data-country="uttar-pradesh" data-phrase="<?php echo $lseo_e; ?> in Firozabad" aria-label="<?php echo $lseo_e; ?> in Firozabad"><span class="lsec-city-dot" aria-hidden="true"></span>Firozabad<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Firozabad</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="saharanpur" data-country="uttar-pradesh" data-phrase="<?php echo $lseo_e; ?> in Saharanpur" aria-label="<?php echo $lseo_e; ?> in Saharanpur"><span class="lsec-city-dot" aria-hidden="true"></span>Saharanpur<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Saharanpur</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="jhansi" data-country="uttar-pradesh" data-phrase="<?php echo $lseo_e; ?> in Jhansi" aria-label="<?php echo $lseo_e; ?> in Jhansi"><span class="lsec-city-dot" aria-hidden="true"></span>Jhansi<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Jhansi</span></button></li>
+            </ul>
+          </div>
+
+          <!-- Rajasthan (8 Cities) -->
+          <div class="lsec-tab-panel" id="lsec-panel-rajasthan" role="tabpanel" aria-labelledby="lsec-tab-rajasthan" data-country="rajasthan">
+            <div class="d-flex align-items-center justify-content-between border-bottom pb-2 mb-3">
+              <h4 class="fw-bold text-dark m-0 d-flex align-items-center gap-2">
+                <i class="fa fa-map-marker-alt text-danger"></i>
+                <span>Major Cities in Rajasthan</span>
+              </h4>
+              <span class="badge bg-light text-dark border">8 Cities</span>
+            </div>
+            <ul class="lsec-city-grid" role="list">
+              <li><button class="lsec-city-btn" data-city-id="jaipur" data-country="rajasthan" data-phrase="<?php echo $lseo_e; ?> in Jaipur" aria-label="<?php echo $lseo_e; ?> in Jaipur"><span class="lsec-city-dot" aria-hidden="true"></span>Jaipur<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Jaipur</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="jodhpur" data-country="rajasthan" data-phrase="<?php echo $lseo_e; ?> in Jodhpur" aria-label="<?php echo $lseo_e; ?> in Jodhpur"><span class="lsec-city-dot" aria-hidden="true"></span>Jodhpur<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Jodhpur</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="kota" data-country="rajasthan" data-phrase="<?php echo $lseo_e; ?> in Kota" aria-label="<?php echo $lseo_e; ?> in Kota"><span class="lsec-city-dot" aria-hidden="true"></span>Kota<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Kota</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="udaipur" data-country="rajasthan" data-phrase="<?php echo $lseo_e; ?> in Udaipur" aria-label="<?php echo $lseo_e; ?> in Udaipur"><span class="lsec-city-dot" aria-hidden="true"></span>Udaipur<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Udaipur</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="ajmer" data-country="rajasthan" data-phrase="<?php echo $lseo_e; ?> in Ajmer" aria-label="<?php echo $lseo_e; ?> in Ajmer"><span class="lsec-city-dot" aria-hidden="true"></span>Ajmer<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Ajmer</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="bikaner" data-country="rajasthan" data-phrase="<?php echo $lseo_e; ?> in Bikaner" aria-label="<?php echo $lseo_e; ?> in Bikaner"><span class="lsec-city-dot" aria-hidden="true"></span>Bikaner<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Bikaner</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="alwar" data-country="rajasthan" data-phrase="<?php echo $lseo_e; ?> in Alwar" aria-label="<?php echo $lseo_e; ?> in Alwar"><span class="lsec-city-dot" aria-hidden="true"></span>Alwar<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Alwar</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="bharutpur" data-country="rajasthan" data-phrase="<?php echo $lseo_e; ?> in Bharatpur" aria-label="<?php echo $lseo_e; ?> in Bharatpur"><span class="lsec-city-dot" aria-hidden="true"></span>Bharatpur<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Bharatpur</span></button></li>
+            </ul>
+          </div>
+
+          <!-- Madhya Pradesh (7 Cities) -->
+          <div class="lsec-tab-panel" id="lsec-panel-madhya-pradesh" role="tabpanel" aria-labelledby="lsec-tab-madhya-pradesh" data-country="madhya-pradesh">
+            <div class="d-flex align-items-center justify-content-between border-bottom pb-2 mb-3">
+              <h4 class="fw-bold text-dark m-0 d-flex align-items-center gap-2">
+                <i class="fa fa-map-marker-alt text-danger"></i>
+                <span>Major Cities in Madhya Pradesh</span>
+              </h4>
+              <span class="badge bg-light text-dark border">7 Cities</span>
+            </div>
+            <ul class="lsec-city-grid" role="list">
+              <li><button class="lsec-city-btn" data-city-id="indore" data-country="madhya-pradesh" data-phrase="<?php echo $lseo_e; ?> in Indore" aria-label="<?php echo $lseo_e; ?> in Indore"><span class="lsec-city-dot" aria-hidden="true"></span>Indore<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Indore</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="bhopal" data-country="madhya-pradesh" data-phrase="<?php echo $lseo_e; ?> in Bhopal" aria-label="<?php echo $lseo_e; ?> in Bhopal"><span class="lsec-city-dot" aria-hidden="true"></span>Bhopal<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Bhopal</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="gwalior" data-country="madhya-pradesh" data-phrase="<?php echo $lseo_e; ?> in Gwalior" aria-label="<?php echo $lseo_e; ?> in Gwalior"><span class="lsec-city-dot" aria-hidden="true"></span>Gwalior<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Gwalior</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="jabalpur" data-country="madhya-pradesh" data-phrase="<?php echo $lseo_e; ?> in Jabalpur" aria-label="<?php echo $lseo_e; ?> in Jabalpur"><span class="lsec-city-dot" aria-hidden="true"></span>Jabalpur<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Jabalpur</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="ujjain" data-country="madhya-pradesh" data-phrase="<?php echo $lseo_e; ?> in Ujjain" aria-label="<?php echo $lseo_e; ?> in Ujjain"><span class="lsec-city-dot" aria-hidden="true"></span>Ujjain<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Ujjain</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="sagar" data-country="madhya-pradesh" data-phrase="<?php echo $lseo_e; ?> in Sagar" aria-label="<?php echo $lseo_e; ?> in Sagar"><span class="lsec-city-dot" aria-hidden="true"></span>Sagar<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Sagar</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="satna" data-country="madhya-pradesh" data-phrase="<?php echo $lseo_e; ?> in Satna" aria-label="<?php echo $lseo_e; ?> in Satna"><span class="lsec-city-dot" aria-hidden="true"></span>Satna<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Satna</span></button></li>
+            </ul>
+          </div>
+
+          <!-- West Bengal (6 Cities) -->
+          <div class="lsec-tab-panel" id="lsec-panel-west-bengal" role="tabpanel" aria-labelledby="lsec-tab-west-bengal" data-country="west-bengal">
+            <div class="d-flex align-items-center justify-content-between border-bottom pb-2 mb-3">
+              <h4 class="fw-bold text-dark m-0 d-flex align-items-center gap-2">
+                <i class="fa fa-map-marker-alt text-danger"></i>
+                <span>Major Cities in West Bengal</span>
+              </h4>
+              <span class="badge bg-light text-dark border">6 Cities</span>
+            </div>
+            <ul class="lsec-city-grid" role="list">
+              <li><button class="lsec-city-btn" data-city-id="kolkata" data-country="west-bengal" data-phrase="<?php echo $lseo_e; ?> in Kolkata" aria-label="<?php echo $lseo_e; ?> in Kolkata"><span class="lsec-city-dot" aria-hidden="true"></span>Kolkata<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Kolkata</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="howrah" data-country="west-bengal" data-phrase="<?php echo $lseo_e; ?> in Howrah" aria-label="<?php echo $lseo_e; ?> in Howrah"><span class="lsec-city-dot" aria-hidden="true"></span>Howrah<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Howrah</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="durgapur" data-country="west-bengal" data-phrase="<?php echo $lseo_e; ?> in Durgapur" aria-label="<?php echo $lseo_e; ?> in Durgapur"><span class="lsec-city-dot" aria-hidden="true"></span>Durgapur<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Durgapur</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="asansol" data-country="west-bengal" data-phrase="<?php echo $lseo_e; ?> in Asansol" aria-label="<?php echo $lseo_e; ?> in Asansol"><span class="lsec-city-dot" aria-hidden="true"></span>Asansol<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Asansol</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="siliguri" data-country="west-bengal" data-phrase="<?php echo $lseo_e; ?> in Siliguri" aria-label="<?php echo $lseo_e; ?> in Siliguri"><span class="lsec-city-dot" aria-hidden="true"></span>Siliguri<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Siliguri</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="kharagpur" data-country="west-bengal" data-phrase="<?php echo $lseo_e; ?> in Kharagpur" aria-label="<?php echo $lseo_e; ?> in Kharagpur"><span class="lsec-city-dot" aria-hidden="true"></span>Kharagpur<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Kharagpur</span></button></li>
+            </ul>
+          </div>
+
+          <!-- Haryana (7 Cities) -->
+          <div class="lsec-tab-panel" id="lsec-panel-haryana" role="tabpanel" aria-labelledby="lsec-tab-haryana" data-country="haryana">
+            <div class="d-flex align-items-center justify-content-between border-bottom pb-2 mb-3">
+              <h4 class="fw-bold text-dark m-0 d-flex align-items-center gap-2">
+                <i class="fa fa-map-marker-alt text-danger"></i>
+                <span>Major Cities in Haryana</span>
+              </h4>
+              <span class="badge bg-light text-dark border">7 Cities</span>
+            </div>
+            <ul class="lsec-city-grid" role="list">
+              <li><button class="lsec-city-btn" data-city-id="gurugram" data-country="haryana" data-phrase="<?php echo $lseo_e; ?> in Gurugram" aria-label="<?php echo $lseo_e; ?> in Gurugram"><span class="lsec-city-dot" aria-hidden="true"></span>Gurugram<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Gurugram</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="faridabad" data-country="haryana" data-phrase="<?php echo $lseo_e; ?> in Faridabad" aria-label="<?php echo $lseo_e; ?> in Faridabad"><span class="lsec-city-dot" aria-hidden="true"></span>Faridabad<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Faridabad</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="panipat" data-country="haryana" data-phrase="<?php echo $lseo_e; ?> in Panipat" aria-label="<?php echo $lseo_e; ?> in Panipat"><span class="lsec-city-dot" aria-hidden="true"></span>Panipat<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Panipat</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="hisar" data-country="haryana" data-phrase="<?php echo $lseo_e; ?> in Hisar" aria-label="<?php echo $lseo_e; ?> in Hisar"><span class="lsec-city-dot" aria-hidden="true"></span>Hisar<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Hisar</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="rohtak" data-country="haryana" data-phrase="<?php echo $lseo_e; ?> in Rohtak" aria-label="<?php echo $lseo_e; ?> in Rohtak"><span class="lsec-city-dot" aria-hidden="true"></span>Rohtak<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Rohtak</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="sonipat" data-country="haryana" data-phrase="<?php echo $lseo_e; ?> in Sonipat" aria-label="<?php echo $lseo_e; ?> in Sonipat"><span class="lsec-city-dot" aria-hidden="true"></span>Sonipat<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Sonipat</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="karnal" data-country="haryana" data-phrase="<?php echo $lseo_e; ?> in Karnal" aria-label="<?php echo $lseo_e; ?> in Karnal"><span class="lsec-city-dot" aria-hidden="true"></span>Karnal<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Karnal</span></button></li>
+            </ul>
+          </div>
+
+          <!-- Punjab (7 Cities) -->
+          <div class="lsec-tab-panel" id="lsec-panel-punjab" role="tabpanel" aria-labelledby="lsec-tab-punjab" data-country="punjab">
+            <div class="d-flex align-items-center justify-content-between border-bottom pb-2 mb-3">
+              <h4 class="fw-bold text-dark m-0 d-flex align-items-center gap-2">
+                <i class="fa fa-map-marker-alt text-danger"></i>
+                <span>Major Cities in Punjab</span>
+              </h4>
+              <span class="badge bg-light text-dark border">7 Cities</span>
+            </div>
+            <ul class="lsec-city-grid" role="list">
+              <li><button class="lsec-city-btn" data-city-id="ludhiana" data-country="punjab" data-phrase="<?php echo $lseo_e; ?> in Ludhiana" aria-label="<?php echo $lseo_e; ?> in Ludhiana"><span class="lsec-city-dot" aria-hidden="true"></span>Ludhiana<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Ludhiana</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="amritsar" data-country="punjab" data-phrase="<?php echo $lseo_e; ?> in Amritsar" aria-label="<?php echo $lseo_e; ?> in Amritsar"><span class="lsec-city-dot" aria-hidden="true"></span>Amritsar<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Amritsar</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="jalandhar" data-country="punjab" data-phrase="<?php echo $lseo_e; ?> in Jalandhar" aria-label="<?php echo $lseo_e; ?> in Jalandhar"><span class="lsec-city-dot" aria-hidden="true"></span>Jalandhar<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Jalandhar</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="patiala" data-country="punjab" data-phrase="<?php echo $lseo_e; ?> in Patiala" aria-label="<?php echo $lseo_e; ?> in Patiala"><span class="lsec-city-dot" aria-hidden="true"></span>Patiala<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Patiala</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="bathinda" data-country="punjab" data-phrase="<?php echo $lseo_e; ?> in Bathinda" aria-label="<?php echo $lseo_e; ?> in Bathinda"><span class="lsec-city-dot" aria-hidden="true"></span>Bathinda<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Bathinda</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="mohali" data-country="punjab" data-phrase="<?php echo $lseo_e; ?> in Mohali" aria-label="<?php echo $lseo_e; ?> in Mohali"><span class="lsec-city-dot" aria-hidden="true"></span>Mohali<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Mohali</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="pathankot" data-country="punjab" data-phrase="<?php echo $lseo_e; ?> in Pathankot" aria-label="<?php echo $lseo_e; ?> in Pathankot"><span class="lsec-city-dot" aria-hidden="true"></span>Pathankot<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Pathankot</span></button></li>
+            </ul>
+          </div>
+
+          <!-- Kerala (7 Cities) -->
+          <div class="lsec-tab-panel" id="lsec-panel-kerala" role="tabpanel" aria-labelledby="lsec-tab-kerala" data-country="kerala">
+            <div class="d-flex align-items-center justify-content-between border-bottom pb-2 mb-3">
+              <h4 class="fw-bold text-dark m-0 d-flex align-items-center gap-2">
+                <i class="fa fa-map-marker-alt text-danger"></i>
+                <span>Major Cities in Kerala</span>
+              </h4>
+              <span class="badge bg-light text-dark border">7 Cities</span>
+            </div>
+            <ul class="lsec-city-grid" role="list">
+              <li><button class="lsec-city-btn" data-city-id="kochi" data-country="kerala" data-phrase="<?php echo $lseo_e; ?> in Kochi" aria-label="<?php echo $lseo_e; ?> in Kochi"><span class="lsec-city-dot" aria-hidden="true"></span>Kochi<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Kochi</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="thiruvananthapuram" data-country="kerala" data-phrase="<?php echo $lseo_e; ?> in Thiruvananthapuram" aria-label="<?php echo $lseo_e; ?> in Thiruvananthapuram"><span class="lsec-city-dot" aria-hidden="true"></span>Thiruvananthapuram<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Thiruvananthapuram</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="kozhikode" data-country="kerala" data-phrase="<?php echo $lseo_e; ?> in Kozhikode" aria-label="<?php echo $lseo_e; ?> in Kozhikode"><span class="lsec-city-dot" aria-hidden="true"></span>Kozhikode<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Kozhikode</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="thrissur" data-country="kerala" data-phrase="<?php echo $lseo_e; ?> in Thrissur" aria-label="<?php echo $lseo_e; ?> in Thrissur"><span class="lsec-city-dot" aria-hidden="true"></span>Thrissur<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Thrissur</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="kollam" data-country="kerala" data-phrase="<?php echo $lseo_e; ?> in Kollam" aria-label="<?php echo $lseo_e; ?> in Kollam"><span class="lsec-city-dot" aria-hidden="true"></span>Kollam<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Kollam</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="kannur" data-country="kerala" data-phrase="<?php echo $lseo_e; ?> in Kannur" aria-label="<?php echo $lseo_e; ?> in Kannur"><span class="lsec-city-dot" aria-hidden="true"></span>Kannur<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Kannur</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="alappuzha" data-country="kerala" data-phrase="<?php echo $lseo_e; ?> in Alappuzha" aria-label="<?php echo $lseo_e; ?> in Alappuzha"><span class="lsec-city-dot" aria-hidden="true"></span>Alappuzha<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Alappuzha</span></button></li>
+            </ul>
+          </div>
+
+          <!-- Bihar (6 Cities) -->
+          <div class="lsec-tab-panel" id="lsec-panel-bihar" role="tabpanel" aria-labelledby="lsec-tab-bihar" data-country="bihar">
+            <div class="d-flex align-items-center justify-content-between border-bottom pb-2 mb-3">
+              <h4 class="fw-bold text-dark m-0 d-flex align-items-center gap-2">
+                <i class="fa fa-map-marker-alt text-danger"></i>
+                <span>Major Cities in Bihar</span>
+              </h4>
+              <span class="badge bg-light text-dark border">6 Cities</span>
+            </div>
+            <ul class="lsec-city-grid" role="list">
+              <li><button class="lsec-city-btn" data-city-id="patna" data-country="bihar" data-phrase="<?php echo $lseo_e; ?> in Patna" aria-label="<?php echo $lseo_e; ?> in Patna"><span class="lsec-city-dot" aria-hidden="true"></span>Patna<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Patna</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="gaya" data-country="bihar" data-phrase="<?php echo $lseo_e; ?> in Gaya" aria-label="<?php echo $lseo_e; ?> in Gaya"><span class="lsec-city-dot" aria-hidden="true"></span>Gaya<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Gaya</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="muzaffarpur" data-country="bihar" data-phrase="<?php echo $lseo_e; ?> in Muzaffarpur" aria-label="<?php echo $lseo_e; ?> in Muzaffarpur"><span class="lsec-city-dot" aria-hidden="true"></span>Muzaffarpur<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Muzaffarpur</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="bhagalpur" data-country="bihar" data-phrase="<?php echo $lseo_e; ?> in Bhagalpur" aria-label="<?php echo $lseo_e; ?> in Bhagalpur"><span class="lsec-city-dot" aria-hidden="true"></span>Bhagalpur<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Bhagalpur</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="darbhanga" data-country="bihar" data-phrase="<?php echo $lseo_e; ?> in Darbhanga" aria-label="<?php echo $lseo_e; ?> in Darbhanga"><span class="lsec-city-dot" aria-hidden="true"></span>Darbhanga<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Darbhanga</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="purnia" data-country="bihar" data-phrase="<?php echo $lseo_e; ?> in Purnia" aria-label="<?php echo $lseo_e; ?> in Purnia"><span class="lsec-city-dot" aria-hidden="true"></span>Purnia<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Purnia</span></button></li>
+            </ul>
+          </div>
+
+          <!-- Jharkhand (7 Cities) -->
+          <div class="lsec-tab-panel" id="lsec-panel-jharkhand" role="tabpanel" aria-labelledby="lsec-tab-jharkhand" data-country="jharkhand">
+            <div class="d-flex align-items-center justify-content-between border-bottom pb-2 mb-3">
+              <h4 class="fw-bold text-dark m-0 d-flex align-items-center gap-2">
+                <i class="fa fa-map-marker-alt text-danger"></i>
+                <span>Major Cities in Jharkhand</span>
+              </h4>
+              <span class="badge bg-light text-dark border">7 Cities</span>
+            </div>
+            <ul class="lsec-city-grid" role="list">
+              <li><button class="lsec-city-btn" data-city-id="ranchi" data-country="jharkhand" data-phrase="<?php echo $lseo_e; ?> in Ranchi" aria-label="<?php echo $lseo_e; ?> in Ranchi"><span class="lsec-city-dot" aria-hidden="true"></span>Ranchi<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Ranchi</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="jamshedpur" data-country="jharkhand" data-phrase="<?php echo $lseo_e; ?> in Jamshedpur" aria-label="<?php echo $lseo_e; ?> in Jamshedpur"><span class="lsec-city-dot" aria-hidden="true"></span>Jamshedpur<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Jamshedpur</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="dhanbad" data-country="jharkhand" data-phrase="<?php echo $lseo_e; ?> in Dhanbad" aria-label="<?php echo $lseo_e; ?> in Dhanbad"><span class="lsec-city-dot" aria-hidden="true"></span>Dhanbad<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Dhanbad</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="bokaro" data-country="jharkhand" data-phrase="<?php echo $lseo_e; ?> in Bokaro" aria-label="<?php echo $lseo_e; ?> in Bokaro"><span class="lsec-city-dot" aria-hidden="true"></span>Bokaro<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Bokaro</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="deoghar" data-country="jharkhand" data-phrase="<?php echo $lseo_e; ?> in Deoghar" aria-label="<?php echo $lseo_e; ?> in Deoghar"><span class="lsec-city-dot" aria-hidden="true"></span>Deoghar<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Deoghar</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="hazaribagh" data-country="jharkhand" data-phrase="<?php echo $lseo_e; ?> in Hazaribagh" aria-label="<?php echo $lseo_e; ?> in Hazaribagh"><span class="lsec-city-dot" aria-hidden="true"></span>Hazaribagh<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Hazaribagh</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="ramgarh" data-country="jharkhand" data-phrase="<?php echo $lseo_e; ?> in Ramgarh" aria-label="<?php echo $lseo_e; ?> in Ramgarh"><span class="lsec-city-dot" aria-hidden="true"></span>Ramgarh<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Ramgarh</span></button></li>
+            </ul>
+          </div>
+
+          <!-- Odisha (6 Cities) -->
+          <div class="lsec-tab-panel" id="lsec-panel-odisha" role="tabpanel" aria-labelledby="lsec-tab-odisha" data-country="odisha">
+            <div class="d-flex align-items-center justify-content-between border-bottom pb-2 mb-3">
+              <h4 class="fw-bold text-dark m-0 d-flex align-items-center gap-2">
+                <i class="fa fa-map-marker-alt text-danger"></i>
+                <span>Major Cities in Odisha</span>
+              </h4>
+              <span class="badge bg-light text-dark border">6 Cities</span>
+            </div>
+            <ul class="lsec-city-grid" role="list">
+              <li><button class="lsec-city-btn" data-city-id="bhubaneswar" data-country="odisha" data-phrase="<?php echo $lseo_e; ?> in Bhubaneswar" aria-label="<?php echo $lseo_e; ?> in Bhubaneswar"><span class="lsec-city-dot" aria-hidden="true"></span>Bhubaneswar<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Bhubaneswar</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="cuttack" data-country="odisha" data-phrase="<?php echo $lseo_e; ?> in Cuttack" aria-label="<?php echo $lseo_e; ?> in Cuttack"><span class="lsec-city-dot" aria-hidden="true"></span>Cuttack<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Cuttack</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="rourkela" data-country="odisha" data-phrase="<?php echo $lseo_e; ?> in Rourkela" aria-label="<?php echo $lseo_e; ?> in Rourkela"><span class="lsec-city-dot" aria-hidden="true"></span>Rourkela<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Rourkela</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="berhampur" data-country="odisha" data-phrase="<?php echo $lseo_e; ?> in Berhampur" aria-label="<?php echo $lseo_e; ?> in Berhampur"><span class="lsec-city-dot" aria-hidden="true"></span>Berhampur<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Berhampur</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="sambalpur" data-country="odisha" data-phrase="<?php echo $lseo_e; ?> in Sambalpur" aria-label="<?php echo $lseo_e; ?> in Sambalpur"><span class="lsec-city-dot" aria-hidden="true"></span>Sambalpur<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Sambalpur</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="balasore" data-country="odisha" data-phrase="<?php echo $lseo_e; ?> in Balasore" aria-label="<?php echo $lseo_e; ?> in Balasore"><span class="lsec-city-dot" aria-hidden="true"></span>Balasore<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Balasore</span></button></li>
+            </ul>
+          </div>
+
+          <!-- Uttarakhand (6 Cities) -->
+          <div class="lsec-tab-panel" id="lsec-panel-uttarakhand" role="tabpanel" aria-labelledby="lsec-tab-uttarakhand" data-country="uttarakhand">
+            <div class="d-flex align-items-center justify-content-between border-bottom pb-2 mb-3">
+              <h4 class="fw-bold text-dark m-0 d-flex align-items-center gap-2">
+                <i class="fa fa-map-marker-alt text-danger"></i>
+                <span>Major Cities in Uttarakhand</span>
+              </h4>
+              <span class="badge bg-light text-dark border">6 Cities</span>
+            </div>
+            <ul class="lsec-city-grid" role="list">
+              <li><button class="lsec-city-btn" data-city-id="dehradun" data-country="uttarakhand" data-phrase="<?php echo $lseo_e; ?> in Dehradun" aria-label="<?php echo $lseo_e; ?> in Dehradun"><span class="lsec-city-dot" aria-hidden="true"></span>Dehradun<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Dehradun</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="haridwar" data-country="uttarakhand" data-phrase="<?php echo $lseo_e; ?> in Haridwar" aria-label="<?php echo $lseo_e; ?> in Haridwar"><span class="lsec-city-dot" aria-hidden="true"></span>Haridwar<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Haridwar</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="haldwani" data-country="uttarakhand" data-phrase="<?php echo $lseo_e; ?> in Haldwani" aria-label="<?php echo $lseo_e; ?> in Haldwani"><span class="lsec-city-dot" aria-hidden="true"></span>Haldwani<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Haldwani</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="roorkee" data-country="uttarakhand" data-phrase="<?php echo $lseo_e; ?> in Roorkee" aria-label="<?php echo $lseo_e; ?> in Roorkee"><span class="lsec-city-dot" aria-hidden="true"></span>Roorkee<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Roorkee</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="rishikesh" data-country="uttarakhand" data-phrase="<?php echo $lseo_e; ?> in Rishikesh" aria-label="<?php echo $lseo_e; ?> in Rishikesh"><span class="lsec-city-dot" aria-hidden="true"></span>Rishikesh<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Rishikesh</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="kashipur" data-country="uttarakhand" data-phrase="<?php echo $lseo_e; ?> in Kashipur" aria-label="<?php echo $lseo_e; ?> in Kashipur"><span class="lsec-city-dot" aria-hidden="true"></span>Kashipur<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Kashipur</span></button></li>
+            </ul>
+          </div>
+
+          <!-- Other States & UTs (16 Cities) -->
+          <div class="lsec-tab-panel" id="lsec-panel-other-states" role="tabpanel" aria-labelledby="lsec-tab-other-states" data-country="other-states">
+            <div class="d-flex align-items-center justify-content-between border-bottom pb-2 mb-3">
+              <h4 class="fw-bold text-dark m-0 d-flex align-items-center gap-2">
+                <i class="fa fa-map-marker-alt text-danger"></i>
+                <span>Major Cities in Other States &amp; UTs</span>
+              </h4>
+              <span class="badge bg-light text-dark border">16 Cities</span>
+            </div>
+            <ul class="lsec-city-grid" role="list">
+              <li><button class="lsec-city-btn" data-city-id="delhi" data-country="other-states" data-phrase="<?php echo $lseo_e; ?> in Delhi" aria-label="<?php echo $lseo_e; ?> in Delhi"><span class="lsec-city-dot" aria-hidden="true"></span>Delhi (Delhi)<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Delhi</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="hyderabad" data-country="other-states" data-phrase="<?php echo $lseo_e; ?> in Hyderabad" aria-label="<?php echo $lseo_e; ?> in Hyderabad"><span class="lsec-city-dot" aria-hidden="true"></span>Hyderabad (Telangana)<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Hyderabad</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="visakhapatnam" data-country="other-states" data-phrase="<?php echo $lseo_e; ?> in Visakhapatnam" aria-label="<?php echo $lseo_e; ?> in Visakhapatnam"><span class="lsec-city-dot" aria-hidden="true"></span>Visakhapatnam (Andhra Pradesh)<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Visakhapatnam</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="vijayawada" data-country="other-states" data-phrase="<?php echo $lseo_e; ?> in Vijayawada" aria-label="<?php echo $lseo_e; ?> in Vijayawada"><span class="lsec-city-dot" aria-hidden="true"></span>Vijayawada (Andhra Pradesh)<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Vijayawada</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="raipur" data-country="other-states" data-phrase="<?php echo $lseo_e; ?> in Raipur" aria-label="<?php echo $lseo_e; ?> in Raipur"><span class="lsec-city-dot" aria-hidden="true"></span>Raipur (Chhattisgarh)<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Raipur</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="bhilai" data-country="other-states" data-phrase="<?php echo $lseo_e; ?> in Bhilai" aria-label="<?php echo $lseo_e; ?> in Bhilai"><span class="lsec-city-dot" aria-hidden="true"></span>Bhilai (Chhattisgarh)<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Bhilai</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="guwahati" data-country="other-states" data-phrase="<?php echo $lseo_e; ?> in Guwahati" aria-label="<?php echo $lseo_e; ?> in Guwahati"><span class="lsec-city-dot" aria-hidden="true"></span>Guwahati (Assam)<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Guwahati</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="chandigarh" data-country="other-states" data-phrase="<?php echo $lseo_e; ?> in Chandigarh" aria-label="<?php echo $lseo_e; ?> in Chandigarh"><span class="lsec-city-dot" aria-hidden="true"></span>Chandigarh<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Chandigarh</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="puducherry" data-country="other-states" data-phrase="<?php echo $lseo_e; ?> in Puducherry" aria-label="<?php echo $lseo_e; ?> in Puducherry"><span class="lsec-city-dot" aria-hidden="true"></span>Puducherry<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Puducherry</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="agartala" data-country="other-states" data-phrase="<?php echo $lseo_e; ?> in Agartala" aria-label="<?php echo $lseo_e; ?> in Agartala"><span class="lsec-city-dot" aria-hidden="true"></span>Agartala (Tripura)<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Agartala</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="shillong" data-country="other-states" data-phrase="<?php echo $lseo_e; ?> in Shillong" aria-label="<?php echo $lseo_e; ?> in Shillong"><span class="lsec-city-dot" aria-hidden="true"></span>Shillong (Meghalaya)<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Shillong</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="imphal" data-country="other-states" data-phrase="<?php echo $lseo_e; ?> in Imphal" aria-label="<?php echo $lseo_e; ?> in Imphal"><span class="lsec-city-dot" aria-hidden="true"></span>Imphal (Manipur)<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Imphal</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="dimapur" data-country="other-states" data-phrase="<?php echo $lseo_e; ?> in Dimapur" aria-label="<?php echo $lseo_e; ?> in Dimapur"><span class="lsec-city-dot" aria-hidden="true"></span>Dimapur (Nagaland)<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Dimapur</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="aizawl" data-country="other-states" data-phrase="<?php echo $lseo_e; ?> in Aizawl" aria-label="<?php echo $lseo_e; ?> in Aizawl"><span class="lsec-city-dot" aria-hidden="true"></span>Aizawl (Mizoram)<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Aizawl</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="itanagar" data-country="other-states" data-phrase="<?php echo $lseo_e; ?> in Itanagar" aria-label="<?php echo $lseo_e; ?> in Itanagar"><span class="lsec-city-dot" aria-hidden="true"></span>Itanagar (Arunachal Pradesh)<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Itanagar</span></button></li>
+              <li><button class="lsec-city-btn" data-city-id="gangtok" data-country="other-states" data-phrase="<?php echo $lseo_e; ?> in Gangtok" aria-label="<?php echo $lseo_e; ?> in Gangtok"><span class="lsec-city-dot" aria-hidden="true"></span>Gangtok (Sikkim)<span class="lsec-sr-only"> — <?php echo $lseo_e; ?> in Gangtok</span></button></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Right Column: Placeholder Image -->
+      <div class="col-lg-6">
+        <div class="lsec-image-wrapper h-100 p-0 rounded-4 overflow-hidden border shadow-sm bg-light d-flex align-items-center justify-content-center">
+          <img src="https://placehold.co/600x420/f8fafc/0f1c3f?text=Placeholder+Image" alt="<?php echo $lseo_e; ?>" class="img-fluid w-100 h-100 object-fit-cover" />
         </div>
       </div>
     </div>
   </div>
 </section>
+
 <script>
 (function () {
   'use strict';
@@ -421,101 +423,21 @@ $lseo_e = htmlspecialchars($lseo, ENT_QUOTES, 'UTF-8');
   const root = document.querySelector('.lsec-root');
   if (!root) return;
 
-  const tipbox   = root.querySelector('.lsec-tipbox');
-  const cityBtns = root.querySelectorAll('.lsec-city-btn');
-  const markers  = root.querySelectorAll('.lsec-marker');
   const tabs     = root.querySelectorAll('.lsec-tab');
   const panels   = root.querySelectorAll('.lsec-tab-panel');
-
-  const btnById    = {};
-  const markerById = {};
-
-  cityBtns.forEach(b => { if (b.dataset.cityId) btnById[b.dataset.cityId]   = b; });
-  markers.forEach(m  => { if (m.dataset.cityId) markerById[m.dataset.cityId] = m; });
-
-  function showTip(phrase, el) {
-    if (!tipbox || !phrase) return;
-    tipbox.textContent = phrase;
-    const r = el.getBoundingClientRect();
-    tipbox.style.left = (r.left + r.width / 2) + 'px';
-    tipbox.style.top  = (r.top - 8) + 'px';
-    tipbox.classList.add('is-visible');
-  }
-
-  function hideTip() {
-    if (tipbox) tipbox.classList.remove('is-visible');
-  }
-
-  function activateCity(cityId) {
-    deactivateCity();
-    const btn    = btnById[cityId];
-    const marker = markerById[cityId];
-    if (btn)    btn.classList.add('is-active');
-    if (marker) marker.classList.add('is-active');
-  }
-
-  function deactivateCity() {
-    cityBtns.forEach(b => b.classList.remove('is-active'));
-    markers.forEach(m  => m.classList.remove('is-active'));
-    hideTip();
-  }
-
-  cityBtns.forEach(btn => {
-    const id = btn.dataset.cityId;
-    if (!id) return;
-    btn.addEventListener('mouseenter', () => activateCity(id));
-    btn.addEventListener('mouseleave', () => deactivateCity());
-    btn.addEventListener('focus',      () => activateCity(id));
-    btn.addEventListener('blur',       () => deactivateCity());
-    btn.addEventListener('keydown', e => {
-      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); activateCity(id); }
-    });
-    btn.addEventListener('touchend', e => { e.preventDefault(); activateCity(id); });
-  });
-
-  markers.forEach(marker => {
-    const id = marker.dataset.cityId;
-    if (!id) return;
-    marker.setAttribute('tabindex', '0');
-    marker.addEventListener('mouseenter', () => {
-      activateCity(id);
-      const btn = btnById[id];
-      if (btn) showTip(btn.dataset.phrase, marker);
-    });
-    marker.addEventListener('mouseleave', () => deactivateCity());
-    marker.addEventListener('focus', () => {
-      activateCity(id);
-      const btn = btnById[id];
-      if (btn) showTip(btn.dataset.phrase, marker);
-    });
-    marker.addEventListener('blur', () => deactivateCity());
-    marker.addEventListener('keydown', e => {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        activateCity(id);
-        const btn = btnById[id];
-        if (btn) { showTip(btn.dataset.phrase, marker); btn.scrollIntoView({ block: 'nearest', behavior: 'smooth' }); }
-      }
-    });
-    marker.addEventListener('touchend', e => {
-      e.preventDefault();
-      activateCity(id);
-      const btn = btnById[id];
-      if (btn) showTip(btn.dataset.phrase, marker);
-    });
-  });
+  const cityBtns = root.querySelectorAll('.lsec-city-btn');
 
   function activateTab(tabEl) {
     if (!tabEl) return;
-    const country = tabEl.dataset.tab;
+    const stateKey = tabEl.dataset.tab;
     tabs.forEach(t => {
       const isThis = t === tabEl;
       t.setAttribute('aria-selected', isThis ? 'true' : 'false');
       t.classList.toggle('is-active', isThis);
     });
-    panels.forEach(p  => p.classList.toggle('is-active', p.dataset.country === country));
-    markers.forEach(m => m.classList.toggle('is-dimmed', m.dataset.country !== country));
-    deactivateCity();
+    
+    // Switch active panel
+    panels.forEach(p => p.classList.toggle('is-active', p.dataset.country === stateKey));
   }
 
   tabs.forEach(tab => {
@@ -532,8 +454,22 @@ $lseo_e = htmlspecialchars($lseo, ENT_QUOTES, 'UTF-8');
     });
   });
 
-  document.addEventListener('click', e => { if (!root.contains(e.target)) deactivateCity(); });
-  window.addEventListener('scroll', hideTip, { passive: true });
+  cityBtns.forEach(btn => {
+    btn.addEventListener('mouseenter', () => {
+      cityBtns.forEach(b => b.classList.remove('is-active'));
+      btn.classList.add('is-active');
+    });
+    btn.addEventListener('mouseleave', () => {
+      btn.classList.remove('is-active');
+    });
+    btn.addEventListener('focus', () => {
+      cityBtns.forEach(b => b.classList.remove('is-active'));
+      btn.classList.add('is-active');
+    });
+    btn.addEventListener('blur', () => {
+      btn.classList.remove('is-active');
+    });
+  });
 
   if (tabs.length) activateTab(tabs[0]);
 })();

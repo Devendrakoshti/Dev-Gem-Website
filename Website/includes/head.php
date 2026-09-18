@@ -25,32 +25,39 @@ include __DIR__ . '/schema-engine.php';
     <meta name="robots" content="<?php echo htmlspecialchars($robots_meta ?? 'index, follow', ENT_QUOTES, 'UTF-8'); ?>" />
     <meta name="googlebot" content="<?php echo htmlspecialchars($googlebot_meta ?? 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1', ENT_QUOTES, 'UTF-8'); ?>" />
     <meta name="bingbot" content="<?php echo htmlspecialchars($bingbot_meta ?? 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1', ENT_QUOTES, 'UTF-8'); ?>" />
-    <link rel="canonical" href="<?php echo htmlspecialchars($canonical_url, ENT_QUOTES, 'UTF-8'); ?>">
-    <!-- hreflang: one English site serving US, GB and AU. x-default resolves to the en-US page. -->
-<!-- <?php $_hreflang_url = htmlspecialchars($canonical_url, ENT_QUOTES, 'UTF-8'); ?> -->
-    <link rel="alternate" hreflang="en" href="<?php echo $canonical_url; ?>">
-    <!-- <link rel="alternate" hreflang="en-gb" href="<?php echo $_hreflang_url; ?>">
-    <link rel="alternate" hreflang="en-au" href="<?php echo $_hreflang_url; ?>">
-    <link rel="alternate" hreflang="en-ca" href="<?php echo $_hreflang_url; ?>">
-    <link rel="alternate" hreflang="x-default" href="<?php echo $_hreflang_url; ?>"> -->
+    <?php
+    $_clean_canonical = (!empty($canonical_url) && $canonical_url !== 'index.php') ? ltrim($canonical_url, '/') : '';
+    $_full_canonical = (isset($canonical_url) && preg_match('~^https?://~i', $canonical_url)) ? $canonical_url : rtrim($base_url, '/') . '/' . $_clean_canonical;
+    if ($_clean_canonical === '') {
+        $_full_canonical = rtrim($base_url, '/') . '/';
+    }
+    $_full_og_image = '';
+    if (!empty($og_image)) {
+        $_full_og_image = preg_match('~^https?://~i', $og_image) ? $og_image : rtrim($base_url, '/') . '/' . ltrim($og_image, '/');
+    }
+    ?>
+    <link rel="canonical" href="<?php echo htmlspecialchars($_full_canonical, ENT_QUOTES, 'UTF-8'); ?>">
+    <link rel="alternate" hreflang="en" href="<?php echo htmlspecialchars($_full_canonical, ENT_QUOTES, 'UTF-8'); ?>">
     <!-- Full of Og & Twitter Card Details -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="<?php echo htmlspecialchars($canonical_url); ?>">
+    <meta property="og:url" content="<?php echo htmlspecialchars($_full_canonical, ENT_QUOTES, 'UTF-8'); ?>">
     <meta property="og:title" content="<?php echo htmlspecialchars($page_title, ENT_QUOTES, 'UTF-8'); ?>">
     <meta property="og:description" content="<?php echo htmlspecialchars($page_desc, ENT_QUOTES, 'UTF-8'); ?>">
-    <meta property="og:image" content="<?php echo htmlspecialchars($og_image, ENT_QUOTES, 'UTF-8'); ?>">
-    <meta property="og:image:width" content="<?php echo htmlspecialchars($og_width, ENT_QUOTES, 'UTF-8'); ?>" />
-    <meta property="og:image:height" content="<?php echo htmlspecialchars($og_height, ENT_QUOTES, 'UTF-8'); ?>" />
-    <meta property="og:image:type" content="image/webp" />
-    <meta property="og:site_name" content="Tesla Mechanical Designs">
-    <meta property="og:logo" content="https://www.teslamechanicaldesigns.com/images/tesla-mechanical-designs-logo.svg">
-    <meta property="og:locale" content="en">
+    <?php if (!empty($_full_og_image)): ?>
+    <meta property="og:image" content="<?php echo htmlspecialchars($_full_og_image, ENT_QUOTES, 'UTF-8'); ?>">
+    <meta property="og:image:width" content="<?php echo htmlspecialchars($og_width ?? '1200', ENT_QUOTES, 'UTF-8'); ?>" />
+    <meta property="og:image:height" content="<?php echo htmlspecialchars($og_height ?? '630', ENT_QUOTES, 'UTF-8'); ?>" />
+    <?php endif; ?>
+    <meta property="og:site_name" content="GEM Gujarat">
+    <meta property="og:logo" content="https://www.gemgujarat.in/images/gem-gujarat-logo.webp">
+    <meta property="og:locale" content="en_IN">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="<?php echo htmlspecialchars($canonical_url); ?>">
+    <meta name="twitter:url" content="<?php echo htmlspecialchars($_full_canonical, ENT_QUOTES, 'UTF-8'); ?>">
     <meta name="twitter:title" content="<?php echo htmlspecialchars($page_title, ENT_QUOTES, 'UTF-8'); ?>">
     <meta name="twitter:description" content="<?php echo htmlspecialchars($page_desc, ENT_QUOTES, 'UTF-8'); ?>">
-    <meta name="twitter:image" content="<?php echo htmlspecialchars($og_image, ENT_QUOTES, 'UTF-8'); ?>">
-    <meta name="twitter:site" content="@teslamechd">   
+    <?php if (!empty($_full_og_image)): ?>
+    <meta name="twitter:image" content="<?php echo htmlspecialchars($_full_og_image, ENT_QUOTES, 'UTF-8'); ?>">
+    <?php endif; ?>   
     <!-- Vendor CSS -->
     <!-- Main CSS -->
     <!-- Schema Rendering -->

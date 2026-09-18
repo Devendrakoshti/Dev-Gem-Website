@@ -2,8 +2,8 @@
 $page_title = "About Us | GeM Gujarat – Empowering India’s MSMEs & Startups";
 $page_desc = "We are Gujarat’s leading GeM Registration experts. Helping Indian entrepreneurs scale through seamless government procurement, bid support, and catalog management.";
 $canonical_url = "about-us.php";
-$preload_image = "images/gem-gujarat-about-us-banner.webp";
-$og_image = "images/gem-gujarat-about-us-banner.webp";
+$preload_image = "images/gem-gujarat-about-us-banner-02.webp";
+$og_image = "images/gem-gujarat-about-us-banner-02.webp";
 $og_width = "1000";
 $og_height = "1000";
 $page_keywords = "";
@@ -13,33 +13,58 @@ include 'includes/head.php';
   <!-- navbar end  -->
 <main>
 <!-- banner start  -->
-<div class="service-banner">
+<div class="service-banner about-us-banner-section py-4 py-lg-5">
   <div class="container">
-    <div class="row flex-wrap-reverse g-5">
-      <div class="col-lg-6">
-        <div class="h-100">
-          <div class="page-path">
-            <span>
-              <i class="fa-solid fa-house text-red me-1"></i> Home <i class="fa-solid fa-chevron-right mx-1 fs-12"></i> About Us </span>
-          </div>
-          <h1 class="mb-1">Your Trusted Bridge to <span>Government Opportunities</span>
+    <div class="row align-items-center g-4 g-lg-5">
+      <div class="col-lg-5">
+        <div class="about-us-banner-img text-center">
+          <img src="images/gem-gujarat-about-us-banner-02.webp" alt="GeM Gujarat About Us Banner" title="GeM Gujarat About Us Banner" class="img-fluid" width="600" height="600">
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="pe-lg-3">
+          <span class="subtitle mb-2">ABOUT GEM GUJARAT</span>
+          <h1 class="banner-title mb-3">
+            Welcome to GEM Gujarat – India’s Trusted End-to-End GeM Portal Consultant <span class="text-red fw-bold">Since 2020</span>
           </h1>
-          <p class="fs-18 mb-4 lh-base">Simplifying GeM for Gujarat’s vibrant business community and beyond.</p>
-          <a title="Explore More" class="btn-primary" href="/contact-us.php"> Need Help with GeM Support? <span>
-              <svg id="Layer_1" enableBackground="new 0 0 100 100" height="40" viewBox="0 0 100 100" fill="#f70629" width="40" xmlns="http://www.w3.org/2000/svg">
-                <path d="m50 10.75c-18.266 0-34.562 13.129-38.383 31.007-1.909 8.933-.623 18.432 3.636 26.515 4.099 7.779 10.819 14.066 18.859 17.629 8.363 3.707 17.964 4.353 26.754 1.825 8.48-2.438 15.999-7.789 21.118-14.972 10.703-15.017 9.272-36.111-3.32-49.567-7.38-7.886-17.862-12.437-28.664-12.437zm18.829 41.347-10.7 10.958c-2.709 2.775-6.991-1.429-4.293-4.191l5.399-5.529h-25.586c-1.817 0-3.333-1.517-3.333-3.333s1.517-3.333 3.333-3.333h25.458l-5.506-5.505c-2.736-2.736 1.506-6.979 4.242-4.243l10.961 10.96c1.162 1.161 1.173 3.041.025 4.216z" />
-              </svg>
-            </span>
-          </a>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="h-100">
-          <div class="hero-banner-image">
-            <img src="images/gem-gujarat-about-us-banner.webp" alt="Gem Gujarat About Us banner Image" title="Gem Gujarat About Us banner Image" class="img-fluid" width="1000" height="1000">
+          <p class="banner-desc mb-4">
+            Since 2020, we have been the trusted growth partner for businesses nationwide, helping vendors, OEMs, and resellers navigate the complex ecosystem of the Government e-Marketplace (GeM). We streamline processes, optimize compliances, and secure tender eligibility so you can win more government contracts.
+          </p>
+          
+          <div class="expertise-section">
+            <h3 class="fw-bold fs-5 text-dark mb-3">Core Expertise</h3>
+            <div class="row g-3 align-items-stretch">
+              <div class="col-md-7 col-sm-7">
+                <div class="expertise-list d-flex flex-column justify-content-center h-100">
+                  <div class="expertise-item d-flex align-items-center">
+                    <i class="fa-solid fa-circle-check expertise-icon me-2 flex-shrink-0"></i>
+                    <span>End-to-End GeM Registration &amp; Vendor Assessment</span>
+                  </div>
+                  <div class="expertise-item d-flex align-items-center">
+                    <i class="fa-solid fa-circle-check expertise-icon me-2 flex-shrink-0"></i>
+                    <span>Strategic Tender Bidding &amp; Bid Management</span>
+                  </div>
+                  <div class="expertise-item d-flex align-items-center">
+                    <i class="fa-solid fa-circle-check expertise-icon me-2 flex-shrink-0"></i>
+                    <span>MSME Udyam &amp; ISO Certification Support</span>
+                  </div>
+                  <div class="expertise-item d-flex align-items-center">
+                    <i class="fa-solid fa-circle-check expertise-icon me-2 flex-shrink-0"></i>
+                    <span>OEM Authorization Codes &amp; L1 Price Comparison Solutions</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5 col-sm-5">
+                <div class="stats-card p-3 p-xl-4 text-white text-center rounded-4 position-relative overflow-hidden h-100 d-flex flex-column justify-content-center align-items-center">
+                  <div class="stats-number fw-bold text-white mb-1">500+</div>
+                  <p class="stats-text small mb-0 text-white-50 lh-sm">Trusted Vendors, OEMs &amp; Resellers Supported</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      
     </div>
   </div>
 </div>
