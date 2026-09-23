@@ -235,9 +235,8 @@ footer{background:url(./images/footer-background.webp) no-repeat center;backgrou
 
 /* Home Banner New Styling */
 .home-hero-banner {
-  /* background: linear-gradient(135deg, #fff7f3 0%, #f4f7fc 100%); */
   position: relative;
-  background: url(./images/gem-gujarat-home-bg.jpg) no-repeat top right;
+  background: url(./images/gem-gujarat-home-bg.webp) no-repeat top right;
   background-size: cover;
   padding: 5.2% 0;
 }
