@@ -1,9 +1,9 @@
 <?php
 $page_title = "GeM OEM Panel Registration & Brand Approval Consultant Nationwide";
 $page_desc = "Expert GeM OEM Registration for Manufacturers. Get GeM Brand Approval, RITES Vendor Assessment assistance, and Brand Authorization Codes Across India.";
-$canonical_url = "gem-oem-panel-registration.php";
-$preload_image = "images/gem-oem-panel-registration-banner.webp";
-$og_image = "images/gem-oem-panel-registration-banner.webp";
+$canonical_url = "https://www.gemgujarat.in/gem-oem-panel-registration.php";
+$preload_image = "https://www.gemgujarat.in/images/gem-oem-panel-registration-banner.webp";
+$og_image = "https://www.gemgujarat.in/images/gem-oem-panel-registration-banner.webp";
 $og_width = "1000";
 $og_height = "1000";
 $page_keywords = "";
@@ -20,11 +20,11 @@ include 'includes/head.php';
         <div class="h-100">
           <div class="page-path">
             <span>
-              <i class="fa-solid fa-house text-red me-1"></i> Home <i class="fa-solid fa-chevron-right mx-1 fs-12"></i> GeM OEM Panel Registration </span>
+              <svg class="text-red me-1 align-text-bottom" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg> Home <svg class="mx-1 align-middle" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg> GeM OEM Panel Registration </span>
           </div>
           <h1 class="mb-1">Unlock Your Brand’s Full Potential: Expert <span>GeM OEM Panel</span> Registration for Manufacturers Across India </h1>
           <p class="fs-18 mb-4 lh-base">Experience zero waiting and zero friction. We provide instant GeM OEM Authorization Codes across all your product categories in one centralized dashboard. Stop switching between consultants—secure direct, hassle-free authorization management and dominate L1 comparisons to keep winning bids without interruptions.</p>
-          <a title="Explore More" class="btn-primary" href="/contact-us.php"> Schedule Your Free OEM Eligibility Check Now! <span>
+          <a title="Schedule Your Free GeM OEM Eligibility Check" class="btn-primary" href="https://www.gemgujarat.in/contact-us.php"> Schedule Your Free OEM Eligibility Check Now! <span>
               <svg id="Layer_1" enableBackground="new 0 0 100 100" height="40" viewBox="0 0 100 100" fill="#f70629" width="40" xmlns="http://www.w3.org/2000/svg">
                 <path d="m50 10.75c-18.266 0-34.562 13.129-38.383 31.007-1.909 8.933-.623 18.432 3.636 26.515 4.099 7.779 10.819 14.066 18.859 17.629 8.363 3.707 17.964 4.353 26.754 1.825 8.48-2.438 15.999-7.789 21.118-14.972 10.703-15.017 9.272-36.111-3.32-49.567-7.38-7.886-17.862-12.437-28.664-12.437zm18.829 41.347-10.7 10.958c-2.709 2.775-6.991-1.429-4.293-4.191l5.399-5.529h-25.586c-1.817 0-3.333-1.517-3.333-3.333s1.517-3.333 3.333-3.333h25.458l-5.506-5.505c-2.736-2.736 1.506-6.979 4.242-4.243l10.961 10.96c1.162 1.161 1.173 3.041.025 4.216z" />
               </svg>
@@ -35,7 +35,7 @@ include 'includes/head.php';
       <div class="col-lg-6">
         <div class="h-100">
           <div class="hero-banner-image">
-            <img src="images/gem-oem-panel-registration-banner.webp" alt="Gem Oem Panel Registration Banner Image" title="Gem Oem Panel Registration Banner Image" class="img-fluid" width="1000" height="1000">
+            <img src="https://www.gemgujarat.in/images/gem-oem-panel-registration-banner.webp" alt="Gem Oem Panel Registration Banner Image" title="Gem Oem Panel Registration Banner Image" class="img-fluid" width="1000" height="1000">
           </div>
         </div>
       </div>
@@ -84,7 +84,7 @@ include 'includes/head.php';
       </div>
       <div class="col-lg-4 col-md-8">
         <div class="service-img-years">
-          <img src="./images/gem-oem-panel-registration-opportunity.webp" alt="Gem Oem Panel Registration Opportunity Image" title="Gem Oem Panel Registration Opportunity Image" class="img-fluid rounded-5" width="1024" height="1200">
+          <img src="https://www.gemgujarat.in/images/gem-oem-panel-registration-opportunity.webp" alt="Gem Oem Panel Registration Opportunity Image" title="Gem Oem Panel Registration Opportunity Image" class="img-fluid rounded-5" width="1024" height="1200">
           <div class="rounded-5 bg-gradient-red-purple border border-5 border-white shadow service-img-mn">
             <div class="d-flex p-lg-5 p-4 align-items-center justify-content-center text-white">
               <span class="display-2 fw-bold ">0<?php echo date("Y") - 2020; ?>+ </span>
@@ -103,7 +103,7 @@ include 'includes/head.php';
     <div class="row g-5 mb-4">
       <div class="col-lg-4 col-md-8">
         <div class="solution-section-img">
-          <img src="./images/gem-oem-panel-registration-process.webp" alt="Gem Oem Panel Registration Process Image" title="Gem Oem Panel Registration Process Image" class="img-fluid rounded-5" width="1024" height="1200">
+          <img src="https://www.gemgujarat.in/images/gem-oem-panel-registration-process.webp" alt="Gem Oem Panel Registration Process Image" title="Gem Oem Panel Registration Process Image" class="img-fluid rounded-5" width="1024" height="1200">
         </div>
       </div>
       <div class="col-lg-8">
@@ -124,35 +124,35 @@ include 'includes/head.php';
       <div class="row g-4 fs-16">
         <div class="col-xl-4 col-md-6">
           <div class="h-100 rounded-5 border bg-white shadow p-4">
-            <img src="images/icons/setting.svg" alt="Profile Setup" title="Profile Setup" class="img-fluid mb-3" width="35" height="35">
+            <img src="https://www.gemgujarat.in/images/icons/setting.svg" alt="Profile Setup" title="Profile Setup" class="img-fluid mb-3" width="35" height="35">
             <h4 class="fw-medium mb-2 fs-5 text-red">Preliminary GeM Registration</h4>
             <p class="mb-0">We ensure your basic seller profile is 100% accurate and compliant right from the start.</p>
           </div>
         </div>
         <div class="col-xl-4 col-md-6">
           <div class="h-100 rounded-5 border bg-white shadow p-4">
-            <img src="images/icons/database-file.svg" alt="Profile Setup" title="Profile Setup" class="img-fluid mb-3" width="33" height="33">
+            <img src="https://www.gemgujarat.in/images/icons/database-file.svg" alt="Profile Setup" title="Profile Setup" class="img-fluid mb-3" width="33" height="33">
             <h4 class="fw-medium mb-2 fs-5 text-red">Brand Ownership Verification</h4>
             <p class="mb-0">We ensure a seamless verification process through the meticulous preparation and submission of your GeM Brand Approval Documents, including Trademark Certificates and Brand Authorization letters, to establish your brand's authenticity on the portal.</p>
           </div>
         </div>
         <div class="col-xl-4 col-md-6">
           <div class="h-100 rounded-5 border bg-white shadow p-4">
-            <img src="images/icons/category.svg" alt="Profile Setup" title="Profile Setup" class="img-fluid mb-3" width="30" height="30">
+            <img src="https://www.gemgujarat.in/images/icons/category.svg" alt="Profile Setup" title="Profile Setup" class="img-fluid mb-3" width="30" height="30">
             <h4 class="fw-medium mb-2 fs-5 text-red">Vendor Assessment Assistance</h4>
             <p class="mb-0">Our consultancy navigates you through the mandatory audit by professionally managing the RITES Vendor Assessment Process, ensuring all financial reports, manufacturing proofs, and essential certifications like ISO and BIS are meticulously compiled for a successful evaluation.</p>
           </div>
         </div>
         <div class="col-xl-4 col-md-6">
           <div class="h-100 rounded-5 border bg-white shadow p-4">
-            <img src="images/icons/learning.svg" alt="Profile Setup" title="Profile Setup" class="img-fluid mb-3" width="40" height="40">
+            <img src="https://www.gemgujarat.in/images/icons/learning.svg" alt="Profile Setup" title="Profile Setup" class="img-fluid mb-3" width="40" height="40">
             <h4 class="fw-medium mb-2 fs-5 text-red">OEM Application Submission </h4>
             <p class="mb-0">Expert filing of the final OEM application, ensuring all forms are correctly filled to minimize chances of rejection.</p>
           </div>
         </div>
         <div class="col-xl-4 col-md-6">
           <div class="h-100 rounded-5 border bg-white shadow p-4">
-            <img src="images/icons/learning.svg" alt="Profile Setup" title="Profile Setup" class="img-fluid mb-3" width="40" height="40">
+            <img src="https://www.gemgujarat.in/images/icons/learning.svg" alt="Profile Setup" title="Profile Setup" class="img-fluid mb-3" width="40" height="40">
             <h4 class="fw-medium mb-2 fs-5 text-red">Post-Approval Catalogue Creation</h4>
             <p class="mb-0">We assist in creating your first master product catalogue with accurate specifications and pricing under your newly acquired GeM Manufacturer Certificate status.</p>
           </div>
@@ -175,7 +175,7 @@ include 'includes/head.php';
     <div class="row g-lg-5 g-4 align-items-center">
       <div class="col-lg-5">
         <div class="h-100">
-          <img src="./images/gem-gujarat-faq.webp" alt="Gem Gujarat FAQ Image" title="Gem Gujarat FAQ Image" class="img-fluid rounded-5" width="2000" height="1333">
+          <img src="https://www.gemgujarat.in/images/gem-gujarat-faq.webp" alt="Gem Gujarat FAQ Image" title="Gem Gujarat FAQ Image" class="img-fluid rounded-5" width="2000" height="1333">
         </div>
       </div>
       <div class="col-lg-7">
@@ -270,7 +270,7 @@ include 'includes/head.php';
             <h2 class="h2-title mb-3"> Stop Selling as a Reseller. Start Listing as the Official GeM Manufacturer <b> Certificate Holder</b>
             </h2>
             <p class="fs-18 fw-medium mb-4">The clock is ticking on thousands of potential government orders. Every day you delay is an opportunity lost. Let’s work together to simplify your GeM Bid Participation Service and turn those government contracts into guaranteed business growth.</p>
-            <a title="Explore More" class="btn-primary" href="/contact-us.php"> Apply for GeM OEM Status Today! <span>
+            <a title="Apply for GeM OEM Panel &amp; Authorization Codes" class="btn-primary" href="https://www.gemgujarat.in/contact-us.php"> Apply for GeM OEM Status Today! <span>
                 <svg id="Layer_1" enablebackground="new 0 0 100 100" height="40" viewBox="0 0 100 100" fill="#f70629" width="40" xmlns="http://www.w3.org/2000/svg">
                   <path d="m50 10.75c-18.266 0-34.562 13.129-38.383 31.007-1.909 8.933-.623 18.432 3.636 26.515 4.099 7.779 10.819 14.066 18.859 17.629 8.363 3.707 17.964 4.353 26.754 1.825 8.48-2.438 15.999-7.789 21.118-14.972 10.703-15.017 9.272-36.111-3.32-49.567-7.38-7.886-17.862-12.437-28.664-12.437zm18.829 41.347-10.7 10.958c-2.709 2.775-6.991-1.429-4.293-4.191l5.399-5.529h-25.586c-1.817 0-3.333-1.517-3.333-3.333s1.517-3.333 3.333-3.333h25.458l-5.506-5.505c-2.736-2.736 1.506-6.979 4.242-4.243l10.961 10.96c1.162 1.161 1.173 3.041.025 4.216z"></path>
                 </svg>
@@ -280,7 +280,7 @@ include 'includes/head.php';
         </div>
         <div class="col-lg-4">
           <div class="h-100">
-            <img src="images/gem-gujarat-cta.webp" alt="Gem Gujarat Cta" title="Gem Gujarat Cta" class="img-fluid rounded-5" width="867" height="713">
+            <img src="https://www.gemgujarat.in/images/gem-gujarat-cta.webp" alt="Gem Gujarat Cta" title="Gem Gujarat Cta" class="img-fluid rounded-5" width="867" height="713">
           </div>
         </div>
       </div>

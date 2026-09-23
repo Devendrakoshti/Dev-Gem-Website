@@ -53,7 +53,7 @@ $lseo_e = htmlspecialchars($lseo, ENT_QUOTES, 'UTF-8');
           <div class="lsec-tab-panel is-active" id="lsec-panel-gujarat" role="tabpanel" aria-labelledby="lsec-tab-gujarat" data-country="gujarat">
             <div class="d-flex align-items-center justify-content-between border-bottom pb-2 mb-3">
               <h4 class="fw-bold text-dark m-0 d-flex align-items-center gap-2">
-                <i class="fa fa-map-marker-alt text-danger"></i>
+                <svg class="text-danger flex-shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span>Major Cities in Gujarat</span>
               </h4>
               <span class="badge bg-light text-dark border">15 Cities</span>
@@ -81,7 +81,7 @@ $lseo_e = htmlspecialchars($lseo, ENT_QUOTES, 'UTF-8');
           <div class="lsec-tab-panel" id="lsec-panel-maharashtra" role="tabpanel" aria-labelledby="lsec-tab-maharashtra" data-country="maharashtra">
             <div class="d-flex align-items-center justify-content-between border-bottom pb-2 mb-3">
               <h4 class="fw-bold text-dark m-0 d-flex align-items-center gap-2">
-                <i class="fa fa-map-marker-alt text-danger"></i>
+                <svg class="text-danger flex-shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span>Major Cities in Maharashtra</span>
               </h4>
               <span class="badge bg-light text-dark border">14 Cities</span>
@@ -108,7 +108,7 @@ $lseo_e = htmlspecialchars($lseo, ENT_QUOTES, 'UTF-8');
           <div class="lsec-tab-panel" id="lsec-panel-karnataka" role="tabpanel" aria-labelledby="lsec-tab-karnataka" data-country="karnataka">
             <div class="d-flex align-items-center justify-content-between border-bottom pb-2 mb-3">
               <h4 class="fw-bold text-dark m-0 d-flex align-items-center gap-2">
-                <i class="fa fa-map-marker-alt text-danger"></i>
+                <svg class="text-danger flex-shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span>Major Cities in Karnataka</span>
               </h4>
               <span class="badge bg-light text-dark border">7 Cities</span>
@@ -128,7 +128,7 @@ $lseo_e = htmlspecialchars($lseo, ENT_QUOTES, 'UTF-8');
           <div class="lsec-tab-panel" id="lsec-panel-tamil-nadu" role="tabpanel" aria-labelledby="lsec-tab-tamil-nadu" data-country="tamil-nadu">
             <div class="d-flex align-items-center justify-content-between border-bottom pb-2 mb-3">
               <h4 class="fw-bold text-dark m-0 d-flex align-items-center gap-2">
-                <i class="fa fa-map-marker-alt text-danger"></i>
+                <svg class="text-danger flex-shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span>Major Cities in Tamil Nadu</span>
               </h4>
               <span class="badge bg-light text-dark border">10 Cities</span>
@@ -151,7 +151,7 @@ $lseo_e = htmlspecialchars($lseo, ENT_QUOTES, 'UTF-8');
           <div class="lsec-tab-panel" id="lsec-panel-uttar-pradesh" role="tabpanel" aria-labelledby="lsec-tab-uttar-pradesh" data-country="uttar-pradesh">
             <div class="d-flex align-items-center justify-content-between border-bottom pb-2 mb-3">
               <h4 class="fw-bold text-dark m-0 d-flex align-items-center gap-2">
-                <i class="fa fa-map-marker-alt text-danger"></i>
+                <svg class="text-danger flex-shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span>Major Cities in Uttar Pradesh</span>
               </h4>
               <span class="badge bg-light text-dark border">17 Cities</span>
@@ -181,7 +181,7 @@ $lseo_e = htmlspecialchars($lseo, ENT_QUOTES, 'UTF-8');
           <div class="lsec-tab-panel" id="lsec-panel-rajasthan" role="tabpanel" aria-labelledby="lsec-tab-rajasthan" data-country="rajasthan">
             <div class="d-flex align-items-center justify-content-between border-bottom pb-2 mb-3">
               <h4 class="fw-bold text-dark m-0 d-flex align-items-center gap-2">
-                <i class="fa fa-map-marker-alt text-danger"></i>
+                <svg class="text-danger flex-shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span>Major Cities in Rajasthan</span>
               </h4>
               <span class="badge bg-light text-dark border">8 Cities</span>
@@ -202,7 +202,7 @@ $lseo_e = htmlspecialchars($lseo, ENT_QUOTES, 'UTF-8');
           <div class="lsec-tab-panel" id="lsec-panel-madhya-pradesh" role="tabpanel" aria-labelledby="lsec-tab-madhya-pradesh" data-country="madhya-pradesh">
             <div class="d-flex align-items-center justify-content-between border-bottom pb-2 mb-3">
               <h4 class="fw-bold text-dark m-0 d-flex align-items-center gap-2">
-                <i class="fa fa-map-marker-alt text-danger"></i>
+                <svg class="text-danger flex-shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span>Major Cities in Madhya Pradesh</span>
               </h4>
               <span class="badge bg-light text-dark border">7 Cities</span>
@@ -222,7 +222,7 @@ $lseo_e = htmlspecialchars($lseo, ENT_QUOTES, 'UTF-8');
           <div class="lsec-tab-panel" id="lsec-panel-west-bengal" role="tabpanel" aria-labelledby="lsec-tab-west-bengal" data-country="west-bengal">
             <div class="d-flex align-items-center justify-content-between border-bottom pb-2 mb-3">
               <h4 class="fw-bold text-dark m-0 d-flex align-items-center gap-2">
-                <i class="fa fa-map-marker-alt text-danger"></i>
+                <svg class="text-danger flex-shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span>Major Cities in West Bengal</span>
               </h4>
               <span class="badge bg-light text-dark border">6 Cities</span>
@@ -241,7 +241,7 @@ $lseo_e = htmlspecialchars($lseo, ENT_QUOTES, 'UTF-8');
           <div class="lsec-tab-panel" id="lsec-panel-haryana" role="tabpanel" aria-labelledby="lsec-tab-haryana" data-country="haryana">
             <div class="d-flex align-items-center justify-content-between border-bottom pb-2 mb-3">
               <h4 class="fw-bold text-dark m-0 d-flex align-items-center gap-2">
-                <i class="fa fa-map-marker-alt text-danger"></i>
+                <svg class="text-danger flex-shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span>Major Cities in Haryana</span>
               </h4>
               <span class="badge bg-light text-dark border">7 Cities</span>
@@ -261,7 +261,7 @@ $lseo_e = htmlspecialchars($lseo, ENT_QUOTES, 'UTF-8');
           <div class="lsec-tab-panel" id="lsec-panel-punjab" role="tabpanel" aria-labelledby="lsec-tab-punjab" data-country="punjab">
             <div class="d-flex align-items-center justify-content-between border-bottom pb-2 mb-3">
               <h4 class="fw-bold text-dark m-0 d-flex align-items-center gap-2">
-                <i class="fa fa-map-marker-alt text-danger"></i>
+                <svg class="text-danger flex-shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span>Major Cities in Punjab</span>
               </h4>
               <span class="badge bg-light text-dark border">7 Cities</span>
@@ -281,7 +281,7 @@ $lseo_e = htmlspecialchars($lseo, ENT_QUOTES, 'UTF-8');
           <div class="lsec-tab-panel" id="lsec-panel-kerala" role="tabpanel" aria-labelledby="lsec-tab-kerala" data-country="kerala">
             <div class="d-flex align-items-center justify-content-between border-bottom pb-2 mb-3">
               <h4 class="fw-bold text-dark m-0 d-flex align-items-center gap-2">
-                <i class="fa fa-map-marker-alt text-danger"></i>
+                <svg class="text-danger flex-shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span>Major Cities in Kerala</span>
               </h4>
               <span class="badge bg-light text-dark border">7 Cities</span>
@@ -301,7 +301,7 @@ $lseo_e = htmlspecialchars($lseo, ENT_QUOTES, 'UTF-8');
           <div class="lsec-tab-panel" id="lsec-panel-bihar" role="tabpanel" aria-labelledby="lsec-tab-bihar" data-country="bihar">
             <div class="d-flex align-items-center justify-content-between border-bottom pb-2 mb-3">
               <h4 class="fw-bold text-dark m-0 d-flex align-items-center gap-2">
-                <i class="fa fa-map-marker-alt text-danger"></i>
+                <svg class="text-danger flex-shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span>Major Cities in Bihar</span>
               </h4>
               <span class="badge bg-light text-dark border">6 Cities</span>
@@ -320,7 +320,7 @@ $lseo_e = htmlspecialchars($lseo, ENT_QUOTES, 'UTF-8');
           <div class="lsec-tab-panel" id="lsec-panel-jharkhand" role="tabpanel" aria-labelledby="lsec-tab-jharkhand" data-country="jharkhand">
             <div class="d-flex align-items-center justify-content-between border-bottom pb-2 mb-3">
               <h4 class="fw-bold text-dark m-0 d-flex align-items-center gap-2">
-                <i class="fa fa-map-marker-alt text-danger"></i>
+                <svg class="text-danger flex-shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span>Major Cities in Jharkhand</span>
               </h4>
               <span class="badge bg-light text-dark border">7 Cities</span>
@@ -340,7 +340,7 @@ $lseo_e = htmlspecialchars($lseo, ENT_QUOTES, 'UTF-8');
           <div class="lsec-tab-panel" id="lsec-panel-odisha" role="tabpanel" aria-labelledby="lsec-tab-odisha" data-country="odisha">
             <div class="d-flex align-items-center justify-content-between border-bottom pb-2 mb-3">
               <h4 class="fw-bold text-dark m-0 d-flex align-items-center gap-2">
-                <i class="fa fa-map-marker-alt text-danger"></i>
+                <svg class="text-danger flex-shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span>Major Cities in Odisha</span>
               </h4>
               <span class="badge bg-light text-dark border">6 Cities</span>
@@ -359,7 +359,7 @@ $lseo_e = htmlspecialchars($lseo, ENT_QUOTES, 'UTF-8');
           <div class="lsec-tab-panel" id="lsec-panel-uttarakhand" role="tabpanel" aria-labelledby="lsec-tab-uttarakhand" data-country="uttarakhand">
             <div class="d-flex align-items-center justify-content-between border-bottom pb-2 mb-3">
               <h4 class="fw-bold text-dark m-0 d-flex align-items-center gap-2">
-                <i class="fa fa-map-marker-alt text-danger"></i>
+                <svg class="text-danger flex-shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span>Major Cities in Uttarakhand</span>
               </h4>
               <span class="badge bg-light text-dark border">6 Cities</span>
@@ -378,7 +378,7 @@ $lseo_e = htmlspecialchars($lseo, ENT_QUOTES, 'UTF-8');
           <div class="lsec-tab-panel" id="lsec-panel-other-states" role="tabpanel" aria-labelledby="lsec-tab-other-states" data-country="other-states">
             <div class="d-flex align-items-center justify-content-between border-bottom pb-2 mb-3">
               <h4 class="fw-bold text-dark m-0 d-flex align-items-center gap-2">
-                <i class="fa fa-map-marker-alt text-danger"></i>
+                <svg class="text-danger flex-shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 <span>Major Cities in Other States &amp; UTs</span>
               </h4>
               <span class="badge bg-light text-dark border">16 Cities</span>
@@ -409,7 +409,7 @@ $lseo_e = htmlspecialchars($lseo, ENT_QUOTES, 'UTF-8');
       <!-- Right Column: Placeholder Image -->
       <div class="col-lg-6">
         <div class="lsec-image-wrapper h-100 p-0 rounded-4 overflow-hidden border shadow-sm bg-light d-flex align-items-center justify-content-center">
-          <img src="https://placehold.co/600x420/f8fafc/0f1c3f?text=Placeholder+Image" alt="<?php echo $lseo_e; ?>" class="img-fluid w-100 h-100 object-fit-cover" />
+          <img src="https://www.gemgujarat.in/images/gem-gujarat-delivery-service-area.webp" alt="<?php echo $lseo_e; ?> title="<?php echo $lseo_e; ?>" class="img-fluid w-100 h-100 object-fit-cover" />
         </div>
       </div>
     </div>

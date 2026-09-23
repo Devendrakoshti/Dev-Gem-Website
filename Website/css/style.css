@@ -43,9 +43,10 @@ hgroup{margin-bottom: 30px;}
 .border-red {border-color: var(--color-red) !important;}
 .btn-primary {padding: 15px 22px 15px 58px;background-color: var(--color-white);border-radius: 50px;font-weight: 500;font-size: 17px;line-height: 24px;color: var(--color-red);position: relative;transition: all ease-in-out 0.8s;z-index: 2;border: 1px solid var(--color-red);display: inline-block;}
 .btn-primary span {position: absolute;left: 12px;top: 9px;transition: all ease-in-out 0.8s;z-index: 3;}
-.btn-primary:hover, .btn-primary:active {padding-left: 22px;padding-right: 58px;background-color: var(--color-red);color: var(--color-white);}
-.btn-primary:hover span, .btn-primary:active span {left: calc(100% - 12px - 36px);transform: rotate(-180deg);}
-.btn-primary:hover span svg{fill: var(--color-white);}
+.btn-primary:hover:not(:disabled), .btn-primary:active:not(:disabled) {padding-left: 22px;padding-right: 58px;background-color: var(--color-red);color: var(--color-white);}
+.btn-primary:hover:not(:disabled) span, .btn-primary:active:not(:disabled) span {left: calc(100% - 12px - 36px);transform: rotate(-180deg);}
+.btn-primary:hover:not(:disabled) span svg{fill: var(--color-white);}
+.btn-primary:disabled, .btn-primary[disabled] {opacity: 0.5;cursor: not-allowed !important;pointer-events: none !important;}
 .section{padding: 100px 0;}
 .mt-100{margin-top: 100px;}
 .mb-100{margin-bottom: 100px;}
@@ -94,7 +95,7 @@ footer .link-white{color: var(--color-black);transition: all 0.3s ease;}
 .client-logo-slide-track > div{border: 1px solid var(--color-grey);border-radius: 50px;background-color: var(--color-grey);padding: 12px 30px;}
 .client-logo-slide-track img{transition: all 0.3s ease;}
 .client-logo-slide-track > div:hover img{opacity: 1;}
-.client-testimonial-image{background: url(./images/home-testimonial.webp) no-repeat center center;background-size: cover;}
+.client-testimonial-image{background: url(https://www.gemgujarat.in/images/home-testimonial.webp) no-repeat center center;background-size: cover;}
 .client-testimonial-slider{position: relative;padding-bottom: 50px;}
 .client-testimonial-slider .swiper-button-prev:after, .client-testimonial-slider .swiper-button-next:after{display: none;}
 .client-testimonial-slider .swiper-button-mn{position: absolute;bottom: 0;right: 30px;}
@@ -102,7 +103,7 @@ footer .link-white{color: var(--color-black);transition: all 0.3s ease;}
 .hm-client-logo-section-title{text-wrap: nowrap;}
 
 /* Footer Section Css Start */
-footer{background:url(./images/footer-background.webp) no-repeat center;background-size: cover;}
+footer{background:url(https://www.gemgujarat.in/images/footer-background.webp) no-repeat center;background-size: cover;}
 .footer-social li{margin-right: 15px;}
 .footer-social li a{display: flex;justify-content: center;align-items: center;height: 40px;width: 40px;border: 1px solid var(--color-white);border-radius: 10px;color: var(--color-white);transition: all 0.3s ease;}
 .footer-social li a:hover{background-color: var(--color-red);border-color: var(--color-white);color: var(--color-white);}
@@ -112,13 +113,15 @@ footer{background:url(./images/footer-background.webp) no-repeat center;backgrou
 .footer-contact-icon{height: 50px;width: 50px;display: flex;justify-content: center;align-items: center;background: linear-gradient(34deg, rgba(0, 0, 0, 1) 0%, rgba(222, 66, 74, 1) 50%, rgba(255, 255, 255, 1) 100%);border-radius: 10px;color: var(--color-white);margin-right: 17px;border: 5px solid var(--color-white);flex-shrink: 0;}
 /* Form Input Css Start */
 /* Icon positioning */
-.input-icon i {
+.input-icon i,
+.input-icon svg {
   position: absolute;
   top: 50%;
   left: 1rem;
   transform: translateY(-50%);
   color: #808080;
-  font-size: 1rem;
+  width: 1rem;
+  height: 1rem;
   pointer-events: none;
   transition: color 0.3s ease, transform 0.3s ease;
   z-index: 5;
@@ -154,7 +157,8 @@ footer{background:url(./images/footer-background.webp) no-repeat center;backgrou
 }
 
 /* On focus – lift icon, highlight border */
-.input-icon:focus-within i {
+.input-icon:focus-within i,
+.input-icon:focus-within svg {
   color: var(--color-red);
   transform: translateY(-50%) scale(1.15);
 }
@@ -167,7 +171,8 @@ footer{background:url(./images/footer-background.webp) no-repeat center;backgrou
 }
 
 /* Textarea fix */
-.textarea-icon i {
+.textarea-icon i,
+.textarea-icon svg {
   top: 1.3rem;
   transform: none;
 }
@@ -236,7 +241,7 @@ footer{background:url(./images/footer-background.webp) no-repeat center;backgrou
 /* Home Banner New Styling */
 .home-hero-banner {
   position: relative;
-  background: url(./images/gem-gujarat-home-bg.webp) no-repeat top left;
+  background: url(https://www.gemgujarat.in/images/gem-gujarat-home-bg.webp) no-repeat top right;
   background-size: cover;
   padding: 5.2% 0;
 }
@@ -321,11 +326,11 @@ footer{background:url(./images/footer-background.webp) no-repeat center;backgrou
 .service-img-years {position: sticky;padding-top: 100px;top: 90px;}
 .service-img-mn{position: absolute;top: 0;right: -50px;width: 100%;max-width: 300px;}
 .solution-section-img{margin-top: -150px;}
-.arrow-up-square-list li{border-bottom: 1px solid #7a7a7a;padding-bottom: 13px;margin-bottom: 13px;display: flex;}
-.arrow-up-square-list li::before{font-family: "Font Awesome 6 Free";content: "\f08e";font-weight: 900;color:var(--color-red);margin-right: 9px;}
+.arrow-up-square-list li{border-bottom: 1px solid #7a7a7a;padding-bottom: 13px;margin-bottom: 13px;display: flex;align-items: flex-start;}
+.arrow-up-square-list li::before{content: "";display: inline-block;width: 16px;height: 16px;min-width: 16px;margin-top: 4px;margin-right: 9px;background-color: var(--color-red);-webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6'/%3E%3Cpolyline points='15 3 21 3 21 9'/%3E%3Cline x1='10' y1='14' x2='21' y2='3'/%3E%3C/svg%3E") no-repeat center / contain;mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6'/%3E%3Cpolyline points='15 3 21 3 21 9'/%3E%3Cline x1='10' y1='14' x2='21' y2='3'/%3E%3C/svg%3E") no-repeat center / contain;}
 .arrow-up-square-list li:last-child{border-bottom: none;padding-bottom: 0;margin-bottom: 0;} 
 .ser-doc-icon{height: 52px;width: 52px;display: flex;justify-content: center;align-items: center;background: linear-gradient(140deg,rgba(222, 66, 74, 1) 30%, rgba(255, 255, 255, 1) 100%);border-radius: 100%;box-shadow: 0px 0px 58px 20px rgba(0, 0, 0, 0.09);flex-shrink: 0;margin-right: 25px;font-size: 20px;}
-.ser-choose-us{padding: 120px 0px;background: url(./images/choose-us-bg.webp) no-repeat center;background-size: cover;background-attachment: fixed;}
+.ser-choose-us{padding: 120px 0px;background: url(https://www.gemgujarat.in/images/choose-us-bg.webp) no-repeat center;background-size: cover;background-attachment: fixed;}
 .black-film{position: relative;}
 .black-film > div{position: relative;z-index: 1;}
 .black-film::before{content: "";position: absolute;top: 0;left: 0;height: 100%;width: 100%;background: rgba(0, 0, 0, 0.5);}

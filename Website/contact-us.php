@@ -1,9 +1,9 @@
 <?php
 $page_title = "GeM Registration Services | Expert Support for Indian MSMEs";
 $page_desc = "Scale your business with GeM Gujarat. We provide fast, expert GeM registration, cataloging, and bid support for Indian entrepreneurs. Get started today!";
-$canonical_url = "contact-us.php";
-$preload_image = "images/gem-gujarat-contact-banner.webp";
-$og_image = "images/gem-gujarat-contact-banner.webp";
+$canonical_url = "https://www.gemgujarat.in/contact-us.php";
+$preload_image = "https://www.gemgujarat.in/images/gem-gujarat-contact-banner.webp";
+$og_image = "https://www.gemgujarat.in/images/gem-gujarat-contact-banner.webp";
 $og_width = "1000";
 $og_height = "1000";
 $page_keywords = "";
@@ -20,7 +20,7 @@ include 'includes/head.php';
         <div class="h-100">
           <div class="page-path">
             <span>
-              <i class="fa-solid fa-house text-red me-1"></i> Home <i class="fa-solid fa-chevron-right mx-1 fs-12"></i> Contact Us </span>
+              <svg class="text-red me-1 align-text-bottom" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg> Home <svg class="mx-1 align-middle" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg> Contact Us </span>
           </div>
           <h1 class="mb-1">Empowering <span>India’s Entrepreneurs</span> to Win Big on GeM </h1>
           <p class="fs-18 mb-4 lh-base">Navigating the Government e-Marketplace doesn't have to be complicated. Get expert GeM registration and consultancy services designed specifically for Indian MSMEs and startups.</p>
@@ -29,7 +29,7 @@ include 'includes/head.php';
       <div class="col-lg-6">
         <div class="h-100">
           <div class="hero-banner-image">
-            <img src="images/gem-gujarat-contact-banner.webp" alt="Gem Gujarat Contact Banner Image" title="Gem Gujarat Contact Banner Image" class="img-fluid" width="1000" height="1000">
+            <img src="https://www.gemgujarat.in/images/gem-gujarat-contact-banner.webp" alt="Gem Gujarat Contact Banner Image" title="Gem Gujarat Contact Banner Image" class="img-fluid" width="1000" height="1000">
           </div>
         </div>
       </div>
@@ -72,7 +72,7 @@ include 'includes/head.php';
       </div>
       <div class="col-lg-4 col-md-8">
         <div class="h-100">
-          <img src="./images/gem-gujarat-why-choose.webp" alt="Gem Gujarat Why Choose Image" title="Gem Gujarat Why Choose Image" class="img-fluid rounded-5" width="1024" height="1200">
+          <img src="https://www.gemgujarat.in/images/gem-gujarat-why-choose.webp" alt="Gem Gujarat Why Choose Image" title="Gem Gujarat Why Choose Image" class="img-fluid rounded-5" width="1024" height="1200">
         </div>
       </div>
     </div>
@@ -84,7 +84,7 @@ include 'includes/head.php';
     <div class="row g-0">
       <div class="col-lg-6">
         <div class="h-100">
-          <img src="images/gem-gujarat-contact-form.webp" class="img-fluid h-100 w-100" alt="Gem Gujarat Contact Form Image" title="Gem Gujarat Contact Form Image" width="576" height="585" loading="lazy">
+          <img src="https://www.gemgujarat.in/images/gem-gujarat-contact-form.webp" class="img-fluid h-100 w-100" alt="Gem Gujarat Contact Form Image" title="Gem Gujarat Contact Form Image" width="576" height="585" loading="lazy">
         </div>
       </div>
       <div class="col-lg-6">

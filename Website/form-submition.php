@@ -5,13 +5,13 @@ ini_set('display_errors', 1);
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require 'PHPMailer/PHPMailer.php';
-require 'PHPMailer/SMTP.php';
-require 'PHPMailer/Exception.php';
+require_once __DIR__ . '/phpmailer/Exception.php';
+require_once __DIR__ . '/phpmailer/PHPMailer.php';
+require_once __DIR__ . '/phpmailer/SMTP.php';
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+if (($_SERVER['REQUEST_METHOD'] ?? '') === 'POST') {
 
-    $secretKey = "YOUR_SECRET_KEY";
+    $secretKey = "6Lc0jMstAAAAACpaT9eThXA0jGUAtq3P0Y1YPYib";
     $captcha   = $_POST['g-recaptcha-response'] ?? '';
 
     if (empty($captcha)) {
@@ -28,14 +28,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         die("Captcha validation failed.");
     }
 
-    $name    = htmlspecialchars(trim($_POST['name']));
-    $email   = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
-    $phone   = htmlspecialchars(trim($_POST['phone']));
-    $message = nl2br(htmlspecialchars(trim($_POST['message'])));
+    $name    = htmlspecialchars(trim($_POST['name'] ?? ''));
+    $email   = filter_var($_POST['email'] ?? '', FILTER_SANITIZE_EMAIL);
+    $phone   = htmlspecialchars(trim($_POST['phone'] ?? ''));
+    $country = htmlspecialchars(trim($_POST['country'] ?? ''));
+    $message = nl2br(htmlspecialchars(trim($_POST['message'] ?? '')));
     $date    = date("d M Y, h:i A");
 
     $body = "
-    <h3 style='font-family:Arial'>New Website Form Submission</h3>
+    <h3 style='font-family:Arial'>User Form Details</h3>
     <table border='1' cellpadding='10' cellspacing='0' width='100%'
     style='border-collapse:collapse;font-family:Arial'>
         <tr style='background:#f2f2f2'>
@@ -45,6 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <tr><td>Name</td><td>$name</td></tr>
         <tr><td>Email</td><td>$email</td></tr>
         <tr><td>Phone</td><td>$phone</td></tr>
+        <tr><td>Country</td><td>$country</td></tr>
         <tr><td>Message</td><td>$message</td></tr>
     </table>";
 
@@ -62,9 +64,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->setFrom('info@gemgujarat.in', 'GEM Gujarat Website');
         $mail->addReplyTo($email, $name);
         $mail->addAddress('info@gemgujarat.in');
+        $mail->addAddress('devkoshti02@gmail.com');
 
         $mail->isHTML(true);
-        $mail->Subject = 'New Contact Form Submission';
+        $mail->Subject = 'Gem Gujarat Form Submission';
         $mail->Body    = $body;
 
         $mail->send();

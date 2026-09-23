@@ -1,9 +1,9 @@
 <?php
 $page_title = "GeM Registration, Udyam Registration Online, & GeM Consultant India";
 $page_desc = "Simplify GeM Seller Registration & MSME Udyam Certification Nationwide. Trusted GeM Experts in India for profile optimization and government tender bidding success.";
-$canonical_url = "index.php";
-$preload_image = "images/gem-home-banner-02.webp";
-$og_image = "images/gem-home-banner-02.webp";
+$canonical_url = "https://www.gemgujarat.in/";
+$preload_image = "https://www.gemgujarat.in/images/gem-gujarat-home-bg.webp";
+$og_image = "https://www.gemgujarat.in/images/gem-gujarat-home-bg.webp";
 $og_width = "1000";
 $og_height = "1000";
 $page_keywords = "";
@@ -29,24 +29,24 @@ include 'includes/head.php';
           </p>
           
           <div class="d-flex flex-wrap align-items-center gap-3 mb-4">
-            <a title="Request L1 & OEM Solutions" class="btn-banner-red" href="/contact-us.php">
-              Request L1 &amp; OEM Solutions <i class="fa-solid fa-arrow-right ms-2 fs-14"></i>
+            <a title="Request GeM L1 & OEM Solutions" class="btn-banner-red" href="https://www.gemgujarat.in/contact-us.php">
+              Request L1 &amp; OEM Solutions <svg class="ms-2 align-middle" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
             </a>
-            <a title="Talk to Our Experts" class="btn-banner-outline" href="/contact-us.php">
-              Talk to Our Experts <i class="fa-solid fa-arrow-right ms-2 fs-14"></i>
+            <a title="Talk to Our GeM Portal Experts" class="btn-banner-outline" href="https://www.gemgujarat.in/contact-us.php">
+              Talk to Our Experts <svg class="ms-2 align-middle" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
             </a>
           </div>
 
           <div class="home-banner-features-pill d-inline-flex flex-wrap align-items-center gap-3 px-4 py-2 rounded-pill mb-2">
-            <span class="d-flex align-items-center"><i class="fa-solid fa-check text-red me-2"></i> Instant OEM Codes</span>
-            <span class="d-flex align-items-center"><i class="fa-solid fa-check text-red me-2"></i> Precision L1 Comparison</span>
-            <span class="d-flex align-items-center"><i class="fa-solid fa-check text-red me-2"></i> Fast Onboarding</span>
+            <span class="d-flex align-items-center"><svg class="text-red me-2 flex-shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Instant OEM Codes</span>
+            <span class="d-flex align-items-center"><svg class="text-red me-2 flex-shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Precision L1 Comparison</span>
+            <span class="d-flex align-items-center"><svg class="text-red me-2 flex-shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Fast Onboarding</span>
           </div>
         </div>
       </div>
       <!-- <div class="col-lg-5">
         <div class="home-banner-img-wrap text-center">
-          <img src="images/gem-home-banner-02.webp" alt="Premier GeM Portal Consultants" title="Premier GeM Portal Consultants" class="img-fluid" width="800" height="700">
+          <img src="https://www.gemgujarat.in/images/gem-home-banner-02.webp" alt="Premier GeM Portal Consultants" title="Premier GeM Portal Consultants" class="img-fluid" width="800" height="700">
         </div>
       </div> -->
     </div>
@@ -59,7 +59,7 @@ include 'includes/head.php';
     <div class="row g-5">
       <div class="col-lg-5 col-md-8">
         <div class="h-100 rounded-5">
-          <img src="./images/home-about-us.webp" alt="About Us" title="About Us" class="img-fluid rounded-5" width="512" height="600">
+          <img src="https://www.gemgujarat.in/images/home-about-us.webp" alt="About Us" title="About Us" class="img-fluid rounded-5" width="512" height="600">
         </div>
       </div>
       <div class="col-lg-7">
@@ -75,14 +75,14 @@ include 'includes/head.php';
               <div class="h-100 d-block">
                 <h3 class="mb-3">Our Features</h3>
                 <ul class="features-list list-unstyled fs-16">
-                  <li>
-                    <i class="fa-solid fa-circle-chevron-right text-red me-2"></i>Expert Guidance on GeM Registration
+                  <li class="d-flex align-items-center">
+                    <svg class="text-red me-2 flex-shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm-1.2 14.3a1 1 0 0 1 0-1.4L13.6 12l-2.8-2.9a1 1 0 0 1 1.4-1.4l3.5 3.6a1 1 0 0 1 0 1.4l-3.5 3.6a1 1 0 0 1-1.4 0z"/></svg>Expert Guidance on GeM Registration
                   </li>
-                  <li>
-                    <i class="fa-solid fa-circle-chevron-right text-red me-2"></i>Comprehensive MSME Udyam Certification
+                  <li class="d-flex align-items-center">
+                    <svg class="text-red me-2 flex-shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm-1.2 14.3a1 1 0 0 1 0-1.4L13.6 12l-2.8-2.9a1 1 0 0 1 1.4-1.4l3.5 3.6a1 1 0 0 1 0 1.4l-3.5 3.6a1 1 0 0 1-1.4 0z"/></svg>Comprehensive MSME Udyam Certification
                   </li>
-                  <li>
-                    <i class="fa-solid fa-circle-chevron-right text-red me-2"></i>End-to-End Business Compliance Solutions
+                  <li class="d-flex align-items-center">
+                    <svg class="text-red me-2 flex-shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm-1.2 14.3a1 1 0 0 1 0-1.4L13.6 12l-2.8-2.9a1 1 0 0 1 1.4-1.4l3.5 3.6a1 1 0 0 1 0 1.4l-3.5 3.6a1 1 0 0 1-1.4 0z"/></svg>End-to-End Business Compliance Solutions
                   </li>
                 </ul>
               </div>
@@ -133,12 +133,12 @@ include 'includes/head.php';
           <div class="p-xxl-5 p-4">
             <div class="d-flex align-items-center mb-4">
               <div class="home-services-icon">
-                <img src="./images/icons/support.svg" alt="GeM Registration & Support" title="GeM Registration & Support" class="img-fluid" width="34" height="34" loading="lazy">
+                <img src="https://www.gemgujarat.in/images/icons/support.svg" alt="GeM Registration & Support" title="GeM Registration & Support" class="img-fluid" width="34" height="34" loading="lazy">
               </div>
               <h3 class="mb-0 fs-5 fw-bold">GeM Registration & Support</h3>
             </div>
             <p class="text-light-black mb-xxl-4 mb-3">Expert-led setup and troubleshooting for the Government e-Marketplace (GeM), ensuring your profile is ready to bid and win.</p>
-            <a href="gem-registration-consultant.php" class="link-red d-inline-flex align-items-center">Learn More <i class="fa-solid fa-arrow-right fs-4 ms-2"></i>
+            <a href="gem-registration-consultant.php" title="Learn More About GeM Registration &amp; Support" aria-label="Learn More About GeM Registration &amp; Support" class="link-red d-inline-flex align-items-center">Learn More <span class="visually-hidden">About GeM Registration &amp; Support</span> <svg class="ms-2 align-middle" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
             </a>
           </div>
         </div>
@@ -148,12 +148,12 @@ include 'includes/head.php';
           <div class="p-xxl-5 p-4">
             <div class="d-flex align-items-center mb-4">
               <div class="home-services-icon">
-                <img src="./images/icons/catalogue.svg" alt="GeM Catalogue Management" title="GeM Catalogue Management" class="img-fluid" width="34" height="34" loading="lazy">
+                <img src="https://www.gemgujarat.in/images/icons/catalogue.svg" alt="GeM Catalogue Management" title="GeM Catalogue Management" class="img-fluid" width="34" height="34" loading="lazy">
               </div>
               <h3 class="mb-0 fs-5 fw-bold">GeM Catalogue Management Services</h3>
             </div>
             <p class="text-light-black mb-xxl-4 mb-3">Our GeM Product Listing Service provides comprehensive GeM Profile Optimization by managing your digital catalogue for maximum visibility and strict compliance, including the technical configuration required for the L1 Comparison Service.</p>
-            <a href="gem-catalogue-management-services.php" class="link-red d-inline-flex align-items-center">Learn More <i class="fa-solid fa-arrow-right fs-4 ms-2"></i>
+            <a href="gem-catalogue-management-services.php" title="Learn More About GeM Catalogue Management Services" aria-label="Learn More About GeM Catalogue Management Services" class="link-red d-inline-flex align-items-center">Learn More <span class="visually-hidden">About GeM Catalogue Management Services</span> <svg class="ms-2 align-middle" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
             </a>
           </div>
         </div>
@@ -163,12 +163,12 @@ include 'includes/head.php';
           <div class="p-xxl-5 p-4">
             <div class="d-flex align-items-center mb-4">
               <div class="home-services-icon">
-                <img src="./images/icons/tender-bidding.svg" alt="Tender & Bidding Assistance" title="Tender & Bidding Assistance" class="img-fluid" width="34" height="34" loading="lazy">
+                <img src="https://www.gemgujarat.in/images/icons/tender-bidding.svg" alt="Tender & Bidding Assistance" title="Tender & Bidding Assistance" class="img-fluid" width="34" height="34" loading="lazy">
               </div>
               <h3 class="mb-0 fs-5 fw-bold">Tender & Bidding Assistance</h3>
             </div>
             <p class="text-light-black mb-xxl-4 mb-3">Strategic support for navigating the Government Tender Bidding process, from document preparation to GeM Order Acceptance.</p>
-            <a href="gem-tender-bidding-support.php" class="link-red d-inline-flex align-items-center">Learn More <i class="fa-solid fa-arrow-right fs-4 ms-2"></i>
+            <a href="gem-tender-bidding-support.php" title="Learn More About Tender &amp; Bidding Assistance" aria-label="Learn More About Tender &amp; Bidding Assistance" class="link-red d-inline-flex align-items-center">Learn More <span class="visually-hidden">About Tender &amp; Bidding Assistance</span> <svg class="ms-2 align-middle" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
             </a>
           </div>
         </div>
@@ -178,12 +178,12 @@ include 'includes/head.php';
           <div class="p-xxl-5 p-4">
             <div class="d-flex align-items-center mb-4">
               <div class="home-services-icon">
-                <img src="./images/icons/certificate.svg" alt="Gem L1 Comparison" title="Gem L1 Comparison" class="img-fluid" width="34" height="34" loading="lazy">
+                <img src="https://www.gemgujarat.in/images/icons/certificate.svg" alt="Gem L1 Comparison" title="Gem L1 Comparison" class="img-fluid" width="34" height="34" loading="lazy">
               </div>
               <h3 class="mb-0 fs-5 fw-bold">Gem L1 Comparison</h3>
             </div>
             <p class="text-light-black mb-xxl-4 mb-3">Tired of complex tenders? Orders between ₹50,000 and ₹10 Lakhs on GeM are won through the L1 Comparison (Direct Purchase) process. Our expert service ensures your product meets every Golden Parameter, making it the system-recommended Lowest One. This is the key to the GeM Order without Tender.</p>
-            <a href="gem-l1-comparison-service.php" class="link-red d-inline-flex align-items-center">Learn More <i class="fa-solid fa-arrow-right fs-4 ms-2"></i>
+            <a href="gem-l1-comparison-service.php" title="Learn More About GeM L1 Price Comparison" aria-label="Learn More About GeM L1 Price Comparison" class="link-red d-inline-flex align-items-center">Learn More <span class="visually-hidden">About GeM L1 Price Comparison</span> <svg class="ms-2 align-middle" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
             </a>
           </div>
         </div>
@@ -194,12 +194,12 @@ include 'includes/head.php';
           <div class="p-xxl-5 p-4">
             <div class="d-flex align-items-center mb-4">
               <div class="home-services-icon">
-                <img src="./images/icons/compliance.svg" alt="Gem OEM Authorization Code" title="Gem OEM Authorization Code" class="img-fluid" width="34" height="34" loading="lazy">
+                <img src="https://www.gemgujarat.in/images/icons/compliance.svg" alt="Gem OEM Authorization Code" title="Gem OEM Authorization Code" class="img-fluid" width="34" height="34" loading="lazy">
               </div>
               <h3 class="mb-0 fs-5 fw-bold">Gem OEM Authorization Code</h3>
             </div>
             <p class="text-light-black mb-xxl-4 mb-3">Experience zero waiting and zero friction. We provide instant GeM OEM Authorization Codes across all your product categories in one centralized dashboard. Stop switching between consultants—secure direct, hassle-free authorization management and dominate L1 comparisons to keep winning bids without interruptions.</p>
-            <a href="gem-oem-panel-registration.php" class="link-red d-inline-flex align-items-center">Learn More <i class="fa-solid fa-arrow-right fs-4 ms-2"></i>
+            <a href="gem-oem-panel-registration.php" title="Learn More About GeM OEM Authorization Codes" aria-label="Learn More About GeM OEM Authorization Codes" class="link-red d-inline-flex align-items-center">Learn More <span class="visually-hidden">About GeM OEM Authorization Codes</span> <svg class="ms-2 align-middle" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
             </a>
           </div>
         </div>
@@ -209,12 +209,12 @@ include 'includes/head.php';
           <div class="p-xxl-5 p-4">
             <div class="d-flex align-items-center mb-4">
               <div class="home-services-icon">
-                <img src="./images/icons/certificate.svg" alt="Essential Business Certifications" title="Essential Business Certifications" class="img-fluid" width="34" height="34" loading="lazy">
+                <img src="https://www.gemgujarat.in/images/icons/certificate.svg" alt="Essential Business Certifications" title="Essential Business Certifications" class="img-fluid" width="34" height="34" loading="lazy">
               </div>
               <h3 class="mb-0 fs-5 fw-bold">Essential Business Certifications</h3>
             </div>
             <p class="text-light-black mb-xxl-4 mb-3">Strengthen your bidding authority with our hassle-free Udyam Registration Online and ISO Certification for MSME services, ensuring your business maintains the mandatory credentials required for GeM tender eligibility and vendor assessment.</p>
-            <a href="gem-msme-udyam-registration.php" class="link-red d-inline-flex align-items-center">Learn More <i class="fa-solid fa-arrow-right fs-4 ms-2"></i>
+            <a href="gem-msme-udyam-registration.php" title="Learn More About MSME Udyam &amp; ISO Certification" aria-label="Learn More About MSME Udyam &amp; ISO Certification" class="link-red d-inline-flex align-items-center">Learn More <span class="visually-hidden">About MSME Udyam &amp; ISO Certification</span> <svg class="ms-2 align-middle" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
             </a>
           </div>
         </div>
@@ -229,7 +229,7 @@ include 'includes/head.php';
     <div class="row g-5">
       <div class="col-xl-3 col-md-8">
         <div class="h-100">
-          <img src="./images/home-why-choose.webp" alt="Why Choose" title="Why Choose" class="img-fluid rounded-5 mb-4" width="576" height="800">
+          <img src="https://www.gemgujarat.in/images/home-why-choose.webp" alt="Why Choose" title="Why Choose" class="img-fluid rounded-5 mb-4" width="576" height="800">
           <div class="bg-white border-start border-red border-5 p-4 shadow rounded">
             <p class="text-light-black fs-5 m-0">"Expert GeM consultants delivering compliant registration and bidding"</p>
           </div>
@@ -247,7 +247,7 @@ include 'includes/head.php';
             <div class="h-100 rounded-4 border border-5 border-white shadow text-center why-choose-box">
               <div class="d-block w-100 text-start">
                 <div class="mb-4">
-                  <img src="./images/icons/user-experience.svg" alt="Vast Experience" title="Vast Experience" class="img-fluid" width="35" height="35" loading="lazy">
+                  <img src="https://www.gemgujarat.in/images/icons/user-experience.svg" alt="Vast Experience" title="Vast Experience" class="img-fluid" width="35" height="35" loading="lazy">
                 </div>
                 <h3 class="fs-5 fw-bold mb-0">India-Focused Expertise</h3>
               </div>
@@ -260,7 +260,7 @@ include 'includes/head.php';
             <div class="h-100 rounded-4 border border-5 border-white shadow text-center why-choose-box">
               <div class="d-block w-100 text-start">
                 <div class="mb-4">
-                  <img src="./images/icons/user-experience.svg" alt="Vast Experience" title="Vast Experience" class="img-fluid" width="35" height="35" loading="lazy">
+                  <img src="https://www.gemgujarat.in/images/icons/user-experience.svg" alt="Vast Experience" title="Vast Experience" class="img-fluid" width="35" height="35" loading="lazy">
                 </div>
                 <h3 class="fs-5 fw-bold mb-0">Effortless Digital Process</h3>
               </div>
@@ -273,7 +273,7 @@ include 'includes/head.php';
             <div class="h-100 rounded-4 border border-5 border-white shadow text-center why-choose-box">
               <div class="d-block w-100 text-start">
                 <div class="mb-4">
-                  <img src="./images/icons/user-experience.svg" alt="Vast Experience" title="Vast Experience" class="img-fluid" width="35" height="35" loading="lazy">
+                  <img src="https://www.gemgujarat.in/images/icons/user-experience.svg" alt="Vast Experience" title="Vast Experience" class="img-fluid" width="35" height="35" loading="lazy">
                 </div>
                 <h3 class="fs-5 fw-bold mb-0">Conversion-Driven Service</h3>
               </div>
@@ -286,7 +286,7 @@ include 'includes/head.php';
             <div class="h-100 rounded-4 border border-5 border-white shadow text-center why-choose-box">
               <div class="d-block w-100 text-start">
                 <div class="mb-4">
-                  <img src="./images/icons/user-experience.svg" alt="Vast Experience" title="Vast Experience" class="img-fluid" width="35" height="35" loading="lazy">
+                  <img src="https://www.gemgujarat.in/images/icons/user-experience.svg" alt="Vast Experience" title="Vast Experience" class="img-fluid" width="35" height="35" loading="lazy">
                 </div>
                 <h3 class="fs-5 fw-bold mb-0">Complete Compliance Assurance</h3>
               </div>
@@ -299,7 +299,7 @@ include 'includes/head.php';
             <div class="h-100 rounded-4 border border-5 border-white shadow text-center why-choose-box">
               <div class="d-block w-100 text-start">
                 <div class="mb-4">
-                  <img src="./images/icons/user-experience.svg" alt="Vast Experience" title="Vast Experience" class="img-fluid" width="35" height="35" loading="lazy">
+                  <img src="https://www.gemgujarat.in/images/icons/user-experience.svg" alt="Vast Experience" title="Vast Experience" class="img-fluid" width="35" height="35" loading="lazy">
                 </div>
                 <h3 class="fs-5 fw-bold mb-0">Dedicated Partner for SMEs</h3>
               </div>
@@ -312,7 +312,7 @@ include 'includes/head.php';
             <div class="h-100 rounded-4 border border-5 border-white shadow text-center why-choose-box">
               <div class="d-block w-100 text-start">
                 <div class="mb-4">
-                  <img src="./images/icons/user-experience.svg" alt="Vast Experience" title="Vast Experience" class="img-fluid" width="35" height="35" loading="lazy">
+                  <img src="https://www.gemgujarat.in/images/icons/user-experience.svg" alt="Vast Experience" title="Vast Experience" class="img-fluid" width="35" height="35" loading="lazy">
                 </div>
                 <h3 class="fs-5 fw-bold mb-0">Results You Can Trust</h3>
               </div>
@@ -357,7 +357,7 @@ include 'includes/head.php';
       </div>
       <div class="col-lg-4">
         <div class="h-100 d-none d-lg-block">
-          <img src="./images/home-process.webp" alt="Why Choose" title="Why Choose" class="img-fluid rounded-5" width="576" height="800">
+          <img src="https://www.gemgujarat.in/images/home-process.webp" alt="Why Choose" title="Why Choose" class="img-fluid rounded-5" width="576" height="800">
         </div>
       </div>
     </div>
@@ -386,11 +386,11 @@ include 'includes/head.php';
                     <div class="swiper-slide p-4">
                       <div class="client-testimonial-content">
                         <div class="d-flex mb-4">
-                          <i class="fa-solid fa-star text-warning me-2"></i>
-                          <i class="fa-solid fa-star text-warning me-2"></i>
-                          <i class="fa-solid fa-star text-warning me-2"></i>
-                          <i class="fa-solid fa-star text-warning me-2"></i>
-                          <i class="fa-solid fa-star text-warning"></i>
+                          <svg class="text-warning me-2 align-middle" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                          <svg class="text-warning me-2 align-middle" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                          <svg class="text-warning me-2 align-middle" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                          <svg class="text-warning me-2 align-middle" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                          <svg class="text-warning align-middle" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
                         </div>
                         <p class="text-light-black">Had an amazing experience with GeM Gujarat! They made the entire GeM registration and GeM portal tender process super easy and stress-free. The team is knowledgeable, responsive, and always ready to help. …</p>
                         <span class="fw-bold d-block mb-2">MR. Hardik Chadamiya</span>
@@ -399,11 +399,11 @@ include 'includes/head.php';
                     <div class="swiper-slide p-4">
                       <div class="client-testimonial-content">
                         <div class="d-flex mb-4">
-                          <i class="fa-solid fa-star text-warning me-2"></i>
-                          <i class="fa-solid fa-star text-warning me-2"></i>
-                          <i class="fa-solid fa-star text-warning me-2"></i>
-                          <i class="fa-solid fa-star text-warning me-2"></i>
-                          <i class="fa-solid fa-star text-warning"></i>
+                          <svg class="text-warning me-2 align-middle" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                          <svg class="text-warning me-2 align-middle" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                          <svg class="text-warning me-2 align-middle" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                          <svg class="text-warning me-2 align-middle" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                          <svg class="text-warning align-middle" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
                         </div>
                         <p class="text-light-black">Working with GeM Gujarat has been an unparalleled experience compared to other consultancy firms. Their team provides advice that is clear and highly focused on achieving optimal results. What truly sets them apart is their ability to intuitively understand the client’s exact needs and offer comprehensive support at every stage.</p>
                         <span class="fw-bold d-block mb-2">MR. Kishan Kumar</span>
@@ -412,11 +412,11 @@ include 'includes/head.php';
                     <div class="swiper-slide p-4">
                       <div class="client-testimonial-content">
                         <div class="d-flex mb-4">
-                          <i class="fa-solid fa-star text-warning me-2"></i>
-                          <i class="fa-solid fa-star text-warning me-2"></i>
-                          <i class="fa-solid fa-star text-warning me-2"></i>
-                          <i class="fa-solid fa-star text-warning me-2"></i>
-                          <i class="fa-solid fa-star text-warning"></i>
+                          <svg class="text-warning me-2 align-middle" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                          <svg class="text-warning me-2 align-middle" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                          <svg class="text-warning me-2 align-middle" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                          <svg class="text-warning me-2 align-middle" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                          <svg class="text-warning align-middle" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
                         </div>
                         <p class="text-light-black">GEM GUJARAT demonstrates exceptional professionalism, placing customer satisfaction at the forefront. They consistently address queries within a single day. I value their quick assistance and am extremely satisfied with their services. Highly recommended for tender support.</p>
                         <span class="fw-bold d-block mb-2">MR. Sandip Patel</span>
@@ -425,11 +425,11 @@ include 'includes/head.php';
                     <div class="swiper-slide p-4">
                       <div class="client-testimonial-content">
                         <div class="d-flex mb-4">
-                          <i class="fa-solid fa-star text-warning me-2"></i>
-                          <i class="fa-solid fa-star text-warning me-2"></i>
-                          <i class="fa-solid fa-star text-warning me-2"></i>
-                          <i class="fa-solid fa-star text-warning me-2"></i>
-                          <i class="fa-solid fa-star text-warning"></i>
+                          <svg class="text-warning me-2 align-middle" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                          <svg class="text-warning me-2 align-middle" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                          <svg class="text-warning me-2 align-middle" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                          <svg class="text-warning me-2 align-middle" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                          <svg class="text-warning align-middle" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
                         </div>
                         <p class="text-light-black">The GeM portal offers a valuable opportunity for MSMEs, and GeM Gujarat helped us maximize its benefits. Their experts efficiently managed all the documentation and tender procedures. Their Pan-India consultancy support is excellent—I am highly satisfied and would recommend them to any business seeking GeM registration or tender assistance!</p>
                         <span class="fw-bold d-block mb-2">MR. Hariganga Thakor</span>
@@ -438,10 +438,10 @@ include 'includes/head.php';
                   </div>
                   <div class="swiper-button-mn d-flex align-items-center">
                     <div class="swiper-button-next me-2">
-                      <i class="fa-solid fa-circle-chevron-left text-red fs-1"></i>
+                      <svg class="text-red" width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1.2 14.3a1 1 0 0 1-1.4 0l-3.5-3.6a1 1 0 0 1 0-1.4l3.5-3.6a1 1 0 1 1 1.4 1.4L10.4 12l2.8 2.9a1 1 0 0 1 0 1.4z"/></svg>
                     </div>
                     <div class="swiper-button-prev">
-                      <i class="fa-solid fa-circle-chevron-right text-red fs-1"></i>
+                      <svg class="text-red" width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm-1.2 14.3a1 1 0 0 1 0-1.4L13.6 12l-2.8-2.9a1 1 0 0 1 1.4-1.4l3.5 3.6a1 1 0 0 1 0 1.4l-3.5 3.6a1 1 0 0 1-1.4 0z"/></svg>
                     </div>
                   </div>
                 </div>
@@ -458,13 +458,13 @@ include 'includes/head.php';
           </div>
           <ul class="features-list list-unstyled fs-16 mb-0">
             <li class="d-flex align-items-start border-white">
-              <i class="fa-solid fa-circle-check me-2 mt-1 d-block"></i>1000+ Successful GeM Registrations
+              <svg class="me-2 mt-1 flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>1000+ Successful GeM Registrations
             </li>
             <li class="d-flex align-items-start border-white">
-              <i class="fa-solid fa-circle-check me-2 mt-1 d-block"></i>MSME &amp; ISO Certified Clients Only
+              <svg class="me-2 mt-1 flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>MSME &amp; ISO Certified Clients Only
             </li>
             <li class="d-flex align-items-start">
-              <i class="fa-solid fa-circle-check me-2 mt-1 d-block"></i>Dedicated Support from an Indian Expert Team
+              <svg class="me-2 mt-1 flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>Dedicated Support from an Indian Expert Team
             </li>
           </ul>
         </div>
@@ -483,7 +483,7 @@ include 'includes/head.php';
     <div class="row g-lg-5 g-4 align-items-center">
       <div class="col-lg-5">
         <div class="h-100">
-          <img src="./images/gem-gujarat-faq.webp" alt="Gem Gujarat FAQ Image" title="Gem Gujarat FAQ Image" class="img-fluid rounded-5" width="2000" height="1333">
+          <img src="https://www.gemgujarat.in/images/gem-gujarat-faq.webp" alt="Gem Gujarat FAQ Image" title="Gem Gujarat FAQ Image" class="img-fluid rounded-5" width="2000" height="1333">
         </div>
       </div>
       <div class="col-lg-7">
@@ -575,7 +575,7 @@ include 'includes/head.php';
             <h2 class="h2-title mb-3"> How do I get started <b> with your services?</b>
             </h2>
             <p class="fs-18 fw-medium mb-4">Simply click the ‘Unlock Your Business Potential Now’ CTA and book a free initial consultation with our Indian experts.</p>
-            <a title="Explore More" class="btn-primary" href="/contact-us.php"> Start Your GeM Registration Today! <span>
+            <a title="Start Your GeM Registration Today with GEM Gujarat" class="btn-primary" href="https://www.gemgujarat.in/contact-us.php"> Start Your GeM Registration Today! <span>
                 <svg id="Layer_1" enablebackground="new 0 0 100 100" height="40" viewBox="0 0 100 100" fill="#f70629" width="40" xmlns="http://www.w3.org/2000/svg">
                   <path d="m50 10.75c-18.266 0-34.562 13.129-38.383 31.007-1.909 8.933-.623 18.432 3.636 26.515 4.099 7.779 10.819 14.066 18.859 17.629 8.363 3.707 17.964 4.353 26.754 1.825 8.48-2.438 15.999-7.789 21.118-14.972 10.703-15.017 9.272-36.111-3.32-49.567-7.38-7.886-17.862-12.437-28.664-12.437zm18.829 41.347-10.7 10.958c-2.709 2.775-6.991-1.429-4.293-4.191l5.399-5.529h-25.586c-1.817 0-3.333-1.517-3.333-3.333s1.517-3.333 3.333-3.333h25.458l-5.506-5.505c-2.736-2.736 1.506-6.979 4.242-4.243l10.961 10.96c1.162 1.161 1.173 3.041.025 4.216z"></path>
                 </svg>
@@ -585,7 +585,7 @@ include 'includes/head.php';
         </div>
         <div class="col-lg-4">
           <div class="h-100">
-            <img src="images/gem-gujarat-cta.webp" alt="Gem Gujarat Cta" title="Gem Gujarat Cta" class="img-fluid rounded-5" width="867" height="713">
+            <img src="https://www.gemgujarat.in/images/gem-gujarat-cta.webp" alt="Gem Gujarat Cta" title="Gem Gujarat Cta" class="img-fluid rounded-5" width="867" height="713">
           </div>
         </div>
       </div>
