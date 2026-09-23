@@ -32,8 +32,8 @@ include 'includes/head.php';
           </p>
           
           <div class="expertise-section">
-            <h3 class="fw-bold fs-5 text-dark mb-3">Core Expertise</h3>
-            <div class="row g-3 align-items-stretch">
+            <h3 class="fw-bold fs-3 text-dark mb-2">Core Expertise</h3>
+            <div class="row g-lg-5 g-4 align-items-stretch">
               <div class="col-md-7 col-sm-7">
                 <div class="expertise-list d-flex flex-column justify-content-center h-100">
                   <div class="expertise-item d-flex align-items-center">
@@ -55,9 +55,9 @@ include 'includes/head.php';
                 </div>
               </div>
               <div class="col-md-5 col-sm-5">
-                <div class="stats-card p-3 p-xl-4 text-white text-center rounded-4 position-relative overflow-hidden h-100 d-flex flex-column justify-content-center align-items-center">
-                  <div class="stats-number fw-bold text-white mb-1">500+</div>
-                  <p class="stats-text small mb-0 text-white-50 lh-sm">Trusted Vendors, OEMs &amp; Resellers Supported</p>
+                <div class="stats-card p-3 p-xl-4 text-white rounded-5 position-relative overflow-hidden h-100 d-flex flex-column justify-content-center border-5 border-white shadow-xl">
+                  <div class="stats-number fw-bold text-white mb-2">500+</div>
+                  <p class="mb-0 text-white lh-sm">Trusted Vendors, OEMs &amp; Resellers Supported</p>
                 </div>
               </div>
             </div>

@@ -23,7 +23,10 @@ body {
 .fs-16 {font-size: 1rem;line-height: 24px;} 
 .fs-18 {font-size: 1.125rem;line-height: 26px;}
 h1 {font-weight: 700;font-size: clamp(30px, 1rem + 2.5vw, 45px);} 
-h1 span {background: transparent;height: auto;width: auto;color: transparent;-webkit-text-stroke: 1px var(--color-black);}
+h1 span {background: transparent;height: auto;width: auto;color: transparent;
+  /* -webkit-text-stroke: 1px var(--color-black); */
+  color: var(--color-red);
+}
 .hero-banner h1 span {-webkit-text-stroke: 1px var(--color-white);}
 .h2-title {font-weight: 700;font-size: clamp(26px, 1rem + 2vw, 40px);color: #0F0928;margin-bottom: 0;}
 .h2-title b {background: conic-gradient(from 0deg,#ab0a1f,#d12028,#2a0909,#80141b,#1b0505,#e22b2f,#ab0a1f);background-size: 200% 200%;background-clip: text;-webkit-background-clip: text;-webkit-text-fill-color: transparent;animation: titleGradient 5s linear infinite;}
@@ -175,6 +178,18 @@ footer{background:url(./images/footer-background.webp) no-repeat center;backgrou
 .about-us-banner-section {
   background-color: #f7f8fa;
   min-height: auto;
+  position: relative;
+  overflow: hidden;
+}
+.about-us-banner-section::after{
+  content:"";
+  height: 250px;
+  width:250px;
+    border: 40px solid rgb(58 85 126 / 9%);
+    border-radius: 100%;
+    position: absolute;
+    top: -120px;
+    right: -80px;
 }
 .about-us-banner-section .banner-title {
   font-size: clamp(24px, 1.4rem + 1.2vw, 36px);
@@ -182,12 +197,7 @@ footer{background:url(./images/footer-background.webp) no-repeat center;backgrou
   color: #0f0928;
   line-height: 1.3;
 }
-.about-us-banner-section .banner-title .text-red {
-  color: #9e0e1a !important;
-}
-.about-us-banner-section .banner-desc {
-  font-size: 15px;
-  line-height: 1.6;
+.about-us-banner-section .banner-desc { 
   color: #4a4a4a;
 }
 .expertise-list .expertise-item {
@@ -201,11 +211,11 @@ footer{background:url(./images/footer-background.webp) no-repeat center;backgrou
   border-bottom: none;
 }
 .expertise-list .expertise-icon {
-  color: #9e0e1a;
+  color: var(--color-red);
   font-size: 16px;
 }
 .stats-card {
-  background: linear-gradient(145deg, #101d36 0%, #1e3557 100%);
+  background: linear-gradient(30deg, #000000 0%, #1e3557 50%, #6888bd 100%);;
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 16px;
   box-shadow: 0 10px 25px rgba(16, 29, 54, 0.25);
@@ -225,28 +235,31 @@ footer{background:url(./images/footer-background.webp) no-repeat center;backgrou
 
 /* Home Banner New Styling */
 .home-hero-banner {
-  background: linear-gradient(135deg, #fff7f3 0%, #f4f7fc 100%);
+  /* background: linear-gradient(135deg, #fff7f3 0%, #f4f7fc 100%); */
   position: relative;
+  background: url(./images/gem-gujarat-home-bg.jpg) no-repeat top right;
+  background-size: cover;
+  padding: 5.2% 0;
 }
 .home-banner-subtitle {
   font-size: clamp(12px, 0.8rem + 0.3vw, 14px);
-  color: #c8102e;
+  color: #ffffffbd;
   letter-spacing: 0.8px;
   text-transform: uppercase;
 }
 .home-banner-title {
   font-size: clamp(26px, 1.6rem + 1.4vw, 42px);
   font-weight: 800;
-  color: #0f0928;
+  color: var(--color-white);
   line-height: 1.25;
 }
 .home-banner-title .text-red {
-  color: #c8102e !important;
+  color: #d9ba6d !important;
 }
 .home-banner-desc {
   font-size: clamp(15px, 0.95rem + 0.2vw, 17px);
   line-height: 1.6;
-  color: #4b5563;
+  color: #ffffffbd;
   max-width: 650px;
 }
 .btn-banner-red {
@@ -254,19 +267,19 @@ footer{background:url(./images/footer-background.webp) no-repeat center;backgrou
   align-items: center;
   justify-content: center;
   padding: 12px 28px;
-  background-color: #d12028;
-  color: #ffffff !important;
+  background-color: var(--color-red);
+  color: var(--color-white) !important;
   font-weight: 600;
   font-size: 15px;
   border-radius: 50px;
-  border: 1px solid #d12028;
+  border: 1px solid var(--color-red);
   transition: all 0.3s ease-in-out;
   box-shadow: 0 4px 15px rgba(209, 32, 40, 0.25);
   text-decoration: none !important;
 }
 .btn-banner-red:hover {
-  background-color: #ab0a1f;
-  border-color: #ab0a1f;
+  background-color: var(--color-red);
+  border-color: var(--color-red);
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(209, 32, 40, 0.35);
 }
@@ -276,33 +289,30 @@ footer{background:url(./images/footer-background.webp) no-repeat center;backgrou
   justify-content: center;
   padding: 12px 28px;
   background-color: transparent;
-  color: #111827 !important;
+  color: var(--color-white)!important;
   font-weight: 600;
   font-size: 15px;
   border-radius: 50px;
-  border: 1.5px solid #111827;
+  border: 1.5px solid var(--color-white);
   transition: all 0.3s ease-in-out;
   text-decoration: none !important;
 }
 .btn-banner-outline:hover {
-  background-color: #111827;
-  color: #ffffff !important;
+  background-color: var(--color-white);
+  color: var(--color-red) !important;
   transform: translateY(-2px);
 }
 .home-banner-features-pill {
   background-color: #0d1b3e;
-  color: #ffffff;
+  color: var(--color-white);
   font-size: 14px;
   font-weight: 500;
   box-shadow: 0 6px 20px rgba(13, 27, 62, 0.15);
 }
 .home-banner-features-pill .text-red {
-  color: #f70629 !important;
+  color: var(--color-red) !important;
 }
-.home-banner-bottom-ribbon {
-  background-color: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(5px);
-}
+
 .home-banner-img-wrap img {
   border-radius: 20px;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
@@ -394,7 +404,7 @@ footer{background:url(./images/footer-background.webp) no-repeat center;backgrou
 }
 /* Local SEO Country Section Styling */
 .lsec-root {
-  background-color: #ffffff;
+  background-color: var(--color-white);
   padding: 60px 0;
 }
 
@@ -453,7 +463,7 @@ footer{background:url(./images/footer-background.webp) no-repeat center;backgrou
 .lsec-tab.is-active,
 .lsec-tab[aria-selected="true"] {
   background-color: #0f1c3f;
-  color: #ffffff;
+  color: var(--color-white);
   border-color: #0f1c3f;
   box-shadow: 0 4px 12px rgba(15, 28, 63, 0.2);
 }
@@ -504,7 +514,7 @@ footer{background:url(./images/footer-background.webp) no-repeat center;backgrou
 
 .lsec-city-btn:hover,
 .lsec-city-btn.is-active {
-  color: #f70629;
+  color: var(--color-red);
   font-weight: 600;
   background-color: rgba(247, 6, 41, 0.08);
 }
@@ -522,7 +532,7 @@ footer{background:url(./images/footer-background.webp) no-repeat center;backgrou
 
 .lsec-city-btn:hover .lsec-city-dot,
 .lsec-city-btn.is-active .lsec-city-dot {
-  background-color: #f70629;
+  background-color: var(--color-red);
   transform: scale(1.4);
 }
 

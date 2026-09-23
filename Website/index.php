@@ -13,8 +13,8 @@ include 'includes/head.php';
   <!-- navbar end  -->
 <main>
 <!-- banner start  -->
-<section class="home-hero-banner py-4 py-lg-5 position-relative overflow-hidden">
-  <div class="container-fluid">
+<section class="home-hero-banner position-relative overflow-hidden">
+  <div class="container">
     <div class="row align-items-center g-4 g-lg-5">
       <div class="col-lg-7">
         <div class="pe-lg-2">
@@ -24,7 +24,7 @@ include 'includes/head.php';
           <h1 class="home-banner-title mb-3">
             Premier GeM Portal Consultants: <span class="text-red">Multi-Category OEM Panel Access, Fast OEM Authorization Codes</span> &amp; L1 Comparison Solutions
           </h1>
-          <p class="home-banner-desc mb-4">
+          <p class="home-banner-desc mb-lg-5 mb-4 fs-5">
             We specialise in precision L1 product comparisons, ready-to-use OEM panels across multiple categories, instant OEM authorisation codes, and fast GeM seller onboarding.
           </p>
           
@@ -44,23 +44,11 @@ include 'includes/head.php';
           </div>
         </div>
       </div>
-      <div class="col-lg-5">
+      <!-- <div class="col-lg-5">
         <div class="home-banner-img-wrap text-center">
           <img src="images/gem-home-banner-02.webp" alt="Premier GeM Portal Consultants" title="Premier GeM Portal Consultants" class="img-fluid" width="800" height="700">
         </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="home-banner-bottom-ribbon mt-4 mt-lg-5 pt-3 border-top border-secondary border-opacity-10">
-    <div class="container">
-      <div class="d-flex flex-wrap justify-content-center align-items-center gap-3 gap-md-5 fs-15 fw-medium text-dark">
-        <span class="d-flex align-items-center"><i class="fa-solid fa-star text-warning me-2 fs-14"></i> Multi-Category Panels</span>
-        <span class="text-secondary opacity-50 d-none d-sm-inline">•</span>
-        <span class="d-flex align-items-center"><i class="fa-solid fa-star text-warning me-2 fs-14"></i> Direct Bid Eligibility</span>
-        <span class="text-secondary opacity-50 d-none d-sm-inline">•</span>
-        <span class="d-flex align-items-center"><i class="fa-solid fa-star text-warning me-2 fs-14"></i> Real-time Advisory</span>
-      </div>
+      </div> -->
     </div>
   </div>
 </section>
