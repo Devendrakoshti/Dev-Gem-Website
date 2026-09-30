@@ -3,7 +3,7 @@ $page_title = "GeM Registration, Udyam Registration Online, & GeM Consultant Ind
 $page_desc = "Simplify GeM Seller Registration & MSME Udyam Certification Nationwide. Trusted GeM Experts in India for profile optimization and government tender bidding success.";
 $canonical_url = "https://www.gemgujarat.in/";
 $preload_image = "https://www.gemgujarat.in/images/gem-gujarat-home-bg.webp";
-$og_image = "https://www.gemgujarat.in/images/gem-gujarat-home-bg.webp";
+$og_image = "https://www.gemgujarat.in/images/gem-gujarat-home-02.webp";
 $og_width = "1000";
 $og_height = "1000";
 $page_keywords = "";
@@ -14,7 +14,7 @@ include 'includes/head.php';
 <main>
 <!-- banner start  -->
 <section class="home-hero-banner position-relative overflow-hidden">
-  <div class="container">
+  <div class="container-fluid">
     <div class="row align-items-center g-4 g-lg-5">
       <div class="col-lg-7">
         <div class="pe-lg-2">
@@ -44,11 +44,11 @@ include 'includes/head.php';
           </div>
         </div>
       </div>
-      <!-- <div class="col-lg-5">
+      <div class="col-lg-5">
         <div class="home-banner-img-wrap text-center">
-          <img src="https://www.gemgujarat.in/images/gem-home-banner-02.webp" alt="Premier GeM Portal Consultants" title="Premier GeM Portal Consultants" class="img-fluid" width="800" height="700">
+          <img src="https://www.gemgujarat.in/images/gem-gujarat-home-02.webp" alt="Premier GeM Portal Consultants" title="Premier GeM Portal Consultants" class="img-fluid" width="800" height="700">
         </div>
-      </div> -->
+      </div>
     </div>
   </div>
 </section>

@@ -3,7 +3,7 @@
     <link rel="dns-prefetch" href="https://www.gstatic.com">
     <link rel="dns-prefetch" href="https://js.clarity.ms">
     <!-- Google Tag Manager -->
-    
+    <meta name="google-site-verification" content="uLgDTaywOD-4Ppt7S0z0kmRUhbZnHMeP5RfgTMFBsrQ" />
     <!-- End Google Tag Manager -->
    <!-- Favicon & App Icons -->
     <!-- Basic Favicon -->
@@ -14,7 +14,7 @@
     <!-- Apple Touch Icon -->
     <link rel="apple-touch-icon" sizes="180x180" href="https://www.gemgujarat.in/images/favicon/apple-touch-icon.png">
     <!-- Android / PWA -->
-    <link rel="manifest" href="https://www.gemgujarat.in/images/favicon/site.webmanifest">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
     <link rel="icon" type="image/png" sizes="192x192" href="https://www.gemgujarat.in/images/favicon/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="512x512" href="https://www.gemgujarat.in/images/favicon/android-chrome-512x512.png">
     <!-- For Web App Background -->
