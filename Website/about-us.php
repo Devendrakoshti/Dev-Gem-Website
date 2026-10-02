@@ -1,9 +1,9 @@
 <?php
 $page_title = "About Us | GeM Gujarat – Empowering India’s MSMEs & Startups";
 $page_desc = "We are Gujarat’s leading GeM Registration experts. Helping Indian entrepreneurs scale through seamless government procurement, bid support, and catalog management.";
-$canonical_url = "about-us.php";
-$preload_image = "images/gem-gujarat-about-us-banner-02.webp";
-$og_image = "images/gem-gujarat-about-us-banner-02.webp";
+$canonical_url = "https://www.gemgujarat.in/about-us.php";
+$preload_image = "https://www.gemgujarat.in/images/gem-gujarat-about-us-banner-02.webp";
+$og_image = "https://www.gemgujarat.in/images/gem-gujarat-about-us-banner-02.webp";
 $og_width = "1000";
 $og_height = "1000";
 $page_keywords = "";
@@ -18,7 +18,7 @@ include 'includes/head.php';
     <div class="row align-items-center g-4 g-lg-5">
       <div class="col-lg-5">
         <div class="about-us-banner-img text-center">
-          <img src="images/gem-gujarat-about-us-banner-02.webp" alt="GeM Gujarat About Us Banner" title="GeM Gujarat About Us Banner" class="img-fluid" width="600" height="600">
+          <img src="https://www.gemgujarat.in/images/gem-gujarat-about-us-banner-02.webp" alt="GeM Gujarat About Us Banner" title="GeM Gujarat About Us Banner" class="img-fluid" width="600" height="600">
         </div>
       </div>
       <div class="col-lg-7">
@@ -37,19 +37,19 @@ include 'includes/head.php';
               <div class="col-md-7 col-sm-7">
                 <div class="expertise-list d-flex flex-column justify-content-center h-100">
                   <div class="expertise-item d-flex align-items-center">
-                    <i class="fa-solid fa-circle-check expertise-icon me-2 flex-shrink-0"></i>
+                    <svg class="expertise-icon me-2 flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
                     <span>End-to-End GeM Registration &amp; Vendor Assessment</span>
                   </div>
                   <div class="expertise-item d-flex align-items-center">
-                    <i class="fa-solid fa-circle-check expertise-icon me-2 flex-shrink-0"></i>
+                    <svg class="expertise-icon me-2 flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
                     <span>Strategic Tender Bidding &amp; Bid Management</span>
                   </div>
                   <div class="expertise-item d-flex align-items-center">
-                    <i class="fa-solid fa-circle-check expertise-icon me-2 flex-shrink-0"></i>
+                    <svg class="expertise-icon me-2 flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
                     <span>MSME Udyam &amp; ISO Certification Support</span>
                   </div>
                   <div class="expertise-item d-flex align-items-center">
-                    <i class="fa-solid fa-circle-check expertise-icon me-2 flex-shrink-0"></i>
+                    <svg class="expertise-icon me-2 flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
                     <span>OEM Authorization Codes &amp; L1 Price Comparison Solutions</span>
                   </div>
                 </div>
@@ -107,7 +107,7 @@ include 'includes/head.php';
       </div>
       <div class="col-lg-4 col-md-8">
         <div class="service-img-years">
-          <img src="./images/gem-gujarat-growth.webp" alt="Gem Gujarat Growth Image" title="Gem Gujarat Growth Image" class="img-fluid rounded-5" width="1024" height="1200">
+          <img src="https://www.gemgujarat.in/images/gem-gujarat-growth.webp" alt="Gem Gujarat Growth Image" title="Gem Gujarat Growth Image" class="img-fluid rounded-5" width="1024" height="1200">
           <div class="rounded-5 bg-gradient-red-purple border border-5 border-white shadow service-img-mn">
             <div class="d-flex p-lg-5 p-4 align-items-center justify-content-center text-white">
               <span class="display-2 fw-bold ">0<?php echo date("Y") - 2020; ?>+ </span>
@@ -126,7 +126,7 @@ include 'includes/head.php';
     <div class="row g-5 mb-4">
       <div class="col-lg-4 col-md-8">
         <div class="solution-section-img">
-          <img src="./images/gem-gujarat-vision-mission.webp" alt="Gem Gujarat Vision Mission Image" title="Gem Gujarat Vision Mission Image" class="img-fluid rounded-5" width="1024" height="1200">
+          <img src="https://www.gemgujarat.in/images/gem-gujarat-vision-mission.webp" alt="Gem Gujarat Vision Mission Image" title="Gem Gujarat Vision Mission Image" class="img-fluid rounded-5" width="1024" height="1200">
         </div>
       </div>
       <div class="col-lg-8">
@@ -200,7 +200,7 @@ include 'includes/head.php';
       </div>
       <div class="col-xl-4">
         <div class="h-100">
-          <img src="./images/gem-gujarat-trustworthy.webp" alt="Gem Gujarat Trustworthy Image" title="Gem Gujarat Trustworthy Image" class="img-fluid rounded-5 sticky-top top-100px" width="1024" height="1200">
+          <img src="https://www.gemgujarat.in/images/gem-gujarat-trustworthy.webp" alt="Gem Gujarat Trustworthy Image" title="Gem Gujarat Trustworthy Image" class="img-fluid rounded-5 sticky-top top-100px" width="1024" height="1200">
         </div>
       </div>
     </div>
@@ -220,7 +220,7 @@ include 'includes/head.php';
             <h2 class="h2-title mb-3"> Ready to Unlock Your Business <b> Potential?</b>
             </h2>
             <p class="fs-18 fw-medium mb-4">Join thousands of successful sellers who have scaled their turnover through government contracts. Let us handle the portal, while you focus on your products.</p>
-            <a title="Explore More" class="btn-primary" href="/contact-us.php"> Contact Our Experts Today <span>
+            <a title="Contact Our GeM Portal Experts Today" class="btn-primary" href="https://www.gemgujarat.in/contact-us.php"> Contact Our Experts Today <span>
                 <svg id="Layer_1" enablebackground="new 0 0 100 100" height="40" viewBox="0 0 100 100" fill="#f70629" width="40" xmlns="http://www.w3.org/2000/svg">
                   <path d="m50 10.75c-18.266 0-34.562 13.129-38.383 31.007-1.909 8.933-.623 18.432 3.636 26.515 4.099 7.779 10.819 14.066 18.859 17.629 8.363 3.707 17.964 4.353 26.754 1.825 8.48-2.438 15.999-7.789 21.118-14.972 10.703-15.017 9.272-36.111-3.32-49.567-7.38-7.886-17.862-12.437-28.664-12.437zm18.829 41.347-10.7 10.958c-2.709 2.775-6.991-1.429-4.293-4.191l5.399-5.529h-25.586c-1.817 0-3.333-1.517-3.333-3.333s1.517-3.333 3.333-3.333h25.458l-5.506-5.505c-2.736-2.736 1.506-6.979 4.242-4.243l10.961 10.96c1.162 1.161 1.173 3.041.025 4.216z"></path>
                 </svg>
@@ -230,7 +230,7 @@ include 'includes/head.php';
         </div>
         <div class="col-lg-4">
           <div class="h-100">
-            <img src="images/gem-gujarat-cta.webp" alt="Gem Gujarat Cta" title="Gem Gujarat Cta" class="img-fluid rounded-5" width="867" height="713">
+            <img src="https://www.gemgujarat.in/images/gem-gujarat-cta.webp" alt="Gem Gujarat Cta" title="Gem Gujarat Cta" class="img-fluid rounded-5" width="867" height="713">
           </div>
         </div>
       </div>

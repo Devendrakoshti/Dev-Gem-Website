@@ -44,22 +44,22 @@
               <div class="choose-us-content">
                 <div class="fs-4 d-block fw-bold">4.8 out of 5</div>
                 <div class="d-flex gap-2 text-warning">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
                 </div>
                 <div class="fs-14">Based on 185 reviews</div>
                 <div class="d-block mt-2">
-                  <img src="images/google.webp" alt="Google Review" title="Google Review" class="img-fluid" width="130" height="32">
+                  <img src="https://www.gemgujarat.in/images/google.webp" alt="Google Review" title="Google Review" class="img-fluid" width="130" height="32">
                 </div>
               </div>
             </div>
             <div class="col-md-6">
               <div class="h-100 d-flex align-items-end">
                 <div class="choose-us-content-right">
-                  <img src="images/happy-client.png" alt="Happy Client" title="Happy Client" class="img-fluid" width="60" height="60">
+                  <img src="https://www.gemgujarat.in/images/happy-client.png" alt="Happy Client" title="Happy Client" class="img-fluid" width="60" height="60">
                   <div class="d-block">
                     <span class="d-block fs-2 fw-medium mb-1">850+</span>
                     <span class="d-block fs-16 text-white-50">Happy Customers</span>
@@ -70,7 +70,7 @@
             <div class="col-md-6">
               <div class="h-100 d-flex align-items-start">
                 <div class="choose-us-content-right">
-                  <img src="images/happy-client.png" alt="Happy Client" title="Happy Client" class="img-fluid" width="60" height="60">
+                  <img src="https://www.gemgujarat.in/images/happy-client.png" alt="Happy Client" title="Happy Client" class="img-fluid" width="60" height="60">
                   <div class="d-block">
                     <span class="d-block fs-2 fw-medium mb-1">850+</span>
                     <span class="d-block fs-16 text-white-50">Happy Customers</span>
@@ -82,15 +82,15 @@
               <div class="choose-us-content">
                 <div class="fs-4 d-block fw-bold">4.8 out of 5</div>
                 <div class="d-flex gap-2 text-warning">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
                 </div>
                 <div class="fs-14">Based on 185 reviews</div>
                 <div class="d-block mt-2">
-                  <img src="images/google.webp" alt="Google Review" title="Google Review" class="img-fluid" width="130" height="32">
+                  <img src="https://www.gemgujarat.in/images/google.webp" alt="Google Review" title="Google Review" class="img-fluid" width="130" height="32">
                 </div>
               </div>
             </div>

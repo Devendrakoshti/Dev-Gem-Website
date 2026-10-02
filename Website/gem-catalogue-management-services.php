@@ -1,9 +1,9 @@
 <?php
 $page_title = "GeM Catalogue Management Services India | Product Visibility & L1";
 $page_desc = "Expert GeM Catalogue Management Services India. Boost L1 status, prevent GeM Listing Suppression, and get Product Visibility Improvement with our compliance monitoring.";
-$canonical_url = "gem-catalogue-management-services.php";
-$preload_image = "images/gem-catalogue-management-services-about-us-banner.webp";
-$og_image = "images/gem-catalogue-management-services-about-us-banner.webp";
+$canonical_url = "https://www.gemgujarat.in/gem-catalogue-management-services.php";
+$preload_image = "https://www.gemgujarat.in/images/gem-catalogue-management-services-about-us-banner.webp";
+$og_image = "https://www.gemgujarat.in/images/gem-catalogue-management-services-about-us-banner.webp";
 $og_width = "1000";
 $og_height = "1000";
 $page_keywords = "";
@@ -20,11 +20,11 @@ include 'includes/head.php';
         <div class="h-100">
           <div class="page-path">
             <span>
-              <i class="fa-solid fa-house text-red me-1"></i> Home <i class="fa-solid fa-chevron-right mx-1 fs-12"></i> GeM Catalogue Management </span>
+              <svg class="text-red me-1 align-text-bottom" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg> Home <svg class="mx-1 align-middle" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg> GeM Catalogue Management </span>
           </div>
           <h1 class="mb-1">Maximize Your Sales on GeM: Expert <span>Catalogue Management</span> for Nationwide Sellers. </h1>
           <p class="fs-18 mb-4 lh-base">Stop letting outdated listings cost you government contracts. Delegate your GeM Catalogue Management to our experts nationwide and keep your products visible, compliant, and always competitive in the Government e-Marketplace.</p>
-          <a title="Explore More" class="btn-primary" href="/contact-us.php"> Start Your Free Management Consultation <span>
+          <a title="Start Your Free GeM Catalogue Management Consultation" class="btn-primary" href="https://www.gemgujarat.in/contact-us.php"> Start Your Free Management Consultation <span>
               <svg id="Layer_1" enableBackground="new 0 0 100 100" height="40" viewBox="0 0 100 100" fill="#f70629" width="40" xmlns="http://www.w3.org/2000/svg">
                 <path d="m50 10.75c-18.266 0-34.562 13.129-38.383 31.007-1.909 8.933-.623 18.432 3.636 26.515 4.099 7.779 10.819 14.066 18.859 17.629 8.363 3.707 17.964 4.353 26.754 1.825 8.48-2.438 15.999-7.789 21.118-14.972 10.703-15.017 9.272-36.111-3.32-49.567-7.38-7.886-17.862-12.437-28.664-12.437zm18.829 41.347-10.7 10.958c-2.709 2.775-6.991-1.429-4.293-4.191l5.399-5.529h-25.586c-1.817 0-3.333-1.517-3.333-3.333s1.517-3.333 3.333-3.333h25.458l-5.506-5.505c-2.736-2.736 1.506-6.979 4.242-4.243l10.961 10.96c1.162 1.161 1.173 3.041.025 4.216z" />
               </svg>
@@ -35,7 +35,7 @@ include 'includes/head.php';
       <div class="col-lg-6">
         <div class="h-100">
           <div class="hero-banner-image">
-            <img src="images/gem-catalogue-management-services-about-us-banner.webp" alt="Gem Catalogue Management Services About Us Banner" title="Gem Catalogue Management Services About Us Banner" class="img-fluid" width="1000" height="1000">
+            <img src="https://www.gemgujarat.in/images/gem-catalogue-management-services-about-us-banner.webp" alt="Gem Catalogue Management Services About Us Banner" title="Gem Catalogue Management Services About Us Banner" class="img-fluid" width="1000" height="1000">
           </div>
         </div>
       </div>
@@ -81,7 +81,7 @@ include 'includes/head.php';
       </div>
       <div class="col-lg-4 col-md-8">
         <div class="service-img-years">
-          <img src="./images/gem-catalogue-management-services-about-us.webp" alt="About Us" title="About Us" class="img-fluid rounded-5" width="1024" height="1200">
+          <img src="https://www.gemgujarat.in/images/gem-catalogue-management-services-about-us.webp" alt="About Us" title="About Us" class="img-fluid rounded-5" width="1024" height="1200">
           <div class="rounded-5 bg-gradient-red-purple border border-5 border-white shadow service-img-mn">
             <div class="d-flex p-lg-5 p-4 align-items-center justify-content-center text-white">
               <span class="display-2 fw-bold ">0<?php echo date("Y") - 2020; ?>+ </span>
@@ -100,7 +100,7 @@ include 'includes/head.php';
     <div class="row g-5 mb-4">
       <div class="col-lg-4 col-md-8">
         <div class="solution-section-img">
-          <img src="./images/gem-catalogue-management-services-registration.webp" alt="About Us" title="About Us" class="img-fluid rounded-5" width="1024" height="1200">
+          <img src="https://www.gemgujarat.in/images/gem-catalogue-management-services-registration.webp" alt="About Us" title="About Us" class="img-fluid rounded-5" width="1024" height="1200">
         </div>
       </div>
       <div class="col-lg-8">
@@ -121,21 +121,21 @@ include 'includes/head.php';
       <div class="row g-4 fs-16">
         <div class="col-lg-4 col-md-6">
           <div class="h-100 rounded-5 border bg-white shadow p-4">
-            <img src="images/icons/setting.svg" alt="Profile Setup" title="Profile Setup" class="img-fluid mb-3" width="35" height="35">
+            <img src="https://www.gemgujarat.in/images/icons/setting.svg" alt="Profile Setup" title="Profile Setup" class="img-fluid mb-3" width="35" height="35">
             <h4 class="fw-medium mb-2 fs-5 text-red">Compliance Monitoring & Updates</h4>
             <p class="mb-0">We track all new GeM circulars (OEM, QCI, BIS) and update your listings immediately. We focus on GeM Compliance Monitoring.</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6">
           <div class="h-100 rounded-5 border bg-white shadow p-4">
-            <img src="images/icons/database-file.svg" alt="Profile Setup" title="Profile Setup" class="img-fluid mb-3" width="33" height="33">
+            <img src="https://www.gemgujarat.in/images/icons/database-file.svg" alt="Profile Setup" title="Profile Setup" class="img-fluid mb-3" width="33" height="33">
             <h4 class="fw-medium mb-2 fs-5 text-red">Dynamic Pricing Optimization</h4>
             <p class="mb-0">Regular price analysis against your competition to ensure your products are positioned for the L1 (Lowest Bidder) status.</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6">
           <div class="h-100 rounded-5 border bg-white shadow p-4">
-            <img src="images/icons/category.svg" alt="Profile Setup" title="Profile Setup" class="img-fluid mb-3" width="30" height="30">
+            <img src="https://www.gemgujarat.in/images/icons/category.svg" alt="Profile Setup" title="Profile Setup" class="img-fluid mb-3" width="30" height="30">
             <h4 class="fw-medium mb-2 fs-5 text-red">Advanced Listing Enrichment</h4>
             <p class="mb-0">We use professional copywriting and data to ensure your products rank high. Ask us how to increase GeM sales!</p>
           </div>
@@ -158,7 +158,7 @@ include 'includes/head.php';
       <div class="col-lg-6">
         <div class="h-100 d-flex p-4 py-lg-5 rounded-5 border bg-light-grey shadow">
           <div class="ser-doc-icon">
-            <i class="fa-solid fa-book-open-reader"></i>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M21 5c-1.11-.35-2.33-.5-3.5-.5-1.95 0-4.05.4-5.5 1.5-1.45-1.1-3.55-1.5-5.5-1.5S2.45 4.9 1 6v14.65c0 .25.25.5.5.5.1 0 .15-.05.25-.05C3.1 20.45 5.05 20 6.5 20c1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.3 4.75 1.05.1.05.15.05.25.05.25 0 .5-.25.5-.5V6c-.6-.45-1.25-.75-2-1zm-1 14c-1.05-.35-2.25-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V8c1.35-.85 3.8-1.5 5.5-1.5 1.2 0 2.4.15 3.5.5v12z"/></svg>
           </div>
           <div class="d-block">
             <h4 class="fw-bold mb-3 fs-5">Onboarding & Audit</h4>
@@ -169,7 +169,7 @@ include 'includes/head.php';
       <div class="col-lg-6">
         <div class="h-100 d-flex p-4 py-lg-5 rounded-5 border bg-light-grey shadow">
           <div class="ser-doc-icon">
-            <i class="fa-solid fa-book-open-reader"></i>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M21 5c-1.11-.35-2.33-.5-3.5-.5-1.95 0-4.05.4-5.5 1.5-1.45-1.1-3.55-1.5-5.5-1.5S2.45 4.9 1 6v14.65c0 .25.25.5.5.5.1 0 .15-.05.25-.05C3.1 20.45 5.05 20 6.5 20c1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.3 4.75 1.05.1.05.15.05.25.05.25 0 .5-.25.5-.5V6c-.6-.45-1.25-.75-2-1zm-1 14c-1.05-.35-2.25-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V8c1.35-.85 3.8-1.5 5.5-1.5 1.2 0 2.4.15 3.5.5v12z"/></svg>
           </div>
           <div class="d-block">
             <h4 class="fw-bold mb-3 fs-5">Monthly Optimization Cycle</h4>
@@ -194,7 +194,7 @@ include 'includes/head.php';
     <div class="row g-lg-5 g-4 align-items-center">
       <div class="col-lg-5">
         <div class="h-100">
-          <img src="./images/gem-gujarat-faq.webp" alt="Gem Gujarat FAQ Image" title="Gem Gujarat FAQ Image" class="img-fluid rounded-5" width="2000" height="1333">
+          <img src="https://www.gemgujarat.in/images/gem-gujarat-faq.webp" alt="Gem Gujarat FAQ Image" title="Gem Gujarat FAQ Image" class="img-fluid rounded-5" width="2000" height="1333">
         </div>
       </div>
       <div class="col-lg-7">
@@ -279,7 +279,7 @@ include 'includes/head.php';
             <h2 class="h2-title mb-3"> Stop Losing Government Contracts to <b> Outdated Listings!</b>
             </h2>
             <p class="fs-18 fw-medium mb-4">Your competitors are optimizing their prices and compliance weekly. Let our experts handle the technical details so you can focus on scaling your core business operations nationwide.</p>
-            <a title="Explore More" class="btn-primary" href="/contact-us.php"> Start Your Free Management Consultation <span>
+            <a title="Contact Us for GeM Catalogue Management Services" class="btn-primary" href="https://www.gemgujarat.in/contact-us.php"> Start Your Free Management Consultation <span>
                 <svg id="Layer_1" enablebackground="new 0 0 100 100" height="40" viewBox="0 0 100 100" fill="#f70629" width="40" xmlns="http://www.w3.org/2000/svg">
                   <path d="m50 10.75c-18.266 0-34.562 13.129-38.383 31.007-1.909 8.933-.623 18.432 3.636 26.515 4.099 7.779 10.819 14.066 18.859 17.629 8.363 3.707 17.964 4.353 26.754 1.825 8.48-2.438 15.999-7.789 21.118-14.972 10.703-15.017 9.272-36.111-3.32-49.567-7.38-7.886-17.862-12.437-28.664-12.437zm18.829 41.347-10.7 10.958c-2.709 2.775-6.991-1.429-4.293-4.191l5.399-5.529h-25.586c-1.817 0-3.333-1.517-3.333-3.333s1.517-3.333 3.333-3.333h25.458l-5.506-5.505c-2.736-2.736 1.506-6.979 4.242-4.243l10.961 10.96c1.162 1.161 1.173 3.041.025 4.216z"></path>
                 </svg>
@@ -289,7 +289,7 @@ include 'includes/head.php';
         </div>
         <div class="col-lg-4">
           <div class="h-100">
-            <img src="images/gem-gujarat-cta.webp" alt="Gem Gujarat Cta" title="Gem Gujarat Cta" class="img-fluid rounded-5" width="867" height="713">
+            <img src="https://www.gemgujarat.in/images/gem-gujarat-cta.webp" alt="Gem Gujarat Cta" title="Gem Gujarat Cta" class="img-fluid rounded-5" width="867" height="713">
           </div>
         </div>
       </div>

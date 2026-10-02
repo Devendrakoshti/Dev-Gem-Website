@@ -1,9 +1,9 @@
 <?php
 $page_title = "GeM Vendor Assessment Consultant, RITES Audit & OEM Support";
 $page_desc = "Expert GeM Vendor Assessment Support Nationwide. Clear your RITES/QCI audit, secure OEM status, and claim MSME exemption benefits easily.";
-$canonical_url = "gem-vendor-assessment-support.php";
-$preload_image = "images/gem-vendor-assessment-support-banner.webp";
-$og_image = "images/gem-vendor-assessment-support-banner.webp";
+$canonical_url = "https://www.gemgujarat.in/gem-vendor-assessment-support.php";
+$preload_image = "https://www.gemgujarat.in/images/gem-vendor-assessment-support-banner.webp";
+$og_image = "https://www.gemgujarat.in/images/gem-vendor-assessment-support-banner.webp";
 $og_width = "1000";
 $og_height = "1000";
 $page_keywords = "";
@@ -20,11 +20,11 @@ include 'includes/head.php';
         <div class="h-100">
           <div class="page-path">
             <span>
-              <i class="fa-solid fa-house text-red me-1"></i> Home <i class="fa-solid fa-chevron-right mx-1 fs-12"></i> GeM Vendor Assessment Support </span>
+              <svg class="text-red me-1 align-text-bottom" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg> Home <svg class="mx-1 align-middle" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg> GeM Vendor Assessment Support </span>
           </div>
           <h1 class="mb-1">Stop Worrying About the Audit! Expert <span>GeM Vendor Assessment</span> Support Nationwide </h1>
           <p class="fs-18 mb-4 lh-base">Hello, Manufacturer! Is the mandatory GeM Vendor Assessment audit holding back your brand’s official OEM status? Don’t stress! We are your national GeM Vendor Assessment Consultant, here to simplify the complex RITES/QCI verification process and guarantee your approval.</p>
-          <a title="Explore More" class="btn-primary" href="/contact-us.php"> Secure Your OEM Status Today! <span>
+          <a title="Secure Your GeM OEM Vendor Assessment Approval" class="btn-primary" href="https://www.gemgujarat.in/contact-us.php"> Secure Your OEM Status Today! <span>
               <svg id="Layer_1" enableBackground="new 0 0 100 100" height="40" viewBox="0 0 100 100" fill="#f70629" width="40" xmlns="http://www.w3.org/2000/svg">
                 <path d="m50 10.75c-18.266 0-34.562 13.129-38.383 31.007-1.909 8.933-.623 18.432 3.636 26.515 4.099 7.779 10.819 14.066 18.859 17.629 8.363 3.707 17.964 4.353 26.754 1.825 8.48-2.438 15.999-7.789 21.118-14.972 10.703-15.017 9.272-36.111-3.32-49.567-7.38-7.886-17.862-12.437-28.664-12.437zm18.829 41.347-10.7 10.958c-2.709 2.775-6.991-1.429-4.293-4.191l5.399-5.529h-25.586c-1.817 0-3.333-1.517-3.333-3.333s1.517-3.333 3.333-3.333h25.458l-5.506-5.505c-2.736-2.736 1.506-6.979 4.242-4.243l10.961 10.96c1.162 1.161 1.173 3.041.025 4.216z" />
               </svg>
@@ -35,7 +35,7 @@ include 'includes/head.php';
       <div class="col-lg-6">
         <div class="h-100">
           <div class="hero-banner-image">
-            <img src="images/gem-vendor-assessment-support-banner.webp" alt="Gem Order Acceptance Guide Banner Image" title="Gem Order Acceptance Guide Banner Image" class="img-fluid" width="1000" height="1000">
+            <img src="https://www.gemgujarat.in/images/gem-vendor-assessment-support-banner.webp" alt="Gem Order Acceptance Guide Banner Image" title="Gem Order Acceptance Guide Banner Image" class="img-fluid" width="1000" height="1000">
           </div>
         </div>
       </div>
@@ -84,7 +84,7 @@ include 'includes/head.php';
       </div>
       <div class="col-lg-4 col-md-8">
         <div class="service-img-years">
-          <img src="./images/gem-vendor-challenge.webp" alt="Gem Vendor Challenge Image" title="Gem Vendor Challenge Image" class="img-fluid rounded-5" width="1024" height="1200">
+          <img src="https://www.gemgujarat.in/images/gem-vendor-challenge.webp" alt="Gem Vendor Challenge Image" title="Gem Vendor Challenge Image" class="img-fluid rounded-5" width="1024" height="1200">
           <div class="rounded-5 bg-gradient-red-purple border border-5 border-white shadow service-img-mn">
             <div class="d-flex p-lg-5 p-4 align-items-center justify-content-center text-white">
               <span class="display-2 fw-bold ">0<?php echo date("Y") - 2020; ?>+ </span>
@@ -151,7 +151,7 @@ include 'includes/head.php';
       </div>
       <div class="col-xl-4">
         <div class="h-100 d-none d-xl-block">
-        <img src="images/gem-vendor-solution.webp" alt="Gem Vendor Solution Image" title="Gem Vendor Solution Image" class="img-fluid rounded-5 sticky-top top-100px" width="1024" height="1200">
+        <img src="https://www.gemgujarat.in/images/gem-vendor-solution.webp" alt="Gem Vendor Solution Image" title="Gem Vendor Solution Image" class="img-fluid rounded-5 sticky-top top-100px" width="1024" height="1200">
       </div>
       </div>
     </div>
@@ -201,22 +201,22 @@ include 'includes/head.php';
               <div class="choose-us-content">
                 <div class="fs-4 d-block fw-bold">4.8 out of 5</div>
                 <div class="d-flex gap-2 text-warning">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
                 </div>
                 <div class="fs-14">Based on 185 reviews</div>
                 <div class="d-block mt-2">
-                  <img src="images/google.webp" alt="Google Review" title="Google Review" class="img-fluid" width="130" height="32">
+                  <img src="https://www.gemgujarat.in/images/google.webp" alt="Google Review" title="Google Review" class="img-fluid" width="130" height="32">
                 </div>
               </div>
             </div>
             <div class="col-md-6">
               <div class="h-100 d-flex align-items-end">
                 <div class="choose-us-content-right">
-                  <img src="images/happy-client.png" alt="Happy Client" title="Happy Client" class="img-fluid" width="60" height="60">
+                  <img src="https://www.gemgujarat.in/images/happy-client.png" alt="Happy Client" title="Happy Client" class="img-fluid" width="60" height="60">
                   <div class="d-block">
                     <span class="d-block fs-2 fw-medium mb-1">850+</span>
                     <span class="d-block fs-16 text-white-50">Happy Customers</span>
@@ -227,7 +227,7 @@ include 'includes/head.php';
             <div class="col-md-6">
               <div class="h-100 d-flex align-items-start">
                 <div class="choose-us-content-right">
-                  <img src="images/happy-client.png" alt="Happy Client" title="Happy Client" class="img-fluid" width="60" height="60">
+                  <img src="https://www.gemgujarat.in/images/happy-client.png" alt="Happy Client" title="Happy Client" class="img-fluid" width="60" height="60">
                   <div class="d-block">
                     <span class="d-block fs-2 fw-medium mb-1">850+</span>
                     <span class="d-block fs-16 text-white-50">Happy Customers</span>
@@ -239,15 +239,15 @@ include 'includes/head.php';
               <div class="choose-us-content">
                 <div class="fs-4 d-block fw-bold">4.8 out of 5</div>
                 <div class="d-flex gap-2 text-warning">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
                 </div>
                 <div class="fs-14">Based on 185 reviews</div>
                 <div class="d-block mt-2">
-                  <img src="images/google.webp" alt="Google Review" title="Google Review" class="img-fluid" width="130" height="32">
+                  <img src="https://www.gemgujarat.in/images/google.webp" alt="Google Review" title="Google Review" class="img-fluid" width="130" height="32">
                 </div>
               </div>
             </div>
@@ -269,7 +269,7 @@ include 'includes/head.php';
     <div class="row g-lg-5 g-4 align-items-center">
       <div class="col-lg-5">
         <div class="h-100">
-          <img src="./images/gem-gujarat-faq.webp" alt="Gem Gujarat FAQ Image" title="Gem Gujarat FAQ Image" class="img-fluid rounded-5" width="2000" height="1333">
+          <img src="https://www.gemgujarat.in/images/gem-gujarat-faq.webp" alt="Gem Gujarat FAQ Image" title="Gem Gujarat FAQ Image" class="img-fluid rounded-5" width="2000" height="1333">
         </div>
       </div>
       <div class="col-lg-7">
@@ -353,7 +353,7 @@ include 'includes/head.php';
             <h2 class="h2-title mb-3"> Get Your ‘VA Verified’ Badge and Start Winning High-Value <b> GeM Tenders!</b>
             </h2>
             <p class="fs-18 fw-medium mb-4">Don’t let the technical audit be the bottleneck to your government business growth. Partner with the experts who understand the nuances of the GeM Vendor Assessment process Nationwide. It’s time to move from planning to official approval.</p>
-            <a title="Explore More" class="btn-primary" href="/contact-us.php"> Strategy Assessment Session <span>
+            <a title="Book a GeM Vendor Assessment Strategy Session" class="btn-primary" href="https://www.gemgujarat.in/contact-us.php"> Strategy Assessment Session <span>
                 <svg id="Layer_1" enablebackground="new 0 0 100 100" height="40" viewBox="0 0 100 100" fill="#f70629" width="40" xmlns="http://www.w3.org/2000/svg">
                   <path d="m50 10.75c-18.266 0-34.562 13.129-38.383 31.007-1.909 8.933-.623 18.432 3.636 26.515 4.099 7.779 10.819 14.066 18.859 17.629 8.363 3.707 17.964 4.353 26.754 1.825 8.48-2.438 15.999-7.789 21.118-14.972 10.703-15.017 9.272-36.111-3.32-49.567-7.38-7.886-17.862-12.437-28.664-12.437zm18.829 41.347-10.7 10.958c-2.709 2.775-6.991-1.429-4.293-4.191l5.399-5.529h-25.586c-1.817 0-3.333-1.517-3.333-3.333s1.517-3.333 3.333-3.333h25.458l-5.506-5.505c-2.736-2.736 1.506-6.979 4.242-4.243l10.961 10.96c1.162 1.161 1.173 3.041.025 4.216z"></path>
                 </svg>
@@ -363,7 +363,7 @@ include 'includes/head.php';
         </div>
         <div class="col-lg-4">
           <div class="h-100">
-            <img src="images/gem-gujarat-cta.webp" alt="Gem Gujarat Cta" title="Gem Gujarat Cta" class="img-fluid rounded-5" width="867" height="713">
+            <img src="https://www.gemgujarat.in/images/gem-gujarat-cta.webp" alt="Gem Gujarat Cta" title="Gem Gujarat Cta" class="img-fluid rounded-5" width="867" height="713">
           </div>
         </div>
       </div>
