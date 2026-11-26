@@ -17,19 +17,40 @@
             <span class="mb-3 fs-3 d-block fw-semibold text-red">Services</span>
             <ul class="list-unstyled footer-links">
               <li>
-                <a href="gem-registration-consultant.php" title="GeM Registration Services & Consultancy">GeM Registration</a>
+                <a href="gem-registration-consultant.php" title="GeM Registration Services &amp; Consultancy" class="d-inline-flex align-items-center gap-2">
+                  <img src="https://www.gemgujarat.in/images/icons/support.svg" alt="" width="18" height="18" class="footer-service-icon flex-shrink-0" loading="lazy">
+                  GeM Registration
+                </a>
               </li>
               <li>
-                <a href="gem-tender-bidding-support.php" title="GeM Tender Bidding & Bid Assistance">GeM Tender Bidding Support</a>
+                <a href="gem-tender-bidding-support.php" title="GeM Tender Bidding &amp; Bid Assistance" class="d-inline-flex align-items-center gap-2">
+                  <img src="https://www.gemgujarat.in/images/icons/tender-bidding.svg" alt="" width="18" height="18" class="footer-service-icon flex-shrink-0" loading="lazy">
+                  GeM Tender Bidding Support
+                </a>
               </li>
               <li>
-                <a href="gem-l1-comparison-service.php" title="GeM L1 Price Comparison & Direct Purchase Service">GeM L1 Comparison</a>
+                <a href="gem-l1-comparison-service.php" title="GeM L1 Price Comparison &amp; Direct Purchase Service" class="d-inline-flex align-items-center gap-2">
+                  <img src="https://www.gemgujarat.in/images/icons/category.svg" alt="" width="18" height="18" class="footer-service-icon flex-shrink-0" loading="lazy">
+                  GeM L1 Comparison
+                </a>
               </li>
               <li>
-                <a href="gem-oem-panel-registration.php" title="GeM OEM Panel Registration & Authorization Codes">GeM OEM Authorization Code </a>
+                <a href="gem-oem-panel-registration.php" title="GeM OEM Panel Registration &amp; Authorization Codes" class="d-inline-flex align-items-center gap-2">
+                  <img src="https://www.gemgujarat.in/images/icons/digital-signature.svg" alt="" width="18" height="18" class="footer-service-icon flex-shrink-0" loading="lazy">
+                  GeM OEM Authorization Code
+                </a>
               </li>
               <li>
-                <a href="gem-l1-comparison-service.php" title="GeM Direct Purchase & Add to Cart Support">Add To cart and Direct Purchase support</a>
+                <a href="gem-msme-udyam-registration.php" title="MSME Udyam Registration for GeM Sellers" class="d-inline-flex align-items-center gap-2">
+                  <img src="https://www.gemgujarat.in/images/icons/database-file.svg" alt="" width="18" height="18" class="footer-service-icon flex-shrink-0" loading="lazy">
+                  MSME Udyam Registration
+                </a>
+              </li>
+              <li>
+                <a href="gem-iso-certificate-9001.php" title="ISO 9001 Certification Support for GeM Sellers" class="d-inline-flex align-items-center gap-2">
+                  <img src="https://www.gemgujarat.in/images/icons/certificate.svg" alt="" width="18" height="18" class="footer-service-icon flex-shrink-0" loading="lazy">
+                  ISO 9001 Certification
+                </a>
               </li>
             </ul>
           </div>
