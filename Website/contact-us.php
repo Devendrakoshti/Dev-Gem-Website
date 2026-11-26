@@ -2,11 +2,12 @@
 $page_title = "GeM Registration Services | Expert Support for Indian MSMEs";
 $page_desc = "Scale your business with GeM Gujarat. We provide fast, expert GeM registration, cataloging, and bid support for Indian entrepreneurs. Get started today!";
 $canonical_url = "https://www.gemgujarat.in/contact-us.php";
+$page_modified_date = "2026-11-26";
 $preload_image = "https://www.gemgujarat.in/images/gem-gujarat-contact-banner.webp";
 $og_image = "https://www.gemgujarat.in/images/gem-gujarat-contact-banner.webp";
 $og_width = "1000";
 $og_height = "1000";
-$page_keywords = "";
+$page_keywords = "contact GeM Gujarat, GeM consultation enquiry, GeM consultant Ahmedabad, GeM service support";
 include 'includes/head.php';
 ?> <body>
   <!-- navbar start  --> <?php include 'includes/navbar.php'; ?>
@@ -29,7 +30,7 @@ include 'includes/head.php';
       <div class="col-lg-6">
         <div class="h-100">
           <div class="hero-banner-image">
-            <img src="https://www.gemgujarat.in/images/gem-gujarat-contact-banner.webp" alt="Gem Gujarat Contact Banner Image" title="Gem Gujarat Contact Banner Image" class="img-fluid" width="1000" height="1000">
+            <img src="https://www.gemgujarat.in/images/gem-gujarat-contact-banner.webp" alt="GeM Gujarat Contact Banner Image" title="GeM Gujarat Contact Banner Image" class="img-fluid" width="1000" height="1000">
           </div>
         </div>
       </div>
@@ -72,7 +73,7 @@ include 'includes/head.php';
       </div>
       <div class="col-lg-4 col-md-8">
         <div class="h-100">
-          <img src="https://www.gemgujarat.in/images/gem-gujarat-why-choose.webp" alt="Gem Gujarat Why Choose Image" title="Gem Gujarat Why Choose Image" class="img-fluid rounded-5" width="1024" height="1200">
+          <img src="https://www.gemgujarat.in/images/gem-gujarat-why-choose.webp" alt="GeM Gujarat Why Choose Image" title="GeM Gujarat Why Choose Image" class="img-fluid rounded-5" width="1024" height="1200">
         </div>
       </div>
     </div>
@@ -84,7 +85,7 @@ include 'includes/head.php';
     <div class="row g-0">
       <div class="col-lg-6">
         <div class="h-100">
-          <img src="https://www.gemgujarat.in/images/gem-gujarat-contact-form.webp" class="img-fluid h-100 w-100" alt="Gem Gujarat Contact Form Image" title="Gem Gujarat Contact Form Image" width="576" height="585" loading="lazy">
+          <img src="https://www.gemgujarat.in/images/gem-gujarat-contact-form.webp" class="img-fluid h-100 w-100" alt="GeM Gujarat Contact Form Image" title="GeM Gujarat Contact Form Image" width="576" height="585" loading="lazy">
         </div>
       </div>
       <div class="col-lg-6">

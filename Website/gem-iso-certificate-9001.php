@@ -2,11 +2,12 @@
 $page_title = "GeM ISO Certificate 9001: Quality Badge for Tenders & OEM";
 $page_desc = "Unlock high-value GeM tenders. Get your ISO 9001 Certification fast with our expert guidance. Essential for GeM OEM Registration Requirements and maximizing credibility.";
 $canonical_url = "https://www.gemgujarat.in/gem-iso-certificate-9001.php";
+$page_modified_date = "2026-11-26";
 $preload_image = "https://www.gemgujarat.in/images/gem-iso-certificate-banner.webp";
 $og_image = "https://www.gemgujarat.in/images/gem-iso-certificate-banner.webp";
 $og_width = "1000";
 $og_height = "1000";
-$page_keywords = "";
+$page_keywords = "ISO 9001 certification support, ISO 9001 for GeM sellers, quality management system certification, GeM OEM ISO 9001, ISO 9001 for government tenders";
 include 'includes/head.php';
 ?> <body>
   <!-- navbar start  --> <?php include 'includes/navbar.php'; ?>
@@ -20,7 +21,7 @@ include 'includes/head.php';
         <div class="h-100">
           <div class="page-path">
             <span>
-              <svg class="text-red me-1 align-text-bottom" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg> Home <svg class="mx-1 align-middle" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg> Gem iso Certificate </span>
+              <svg class="text-red me-1 align-text-bottom" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg> Home <svg class="mx-1 align-middle" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg> GeM iso Certificate </span>
           </div>
           <h1 class="mb-1">Go From GeM Seller to GeM Winner: Get Your <span>ISO Quality</span> Badge Today! </h1>
           <p class="fs-18 mb-4 lh-base">As a leading GeM Registration services provider focused on GeM Indian businesses, we know that an ISO Certificate is the vital next step. We make achieving your GeM Seller Quality Management certification simple, giving your small business the edge it needs in government procurement.</p>
@@ -35,7 +36,7 @@ include 'includes/head.php';
       <div class="col-lg-6">
         <div class="h-100">
           <div class="hero-banner-image">
-            <img src="https://www.gemgujarat.in/images/gem-iso-certificate-banner.webp" alt="Gem Iso Certificate Banner Image" title="Gem Iso Certificate Banner Image" class="img-fluid" width="1000" height="1000">
+            <img src="https://www.gemgujarat.in/images/gem-iso-certificate-banner.webp" alt="GeM Iso Certificate Banner Image" title="GeM Iso Certificate Banner Image" class="img-fluid" width="1000" height="1000">
           </div>
         </div>
       </div>
@@ -91,7 +92,7 @@ include 'includes/head.php';
       </div>
       <div class="col-lg-4 col-md-8">
         <div class="service-img-years">
-          <img src="https://www.gemgujarat.in/images/gem-iso-certificate-core-value.webp" alt="Gem Iso Certificate Core Value Image" title="Gem Iso Certificate Core Value Image" class="img-fluid rounded-5" width="1024" height="1200">
+          <img src="https://www.gemgujarat.in/images/gem-iso-certificate-core-value.webp" alt="GeM Iso Certificate Core Value Image" title="GeM Iso Certificate Core Value Image" class="img-fluid rounded-5" width="1024" height="1200">
           <div class="rounded-5 bg-gradient-red-purple border border-5 border-white shadow service-img-mn">
             <div class="d-flex p-lg-5 p-4 align-items-center justify-content-center text-white">
               <span class="display-2 fw-bold ">0<?php echo date("Y") - 2020; ?>+ </span>
@@ -144,7 +145,7 @@ include 'includes/head.php';
       </div>
       <div class="col-lg-4">
         <div class="h-100 d-none d-lg-block">
-          <img src="https://www.gemgujarat.in/images/gem-iso-certificate-step.webp" alt="Gem Iso Certificate Step Image" title="Gem Iso Certificate Step Image" class="img-fluid rounded-5 sticky-top top-100px" width="576" height="800">
+          <img src="https://www.gemgujarat.in/images/gem-iso-certificate-step.webp" alt="GeM Iso Certificate Step Image" title="GeM Iso Certificate Step Image" class="img-fluid rounded-5 sticky-top top-100px" width="576" height="800">
         </div>
       </div>
     </div>
@@ -164,7 +165,7 @@ include 'includes/head.php';
     <div class="row g-lg-5 g-4 align-items-center">
       <div class="col-lg-5">
         <div class="h-100">
-          <img src="https://www.gemgujarat.in/images/gem-gujarat-faq.webp" alt="Gem Gujarat FAQ Image" title="Gem Gujarat FAQ Image" class="img-fluid rounded-5" width="2000" height="1333">
+          <img src="https://www.gemgujarat.in/images/gem-gujarat-faq.webp" alt="GeM Gujarat FAQ Image" title="GeM Gujarat FAQ Image" class="img-fluid rounded-5" width="2000" height="1333">
         </div>
       </div>
       <div class="col-lg-7">
@@ -226,6 +227,28 @@ include 'includes/head.php';
                   </div>
                 </div>
               </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-6" aria-expanded="false" aria-controls="faq-collapse-6">
+                    <span>6. </span> Can I use an existing ISO 9001:2015 certificate after ISO 9001:2026 was published? </button>
+                </h3>
+                <div id="faq-collapse-6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>Check your certificate’s current status with the issuing certification body and confirm the edition and validity accepted in the specific GeM bid. Ask the certification body about your transition schedule if you still hold a certificate under the 2015 edition.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-7" aria-expanded="false" aria-controls="faq-collapse-7">
+                    <span>7. </span> How can I check whether my ISO 9001 certificate is valid for a GeM tender? </button>
+                </h3>
+                <div id="faq-collapse-7" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>Check the certificate number, issuing body, validity dates, legal entity name, and scope against the bid terms. Verify its status with the issuing certification body and confirm that the scope covers the work or products in the tender.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -259,7 +282,7 @@ include 'includes/head.php';
         </div>
         <div class="col-lg-4">
           <div class="h-100">
-            <img src="https://www.gemgujarat.in/images/gem-gujarat-cta.webp" alt="Gem Gujarat Cta" title="Gem Gujarat Cta" class="img-fluid rounded-5" width="867" height="713">
+            <img src="https://www.gemgujarat.in/images/gem-gujarat-cta.webp" alt="GeM Gujarat Cta" title="GeM Gujarat Cta" class="img-fluid rounded-5" width="867" height="713">
           </div>
         </div>
       </div>

@@ -1,0 +1,40 @@
+# GeM Gujarat
+
+> GeM Gujarat is an India-wide consultancy that helps MSMEs, manufacturers, traders, OEMs, resellers, service providers, and government contractors use the Government e-Marketplace (GeM), from seller onboarding and catalogue management through bidding, order fulfilment, invoicing, and related compliance.
+
+GeM Gujarat has provided GeM consulting services since 2020 and is based in Ahmedabad, Gujarat, India. The business serves clients across India. GeM Gujarat is a consultancy and should not be confused with the official Government e-Marketplace or a government authority. For authoritative policies, procurement rules, and portal notices, consult the official GeM website.
+
+Primary topics: GeM seller registration, product catalogue management, listing updates, stock management, L1 comparison, direct purchase strategy, tender bidding, OEM and brand approval, vendor assessment, order acceptance, invoice and CRAC support, MSME Udyam registration, and ISO 9001 certification support.
+
+## Start Here
+
+- [GeM Gujarat home](https://www.gemgujarat.in/): Overview of the consultancy, its GeM services, process, client focus, and frequently asked questions.
+- [About GeM Gujarat](https://www.gemgujarat.in/about-us.php): Company background, nationwide service scope, mission, and approach to supporting Indian businesses.
+- [Contact GeM Gujarat](https://www.gemgujarat.in/contact-us.php): Enquiry form and contact details for service consultations.
+
+## Registration and Business Readiness
+
+- [GeM seller registration consultant](https://www.gemgujarat.in/gem-registration-consultant.php): Seller onboarding, primary-user creation, document preparation, profile verification, and Udyam linking support.
+- [MSME and Udyam registration](https://www.gemgujarat.in/gem-msme-udyam-registration.php): Udyam certification and integration with a GeM seller profile for applicable MSME procurement benefits.
+- [ISO 9001 certification support](https://www.gemgujarat.in/gem-iso-certificate-9001.php): ISO 9001:2015 certification guidance for quality-management, tender, and OEM requirements.
+- [OEM panel registration and brand approval](https://www.gemgujarat.in/gem-oem-panel-registration.php): OEM dashboard setup, brand approval, trademark verification, authorization-code management, and reseller controls.
+- [GeM vendor assessment support](https://www.gemgujarat.in/gem-vendor-assessment-support.php): Preparation for desktop and factory assessments, RITES or QCI audit documentation, and applicable exemption support.
+
+## Catalogue, Pricing, and Inventory
+
+- [GeM catalogue management services](https://www.gemgujarat.in/gem-catalogue-management-services.php): Product listing, category mapping, technical specifications, golden parameters, compliance monitoring, and suppression prevention.
+- [GeM product catalogue updates](https://www.gemgujarat.in/gem-product-catalogue-update.php): Changes to specifications, prices, images, categories, bulk listings, and rejected or disapproved listings.
+- [GeM stock update service](https://www.gemgujarat.in/gem-stock-update-service.php): Stock-quantity updates, listing renewal, expiry prevention, and inventory synchronisation support.
+- [GeM L1 comparison service](https://www.gemgujarat.in/gem-l1-comparison-service.php): Golden-parameter alignment, competitor comparison, price benchmarking, L1 eligibility, and direct-purchase strategy.
+
+## Bidding, Orders, and Payments
+
+- [GeM tender bidding support](https://www.gemgujarat.in/gem-tender-bidding-support.php): Tender discovery, eligibility review, technical and financial bid preparation, submission checks, and reverse-auction assistance.
+- [GeM order acceptance guide](https://www.gemgujarat.in/gem-order-acceptance-guide.php): Purchase-order review, acceptance timing, delivery planning, PBG guidance, and post-award compliance.
+- [GeM invoice generation and CRAC support](https://www.gemgujarat.in/gem-invoice-generation.php): GST-compliant invoicing, CRAC verification, bill uploads, discrepancy resolution, and payment follow-up.
+
+## Policies and Official Resources
+
+- [GeM Gujarat privacy policy](https://www.gemgujarat.in/privacy-policy.php): How enquiry, identity, business, and registration information is collected, used, secured, and retained.
+- [Official Government e-Marketplace](https://gem.gov.in/): Authoritative Government of India GeM portal for current rules, registration, procurement, and transactions.
+- [Official GeM bid listings](https://bidplus.gem.gov.in/all-bids): Current public bid and tender listings on the official GeM platform.

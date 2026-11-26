@@ -37,7 +37,6 @@ include __DIR__ . '/schema-engine.php';
     }
     ?>
     <link rel="canonical" href="<?php echo htmlspecialchars($_full_canonical, ENT_QUOTES, 'UTF-8'); ?>">
-    <link rel="alternate" hreflang="en" href="<?php echo htmlspecialchars($_full_canonical, ENT_QUOTES, 'UTF-8'); ?>">
     <!-- Full of Og & Twitter Card Details -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="<?php echo htmlspecialchars($_full_canonical, ENT_QUOTES, 'UTF-8'); ?>">
@@ -48,7 +47,7 @@ include __DIR__ . '/schema-engine.php';
     <meta property="og:image:width" content="<?php echo htmlspecialchars($og_width ?? '1200', ENT_QUOTES, 'UTF-8'); ?>" />
     <meta property="og:image:height" content="<?php echo htmlspecialchars($og_height ?? '630', ENT_QUOTES, 'UTF-8'); ?>" />
     <?php endif; ?>
-    <meta property="og:site_name" content="GEM Gujarat">
+    <meta property="og:site_name" content="GeM Gujarat">
     <meta property="og:logo" content="https://www.gemgujarat.in/images/gem-gujarat-logo.webp">
     <meta property="og:locale" content="en_IN">
     <meta name="twitter:card" content="summary_large_image">

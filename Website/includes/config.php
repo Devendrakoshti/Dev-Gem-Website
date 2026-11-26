@@ -21,7 +21,7 @@ $base_url = $protocol . '://' . $host . ($base_path ? '/' . $base_path : '') . '
   2. SITE DETAILS
 ===================================================== */
 $site = [
-  'name' => 'GEM Gujarat',
+  'name' => 'GeM Gujarat',
   'url' => $base_url, // Dynamic URL
   'logo' => $base_url . 'images/gem-gujarat-logo.webp'
 ];

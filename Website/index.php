@@ -2,11 +2,12 @@
 $page_title = "GeM Registration, Udyam Registration Online, & GeM Consultant India";
 $page_desc = "Simplify GeM Seller Registration & MSME Udyam Certification Nationwide. Trusted GeM Experts in India for profile optimization and government tender bidding success.";
 $canonical_url = "https://www.gemgujarat.in/";
+$page_modified_date = "2026-11-26";
 $preload_image = "https://www.gemgujarat.in/images/gem-gujarat-home-bg.webp";
 $og_image = "https://www.gemgujarat.in/images/gem-gujarat-home-02.webp";
 $og_width = "1000";
 $og_height = "1000";
-$page_keywords = "";
+$page_keywords = "GeM Gujarat, GeM consultancy India, Government e-Marketplace seller support, GeM registration services, GeM catalogue management, GeM tender assistance";
 include 'includes/head.php';
 ?> <body>
   <!-- navbar start  --> <?php include 'includes/navbar.php'; ?>
@@ -19,7 +20,7 @@ include 'includes/head.php';
       <div class="col-lg-7">
         <div class="pe-lg-2">
           <div class="home-banner-subtitle fw-bold mb-2">
-            WIN MORE GOVERNMENT e-MARKETPLACE ORDERS WITH GEM GUJARAT
+            WIN MORE GOVERNMENT e-MARKETPLACE ORDERS WITH GeM GUJARAT
           </div>
           <h1 class="home-banner-title mb-3">
             Premier GeM Portal Consultants: <span class="text-red">Multi-Category OEM Panel Access, Fast OEM Authorization Codes</span> &amp; L1 Comparison Solutions
@@ -178,9 +179,9 @@ include 'includes/head.php';
           <div class="p-xxl-5 p-4">
             <div class="d-flex align-items-center mb-4">
               <div class="home-services-icon">
-                <img src="https://www.gemgujarat.in/images/icons/certificate.svg" alt="Gem L1 Comparison" title="Gem L1 Comparison" class="img-fluid" width="34" height="34" loading="lazy">
+                <img src="https://www.gemgujarat.in/images/icons/certificate.svg" alt="GeM L1 Comparison" title="GeM L1 Comparison" class="img-fluid" width="34" height="34" loading="lazy">
               </div>
-              <h3 class="mb-0 fs-5 fw-bold">Gem L1 Comparison</h3>
+              <h3 class="mb-0 fs-5 fw-bold">GeM L1 Comparison</h3>
             </div>
             <p class="text-light-black mb-xxl-4 mb-3">Tired of complex tenders? Orders between ₹50,000 and ₹10 Lakhs on GeM are won through the L1 Comparison (Direct Purchase) process. Our expert service ensures your product meets every Golden Parameter, making it the system-recommended Lowest One. This is the key to the GeM Order without Tender.</p>
             <a href="gem-l1-comparison-service.php" title="Learn More About GeM L1 Price Comparison" aria-label="Learn More About GeM L1 Price Comparison" class="link-red d-inline-flex align-items-center">Learn More <span class="visually-hidden">About GeM L1 Price Comparison</span> <svg class="ms-2 align-middle" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
@@ -194,9 +195,9 @@ include 'includes/head.php';
           <div class="p-xxl-5 p-4">
             <div class="d-flex align-items-center mb-4">
               <div class="home-services-icon">
-                <img src="https://www.gemgujarat.in/images/icons/compliance.svg" alt="Gem OEM Authorization Code" title="Gem OEM Authorization Code" class="img-fluid" width="34" height="34" loading="lazy">
+                <img src="https://www.gemgujarat.in/images/icons/compliance.svg" alt="GeM OEM Authorization Code" title="GeM OEM Authorization Code" class="img-fluid" width="34" height="34" loading="lazy">
               </div>
-              <h3 class="mb-0 fs-5 fw-bold">Gem OEM Authorization Code</h3>
+              <h3 class="mb-0 fs-5 fw-bold">GeM OEM Authorization Code</h3>
             </div>
             <p class="text-light-black mb-xxl-4 mb-3">Experience zero waiting and zero friction. We provide instant GeM OEM Authorization Codes across all your product categories in one centralized dashboard. Stop switching between consultants—secure direct, hassle-free authorization management and dominate L1 comparisons to keep winning bids without interruptions.</p>
             <a href="gem-oem-panel-registration.php" title="Learn More About GeM OEM Authorization Codes" aria-label="Learn More About GeM OEM Authorization Codes" class="link-red d-inline-flex align-items-center">Learn More <span class="visually-hidden">About GeM OEM Authorization Codes</span> <svg class="ms-2 align-middle" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
@@ -291,7 +292,7 @@ include 'includes/head.php';
                 <h3 class="fs-5 fw-bold mb-0">Complete Compliance Assurance</h3>
               </div>
               <div class="why-choose-box-content">
-                <p class="mb-0">We don’t just register you; we ensure you receive all crucial documents, including a certified GEM ISO Certificate, securing your long-term success.</p>
+                <p class="mb-0">We don’t just register you; we ensure you receive all crucial documents, including a certified GeM ISO Certificate, securing your long-term success.</p>
               </div>
             </div>
           </div>
@@ -418,7 +419,7 @@ include 'includes/head.php';
                           <svg class="text-warning me-2 align-middle" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
                           <svg class="text-warning align-middle" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
                         </div>
-                        <p class="text-light-black">GEM GUJARAT demonstrates exceptional professionalism, placing customer satisfaction at the forefront. They consistently address queries within a single day. I value their quick assistance and am extremely satisfied with their services. Highly recommended for tender support.</p>
+                        <p class="text-light-black">GeM GUJARAT demonstrates exceptional professionalism, placing customer satisfaction at the forefront. They consistently address queries within a single day. I value their quick assistance and am extremely satisfied with their services. Highly recommended for tender support.</p>
                         <span class="fw-bold d-block mb-2">MR. Sandip Patel</span>
                       </div>
                     </div>
@@ -483,7 +484,7 @@ include 'includes/head.php';
     <div class="row g-lg-5 g-4 align-items-center">
       <div class="col-lg-5">
         <div class="h-100">
-          <img src="https://www.gemgujarat.in/images/gem-gujarat-faq.webp" alt="Gem Gujarat FAQ Image" title="Gem Gujarat FAQ Image" class="img-fluid rounded-5" width="2000" height="1333">
+          <img src="https://www.gemgujarat.in/images/gem-gujarat-faq.webp" alt="GeM Gujarat FAQ Image" title="GeM Gujarat FAQ Image" class="img-fluid rounded-5" width="2000" height="1333">
         </div>
       </div>
       <div class="col-lg-7">
@@ -553,7 +554,7 @@ include 'includes/head.php';
                 </h3>
                 <div id="collapsesix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <p>Absolutely. We facilitate the entire process of obtaining an authentic, globally recognized GEM ISO Certificate to enhance your company’s quality perception and credibility. </p>
+                    <p>Absolutely. We facilitate the entire process of obtaining an authentic, globally recognized GeM ISO Certificate to enhance your company’s quality perception and credibility. </p>
                   </div>
                 </div>
               </div>
@@ -575,7 +576,7 @@ include 'includes/head.php';
             <h2 class="h2-title mb-3"> How do I get started <b> with your services?</b>
             </h2>
             <p class="fs-18 fw-medium mb-4">Simply click the ‘Unlock Your Business Potential Now’ CTA and book a free initial consultation with our Indian experts.</p>
-            <a title="Start Your GeM Registration Today with GEM Gujarat" class="btn-primary" href="https://www.gemgujarat.in/contact-us.php"> Start Your GeM Registration Today! <span>
+            <a title="Start Your GeM Registration Today with GeM Gujarat" class="btn-primary" href="https://www.gemgujarat.in/contact-us.php"> Start Your GeM Registration Today! <span>
                 <svg id="Layer_1" enablebackground="new 0 0 100 100" height="40" viewBox="0 0 100 100" fill="#f70629" width="40" xmlns="http://www.w3.org/2000/svg">
                   <path d="m50 10.75c-18.266 0-34.562 13.129-38.383 31.007-1.909 8.933-.623 18.432 3.636 26.515 4.099 7.779 10.819 14.066 18.859 17.629 8.363 3.707 17.964 4.353 26.754 1.825 8.48-2.438 15.999-7.789 21.118-14.972 10.703-15.017 9.272-36.111-3.32-49.567-7.38-7.886-17.862-12.437-28.664-12.437zm18.829 41.347-10.7 10.958c-2.709 2.775-6.991-1.429-4.293-4.191l5.399-5.529h-25.586c-1.817 0-3.333-1.517-3.333-3.333s1.517-3.333 3.333-3.333h25.458l-5.506-5.505c-2.736-2.736 1.506-6.979 4.242-4.243l10.961 10.96c1.162 1.161 1.173 3.041.025 4.216z"></path>
                 </svg>
@@ -585,7 +586,7 @@ include 'includes/head.php';
         </div>
         <div class="col-lg-4">
           <div class="h-100">
-            <img src="https://www.gemgujarat.in/images/gem-gujarat-cta.webp" alt="Gem Gujarat Cta" title="Gem Gujarat Cta" class="img-fluid rounded-5" width="867" height="713">
+            <img src="https://www.gemgujarat.in/images/gem-gujarat-cta.webp" alt="GeM Gujarat Cta" title="GeM Gujarat Cta" class="img-fluid rounded-5" width="867" height="713">
           </div>
         </div>
       </div>

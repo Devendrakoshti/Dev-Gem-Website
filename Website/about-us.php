@@ -2,11 +2,12 @@
 $page_title = "About Us | GeM Gujarat – Empowering India’s MSMEs & Startups";
 $page_desc = "We are Gujarat’s leading GeM Registration experts. Helping Indian entrepreneurs scale through seamless government procurement, bid support, and catalog management.";
 $canonical_url = "https://www.gemgujarat.in/about-us.php";
+$page_modified_date = "2026-11-26";
 $preload_image = "https://www.gemgujarat.in/images/gem-gujarat-about-us-banner-02.webp";
 $og_image = "https://www.gemgujarat.in/images/gem-gujarat-about-us-banner-02.webp";
 $og_width = "1000";
 $og_height = "1000";
-$page_keywords = "";
+$page_keywords = "about GeM Gujarat, GeM consultancy Ahmedabad, GeM support for MSMEs, government procurement consultancy India";
 include 'includes/head.php';
 ?> <body>
   <!-- navbar start  --> <?php include 'includes/navbar.php'; ?>
@@ -23,9 +24,9 @@ include 'includes/head.php';
       </div>
       <div class="col-lg-7">
         <div class="pe-lg-3">
-          <span class="subtitle mb-2">ABOUT GEM GUJARAT</span>
+          <span class="subtitle mb-2">ABOUT GeM GUJARAT</span>
           <h1 class="banner-title mb-3">
-            Welcome to GEM Gujarat – India’s Trusted End-to-End GeM Portal Consultant <span class="text-red fw-bold">Since 2020</span>
+            Welcome to GeM Gujarat – India’s Trusted End-to-End GeM Portal Consultant <span class="text-red fw-bold">Since 2020</span>
           </h1>
           <p class="banner-desc mb-4">
             Since 2020, we have been the trusted growth partner for businesses nationwide, helping vendors, OEMs, and resellers navigate the complex ecosystem of the Government e-Marketplace (GeM). We streamline processes, optimize compliances, and secure tender eligibility so you can win more government contracts.
@@ -107,7 +108,7 @@ include 'includes/head.php';
       </div>
       <div class="col-lg-4 col-md-8">
         <div class="service-img-years">
-          <img src="https://www.gemgujarat.in/images/gem-gujarat-growth.webp" alt="Gem Gujarat Growth Image" title="Gem Gujarat Growth Image" class="img-fluid rounded-5" width="1024" height="1200">
+          <img src="https://www.gemgujarat.in/images/gem-gujarat-growth.webp" alt="GeM Gujarat Growth Image" title="GeM Gujarat Growth Image" class="img-fluid rounded-5" width="1024" height="1200">
           <div class="rounded-5 bg-gradient-red-purple border border-5 border-white shadow service-img-mn">
             <div class="d-flex p-lg-5 p-4 align-items-center justify-content-center text-white">
               <span class="display-2 fw-bold ">0<?php echo date("Y") - 2020; ?>+ </span>
@@ -126,7 +127,7 @@ include 'includes/head.php';
     <div class="row g-5 mb-4">
       <div class="col-lg-4 col-md-8">
         <div class="solution-section-img">
-          <img src="https://www.gemgujarat.in/images/gem-gujarat-vision-mission.webp" alt="Gem Gujarat Vision Mission Image" title="Gem Gujarat Vision Mission Image" class="img-fluid rounded-5" width="1024" height="1200">
+          <img src="https://www.gemgujarat.in/images/gem-gujarat-vision-mission.webp" alt="GeM Gujarat Vision Mission Image" title="GeM Gujarat Vision Mission Image" class="img-fluid rounded-5" width="1024" height="1200">
         </div>
       </div>
       <div class="col-lg-8">
@@ -200,7 +201,7 @@ include 'includes/head.php';
       </div>
       <div class="col-xl-4">
         <div class="h-100">
-          <img src="https://www.gemgujarat.in/images/gem-gujarat-trustworthy.webp" alt="Gem Gujarat Trustworthy Image" title="Gem Gujarat Trustworthy Image" class="img-fluid rounded-5 sticky-top top-100px" width="1024" height="1200">
+          <img src="https://www.gemgujarat.in/images/gem-gujarat-trustworthy.webp" alt="GeM Gujarat Trustworthy Image" title="GeM Gujarat Trustworthy Image" class="img-fluid rounded-5 sticky-top top-100px" width="1024" height="1200">
         </div>
       </div>
     </div>
@@ -230,7 +231,7 @@ include 'includes/head.php';
         </div>
         <div class="col-lg-4">
           <div class="h-100">
-            <img src="https://www.gemgujarat.in/images/gem-gujarat-cta.webp" alt="Gem Gujarat Cta" title="Gem Gujarat Cta" class="img-fluid rounded-5" width="867" height="713">
+            <img src="https://www.gemgujarat.in/images/gem-gujarat-cta.webp" alt="GeM Gujarat Cta" title="GeM Gujarat Cta" class="img-fluid rounded-5" width="867" height="713">
           </div>
         </div>
       </div>

@@ -2,11 +2,12 @@
 $page_title = "GeM L1 Comparison Service: Rule 149 Direct Purchase & L1 Status";
 $page_desc = "Master the GeM Rule 149 Direct Purchase Limit for quick sales. We optimize your listings for Golden Parameters to help you maintain L1 Status GeM and win direct orders.";
 $canonical_url = "https://www.gemgujarat.in/gem-l1-comparison-service.php";
+$page_modified_date = "2026-11-26";
 $preload_image = "https://www.gemgujarat.in/images/gem-l1-comparison-service-banner.webp";
 $og_image = "https://www.gemgujarat.in/images/gem-l1-comparison-service-banner.webp";
 $og_width = "1000";
 $og_height = "1000";
-$page_keywords = "";
+$page_keywords = "GeM L1 comparison service, GeM direct purchase, GeM Rule 149, GeM price benchmarking, GeM golden parameters, GeM L1 eligibility";
 include 'includes/head.php';
 ?> <body>
   <!-- navbar start  --> <?php include 'includes/navbar.php'; ?>
@@ -35,7 +36,7 @@ include 'includes/head.php';
       <div class="col-lg-6">
         <div class="h-100">
           <div class="hero-banner-image">
-            <img src="https://www.gemgujarat.in/images/gem-l1-comparison-service-banner.webp" alt="Gem L1 Comparison Service Banner Image" title="Gem L1 Comparison Service Banner Image" class="img-fluid" width="1000" height="1000">
+            <img src="https://www.gemgujarat.in/images/gem-l1-comparison-service-banner.webp" alt="GeM L1 Comparison Service Banner Image" title="GeM L1 Comparison Service Banner Image" class="img-fluid" width="1000" height="1000">
           </div>
         </div>
       </div>
@@ -106,7 +107,7 @@ include 'includes/head.php';
     <div class="row g-5 mb-4">
       <div class="col-lg-4 col-md-8">
         <div class="solution-section-img">
-          <img src="https://www.gemgujarat.in/images/gem-l1-comparison-service-product-matches.webp" alt="Gem L1 Comparison Service Product Matches Image" title="Gem L1 Comparison Service Product Matches Image" class="img-fluid rounded-5" width="1024" height="1200">
+          <img src="https://www.gemgujarat.in/images/gem-l1-comparison-service-product-matches.webp" alt="GeM L1 Comparison Service Product Matches Image" title="GeM L1 Comparison Service Product Matches Image" class="img-fluid rounded-5" width="1024" height="1200">
         </div>
       </div>
       <div class="col-lg-8">
@@ -218,7 +219,7 @@ include 'includes/head.php';
     <div class="row g-lg-5 g-4 align-items-center">
       <div class="col-lg-5">
         <div class="h-100">
-          <img src="https://www.gemgujarat.in/images/gem-gujarat-faq.webp" alt="Gem Gujarat FAQ Image" title="Gem Gujarat FAQ Image" class="img-fluid rounded-5" width="2000" height="1333">
+          <img src="https://www.gemgujarat.in/images/gem-gujarat-faq.webp" alt="GeM Gujarat FAQ Image" title="GeM Gujarat FAQ Image" class="img-fluid rounded-5" width="2000" height="1333">
         </div>
       </div>
       <div class="col-lg-7">
@@ -280,6 +281,28 @@ include 'includes/head.php';
                   </div>
                 </div>
               </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-6" aria-expanded="false" aria-controls="faq-collapse-6">
+                    <span>6. </span> Why is my GeM product missing from the buyer’s L1 comparison? </button>
+                </h3>
+                <div id="faq-collapse-6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>Check whether the listing is active, has sufficient available stock, and matches the buyer’s specifications, delivery location, and delivery timeline. Compare your listing against the exact filters the buyer used to identify where it falls outside the search.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-7" aria-expanded="false" aria-controls="faq-collapse-7">
+                    <span>7. </span> Does being L1 on GeM guarantee that I will receive a purchase order? </button>
+                </h3>
+                <div id="faq-collapse-7" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>No. L1 reflects the comparison for that buyer’s requirements and procurement mode. Confirm the order in your seller dashboard before reserving stock or planning dispatch.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -312,7 +335,7 @@ include 'includes/head.php';
         </div>
         <div class="col-lg-4">
           <div class="h-100">
-            <img src="https://www.gemgujarat.in/images/gem-gujarat-cta.webp" alt="Gem Gujarat Cta" title="Gem Gujarat Cta" class="img-fluid rounded-5" width="867" height="713">
+            <img src="https://www.gemgujarat.in/images/gem-gujarat-cta.webp" alt="GeM Gujarat Cta" title="GeM Gujarat Cta" class="img-fluid rounded-5" width="867" height="713">
           </div>
         </div>
       </div>

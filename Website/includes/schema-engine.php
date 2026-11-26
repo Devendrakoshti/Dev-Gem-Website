@@ -1,6 +1,6 @@
 <?php
 /* =====================================================================
-   SCHEMA ENGINE v2.0 — GEM Gujarat
+   SCHEMA ENGINE v2.0 — GeM Gujarat
    File: includes/schema-engine.php
 
    Outputs a single JSON-LD @graph block per page via render_schema().
@@ -13,7 +13,7 @@
      $canonical_url       string  — absolute canonical URL for this page
      $og_image            string  — absolute OG image URL
      $page_published_date string  — ISO 8601 date e.g. "2026-09-01"
-     $page_modified_date  string  — ISO 8601 date (falls back to published)
+     $page_modified_date  string  — ISO 8601 date (falls back to the default)
      $breadcrumb_parent   array   — ['name'=>'...','url'=>'...'] manual override
      $breadcrumb_name     string  — short name for current crumb (optional)
    ===================================================================== */
@@ -26,7 +26,7 @@ define('_WEBSITE_URL', 'https://www.gemgujarat.in/');
 define('_WEBSITE_ORG_ID', 'https://www.gemgujarat.in/#organization');
 define('_WEBSITE_ID',  'https://www.gemgujarat.in/#website');
 define('_WEBSITE_LOGO',   'https://www.gemgujarat.in/images/gem-gujarat-logo.webp');
-define('_WEBSITE_NAME',   'GEM Gujarat');
+define('_WEBSITE_NAME',   'GeM Gujarat');
 define('_DATE_CREATED',   '2026-09-01T14:30:00Z');
 define('_DATE_PUBLISHED',   '2026-09-01T14:30:00Z');
 define('_DATE_MODIFIED',   '2026-09-01T14:30:00Z');
@@ -114,7 +114,7 @@ function _schema_breadcrumb_name(string $filename, string $page_title, array $ma
         $stripped = trim(preg_replace('/\s*\|.*$/u', '', $page_title));
         if ($stripped !== '') return $stripped;
     }
-    return ucwords(str_replace(['-', '.php', 'gem '], [' ', '', 'GeM '], $filename));
+    return ucwords(str_replace(['-', '.php', 'GeM '], [' ', '', 'GeM '], $filename));
 }
 
 
@@ -296,7 +296,7 @@ if (in_array($file_name, $service_pages, true)) {
 
 
 /* =====================================================================
-   BLOCK E — WEB PAGE TYPES  (static non-service pages)
+   BLOCK E — WEB PAGE TYPES
    ===================================================================== */
 $static_page_types = [
     'about-us.php'       => 'AboutPage',
@@ -305,9 +305,9 @@ $static_page_types = [
     'thank-you.php'      => 'WebPage',
 ];
 
-if (!$is_home
-    && isset($static_page_types[$file_name])
-    && !in_array($file_name, $service_pages, true)
+if ($is_home
+    || isset($static_page_types[$file_name])
+    || in_array($file_name, $service_pages, true)
 ) {
     $page_url = !empty($canonical_url) ? $canonical_url : $current_url;
     if (!preg_match('~^https?://~i', $page_url)) {
@@ -315,15 +315,15 @@ if (!$is_home
     }
 
     $schemas[] = _schema_clean([
-        '@type'         => $static_page_types[$file_name],
-        '@id'           => rtrim($page_url, '/') . '#webpage',
+        '@type'         => $static_page_types[$file_name] ?? 'WebPage',
+        '@id'           => $page_url . '#webpage',
         'name'          => $page_title ?? null,
         'headline'      => $page_title ?? null,
         'description'   => $page_desc  ?? null,
         'url'           => $page_url,
         'inLanguage'    => _IN_LANGUAGE,
-        'datePublished' => _DATE_PUBLISHED,
-        'dateModified'  => _DATE_MODIFIED,
+        'datePublished' => $page_published_date ?? _DATE_PUBLISHED,
+        'dateModified'  => $page_modified_date ?? _DATE_MODIFIED,
         'isPartOf'      => ['@id' => _WEBSITE_ID],
         'about'         => ['@id' => _WEBSITE_ORG_ID],
         'publisher'     => ['@id' => _WEBSITE_ORG_ID],
@@ -386,6 +386,74 @@ if (!$is_home) {
 }
 
 /* =====================================================================
+   BLOCK G — FAQ SCHEMA  (pages with a static FAQ accordion)
+   ===================================================================== */
+function _schema_faq(string $filename, string $page_url): array
+{
+    // The FAQ is static HTML in the page template. Read that copy before
+    // the body renders so the questions and answers stay in one JSON-LD graph.
+    $template = dirname(__DIR__) . '/' . basename($filename);
+    if (!class_exists(DOMDocument::class) || !is_readable($template)) {
+        return [];
+    }
+
+    $source = file_get_contents($template);
+    if ($source === false || strpos($source, 'faq-section') === false) {
+        return [];
+    }
+
+    $html = '<meta charset="utf-8">';
+    foreach (token_get_all($source) as $token) {
+        if (is_array($token) && $token[0] === T_INLINE_HTML) {
+            $html .= $token[1];
+        }
+    }
+
+    $document = new DOMDocument();
+    if (!$document->loadHTML($html, LIBXML_NONET | LIBXML_NOERROR | LIBXML_NOWARNING)) {
+        return [];
+    }
+
+    $xpath = new DOMXPath($document);
+    $has_class = 'contains(concat(" ", normalize-space(@class), " "), " %s ")';
+    $sections = sprintf('//section[' . $has_class . ']', 'faq-section');
+    $items = sprintf($sections . '//*[' . $has_class . ']', 'accordion-item');
+    $buttons = sprintf('.//button[' . $has_class . ']', 'accordion-button');
+    $answers = sprintf('.//*[' . $has_class . ']', 'accordion-body');
+
+    $questions = [];
+    foreach ($xpath->query($items) as $item) {
+        $question = $xpath->evaluate('normalize-space(' . $buttons . ')', $item);
+        $question = preg_replace('/^\d+\.\s+/u', '', $question);
+        $answer = $xpath->evaluate('normalize-space(' . $answers . ')', $item);
+        if ($question === '' || $answer === '') {
+            continue;
+        }
+
+        $questions[] = [
+            '@type'          => 'Question',
+            'name'           => $question,
+            'acceptedAnswer' => [
+                '@type' => 'Answer',
+                'text'  => $answer,
+            ],
+        ];
+    }
+
+    if ($questions === []) {
+        return [];
+    }
+
+    return [
+        '@type'      => 'FAQPage',
+        '@id'        => $page_url . '#faq',
+        'url'        => $page_url,
+        'isPartOf'   => ['@id' => _WEBSITE_ID],
+        'mainEntity' => $questions,
+    ];
+}
+
+/* =====================================================================
    OUTPUT — render_schema()
    Call once inside <head>, after this file is included.
    Outputs a single <script type="application/ld+json"> block
@@ -393,13 +461,18 @@ if (!$is_home) {
    ===================================================================== */
 function render_schema(): void
 {
-    global $schemas;
-    if (empty($schemas)) return;
+    global $schemas, $file_name, $_full_canonical;
+    $graph = $schemas;
+    $faq = _schema_faq($file_name, $_full_canonical);
+    if ($faq !== []) {
+        $graph[] = $faq;
+    }
+    if (empty($graph)) return;
 
     echo '<script type="application/ld+json">' . "\n";
     echo json_encode(
-        ['@context' => 'https://schema.org', '@graph' => $schemas],
-        JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT
+        ['@context' => 'https://schema.org', '@graph' => $graph],
+        JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT | JSON_HEX_TAG
     );
     echo "\n</script>\n";
 }

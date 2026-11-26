@@ -2,11 +2,12 @@
 $page_title = "GeM Registration Consultant India & Seller Registration Online";
 $page_desc = "Expert GeM Registration Services Nationwide. Fast, 48-hour GeM Seller Registration Online. Get support for the Udyam link and essential documents.";
 $canonical_url = "https://www.gemgujarat.in/gem-registration-consultant.php";
+$page_modified_date = "2026-11-26";
 $preload_image = "https://www.gemgujarat.in/images/gem-registration-consultant-banner.webp";
 $og_image = "https://www.gemgujarat.in/images/gem-registration-consultant-banner.webp";
 $og_width = "1000";
 $og_height = "1000";
-$page_keywords = "";
+$page_keywords = "GeM seller registration, GeM registration consultant India, GeM vendor onboarding, GeM seller account setup, GeM profile verification, GeM registration documents";
 include 'includes/head.php';
 ?> <body>
   <!-- navbar start  --> <?php include 'includes/navbar.php'; ?>
@@ -35,7 +36,7 @@ include 'includes/head.php';
       <div class="col-lg-6">
         <div class="h-100">
           <div class="hero-banner-image">
-            <img src="https://www.gemgujarat.in/images/gem-registration-consultant-banner.webp" alt="Gem Registration Consultant Banner Image" title="Gem Registration Consultant Banner Image" class="img-fluid" width="1000" height="1000">
+            <img src="https://www.gemgujarat.in/images/gem-registration-consultant-banner.webp" alt="GeM Registration Consultant Banner Image" title="GeM Registration Consultant Banner Image" class="img-fluid" width="1000" height="1000">
           </div>
         </div>
       </div>
@@ -84,7 +85,7 @@ include 'includes/head.php';
       </div>
       <div class="col-lg-4 col-md-8">
         <div class="service-img-years">
-          <img src="https://www.gemgujarat.in/images/gem-registration.webp" alt="Gem Registration Image" title="Gem Registration Image" class="img-fluid rounded-5" width="1024" height="1200">
+          <img src="https://www.gemgujarat.in/images/gem-registration.webp" alt="GeM Registration Image" title="GeM Registration Image" class="img-fluid rounded-5" width="1024" height="1200">
           <div class="rounded-5 bg-gradient-red-purple border border-5 border-white shadow service-img-mn">
             <div class="d-flex p-lg-5 p-4 align-items-center justify-content-center text-white">
               <span class="display-2 fw-bold ">0<?php echo date("Y") - 2020; ?>+ </span>
@@ -103,7 +104,7 @@ include 'includes/head.php';
     <div class="row g-5 mb-4">
       <div class="col-lg-4 col-md-8">
         <div class="solution-section-img">
-          <img src="https://www.gemgujarat.in/images/fast-friendly-gem-registrations.webp" alt="Fast Friendly Gem Registrations Image" title="Fast Friendly Gem Registrations Image" class="img-fluid rounded-5" width="1024" height="1200">
+          <img src="https://www.gemgujarat.in/images/fast-friendly-gem-registrations.webp" alt="Fast Friendly GeM Registrations Image" title="Fast Friendly GeM Registrations Image" class="img-fluid rounded-5" width="1024" height="1200">
         </div>
       </div>
       <div class="col-lg-8">
@@ -218,7 +219,7 @@ include 'includes/head.php';
       </div>
       <div class="col-xl-4">
         <div class="h-100 d-none d-xl-block">
-        <img src="https://www.gemgujarat.in/images/gem-registrations-requirement-documents.webp" alt="Gem Registrations Requirement Documents Image" title="Gem Registrations Requirement Documents Image" class="img-fluid rounded-5 sticky-top top-100px" width="1024" height="1200">
+        <img src="https://www.gemgujarat.in/images/gem-registrations-requirement-documents.webp" alt="GeM Registrations Requirement Documents Image" title="GeM Registrations Requirement Documents Image" class="img-fluid rounded-5 sticky-top top-100px" width="1024" height="1200">
       </div>
       </div>
     </div>
@@ -337,7 +338,7 @@ include 'includes/head.php';
     <div class="row g-lg-5 g-4 align-items-center">
       <div class="col-lg-5">
         <div class="h-100">
-          <img src="https://www.gemgujarat.in/images/gem-gujarat-faq.webp" alt="Gem Gujarat FAQ Image" title="Gem Gujarat FAQ Image" class="img-fluid rounded-5" width="2000" height="1333">
+          <img src="https://www.gemgujarat.in/images/gem-gujarat-faq.webp" alt="GeM Gujarat FAQ Image" title="GeM Gujarat FAQ Image" class="img-fluid rounded-5" width="2000" height="1333">
         </div>
       </div>
       <div class="col-lg-7">
@@ -425,6 +426,28 @@ include 'includes/head.php';
                   </div>
                 </div>
               </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-8" aria-expanded="false" aria-controls="faq-collapse-8">
+                    <span>8. </span> Is GeM seller registration free for businesses in Gujarat? </button>
+                </h3>
+                <div id="faq-collapse-8" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>GeM charges no fee to create a seller account on the official portal. Any fee quoted by GEM Gujarat is for optional consultancy. Check the portal’s current policy for any separate charges that may apply after registration.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-9" aria-expanded="false" aria-controls="faq-collapse-9">
+                    <span>9. </span> Do I need to visit an office in Ahmedabad to register on GeM? </button>
+                </h3>
+                <div id="faq-collapse-9" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>Seller registration is completed online through the official GeM portal. The business’s authorised representative can complete the account and verification steps without visiting an office.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -432,7 +455,7 @@ include 'includes/head.php';
     </div>
 </section>
 <!-- FAQ Section End -->
- <!-- Country Section Start --> <?php $local_seo_service = 'GEM Registration Services'; include 'includes/country.php'; ?>
+ <!-- Country Section Start --> <?php $local_seo_service = 'GeM Registration Services'; include 'includes/country.php'; ?>
     <!-- Country Section End -->
 
 <!-- CTA Section Start -->
@@ -458,7 +481,7 @@ include 'includes/head.php';
         </div>
         <div class="col-lg-4">
           <div class="h-100">
-            <img src="https://www.gemgujarat.in/images/gem-gujarat-cta.webp" alt="Gem Gujarat Cta" title="Gem Gujarat Cta" class="img-fluid rounded-5" width="867" height="713">
+            <img src="https://www.gemgujarat.in/images/gem-gujarat-cta.webp" alt="GeM Gujarat Cta" title="GeM Gujarat Cta" class="img-fluid rounded-5" width="867" height="713">
           </div>
         </div>
       </div>

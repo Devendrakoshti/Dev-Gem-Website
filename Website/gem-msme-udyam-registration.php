@@ -2,11 +2,12 @@
 $page_title = "GeM MSME & Udyam Registration | Boost Your Business Growth";
 $page_desc = "Simplify your Udyam and MSME registration for the GeM portal. Unlock exclusive government benefits, tender exemptions, and priority payments today!";
 $canonical_url = "https://www.gemgujarat.in/gem-msme-udyam-registration.php";
+$page_modified_date = "2026-11-26";
 $preload_image = "https://www.gemgujarat.in/images/gem-msme-udyam-registration-banner.webp";
 $og_image = "https://www.gemgujarat.in/images/gem-msme-udyam-registration-banner.webp";
 $og_width = "1000";
 $og_height = "1000";
-$page_keywords = "";
+$page_keywords = "MSME Udyam registration, Udyam registration for GeM sellers, GeM Udyam certificate linking, MSME tender benefits, GeM EMD exemption guidance";
 include 'includes/head.php';
 ?> <body>
   <!-- navbar start  --> <?php include 'includes/navbar.php'; ?>
@@ -20,7 +21,7 @@ include 'includes/head.php';
         <div class="h-100">
           <div class="page-path">
             <span>
-              <svg class="text-red me-1 align-text-bottom" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg> Home <svg class="mx-1 align-middle" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg> Gem Msme Udyam Registration </span>
+              <svg class="text-red me-1 align-text-bottom" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg> Home <svg class="mx-1 align-middle" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg> GeM Msme Udyam Registration </span>
           </div>
           <h1 class="mb-1">Unlock Exclusive Benefits with <span>MSME & Udyam</span> Registration on GeM </h1>
           <p class="fs-18 mb-4 lh-base">The first step to winning government contracts is proving your MSME status. We make the registration process fast, friendly, and flawless.</p>
@@ -35,7 +36,7 @@ include 'includes/head.php';
       <div class="col-lg-6">
         <div class="h-100">
           <div class="hero-banner-image">
-            <img src="https://www.gemgujarat.in/images/gem-msme-udyam-registration-banner.webp" alt="Gem Msme Udyam Registration Banner Image" title="Gem Msme Udyam Registration Banner Image" class="img-fluid" width="1000" height="1000">
+            <img src="https://www.gemgujarat.in/images/gem-msme-udyam-registration-banner.webp" alt="GeM Msme Udyam Registration Banner Image" title="GeM Msme Udyam Registration Banner Image" class="img-fluid" width="1000" height="1000">
           </div>
         </div>
       </div>
@@ -84,7 +85,7 @@ include 'includes/head.php';
       </div>
       <div class="col-lg-4 col-md-8">
         <div class="service-img-years">
-          <img src="https://www.gemgujarat.in/images/gem-msme-udyam-registration-benefits.webp" alt="Gem Msme Udyam Registration Benefits Image" title="Gem Msme Udyam Registration Benefits Image" class="img-fluid rounded-5" width="1024" height="1200">
+          <img src="https://www.gemgujarat.in/images/gem-msme-udyam-registration-benefits.webp" alt="GeM Msme Udyam Registration Benefits Image" title="GeM Msme Udyam Registration Benefits Image" class="img-fluid rounded-5" width="1024" height="1200">
           <div class="rounded-5 bg-gradient-red-purple border border-5 border-white shadow service-img-mn">
             <div class="d-flex p-lg-5 p-4 align-items-center justify-content-center text-white">
               <span class="display-2 fw-bold ">0<?php echo date("Y") - 2020; ?>+ </span>
@@ -103,7 +104,7 @@ include 'includes/head.php';
     <div class="row g-5 mb-4">
       <div class="col-lg-4 col-md-8">
         <div class="solution-section-img">
-          <img src="https://www.gemgujarat.in/images/gem-msme-udyam-registration-support.webp" alt="Gem Msme Udyam Registration Support Image" title="Gem Msme Udyam Registration Support Image" class="img-fluid rounded-5" width="1024" height="1200">
+          <img src="https://www.gemgujarat.in/images/gem-msme-udyam-registration-support.webp" alt="GeM Msme Udyam Registration Support Image" title="GeM Msme Udyam Registration Support Image" class="img-fluid rounded-5" width="1024" height="1200">
         </div>
       </div>
       <div class="col-lg-8">
@@ -168,7 +169,7 @@ include 'includes/head.php';
     <div class="row g-lg-5 g-4 align-items-center">
       <div class="col-lg-5">
         <div class="h-100">
-          <img src="https://www.gemgujarat.in/images/gem-gujarat-faq.webp" alt="Gem Gujarat FAQ Image" title="Gem Gujarat FAQ Image" class="img-fluid rounded-5" width="2000" height="1333">
+          <img src="https://www.gemgujarat.in/images/gem-gujarat-faq.webp" alt="GeM Gujarat FAQ Image" title="GeM Gujarat FAQ Image" class="img-fluid rounded-5" width="2000" height="1333">
         </div>
       </div>
       <div class="col-lg-7">
@@ -238,6 +239,28 @@ include 'includes/head.php';
                 <div id="collapsesix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                     <p>One of the best features of GeM for small businesses is the fixed payment timeline. As per government norms, once the Consignee Receipt and Acceptance Certificate (CRAC) is generated, the buyer is mandated to trigger the payment within 10 days. If delayed beyond this, the portal has an automated system to track and escalate pending payments.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-7" aria-expanded="false" aria-controls="faq-collapse-7">
+                    <span>7. </span> Is Udyam registration free for MSMEs in Gujarat? </button>
+                </h3>
+                <div id="faq-collapse-7" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>Yes. There is no government filing fee on the <a href="https://udyamregistration.gov.in/Important.aspx">official Udyam Registration portal</a>. The portal provides online self-registration and issues an electronic certificate after registration.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-8" aria-expanded="false" aria-controls="faq-collapse-8">
+                    <span>8. </span> Do I need a new Udyam certificate if my business address or activity changes? </button>
+                </h3>
+                <div id="faq-collapse-8" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>Use the official portal’s update facility for your existing Udyam registration. Check that the updated details reflect your current business records before using them for GeM profile verification or a tender.</p>
                   </div>
                 </div>
               </div>

@@ -2,11 +2,12 @@
 $page_title = "GeM Vendor Assessment Consultant, RITES Audit & OEM Support";
 $page_desc = "Expert GeM Vendor Assessment Support Nationwide. Clear your RITES/QCI audit, secure OEM status, and claim MSME exemption benefits easily.";
 $canonical_url = "https://www.gemgujarat.in/gem-vendor-assessment-support.php";
+$page_modified_date = "2026-11-26";
 $preload_image = "https://www.gemgujarat.in/images/gem-vendor-assessment-support-banner.webp";
 $og_image = "https://www.gemgujarat.in/images/gem-vendor-assessment-support-banner.webp";
 $og_width = "1000";
 $og_height = "1000";
-$page_keywords = "";
+$page_keywords = "GeM vendor assessment support, GeM vendor assessment documents, GeM factory audit preparation, RITES vendor assessment, GeM vendor assessment exemption";
 include 'includes/head.php';
 ?> <body>
   <!-- navbar start  --> <?php include 'includes/navbar.php'; ?>
@@ -35,7 +36,7 @@ include 'includes/head.php';
       <div class="col-lg-6">
         <div class="h-100">
           <div class="hero-banner-image">
-            <img src="https://www.gemgujarat.in/images/gem-vendor-assessment-support-banner.webp" alt="Gem Order Acceptance Guide Banner Image" title="Gem Order Acceptance Guide Banner Image" class="img-fluid" width="1000" height="1000">
+            <img src="https://www.gemgujarat.in/images/gem-vendor-assessment-support-banner.webp" alt="GeM Order Acceptance Guide Banner Image" title="GeM Order Acceptance Guide Banner Image" class="img-fluid" width="1000" height="1000">
           </div>
         </div>
       </div>
@@ -84,7 +85,7 @@ include 'includes/head.php';
       </div>
       <div class="col-lg-4 col-md-8">
         <div class="service-img-years">
-          <img src="https://www.gemgujarat.in/images/gem-vendor-challenge.webp" alt="Gem Vendor Challenge Image" title="Gem Vendor Challenge Image" class="img-fluid rounded-5" width="1024" height="1200">
+          <img src="https://www.gemgujarat.in/images/gem-vendor-challenge.webp" alt="GeM Vendor Challenge Image" title="GeM Vendor Challenge Image" class="img-fluid rounded-5" width="1024" height="1200">
           <div class="rounded-5 bg-gradient-red-purple border border-5 border-white shadow service-img-mn">
             <div class="d-flex p-lg-5 p-4 align-items-center justify-content-center text-white">
               <span class="display-2 fw-bold ">0<?php echo date("Y") - 2020; ?>+ </span>
@@ -151,7 +152,7 @@ include 'includes/head.php';
       </div>
       <div class="col-xl-4">
         <div class="h-100 d-none d-xl-block">
-        <img src="https://www.gemgujarat.in/images/gem-vendor-solution.webp" alt="Gem Vendor Solution Image" title="Gem Vendor Solution Image" class="img-fluid rounded-5 sticky-top top-100px" width="1024" height="1200">
+        <img src="https://www.gemgujarat.in/images/gem-vendor-solution.webp" alt="GeM Vendor Solution Image" title="GeM Vendor Solution Image" class="img-fluid rounded-5 sticky-top top-100px" width="1024" height="1200">
       </div>
       </div>
     </div>
@@ -269,7 +270,7 @@ include 'includes/head.php';
     <div class="row g-lg-5 g-4 align-items-center">
       <div class="col-lg-5">
         <div class="h-100">
-          <img src="https://www.gemgujarat.in/images/gem-gujarat-faq.webp" alt="Gem Gujarat FAQ Image" title="Gem Gujarat FAQ Image" class="img-fluid rounded-5" width="2000" height="1333">
+          <img src="https://www.gemgujarat.in/images/gem-gujarat-faq.webp" alt="GeM Gujarat FAQ Image" title="GeM Gujarat FAQ Image" class="img-fluid rounded-5" width="2000" height="1333">
         </div>
       </div>
       <div class="col-lg-7">
@@ -331,6 +332,28 @@ include 'includes/head.php';
                   </div>
                 </div>
               </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-6" aria-expanded="false" aria-controls="faq-collapse-6">
+                    <span>6. </span> How can I check the status of my GeM Vendor Assessment application? </button>
+                </h3>
+                <div id="faq-collapse-6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>Review the application status and remarks in your GeM account or on the assessment agency’s platform, if applicable. Keep your application reference handy and check whether an evidence request or audit appointment is awaiting action.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-7" aria-expanded="false" aria-controls="faq-collapse-7">
+                    <span>7. </span> What should I do if my GeM Vendor Assessment asks for clarification? </button>
+                </h3>
+                <div id="faq-collapse-7" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>Respond to each point in the assessment remarks. Match the requested evidence to the legal entity, manufacturing site, and product scope under review, and submit the clarification through the channel specified in the application.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -363,7 +386,7 @@ include 'includes/head.php';
         </div>
         <div class="col-lg-4">
           <div class="h-100">
-            <img src="https://www.gemgujarat.in/images/gem-gujarat-cta.webp" alt="Gem Gujarat Cta" title="Gem Gujarat Cta" class="img-fluid rounded-5" width="867" height="713">
+            <img src="https://www.gemgujarat.in/images/gem-gujarat-cta.webp" alt="GeM Gujarat Cta" title="GeM Gujarat Cta" class="img-fluid rounded-5" width="867" height="713">
           </div>
         </div>
       </div>

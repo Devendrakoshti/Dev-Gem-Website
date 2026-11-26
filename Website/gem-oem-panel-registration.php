@@ -2,11 +2,12 @@
 $page_title = "GeM OEM Panel Registration & Brand Approval Consultant Nationwide";
 $page_desc = "Expert GeM OEM Registration for Manufacturers. Get GeM Brand Approval, RITES Vendor Assessment assistance, and Brand Authorization Codes Across India.";
 $canonical_url = "https://www.gemgujarat.in/gem-oem-panel-registration.php";
+$page_modified_date = "2026-11-26";
 $preload_image = "https://www.gemgujarat.in/images/gem-oem-panel-registration-banner.webp";
 $og_image = "https://www.gemgujarat.in/images/gem-oem-panel-registration-banner.webp";
 $og_width = "1000";
 $og_height = "1000";
-$page_keywords = "";
+$page_keywords = "GeM OEM panel registration, GeM brand approval, GeM brand authorization code, GeM manufacturer registration, GeM reseller authorization";
 include 'includes/head.php';
 ?> <body>
   <!-- navbar start  --> <?php include 'includes/navbar.php'; ?>
@@ -35,7 +36,7 @@ include 'includes/head.php';
       <div class="col-lg-6">
         <div class="h-100">
           <div class="hero-banner-image">
-            <img src="https://www.gemgujarat.in/images/gem-oem-panel-registration-banner.webp" alt="Gem Oem Panel Registration Banner Image" title="Gem Oem Panel Registration Banner Image" class="img-fluid" width="1000" height="1000">
+            <img src="https://www.gemgujarat.in/images/gem-oem-panel-registration-banner.webp" alt="GeM Oem Panel Registration Banner Image" title="GeM Oem Panel Registration Banner Image" class="img-fluid" width="1000" height="1000">
           </div>
         </div>
       </div>
@@ -84,7 +85,7 @@ include 'includes/head.php';
       </div>
       <div class="col-lg-4 col-md-8">
         <div class="service-img-years">
-          <img src="https://www.gemgujarat.in/images/gem-oem-panel-registration-opportunity.webp" alt="Gem Oem Panel Registration Opportunity Image" title="Gem Oem Panel Registration Opportunity Image" class="img-fluid rounded-5" width="1024" height="1200">
+          <img src="https://www.gemgujarat.in/images/gem-oem-panel-registration-opportunity.webp" alt="GeM Oem Panel Registration Opportunity Image" title="GeM Oem Panel Registration Opportunity Image" class="img-fluid rounded-5" width="1024" height="1200">
           <div class="rounded-5 bg-gradient-red-purple border border-5 border-white shadow service-img-mn">
             <div class="d-flex p-lg-5 p-4 align-items-center justify-content-center text-white">
               <span class="display-2 fw-bold ">0<?php echo date("Y") - 2020; ?>+ </span>
@@ -103,7 +104,7 @@ include 'includes/head.php';
     <div class="row g-5 mb-4">
       <div class="col-lg-4 col-md-8">
         <div class="solution-section-img">
-          <img src="https://www.gemgujarat.in/images/gem-oem-panel-registration-process.webp" alt="Gem Oem Panel Registration Process Image" title="Gem Oem Panel Registration Process Image" class="img-fluid rounded-5" width="1024" height="1200">
+          <img src="https://www.gemgujarat.in/images/gem-oem-panel-registration-process.webp" alt="GeM Oem Panel Registration Process Image" title="GeM Oem Panel Registration Process Image" class="img-fluid rounded-5" width="1024" height="1200">
         </div>
       </div>
       <div class="col-lg-8">
@@ -175,7 +176,7 @@ include 'includes/head.php';
     <div class="row g-lg-5 g-4 align-items-center">
       <div class="col-lg-5">
         <div class="h-100">
-          <img src="https://www.gemgujarat.in/images/gem-gujarat-faq.webp" alt="Gem Gujarat FAQ Image" title="Gem Gujarat FAQ Image" class="img-fluid rounded-5" width="2000" height="1333">
+          <img src="https://www.gemgujarat.in/images/gem-gujarat-faq.webp" alt="GeM Gujarat FAQ Image" title="GeM Gujarat FAQ Image" class="img-fluid rounded-5" width="2000" height="1333">
         </div>
       </div>
       <div class="col-lg-7">
@@ -248,6 +249,28 @@ include 'includes/head.php';
                   </div>
                 </div>
               </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-7" aria-expanded="false" aria-controls="faq-collapse-7">
+                    <span>7. </span> How can I check why my GeM brand approval is pending or rejected? </button>
+                </h3>
+                <div id="faq-collapse-7" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>Open the brand request in your seller dashboard and review the latest status and remarks. Check that the brand spelling, legal entity name, and supporting documents agree. Resolve the specific issue listed before resubmitting or contacting GeM support.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-8" aria-expanded="false" aria-controls="faq-collapse-8">
+                    <span>8. </span> Does GeM brand approval allow me to list products in every category? </button>
+                </h3>
+                <div id="faq-collapse-8" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>Check each category before listing. Product specifications, OEM eligibility, and supporting documents can vary by category, so confirm that your brand, model, and evidence meet the requirements of the category you intend to use.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -280,7 +303,7 @@ include 'includes/head.php';
         </div>
         <div class="col-lg-4">
           <div class="h-100">
-            <img src="https://www.gemgujarat.in/images/gem-gujarat-cta.webp" alt="Gem Gujarat Cta" title="Gem Gujarat Cta" class="img-fluid rounded-5" width="867" height="713">
+            <img src="https://www.gemgujarat.in/images/gem-gujarat-cta.webp" alt="GeM Gujarat Cta" title="GeM Gujarat Cta" class="img-fluid rounded-5" width="867" height="713">
           </div>
         </div>
       </div>

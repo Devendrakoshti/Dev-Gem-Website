@@ -24,26 +24,26 @@
         </div>
       </div>
       <div class="nav-bottom d-flex align-items-center justify-content-between px-3">
-        <a class="navbar-brand px-xl-4 px-0" href="https://www.gemgujarat.in/" title="GEM Gujarat - Strategic GeM Success Partner">
-          <img loading="eager" src="https://www.gemgujarat.in/images/gem-gujarat-logo.webp" alt="GEM Gujarat" title="GEM Gujarat" class="img-fluid" width="165" height="74">
+        <a class="navbar-brand px-xl-4 px-0" href="https://www.gemgujarat.in/" title="GeM Gujarat - Strategic GeM Success Partner">
+          <img loading="eager" src="https://www.gemgujarat.in/images/gem-gujarat-logo.webp" alt="GeM Gujarat" title="GeM Gujarat" class="img-fluid" width="165" height="74">
         </a>
         <button class="navbar-toggler" aria-label="hamburger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header border-bottom">
-            <a class="offcanvas-title" id="offcanvasNavbarLabel" href="https://www.gemgujarat.in/" title="GEM Gujarat Home">
-              <img loading="eager" src="https://www.gemgujarat.in/images/gem-gujarat-logo.webp" alt="GEM Gujarat" title="GEM Gujarat" class="img-fluid" width="165" height="74">
+            <a class="offcanvas-title" id="offcanvasNavbarLabel" href="https://www.gemgujarat.in/" title="GeM Gujarat Home">
+              <img loading="eager" src="https://www.gemgujarat.in/images/gem-gujarat-logo.webp" alt="GeM Gujarat" title="GeM Gujarat" class="img-fluid" width="165" height="74">
             </a>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body mx-xl-auto mx-0 h-100">
             <ul class="navbar-nav align-items-xxl-center fw-bold">
               <li class="nav-item">
-                <a class="nav-link fs-18" href="https://www.gemgujarat.in/" title="GEM Gujarat Home Page"> Home </a>
+                <a class="nav-link fs-18" href="https://www.gemgujarat.in/" title="GeM Gujarat Home Page"> Home </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-18" href="https://www.gemgujarat.in/gem-registration-consultant.php" title="GeM Registration Services & Consultancy"> Gem Registration </a>
+                <a class="nav-link fs-18" href="https://www.gemgujarat.in/gem-registration-consultant.php" title="GeM Registration Services & Consultancy"> GeM Registration </a>
               </li>
               <li class="nav-item dropdown position-static">
                 <a class="nav-link px-xxl-3 px-xl-1 dropdown-toggle d-flex justify-content-between justify-content-xxl-start align-items-center fs-18" href="#" id="navbarSSLAboutus" role="button" data-bs-toggle="dropdown" aria-expanded="false" title="GeM Portal Consultancy Services"> Services </a>
@@ -53,42 +53,42 @@
                       <div class="col-xl-6">
                         <ul class="list-unstyled" aria-labelledby="navbarSSLAboutus">
                           <li>
-                            <a class="dropdown-item" href="https://www.gemgujarat.in/gem-registration-consultant.php" title="GeM Registration Services & Consultant">Gem Registration</a>
+                            <a class="dropdown-item" href="https://www.gemgujarat.in/gem-registration-consultant.php" title="GeM Registration Services & Consultant">GeM Registration</a>
                           </li>
                           <li>
-                            <a class="dropdown-item" href="https://www.gemgujarat.in/gem-catalogue-management-services.php" title="GeM Catalogue Management Services">Gem Catalogue Management Services</a>
+                            <a class="dropdown-item" href="https://www.gemgujarat.in/gem-catalogue-management-services.php" title="GeM Catalogue Management Services">GeM Catalogue Management Services</a>
                           </li>
                           <li>
-                            <a class="dropdown-item" href="https://www.gemgujarat.in/gem-product-catalogue-update.php" title="GeM Product Catalogue Update & Optimization">Gem Product Catalogue Update</a>
+                            <a class="dropdown-item" href="https://www.gemgujarat.in/gem-product-catalogue-update.php" title="GeM Product Catalogue Update & Optimization">GeM Product Catalogue Update</a>
                           </li>
                           <li>
-                            <a class="dropdown-item" href="https://www.gemgujarat.in/gem-stock-update-service.php" title="GeM Stock Update & Inventory Service">Gem Stock Update Service</a>
+                            <a class="dropdown-item" href="https://www.gemgujarat.in/gem-stock-update-service.php" title="GeM Stock Update & Inventory Service">GeM Stock Update Service</a>
                           </li>
                           <li>
-                            <a class="dropdown-item" href="https://www.gemgujarat.in/gem-invoice-generation.php" title="GeM Invoice Generation & CRAC Processing">Gem Invoice Generation</a>
+                            <a class="dropdown-item" href="https://www.gemgujarat.in/gem-invoice-generation.php" title="GeM Invoice Generation & CRAC Processing">GeM Invoice Generation</a>
                           </li>
                           <li>
-                            <a class="dropdown-item" href="https://www.gemgujarat.in/gem-order-acceptance-guide.php" title="GeM Order Acceptance & Compliance Guide">Gem Order Acceptance Guide</a>
+                            <a class="dropdown-item" href="https://www.gemgujarat.in/gem-order-acceptance-guide.php" title="GeM Order Acceptance & Compliance Guide">GeM Order Acceptance Guide</a>
                           </li>
                         </ul>
                       </div>
                       <div class="col-xl-6">
                         <ul class="list-unstyled" aria-labelledby="navbarSSLAboutus">
                           <li>
-                            <a class="dropdown-item" href="https://www.gemgujarat.in/gem-l1-comparison-service.php" title="GeM L1 Price Comparison & Direct Purchase Service">Gem L1 comparison</a>
+                            <a class="dropdown-item" href="https://www.gemgujarat.in/gem-l1-comparison-service.php" title="GeM L1 Price Comparison & Direct Purchase Service">GeM L1 comparison</a>
                           </li>
                           <li>
-                            <a class="dropdown-item" href="https://www.gemgujarat.in/gem-oem-panel-registration.php" title="GeM OEM Panel Registration & Authorization Codes">Gem Oem Panel Registration</a>
+                            <a class="dropdown-item" href="https://www.gemgujarat.in/gem-oem-panel-registration.php" title="GeM OEM Panel Registration & Authorization Codes">GeM Oem Panel Registration</a>
                           </li>
                           <li>
-                            <a class="dropdown-item" href="https://www.gemgujarat.in/gem-tender-bidding-support.php" title="GeM Tender Bidding & Bid Management Support">Gem Tender Bidding Support</a>
+                            <a class="dropdown-item" href="https://www.gemgujarat.in/gem-tender-bidding-support.php" title="GeM Tender Bidding & Bid Management Support">GeM Tender Bidding Support</a>
                           </li>
-                          <!-- <li><a class="dropdown-item" href="https://www.gemgujarat.in/gem-vendor-assessment-support.php" title="GeM Vendor Assessment & OEM Audit Support">Gem Vendor Assessment Support</a></li> -->
+                          <!-- <li><a class="dropdown-item" href="https://www.gemgujarat.in/gem-vendor-assessment-support.php" title="GeM Vendor Assessment & OEM Audit Support">GeM Vendor Assessment Support</a></li> -->
                           <li>
-                            <a class="dropdown-item" href="https://www.gemgujarat.in/gem-msme-udyam-registration.php" title="MSME Udyam Registration Consultancy">Gem Msme Udyam Registration</a>
+                            <a class="dropdown-item" href="https://www.gemgujarat.in/gem-msme-udyam-registration.php" title="MSME Udyam Registration Consultancy">GeM Msme Udyam Registration</a>
                           </li>
                           <li>
-                            <a class="dropdown-item" href="https://www.gemgujarat.in/gem-iso-certificate-9001.php" title="ISO 9001 Certification Support for GeM">Gem Iso Certificate</a>
+                            <a class="dropdown-item" href="https://www.gemgujarat.in/gem-iso-certificate-9001.php" title="ISO 9001 Certification Support for GeM">GeM Iso Certificate</a>
                           </li>
                         </ul>
                       </div>
@@ -100,10 +100,10 @@
                 <a class="nav-link fs-18" href="https://bidplus.gem.gov.in/all-bids" title="View Live Government Tenders on GeM Portal" target="_blank"> Live Tender </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-18" href="https://www.gemgujarat.in/about-us.php" title="About GEM Gujarat Consultancy">About Us</a>
+                <a class="nav-link fs-18" href="https://www.gemgujarat.in/about-us.php" title="About GeM Gujarat Consultancy">About Us</a>
               </li>
               <li class="nav-item d-block d-xl-none mt-2">
-                <a title="Contact GEM Gujarat Experts" class="btn-primary" href="https://www.gemgujarat.in/contact-us.php"> Contact Us <span>
+                <a title="Contact GeM Gujarat Experts" class="btn-primary" href="https://www.gemgujarat.in/contact-us.php"> Contact Us <span>
                     <svg id="Layer_1" enableBackground="new 0 0 100 100" height="40" viewBox="0 0 100 100" fill="#f70629" width="40" xmlns="http://www.w3.org/2000/svg">
                       <path d="m50 10.75c-18.266 0-34.562 13.129-38.383 31.007-1.909 8.933-.623 18.432 3.636 26.515 4.099 7.779 10.819 14.066 18.859 17.629 8.363 3.707 17.964 4.353 26.754 1.825 8.48-2.438 15.999-7.789 21.118-14.972 10.703-15.017 9.272-36.111-3.32-49.567-7.38-7.886-17.862-12.437-28.664-12.437zm18.829 41.347-10.7 10.958c-2.709 2.775-6.991-1.429-4.293-4.191l5.399-5.529h-25.586c-1.817 0-3.333-1.517-3.333-3.333s1.517-3.333 3.333-3.333h25.458l-5.506-5.505c-2.736-2.736 1.506-6.979 4.242-4.243l10.961 10.96c1.162 1.161 1.173 3.041.025 4.216z" />
                     </svg>
@@ -114,7 +114,7 @@
           </div>
         </div>
         <div class="d-xl-block d-none">
-          <a title="Contact GEM Gujarat Experts" class="btn-primary" href="https://www.gemgujarat.in/contact-us.php"> Contact Us <span>
+          <a title="Contact GeM Gujarat Experts" class="btn-primary" href="https://www.gemgujarat.in/contact-us.php"> Contact Us <span>
               <svg id="Layer_1" enableBackground="new 0 0 100 100" height="40" viewBox="0 0 100 100" fill="#f70629" width="40" xmlns="http://www.w3.org/2000/svg">
                 <path d="m50 10.75c-18.266 0-34.562 13.129-38.383 31.007-1.909 8.933-.623 18.432 3.636 26.515 4.099 7.779 10.819 14.066 18.859 17.629 8.363 3.707 17.964 4.353 26.754 1.825 8.48-2.438 15.999-7.789 21.118-14.972 10.703-15.017 9.272-36.111-3.32-49.567-7.38-7.886-17.862-12.437-28.664-12.437zm18.829 41.347-10.7 10.958c-2.709 2.775-6.991-1.429-4.293-4.191l5.399-5.529h-25.586c-1.817 0-3.333-1.517-3.333-3.333s1.517-3.333 3.333-3.333h25.458l-5.506-5.505c-2.736-2.736 1.506-6.979 4.242-4.243l10.961 10.96c1.162 1.161 1.173 3.041.025 4.216z" />
               </svg>

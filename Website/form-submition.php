@@ -61,13 +61,13 @@ if (($_SERVER['REQUEST_METHOD'] ?? '') === 'POST') {
         $mail->SMTPSecure = 'tls';
         $mail->Port       = 587;
 
-        $mail->setFrom('info@gemgujarat.in', 'GEM Gujarat Website');
+        $mail->setFrom('info@gemgujarat.in', 'GeM Gujarat Website');
         $mail->addReplyTo($email, $name);
         $mail->addAddress('info@gemgujarat.in');
-        $mail->addAddress('devkoshti02@gmail.com');
+        $mail->addAddress('gemgujarat1523@gmail.com');
 
         $mail->isHTML(true);
-        $mail->Subject = 'Gem Gujarat Form Submission';
+        $mail->Subject = 'GeM Gujarat Form Submission';
         $mail->Body    = $body;
 
         $mail->send();

@@ -2,11 +2,12 @@
 $page_title = "GeM Catalogue Management Services India | Product Visibility & L1";
 $page_desc = "Expert GeM Catalogue Management Services India. Boost L1 status, prevent GeM Listing Suppression, and get Product Visibility Improvement with our compliance monitoring.";
 $canonical_url = "https://www.gemgujarat.in/gem-catalogue-management-services.php";
+$page_modified_date = "2026-11-26";
 $preload_image = "https://www.gemgujarat.in/images/gem-catalogue-management-services-about-us-banner.webp";
 $og_image = "https://www.gemgujarat.in/images/gem-catalogue-management-services-about-us-banner.webp";
 $og_width = "1000";
 $og_height = "1000";
-$page_keywords = "";
+$page_keywords = "GeM catalogue management, GeM product listing services, GeM category mapping, GeM golden parameters, GeM listing compliance, GeM listing suppression";
 include 'includes/head.php';
 ?> <body>
   <!-- navbar start  --> <?php include 'includes/navbar.php'; ?>
@@ -35,7 +36,7 @@ include 'includes/head.php';
       <div class="col-lg-6">
         <div class="h-100">
           <div class="hero-banner-image">
-            <img src="https://www.gemgujarat.in/images/gem-catalogue-management-services-about-us-banner.webp" alt="Gem Catalogue Management Services About Us Banner" title="Gem Catalogue Management Services About Us Banner" class="img-fluid" width="1000" height="1000">
+            <img src="https://www.gemgujarat.in/images/gem-catalogue-management-services-about-us-banner.webp" alt="GeM Catalogue Management Services About Us Banner" title="GeM Catalogue Management Services About Us Banner" class="img-fluid" width="1000" height="1000">
           </div>
         </div>
       </div>
@@ -194,7 +195,7 @@ include 'includes/head.php';
     <div class="row g-lg-5 g-4 align-items-center">
       <div class="col-lg-5">
         <div class="h-100">
-          <img src="https://www.gemgujarat.in/images/gem-gujarat-faq.webp" alt="Gem Gujarat FAQ Image" title="Gem Gujarat FAQ Image" class="img-fluid rounded-5" width="2000" height="1333">
+          <img src="https://www.gemgujarat.in/images/gem-gujarat-faq.webp" alt="GeM Gujarat FAQ Image" title="GeM Gujarat FAQ Image" class="img-fluid rounded-5" width="2000" height="1333">
         </div>
       </div>
       <div class="col-lg-7">
@@ -257,6 +258,28 @@ include 'includes/head.php';
                   </div>
                 </div>
               </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-6" aria-expanded="false" aria-controls="faq-collapse-6">
+                    <span>6. </span> Should I create a new GeM catalogue if my exact product is already listed? </button>
+                </h3>
+                <div id="faq-collapse-6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>Check the existing catalogue for an exact match on brand, model, and specifications. If it matches and the category allows you to offer it, use the existing listing option. If the model or specifications differ, follow the category’s process for a separate listing.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-7" aria-expanded="false" aria-controls="faq-collapse-7">
+                    <span>7. </span> How do I choose the correct GeM category for my product? </button>
+                </h3>
+                <div id="faq-collapse-7" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>Compare the category’s mandatory specifications with your product datasheet. Check the unit of sale, accepted values, and required documents before submitting. A similar category name alone is a poor match if the required specifications differ.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -289,7 +312,7 @@ include 'includes/head.php';
         </div>
         <div class="col-lg-4">
           <div class="h-100">
-            <img src="https://www.gemgujarat.in/images/gem-gujarat-cta.webp" alt="Gem Gujarat Cta" title="Gem Gujarat Cta" class="img-fluid rounded-5" width="867" height="713">
+            <img src="https://www.gemgujarat.in/images/gem-gujarat-cta.webp" alt="GeM Gujarat Cta" title="GeM Gujarat Cta" class="img-fluid rounded-5" width="867" height="713">
           </div>
         </div>
       </div>

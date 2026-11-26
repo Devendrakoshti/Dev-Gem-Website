@@ -1,6 +1,6 @@
 <?php
 /* =====================================================================
-   SERVICE SCHEMA DATA — GEM Gujarat
+   SERVICE SCHEMA DATA — GeM Gujarat
    File: includes/service-schema-data.php
 
    Consumed by includes/schema-engine.php (BLOCK B) to build the
